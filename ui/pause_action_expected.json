@@ -1,0 +1,62 @@
+{
+  "ca": {
+    "T_GAME_PAUSED": "S'ha pausat el joc",
+    "T_GAME_RESUMED": "S'ha prosseguit el joc",
+    "T_PAUSE": "Pausa",
+    "T_PAUSE_MNEMONIC": "P",
+    "T_PAUSE_PROCESS": "Pausa el proces",
+    "T_RESUME": "Segueix",
+    "T_RESUME_MNEMONIC": "S",
+    "T_RESUME_PROCESS": "Segueix amb el procés"
+  },
+  "de": {
+    "T_GAME_PAUSED": "Spiel pausiert",
+    "T_GAME_RESUMED": "Spiel fortgesetzt",
+    "T_PAUSE": "Pause",
+    "T_PAUSE_MNEMONIC": "P",
+    "T_PAUSE_PROCESS": "Prozess pausieren",
+    "T_RESUME": "Fortsetzen",
+    "T_RESUME_MNEMONIC": "F",
+    "T_RESUME_PROCESS": "Prozess fortsetzen"
+  },
+  "en": {
+    "T_GAME_PAUSED": "Game paused",
+    "T_GAME_RESUMED": "Game resumed",
+    "T_PAUSE": "Pause",
+    "T_PAUSE_MNEMONIC": "P",
+    "T_PAUSE_PROCESS": "Pause process",
+    "T_RESUME": "Resume",
+    "T_RESUME_MNEMONIC": "R",
+    "T_RESUME_PROCESS": "Resume process"
+  },
+  "es": {
+    "T_GAME_PAUSED": "Juego en pausa",
+    "T_GAME_RESUMED": "Juego reanudado",
+    "T_PAUSE": "Pausar",
+    "T_PAUSE_MNEMONIC": "P",
+    "T_PAUSE_PROCESS": "Pausar el proceso",
+    "T_RESUME": "Continuar",
+    "T_RESUME_MNEMONIC": "C",
+    "T_RESUME_PROCESS": "Continuar con el proceso"
+  },
+  "pt": {
+    "T_GAME_PAUSED": "Jogo pausado",
+    "T_GAME_RESUMED": "Jogo continuado",
+    "T_PAUSE": "Pausar",
+    "T_PAUSE_MNEMONIC": "P",
+    "T_PAUSE_PROCESS": "Pausar processo",
+    "T_RESUME": "Continuar",
+    "T_RESUME_MNEMONIC": "R",
+    "T_RESUME_PROCESS": "Continuar processo"
+  },
+  "ru": {
+    "T_GAME_PAUSED": "Игра приостановлена",
+    "T_GAME_RESUMED": "Игра возобновлена",
+    "T_PAUSE": "Пауза",
+    "T_PAUSE_MNEMONIC": "P",
+    "T_PAUSE_PROCESS": "Приостановить процесс",
+    "T_RESUME": "Продолжить",
+    "T_RESUME_MNEMONIC": "R",
+    "T_RESUME_PROCESS": "Продолжить процесс"
+  }
+}

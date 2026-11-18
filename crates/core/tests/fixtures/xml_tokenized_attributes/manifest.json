@@ -1,0 +1,758 @@
+{
+  "source": "Exact Original BioXMLParser.parseGeneticCode inputs and observations",
+  "claim_sha256": "de3723fab83debfded856f91a9d90411c57e93b6dcd5f0221eb64e9a873905e7",
+  "input_helper_manifest_sha256": "4a0000d2ac481fe92174a5ece8198f67e0281040b1be2ca0dfb0049d05c4de87",
+  "capture_summary_sha256": "d3f2dd4cb0489518b6fb440f150af745c828c4b0c1a47e03834453e6879026f4",
+  "Root_actual_readback_sha256": "241468327a6de390d803c7a791112e7c015b60e5ffe116b6212bc826ed9e3348",
+  "independent_actual_review_sha256": "dddeed5e428c1a77fd4cd18fa5c750fd96daed2eadb3db1014cd65eccaab4b14",
+  "observations": {
+    "sha256": "d61ad181bc04765f470f55cee7ca5657ed29e2516cea8dbdce584cb6afc01aa6",
+    "bytes": 495886,
+    "rows": 16026,
+    "routes_byte_identical": [
+      "fresh Source-a",
+      "fresh Source-b using same new class cohort",
+      "fresh JAR"
+    ]
+  },
+  "source_ledger": {
+    "A": 40,
+    "C": 71,
+    "D": 71,
+    "E": 71,
+    "F": 71,
+    "G": 1120,
+    "N": 3040,
+    "O": 71,
+    "R": 142,
+    "U": 10437,
+    "V": 861,
+    "X": 31
+  },
+  "scope": {
+    "Original_successes": 40,
+    "Rust_admitted": 37,
+    "supported_rejections": 28,
+    "related_UnsupportedDtd": 6,
+    "related_Source_successes": 3,
+    "compared_Genome_values": 999,
+    "compared_Gene_values": 2800,
+    "compared_DOM_documents": 39,
+    "compared_V_rows": 798,
+    "all_frozen_V_rows": 861,
+    "copied_Source_RNG_rows": 142,
+    "writer_calls": 0
+  },
+  "cases": [
+    {
+      "id": 0,
+      "name": "seed-0000",
+      "path": "cases/seed-0000.bgg",
+      "sha256": "1d2957133d3670022f65602ca986e44edd1fa46163ac8a7f0fb49371fe797f42",
+      "bytes": 4794,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 1,
+      "name": "seed-0246",
+      "path": "cases/seed-0246.bgg",
+      "sha256": "29769b9a7157a3c2b61ba251e16d4b5ce02b4ba14f26b79d70145e2eeeb3cee4",
+      "bytes": 4038,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 2,
+      "name": "seed-0247",
+      "path": "cases/seed-0247.bgg",
+      "sha256": "63b154797fb8ce64ffa89789ea0e361e05b60880efa48c15c59fac1654bcb309",
+      "bytes": 4773,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 3,
+      "name": "seed-0248",
+      "path": "cases/seed-0248.bgg",
+      "sha256": "685b38ec10adaf40c7535a428fd72e47fc95f715ac5d5ac2cf018ca5f3d3953f",
+      "bytes": 4822,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 4,
+      "name": "seed-0258",
+      "path": "cases/seed-0258.bgg",
+      "sha256": "bb9f09771ccacb85a2eecbab528a5840638fa1756604f900f2f7f269828188b7",
+      "bytes": 3381,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 5,
+      "name": "id-basic",
+      "path": "cases/id-basic.bgg",
+      "sha256": "2592715cfd1e223d6816c7123f45f08a4813e97f8afb9b100fc9b675e8139f06",
+      "bytes": 5606,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 6,
+      "name": "id-literal-whitespace",
+      "path": "cases/id-literal-whitespace.bgg",
+      "sha256": "23d1d67968fc496a4dbae2c099e5d6959df9ff02a9e75ac248723bd7a669a15a",
+      "bytes": 5611,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 7,
+      "name": "id-unicode",
+      "path": "cases/id-unicode.bgg",
+      "sha256": "ef15dfe9c1b00a1142035aae81d4d14b6105610414f37dc6fbebe1ade732cfab",
+      "bytes": 5608,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 8,
+      "name": "id-digit-start",
+      "path": "cases/id-digit-start.bgg",
+      "sha256": "bfa2d822b00d65c63ae9185aad421f248f6b1a0be7f0832081ef57cfdf18cf52",
+      "bytes": 5607,
+      "Original_outcome": "error",
+      "Original_DOM": false,
+      "Rust_disposition": "Malformed"
+    },
+    {
+      "id": 9,
+      "name": "idref-basic",
+      "path": "cases/idref-basic.bgg",
+      "sha256": "838b469348f61a7f400ef88d4a7ea80a03c5eb135e827cac3859d1e13d0dc9b4",
+      "bytes": 5661,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 10,
+      "name": "idref-literal-whitespace",
+      "path": "cases/idref-literal-whitespace.bgg",
+      "sha256": "640b7d64f6f06791ddd93cd896d5f784deb1c14476795e7ab4b6ee385d4485f3",
+      "bytes": 5666,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 11,
+      "name": "idref-unicode",
+      "path": "cases/idref-unicode.bgg",
+      "sha256": "26186868003671238313e1eb60cdcaff9090f74cba5c7783ef988068d8602fc7",
+      "bytes": 5665,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 12,
+      "name": "idref-digit-start",
+      "path": "cases/idref-digit-start.bgg",
+      "sha256": "78dc2743534fa2da0969d33b82d54cbff7ed6966daf127636ca55dfc6d869a74",
+      "bytes": 5662,
+      "Original_outcome": "error",
+      "Original_DOM": false,
+      "Rust_disposition": "Malformed"
+    },
+    {
+      "id": 13,
+      "name": "idrefs-basic",
+      "path": "cases/idrefs-basic.bgg",
+      "sha256": "c0e5ce4e2a3ecefa4cdf48ec3def0d5fc730a5292837d3de3c3f8f7704636b7d",
+      "bytes": 5662,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 14,
+      "name": "idrefs-literal-whitespace",
+      "path": "cases/idrefs-literal-whitespace.bgg",
+      "sha256": "b49cb4a350fe8c8e0546217192177b871c006bbcd3b819254be3bc7c8a499719",
+      "bytes": 5667,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 15,
+      "name": "idrefs-unicode",
+      "path": "cases/idrefs-unicode.bgg",
+      "sha256": "fb2a57d44c47572ef793a0a870993ace9aba91e9b6691844548164ee182ebd69",
+      "bytes": 5666,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 16,
+      "name": "idrefs-empty",
+      "path": "cases/idrefs-empty.bgg",
+      "sha256": "7bd84550504512afd6f4085f2abebd136a5959101a1a9f348c6762fde1fbe0f1",
+      "bytes": 5657,
+      "Original_outcome": "error",
+      "Original_DOM": false,
+      "Rust_disposition": "Malformed"
+    },
+    {
+      "id": 17,
+      "name": "nmtoken-basic",
+      "path": "cases/nmtoken-basic.bgg",
+      "sha256": "0995ab244de28308ea8c3a9d06396235a83a32ae67c873cd9216054108bdf844",
+      "bytes": 5611,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 18,
+      "name": "nmtoken-literal-whitespace",
+      "path": "cases/nmtoken-literal-whitespace.bgg",
+      "sha256": "60a2e1d10c636bb4cf3e234f7dadf5d67120cfd439e4ff5cc03e58b856ec4e38",
+      "bytes": 5616,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 19,
+      "name": "nmtoken-unicode",
+      "path": "cases/nmtoken-unicode.bgg",
+      "sha256": "4f6600780edc0f1c51ed3952129305ec8836ea336885e31c7383e13379ae1de2",
+      "bytes": 5613,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 20,
+      "name": "nmtoken-digit-start",
+      "path": "cases/nmtoken-digit-start.bgg",
+      "sha256": "9076988ff2c15cac924ce85632602344bf06ff36bfb3150cb8ab3719b8083b61",
+      "bytes": 5612,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 21,
+      "name": "nmtokens-basic",
+      "path": "cases/nmtokens-basic.bgg",
+      "sha256": "ea23188305cc21c0bce1af0439733234da4596788f1ae9f709eac2cf02709836",
+      "bytes": 5612,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 22,
+      "name": "nmtokens-literal-whitespace",
+      "path": "cases/nmtokens-literal-whitespace.bgg",
+      "sha256": "d9ecc12587d6be5dc0c4d8585865b39bd05d167f08651462e74e42ba3434f6d8",
+      "bytes": 5617,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 23,
+      "name": "nmtokens-unicode",
+      "path": "cases/nmtokens-unicode.bgg",
+      "sha256": "cec130bd862536e24a75308fe3b23497d47cd53b8a061b562b545b33785ff088",
+      "bytes": 5622,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 24,
+      "name": "nmtokens-digit-token-list",
+      "path": "cases/nmtokens-digit-token-list.bgg",
+      "sha256": "bdf40ee3904961168516cedcd2305dae152b5292d5a259203bd5ee134628c24d",
+      "bytes": 5624,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 25,
+      "name": "cdata-direct-numeric-whitespace",
+      "path": "cases/cdata-direct-numeric-whitespace.bgg",
+      "sha256": "7acb5bd9cf4891f4b03ce7b0f7aedf5bcd3eca3ff23a8a217ad1d9da2a5e015b",
+      "bytes": 5638,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 26,
+      "name": "nmtokens-direct-tab",
+      "path": "cases/nmtokens-direct-tab.bgg",
+      "sha256": "93a7236fe4cabed66a62dafd003d00a4319d59c6d24e7263080c9c0e28799c99",
+      "bytes": 5621,
+      "Original_outcome": "error",
+      "Original_DOM": false,
+      "Rust_disposition": "Malformed"
+    },
+    {
+      "id": 27,
+      "name": "nmtokens-direct-lf",
+      "path": "cases/nmtokens-direct-lf.bgg",
+      "sha256": "b9591dcb82f5c526c5d862834717ae479e43a0393ca953f40aa0ab411bd364a2",
+      "bytes": 5621,
+      "Original_outcome": "error",
+      "Original_DOM": false,
+      "Rust_disposition": "Malformed"
+    },
+    {
+      "id": 28,
+      "name": "nmtokens-direct-cr",
+      "path": "cases/nmtokens-direct-cr.bgg",
+      "sha256": "d0187bd7e57249b850438ea14543dcc7c9f1331bd06dce581fada283aab258c5",
+      "bytes": 5621,
+      "Original_outcome": "error",
+      "Original_DOM": false,
+      "Rust_disposition": "Malformed"
+    },
+    {
+      "id": 29,
+      "name": "nmtokens-entity-numeric-whitespace",
+      "path": "cases/nmtokens-entity-numeric-whitespace.bgg",
+      "sha256": "6e2c4a684cee51d945c7b6a61d97b759c52fdfc2d3dd7163b1098fd3b3abe6c0",
+      "bytes": 5666,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 30,
+      "name": "nmtokens-entity-literal-whitespace",
+      "path": "cases/nmtokens-entity-literal-whitespace.bgg",
+      "sha256": "a499cb7660bdc1e7205406a7fc269d68886ae3a70997b43ba75d67b7bede2135",
+      "bytes": 5654,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 31,
+      "name": "enum-space-padding",
+      "path": "cases/enum-space-padding.bgg",
+      "sha256": "7ce09eb015580569f69fb02d389efaae148c928dc0ca6f040c438ab3e11a134c",
+      "bytes": 5550,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 32,
+      "name": "enum-direct-numeric-whitespace",
+      "path": "cases/enum-direct-numeric-whitespace.bgg",
+      "sha256": "2e48f366e0c7b4717144361f3b43d24fad0c455bd2c5ca16ba6976f2752dc891",
+      "bytes": 5563,
+      "Original_outcome": "error",
+      "Original_DOM": false,
+      "Rust_disposition": "InvalidAttribute(symmetry)"
+    },
+    {
+      "id": 33,
+      "name": "numeric-symmetry-literal-whitespace",
+      "path": "cases/numeric-symmetry-literal-whitespace.bgg",
+      "sha256": "d21a14cdb3e00bf2bc5a1b9e292a39849e7392fc51f560a07e003878f9e9b13b",
+      "bytes": 5543,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 34,
+      "name": "numeric-symmetry-direct-tab",
+      "path": "cases/numeric-symmetry-direct-tab.bgg",
+      "sha256": "2ee461cc729911a8bda500c58741ef12cfa3cc9762253c4b63a0111bfa9efeec",
+      "bytes": 5543,
+      "Original_outcome": "error",
+      "Original_DOM": false,
+      "Rust_disposition": "Malformed"
+    },
+    {
+      "id": 35,
+      "name": "numeric-branch-literal-whitespace",
+      "path": "cases/numeric-branch-literal-whitespace.bgg",
+      "sha256": "24476084f528d058f93a5c7c125a8bfb4787790d372c0962dc3338418db9a445",
+      "bytes": 5555,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 36,
+      "name": "numeric-branch-default",
+      "path": "cases/numeric-branch-default.bgg",
+      "sha256": "a31fc11b94fb2c998feb810bba2c76115e8803db3455aea7fab50bea2f2411ed",
+      "bytes": 5515,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 37,
+      "name": "id-required-missing",
+      "path": "cases/id-required-missing.bgg",
+      "sha256": "526ce191f6b82e456b8940f038626b6567628487c04c45f050c4b618ff3585cc",
+      "bytes": 5592,
+      "Original_outcome": "error",
+      "Original_DOM": false,
+      "Rust_disposition": "MissingAttribute(probe)"
+    },
+    {
+      "id": 38,
+      "name": "id-implied-missing",
+      "path": "cases/id-implied-missing.bgg",
+      "sha256": "c458dff32bf1ccc1a813a6ce9f3a2cd1cf43a5e91da90b604d9b6ad16ec284b0",
+      "bytes": 5591,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 39,
+      "name": "id-default-overridden",
+      "path": "cases/id-default-overridden.bgg",
+      "sha256": "2f5e2552b2ff9573c4df547b5af580e5ce88a745cb13b5e6ef768891d384b421",
+      "bytes": 5604,
+      "Original_outcome": "error",
+      "Original_DOM": false,
+      "Rust_disposition": "Malformed"
+    },
+    {
+      "id": 40,
+      "name": "two-id-attributes-one-element",
+      "path": "cases/two-id-attributes-one-element.bgg",
+      "sha256": "f42686d23713ace3c628241b82e1336123bac5c2ab17304845a5fe16d54c96b5",
+      "bytes": 5633,
+      "Original_outcome": "error",
+      "Original_DOM": false,
+      "Rust_disposition": "Malformed"
+    },
+    {
+      "id": 41,
+      "name": "nmtokens-default-whitespace",
+      "path": "cases/nmtokens-default-whitespace.bgg",
+      "sha256": "4d8388f27534ecf0e33b40f728acb61d103d8af0e49b49267b8b5e31ccb71177",
+      "bytes": 3519,
+      "Original_outcome": "error",
+      "Original_DOM": false,
+      "Rust_disposition": "Malformed"
+    },
+    {
+      "id": 42,
+      "name": "nmtokens-fixed-normalized-match",
+      "path": "cases/nmtokens-fixed-normalized-match.bgg",
+      "sha256": "5762d137f8f8b496a844df83a04603fb8d1964a3e1867c16bb768b8575662112",
+      "bytes": 5659,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 43,
+      "name": "id-fixed-default-overridden",
+      "path": "cases/id-fixed-default-overridden.bgg",
+      "sha256": "1d38c2c15ff9577206e552f98facd2deb5646ac07ec811e6e079ca76315bbbf8",
+      "bytes": 5611,
+      "Original_outcome": "error",
+      "Original_DOM": false,
+      "Rust_disposition": "Malformed"
+    },
+    {
+      "id": 44,
+      "name": "nmtoken-invalid-default-overridden",
+      "path": "cases/nmtoken-invalid-default-overridden.bgg",
+      "sha256": "1fca6fe48e38128b6a834509792cad98da4b74d5999b830bd616b544071e14b4",
+      "bytes": 5615,
+      "Original_outcome": "error",
+      "Original_DOM": false,
+      "Rust_disposition": "Malformed"
+    },
+    {
+      "id": 45,
+      "name": "nmtoken-invalid-default-unused",
+      "path": "cases/nmtoken-invalid-default-unused.bgg",
+      "sha256": "7c0cdc061a0a58de2fca356b1495176bd61bd5f888a88add68eda698e2806bb6",
+      "bytes": 5612,
+      "Original_outcome": "error",
+      "Original_DOM": false,
+      "Rust_disposition": "Malformed"
+    },
+    {
+      "id": 46,
+      "name": "idref-unresolved-default-applied",
+      "path": "cases/idref-unresolved-default-applied.bgg",
+      "sha256": "9a37ba08510ac562008a245c46cbc0f90ec7414f7a51cfca42830385fccf2d98",
+      "bytes": 5645,
+      "Original_outcome": "error",
+      "Original_DOM": false,
+      "Rust_disposition": "Malformed"
+    },
+    {
+      "id": 47,
+      "name": "idref-unresolved-default-overridden",
+      "path": "cases/idref-unresolved-default-overridden.bgg",
+      "sha256": "61217715de7a1995f43f5b8a6248b8b410091e15367746a9335796252d966448",
+      "bytes": 5660,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 48,
+      "name": "idref-unresolved-default-unused",
+      "path": "cases/idref-unresolved-default-unused.bgg",
+      "sha256": "bcaff09c9149aa9ca602f93465498070dc7a8fd2cf64e9e60c0fc6797485f6ab",
+      "bytes": 5657,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 49,
+      "name": "idref-invalid-default-overridden",
+      "path": "cases/idref-invalid-default-overridden.bgg",
+      "sha256": "d5108db40962eb08f5462c003c8e22d0b1ae31d109417783c7f00b30def4cc07",
+      "bytes": 5661,
+      "Original_outcome": "error",
+      "Original_DOM": false,
+      "Rust_disposition": "Malformed"
+    },
+    {
+      "id": 50,
+      "name": "idref-invalid-default-unused",
+      "path": "cases/idref-invalid-default-unused.bgg",
+      "sha256": "16d4be9113325d12b167cdc9a6ea8a022865a1fad1085b48982451f04e65676c",
+      "bytes": 5658,
+      "Original_outcome": "error",
+      "Original_DOM": false,
+      "Rust_disposition": "Malformed"
+    },
+    {
+      "id": 51,
+      "name": "four-ids-ordered-repeated-refs",
+      "path": "cases/four-ids-ordered-repeated-refs.bgg",
+      "sha256": "70fc34671f6d7a6d097fc1c9f5736b6927930bd1c64d52da0175b293c1c9c3d6",
+      "bytes": 7247,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 52,
+      "name": "duplicate-gene-ids",
+      "path": "cases/duplicate-gene-ids.bgg",
+      "sha256": "c71c93be03356c9b71e7761ffc55ac1ea208f79b738f2d5086ace571b7674882",
+      "bytes": 5680,
+      "Original_outcome": "error",
+      "Original_DOM": false,
+      "Rust_disposition": "Malformed"
+    },
+    {
+      "id": 53,
+      "name": "duplicate-root-gene-ids",
+      "path": "cases/duplicate-root-gene-ids.bgg",
+      "sha256": "92db8d09e105c1b0fd691e8f241dbfbb84d0822bf3e8f5c6ffa1747f237f7fcd",
+      "bytes": 5720,
+      "Original_outcome": "error",
+      "Original_DOM": false,
+      "Rust_disposition": "Malformed"
+    },
+    {
+      "id": 54,
+      "name": "forward-gene-reference",
+      "path": "cases/forward-gene-reference.bgg",
+      "sha256": "dead86238a755b221caa1730c7cec7901b760c2bfb4b02b5634f2da916315331",
+      "bytes": 5683,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 55,
+      "name": "backward-gene-reference",
+      "path": "cases/backward-gene-reference.bgg",
+      "sha256": "0f03c9fe9b0a7fa2a7592cf39240fff600cc28adc55fcaa5410b970b245ebd0a",
+      "bytes": 5687,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 56,
+      "name": "partially-unresolved-reference-list",
+      "path": "cases/partially-unresolved-reference-list.bgg",
+      "sha256": "99ab8071a506a2db46eb7513bc323ab6c40c679808bf48a176536d032fe5b0a2",
+      "bytes": 5706,
+      "Original_outcome": "error",
+      "Original_DOM": false,
+      "Rust_disposition": "Malformed"
+    },
+    {
+      "id": 57,
+      "name": "ignored-descendant-reference-target",
+      "path": "cases/ignored-descendant-reference-target.bgg",
+      "sha256": "4716f5e5a024dc6b5863012eb6e51f008f7eeba3e21a12ac808182fcfecf8769",
+      "bytes": 5751,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "Admitted"
+    },
+    {
+      "id": 58,
+      "name": "ignored-descendant-duplicate-id",
+      "path": "cases/ignored-descendant-duplicate-id.bgg",
+      "sha256": "f36a57a0762e630a6ec55422c4a8fec1cd75d8bf2d1074a98dca38a8ce93085e",
+      "bytes": 5744,
+      "Original_outcome": "error",
+      "Original_DOM": false,
+      "Rust_disposition": "Malformed"
+    },
+    {
+      "id": 59,
+      "name": "precedence-root-duplicate-numeric-only",
+      "path": "cases/precedence-root-duplicate-numeric-only.bgg",
+      "sha256": "95738dcc86cdfd0e034d314adee2ac9d8ad74e67c4c04125fe80303c4195fb49",
+      "bytes": 5673,
+      "Original_outcome": "error",
+      "Original_DOM": true,
+      "Rust_disposition": "InvalidAttribute(symmetry)"
+    },
+    {
+      "id": 60,
+      "name": "precedence-root-duplicate-late-only",
+      "path": "cases/precedence-root-duplicate-late-only.bgg",
+      "sha256": "caa489fc6533381776a6c85118a01e452cd7466c8a9a5251cf88ab18f367f6a5",
+      "bytes": 5672,
+      "Original_outcome": "error",
+      "Original_DOM": false,
+      "Rust_disposition": "Malformed"
+    },
+    {
+      "id": 61,
+      "name": "precedence-root-duplicate-combined",
+      "path": "cases/precedence-root-duplicate-combined.bgg",
+      "sha256": "44923eb690b66fec6ddf41fb50826e79b8ff5cc247035b542a47ba2fa6be6da5",
+      "bytes": 5674,
+      "Original_outcome": "error",
+      "Original_DOM": false,
+      "Rust_disposition": "Malformed"
+    },
+    {
+      "id": 62,
+      "name": "precedence-gene-unresolved-numeric-only",
+      "path": "cases/precedence-gene-unresolved-numeric-only.bgg",
+      "sha256": "09f143564c47ab8c2dd2d3526c2b28a87e98ee3bc8c9c589d772523e072ea463",
+      "bytes": 5696,
+      "Original_outcome": "error",
+      "Original_DOM": true,
+      "Rust_disposition": "InvalidAttribute(branch)"
+    },
+    {
+      "id": 63,
+      "name": "precedence-gene-unresolved-late-only",
+      "path": "cases/precedence-gene-unresolved-late-only.bgg",
+      "sha256": "f61fc6c73a0f48f53547a5ff43cc17d464a43df17cacf1b13c31113a93c400cd",
+      "bytes": 5695,
+      "Original_outcome": "error",
+      "Original_DOM": false,
+      "Rust_disposition": "Malformed"
+    },
+    {
+      "id": 64,
+      "name": "precedence-gene-unresolved-combined",
+      "path": "cases/precedence-gene-unresolved-combined.bgg",
+      "sha256": "bf9e1954c615e446f0070e5af5db92f65af878c25360cbf2ddc27d6d8b37f94a",
+      "bytes": 5696,
+      "Original_outcome": "error",
+      "Original_DOM": false,
+      "Rust_disposition": "Malformed"
+    },
+    {
+      "id": 65,
+      "name": "entity-undeclared",
+      "path": "cases/entity-undeclared.bgg",
+      "sha256": "121fbfd32a303715245721a7bef3b5c83573f7fd934aeef15a4eeabc4e88c18e",
+      "bytes": 5610,
+      "Original_outcome": "error",
+      "Original_DOM": false,
+      "Rust_disposition": "UnsupportedDtd; characterization only"
+    },
+    {
+      "id": 66,
+      "name": "entity-unparsed-declared",
+      "path": "cases/entity-unparsed-declared.bgg",
+      "sha256": "9ce33cc03972d935e2301ea968349c3f0380126a078001f367663a504d711cb0",
+      "bytes": 5787,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "UnsupportedDtd; characterization only"
+    },
+    {
+      "id": 67,
+      "name": "entities-undeclared",
+      "path": "cases/entities-undeclared.bgg",
+      "sha256": "0e54507b8adc6a8a65f07753ce1ba689f9d067eb3a5daac64ca9c20da7131adb",
+      "bytes": 5619,
+      "Original_outcome": "error",
+      "Original_DOM": false,
+      "Rust_disposition": "UnsupportedDtd; characterization only"
+    },
+    {
+      "id": 68,
+      "name": "entities-unparsed-declared",
+      "path": "cases/entities-unparsed-declared.bgg",
+      "sha256": "0c47cd9728383efa00370379d1096ca67726bb1774ea86d0ed335fc855908ff8",
+      "bytes": 5803,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "UnsupportedDtd; characterization only"
+    },
+    {
+      "id": 69,
+      "name": "notation-undeclared",
+      "path": "cases/notation-undeclared.bgg",
+      "sha256": "28171086a372ef7fcec4b379d40cf93e5cf55599f904a868c77d50f71ccb8c39",
+      "bytes": 5620,
+      "Original_outcome": "error",
+      "Original_DOM": false,
+      "Rust_disposition": "UnsupportedDtd; characterization only"
+    },
+    {
+      "id": 70,
+      "name": "notation-declared",
+      "path": "cases/notation-declared.bgg",
+      "sha256": "12f1d5343cc0b2f8b8d9fbee48283fb5c61fdd41e23768dab9a39a736d321c9a",
+      "bytes": 5673,
+      "Original_outcome": "success",
+      "Original_DOM": true,
+      "Rust_disposition": "UnsupportedDtd; characterization only"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "result": "PASS",
+  "scope": "Original Java observations only; no Rust acceptance or complete contact/frame claim",
+  "helper": {
+    "path": "tools/reference/ContactSupportOracle.java",
+    "sha256": "cf1e30620ba822c8430b348044ea1b5d99b438b134f6c64a67930b0fda293b5f"
+  },
+  "fixture": {
+    "path": "crates/core/tests/fixtures/contact_support.tsv",
+    "sha256": "931b7133bea398aef9a84947a0332f6d813aea3eff0197066e140c7cf95e195a"
+  },
+  "run_root": "<project-root>/.workflow-local/contact-support-oracle-s0g01g3y",
+  "commands": "<project-root>/.workflow-local/contact-support-oracle-s0g01g3y/commands.json",
+  "ledger": {
+    "cases": 193,
+    "snapshots": 523,
+    "calls": {
+      "virusneutralized": 5,
+      "lavenderinhibition": 21,
+      "lavendershield": 21,
+      "weaklavendershield": 21,
+      "pretouchEffects": 229,
+      "touchfriendEffects": 33
+    },
+    "rows": 663481,
+    "derived_rows": 535591,
+    "input_genotype_rows": 85700,
+    "collaborator_rows": 3138,
+    "selection_metadata_rows": 193,
+    "input_and_command_rows": 38859,
+    "tags": {
+      "C": 193,
+      "U": 28371,
+      "I": 8863,
+      "G": 100240,
+      "N": 219280,
+      "A": 579,
+      "P": 523,
+      "O": 241626,
+      "H": 4707,
+      "W": 5230,
+      "S": 27196,
+      "T": 25627,
+      "R": 523,
+      "K": 330,
+      "E": 193
+    }
+  },
+  "source_runs": [
+    {
+      "path": "<project-root>/.workflow-local/contact-support-oracle-s0g01g3y/source-a/output/contact_support.tsv",
+      "sha256": "931b7133bea398aef9a84947a0332f6d813aea3eff0197066e140c7cf95e195a"
+    },
+    {
+      "path": "<project-root>/.workflow-local/contact-support-oracle-s0g01g3y/source-b/output/contact_support.tsv",
+      "sha256": "931b7133bea398aef9a84947a0332f6d813aea3eff0197066e140c7cf95e195a"
+    },
+    {
+      "path": "<project-root>/.workflow-local/contact-support-oracle-s0g01g3y/jar/output/contact_support.tsv",
+      "sha256": "931b7133bea398aef9a84947a0332f6d813aea3eff0197066e140c7cf95e195a"
+    }
+  ],
+  "helper_classes": {
+    "ContactSupportOracle$Action.class": "6558c3e9945de7334ab9727ba398f4fa5908f17e041800718e75be4f8811e548",
+    "ContactSupportOracle$Spec.class": "8547b7a5fc7a797581198e6d7bbc0d32ceb614c029290c06a44f098881f8463f",
+    "ContactSupportOracle$Capture.class": "4d4b2e44bc580c1e8338b5455b35ca0ee2c30d77826e8841f2bbf4e1ef4d96b2",
+    "ContactSupportOracle.class": "1a7dffd7218b8f7535423638eb20dbea24d4a3d6734ff90f6c18006f6bf1f188"
+  },
+  "negative_guards": [
+    {
+      "condition": "user.home",
+      "exit_code": 1
+    },
+    {
+      "condition": "java.io.tmpdir",
+      "exit_code": 1
+    },
+    {
+      "condition": "java.util.prefs.userRoot",
+      "exit_code": 1
+    },
+    {
+      "condition": "java.util.prefs.systemRoot",
+      "exit_code": 1
+    },
+    {
+      "condition": "existing-output",
+      "exit_code": 1
+    },
+    {
+      "condition": "missing-argument",
+      "exit_code": 1
+    }
+  ],
+  "original_pins_verified": 74,
+  "prior_fixtures_verified": 24,
+  "frozen_production": {
+    "crates/core/src/contact_support.rs": "5fef45383ceb84cbe2cf340c4b75067a7f53aea8399255037606e0d187ecef99",
+    "crates/core/src/lifecycle.rs": "8917d7784dacd3e337a58d9d605a808a34f6ce5bfaba4d6271206a1436e2d50a"
+  },
+  "versions": {
+    "java": {
+      "stdout": "",
+      "stderr": "openjdk version \"21.0.12.1\" 2026-08-18\nOpenJDK Runtime Environment (build 21.0.12.1+1)\nOpenJDK 64-Bit Server VM (build 21.0.12.1+1, mixed mode, sharing)\n"
+    },
+    "javac": {
+      "stdout": "javac 21.0.12.1\n",
+      "stderr": ""
+    }
+  },
+  "original_pin_scope": "SHA256 and size; mode where present in reference manifest",
+  "extended_precomparison_scope": {
+    "original_cases": 178,
+    "preserved_prefix_sha256": "d7d651100a293b7d18868ec8952d9f46a308e9cd44ef236096f2412743d8f5db",
+    "archive": ".workflow-local/contact-support-oracle-hteswn92/published-original",
+    "extension_cases": 15,
+    "reason": "Actual source NaN, infinity, negative and signed-zero coefficient observations before the DarkGray predicate correction"
+  }
+}

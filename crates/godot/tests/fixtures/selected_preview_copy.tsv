@@ -1,0 +1,8 @@
+empty-panel-preserves	first
+present-panel-copies-exact	second
+cleared-panel-preserves	second
+empty-panel-empty-clipboard	null
+living-menu-null-clears	null
+living-menu-present-copies	second
+dead-menu-preserves	first
+absent-menu-preserves	first

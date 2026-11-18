@@ -1,0 +1,141 @@
+{
+  "status": "SOURCE_ONLY_UNEXECUTED_PROPOSED_INTERNAL_DTD_WITNESSES",
+  "claim_sha256": "65374d4ebe2fca599d2c11f0769e5212ea176025024430a77deb7832bf7ab2bd",
+  "assessment_sha256": "5e247ec65bb0730946658614b8f440ee26234f06988ff97b10091609df3b2320",
+  "original_ledger": {
+    "path": "<project-root>/crates/core/tests/fixtures/xml.tsv",
+    "sha256": "ba5546e89bde74a6b277483e557d4ce3f1c4251e79b29937f44cc647adcffac7"
+  },
+  "seeds": [
+    {
+      "id": "0000",
+      "name": "canonical-baseline",
+      "path": "<project-root>/crates/core/tests/fixtures/xml/cases/0000/input.bgg",
+      "sha256": "1d2957133d3670022f65602ca986e44edd1fa46163ac8a7f0fb49371fe797f42",
+      "bytes": 4794,
+      "source_parse_outcome": "success",
+      "source_parse_gene_count": 1,
+      "Source_evidence": "xml.tsv step-0 original parse",
+      "byte_identity_for_seed_control": true
+    },
+    {
+      "id": "0246",
+      "name": "empty-permissive-gene-list",
+      "path": "<project-root>/crates/core/tests/fixtures/xml/cases/0246/input.bgg",
+      "sha256": "29769b9a7157a3c2b61ba251e16d4b5ce02b4ba14f26b79d70145e2eeeb3cee4",
+      "bytes": 4038,
+      "source_parse_outcome": "success",
+      "source_parse_gene_count": 0,
+      "Source_evidence": "xml.tsv step-0 original parse",
+      "byte_identity_for_seed_control": true
+    },
+    {
+      "id": "0247",
+      "name": "internal-dtd-default",
+      "path": "<project-root>/crates/core/tests/fixtures/xml/cases/0247/input.bgg",
+      "sha256": "63b154797fb8ce64ffa89789ea0e361e05b60880efa48c15c59fac1654bcb309",
+      "bytes": 4773,
+      "source_parse_outcome": "success",
+      "source_parse_gene_count": 1,
+      "Source_evidence": "xml.tsv step-0 original parse",
+      "byte_identity_for_seed_control": true
+    },
+    {
+      "id": "0248",
+      "name": "internal-entity-attribute",
+      "path": "<project-root>/crates/core/tests/fixtures/xml/cases/0248/input.bgg",
+      "sha256": "685b38ec10adaf40c7535a428fd72e47fc95f715ac5d5ac2cf018ca5f3d3953f",
+      "bytes": 4822,
+      "source_parse_outcome": "success",
+      "source_parse_gene_count": 1,
+      "Source_evidence": "xml.tsv step-0 original parse",
+      "byte_identity_for_seed_control": true
+    },
+    {
+      "id": "0258",
+      "name": "all-internal-dtd-attribute-defaults",
+      "path": "<project-root>/crates/core/tests/fixtures/xml/cases/0258/input.bgg",
+      "sha256": "bb9f09771ccacb85a2eecbab528a5840638fa1756604f900f2f7f269828188b7",
+      "bytes": 3381,
+      "source_parse_outcome": "success",
+      "source_parse_gene_count": 1,
+      "Source_evidence": "xml.tsv step-0 original parse",
+      "byte_identity_for_seed_control": true
+    }
+  ],
+  "models": [
+    "(gene,gene)",
+    "(gene,gene,gene)",
+    "((gene,gene))",
+    "(gene,gene)?",
+    "(gene,gene)*",
+    "(gene,gene)+"
+  ],
+  "authored_gene_variants": [
+    {},
+    {
+      "length": "13.5",
+      "theta": "-0.125",
+      "color": "red",
+      "branch": "0",
+      "redreaction": "21"
+    },
+    {
+      "length": "14.5",
+      "theta": "0.0",
+      "color": "blue",
+      "branch": "1",
+      "redreaction": "22"
+    },
+    {
+      "length": "15.5",
+      "theta": "0.125",
+      "color": "white",
+      "branch": "2",
+      "redreaction": "23"
+    }
+  ],
+  "gene_fragment_sha256_by_seed": {
+    "0000": [
+      "0cccd498a68d5d1a0f6cfdfb60b8ed89acfb112697a658dd21baf7a31f4d0faa",
+      "7701d7f448fa46eea8c06568cb7c3e0c32881ce6b627a32d11f328171eb23e49",
+      "0876e1c77f24b60283220b5edbe955270dedc00d8137f4e6c4dea319c2c46a96",
+      "7a57b96b9be9ceae39ca93a11b07422c5e0204ce246347cc79aadb83e41a1edd"
+    ],
+    "0247": [
+      "0cccd498a68d5d1a0f6cfdfb60b8ed89acfb112697a658dd21baf7a31f4d0faa",
+      "7701d7f448fa46eea8c06568cb7c3e0c32881ce6b627a32d11f328171eb23e49",
+      "0876e1c77f24b60283220b5edbe955270dedc00d8137f4e6c4dea319c2c46a96",
+      "7a57b96b9be9ceae39ca93a11b07422c5e0204ce246347cc79aadb83e41a1edd"
+    ],
+    "0248": [
+      "7ec127ab5df69834d143ef63af7213f95dee1d7d5aed47677d79fb0c113881d6",
+      "7701d7f448fa46eea8c06568cb7c3e0c32881ce6b627a32d11f328171eb23e49",
+      "0876e1c77f24b60283220b5edbe955270dedc00d8137f4e6c4dea319c2c46a96",
+      "7a57b96b9be9ceae39ca93a11b07422c5e0204ce246347cc79aadb83e41a1edd"
+    ],
+    "0258": [
+      "591969753df47d088e6b3f89d678d9a36cb71f39bc5ef11be67a024c30fa8384",
+      "2fd91c09f0120f80d39a1a1b619d6d301ec655185fd2ce2fbe1bf9de866c8acc",
+      "2ded28cb7ea4a6e1dcca709c7eb3cd59489d365f89566a0c27729dc25b3c68cf",
+      "c11b46b0d2d3c7eb67753d5b6d2b34676aa7e41fd0de02a0277a632537e0c576"
+    ]
+  },
+  "case_count": 66,
+  "category_counts": {
+    "defaults-or-entity-interaction": 18,
+    "malformed-model-or-suffix": 9,
+    "reversed-order": 2,
+    "six-model-count-matrix": 30,
+    "unchanged-seed": 5,
+    "wrong-name": 2
+  },
+  "input_total_bytes": 359040,
+  "largest_document_bytes": 7088,
+  "requested_counts": "Literal gene elements only; wrong-name controls also record total child elements",
+  "outcomes": "Only five byte-identical seeds have prior Source parse outcomes. Every new outcome remains unverified.",
+  "zero_gene_scope": "0246 Original parse succeeds; Original write succeeds but its stricter output reparse fails. This helper calls parse only.",
+  "source_runtime_calls": 0,
+  "old_corpus_writes": 0,
+  "Rust_edits": 0
+}

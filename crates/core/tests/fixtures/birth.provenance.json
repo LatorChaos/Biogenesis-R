@@ -1,0 +1,2020 @@
+{
+  "schema": "biogenesis-birth-oracle-v1",
+  "generated_utc": "2026-10-25T22:47:53.086680+00:00",
+  "helper": {
+    "path": "tools/reference/BirthOracle.java",
+    "sha256": "383e2abdc0693cef35161607e2d4ec49f64c4bf56661c92b10355f2d19fa4efb",
+    "mode": "default",
+    "compiled_classes": {
+      "helpers-source/biogenesis/BirthOracle$Spec.class": "d02cde1e1c7a1de0ce1f47f270de01ea5edd675fe4e1e1ff0e7c5ef8718fab6e",
+      "helpers-source/biogenesis/BirthOracle$Context.class": "53eb579ba4e1d1fb4b70a04b56d42c0a5075f79179b87fc1257c4999831ae6d1",
+      "helpers-source/biogenesis/BirthOracle.class": "9d30bcc1efe00cad9a595b5761fff8bf5f7f8c7766dd63ba6708e8cd9b6b419f",
+      "helpers-jar/biogenesis/BirthOracle$Spec.class": "d02cde1e1c7a1de0ce1f47f270de01ea5edd675fe4e1e1ff0e7c5ef8718fab6e",
+      "helpers-jar/biogenesis/BirthOracle$Context.class": "53eb579ba4e1d1fb4b70a04b56d42c0a5075f79179b87fc1257c4999831ae6d1",
+      "helpers-jar/biogenesis/BirthOracle.class": "9d30bcc1efe00cad9a595b5761fff8bf5f7f8c7766dd63ba6708e8cd9b6b419f"
+    },
+    "source_jar_compiled_helpers_identical": true,
+    "bounded_search_limit_exclusive": 1024
+  },
+  "fixture": {
+    "path": "crates/core/tests/fixtures/birth.tsv",
+    "sha256": "8b9bcee0ed1232b1d90050587e52cb19548a14f833da63749dcd6c96ccae8a22",
+    "bytes": 4359498,
+    "all_three_outputs_byte_identical": true,
+    "cases": 63,
+    "rows": 92161,
+    "row_counts": {
+      "C": 63,
+      "U": 9261,
+      "I": 751,
+      "O": 25868,
+      "G": 14120,
+      "N": 37560,
+      "A": 2242,
+      "W": 1716,
+      "R": 286,
+      "T": 158,
+      "L": 73,
+      "E": 63
+    },
+    "organism_snapshots": 446,
+    "recorded_inheritance_attempts": 80,
+    "successful_inheritance_attempts": 65,
+    "failed_inheritance_attempts": 15,
+    "recorded_state_stages": 286
+  },
+  "reference": {
+    "original_manifest": "docs/evidence/reference-manifest.json",
+    "original_hash_size_mode_checks": 74,
+    "source_compile_receipt": ".workflow-local/reference-build/compile.json",
+    "source_compile_receipt_sha256": "4fc1785c218238508d72b89ba883d94bc8a1fa24631e990463dd71502a78e184",
+    "source_sha256": {
+      "Gene": "d070db688526a401c8b55904c06066b2169ca82c76837e3001b4c423bc80e720",
+      "GeneticCode": "f8bf3d0315cec8a2bf515a1626391fe5b646e47566234d398ef58bbdbc3a9004",
+      "Organism": "8650cb0983069dbae09e2ca704059fb82761fa6e0d87f35218c2342ffc60df46",
+      "Utils": "7b3306148684ba111629690a928dcb45abd4825104cfb90b530cd2d0dc6dd2b3",
+      "World": "a67543055a665a9a378e37c860671996e2ca0f510cb622375172a24333d7cae1"
+    },
+    "backend_class_sha256": {
+      "Gene": {
+        "compiled_source": "29fe7b153555ded4383072debd0452bed5f92692afd0488a88c297d5f04f6ea8",
+        "bundled_jar_class": "b307c29cbd73a98cdcbf7d5da9a3ed771fd4d419f6426fbfd41510934c0a7988"
+      },
+      "GeneticCode": {
+        "compiled_source": "4bbf99eaf9006840ecbba0958496372a220ed44c4e57c8341c4de3dc29f3fb30",
+        "bundled_jar_class": "2aba7f494115279c26bb918dc8156c7ff67af047c2bcb32e35db113f2b87c51e"
+      },
+      "Organism": {
+        "compiled_source": "e8facb409642f0288411785985cbfd96440f644226795f14de24705554a46e22",
+        "bundled_jar_class": "561d53132aa1765ba766c7d251a98090617c7e9884ae8ed1f9543237e32257f0"
+      },
+      "Utils": {
+        "compiled_source": "67adba4432972ffa3922b6f622d2cc12bf0e703a7dfbf97ae94f3f95387b1884",
+        "bundled_jar_class": "8f258ba2cb30beea85f44a60ecb4189faf7493f39102712bc9ff1114456e1060"
+      },
+      "World": {
+        "compiled_source": "9091d4e5cae555493971a37a9c8fc77e2250e68db073a120a3a08b57b03e131e",
+        "bundled_jar_class": "be8067767dc18b46fbd7fd798c5e67e8a58ff6922b78d65eee28ab033360bd33"
+      }
+    },
+    "jar_sha256": "0baeae8d29f5fdbbb830c1a9e51c7f2b5314a33011b20ec7471eeaa27f0398e1",
+    "jts_sha256": "00102cde26c457b81fbb0248e4f8845884243caba0dc9b7fb42e0ea877383bc1",
+    "unchanged_prior_tsv_sha256": {
+      "genetics.tsv": "1fc3f745a83427c499d84884dfdb6864fdc222861feb30488d7083a4a0126b71",
+      "organism_state.tsv": "298e7a37eb2983252797a40e45ff721141ba22e6b8cfdaba91a1bfa079552f8b",
+      "paste_rejection.tsv": "73b1fa2480d2211e29cbbb24c4653c18d3a0786c5e0074f84e0c378b0b333db9",
+      "genotype_identity.tsv": "b6a85cb8b2b628a8a8b25c3de2db1445a61433b06c7b66647670c07a1ea0b9ac"
+    }
+  },
+  "execution": {
+    "raw_receipts": ".workflow-local/birth-oracle-extended-96z7qx2o/commands.json",
+    "versions": {
+      "java": "openjdk version \"21.0.12.1\" 2026-08-18\nOpenJDK Runtime Environment (build 21.0.12.1+1)\nOpenJDK 64-Bit Server VM (build 21.0.12.1+1, mixed mode, sharing)\n",
+      "javac": "javac 21.0.12.1\n"
+    },
+    "compile_commands": [
+      {
+        "argv": [
+          "javac",
+          "-encoding",
+          "UTF-8",
+          "-cp",
+          "<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "-d",
+          "<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o/helpers-source",
+          "<project-root>/tools/reference/BirthOracle.java"
+        ],
+        "cwd": "<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o",
+        "pid": 4,
+        "process_group": 4,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.6219959139998537,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "javac",
+          "-encoding",
+          "UTF-8",
+          "-cp",
+          "<reference-root>/ColorMod_2_01/biogenesis.jar:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "-d",
+          "<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o/helpers-jar",
+          "<project-root>/tools/reference/BirthOracle.java"
+        ],
+        "cwd": "<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o",
+        "pid": 32,
+        "process_group": 32,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.6134908330022881,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "positive_runs": [
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o/default-source-a/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o/default-source-a/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o/default-source-a/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o/default-source-a/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.BirthOracle",
+          "<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o/default-source-a/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o/default-source-a",
+        "pid": 61,
+        "process_group": 61,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 1.0591097400028957,
+        "stdout": "BIRTH_ORACLE PASS cases=63 search_limit=1024\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o/default-source-b/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o/default-source-b/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o/default-source-b/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o/default-source-b/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.BirthOracle",
+          "<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o/default-source-b/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o/default-source-b",
+        "pid": 91,
+        "process_group": 91,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 1.0312717300002987,
+        "stdout": "BIRTH_ORACLE PASS cases=63 search_limit=1024\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o/default-jar/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o/default-jar/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o/default-jar/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o/default-jar/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o/helpers-jar:<reference-root>/ColorMod_2_01/biogenesis.jar:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.BirthOracle",
+          "<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o/default-jar/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o/default-jar",
+        "pid": 121,
+        "process_group": 121,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 1.1266646180010866,
+        "stdout": "BIRTH_ORACLE PASS cases=63 search_limit=1024\n",
+        "stderr": ""
+      }
+    ],
+    "negative_guards": [
+      {
+        "argv": [
+          "java",
+          "-Djava.awt.headless=true",
+          "-cp",
+          "<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.BirthOracle",
+          "<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o/default-negative/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o/default-negative",
+        "pid": 42,
+        "process_group": 42,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.02997727599722566,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: user.home\n\tat biogenesis.BirthOracle.require(BirthOracle.java:186)\n\tat biogenesis.BirthOracle.main(BirthOracle.java:560)\n"
+      },
+      {
+        "argv": [
+          "java",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o/default-source-a/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o/default-source-a/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o/default-source-a/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o/default-source-a/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.BirthOracle",
+          "<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o/default-source-a/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/birth-oracle-extended-96z7qx2o/default-negative",
+        "pid": 60,
+        "process_group": 60,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.030008038997038966,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Output directory must not exist\n\tat biogenesis.BirthOracle.require(BirthOracle.java:186)\n\tat biogenesis.BirthOracle.main(BirthOracle.java:562)\n"
+      }
+    ],
+    "headless": true,
+    "explicit_profile_properties": [
+      "user.home",
+      "java.io.tmpdir",
+      "java.util.prefs.userRoot",
+      "java.util.prefs.systemRoot"
+    ],
+    "subprocess_boundary": "Existing run_reference_oracles.run_command bounds owned process groups and records actual exits."
+  },
+  "inputs": {
+    "parent": "Real World(null), actual gas additions, actual Organism constructor and paste at3500,3500.",
+    "setup_seed": 827364,
+    "birth_rng": "Reset ordinary Random to C seed immediately before first child constructor. Retry continues its actual state.",
+    "settings": "Reset DEF fields; min0/max10000/meta0, case clade limit, one-hot GREEN7/all45otherweights0. U rows record effective primitive settings.",
+    "explicit_parent_controls": "I rows apply after pasted snapshot and before prepared snapshot.",
+    "genotype_inputs": "Pasted G/N records supply explicit parent/infection/saved genomes. Later child observations are never inputs.",
+    "blockers": "Real pasted objects with labelled explicit Rectangle bounds; actual STRtree holds recorded objects/envelopes.",
+    "rng_observation": "R peeks serialize ordinary Random into an independent in-memory copy; actual stream does not advance."
+  },
+  "ordering": {
+    "before_child": "Actual constructor runs before attempt-before snapshots, preserving initial zero Rectangle dimensions.",
+    "after_child": "Actual inherit result/state is recorded before successful direct list append.",
+    "spatial_tree": "Successful children remain absent from frozen STRtree. Explicit retry T rebuild removes blocker and retains parent.",
+    "world_integration": "Direct list append avoids UI-dependent addOrganism; population/public reproduction statistics remain unexercised."
+  },
+  "comparison_contract": {
+    "declared_before_rust_variant_comparison": false,
+    "derived_geometry": {
+      "allowed_fields": [
+        "_m",
+        "_m1",
+        "_m2",
+        "_mass",
+        "_I"
+      ],
+      "finite": "Actual must be finite; abs(actual-expected)<=1e-10*max(1,abs(expected)).",
+      "nan": "Expected NaN requires actual NaN.",
+      "infinity": "Expected infinity requires identical signed infinity.",
+      "arrays": "Lengths and element order remain exact."
+    },
+    "all_other_floats": "Exact raw bits, including scalar effects, photo coefficients, energy, gases, angles and RNG.",
+    "discrete": "Endpoints, bounds, reactions, ARGB, integers, booleans, lengths and ordering compare exactly.",
+    "discarded_candidate": "Recorded Java rejected-object observations remain; unexposed Rust discarded fields require explicit dispositions without equality claims.",
+    "rust_status": "No Rust comparison or full parity result is claimed by this Java provenance."
+  },
+  "preservation": {
+    "four_prior_tsv_fixtures_unchanged": true,
+    "default63case_sha256": "8b9bcee0ed1232b1d90050587e52cb19548a14f833da63749dcd6c96ccae8a22",
+    "extended_helper_default_source_source_jar_retains_original_bytes": true,
+    "original_files_unchanged": 74,
+    "existing_output_preserved": true,
+    "missing_profiles_failed_before_output_creation": true
+  },
+  "observed_cases": [
+    {
+      "name": "ordinary",
+      "operation": "single",
+      "birth_seed": 827364,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "4039400000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00",
+          "bounds": "3498,3502,2,2",
+          "_reference": "g1",
+          "_nGenes": "1",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "selfish-integer-half",
+      "operation": "single",
+      "birth_seed": 827364,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "4030aaaaaaaaaaab",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00",
+          "bounds": "3498,3502,2,2",
+          "_reference": "g1",
+          "_nGenes": "1",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "parent-energy-cap",
+      "operation": "single",
+      "birth_seed": 827364,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "4004000000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00",
+          "bounds": "3498,3502,2,2",
+          "_reference": "g1",
+          "_nGenes": "1",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "early-threshold",
+      "operation": "single",
+      "birth_seed": 827364,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "402e800000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00,ffffff80",
+          "bounds": "3500,3494,3,4",
+          "_reference": "g1",
+          "_nGenes": "2",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "infected",
+      "operation": "single",
+      "birth_seed": 827364,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "403e400000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ffffffff",
+          "bounds": "3498,3502,2,2",
+          "_reference": "g2",
+          "_nGenes": "1",
+          "_cladeID": "virus",
+          "_generation": "81",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "jade-infected-cap",
+      "operation": "single",
+      "birth_seed": 827364,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "4039400000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ffffffff",
+          "bounds": "3498,3503,2,2",
+          "_reference": "g2",
+          "_nGenes": "1",
+          "_cladeID": "virus",
+          "_generation": "81",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "jade-consumer-exception",
+      "operation": "single",
+      "birth_seed": 827364,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "4049200000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ffffffff",
+          "bounds": "3498,3503,2,2",
+          "_reference": "g2",
+          "_nGenes": "1",
+          "_cladeID": "virus",
+          "_generation": "81",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "indigo-infected",
+      "operation": "single",
+      "birth_seed": 827364,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "40363e1e1e1e1e1f",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ffffffff",
+          "bounds": "3498,3503,2,2",
+          "_reference": "g2",
+          "_nGenes": "1",
+          "_cladeID": "virus",
+          "_generation": "81",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "jade-indigo-infected",
+      "operation": "single",
+      "birth_seed": 827364,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "403290f0f0f0f0f1",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ffffffff",
+          "bounds": "3496,3503,2,2",
+          "_reference": "g2",
+          "_nGenes": "1",
+          "_cladeID": "virus",
+          "_generation": "81",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "indigo-low-energy-mirror-0",
+      "operation": "single",
+      "birth_seed": 827364,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": false,
+          "_energy": "3ffd69696969696a",
+          "_max_age": "0",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "~",
+          "bounds": "0,0,0,0",
+          "_reference": "~"
+        }
+      ]
+    },
+    {
+      "name": "indigo-boundary-mirror-0",
+      "operation": "single",
+      "birth_seed": 827364,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "400bf0f0f0f0f0f2",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ffffffff,ffffffff,ffffffff",
+          "bounds": "3494,3499,5,4",
+          "_reference": "g2",
+          "_nGenes": "1",
+          "_cladeID": "virus",
+          "_generation": "81",
+          "_symmetry": "3",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "indigo-low-energy-mirror-1",
+      "operation": "single",
+      "birth_seed": 827364,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": false,
+          "_energy": "3ffd69696969696a",
+          "_max_age": "0",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "~",
+          "bounds": "0,0,0,0",
+          "_reference": "~"
+        }
+      ]
+    },
+    {
+      "name": "indigo-boundary-mirror-1",
+      "operation": "single",
+      "birth_seed": 827364,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": false,
+          "_energy": "400bf0f0f0f0f0f2",
+          "_max_age": "0",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "~",
+          "bounds": "0,0,0,0",
+          "_reference": "~"
+        }
+      ]
+    },
+    {
+      "name": "saved-overrides-infection-genotype",
+      "operation": "single",
+      "birth_seed": 827364,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "403e400000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff0000ff",
+          "bounds": "3498,3500,2,2",
+          "_reference": "g2",
+          "_nGenes": "1",
+          "_cladeID": "saved",
+          "_generation": "91",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "infected-dead-birth",
+      "operation": "single",
+      "birth_seed": 827364,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "3ff0000000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff964b00",
+          "bounds": "3498,3502,2,2",
+          "_reference": "g2",
+          "_nGenes": "1",
+          "_cladeID": "virus",
+          "_generation": "81",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "single-inherited-velocity",
+      "operation": "single",
+      "birth_seed": 827364,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "4049400000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00",
+          "bounds": "3498,3502,2,2",
+          "_reference": "g1",
+          "_nGenes": "1",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "single-dispersal",
+      "operation": "single",
+      "birth_seed": 827364,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "4049400000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00",
+          "bounds": "3498,3502,2,2",
+          "_reference": "g1",
+          "_nGenes": "1",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "direction--1--1",
+      "operation": "single",
+      "birth_seed": 32,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "4049400000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00",
+          "bounds": "3498,3498,2,2",
+          "_reference": "g1",
+          "_nGenes": "1",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "blocked-direction--1--1",
+      "operation": "blocked-direction",
+      "birth_seed": 53,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "4049400000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00",
+          "bounds": "3497,3497,2,2",
+          "_reference": "g1",
+          "_nGenes": "1",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "direction--1-0",
+      "operation": "single",
+      "birth_seed": 53,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "4049400000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00",
+          "bounds": "3498,3500,2,2",
+          "_reference": "g1",
+          "_nGenes": "1",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "blocked-direction--1-0",
+      "operation": "blocked-direction",
+      "birth_seed": 48,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "4049400000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00",
+          "bounds": "3497,3500,2,2",
+          "_reference": "g1",
+          "_nGenes": "1",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "direction--1-1",
+      "operation": "single",
+      "birth_seed": 48,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "4049400000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00",
+          "bounds": "3498,3502,2,2",
+          "_reference": "g1",
+          "_nGenes": "1",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "blocked-direction--1-1",
+      "operation": "blocked-direction",
+      "birth_seed": 8,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "4049400000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00",
+          "bounds": "3497,3503,2,2",
+          "_reference": "g1",
+          "_nGenes": "1",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "direction-0--1",
+      "operation": "single",
+      "birth_seed": 16,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "4049400000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00",
+          "bounds": "3500,3498,2,2",
+          "_reference": "g1",
+          "_nGenes": "1",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "blocked-direction-0--1",
+      "operation": "blocked-direction",
+      "birth_seed": 32,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "4049400000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00",
+          "bounds": "3500,3497,2,2",
+          "_reference": "g1",
+          "_nGenes": "1",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "direction-0-1",
+      "operation": "single",
+      "birth_seed": 8,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "4049400000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00",
+          "bounds": "3500,3502,2,2",
+          "_reference": "g1",
+          "_nGenes": "1",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "blocked-direction-0-1",
+      "operation": "blocked-direction",
+      "birth_seed": 0,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "4049400000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00",
+          "bounds": "3500,3503,2,2",
+          "_reference": "g1",
+          "_nGenes": "1",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "direction-1--1",
+      "operation": "single",
+      "birth_seed": 17,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "4049400000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00",
+          "bounds": "3502,3498,2,2",
+          "_reference": "g1",
+          "_nGenes": "1",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "blocked-direction-1--1",
+      "operation": "blocked-direction",
+      "birth_seed": 16,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "4049400000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00",
+          "bounds": "3503,3497,2,2",
+          "_reference": "g1",
+          "_nGenes": "1",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "direction-1-0",
+      "operation": "single",
+      "birth_seed": 2,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "4049400000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00",
+          "bounds": "3502,3500,2,2",
+          "_reference": "g1",
+          "_nGenes": "1",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "blocked-direction-1-0",
+      "operation": "blocked-direction",
+      "birth_seed": 17,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "4049400000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00",
+          "bounds": "3503,3500,2,2",
+          "_reference": "g1",
+          "_nGenes": "1",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "direction-1-1",
+      "operation": "single",
+      "birth_seed": 0,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "4049400000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00",
+          "bounds": "3502,3502,2,2",
+          "_reference": "g1",
+          "_nGenes": "1",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "blocked-direction-1-1",
+      "operation": "blocked-direction",
+      "birth_seed": 2,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "4049400000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00",
+          "bounds": "3503,3503,2,2",
+          "_reference": "g1",
+          "_nGenes": "1",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "litter-eight-reservations",
+      "operation": "litter",
+      "birth_seed": 0,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "405bc71c71c71c72",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00",
+          "bounds": "3502,3502,2,2",
+          "_reference": "g1",
+          "_nGenes": "1",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        },
+        {
+          "stage": "attempt-1-after",
+          "success": true,
+          "_energy": "405bc71c71c71c72",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00",
+          "bounds": "3498,3502,2,2",
+          "_reference": "g2",
+          "_nGenes": "1",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        },
+        {
+          "stage": "attempt-2-after",
+          "success": true,
+          "_energy": "405bc71c71c71c72",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00",
+          "bounds": "3500,3502,2,2",
+          "_reference": "g3",
+          "_nGenes": "1",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        },
+        {
+          "stage": "attempt-3-after",
+          "success": true,
+          "_energy": "405bc71c71c71c72",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00",
+          "bounds": "3497,3500,2,2",
+          "_reference": "g4",
+          "_nGenes": "1",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        },
+        {
+          "stage": "attempt-4-after",
+          "success": true,
+          "_energy": "405bc71c71c71c72",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00",
+          "bounds": "3502,3498,2,2",
+          "_reference": "g5",
+          "_nGenes": "1",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        },
+        {
+          "stage": "attempt-5-after",
+          "success": true,
+          "_energy": "405bc71c71c71c72",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00",
+          "bounds": "3502,3500,2,2",
+          "_reference": "g6",
+          "_nGenes": "1",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        },
+        {
+          "stage": "attempt-6-after",
+          "success": true,
+          "_energy": "405bc71c71c71c72",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00",
+          "bounds": "3498,3498,2,2",
+          "_reference": "g7",
+          "_nGenes": "1",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        },
+        {
+          "stage": "attempt-7-after",
+          "success": true,
+          "_energy": "405bc71c71c71c72",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00",
+          "bounds": "3500,3498,2,2",
+          "_reference": "g8",
+          "_nGenes": "1",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        },
+        {
+          "stage": "attempt-8-after",
+          "success": false,
+          "_energy": "405bc71c71c71c72",
+          "_max_age": "0",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00",
+          "bounds": "3500,3497,2,2",
+          "_reference": "g9",
+          "_nGenes": "1",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "clade-retry-increase-genes",
+      "operation": "retry",
+      "birth_seed": 2,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": false,
+          "_energy": "4049400000000000",
+          "_max_age": "0",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00",
+          "bounds": "3510,3470,22,22",
+          "_reference": "g1",
+          "_nGenes": "5",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "4",
+          "_updateClade": "true"
+        },
+        {
+          "stage": "attempt-1-after",
+          "success": true,
+          "_energy": "4049400000000000",
+          "_max_age": "11",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00",
+          "bounds": "3510,3510,22,22",
+          "_reference": "g1",
+          "_nGenes": "5",
+          "_cladeID": "root+2",
+          "_generation": "42",
+          "_symmetry": "4",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "clade-marker-limit-0",
+      "operation": "retry",
+      "birth_seed": 2,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": false,
+          "_energy": "4049400000000000",
+          "_max_age": "0",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00",
+          "bounds": "3510,3470,22,22",
+          "_reference": "g1",
+          "_nGenes": "5",
+          "_cladeID": "root+3",
+          "_generation": "42",
+          "_symmetry": "4",
+          "_updateClade": "true"
+        },
+        {
+          "stage": "attempt-1-after",
+          "success": true,
+          "_energy": "4049400000000000",
+          "_max_age": "11",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00",
+          "bounds": "3510,3510,22,22",
+          "_reference": "g1",
+          "_nGenes": "5",
+          "_cladeID": "root+3",
+          "_generation": "42",
+          "_symmetry": "4",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "clade-marker-limit-1",
+      "operation": "retry",
+      "birth_seed": 2,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": false,
+          "_energy": "4049400000000000",
+          "_max_age": "0",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00",
+          "bounds": "3510,3470,22,22",
+          "_reference": "g1",
+          "_nGenes": "5",
+          "_cladeID": "root+3",
+          "_generation": "42",
+          "_symmetry": "4",
+          "_updateClade": "true"
+        },
+        {
+          "stage": "attempt-1-after",
+          "success": true,
+          "_energy": "4049400000000000",
+          "_max_age": "11",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00",
+          "bounds": "3510,3510,22,22",
+          "_reference": "g1",
+          "_nGenes": "5",
+          "_cladeID": "root+3",
+          "_generation": "42",
+          "_symmetry": "4",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "clade-marker-limit-2",
+      "operation": "retry",
+      "birth_seed": 2,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": false,
+          "_energy": "4049400000000000",
+          "_max_age": "0",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00",
+          "bounds": "3510,3470,22,22",
+          "_reference": "g1",
+          "_nGenes": "5",
+          "_cladeID": "root+3",
+          "_generation": "42",
+          "_symmetry": "4",
+          "_updateClade": "true"
+        },
+        {
+          "stage": "attempt-1-after",
+          "success": true,
+          "_energy": "4049400000000000",
+          "_max_age": "11",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00",
+          "bounds": "3510,3510,22,22",
+          "_reference": "g1",
+          "_nGenes": "5",
+          "_cladeID": "root+3+2",
+          "_generation": "42",
+          "_symmetry": "4",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "clade-retry-decrease-genes",
+      "operation": "retry",
+      "birth_seed": 8,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": false,
+          "_energy": "4049400000000000",
+          "_max_age": "0",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00",
+          "bounds": "3486,3498,6,6",
+          "_reference": "g1",
+          "_nGenes": "3",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "4",
+          "_updateClade": "true"
+        },
+        {
+          "stage": "attempt-1-after",
+          "success": true,
+          "_energy": "4049400000000000",
+          "_max_age": "9",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00",
+          "bounds": "3510,3486,6,6",
+          "_reference": "g1",
+          "_nGenes": "3",
+          "_cladeID": "root-2",
+          "_generation": "42",
+          "_symmetry": "4",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "clade-retry-increase-symmetry",
+      "operation": "retry",
+      "birth_seed": 5,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": false,
+          "_energy": "4049400000000000",
+          "_max_age": "0",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00",
+          "bounds": "3495,3480,12,12",
+          "_reference": "g1",
+          "_nGenes": "4",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "8",
+          "_updateClade": "true"
+        },
+        {
+          "stage": "attempt-1-after",
+          "success": true,
+          "_energy": "4049400000000000",
+          "_max_age": "14",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00",
+          "bounds": "3480,3510,12,12",
+          "_reference": "g1",
+          "_nGenes": "4",
+          "_cladeID": "root>2",
+          "_generation": "42",
+          "_symmetry": "8",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "clade-retry-decrease-symmetry",
+      "operation": "retry",
+      "birth_seed": 0,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": false,
+          "_energy": "4049400000000000",
+          "_max_age": "0",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00",
+          "bounds": "3510,3510,10,10",
+          "_reference": "g1",
+          "_nGenes": "4",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "3",
+          "_updateClade": "true"
+        },
+        {
+          "stage": "attempt-1-after",
+          "success": true,
+          "_energy": "4049400000000000",
+          "_max_age": "9",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00",
+          "bounds": "3508,3510,11,11",
+          "_reference": "g1",
+          "_nGenes": "4",
+          "_cladeID": "root<2",
+          "_generation": "42",
+          "_symmetry": "3",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "clade-retry-equal-symmetry",
+      "operation": "retry",
+      "birth_seed": 18,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": false,
+          "_energy": "4049400000000000",
+          "_max_age": "0",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00",
+          "bounds": "3510,3476,16,16",
+          "_reference": "g1",
+          "_nGenes": "4",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "4",
+          "_updateClade": "true"
+        },
+        {
+          "stage": "attempt-1-after",
+          "success": true,
+          "_energy": "4049400000000000",
+          "_max_age": "10",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00,ff00ff00",
+          "bounds": "3493,3510,16,16",
+          "_reference": "g1",
+          "_nGenes": "4",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "4",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "spore-parent-1",
+      "operation": "single",
+      "birth_seed": 827364,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "403e000000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "1",
+          "_segColor": "ffff80c0,ffff80c0",
+          "bounds": "3497,3494,3,4",
+          "_reference": "g0",
+          "_nGenes": "2",
+          "_cladeID": "root",
+          "_generation": "41",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "spore-parent-2",
+      "operation": "single",
+      "birth_seed": 827364,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "403e000000000000",
+          "_max_age": "16",
+          "_timeToReproduce": "0",
+          "_sporeversion": "2",
+          "_segColor": "ffff80c0,ffff80c0",
+          "bounds": "3497,3494,3,4",
+          "_reference": "g0",
+          "_nGenes": "2",
+          "_cladeID": "root",
+          "_generation": "41",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "spore-parent-3",
+      "operation": "single",
+      "birth_seed": 827364,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "403e000000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "88",
+          "_sporeversion": "3",
+          "_segColor": "ff608040,ff608040",
+          "bounds": "3500,3494,3,4",
+          "_reference": "g1",
+          "_nGenes": "2",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "spore-parent-4",
+      "operation": "single",
+      "birth_seed": 827364,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "4052f00000000001",
+          "_max_age": "6",
+          "_timeToReproduce": "88",
+          "_sporeversion": "4",
+          "_segColor": "ff964b00,ff964b00",
+          "bounds": "3500,3494,3,4",
+          "_reference": "g1",
+          "_nGenes": "2",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "spore-parent-5",
+      "operation": "single",
+      "birth_seed": 827364,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "4052f00000000001",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "5",
+          "_segColor": "ffd0c08c,ffd0c08c",
+          "bounds": "3500,3494,3,4",
+          "_reference": "g1",
+          "_nGenes": "2",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "spore-parent-6",
+      "operation": "single",
+      "birth_seed": 827364,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "4052f00000000001",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "6",
+          "_segColor": "ff00ff00,ff00ff00",
+          "bounds": "3500,3494,3,4",
+          "_reference": "g1",
+          "_nGenes": "2",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "spore-parent-7",
+      "operation": "single",
+      "birth_seed": 827364,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "4049400000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "6860",
+          "_sporeversion": "-2",
+          "_segColor": "ff0000ff,ff0000ff",
+          "bounds": "3500,3494,3,4",
+          "_reference": "g1",
+          "_nGenes": "2",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "spore-parent-8",
+      "operation": "single",
+      "birth_seed": 827364,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "4049400000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "6860",
+          "_sporeversion": "-2",
+          "_segColor": "ff0000ff,ff0000ff",
+          "bounds": "3500,3494,3,4",
+          "_reference": "g1",
+          "_nGenes": "2",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "spore-parent-9",
+      "operation": "single",
+      "birth_seed": 827364,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "4049400000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "6860",
+          "_sporeversion": "-2",
+          "_segColor": "ff0000ff,ff0000ff",
+          "bounds": "3500,3494,3,4",
+          "_reference": "g1",
+          "_nGenes": "2",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "spore-parent-10",
+      "operation": "single",
+      "birth_seed": 827364,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "4049400000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "490",
+          "_sporeversion": "-3",
+          "_segColor": "ff0000ff,ff0000ff",
+          "bounds": "3500,3494,3,4",
+          "_reference": "g1",
+          "_nGenes": "2",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "spore-parent-11",
+      "operation": "single",
+      "birth_seed": 827364,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "4049400000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "490",
+          "_sporeversion": "-3",
+          "_segColor": "ff0000ff,ff0000ff",
+          "bounds": "3500,3494,3,4",
+          "_reference": "g1",
+          "_nGenes": "2",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "spore-parent-12",
+      "operation": "single",
+      "birth_seed": 827364,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "4049400000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "490",
+          "_sporeversion": "-3",
+          "_segColor": "ff0000ff,ff0000ff",
+          "bounds": "3500,3494,3,4",
+          "_reference": "g1",
+          "_nGenes": "2",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "spore-negative-time-wake",
+      "operation": "spore-wake",
+      "birth_seed": 827364,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": false,
+          "_energy": "0000000000000000",
+          "_max_age": "0",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "~",
+          "bounds": "0,0,0,0",
+          "_reference": "~"
+        },
+        {
+          "stage": "attempt-1-after",
+          "success": true,
+          "_energy": "403e000000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "88",
+          "_sporeversion": "3",
+          "_segColor": "ff608040,ff608040",
+          "bounds": "3503,3499,4,4",
+          "_reference": "g1",
+          "_nGenes": "2",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "spore-infected-1-own",
+      "operation": "single",
+      "birth_seed": 0,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "403e000000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "1",
+          "_segColor": "ffff80c0,ffff80c0",
+          "bounds": "3498,3498,2,5",
+          "_reference": "g0",
+          "_nGenes": "2",
+          "_cladeID": "root",
+          "_generation": "41",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "spore-infected-1-virus",
+      "operation": "single",
+      "birth_seed": 1,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "404e400000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ffffffff",
+          "bounds": "3498,3503,2,2",
+          "_reference": "g2",
+          "_nGenes": "1",
+          "_cladeID": "virus",
+          "_generation": "81",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "spore-infected-3-own",
+      "operation": "single",
+      "birth_seed": 0,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "403e000000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "88",
+          "_sporeversion": "3",
+          "_segColor": "ff608040,ff608040",
+          "bounds": "3498,3498,2,5",
+          "_reference": "g2",
+          "_nGenes": "2",
+          "_cladeID": "root",
+          "_generation": "42",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "spore-infected-3-virus",
+      "operation": "single",
+      "birth_seed": 1,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "404e400000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ffffffff",
+          "bounds": "3498,3503,2,2",
+          "_reference": "g2",
+          "_nGenes": "1",
+          "_cladeID": "virus",
+          "_generation": "81",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "spore-infected-later-litter",
+      "operation": "single",
+      "birth_seed": 827364,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "404e400000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ffffffff",
+          "bounds": "3498,3503,2,2",
+          "_reference": "g2",
+          "_nGenes": "1",
+          "_cladeID": "virus",
+          "_generation": "81",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "spore-negative-infected-energy-false",
+      "operation": "single",
+      "birth_seed": 0,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": false,
+          "_energy": "0000000000000000",
+          "_max_age": "0",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "~",
+          "bounds": "0,0,0,0",
+          "_reference": "~"
+        }
+      ]
+    },
+    {
+      "name": "spore-negative-infected-energy-true",
+      "operation": "single",
+      "birth_seed": 1,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": true,
+          "_energy": "404e400000000000",
+          "_max_age": "6",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "ffffffff",
+          "bounds": "3502,3503,2,2",
+          "_reference": "g2",
+          "_nGenes": "1",
+          "_cladeID": "virus",
+          "_generation": "81",
+          "_symmetry": "1",
+          "_updateClade": "false"
+        }
+      ]
+    },
+    {
+      "name": "spore-virus-delay-abort",
+      "operation": "single",
+      "birth_seed": 0,
+      "attempts": [
+        {
+          "stage": "attempt-0-after",
+          "success": false,
+          "_energy": "0000000000000000",
+          "_max_age": "0",
+          "_timeToReproduce": "0",
+          "_sporeversion": "0",
+          "_segColor": "~",
+          "bounds": "0,0,0,0",
+          "_reference": "~"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "No World.time, contact, transformation, public reproduction-loop, UI, networking or persistence journey is executed.",
+    "Public population and reproduction statistics require separate caller integration evidence.",
+    "Blocker rectangles and specified parent states are labelled controlled inputs, not full movement scenarios.",
+    "This fixture does not establish complete branch coverage or a complete spore lifecycle.",
+    "Rust consumers and integration evidence are tracked separately."
+  ],
+  "coverage": [
+    "Ordinary/selfish/capped/early/infected allocation, JADE/consumer/INDIGO branches and mirror threshold boundary.",
+    "Saved genotype override, dead birth, inherited/dispersal velocity, all8ordinary and all8blocked placement directions.",
+    "Eight reserved litter directions and deliberate ninth-attempt rejection.",
+    "Five structural mutation/clade retries plus marker limits0/1/2.",
+    "All12successful spore modifiers, wake retry, own/infection gates, negative energy gates and delay abort."
+  ]
+}

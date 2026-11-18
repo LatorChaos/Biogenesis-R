@@ -1,0 +1,2430 @@
+{
+  "provenance": "Original BioXMLParser.parseGeneticCode; two fresh Source JVMs and fresh JAR",
+  "input_manifest_sha256": "3b4eda8089f5e21b57e3d514726a9b1e08bc9d728afecdb741c822fd3487e1d9",
+  "observations_sha256": "158c63b6bd09d06bf2ea923f5c648cdf0fd88e0ad01c13146f1102c1c15d7a2a",
+  "observation_summary_sha256": "f34f4c96ddf9df3b5dab20e519dca10204c0dc67901878392b8c52ce53a5fa7c",
+  "helper_sha256": "28423b45e45e711b6768c0eb468fc81c070a420ac62dbbb3c61e39a932860522",
+  "cases": [
+    {
+      "id": 0,
+      "name": "seed-0000",
+      "file": "seed-0000.bgg",
+      "sha256": "1d2957133d3670022f65602ca986e44edd1fa46163ac8a7f0fb49371fe797f42",
+      "bytes": 4794,
+      "model": "(gene+)",
+      "requested_gene_count": 1,
+      "seed_id": "0000",
+      "category": "unchanged-seed",
+      "root_attributes": {},
+      "gene_attributes": {},
+      "declarations": [],
+      "extra_declarations": "",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": "success",
+      "proven_control_gene_count": 1,
+      "proposed_outcome": null
+    },
+    {
+      "id": 1,
+      "name": "seed-0246",
+      "file": "seed-0246.bgg",
+      "sha256": "29769b9a7157a3c2b61ba251e16d4b5ce02b4ba14f26b79d70145e2eeeb3cee4",
+      "bytes": 4038,
+      "model": "(gene*)",
+      "requested_gene_count": 0,
+      "seed_id": "0246",
+      "category": "unchanged-seed",
+      "root_attributes": {},
+      "gene_attributes": {},
+      "declarations": [],
+      "extra_declarations": "",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": "success",
+      "proven_control_gene_count": 0,
+      "proposed_outcome": null
+    },
+    {
+      "id": 2,
+      "name": "seed-0247",
+      "file": "seed-0247.bgg",
+      "sha256": "63b154797fb8ce64ffa89789ea0e361e05b60880efa48c15c59fac1654bcb309",
+      "bytes": 4773,
+      "model": "(gene+)",
+      "requested_gene_count": 1,
+      "seed_id": "0247",
+      "category": "unchanged-seed",
+      "root_attributes": {},
+      "gene_attributes": {},
+      "declarations": [],
+      "extra_declarations": "",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": "success",
+      "proven_control_gene_count": 1,
+      "proposed_outcome": null
+    },
+    {
+      "id": 3,
+      "name": "seed-0248",
+      "file": "seed-0248.bgg",
+      "sha256": "685b38ec10adaf40c7535a428fd72e47fc95f715ac5d5ac2cf018ca5f3d3953f",
+      "bytes": 4822,
+      "model": "(gene+)",
+      "requested_gene_count": 1,
+      "seed_id": "0248",
+      "category": "unchanged-seed",
+      "root_attributes": {},
+      "gene_attributes": {},
+      "declarations": [],
+      "extra_declarations": "",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": "success",
+      "proven_control_gene_count": 1,
+      "proposed_outcome": null
+    },
+    {
+      "id": 4,
+      "name": "seed-0258",
+      "file": "seed-0258.bgg",
+      "sha256": "bb9f09771ccacb85a2eecbab528a5840638fa1756604f900f2f7f269828188b7",
+      "bytes": 3381,
+      "model": "(gene+)",
+      "requested_gene_count": 1,
+      "seed_id": "0258",
+      "category": "unchanged-seed",
+      "root_attributes": {},
+      "gene_attributes": {},
+      "declarations": [],
+      "extra_declarations": "",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": "success",
+      "proven_control_gene_count": 1,
+      "proposed_outcome": null
+    },
+    {
+      "id": 5,
+      "name": "entity-undeclared",
+      "file": "entity-undeclared.bgg",
+      "sha256": "121fbfd32a303715245721a7bef3b5c83573f7fd934aeef15a4eeabc4e88c18e",
+      "bytes": 5610,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "unchanged-related",
+      "root_attributes": {
+        "probe": "first"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "ENTITY #IMPLIED"
+        }
+      ],
+      "extra_declarations": "\n<!ATTLIST genetic_code probe ENTITY #IMPLIED>",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": "error",
+      "proven_control_gene_count": null,
+      "proposed_outcome": null,
+      "previous_case_id": 65
+    },
+    {
+      "id": 6,
+      "name": "entity-unparsed-declared",
+      "file": "entity-unparsed-declared.bgg",
+      "sha256": "9ce33cc03972d935e2301ea968349c3f0380126a078001f367663a504d711cb0",
+      "bytes": 5787,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "unchanged-related",
+      "root_attributes": {
+        "probe": "first"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "ENTITY #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:tokenized:notation\">\n<!ENTITY first SYSTEM \"urn:bgr:tokenized:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:tokenized:second\" NDATA media>\n<!ATTLIST genetic_code probe ENTITY #IMPLIED>",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": "success",
+      "proven_control_gene_count": 2,
+      "proposed_outcome": null,
+      "previous_case_id": 66
+    },
+    {
+      "id": 7,
+      "name": "entities-undeclared",
+      "file": "entities-undeclared.bgg",
+      "sha256": "0e54507b8adc6a8a65f07753ce1ba689f9d067eb3a5daac64ca9c20da7131adb",
+      "bytes": 5619,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "unchanged-related",
+      "root_attributes": {
+        "probe": "first second"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "ENTITIES #IMPLIED"
+        }
+      ],
+      "extra_declarations": "\n<!ATTLIST genetic_code probe ENTITIES #IMPLIED>",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": "error",
+      "proven_control_gene_count": null,
+      "proposed_outcome": null,
+      "previous_case_id": 67
+    },
+    {
+      "id": 8,
+      "name": "entities-unparsed-declared",
+      "file": "entities-unparsed-declared.bgg",
+      "sha256": "0c47cd9728383efa00370379d1096ca67726bb1774ea86d0ed335fc855908ff8",
+      "bytes": 5803,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "unchanged-related",
+      "root_attributes": {
+        "probe": "second first second"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "ENTITIES #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:tokenized:notation\">\n<!ENTITY first SYSTEM \"urn:bgr:tokenized:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:tokenized:second\" NDATA media>\n<!ATTLIST genetic_code probe ENTITIES #IMPLIED>",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": "success",
+      "proven_control_gene_count": 2,
+      "proposed_outcome": null,
+      "previous_case_id": 68
+    },
+    {
+      "id": 9,
+      "name": "notation-undeclared",
+      "file": "notation-undeclared.bgg",
+      "sha256": "28171086a372ef7fcec4b379d40cf93e5cf55599f904a868c77d50f71ccb8c39",
+      "bytes": 5620,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "unchanged-related",
+      "root_attributes": {
+        "probe": "media"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "NOTATION (media) #IMPLIED"
+        }
+      ],
+      "extra_declarations": "\n<!ATTLIST genetic_code probe NOTATION (media) #IMPLIED>",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": "error",
+      "proven_control_gene_count": null,
+      "proposed_outcome": null,
+      "previous_case_id": 69
+    },
+    {
+      "id": 10,
+      "name": "notation-declared",
+      "file": "notation-declared.bgg",
+      "sha256": "12f1d5343cc0b2f8b8d9fbee48283fb5c61fdd41e23768dab9a39a736d321c9a",
+      "bytes": 5673,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "unchanged-related",
+      "root_attributes": {
+        "probe": "media"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "NOTATION (media) #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:tokenized:notation\">\n<!ATTLIST genetic_code probe NOTATION (media) #IMPLIED>",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": "success",
+      "proven_control_gene_count": 2,
+      "proposed_outcome": null,
+      "previous_case_id": 70
+    },
+    {
+      "id": 11,
+      "name": "entity-empty",
+      "file": "entity-empty.bgg",
+      "sha256": "208a7eefad1bd2f8c5bfe7cd66f324695eaedd3ea88e93db986d7fdd39e831a8",
+      "bytes": 5830,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "lexical-membership",
+      "root_attributes": {
+        "probe": ""
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "ENTITY #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST genetic_code probe ENTITY #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 12,
+      "name": "entity-two-names",
+      "file": "entity-two-names.bgg",
+      "sha256": "50e180df375fc5726b516605576e26453a423d1dbec97a9d3d43c0b57a751678",
+      "bytes": 5842,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "lexical-membership",
+      "root_attributes": {
+        "probe": "first second"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "ENTITY #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST genetic_code probe ENTITY #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 13,
+      "name": "entity-digit-start",
+      "file": "entity-digit-start.bgg",
+      "sha256": "046823a39e7e925ca690b4daf4cc886149131eb94a221ae99b672308f2915ce9",
+      "bytes": 5836,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "lexical-membership",
+      "root_attributes": {
+        "probe": "9first"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "ENTITY #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST genetic_code probe ENTITY #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 14,
+      "name": "entity-unicode-declared",
+      "file": "entity-unicode-declared.bgg",
+      "sha256": "b5a3368aa11754c07e97f7b56a3903e512ca4b2625f56a814f555ebf48aace14",
+      "bytes": 5899,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "lexical-membership",
+      "root_attributes": {
+        "probe": "\u00e9clair"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "ENTITY #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ENTITY \u00e9clair SYSTEM \"urn:bgr:entity:unicode\" NDATA media>\n<!ATTLIST genetic_code probe ENTITY #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 15,
+      "name": "entities-empty",
+      "file": "entities-empty.bgg",
+      "sha256": "89fc515a8f9eb29703a6bc9d7e27212e15a9d622e33ded7ea2ce9a2cc5efb6b1",
+      "bytes": 5832,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "lexical-membership",
+      "root_attributes": {
+        "probe": ""
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "ENTITIES #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST genetic_code probe ENTITIES #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 16,
+      "name": "entities-partially-undeclared",
+      "file": "entities-partially-undeclared.bgg",
+      "sha256": "5690ed63008489b5ea7ee9ad87dbac7294e548305871adb042d54f856b679857",
+      "bytes": 5843,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "lexical-membership",
+      "root_attributes": {
+        "probe": "first ghost"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "ENTITIES #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST genetic_code probe ENTITIES #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 17,
+      "name": "entities-mixed-internal-parsed",
+      "file": "entities-mixed-internal-parsed.bgg",
+      "sha256": "88fdab1539967a67e0efc7e6f0fff1143818f23bc64935959629b871b11949b3",
+      "bytes": 5868,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "lexical-membership",
+      "root_attributes": {
+        "probe": "first parsed"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "ENTITIES #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ENTITY parsed \"text\">\n<!ATTLIST genetic_code probe ENTITIES #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 18,
+      "name": "entity-external-parsed-role",
+      "file": "entity-external-parsed-role.bgg",
+      "sha256": "2f46202dc7492da842c65719dc0b4ca14a6157ebe320726ffcb165e7341a438c",
+      "bytes": 5884,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "lexical-membership",
+      "root_attributes": {
+        "probe": "parsed"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "ENTITY #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ENTITY parsed SYSTEM \"urn:bgr:entity:parsed\">\n<!ATTLIST genetic_code probe ENTITY #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 19,
+      "name": "entity-literal-whitespace",
+      "file": "entity-literal-whitespace.bgg",
+      "sha256": "351b852958fed82f03d66eec7a87f3a3ad2cf12eb6b8ceb072309026284a244d",
+      "bytes": 5840,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "normalization-origins",
+      "root_attributes": {
+        "probe": "\t first\r\n "
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "ENTITY #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST genetic_code probe ENTITY #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 20,
+      "name": "entities-literal-whitespace",
+      "file": "entities-literal-whitespace.bgg",
+      "sha256": "d46bdc41d5f8b2bbfe4c16bcc00179aecefd58f2db41670f587816c7c2ed7ac1",
+      "bytes": 5854,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "normalization-origins",
+      "root_attributes": {
+        "probe": " first\t second\r\nfirst "
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "ENTITIES #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST genetic_code probe ENTITIES #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 21,
+      "name": "entity-direct-tab",
+      "file": "entity-direct-tab.bgg",
+      "sha256": "10518279c3ad9e7a7daedd62d48bbd2c670c5b46236fcf06df9167a0b6db590a",
+      "bytes": 5840,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "normalization-origins",
+      "root_attributes": {
+        "probe": "&#x9;first"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "ENTITY #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST genetic_code probe ENTITY #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 22,
+      "name": "entities-direct-lf",
+      "file": "entities-direct-lf.bgg",
+      "sha256": "2881e712956786941e121f457a2a4a1d1e5a3faeda2be8999d3bd8d00f0a5a91",
+      "bytes": 5848,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "normalization-origins",
+      "root_attributes": {
+        "probe": "first&#xA;second"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "ENTITIES #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST genetic_code probe ENTITIES #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 23,
+      "name": "notation-direct-cr",
+      "file": "notation-direct-cr.bgg",
+      "sha256": "5453ef66abae070c0c040672ac78df0af6e71ff5800b5dced3afd27b0a64ceb7",
+      "bytes": 5850,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "normalization-origins",
+      "root_attributes": {
+        "probe": "media&#xD;"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "NOTATION (media) #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST genetic_code probe NOTATION (media) #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 24,
+      "name": "entities-internal-whitespace",
+      "file": "entities-internal-whitespace.bgg",
+      "sha256": "a82eaa695548a85382162d6a73736b55daf98715bcaeb7760154c11fd4dad272",
+      "bytes": 5874,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "normalization-origins",
+      "root_attributes": {
+        "probe": "&words;"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "ENTITIES #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ENTITY words \"first&#x9;second\">\n<!ATTLIST genetic_code probe ENTITIES #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 25,
+      "name": "notation-value-outside-list",
+      "file": "notation-value-outside-list.bgg",
+      "sha256": "c1130bf331855aa65857fb5266bf31dbcdd9e82972c90e5661bd1cdeab2e1f2e",
+      "bytes": 5845,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "notation-catalog",
+      "root_attributes": {
+        "probe": "other"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "NOTATION (media) #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST genetic_code probe NOTATION (media) #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 26,
+      "name": "notation-unused-undeclared-list-name",
+      "file": "notation-unused-undeclared-list-name.bgg",
+      "sha256": "597feebd195789da7c9d554db173912569c331d85554c04767885eac2942129a",
+      "bytes": 5851,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "notation-catalog",
+      "root_attributes": {
+        "probe": "media"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "NOTATION (media|ghost) #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST genetic_code probe NOTATION (media|ghost) #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 27,
+      "name": "notation-duplicate-list-name",
+      "file": "notation-duplicate-list-name.bgg",
+      "sha256": "056674dab0fbde0e3480165b3da6b3a82d87fd902ee2075bfde15fb2d91a85ca",
+      "bytes": 5851,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "notation-catalog",
+      "root_attributes": {
+        "probe": "media"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "NOTATION (media|media) #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST genetic_code probe NOTATION (media|media) #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 28,
+      "name": "notation-two-attributes-owner",
+      "file": "notation-two-attributes-owner.bgg",
+      "sha256": "78982a646040f4d2d70c1a1b57cdbee73749cd118daccad6a4bb0360a2ccd082",
+      "bytes": 5886,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "notation-catalog",
+      "root_attributes": {},
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "NOTATION (media) #IMPLIED"
+        },
+        {
+          "element": "genetic_code",
+          "attribute": "other",
+          "specification": "NOTATION (other) #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST genetic_code probe NOTATION (media) #IMPLIED>\n<!ATTLIST genetic_code other NOTATION (other) #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 29,
+      "name": "notation-empty-owner",
+      "file": "notation-empty-owner.bgg",
+      "sha256": "5cc38698b8b3e9449dfabeaef12069c0806df246e793278e40528937118a45fe",
+      "bytes": 5822,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "notation-catalog",
+      "root_attributes": {},
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "gene",
+          "attribute": "probe",
+          "specification": "NOTATION (media) #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST gene probe NOTATION (media) #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 30,
+      "name": "notation-unused-empty-owner",
+      "file": "notation-unused-empty-owner.bgg",
+      "sha256": "d67bdfdd50e3e82b05158156db374c68436d203b2400667aa41508a4a3e133ca",
+      "bytes": 5842,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "notation-catalog",
+      "root_attributes": {},
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "aux",
+          "attribute": "probe",
+          "specification": "NOTATION (media) #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ELEMENT aux EMPTY>\n<!ATTLIST aux probe NOTATION (media) #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 31,
+      "name": "notation-forward-declaration",
+      "file": "notation-forward-declaration.bgg",
+      "sha256": "f92ba68dcc1b7a993599e79384f3ae28b39099413eaedc9816d2ffc3ea4aef22",
+      "bytes": 5678,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "notation-catalog",
+      "root_attributes": {
+        "probe": "media"
+      },
+      "gene_attributes": {},
+      "declarations": [],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:forward-notation\">",
+      "before_declarations": "<!ATTLIST genetic_code probe NOTATION (media) #IMPLIED>",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 32,
+      "name": "notation-public-system",
+      "file": "notation-public-system.bgg",
+      "sha256": "5925d9a806652635d230a4e9b57739bb97e0acc41adeb6104d5af0e60089ff1b",
+      "bytes": 5700,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "notation-catalog",
+      "root_attributes": {
+        "probe": "media"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "NOTATION (media) #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media PUBLIC \"-//BGR//Notation//EN\" \"urn:bgr:entity:public-notation\">\n<!ATTLIST genetic_code probe NOTATION (media) #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 33,
+      "name": "notation-public-only",
+      "file": "notation-public-only.bgg",
+      "sha256": "8578f6a725e6d30387ffd8b272251088b52460edc561a08c5f89fedbfee62039",
+      "bytes": 5667,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "notation-catalog",
+      "root_attributes": {
+        "probe": "media"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "NOTATION (media) #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media PUBLIC \"-//BGR//Notation//EN\">\n<!ATTLIST genetic_code probe NOTATION (media) #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 34,
+      "name": "notation-duplicate-declaration",
+      "file": "notation-duplicate-declaration.bgg",
+      "sha256": "9812c293a2cf124e0c4a24928a6d049f46912c6c0b940ca0bb1a93a6566f7931",
+      "bytes": 5734,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "notation-catalog",
+      "root_attributes": {
+        "probe": "media"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "NOTATION (media) #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:first-notation\">\n<!NOTATION media SYSTEM \"urn:bgr:entity:second-notation\">\n<!ATTLIST genetic_code probe NOTATION (media) #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 35,
+      "name": "entity-default-applied",
+      "file": "entity-default-applied.bgg",
+      "sha256": "5b8363329fae18ed1f766fef9520c58ddaa307dd764ba2c696dea5eea2b41980",
+      "bytes": 5819,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "defaults-declarations",
+      "root_attributes": {},
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "ENTITY \"first\""
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST genetic_code probe ENTITY \"first\">",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 36,
+      "name": "entity-unresolved-default-overridden",
+      "file": "entity-unresolved-default-overridden.bgg",
+      "sha256": "5d92119b0b79c86ff6de2c9a289c097a85181ca4488e51463fa076d7840174d3",
+      "bytes": 5834,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "defaults-declarations",
+      "root_attributes": {
+        "probe": "first"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "ENTITY \"ghost\""
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST genetic_code probe ENTITY \"ghost\">",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 37,
+      "name": "entity-unresolved-default-unused",
+      "file": "entity-unresolved-default-unused.bgg",
+      "sha256": "bfb44749cf83076b6fc19ea411e87f01a5434cd711bea539ead6455f6940909e",
+      "bytes": 5829,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "defaults-declarations",
+      "root_attributes": {},
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "aux",
+          "attribute": "probe",
+          "specification": "ENTITY \"ghost\""
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ELEMENT aux ANY>\n<!ATTLIST aux probe ENTITY \"ghost\">",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 38,
+      "name": "entity-invalid-default-overridden",
+      "file": "entity-invalid-default-overridden.bgg",
+      "sha256": "e17052f87484828874593b111fb2b164fd4c9aad49b645ebeb736cfd9d6e9244",
+      "bytes": 5841,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "defaults-declarations",
+      "root_attributes": {
+        "probe": "first"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "ENTITY \"first second\""
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST genetic_code probe ENTITY \"first second\">",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 39,
+      "name": "entity-invalid-default-unused",
+      "file": "entity-invalid-default-unused.bgg",
+      "sha256": "6533f4f627aac3cd4f870ab76edcf9934ee3b580e7b4f1fbdb32a5c0cb1a9a0e",
+      "bytes": 5836,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "defaults-declarations",
+      "root_attributes": {},
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "aux",
+          "attribute": "probe",
+          "specification": "ENTITY \"first second\""
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ELEMENT aux ANY>\n<!ATTLIST aux probe ENTITY \"first second\">",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 40,
+      "name": "entities-default-applied",
+      "file": "entities-default-applied.bgg",
+      "sha256": "0ff4ce6c6b5cebebd668caa62fb4d6cde93192dcf83cf1b7ba34f4eef5f84e0c",
+      "bytes": 5835,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "defaults-declarations",
+      "root_attributes": {},
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "ENTITIES \"second first second\""
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST genetic_code probe ENTITIES \"second first second\">",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 41,
+      "name": "entities-unresolved-default-overridden",
+      "file": "entities-unresolved-default-overridden.bgg",
+      "sha256": "5ac03efc6168efc52923535c16c73957845f12807f5efea8e6b4f3a9f7641df9",
+      "bytes": 5842,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "defaults-declarations",
+      "root_attributes": {
+        "probe": "first"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "ENTITIES \"first ghost\""
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST genetic_code probe ENTITIES \"first ghost\">",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 42,
+      "name": "entities-empty-default-overridden",
+      "file": "entities-empty-default-overridden.bgg",
+      "sha256": "e50896f1acc1985993fd530c62d95dbd857829a7c64bd715552899a538b69ece",
+      "bytes": 5831,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "defaults-declarations",
+      "root_attributes": {
+        "probe": "first"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "ENTITIES \"\""
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST genetic_code probe ENTITIES \"\">",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 43,
+      "name": "notation-default-applied",
+      "file": "notation-default-applied.bgg",
+      "sha256": "49cd319300e81981fb6ce17e023cdba192f9e79c0c77d1493b70cd5d21119da5",
+      "bytes": 5829,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "defaults-declarations",
+      "root_attributes": {},
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "NOTATION (media) \"media\""
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST genetic_code probe NOTATION (media) \"media\">",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 44,
+      "name": "notation-invalid-default-overridden",
+      "file": "notation-invalid-default-overridden.bgg",
+      "sha256": "b424e7953d4e15aedd1cc70dc89028982e2e82a0b05d2c12c1c3872c19596c5b",
+      "bytes": 5844,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "defaults-declarations",
+      "root_attributes": {
+        "probe": "media"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "NOTATION (media) \"other\""
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST genetic_code probe NOTATION (media) \"other\">",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 45,
+      "name": "notation-invalid-default-unused",
+      "file": "notation-invalid-default-unused.bgg",
+      "sha256": "5801fd89c6331ee9c874b05cb81c408a1c2d14e76dda9779b4fa28d14d355748",
+      "bytes": 5839,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "defaults-declarations",
+      "root_attributes": {},
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "aux",
+          "attribute": "probe",
+          "specification": "NOTATION (media) \"other\""
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ELEMENT aux ANY>\n<!ATTLIST aux probe NOTATION (media) \"other\">",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 46,
+      "name": "notation-required-missing",
+      "file": "notation-required-missing.bgg",
+      "sha256": "2b923b337e5e5e72f0e15ccaa0102afd15ceae60ffa526f5ce43c08f44f35dbd",
+      "bytes": 5831,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "defaults-declarations",
+      "root_attributes": {},
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "NOTATION (media) #REQUIRED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST genetic_code probe NOTATION (media) #REQUIRED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 47,
+      "name": "notation-implied-missing",
+      "file": "notation-implied-missing.bgg",
+      "sha256": "f230e56d313a73025f4c26fe30d6c2980d91f0433e92dba306fcca46fcbd752f",
+      "bytes": 5830,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "defaults-declarations",
+      "root_attributes": {},
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "NOTATION (media) #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST genetic_code probe NOTATION (media) #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 48,
+      "name": "notation-fixed-normalized-match",
+      "file": "notation-fixed-normalized-match.bgg",
+      "sha256": "d55550db863b837689d051177c995c71b26d962cc2235d7652cabb4d7df6d7db",
+      "bytes": 5855,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "defaults-declarations",
+      "root_attributes": {
+        "probe": " media "
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "NOTATION (media) #FIXED \" media \""
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST genetic_code probe NOTATION (media) #FIXED \" media \">",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 49,
+      "name": "notation-fixed-mismatch",
+      "file": "notation-fixed-mismatch.bgg",
+      "sha256": "5bf3030cea327380b0560268a48952ea094a4694f0b5680f3273fc6b5bc4b842",
+      "bytes": 5857,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "defaults-declarations",
+      "root_attributes": {
+        "probe": "other"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "NOTATION (media|other) #FIXED \"media\""
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST genetic_code probe NOTATION (media|other) #FIXED \"media\">",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 50,
+      "name": "unparsed-forward-notation",
+      "file": "unparsed-forward-notation.bgg",
+      "sha256": "14136ede9269270511ffc1532aba282b717645b3ea02add2a5ce959eb0d8054d",
+      "bytes": 5718,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "declaration-order-identifiers",
+      "root_attributes": {
+        "probe": "first"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "ENTITY #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!ATTLIST genetic_code probe ENTITY #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 51,
+      "name": "default-name-forward-unparsed",
+      "file": "default-name-forward-unparsed.bgg",
+      "sha256": "a54f5680315f585ceb75e154bd828967a5473371c8ba2aa91a2d0c1a956944f8",
+      "bytes": 5819,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "declaration-order-identifiers",
+      "root_attributes": {},
+      "gene_attributes": {},
+      "declarations": [],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>",
+      "before_declarations": "<!ATTLIST genetic_code probe ENTITY \"first\">",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 52,
+      "name": "default-reference-forward-general",
+      "file": "default-reference-forward-general.bgg",
+      "sha256": "47e8a64bf18ce34c21d95e7f5664c10f0dd3cf5f87790a223a9c76f40830f1f4",
+      "bytes": 5845,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "declaration-order-identifiers",
+      "root_attributes": {},
+      "gene_attributes": {},
+      "declarations": [],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ENTITY words \"first\">",
+      "before_declarations": "<!ATTLIST genetic_code probe ENTITY \"&words;\">",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 53,
+      "name": "duplicate-unparsed-entity",
+      "file": "duplicate-unparsed-entity.bgg",
+      "sha256": "a7cc73cfe5a9f46a08046c79463345db5766d480073750b7fdef9c21c8654fc6",
+      "bytes": 5899,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "declaration-order-identifiers",
+      "root_attributes": {
+        "probe": "first"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "ENTITY #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ENTITY first SYSTEM \"urn:bgr:entity:replacement\" NDATA other>\n<!ATTLIST genetic_code probe ENTITY #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 54,
+      "name": "duplicate-internal-then-unparsed",
+      "file": "duplicate-internal-then-unparsed.bgg",
+      "sha256": "98621712aebb3e8706262812a8ccd9ec4a48bf029f84ce6feced459dcd70b863",
+      "bytes": 5858,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "declaration-order-identifiers",
+      "root_attributes": {
+        "probe": "first"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "ENTITY #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!ENTITY first \"text\">\n<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST genetic_code probe ENTITY #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 55,
+      "name": "duplicate-unparsed-then-internal",
+      "file": "duplicate-unparsed-then-internal.bgg",
+      "sha256": "211d9f1e6824051929ae1a090493faf7bce8694ed360a7dcf002acb3d8bf796a",
+      "bytes": 5858,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "declaration-order-identifiers",
+      "root_attributes": {
+        "probe": "first"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "ENTITY #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ENTITY first \"text\">\n<!ATTLIST genetic_code probe ENTITY #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 56,
+      "name": "duplicate-general-first-binding",
+      "file": "duplicate-general-first-binding.bgg",
+      "sha256": "956a11da5766810591ce75dc1a90d43bddc5356ae9552d0e63e07d392758ddb9",
+      "bytes": 5888,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "declaration-order-identifiers",
+      "root_attributes": {
+        "probe": "&words;"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "ENTITIES #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ENTITY words \"first\">\n<!ENTITY words \"second\">\n<!ATTLIST genetic_code probe ENTITIES #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 57,
+      "name": "entity-public-only-invalid",
+      "file": "entity-public-only-invalid.bgg",
+      "sha256": "38741fc66556a2a77ad9aff4e4d426b5ae13337e79c4b9cb09583db4da513674",
+      "bytes": 5716,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "declaration-order-identifiers",
+      "root_attributes": {
+        "probe": "first"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "ENTITY #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!ENTITY first PUBLIC \"-//BGR//Entity//EN\" NDATA media>\n<!ATTLIST genetic_code probe ENTITY #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 58,
+      "name": "unparsed-system-fragment",
+      "file": "unparsed-system-fragment.bgg",
+      "sha256": "c4e6dcf3a653b97ac2ff04723020064a637afe62747503972038750aaade718f",
+      "bytes": 5727,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "declaration-order-identifiers",
+      "root_attributes": {
+        "probe": "first"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "ENTITY #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first#fragment\" NDATA media>\n<!ATTLIST genetic_code probe ENTITY #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 59,
+      "name": "notation-public-tab",
+      "file": "notation-public-tab.bgg",
+      "sha256": "ce8407a51383ba673d69b75d8f225453176e5a7b94f5d251b86eed6f5cf1798b",
+      "bytes": 5666,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "declaration-order-identifiers",
+      "root_attributes": {
+        "probe": "media"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "NOTATION (media) #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media PUBLIC \"-//BGR\tNotation//EN\">\n<!ATTLIST genetic_code probe NOTATION (media) #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 60,
+      "name": "ignored-entity-descendant",
+      "file": "ignored-entity-descendant.bgg",
+      "sha256": "fb0233aa14fb485a2bb0259a0fb1ad90c15377ee2f59170f90eb2bcac2c13b0c",
+      "bytes": 5860,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "ignored-descendants",
+      "root_attributes": {},
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "aux",
+          "attribute": "probe",
+          "specification": "ENTITY #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST aux probe ENTITY #IMPLIED>\n<!ELEMENT aux EMPTY> ",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": {
+        "0": "<aux probe=\"first\" />"
+      },
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 61,
+      "name": "ignored-entities-invalid-descendant",
+      "file": "ignored-entities-invalid-descendant.bgg",
+      "sha256": "86479ce027f1ecd73a5dabb863c5273bce62313ef816573565aec8997c70cc2f",
+      "bytes": 5868,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "ignored-descendants",
+      "root_attributes": {},
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "aux",
+          "attribute": "probe",
+          "specification": "ENTITIES #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST aux probe ENTITIES #IMPLIED>\n<!ELEMENT aux EMPTY> ",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": {
+        "1": "<aux probe=\"first ghost\" />"
+      },
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 62,
+      "name": "ignored-notation-descendant",
+      "file": "ignored-notation-descendant.bgg",
+      "sha256": "258b055c9e389721d5c79b860282e8ea30d128489de18287ad6b81efbac1141b",
+      "bytes": 5868,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "ignored-descendants",
+      "root_attributes": {},
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "aux",
+          "attribute": "probe",
+          "specification": "NOTATION (media) #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST aux probe NOTATION (media) #IMPLIED>\n<!ELEMENT aux ANY> ",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "ANY",
+      "ignored_descendants": {
+        "0": "<aux probe=\"media\" />"
+      },
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 63,
+      "name": "parsed-system-unused",
+      "file": "parsed-system-unused.bgg",
+      "sha256": "7ac4c38be97ff8d2b2a775b7479f56b1cedcc178820b27bedfd93d7ca4ec0d26",
+      "bytes": 5598,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "external-metadata-consumption",
+      "root_attributes": {},
+      "gene_attributes": {},
+      "declarations": [],
+      "extra_declarations": "<!ENTITY external SYSTEM \"urn:bgr:entity:parsed\">",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 64,
+      "name": "parsed-public-unused",
+      "file": "parsed-public-unused.bgg",
+      "sha256": "6c419b0791fd80021bd912daed24487baebcfba67685450e19da258573822a37",
+      "bytes": 5633,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "external-metadata-consumption",
+      "root_attributes": {},
+      "gene_attributes": {},
+      "declarations": [],
+      "extra_declarations": "<!ENTITY external PUBLIC \"-//BGR//Parsed Entity//EN\" \"urn:bgr:entity:public-parsed\">",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 65,
+      "name": "parsed-system-text-consumption",
+      "file": "parsed-system-text-consumption.bgg",
+      "sha256": "7716ff32430ca78bd14492163e9f7688baf46921708e1022a085154a0a9fa30a",
+      "bytes": 5616,
+      "model": "(#PCDATA|gene)*",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "external-metadata-consumption",
+      "root_attributes": {},
+      "gene_attributes": {},
+      "declarations": [],
+      "extra_declarations": "<!ENTITY external SYSTEM \"urn:bgr:entity:parsed\">",
+      "before_declarations": "",
+      "root_text": "&external;",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 66,
+      "name": "parsed-external-attribute-consumption",
+      "file": "parsed-external-attribute-consumption.bgg",
+      "sha256": "8a18849b8ea0ed30b4291f66740cb907d0f6c6503420c9a5b64178141be86915",
+      "bytes": 5663,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "external-metadata-consumption",
+      "root_attributes": {
+        "probe": "&external;"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "CDATA #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!ENTITY external SYSTEM \"urn:bgr:entity:parsed\">\n<!ATTLIST genetic_code probe CDATA #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 67,
+      "name": "parsed-external-default-consumption",
+      "file": "parsed-external-default-consumption.bgg",
+      "sha256": "f752c31e56b8fad5a541cbf854c458bafc7c2b1eff2c03b85188c1ba1a321096",
+      "bytes": 5647,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "external-metadata-consumption",
+      "root_attributes": {},
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "CDATA \"&external;\""
+        }
+      ],
+      "extra_declarations": "<!ENTITY external SYSTEM \"urn:bgr:entity:parsed\">\n<!ATTLIST genetic_code probe CDATA \"&external;\">",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 68,
+      "name": "parsed-external-indirect-consumption",
+      "file": "parsed-external-indirect-consumption.bgg",
+      "sha256": "c3d39eb3711fdab90ad35463b526949d35ab438737cde87abb0677fbe75f9f9e",
+      "bytes": 5646,
+      "model": "(#PCDATA|gene)*",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "external-metadata-consumption",
+      "root_attributes": {},
+      "gene_attributes": {},
+      "declarations": [],
+      "extra_declarations": "<!ENTITY external SYSTEM \"urn:bgr:entity:parsed\">\n<!ENTITY wrapper \"&external;\">",
+      "before_declarations": "",
+      "root_text": "&wrapper;",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 69,
+      "name": "unparsed-entity-text-misuse",
+      "file": "unparsed-entity-text-misuse.bgg",
+      "sha256": "5dd000f41986bd203b6aa21fc4827f7e47199c66988099caa19a5b47876011e0",
+      "bytes": 5789,
+      "model": "(#PCDATA|gene)*",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "external-metadata-consumption",
+      "root_attributes": {},
+      "gene_attributes": {},
+      "declarations": [],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>",
+      "before_declarations": "",
+      "root_text": "&first;",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 70,
+      "name": "precedence-root-entity-numeric-only",
+      "file": "precedence-root-entity-numeric-only.bgg",
+      "sha256": "bbf219c4708025ffc96f312807deb4a780771d5934cae42f01ada1b0dbadc236",
+      "bytes": 5818,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "error-precedence",
+      "root_attributes": {
+        "symmetry": "bad"
+      },
+      "gene_attributes": {
+        "1": {
+          "probe": "first"
+        }
+      },
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "symmetry",
+          "specification": "NMTOKEN #REQUIRED"
+        },
+        {
+          "element": "gene",
+          "attribute": "probe",
+          "specification": "ENTITY #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST gene probe ENTITY #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 71,
+      "name": "precedence-root-entity-late-only",
+      "file": "precedence-root-entity-late-only.bgg",
+      "sha256": "41c728e2459eb6c86d6d4789035da363b6a39fde43e97f92bffcfa358f28c768",
+      "bytes": 5816,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "error-precedence",
+      "root_attributes": {
+        "symmetry": "1"
+      },
+      "gene_attributes": {
+        "1": {
+          "probe": "ghost"
+        }
+      },
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "symmetry",
+          "specification": "NMTOKEN #REQUIRED"
+        },
+        {
+          "element": "gene",
+          "attribute": "probe",
+          "specification": "ENTITY #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST gene probe ENTITY #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 72,
+      "name": "precedence-root-entity-combined",
+      "file": "precedence-root-entity-combined.bgg",
+      "sha256": "456c2cbacad89ef671bc7e19f13c7baa0d60bb49453feaa0dbb573d1fa0e64b9",
+      "bytes": 5818,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "error-precedence",
+      "root_attributes": {
+        "symmetry": "bad"
+      },
+      "gene_attributes": {
+        "1": {
+          "probe": "ghost"
+        }
+      },
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "symmetry",
+          "specification": "NMTOKEN #REQUIRED"
+        },
+        {
+          "element": "gene",
+          "attribute": "probe",
+          "specification": "ENTITY #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST gene probe ENTITY #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 73,
+      "name": "precedence-gene-notation-numeric-only",
+      "file": "precedence-gene-notation-numeric-only.bgg",
+      "sha256": "e8f87b67572f51e5b45063bb30204558ee8ef351aa0f47546065591bdd9c0e2a",
+      "bytes": 5835,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "error-precedence",
+      "root_attributes": {},
+      "gene_attributes": {
+        "0": {
+          "branch": "bad"
+        },
+        "1": {
+          "probe": "media"
+        }
+      },
+      "declarations": [
+        {
+          "element": "gene",
+          "attribute": "probe",
+          "specification": "NOTATION (media) #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST gene probe NOTATION (media) #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": "ANY",
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 74,
+      "name": "precedence-gene-notation-late-only",
+      "file": "precedence-gene-notation-late-only.bgg",
+      "sha256": "3eb300e6255effffee8d610bc634693205927cb6f8b14941050281e38e0d4c9d",
+      "bytes": 5834,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "error-precedence",
+      "root_attributes": {},
+      "gene_attributes": {
+        "0": {
+          "branch": "-1"
+        },
+        "1": {
+          "probe": "other"
+        }
+      },
+      "declarations": [
+        {
+          "element": "gene",
+          "attribute": "probe",
+          "specification": "NOTATION (media) #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST gene probe NOTATION (media) #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": "ANY",
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 75,
+      "name": "precedence-gene-notation-combined",
+      "file": "precedence-gene-notation-combined.bgg",
+      "sha256": "3081139585f2c3b39a3a3e28eb77023a9ab6b68c11d5f60e83bab32357bca4f3",
+      "bytes": 5835,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "error-precedence",
+      "root_attributes": {},
+      "gene_attributes": {
+        "0": {
+          "branch": "bad"
+        },
+        "1": {
+          "probe": "other"
+        }
+      },
+      "declarations": [
+        {
+          "element": "gene",
+          "attribute": "probe",
+          "specification": "NOTATION (media) #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST gene probe NOTATION (media) #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": "ANY",
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 76,
+      "name": "unparsed-undeclared-notation-used",
+      "file": "unparsed-undeclared-notation-used.bgg",
+      "sha256": "6cfe34a56d02bdb56b50af40c9e1879ec51136119c5bda39f9825c7042be302a",
+      "bytes": 5681,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "declaration-default-gaps",
+      "root_attributes": {
+        "probe": "first"
+      },
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "ENTITY #IMPLIED"
+        }
+      ],
+      "extra_declarations": "<!ENTITY first SYSTEM \"urn:bgr:entity:undeclared-notation\" NDATA ghost>\n<!ATTLIST genetic_code probe ENTITY #IMPLIED>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 77,
+      "name": "unparsed-undeclared-notation-unused",
+      "file": "unparsed-undeclared-notation-unused.bgg",
+      "sha256": "8b143b233f17abf5ab2a543633d304773d3cb2b4d90a4623b00280da43db6a43",
+      "bytes": 5620,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "declaration-default-gaps",
+      "root_attributes": {},
+      "gene_attributes": {},
+      "declarations": [],
+      "extra_declarations": "<!ENTITY first SYSTEM \"urn:bgr:entity:undeclared-notation\" NDATA ghost>",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 78,
+      "name": "entity-unresolved-default-applied",
+      "file": "entity-unresolved-default-applied.bgg",
+      "sha256": "ac577ea3344ee818254129cae61f95041be66661378e55dda735ab5d5d6f4244",
+      "bytes": 5819,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "category": "declaration-default-gaps",
+      "root_attributes": {},
+      "gene_attributes": {},
+      "declarations": [
+        {
+          "element": "genetic_code",
+          "attribute": "probe",
+          "specification": "ENTITY \"ghost\""
+        }
+      ],
+      "extra_declarations": "<!NOTATION media SYSTEM \"urn:bgr:entity:notation\">\n<!NOTATION other SYSTEM \"urn:bgr:entity:other-notation\">\n<!ENTITY first SYSTEM \"urn:bgr:entity:first\" NDATA media>\n<!ENTITY second SYSTEM \"urn:bgr:entity:second\" NDATA media>\n<!ATTLIST genetic_code probe ENTITY \"ghost\">",
+      "before_declarations": "",
+      "root_text": "",
+      "gene_model_override": null,
+      "aux_model": "EMPTY",
+      "ignored_descendants": null,
+      "notes": "",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+config_version=5
+
+[application]
+config/name="Biogenesis-R"
+run/main_scene="res://scenes/launcher.tscn"
+run/main_loop_type="BgrNativeFrameLoop"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+boot_splash/image="res://ui/assets/boot_splash.png"
+boot_splash/stretch_mode=4
+
+[display]
+window/subwindows/embed_subwindows=false
+window/size/viewport_width=1180
+window/size/viewport_height=820
+window/size/window_width_override=1180
+window/size/window_height_override=820
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.035, 0.055, 0.075, 1)
+
+[autoload]
+TouchKeyboard="*res://ui/touch_keyboard.gd"
+
+[debug]
+file_logging/enable_file_logging=false
+file_logging/enable_file_logging.pc=false

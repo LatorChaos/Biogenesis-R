@@ -1,0 +1,3768 @@
+C	asymmetric-positive-determinant	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	0000000000000000	0000000000000000	4020000000000000	4000000000000000
+L	b	4000000000000000	c008000000000000	4008000000000000	4018000000000000
+Q	a	-10	-10	20	20
+Q	b	0	0	2	2
+P	intersection	4003333333333333	3fe3333333333334
+B	lines_intersect	true
+B	a_intersects_rect_a	true
+B	b_intersects_rect_a	true
+B	rectangles_intersect	true
+D	a.start	40187ae147ae147b
+D	a.end	4040a8f5c28f5c28
+D	b.start	402a3d70a3d70a3e
+D	b.end	403d851eb851eb86
+E
+C	asymmetric-negative-determinant	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	0000000000000000	0000000000000000	4020000000000000	4000000000000000
+L	b	4008000000000000	4018000000000000	4000000000000000	c008000000000000
+Q	a	-10	-10	20	20
+Q	b	0	0	2	2
+P	intersection	400a000000000000	3ff4000000000000
+B	lines_intersect	true
+B	a_intersects_rect_a	true
+B	b_intersects_rect_a	true
+B	rectangles_intersect	true
+D	a.start	4028400000000000
+D	a.end	4037200000000000
+D	b.start	4036a00000000000
+D	b.end	4033a00000000000
+E
+C	parallel-offset	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	0000000000000000	0000000000000000	4020000000000000	0000000000000000
+L	b	3ff0000000000000	4008000000000000	4010000000000000	4008000000000000
+Q	a	-10	-10	20	20
+Q	b	0	0	2	2
+P	intersection	400a000000000000	3ff8000000000000
+B	lines_intersect	false
+B	a_intersects_rect_a	true
+B	b_intersects_rect_a	true
+B	rectangles_intersect	true
+D	a.start	4029a00000000000
+D	a.end	4038d00000000000
+D	b.start	401d400000000000
+D	b.end	4006800000000000
+E
+C	collinear-disjoint	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	0000000000000000	0000000000000000	4000000000000000	0000000000000000
+L	b	4008000000000000	0000000000000000	4010000000000000	0000000000000000
+Q	a	-10	-10	20	20
+Q	b	0	0	2	2
+P	intersection	4002000000000000	0000000000000000
+B	lines_intersect	false
+B	a_intersects_rect_a	true
+B	b_intersects_rect_a	true
+B	rectangles_intersect	true
+D	a.start	4014400000000000
+D	a.end	3fb0000000000000
+D	b.start	3fe2000000000000
+D	b.end	4008800000000000
+E
+C	collinear-overlap	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	0000000000000000	0000000000000000	4010000000000000	0000000000000000
+L	b	4000000000000000	0000000000000000	4018000000000000	0000000000000000
+Q	a	-10	-10	20	20
+Q	b	0	0	2	2
+P	intersection	4008000000000000	0000000000000000
+B	lines_intersect	true
+B	a_intersects_rect_a	true
+B	b_intersects_rect_a	true
+B	rectangles_intersect	true
+D	a.start	4022000000000000
+D	a.end	3ff0000000000000
+D	b.start	3ff0000000000000
+D	b.end	4022000000000000
+E
+C	collinear-shared-endpoint	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	0000000000000000	0000000000000000	4010000000000000	0000000000000000
+L	b	4010000000000000	0000000000000000	4018000000000000	0000000000000000
+Q	a	-10	-10	20	20
+Q	b	0	0	2	2
+P	intersection	400c000000000000	0000000000000000
+B	lines_intersect	true
+B	a_intersects_rect_a	true
+B	b_intersects_rect_a	true
+B	rectangles_intersect	true
+D	a.start	4028800000000000
+D	a.end	3fd0000000000000
+D	b.start	3fd0000000000000
+D	b.end	4019000000000000
+E
+C	crossing-endpoint	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	0000000000000000	0000000000000000	4010000000000000	0000000000000000
+L	b	4010000000000000	0000000000000000	4010000000000000	4014000000000000
+Q	a	-10	-10	20	20
+Q	b	0	0	2	2
+P	intersection	4010000000000000	0000000000000000
+B	lines_intersect	true
+B	a_intersects_rect_a	true
+B	b_intersects_rect_a	true
+B	rectangles_intersect	true
+D	a.start	4030000000000000
+D	a.end	0000000000000000
+D	b.start	0000000000000000
+D	b.end	4039000000000000
+E
+C	all-endpoint-distances-tie	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	bff0000000000000	0000000000000000	3ff0000000000000	0000000000000000
+L	b	0000000000000000	bff0000000000000	0000000000000000	3ff0000000000000
+Q	a	-10	-10	20	20
+Q	b	0	0	2	2
+P	intersection	0000000000000000	0000000000000000
+B	lines_intersect	true
+B	a_intersects_rect_a	true
+B	b_intersects_rect_a	true
+B	rectangles_intersect	true
+D	a.start	3ff0000000000000
+D	a.end	3ff0000000000000
+D	b.start	3ff0000000000000
+D	b.end	3ff0000000000000
+E
+C	one-line-nearer-endpoints	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	c000000000000000	0000000000000000	4000000000000000	0000000000000000
+L	b	0000000000000000	bff0000000000000	0000000000000000	3ff0000000000000
+Q	a	-10	-10	20	20
+Q	b	0	0	2	2
+P	intersection	0000000000000000	0000000000000000
+B	lines_intersect	true
+B	a_intersects_rect_a	true
+B	b_intersects_rect_a	true
+B	rectangles_intersect	true
+D	a.start	4010000000000000
+D	a.end	4010000000000000
+D	b.start	3ff0000000000000
+D	b.end	3ff0000000000000
+E
+C	point-on-line	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	4000000000000000	0000000000000000	4000000000000000	0000000000000000
+L	b	0000000000000000	0000000000000000	4010000000000000	0000000000000000
+Q	a	-10	-10	20	20
+Q	b	0	0	2	2
+P	intersection	4000000000000000	0000000000000000
+B	lines_intersect	true
+B	a_intersects_rect_a	true
+B	b_intersects_rect_a	true
+B	rectangles_intersect	true
+D	a.start	0000000000000000
+D	a.end	0000000000000000
+D	b.start	4010000000000000
+D	b.end	4010000000000000
+E
+C	point-off-line	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	4000000000000000	3ff0000000000000	4000000000000000	3ff0000000000000
+L	b	0000000000000000	0000000000000000	4010000000000000	0000000000000000
+Q	a	-10	-10	20	20
+Q	b	0	0	2	2
+P	intersection	4000000000000000	3fe0000000000000
+B	lines_intersect	false
+B	a_intersects_rect_a	true
+B	b_intersects_rect_a	true
+B	rectangles_intersect	true
+D	a.start	3fd0000000000000
+D	a.end	3fd0000000000000
+D	b.start	4011000000000000
+D	b.end	4011000000000000
+E
+C	equal-points	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	3ff0000000000000	4000000000000000	3ff0000000000000	4000000000000000
+L	b	3ff0000000000000	4000000000000000	3ff0000000000000	4000000000000000
+Q	a	-10	-10	20	20
+Q	b	0	0	2	2
+P	intersection	3ff0000000000000	4000000000000000
+B	lines_intersect	true
+B	a_intersects_rect_a	true
+B	b_intersects_rect_a	true
+B	rectangles_intersect	true
+D	a.start	0000000000000000
+D	a.end	0000000000000000
+D	b.start	0000000000000000
+D	b.end	0000000000000000
+E
+C	different-degenerate-points	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	3ff0000000000000	4000000000000000	3ff0000000000000	4000000000000000
+L	b	4022000000000000	401c000000000000	4022000000000000	401c000000000000
+Q	a	-10	-10	20	20
+Q	b	0	0	2	2
+P	intersection	4014000000000000	4012000000000000
+B	lines_intersect	true
+B	a_intersects_rect_a	true
+B	b_intersects_rect_a	true
+B	rectangles_intersect	true
+D	a.start	4036400000000000
+D	a.end	4036400000000000
+D	b.start	4036400000000000
+D	b.end	4036400000000000
+E
+C	determinant-be8ad7f29abcaf48	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	0000000000000000	0000000000000000	3ff0000000000000	0000000000000000
+L	b	0000000000000000	0000000000000000	0000000000000000	be8ad7f29abcaf48
+Q	a	-10	-10	20	20
+Q	b	0	0	2	2
+P	intersection	3fd0000000000000	be6ad7f29abcaf48
+B	lines_intersect	true
+B	a_intersects_rect_a	true
+B	b_intersects_rect_a	true
+B	rectangles_intersect	true
+D	a.start	3fb00000000000b4
+D	a.end	3fe2000000000017
+D	b.start	3fb00000000000b4
+D	b.end	3fb0000000000655
+E
+C	determinant-be7ad7f29abcaf48	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	0000000000000000	0000000000000000	3ff0000000000000	0000000000000000
+L	b	0000000000000000	0000000000000000	0000000000000000	be7ad7f29abcaf48
+Q	a	-10	-10	20	20
+Q	b	0	0	2	2
+P	intersection	3fd0000000000000	be5ad7f29abcaf48
+B	lines_intersect	true
+B	a_intersects_rect_a	true
+B	b_intersects_rect_a	true
+B	rectangles_intersect	true
+D	a.start	3fb000000000002d
+D	a.end	3fe2000000000006
+D	b.start	3fb000000000002d
+D	b.end	3fb0000000000195
+E
+C	determinant-be6ad7f29abcaf48	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	0000000000000000	0000000000000000	3ff0000000000000	0000000000000000
+L	b	0000000000000000	0000000000000000	0000000000000000	be6ad7f29abcaf48
+Q	a	-10	-10	20	20
+Q	b	0	0	2	2
+P	intersection	3fd0000000000000	be4ad7f29abcaf48
+B	lines_intersect	true
+B	a_intersects_rect_a	true
+B	b_intersects_rect_a	true
+B	rectangles_intersect	true
+D	a.start	3fb000000000000b
+D	a.end	3fe2000000000001
+D	b.start	3fb000000000000b
+D	b.end	3fb0000000000065
+E
+C	determinant-0000000000000000	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	0000000000000000	0000000000000000	3ff0000000000000	0000000000000000
+L	b	0000000000000000	0000000000000000	0000000000000000	0000000000000000
+Q	a	-10	-10	20	20
+Q	b	0	0	2	2
+P	intersection	3fd0000000000000	0000000000000000
+B	lines_intersect	true
+B	a_intersects_rect_a	true
+B	b_intersects_rect_a	true
+B	rectangles_intersect	true
+D	a.start	3fb0000000000000
+D	a.end	3fe2000000000000
+D	b.start	3fb0000000000000
+D	b.end	3fb0000000000000
+E
+C	determinant-3e6ad7f29abcaf48	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	0000000000000000	0000000000000000	3ff0000000000000	0000000000000000
+L	b	0000000000000000	0000000000000000	0000000000000000	3e6ad7f29abcaf48
+Q	a	-10	-10	20	20
+Q	b	0	0	2	2
+P	intersection	3fd0000000000000	3e4ad7f29abcaf48
+B	lines_intersect	true
+B	a_intersects_rect_a	true
+B	b_intersects_rect_a	true
+B	rectangles_intersect	true
+D	a.start	3fb000000000000b
+D	a.end	3fe2000000000001
+D	b.start	3fb000000000000b
+D	b.end	3fb0000000000065
+E
+C	determinant-3e7ad7f29abcaf48	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	0000000000000000	0000000000000000	3ff0000000000000	0000000000000000
+L	b	0000000000000000	0000000000000000	0000000000000000	3e7ad7f29abcaf48
+Q	a	-10	-10	20	20
+Q	b	0	0	2	2
+P	intersection	0000000000000000	0000000000000000
+B	lines_intersect	true
+B	a_intersects_rect_a	true
+B	b_intersects_rect_a	true
+B	rectangles_intersect	true
+D	a.start	0000000000000000
+D	a.end	3ff0000000000000
+D	b.start	0000000000000000
+D	b.end	3d06849b86a12b9a
+E
+C	determinant-3e8ad7f29abcaf48	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	0000000000000000	0000000000000000	3ff0000000000000	0000000000000000
+L	b	0000000000000000	0000000000000000	0000000000000000	3e8ad7f29abcaf48
+Q	a	-10	-10	20	20
+Q	b	0	0	2	2
+P	intersection	0000000000000000	0000000000000000
+B	lines_intersect	true
+B	a_intersects_rect_a	true
+B	b_intersects_rect_a	true
+B	rectangles_intersect	true
+D	a.start	0000000000000000
+D	a.end	3ff0000000000000
+D	b.start	0000000000000000
+D	b.end	3d26849b86a12b9a
+E
+C	rectangle-boundary-0	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	c034000000000000	4014000000000000	4034000000000000	4014000000000000
+L	b	0000000000000000	0000000000000000	4024000000000000	0000000000000000
+Q	a	0	0	10	10
+Q	b	10	0	5	5
+P	intersection	4004000000000000	4004000000000000
+B	lines_intersect	false
+B	a_intersects_rect_a	true
+B	b_intersects_rect_a	true
+B	rectangles_intersect	false
+D	a.start	4080040000000000
+D	a.end	4073880000000000
+D	b.start	4029000000000000
+D	b.end	404f400000000000
+E
+C	rectangle-boundary-1	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	c034000000000000	4014000000000000	4034000000000000	4014000000000000
+L	b	0000000000000000	0000000000000000	4024000000000000	0000000000000000
+Q	a	0	0	0	10
+Q	b	10	0	5	5
+P	intersection	4004000000000000	4004000000000000
+B	lines_intersect	false
+B	a_intersects_rect_a	false
+B	b_intersects_rect_a	false
+B	rectangles_intersect	false
+D	a.start	4080040000000000
+D	a.end	4073880000000000
+D	b.start	4029000000000000
+D	b.end	404f400000000000
+E
+C	rectangle-boundary-2	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	c034000000000000	4014000000000000	4034000000000000	4014000000000000
+L	b	0000000000000000	0000000000000000	4024000000000000	0000000000000000
+Q	a	0	0	10	0
+Q	b	10	0	5	5
+P	intersection	4004000000000000	4004000000000000
+B	lines_intersect	false
+B	a_intersects_rect_a	false
+B	b_intersects_rect_a	false
+B	rectangles_intersect	false
+D	a.start	4080040000000000
+D	a.end	4073880000000000
+D	b.start	4029000000000000
+D	b.end	404f400000000000
+E
+C	rectangle-boundary-3	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	c034000000000000	4014000000000000	4034000000000000	4014000000000000
+L	b	0000000000000000	0000000000000000	4024000000000000	0000000000000000
+Q	a	0	0	0	0
+Q	b	10	0	5	5
+P	intersection	4004000000000000	4004000000000000
+B	lines_intersect	false
+B	a_intersects_rect_a	false
+B	b_intersects_rect_a	false
+B	rectangles_intersect	false
+D	a.start	4080040000000000
+D	a.end	4073880000000000
+D	b.start	4029000000000000
+D	b.end	404f400000000000
+E
+C	rectangle-boundary-4	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	c034000000000000	4014000000000000	4034000000000000	4014000000000000
+L	b	0000000000000000	0000000000000000	4024000000000000	0000000000000000
+Q	a	0	0	-1	10
+Q	b	10	0	5	5
+P	intersection	4004000000000000	4004000000000000
+B	lines_intersect	false
+B	a_intersects_rect_a	false
+B	b_intersects_rect_a	false
+B	rectangles_intersect	false
+D	a.start	4080040000000000
+D	a.end	4073880000000000
+D	b.start	4029000000000000
+D	b.end	404f400000000000
+E
+C	rectangle-boundary-5	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	c034000000000000	4014000000000000	4034000000000000	4014000000000000
+L	b	0000000000000000	0000000000000000	4024000000000000	0000000000000000
+Q	a	0	0	10	-1
+Q	b	10	0	5	5
+P	intersection	4004000000000000	4004000000000000
+B	lines_intersect	false
+B	a_intersects_rect_a	false
+B	b_intersects_rect_a	false
+B	rectangles_intersect	false
+D	a.start	4080040000000000
+D	a.end	4073880000000000
+D	b.start	4029000000000000
+D	b.end	404f400000000000
+E
+C	rectangle-boundary-6	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	c034000000000000	4014000000000000	4034000000000000	4014000000000000
+L	b	0000000000000000	0000000000000000	4024000000000000	0000000000000000
+Q	a	0	0	-1	-1
+Q	b	10	0	5	5
+P	intersection	4004000000000000	4004000000000000
+B	lines_intersect	false
+B	a_intersects_rect_a	false
+B	b_intersects_rect_a	false
+B	rectangles_intersect	false
+D	a.start	4080040000000000
+D	a.end	4073880000000000
+D	b.start	4029000000000000
+D	b.end	404f400000000000
+E
+C	rectangle-boundary-7	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	c034000000000000	4014000000000000	4034000000000000	4014000000000000
+L	b	0000000000000000	0000000000000000	4024000000000000	0000000000000000
+Q	a	0	0	10	10
+Q	b	10	0	5	5
+P	intersection	4004000000000000	4004000000000000
+B	lines_intersect	false
+B	a_intersects_rect_a	true
+B	b_intersects_rect_a	true
+B	rectangles_intersect	false
+D	a.start	4080040000000000
+D	a.end	4073880000000000
+D	b.start	4029000000000000
+D	b.end	404f400000000000
+E
+C	rectangle-boundary-8	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	c034000000000000	4014000000000000	4034000000000000	4014000000000000
+L	b	0000000000000000	0000000000000000	4024000000000000	0000000000000000
+Q	a	10	0	10	10
+Q	b	10	0	5	5
+P	intersection	4004000000000000	4004000000000000
+B	lines_intersect	false
+B	a_intersects_rect_a	true
+B	b_intersects_rect_a	true
+B	rectangles_intersect	true
+D	a.start	4080040000000000
+D	a.end	4073880000000000
+D	b.start	4029000000000000
+D	b.end	404f400000000000
+E
+C	rectangle-boundary-9	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	c034000000000000	4014000000000000	4034000000000000	4014000000000000
+L	b	0000000000000000	0000000000000000	4024000000000000	0000000000000000
+Q	a	11	0	10	10
+Q	b	10	0	5	5
+P	intersection	4004000000000000	4004000000000000
+B	lines_intersect	false
+B	a_intersects_rect_a	true
+B	b_intersects_rect_a	false
+B	rectangles_intersect	true
+D	a.start	4080040000000000
+D	a.end	4073880000000000
+D	b.start	4029000000000000
+D	b.end	404f400000000000
+E
+C	rectangle-boundary-10	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	c034000000000000	4014000000000000	4034000000000000	4014000000000000
+L	b	0000000000000000	0000000000000000	4024000000000000	0000000000000000
+Q	a	2147483645	0	8	10
+Q	b	10	0	5	5
+P	intersection	4004000000000000	4004000000000000
+B	lines_intersect	false
+B	a_intersects_rect_a	false
+B	b_intersects_rect_a	false
+B	rectangles_intersect	false
+D	a.start	4080040000000000
+D	a.end	4073880000000000
+D	b.start	4029000000000000
+D	b.end	404f400000000000
+E
+C	rectangle-boundary-11	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	c034000000000000	4014000000000000	4034000000000000	4014000000000000
+L	b	0000000000000000	0000000000000000	4024000000000000	0000000000000000
+Q	a	-2147483648	0	2147483647	10
+Q	b	10	0	5	5
+P	intersection	4004000000000000	4004000000000000
+B	lines_intersect	false
+B	a_intersects_rect_a	true
+B	b_intersects_rect_a	false
+B	rectangles_intersect	false
+D	a.start	4080040000000000
+D	a.end	4073880000000000
+D	b.start	4029000000000000
+D	b.end	404f400000000000
+E
+C	rectangle-boundary-12	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	c034000000000000	4014000000000000	4034000000000000	4014000000000000
+L	b	0000000000000000	0000000000000000	4024000000000000	0000000000000000
+Q	a	2147483647	-2147483648	2147483647	2147483647
+Q	b	10	0	5	5
+P	intersection	4004000000000000	4004000000000000
+B	lines_intersect	false
+B	a_intersects_rect_a	false
+B	b_intersects_rect_a	false
+B	rectangles_intersect	false
+D	a.start	4080040000000000
+D	a.end	4073880000000000
+D	b.start	4029000000000000
+D	b.end	404f400000000000
+E
+C	rectangle-corner-touch	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	bff0000000000000	bff0000000000000	0000000000000000	0000000000000000
+L	b	4024000000000000	4024000000000000	4026000000000000	4026000000000000
+Q	a	0	0	10	10
+Q	b	10	10	1	1
+P	intersection	4014000000000000	4014000000000000
+B	lines_intersect	false
+B	a_intersects_rect_a	true
+B	b_intersects_rect_a	true
+B	rectangles_intersect	false
+D	a.start	4052000000000000
+D	a.end	4049000000000000
+D	b.start	4049000000000000
+D	b.end	4052000000000000
+E
+C	rectangle-internal-point	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	4014000000000000	4014000000000000	4014000000000000	4014000000000000
+L	b	4026000000000000	4026000000000000	4026000000000000	4026000000000000
+Q	a	0	0	10	10
+Q	b	2	2	1	1
+P	intersection	4020000000000000	4020000000000000
+B	lines_intersect	true
+B	a_intersects_rect_a	true
+B	b_intersects_rect_a	false
+B	rectangles_intersect	true
+D	a.start	4032000000000000
+D	a.end	4032000000000000
+D	b.start	4032000000000000
+D	b.end	4032000000000000
+E
+C	rectangle-overflow-x-overlap	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	41dfffffff800000	c000000000000000	41dfffffff800000	4000000000000000
+L	b	41dfffffff000000	0000000000000000	41dfffffffc00000	0000000000000000
+Q	a	2147483645	-10	8	20
+Q	b	2147483646	-1	1	2
+P	intersection	41dfffffff700000	0000000000000000
+B	lines_intersect	true
+B	a_intersects_rect_a	true
+B	b_intersects_rect_a	true
+B	rectangles_intersect	true
+D	a.start	4010400000000000
+D	a.end	4010400000000000
+D	b.start	4008800000000000
+D	b.end	3ff9000000000000
+E
+C	rectangle-overflow-xy-overlap	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	41dfffffff800000	41dfffffff800000	41dfffffffc00000	41dfffffffc00000
+L	b	41dfffffff800000	41dfffffff000000	41dfffffff800000	41dfffffffc00000
+Q	a	2147483645	2147483645	8	8
+Q	b	2147483646	2147483646	1	1
+P	intersection	41dfffffff800000	41dfffffff800000
+B	lines_intersect	true
+B	a_intersects_rect_a	true
+B	b_intersects_rect_a	true
+B	rectangles_intersect	true
+D	a.start	0000000000000000
+D	a.end	4000000000000000
+D	b.start	4010000000000000
+D	b.end	3ff0000000000000
+E
+C	offsets-ordinary	offsets
+X	a	-2	-1	3	4	10	20
+X	b	-1	2	4	-3	10	20
+U	tol	3e7ad7f29abcaf48
+L	a	4020000000000000	4033000000000000	402a000000000000	4038000000000000
+L	b	4022000000000000	4036000000000000	402c000000000000	4031000000000000
+Q	a	-10	-10	20	20
+Q	b	0	0	2	2
+P	intersection	4026000000000000	4034800000000000
+B	lines_intersect	true
+B	a_intersects_rect_a	false
+B	b_intersects_rect_a	false
+B	rectangles_intersect	true
+D	a.start	4026800000000000
+D	a.end	4030400000000000
+D	b.start	4019000000000000
+D	b.end	4035400000000000
+E
+C	offsets-positive-wrap	offsets
+X	a	10	0	20	10	2147483642	0
+X	b	0	-2	0	20	-2147483638	0
+U	tol	3e7ad7f29abcaf48
+L	a	c1dfffffff000000	0000000000000000	c1dffffffc800000	4024000000000000
+L	b	c1dffffffd800000	c000000000000000	c1dffffffd800000	4034000000000000
+Q	a	-2147483648	0	30	20
+Q	b	0	0	2	2
+P	intersection	c1dffffffd800000	4018000000000000
+B	lines_intersect	true
+B	a_intersects_rect_a	true
+B	b_intersects_rect_a	true
+B	rectangles_intersect	false
+D	a.start	4052000000000000
+D	a.end	4040000000000000
+D	b.start	4050000000000000
+D	b.end	4068800000000000
+E
+C	offsets-negative-wrap	offsets
+X	a	-10	-20	-1	-2	-2147483645	-2147483643
+X	b	0	0	8	8	2147483642	2147483642
+U	tol	3e7ad7f29abcaf48
+L	a	41dffffffe400000	41dffffffc400000	c1dfffffff800000	c1dfffffff400000
+L	b	41dffffffe800000	41dffffffe800000	c1dfffffff800000	c1dfffffff800000
+Q	a	-10	-10	20	20
+Q	b	0	0	2	2
+P	intersection	c1d8e38e36dc71c6	c1d8e38e36dc71c6
+B	lines_intersect	true
+B	a_intersects_rect_a	true
+B	b_intersects_rect_a	true
+B	rectangles_intersect	true
+D	a.start	43f948b0f897b425
+D	a.end	439948b106d097bd
+D	b.start	43f948b0f9b425ec
+D	b.end	439948b107b425f6
+E
+C	offsets-both-extremes	offsets
+X	a	2147483647	-2147483648	-2147483648	2147483647	1	-1
+X	b	-2147483648	2147483647	2147483647	-2147483648	-1	1
+U	tol	3e7ad7f29abcaf48
+L	a	c1e0000000000000	41dfffffffc00000	c1dfffffffc00000	41dfffffff800000
+L	b	41dfffffffc00000	c1e0000000000000	41dfffffff800000	c1dfffffffc00000
+Q	a	-10	-10	20	20
+Q	b	0	0	2	2
+P	intersection	bfe0000000000000	bfe0000000000000
+B	lines_intersect	false
+B	a_intersects_rect_a	false
+B	b_intersects_rect_a	false
+B	rectangles_intersect	true
+D	a.start	43dfffffffc00000
+D	a.end	43dfffffff400000
+D	b.start	43dfffffffc00000
+D	b.end	43dfffffff400000
+E
+C	nonfinite-infinite-line	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	fff0000000000000	0000000000000000	7ff0000000000000	0000000000000000
+L	b	0000000000000000	bff0000000000000	0000000000000000	3ff0000000000000
+Q	a	-10	-10	20	20
+Q	b	0	0	2	2
+P	intersection	fff8000000000000	fff8000000000000
+B	lines_intersect	true
+B	a_intersects_rect_a	true
+B	b_intersects_rect_a	true
+B	rectangles_intersect	true
+D	a.start	fff8000000000000
+D	a.end	fff8000000000000
+D	b.start	fff8000000000000
+D	b.end	fff8000000000000
+E
+C	nonfinite-nan-line	geometry
+U	tol	3e7ad7f29abcaf48
+L	a	7ff8000000000000	0000000000000000	3ff0000000000000	3ff0000000000000
+L	b	0000000000000000	bff0000000000000	0000000000000000	3ff0000000000000
+Q	a	-10	-10	20	20
+Q	b	0	0	2	2
+P	intersection	7ff8000000000000	7ff8000000000000
+B	lines_intersect	true
+B	a_intersects_rect_a	true
+B	b_intersects_rect_a	true
+B	rectangles_intersect	true
+D	a.start	7ff8000000000000
+D	a.end	7ff8000000000000
+D	b.start	7ff8000000000000
+D	b.end	7ff8000000000000
+E
+C	approaching-false	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	false
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	0000000000000000	0000000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	bff28f5c28f5c290
+O	after	a	dy	double	0000000000000000
+O	after	a	dtheta	double	0000000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	3fdc28f5c28f5c2c
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	separating-false	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	false
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	bff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	3ff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	0000000000000000	0000000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	bff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	3ff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	3ff28f5c28f5c290
+O	after	a	dy	double	0000000000000000
+O	after	a	dtheta	double	0000000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	bfdc28f5c28f5c2c
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	stationary-false	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	false
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	0000000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	0000000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	0000000000000000	0000000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	0000000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	0000000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	0000000000000000
+O	after	a	dy	double	0000000000000000
+O	after	a	dtheta	double	0000000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	0000000000000000
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	reversed-impact-line-false	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	false
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	4000000000000000	0000000000000000	c000000000000000
+P	contact	0000000000000000	0000000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	bff28f5c28f5c290
+O	after	a	dy	double	0000000000000000
+O	after	a	dtheta	double	0000000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	3fdc28f5c28f5c2c
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	horizontal-impact-false	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	false
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	0000000000000000
+I	a	_dCenterY	double	bff0000000000000
+I	a	dx	double	0000000000000000
+I	a	dy	double	3ff0000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	0000000000000000
+I	b	_dCenterY	double	3ff0000000000000
+I	b	dx	double	0000000000000000
+I	b	dy	double	bff0000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	c000000000000000	0000000000000000	4000000000000000	0000000000000000
+P	contact	0000000000000000	0000000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	0000000000000000
+O	before	a	_dCenterY	double	bff0000000000000
+O	before	a	dx	double	0000000000000000
+O	before	a	dy	double	3ff0000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	0000000000000000
+O	before	b	_dCenterY	double	3ff0000000000000
+O	before	b	dx	double	0000000000000000
+O	before	b	dy	double	bff0000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	0000000000000000
+O	after	a	_dCenterY	double	bff0000000000000
+O	after	a	dx	double	0000000000000000
+O	after	a	dy	double	bff28f5c28f5c290
+O	after	a	dtheta	double	0000000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	0000000000000000
+O	after	b	_dCenterY	double	3ff0000000000000
+O	after	b	dx	double	0000000000000000
+O	after	b	dy	double	3fdc28f5c28f5c2c
+O	after	b	dtheta	double	3fc921fb54442d18
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	skew-rotation-false	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	false
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	c002000000000000
+I	a	_dCenterY	double	3ff8000000000000
+I	a	dx	double	3ff2000000000000
+I	a	dy	double	bfec000000000000
+I	a	dtheta	double	3fd8000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	4006000000000000
+I	b	_dCenterY	double	c008000000000000
+I	b	dx	double	bfe4000000000000
+I	b	dy	double	3fd0000000000000
+I	b	dtheta	double	bfc8000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	3ff0000000000000	c000000000000000	4010000000000000	4014000000000000
+P	contact	3ff8000000000000	3fe8000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	c002000000000000
+O	before	a	_dCenterY	double	3ff8000000000000
+O	before	a	dx	double	3ff2000000000000
+O	before	a	dy	double	bfec000000000000
+O	before	a	dtheta	double	3fd8000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	4006000000000000
+O	before	b	_dCenterY	double	c008000000000000
+O	before	b	dx	double	bfe4000000000000
+O	before	b	dy	double	3fd0000000000000
+O	before	b	dtheta	double	bfc8000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	c002000000000000
+O	after	a	_dCenterY	double	3ff8000000000000
+O	after	a	dx	double	3fe85c2d17b40546
+O	after	a	dy	double	bfe702eec1040243
+O	after	a	dtheta	double	3fc921fb54442d18
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	4006000000000000
+O	after	b	_dCenterY	double	c008000000000000
+O	after	b	dx	double	bfd87ae6ca455c5e
+O	after	b	dy	double	3fc2b27cad600608
+O	after	b	dtheta	double	3fbfd113efbfdbd0
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	normal-orientation-tie-false	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	false
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	0000000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	0000000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	0000000000000000	0000000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	0000000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	0000000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	0000000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	bff28f5c28f5c290
+O	after	a	dy	double	0000000000000000
+O	after	a	dtheta	double	0000000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	0000000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	3fdc28f5c28f5c2c
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	both-centers-same-side-false	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	false
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	c000000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	0000000000000000	0000000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	c000000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	bff28f5c28f5c290
+O	after	a	dy	double	0000000000000000
+O	after	a	dtheta	double	0000000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	c000000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	3fdc28f5c28f5c2c
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	zero-normal-false	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	false
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	3ff0000000000000	4000000000000000	3ff0000000000000	4000000000000000
+P	contact	3ff0000000000000	4000000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	3ff0000000000000
+O	after	a	dy	double	0000000000000000
+O	after	a	dtheta	double	0000000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	bff0000000000000
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	growth-1-0-false	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	false
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	1
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	3fe0000000000000	3ff4000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	1
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	bfd099d7cdbcba7c
+O	after	a	dy	double	0000000000000000
+O	after	a	dtheta	double	3fc921fb54442d18
+O	after	a	hasGrown	int	1
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	bfc488359859b204
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	growth-0-1-false	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	false
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	1
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	3fe0000000000000	3ff4000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	1
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	bfc5f48b8aac84a0
+O	after	a	dy	double	0000000000000000
+O	after	a	dtheta	double	3fc921fb54442d18
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	bfcc07a2f8e25240
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	1
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	growth-1-1-false	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	false
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	1
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	1
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	3fe0000000000000	3ff4000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	1
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	1
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	bfd099d7cdbcba7c
+O	after	a	dy	double	0000000000000000
+O	after	a	dtheta	double	3fc921fb54442d18
+O	after	a	hasGrown	int	1
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	bfc488359859b204
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	1
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	growth--1-0-false	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	false
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	-1
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	3fe0000000000000	3ff4000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	-1
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	bfb56acef3bf2880
+O	after	a	dy	double	0000000000000000
+O	after	a	dtheta	double	3fc921fb54442d18
+O	after	a	hasGrown	int	-1
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	bfd1c3882cb57940
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	growth-0--1-false	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	false
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	-1
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	3fe0000000000000	3ff4000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	-1
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	bfc5f48b8aac84a0
+O	after	a	dy	double	0000000000000000
+O	after	a	dtheta	double	3fc921fb54442d18
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	bfcc07a2f8e25240
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	-1
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	approaching-true	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	true
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	0000000000000000	0000000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	bff28f5c28f5c290
+O	after	a	dy	double	0000000000000000
+O	after	a	dtheta	double	0000000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	3fdc28f5c28f5c2c
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	separating-true	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	true
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	bff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	3ff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	0000000000000000	0000000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	bff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	3ff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	3ff28f5c28f5c290
+O	after	a	dy	double	0000000000000000
+O	after	a	dtheta	double	0000000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	bfdc28f5c28f5c2c
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	stationary-true	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	true
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	0000000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	0000000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	0000000000000000	0000000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	0000000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	0000000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	0000000000000000
+O	after	a	dy	double	0000000000000000
+O	after	a	dtheta	double	0000000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	0000000000000000
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	reversed-impact-line-true	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	true
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	4000000000000000	0000000000000000	c000000000000000
+P	contact	0000000000000000	0000000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	bff28f5c28f5c290
+O	after	a	dy	double	0000000000000000
+O	after	a	dtheta	double	0000000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	3fdc28f5c28f5c2c
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	horizontal-impact-true	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	true
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	0000000000000000
+I	a	_dCenterY	double	bff0000000000000
+I	a	dx	double	0000000000000000
+I	a	dy	double	3ff0000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	0000000000000000
+I	b	_dCenterY	double	3ff0000000000000
+I	b	dx	double	0000000000000000
+I	b	dy	double	bff0000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	c000000000000000	0000000000000000	4000000000000000	0000000000000000
+P	contact	0000000000000000	0000000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	0000000000000000
+O	before	a	_dCenterY	double	bff0000000000000
+O	before	a	dx	double	0000000000000000
+O	before	a	dy	double	3ff0000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	0000000000000000
+O	before	b	_dCenterY	double	3ff0000000000000
+O	before	b	dx	double	0000000000000000
+O	before	b	dy	double	bff0000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	0000000000000000
+O	after	a	_dCenterY	double	bff0000000000000
+O	after	a	dx	double	0000000000000000
+O	after	a	dy	double	bff28f5c28f5c290
+O	after	a	dtheta	double	0000000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	0000000000000000
+O	after	b	_dCenterY	double	3ff0000000000000
+O	after	b	dx	double	0000000000000000
+O	after	b	dy	double	3fdc28f5c28f5c2c
+O	after	b	dtheta	double	3fc921fb54442d18
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	skew-rotation-true	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	true
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	c002000000000000
+I	a	_dCenterY	double	3ff8000000000000
+I	a	dx	double	3ff2000000000000
+I	a	dy	double	bfec000000000000
+I	a	dtheta	double	3fd8000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	4006000000000000
+I	b	_dCenterY	double	c008000000000000
+I	b	dx	double	bfe4000000000000
+I	b	dy	double	3fd0000000000000
+I	b	dtheta	double	bfc8000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	3ff0000000000000	c000000000000000	4010000000000000	4014000000000000
+P	contact	3ff8000000000000	3fe8000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	c002000000000000
+O	before	a	_dCenterY	double	3ff8000000000000
+O	before	a	dx	double	3ff2000000000000
+O	before	a	dy	double	bfec000000000000
+O	before	a	dtheta	double	3fd8000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	4006000000000000
+O	before	b	_dCenterY	double	c008000000000000
+O	before	b	dx	double	bfe4000000000000
+O	before	b	dy	double	3fd0000000000000
+O	before	b	dtheta	double	bfc8000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	c002000000000000
+O	after	a	_dCenterY	double	3ff8000000000000
+O	after	a	dx	double	3fe85c2d17b40546
+O	after	a	dy	double	bfe702eec1040243
+O	after	a	dtheta	double	3fc921fb54442d18
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	4006000000000000
+O	after	b	_dCenterY	double	c008000000000000
+O	after	b	dx	double	bfd87ae6ca455c5e
+O	after	b	dy	double	3fc2b27cad600608
+O	after	b	dtheta	double	3fbfd113efbfdbd0
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	normal-orientation-tie-true	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	true
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	0000000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	0000000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	0000000000000000	0000000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	0000000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	0000000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	0000000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	bff28f5c28f5c290
+O	after	a	dy	double	0000000000000000
+O	after	a	dtheta	double	0000000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	0000000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	3fdc28f5c28f5c2c
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	both-centers-same-side-true	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	true
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	c000000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	0000000000000000	0000000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	c000000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	bff28f5c28f5c290
+O	after	a	dy	double	0000000000000000
+O	after	a	dtheta	double	0000000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	c000000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	3fdc28f5c28f5c2c
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	zero-normal-true	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	true
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	3ff0000000000000	4000000000000000	3ff0000000000000	4000000000000000
+P	contact	3ff0000000000000	4000000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	3ff0000000000000
+O	after	a	dy	double	0000000000000000
+O	after	a	dtheta	double	0000000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	bff0000000000000
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	growth-1-0-true	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	true
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	1
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	3fe0000000000000	3ff4000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	1
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	bfd099d7cdbcba7c
+O	after	a	dy	double	0000000000000000
+O	after	a	dtheta	double	3fc921fb54442d18
+O	after	a	hasGrown	int	1
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	bfc488359859b204
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	growth-0-1-true	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	true
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	1
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	3fe0000000000000	3ff4000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	1
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	bfc5f48b8aac84a0
+O	after	a	dy	double	0000000000000000
+O	after	a	dtheta	double	3fc921fb54442d18
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	bfcc07a2f8e25240
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	1
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	growth-1-1-true	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	true
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	1
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	1
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	3fe0000000000000	3ff4000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	1
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	1
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	bfd099d7cdbcba7c
+O	after	a	dy	double	0000000000000000
+O	after	a	dtheta	double	3fc921fb54442d18
+O	after	a	hasGrown	int	1
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	bfc488359859b204
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	1
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	growth--1-0-true	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	true
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	-1
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	3fe0000000000000	3ff4000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	-1
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	bfb56acef3bf2880
+O	after	a	dy	double	0000000000000000
+O	after	a	dtheta	double	3fc921fb54442d18
+O	after	a	hasGrown	int	-1
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	bfd1c3882cb57940
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	growth-0--1-true	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	true
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	-1
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	3fe0000000000000	3ff4000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	-1
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	bfc5f48b8aac84a0
+O	after	a	dy	double	0000000000000000
+O	after	a	dtheta	double	3fc921fb54442d18
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	bfcc07a2f8e25240
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	-1
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	asymmetric-physical-values	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	true
+I	a	_mass	double	3fd0000000000000
+I	a	_I	double	3fc0000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	405ec00000000000
+I	b	_I	double	40f0000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	bff0000000000000	c000000000000000	4008000000000000	4014000000000000
+P	contact	3fd0000000000000	3fe8000000000000
+O	before	a	_mass	double	3fd0000000000000
+O	before	a	_I	double	3fc0000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	405ec00000000000
+O	before	b	_I	double	40f0000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	3fd0000000000000
+O	after	a	_I	double	3fc0000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	3fd6fc39f0834ca2
+O	after	a	dy	double	3fd76fdee44741ed
+O	after	a	dtheta	double	3fc921fb54442d18
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	405ec00000000000
+O	after	b	_I	double	40f0000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	bfeff5545a002229
+O	after	b	dy	double	bf4863c491fb1093
+O	after	b	dtheta	double	3ec193e72b357172
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	clamping-0	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	false
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	4059000000000000
+I	a	dy	double	c059000000000000
+I	a	dtheta	double	4050000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	c059000000000000
+I	b	dy	double	4059000000000000
+I	b	dtheta	double	c050000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	0000000000000000	3ff0000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	4059000000000000
+O	before	a	dy	double	c059000000000000
+O	before	a	dtheta	double	4050000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	c059000000000000
+O	before	b	dy	double	4059000000000000
+O	before	b	dtheta	double	c050000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	4014000000000000
+O	after	a	dy	double	c014000000000000
+O	after	a	dtheta	double	3fc921fb54442d18
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	c014000000000000
+O	after	b	dy	double	4014000000000000
+O	after	b	dtheta	double	bfc921fb54442d18
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	clamping-1	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	3fd0000000000000
+U	MAX_ROT	3fc0000000000000
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	false
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	4059000000000000
+I	a	dy	double	c059000000000000
+I	a	dtheta	double	4050000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	c059000000000000
+I	b	dy	double	4059000000000000
+I	b	dtheta	double	c050000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	0000000000000000	3ff0000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	4059000000000000
+O	before	a	dy	double	c059000000000000
+O	before	a	dtheta	double	4050000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	c059000000000000
+O	before	b	dy	double	4059000000000000
+O	before	b	dtheta	double	c050000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	3fd0000000000000
+O	after	a	dy	double	bfd0000000000000
+O	after	a	dtheta	double	3fc0000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	bfd0000000000000
+O	after	b	dy	double	3fd0000000000000
+O	after	b	dtheta	double	bfc0000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	clamping-2	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	0000000000000000
+U	MAX_ROT	0000000000000000
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	false
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	4059000000000000
+I	a	dy	double	c059000000000000
+I	a	dtheta	double	4050000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	c059000000000000
+I	b	dy	double	4059000000000000
+I	b	dtheta	double	c050000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	0000000000000000	3ff0000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	4059000000000000
+O	before	a	dy	double	c059000000000000
+O	before	a	dtheta	double	4050000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	c059000000000000
+O	before	b	dy	double	4059000000000000
+O	before	b	dtheta	double	c050000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	0000000000000000
+O	after	a	dy	double	8000000000000000
+O	after	a	dtheta	double	0000000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	8000000000000000
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	8000000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	elasticity-0	impulse
+U	ELASTICITY	0000000000000000
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	true
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	0000000000000000	0000000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	bfc99999999999a0
+O	after	a	dy	double	0000000000000000
+O	after	a	dtheta	double	0000000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	bfc9999999999994
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	elasticity-1	impulse
+U	ELASTICITY	3ff0000000000000
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	true
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	0000000000000000	0000000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	bff6666666666668
+O	after	a	dy	double	0000000000000000
+O	after	a	dtheta	double	0000000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	3fe3333333333336
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	signed-zero-velocities	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	false
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	8000000000000000
+I	a	dy	double	8000000000000000
+I	a	dtheta	double	8000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	0000000000000000
+I	b	dy	double	8000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	0000000000000000	0000000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	8000000000000000
+O	before	a	dy	double	8000000000000000
+O	before	a	dtheta	double	8000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	0000000000000000
+O	before	b	dy	double	8000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	0000000000000000
+O	after	a	dy	double	8000000000000000
+O	after	a	dtheta	double	8000000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	0000000000000000
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	degenerate-a-mass	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	false
+I	a	_mass	double	0000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	0000000000000000	0000000000000000
+O	before	a	_mass	double	0000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	0000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	fff8000000000000
+O	after	a	dy	double	fff8000000000000
+O	after	a	dtheta	double	0000000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	bff0000000000000
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	degenerate-b-mass	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	false
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	0000000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	0000000000000000	0000000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	0000000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	3ff0000000000000
+O	after	a	dy	double	0000000000000000
+O	after	a	dtheta	double	0000000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	0000000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	fff8000000000000
+O	after	b	dy	double	fff8000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	degenerate-both-mass	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	false
+I	a	_mass	double	0000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	0000000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	0000000000000000	0000000000000000
+O	before	a	_mass	double	0000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	0000000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	0000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	fff8000000000000
+O	after	a	dy	double	fff8000000000000
+O	after	a	dtheta	double	0000000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	0000000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	fff8000000000000
+O	after	b	dy	double	fff8000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	degenerate-a-inertia-zero-lever	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	false
+I	a	_mass	double	4000000000000000
+I	a	_I	double	0000000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	0000000000000000	0000000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	0000000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	0000000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	fff8000000000000
+O	after	a	dy	double	fff8000000000000
+O	after	a	dtheta	double	fff8000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	fff8000000000000
+O	after	b	dy	double	fff8000000000000
+O	after	b	dtheta	double	fff8000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	degenerate-a-inertia-nonzero-lever	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	false
+I	a	_mass	double	4000000000000000
+I	a	_I	double	0000000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	0000000000000000	3ff0000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	0000000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	0000000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	3ff0000000000000
+O	after	a	dy	double	0000000000000000
+O	after	a	dtheta	double	fff8000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	bff0000000000000
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	degenerate-both-inertia	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	false
+I	a	_mass	double	4000000000000000
+I	a	_I	double	0000000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	0000000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	0000000000000000	3ff0000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	0000000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	0000000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	0000000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	3ff0000000000000
+O	after	a	dy	double	0000000000000000
+O	after	a	dtheta	double	fff8000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	0000000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	bff0000000000000
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	fff8000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	degenerate-mass-and-inertia	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	false
+I	a	_mass	double	0000000000000000
+I	a	_I	double	0000000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	0000000000000000	3ff0000000000000
+O	before	a	_mass	double	0000000000000000
+O	before	a	_I	double	0000000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	0000000000000000
+O	after	a	_I	double	0000000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	fff8000000000000
+O	after	a	dy	double	fff8000000000000
+O	after	a	dtheta	double	fff8000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	bff0000000000000
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	degenerate-negative-zero-mass	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	false
+I	a	_mass	double	8000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	0000000000000000	0000000000000000
+O	before	a	_mass	double	8000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	8000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	fff8000000000000
+O	after	a	dy	double	fff8000000000000
+O	after	a	dtheta	double	0000000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	bff0000000000000
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	subnormal-mass	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	false
+I	a	_mass	double	00000000000007e8
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	0000000000000fd0
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	0000000000000000	0000000000000000
+O	before	a	_mass	double	00000000000007e8
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	0000000000000fd0
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	00000000000007e8
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	3ff0000000000000
+O	after	a	dy	double	0000000000000000
+O	after	a	dtheta	double	0000000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	0000000000000fd0
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	bff0000000000000
+O	after	b	dy	double	0000000000000000
+O	after	b	dtheta	double	0000000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	controlled-infinite-mass-inertia	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	false
+I	a	_mass	double	7ff0000000000000
+I	a	_I	double	7ff0000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	7ff0000000000000
+I	b	_I	double	7ff0000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	0000000000000000	0000000000000000
+O	before	a	_mass	double	7ff0000000000000
+O	before	a	_I	double	7ff0000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	7ff0000000000000
+O	before	b	_I	double	7ff0000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	7ff0000000000000
+O	after	a	_I	double	7ff0000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	fff8000000000000
+O	after	a	dy	double	fff8000000000000
+O	after	a	dtheta	double	fff8000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	7ff0000000000000
+O	after	b	_I	double	7ff0000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	fff8000000000000
+O	after	b	dy	double	fff8000000000000
+O	after	b	dtheta	double	fff8000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	controlled-infinite-velocity	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	false
+I	a	_mass	double	4000000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	7ff0000000000000
+I	a	dy	double	fff0000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	0000000000000000	0000000000000000
+O	before	a	_mass	double	4000000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	7ff0000000000000
+O	before	a	dy	double	fff0000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	4000000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	fff8000000000000
+O	after	a	dy	double	fff8000000000000
+O	after	a	dtheta	double	fff8000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	fff8000000000000
+O	after	b	dy	double	fff8000000000000
+O	after	b	dtheta	double	fff8000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	controlled-nan-mass	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	4014000000000000
+U	MAX_ROT	3fc921fb54442d18
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	false
+I	a	_mass	double	7ff8000000000000
+I	a	_I	double	4010000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	4008000000000000
+I	b	_I	double	4014000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	0000000000000000	0000000000000000
+O	before	a	_mass	double	7ff8000000000000
+O	before	a	_I	double	4010000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	4008000000000000
+O	before	b	_I	double	4014000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	7ff8000000000000
+O	after	a	_I	double	4010000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	7ff8000000000000
+O	after	a	dy	double	7ff8000000000000
+O	after	a	dtheta	double	7ff8000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	4008000000000000
+O	after	b	_I	double	4014000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	7ff8000000000000
+O	after	b	dy	double	7ff8000000000000
+O	after	b	dtheta	double	7ff8000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E
+C	controlled-zero-denominator-infinite-caps	impulse
+U	ELASTICITY	3fe999999999999a
+U	MAX_VEL	7ff0000000000000
+U	MAX_ROT	7ff0000000000000
+I	call	constructor_seed	long	506172
+I	call	thisOrganism	boolean	false
+I	a	_mass	double	3ff0000000000000
+I	a	_I	double	bff0000000000000
+I	a	_dCenterX	double	bff0000000000000
+I	a	_dCenterY	double	0000000000000000
+I	a	dx	double	3ff0000000000000
+I	a	dy	double	0000000000000000
+I	a	dtheta	double	0000000000000000
+I	a	hasGrown	int	0
+I	a	_growthRatio	int	16
+I	b	_mass	double	3ff0000000000000
+I	b	_I	double	bff0000000000000
+I	b	_dCenterX	double	3ff0000000000000
+I	b	_dCenterY	double	0000000000000000
+I	b	dx	double	bff0000000000000
+I	b	dy	double	0000000000000000
+I	b	dtheta	double	0000000000000000
+I	b	hasGrown	int	0
+I	b	_growthRatio	int	16
+L	impact	0000000000000000	c000000000000000	0000000000000000	4000000000000000
+P	contact	0000000000000000	3ff0000000000000
+O	before	a	_mass	double	3ff0000000000000
+O	before	a	_I	double	bff0000000000000
+O	before	a	_dCenterX	double	bff0000000000000
+O	before	a	_dCenterY	double	0000000000000000
+O	before	a	dx	double	3ff0000000000000
+O	before	a	dy	double	0000000000000000
+O	before	a	dtheta	double	0000000000000000
+O	before	a	hasGrown	int	0
+O	before	a	_growthRatio	int	16
+O	before	b	_mass	double	3ff0000000000000
+O	before	b	_I	double	bff0000000000000
+O	before	b	_dCenterX	double	3ff0000000000000
+O	before	b	_dCenterY	double	0000000000000000
+O	before	b	dx	double	bff0000000000000
+O	before	b	dy	double	0000000000000000
+O	before	b	dtheta	double	0000000000000000
+O	before	b	hasGrown	int	0
+O	before	b	_growthRatio	int	16
+O	after	a	_mass	double	3ff0000000000000
+O	after	a	_I	double	bff0000000000000
+O	after	a	_dCenterX	double	bff0000000000000
+O	after	a	_dCenterY	double	0000000000000000
+O	after	a	dx	double	fff0000000000000
+O	after	a	dy	double	fff8000000000000
+O	after	a	dtheta	double	fff0000000000000
+O	after	a	hasGrown	int	0
+O	after	a	_growthRatio	int	16
+O	after	b	_mass	double	3ff0000000000000
+O	after	b	_I	double	bff0000000000000
+O	after	b	_dCenterX	double	3ff0000000000000
+O	after	b	_dCenterY	double	0000000000000000
+O	after	b	dx	double	7ff0000000000000
+O	after	b	dy	double	fff8000000000000
+O	after	b	dtheta	double	fff8000000000000
+O	after	b	hasGrown	int	0
+O	after	b	_growthRatio	int	16
+R	1779108803982288030	8634	3fd7bc11b90e4b96
+E

@@ -1,0 +1,23 @@
+Biogenesis-R historical XML 1.0 name predicate data
+
+The proposed table is generated from libxml2 v2.9.14 character-range definitions.
+Pinned upstream commit: bd61cd3e2641f73dfeb1477cc96f4fce66695441.
+Source: https://github.com/GNOME/libxml2/blob/bd61cd3e2641f73dfeb1477cc96f4fce66695441/chvalid.def
+
+libxml2 Copyright (C) 1998-2012 Daniel Veillard. All Rights Reserved.
+The range API's generated C/header sources identify William Brack as their author.
+Keep the complete libxml2 permission notice in UPSTREAM-NOTICE-AND-LICENSE.md.
+
+The generator combines BaseChar and Ideographic with ':' and '_' for NameStart.
+NameChar additionally accepts Combining, Digit, Extender, '-' and '.'.
+These are libxml2's historical XML_PARSE_OLD10 rules, not XML 1.0 Fifth Edition rules.
+The output contains65536 bytes; bits1 and2 represent NameStart and NameChar.
+All supplementary Unicode scalar values remain rejected by the existing Rust lookup.
+
+Generated SHA256:10543c7ce6a3acd84041dcd58f33924c5cc2348a9c573fa1392af26dd630db4a.
+Every byte equals the currently retained table; no parser or runtime dependency changes are proposed.
+The old Apache/OpenJDK capture is comparison evidence only, not a generation input.
+Keep generator source, pinned chvalid.def and this permission notice with the source distribution.
+
+This is a proposed alternative derivation. Root owns adoption and package/source record updates.
+Historical Apache-derived source and notice evidence must remain preserved in its original records.

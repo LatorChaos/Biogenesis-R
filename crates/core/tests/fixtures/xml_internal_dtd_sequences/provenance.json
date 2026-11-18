@@ -1,0 +1,490 @@
+{
+  "status": "EXACT_ORIGINAL_INPUTS_AND_ACCEPTED_SOURCE_SOURCE_JAR_OBSERVATIONS",
+  "routes": [
+    {
+      "route": "source-a",
+      "path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/capture-a/execution-a/source-a/capture/observations.tsv",
+      "sha256": "c78341a06031227ed3c52c2246350f7d43605126f9c5f4a394fed0aa2bee1608",
+      "bytes": 445614
+    },
+    {
+      "route": "source-b",
+      "path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/capture-a/execution-a/source-b/capture/observations.tsv",
+      "sha256": "c78341a06031227ed3c52c2246350f7d43605126f9c5f4a394fed0aa2bee1608",
+      "bytes": 445614
+    },
+    {
+      "route": "jar",
+      "path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/capture-a/execution-a/jar/capture/observations.tsv",
+      "sha256": "c78341a06031227ed3c52c2246350f7d43605126f9c5f4a394fed0aa2bee1608",
+      "bytes": 445614
+    }
+  ],
+  "capture_root": {
+    "path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/capture-a/root-readback.json",
+    "sha256": "6e11c643a4e5794d610d5185491e668e2b68801d0c2b582aa8122e8fb66a38d4"
+  },
+  "independent_actual_review": {
+    "path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/reviews/internal-dtd-sequence-actual-independent.json",
+    "sha256": "8c56f092418d2c53a378c122ab85e7a310c34888808a317d70d7b125a92bb2e3",
+    "status": "ACCEPTED_ORIGINAL_INTERNAL_DTD_SEQUENCE_ACTUAL_ONLY"
+  },
+  "independent_controls_review": {
+    "path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/reviews/internal-dtd-sequence-source-controls-independent.json",
+    "sha256": "b908ad56fc75243f26adafa5c4ab3c52d752c9ffedc47dae54d4ba66ec35c884"
+  },
+  "input_description": "input-provenance.json and cases.json preserve historical pre-capture authored metadata. Actual outcomes come only from observations.tsv.",
+  "case_count": 66,
+  "successes": 35,
+  "SAX_errors": 31,
+  "source_rows": 14504,
+  "gene_instances": 84,
+  "zero_gene_successes": [
+    "seed-0246",
+    "optional-pair-c0",
+    "star-pair-c0"
+  ],
+  "row_ledger": {
+    "C": 66,
+    "F": 66,
+    "U": 9702,
+    "R": 132,
+    "O": 66,
+    "G": 980,
+    "N": 3360,
+    "A": 35,
+    "E": 66,
+    "X": 31
+  },
+  "copied_Source_RNG_rows_are_not_Rust_RNG": true,
+  "writer_calls_in_this_capture": 0,
+  "old_zero_gene_scope": "0246 Original parse and write succeed. Its stricter written grammar fails Original reparse. No new rewrite or roundtrip claim.",
+  "source_helper": {
+    "path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/InternalDtdSequenceProof.java",
+    "sha256": "35e493390d558cf39ffb9e50fda95bb4099a87cff800e184507795d531ab69e3"
+  },
+  "assets": [
+    {
+      "file": "cases/seed-0000.bgg",
+      "sha256": "1d2957133d3670022f65602ca986e44edd1fa46163ac8a7f0fb49371fe797f42",
+      "bytes": 4794,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/seed-0000.bgg"
+    },
+    {
+      "file": "cases/seed-0246.bgg",
+      "sha256": "29769b9a7157a3c2b61ba251e16d4b5ce02b4ba14f26b79d70145e2eeeb3cee4",
+      "bytes": 4038,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/seed-0246.bgg"
+    },
+    {
+      "file": "cases/seed-0247.bgg",
+      "sha256": "63b154797fb8ce64ffa89789ea0e361e05b60880efa48c15c59fac1654bcb309",
+      "bytes": 4773,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/seed-0247.bgg"
+    },
+    {
+      "file": "cases/seed-0248.bgg",
+      "sha256": "685b38ec10adaf40c7535a428fd72e47fc95f715ac5d5ac2cf018ca5f3d3953f",
+      "bytes": 4822,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/seed-0248.bgg"
+    },
+    {
+      "file": "cases/seed-0258.bgg",
+      "sha256": "bb9f09771ccacb85a2eecbab528a5840638fa1756604f900f2f7f269828188b7",
+      "bytes": 3381,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/seed-0258.bgg"
+    },
+    {
+      "file": "cases/fixed-pair-c0.bgg",
+      "sha256": "9b8955027e3ccd1fd99854ebe9f7f2fc71f6ef7b27e79fc862c7ce4c445b6a14",
+      "bytes": 4042,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/fixed-pair-c0.bgg"
+    },
+    {
+      "file": "cases/fixed-pair-c1.bgg",
+      "sha256": "51da0722377419519acedfddcaf1e778c0ea5c4567ff8d5e3ca878c2fb3f501c",
+      "bytes": 4798,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/fixed-pair-c1.bgg"
+    },
+    {
+      "file": "cases/fixed-pair-c2.bgg",
+      "sha256": "edcee82d19c3e5975223ca36bfccce2fea5ea4f091536cdff52935cbe3221e8b",
+      "bytes": 5552,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/fixed-pair-c2.bgg"
+    },
+    {
+      "file": "cases/fixed-pair-c3.bgg",
+      "sha256": "03549a7ef08ec8d1429949ae025ccc9cc3e90949cdeda368cfebf3a45dd622b9",
+      "bytes": 6304,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/fixed-pair-c3.bgg"
+    },
+    {
+      "file": "cases/fixed-pair-c4.bgg",
+      "sha256": "3d9b718ca9aa0f89b4964fbadcb7d546420a0222a8e4b782212cf31c24c911b0",
+      "bytes": 7059,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/fixed-pair-c4.bgg"
+    },
+    {
+      "file": "cases/fixed-triple-c0.bgg",
+      "sha256": "998c68abf8463d909b22aee9129e3b465c22166f809713f9e0c9743fa1d13913",
+      "bytes": 4047,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/fixed-triple-c0.bgg"
+    },
+    {
+      "file": "cases/fixed-triple-c1.bgg",
+      "sha256": "6e2b81cd83acb3eeac0ee015e1d01403790a1deacfa518bc96f916f241fa9bdb",
+      "bytes": 4803,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/fixed-triple-c1.bgg"
+    },
+    {
+      "file": "cases/fixed-triple-c2.bgg",
+      "sha256": "d7cb0f4c699afc8b5906d8e521e2325a34f5776c170aca62762c26ef7f554829",
+      "bytes": 5557,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/fixed-triple-c2.bgg"
+    },
+    {
+      "file": "cases/fixed-triple-c3.bgg",
+      "sha256": "4f49f9abcb5be5e4234915ef234324ff20ee520d9759aba54a1319aaa5b5dc05",
+      "bytes": 6309,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/fixed-triple-c3.bgg"
+    },
+    {
+      "file": "cases/fixed-triple-c4.bgg",
+      "sha256": "5651850320e3c4e03f518f610df5294003ac57d60b5762099292071262cc5cf4",
+      "bytes": 7064,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/fixed-triple-c4.bgg"
+    },
+    {
+      "file": "cases/nested-pair-c0.bgg",
+      "sha256": "ece990d31aa10cc0e90bdc92c9beea8190a456bb397e84351bc3773e1f93b270",
+      "bytes": 4044,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/nested-pair-c0.bgg"
+    },
+    {
+      "file": "cases/nested-pair-c1.bgg",
+      "sha256": "3c3410aed0396d50fe607dbddd2d04792458bdf5f3451f43e55d27dd0c542c29",
+      "bytes": 4800,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/nested-pair-c1.bgg"
+    },
+    {
+      "file": "cases/nested-pair-c2.bgg",
+      "sha256": "4b8a834c92625518d704df425d257b5ed3f6fac6f11a6dbe4a08781104a74d17",
+      "bytes": 5554,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/nested-pair-c2.bgg"
+    },
+    {
+      "file": "cases/nested-pair-c3.bgg",
+      "sha256": "2212efbe9dd44795e0a76f75d8173a7bae6e11d5c37b78fd722dbd6ff9b05dcc",
+      "bytes": 6306,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/nested-pair-c3.bgg"
+    },
+    {
+      "file": "cases/nested-pair-c4.bgg",
+      "sha256": "40f35c5c12b26692f02e531d61ec15b83c1321509724733f7ec0b690c69031f4",
+      "bytes": 7061,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/nested-pair-c4.bgg"
+    },
+    {
+      "file": "cases/optional-pair-c0.bgg",
+      "sha256": "693af913d77f5fdc7c009451edcb3564e307dd55cac788ab04f61cc96d8a0294",
+      "bytes": 4043,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/optional-pair-c0.bgg"
+    },
+    {
+      "file": "cases/optional-pair-c1.bgg",
+      "sha256": "187a29e160fbee5a141358596ea103b8f6bcd2a5d455e03c8b9b9d33a477356a",
+      "bytes": 4799,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/optional-pair-c1.bgg"
+    },
+    {
+      "file": "cases/optional-pair-c2.bgg",
+      "sha256": "1d4d6381a7fb23f5226e1dae370474a34fa43ee801ac3082d7b2c6c2a8bb87e9",
+      "bytes": 5553,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/optional-pair-c2.bgg"
+    },
+    {
+      "file": "cases/optional-pair-c3.bgg",
+      "sha256": "6eb350e2cd96a7a4c66be14f60c03c177b4eb9989ce971c72c8358adaffb09d5",
+      "bytes": 6305,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/optional-pair-c3.bgg"
+    },
+    {
+      "file": "cases/optional-pair-c4.bgg",
+      "sha256": "5b28b88c98989855c45749eefc48b608368a3aec0ceb0a0e5891045b1b5653f2",
+      "bytes": 7060,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/optional-pair-c4.bgg"
+    },
+    {
+      "file": "cases/star-pair-c0.bgg",
+      "sha256": "6915f75f7b182f5c13e0b6d35b926cb3f6e33cc978dab4b10dab0bc4d36ebd66",
+      "bytes": 4043,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/star-pair-c0.bgg"
+    },
+    {
+      "file": "cases/star-pair-c1.bgg",
+      "sha256": "216850e398c1a24f55dab3a5c28ef110aef4e0b74f7705c1e6a2ae8d09174d72",
+      "bytes": 4799,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/star-pair-c1.bgg"
+    },
+    {
+      "file": "cases/star-pair-c2.bgg",
+      "sha256": "a94c042c14a5eb73d6989f7ca8c00396d5da33d7b9bf2590ab57f75778487047",
+      "bytes": 5553,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/star-pair-c2.bgg"
+    },
+    {
+      "file": "cases/star-pair-c3.bgg",
+      "sha256": "7a17c5d3e7f814aa8666f616a19e35119442cec31d4e730d26a3dd15519d9a3a",
+      "bytes": 6305,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/star-pair-c3.bgg"
+    },
+    {
+      "file": "cases/star-pair-c4.bgg",
+      "sha256": "dbbb919a4c4b55069dcceb15d2d37c9f1a0ef8358aa476273748e01d2dddcda5",
+      "bytes": 7060,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/star-pair-c4.bgg"
+    },
+    {
+      "file": "cases/plus-pair-c0.bgg",
+      "sha256": "9759cef0d31efac74fec90e63ca11f12ed53991efd98ae220447c8962ab74443",
+      "bytes": 4043,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/plus-pair-c0.bgg"
+    },
+    {
+      "file": "cases/plus-pair-c1.bgg",
+      "sha256": "d09fb850b3144ea465a77874c17ed83b7203bee0046192d24b47dd5ec683142e",
+      "bytes": 4799,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/plus-pair-c1.bgg"
+    },
+    {
+      "file": "cases/plus-pair-c2.bgg",
+      "sha256": "ae356051cb21bac344942c0dff4e6603fffff9781378a7433a4c5a3a6f67be1e",
+      "bytes": 5553,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/plus-pair-c2.bgg"
+    },
+    {
+      "file": "cases/plus-pair-c3.bgg",
+      "sha256": "54bc3e3820953f0da0ca90ec81813a9a98a6ee41d02a5db25ab674f7d63a85ae",
+      "bytes": 6305,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/plus-pair-c3.bgg"
+    },
+    {
+      "file": "cases/plus-pair-c4.bgg",
+      "sha256": "360300939ba527e42c1b0716158cb879c3a4371aca96997725f3dff2cf2eb82c",
+      "bytes": 7060,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/plus-pair-c4.bgg"
+    },
+    {
+      "file": "cases/seed-0247-fixed-pair.bgg",
+      "sha256": "3c2441cb53ee6e30f6602d713dc054be847432b7a40ba926b78be411fe7b64dd",
+      "bytes": 5531,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/seed-0247-fixed-pair.bgg"
+    },
+    {
+      "file": "cases/seed-0247-fixed-triple.bgg",
+      "sha256": "31756594ea9c3521b42380f84ecca50d6b42466d67b2cccc0d0a49b56f8f5148",
+      "bytes": 6288,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/seed-0247-fixed-triple.bgg"
+    },
+    {
+      "file": "cases/seed-0247-nested-pair.bgg",
+      "sha256": "52eaf42f5fb7068e23022c2f2096a191f53a8dac0839eb70da6da0bd21fcecf9",
+      "bytes": 5533,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/seed-0247-nested-pair.bgg"
+    },
+    {
+      "file": "cases/seed-0247-optional-pair.bgg",
+      "sha256": "f0d83cb2a45edcea3052d08fafc33a2052e61041512f3e057a218c4d16dc6207",
+      "bytes": 5532,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/seed-0247-optional-pair.bgg"
+    },
+    {
+      "file": "cases/seed-0247-star-pair.bgg",
+      "sha256": "55d88e3908d39c1053f17b976f0b2f904b3521f26ce8453b18446fe44af00e36",
+      "bytes": 7039,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/seed-0247-star-pair.bgg"
+    },
+    {
+      "file": "cases/seed-0247-plus-pair.bgg",
+      "sha256": "693a0aac43149d5715a9045d9b8c78e6a0c08891153a14313098a07c350defca",
+      "bytes": 7039,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/seed-0247-plus-pair.bgg"
+    },
+    {
+      "file": "cases/seed-0248-fixed-pair.bgg",
+      "sha256": "dedc63731a3f7d27ec31dd931d57012d48fd596ea4134db0c4fe6920e5b7c9d1",
+      "bytes": 5580,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/seed-0248-fixed-pair.bgg"
+    },
+    {
+      "file": "cases/seed-0248-fixed-triple.bgg",
+      "sha256": "07b090bb6a65afde5cc291c9c88ece44f30ededc63a93db8b56a3629af88f024",
+      "bytes": 6337,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/seed-0248-fixed-triple.bgg"
+    },
+    {
+      "file": "cases/seed-0248-nested-pair.bgg",
+      "sha256": "08720f24c39dd9ef76f8a2ad9f5910ee54614c5f619bdfdd96fe395fdf01cdec",
+      "bytes": 5582,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/seed-0248-nested-pair.bgg"
+    },
+    {
+      "file": "cases/seed-0248-optional-pair.bgg",
+      "sha256": "59ff505f1fb19c38564c7133caea98ff77488c28588be29fb64325f12b012d40",
+      "bytes": 5581,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/seed-0248-optional-pair.bgg"
+    },
+    {
+      "file": "cases/seed-0248-star-pair.bgg",
+      "sha256": "19bf6d776b46313a3b83d16ad1429b848e9ba90c8b50580e87ab3677edb1c8b6",
+      "bytes": 7088,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/seed-0248-star-pair.bgg"
+    },
+    {
+      "file": "cases/seed-0248-plus-pair.bgg",
+      "sha256": "15e997006337f6ede8c4386720301df5eeae99a999dd5a613e54c9551fa30487",
+      "bytes": 7088,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/seed-0248-plus-pair.bgg"
+    },
+    {
+      "file": "cases/seed-0258-fixed-pair.bgg",
+      "sha256": "fe099385230e408cdced25d853091dd366f82c7231d53e6c9899368f075f4856",
+      "bytes": 3464,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/seed-0258-fixed-pair.bgg"
+    },
+    {
+      "file": "cases/seed-0258-fixed-triple.bgg",
+      "sha256": "44ac542d1df16c551e7e7446b4c016284b64ba4b89ace335357a5fa3493426cc",
+      "bytes": 3546,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/seed-0258-fixed-triple.bgg"
+    },
+    {
+      "file": "cases/seed-0258-nested-pair.bgg",
+      "sha256": "40187f700a3fb9fd9daf01244cd43471bad045668a71b57614e587d18847fc72",
+      "bytes": 3466,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/seed-0258-nested-pair.bgg"
+    },
+    {
+      "file": "cases/seed-0258-optional-pair.bgg",
+      "sha256": "f9388a9ddd44d68cb670bdcba51798e558100499785c43e6dded2ff9b2104ef6",
+      "bytes": 3465,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/seed-0258-optional-pair.bgg"
+    },
+    {
+      "file": "cases/seed-0258-star-pair.bgg",
+      "sha256": "515a6e6f7428e3b5264c5d06cc01fa3b9fb19bc63c0c48d4624f97b1bb64b8cd",
+      "bytes": 3622,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/seed-0258-star-pair.bgg"
+    },
+    {
+      "file": "cases/seed-0258-plus-pair.bgg",
+      "sha256": "06ce66ad65445ad003060e563c98079286977cb0b7c07b3fe38bdd8dcf3243bf",
+      "bytes": 3622,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/seed-0258-plus-pair.bgg"
+    },
+    {
+      "file": "cases/star-pair-reversed.bgg",
+      "sha256": "29b26ac807e19090698ef41816214cb9829eb2ea996d1462814022a64c94e3cc",
+      "bytes": 7060,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/star-pair-reversed.bgg"
+    },
+    {
+      "file": "cases/plus-pair-reversed.bgg",
+      "sha256": "24054e953338f5c5a3379d93681ff36f5cebe17ec336d649717e4d3c9fb46f6c",
+      "bytes": 7060,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/plus-pair-reversed.bgg"
+    },
+    {
+      "file": "cases/control-trailing-comma.bgg",
+      "sha256": "560c264f91bc9a3d3da669cb41582f9b15f04e517b9a30333dbe491a420fcd75",
+      "bytes": 5548,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/control-trailing-comma.bgg"
+    },
+    {
+      "file": "cases/control-leading-comma.bgg",
+      "sha256": "289c187b3b0768521de9a689e4b829290fee0ed4b4a41008a231fd01392d0715",
+      "bytes": 5548,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/control-leading-comma.bgg"
+    },
+    {
+      "file": "cases/control-double-comma.bgg",
+      "sha256": "a282b551d3138721b6f2982354d1a7fa2d709d9894ec6d5001b333d15dffb2d2",
+      "bytes": 5553,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/control-double-comma.bgg"
+    },
+    {
+      "file": "cases/control-missing-close.bgg",
+      "sha256": "f38913f96ace325c5a33a980a5ef7f57e84186743deb24a5825631d82284e68c",
+      "bytes": 5553,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/control-missing-close.bgg"
+    },
+    {
+      "file": "cases/control-extra-close.bgg",
+      "sha256": "9bf97f1a35ee6d7d193428ea3c3bb936976b37bf72301c73fa616cca9a5c39f2",
+      "bytes": 5553,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/control-extra-close.bgg"
+    },
+    {
+      "file": "cases/control-empty-group.bgg",
+      "sha256": "93dc3b098d3a33133a3218d26045123f4a6fd8c2fdd761e0587757123c336a75",
+      "bytes": 4033,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/control-empty-group.bgg"
+    },
+    {
+      "file": "cases/control-double-star.bgg",
+      "sha256": "e59787d3f5fb50a1846813468ba593e4021024f8f2c5f8addf3f8a1663ea2f71",
+      "bytes": 5554,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/control-double-star.bgg"
+    },
+    {
+      "file": "cases/control-mixed-suffix.bgg",
+      "sha256": "b5724d919a63dc8f40e6b041aa2737e101eaeeb26322ba26926a7ade2648e24f",
+      "bytes": 5554,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/control-mixed-suffix.bgg"
+    },
+    {
+      "file": "cases/control-brace-suffix.bgg",
+      "sha256": "f5acdb1248d9f00ec1a08b7fffedd4c87949b6baf59f765daea3a8fcd7577007",
+      "bytes": 7062,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/control-brace-suffix.bgg"
+    },
+    {
+      "file": "cases/control-wrong-child-pair.bgg",
+      "sha256": "17149477a6f5381d95e012d4ee0432b78d4aec93ca0b3e1cba19503929ddeb94",
+      "bytes": 4832,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/control-wrong-child-pair.bgg"
+    },
+    {
+      "file": "cases/control-wrong-child-star.bgg",
+      "sha256": "47ec4d5d4ee00da000af29b31d036af6e0fa6b66dfe408ad62bd79a0e7dec465",
+      "bytes": 6339,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/control-wrong-child-star.bgg"
+    },
+    {
+      "file": "observations.tsv",
+      "sha256": "c78341a06031227ed3c52c2246350f7d43605126f9c5f4a394fed0aa2bee1608",
+      "bytes": 445614,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/capture-a/execution-a/source-a/capture/observations.tsv"
+    },
+    {
+      "file": "input-provenance.json",
+      "sha256": "56772b76a908f0a09ccec65a342d68c258d6d2c9c0bdb4d93d6115f4d89b9042",
+      "bytes": 5605,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/provenance.json"
+    },
+    {
+      "file": "cases.json",
+      "sha256": "a91d650057bb55e3ef9d86bba8d89d017bdc8834f6fa633ebbde3ca0821eabe0",
+      "bytes": 38025,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/cases.json"
+    },
+    {
+      "file": "input-manifest.tsv",
+      "sha256": "fce4098571a5e8f9564dd3b1d468a94c80c522454e74ee318393921fc36106ad",
+      "bytes": 8698,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/internal-dtd-sequence-preparation-a/inputs/manifest.tsv"
+    }
+  ],
+  "worker_Rust_JVM_or_compiler_workloads": 0,
+  "old_corpora_changed": false
+}

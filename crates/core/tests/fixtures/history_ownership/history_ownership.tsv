@@ -1,0 +1,1183 @@
+C	shared_99_history	controlled_raw_history_boundary	827364
+U	INITIAL_ORGANISMS	int	0
+U	INITIAL_O2	double	408f400000000000
+U	INITIAL_CO2	double	411e848000000000
+U	INITIAL_CH4	double	408f400000000000
+IB	b_shared	3ff0000000000000
+IB	b_equal	3ff0000000000000
+IB	b_positive_zero	0000000000000000
+IB	b_negative_zero	8000000000000000
+IB	b_nan_payload	7ff8000000000042
+IB	b_007	4000000000000007
+IB	b_008	4000000000000008
+IB	b_009	4000000000000009
+IB	b_010	400000000000000a
+IB	b_011	400000000000000b
+IB	b_012	400000000000000c
+IB	b_013	400000000000000d
+IB	b_014	400000000000000e
+IB	b_015	400000000000000f
+IB	b_016	4000000000000010
+IB	b_017	4000000000000011
+IB	b_018	4000000000000012
+IB	b_019	4000000000000013
+IB	b_020	4000000000000014
+IB	b_021	4000000000000015
+IB	b_022	4000000000000016
+IB	b_023	4000000000000017
+IB	b_024	4000000000000018
+IB	b_025	4000000000000019
+IB	b_026	400000000000001a
+IB	b_027	400000000000001b
+IB	b_028	400000000000001c
+IB	b_029	400000000000001d
+IB	b_030	400000000000001e
+IB	b_031	400000000000001f
+IB	b_032	4000000000000020
+IB	b_033	4000000000000021
+IB	b_034	4000000000000022
+IB	b_035	4000000000000023
+IB	b_036	4000000000000024
+IB	b_037	4000000000000025
+IB	b_038	4000000000000026
+IB	b_039	4000000000000027
+IB	b_040	4000000000000028
+IB	b_041	4000000000000029
+IB	b_042	400000000000002a
+IB	b_043	400000000000002b
+IB	b_044	400000000000002c
+IB	b_045	400000000000002d
+IB	b_046	400000000000002e
+IB	b_047	400000000000002f
+IB	b_048	4000000000000030
+IB	b_049	4000000000000031
+IB	b_050	4000000000000032
+IB	b_051	4000000000000033
+IB	b_052	4000000000000034
+IB	b_053	4000000000000035
+IB	b_054	4000000000000036
+IB	b_055	4000000000000037
+IB	b_056	4000000000000038
+IB	b_057	4000000000000039
+IB	b_058	400000000000003a
+IB	b_059	400000000000003b
+IB	b_060	400000000000003c
+IB	b_061	400000000000003d
+IB	b_062	400000000000003e
+IB	b_063	400000000000003f
+IB	b_064	4000000000000040
+IB	b_065	4000000000000041
+IB	b_066	4000000000000042
+IB	b_067	4000000000000043
+IB	b_068	4000000000000044
+IB	b_069	4000000000000045
+IB	b_070	4000000000000046
+IB	b_071	4000000000000047
+IB	b_072	4000000000000048
+IB	b_073	4000000000000049
+IB	b_074	400000000000004a
+IB	b_075	400000000000004b
+IB	b_076	400000000000004c
+IB	b_077	400000000000004d
+IB	b_078	400000000000004e
+IB	b_079	400000000000004f
+IB	b_080	4000000000000050
+IB	b_081	4000000000000051
+IB	b_082	4000000000000052
+IB	b_083	4000000000000053
+IB	b_084	4000000000000054
+IB	b_085	4000000000000055
+IB	b_086	4000000000000056
+IB	b_087	4000000000000057
+IB	b_088	4000000000000058
+IB	b_089	4000000000000059
+IB	b_090	400000000000005a
+IB	b_091	400000000000005b
+IB	b_092	400000000000005c
+IB	b_093	400000000000005d
+IB	b_094	400000000000005e
+IB	b_095	400000000000005f
+IB	b_096	4000000000000060
+IB	b_097	4000000000000061
+IB	b_098	4000000000000062
+IL	shared_history	java.util.ArrayList	99
+IE	shared_history	0	b_shared
+IE	shared_history	1	b_shared
+IE	shared_history	2	b_equal
+IE	shared_history	3	b_positive_zero
+IE	shared_history	4	b_negative_zero
+IE	shared_history	5	b_nan_payload
+IE	shared_history	6	~
+IE	shared_history	7	b_007
+IE	shared_history	8	b_008
+IE	shared_history	9	b_009
+IE	shared_history	10	b_010
+IE	shared_history	11	b_011
+IE	shared_history	12	b_012
+IE	shared_history	13	b_013
+IE	shared_history	14	b_014
+IE	shared_history	15	b_015
+IE	shared_history	16	b_016
+IE	shared_history	17	b_017
+IE	shared_history	18	b_018
+IE	shared_history	19	b_019
+IE	shared_history	20	b_020
+IE	shared_history	21	b_021
+IE	shared_history	22	b_022
+IE	shared_history	23	b_023
+IE	shared_history	24	b_024
+IE	shared_history	25	b_025
+IE	shared_history	26	b_026
+IE	shared_history	27	b_027
+IE	shared_history	28	b_028
+IE	shared_history	29	b_029
+IE	shared_history	30	b_030
+IE	shared_history	31	b_031
+IE	shared_history	32	b_032
+IE	shared_history	33	b_033
+IE	shared_history	34	b_034
+IE	shared_history	35	b_035
+IE	shared_history	36	b_036
+IE	shared_history	37	b_037
+IE	shared_history	38	b_038
+IE	shared_history	39	b_039
+IE	shared_history	40	b_040
+IE	shared_history	41	b_041
+IE	shared_history	42	b_042
+IE	shared_history	43	b_043
+IE	shared_history	44	b_044
+IE	shared_history	45	b_045
+IE	shared_history	46	b_046
+IE	shared_history	47	b_047
+IE	shared_history	48	b_048
+IE	shared_history	49	b_049
+IE	shared_history	50	b_050
+IE	shared_history	51	b_051
+IE	shared_history	52	b_052
+IE	shared_history	53	b_053
+IE	shared_history	54	b_054
+IE	shared_history	55	b_055
+IE	shared_history	56	b_056
+IE	shared_history	57	b_057
+IE	shared_history	58	b_058
+IE	shared_history	59	b_059
+IE	shared_history	60	b_060
+IE	shared_history	61	b_061
+IE	shared_history	62	b_062
+IE	shared_history	63	b_063
+IE	shared_history	64	b_064
+IE	shared_history	65	b_065
+IE	shared_history	66	b_066
+IE	shared_history	67	b_067
+IE	shared_history	68	b_068
+IE	shared_history	69	b_069
+IE	shared_history	70	b_070
+IE	shared_history	71	b_071
+IE	shared_history	72	b_072
+IE	shared_history	73	b_073
+IE	shared_history	74	b_074
+IE	shared_history	75	b_075
+IE	shared_history	76	b_076
+IE	shared_history	77	b_077
+IE	shared_history	78	b_078
+IE	shared_history	79	b_079
+IE	shared_history	80	b_080
+IE	shared_history	81	b_081
+IE	shared_history	82	b_082
+IE	shared_history	83	b_083
+IE	shared_history	84	b_084
+IE	shared_history	85	b_085
+IE	shared_history	86	b_086
+IE	shared_history	87	b_087
+IE	shared_history	88	b_088
+IE	shared_history	89	b_089
+IE	shared_history	90	b_090
+IE	shared_history	91	b_091
+IE	shared_history	92	b_092
+IE	shared_history	93	b_093
+IE	shared_history	94	b_094
+IE	shared_history	95	b_095
+IE	shared_history	96	b_096
+IE	shared_history	97	b_097
+IE	shared_history	98	b_098
+I	populationList	List	shared_history
+I	deathList	List	shared_history
+I	birthList	List	shared_history
+I	oxygenList	List	shared_history
+I	carbonDioxideList	List	shared_history
+I	methaneList	List	shared_history
+I	time	long	5
+I	populationSum	long	17
+I	deathSum	long	19
+I	birthSum	long	23
+I	deathLastTime	int	11
+I	birthLastTime	int	13
+I	maxBirths	int	3
+I	maxDeaths	int	5
+P	initial	object_0
+S	initial	aliveBeingMostChildren	GeneticCode	~
+S	initial	aliveBeingMostChildrenNumber	int	0
+S	initial	aliveBeingMostInfections	GeneticCode	~
+S	initial	aliveBeingMostInfectionsNumber	int	0
+S	initial	aliveBeingMostKills	GeneticCode	~
+S	initial	aliveBeingMostKillsNumber	int	0
+S	initial	beingMostChildren	GeneticCode	~
+S	initial	beingMostChildrenNumber	int	0
+S	initial	beingMostChildrenTime	long	0
+S	initial	beingMostInfections	GeneticCode	~
+S	initial	beingMostInfectionsNumber	int	0
+S	initial	beingMostInfectionsTime	long	0
+S	initial	beingMostKills	GeneticCode	~
+S	initial	beingMostKillsNumber	int	0
+S	initial	beingMostKillsTime	long	0
+S	initial	birthLastTime	int	13
+S	initial	birthList	List	shared_history
+S	initial	birthSum	long	23
+S	initial	carbonDioxideList	List	shared_history
+S	initial	createdOrganisms	int	0
+S	initial	deathLastTime	int	11
+S	initial	deathList	List	shared_history
+S	initial	deathSum	long	19
+S	initial	infectionsSum	long	0
+S	initial	lastBornBeing	GeneticCode	~
+S	initial	lastDeadBeing	GeneticCode	~
+S	initial	lastInfectedBeing	GeneticCode	~
+S	initial	massExtintionState	int	0
+S	initial	massExtintions	int	0
+S	initial	maxBirths	int	3
+S	initial	maxCarbonDioxide	double	411e848000000000
+S	initial	maxCarbonDioxideTime	long	0
+S	initial	maxDeaths	int	5
+S	initial	maxMethane	double	408f400000000000
+S	initial	maxMethaneTime	long	0
+S	initial	maxOxygen	double	408f400000000000
+S	initial	maxOxygenTime	long	0
+S	initial	maxPopulation	int	0
+S	initial	maxPopulationTime	long	0
+S	initial	methaneList	List	shared_history
+S	initial	minCarbonDioxide	double	411e848000000000
+S	initial	minCarbonDioxideTime	long	0
+S	initial	minMethane	double	408f400000000000
+S	initial	minMethaneTime	long	0
+S	initial	minOxygen	double	408f400000000000
+S	initial	minOxygenTime	long	0
+S	initial	minPopulation	int	0
+S	initial	minPopulationTime	long	0
+S	initial	oxygenList	List	shared_history
+S	initial	populationList	List	shared_history
+S	initial	populationSum	long	17
+S	initial	time	long	5
+H	initial	populationList	shared_history
+L	initial	shared_history	java.util.ArrayList	99
+D	initial	shared_history	0	b_shared	3ff0000000000000
+D	initial	shared_history	1	b_shared	3ff0000000000000
+D	initial	shared_history	2	b_equal	3ff0000000000000
+D	initial	shared_history	3	b_positive_zero	0000000000000000
+D	initial	shared_history	4	b_negative_zero	8000000000000000
+D	initial	shared_history	5	b_nan_payload	7ff8000000000042
+D	initial	shared_history	6	~	~
+D	initial	shared_history	7	b_007	4000000000000007
+D	initial	shared_history	8	b_008	4000000000000008
+D	initial	shared_history	9	b_009	4000000000000009
+D	initial	shared_history	10	b_010	400000000000000a
+D	initial	shared_history	11	b_011	400000000000000b
+D	initial	shared_history	12	b_012	400000000000000c
+D	initial	shared_history	13	b_013	400000000000000d
+D	initial	shared_history	14	b_014	400000000000000e
+D	initial	shared_history	15	b_015	400000000000000f
+D	initial	shared_history	16	b_016	4000000000000010
+D	initial	shared_history	17	b_017	4000000000000011
+D	initial	shared_history	18	b_018	4000000000000012
+D	initial	shared_history	19	b_019	4000000000000013
+D	initial	shared_history	20	b_020	4000000000000014
+D	initial	shared_history	21	b_021	4000000000000015
+D	initial	shared_history	22	b_022	4000000000000016
+D	initial	shared_history	23	b_023	4000000000000017
+D	initial	shared_history	24	b_024	4000000000000018
+D	initial	shared_history	25	b_025	4000000000000019
+D	initial	shared_history	26	b_026	400000000000001a
+D	initial	shared_history	27	b_027	400000000000001b
+D	initial	shared_history	28	b_028	400000000000001c
+D	initial	shared_history	29	b_029	400000000000001d
+D	initial	shared_history	30	b_030	400000000000001e
+D	initial	shared_history	31	b_031	400000000000001f
+D	initial	shared_history	32	b_032	4000000000000020
+D	initial	shared_history	33	b_033	4000000000000021
+D	initial	shared_history	34	b_034	4000000000000022
+D	initial	shared_history	35	b_035	4000000000000023
+D	initial	shared_history	36	b_036	4000000000000024
+D	initial	shared_history	37	b_037	4000000000000025
+D	initial	shared_history	38	b_038	4000000000000026
+D	initial	shared_history	39	b_039	4000000000000027
+D	initial	shared_history	40	b_040	4000000000000028
+D	initial	shared_history	41	b_041	4000000000000029
+D	initial	shared_history	42	b_042	400000000000002a
+D	initial	shared_history	43	b_043	400000000000002b
+D	initial	shared_history	44	b_044	400000000000002c
+D	initial	shared_history	45	b_045	400000000000002d
+D	initial	shared_history	46	b_046	400000000000002e
+D	initial	shared_history	47	b_047	400000000000002f
+D	initial	shared_history	48	b_048	4000000000000030
+D	initial	shared_history	49	b_049	4000000000000031
+D	initial	shared_history	50	b_050	4000000000000032
+D	initial	shared_history	51	b_051	4000000000000033
+D	initial	shared_history	52	b_052	4000000000000034
+D	initial	shared_history	53	b_053	4000000000000035
+D	initial	shared_history	54	b_054	4000000000000036
+D	initial	shared_history	55	b_055	4000000000000037
+D	initial	shared_history	56	b_056	4000000000000038
+D	initial	shared_history	57	b_057	4000000000000039
+D	initial	shared_history	58	b_058	400000000000003a
+D	initial	shared_history	59	b_059	400000000000003b
+D	initial	shared_history	60	b_060	400000000000003c
+D	initial	shared_history	61	b_061	400000000000003d
+D	initial	shared_history	62	b_062	400000000000003e
+D	initial	shared_history	63	b_063	400000000000003f
+D	initial	shared_history	64	b_064	4000000000000040
+D	initial	shared_history	65	b_065	4000000000000041
+D	initial	shared_history	66	b_066	4000000000000042
+D	initial	shared_history	67	b_067	4000000000000043
+D	initial	shared_history	68	b_068	4000000000000044
+D	initial	shared_history	69	b_069	4000000000000045
+D	initial	shared_history	70	b_070	4000000000000046
+D	initial	shared_history	71	b_071	4000000000000047
+D	initial	shared_history	72	b_072	4000000000000048
+D	initial	shared_history	73	b_073	4000000000000049
+D	initial	shared_history	74	b_074	400000000000004a
+D	initial	shared_history	75	b_075	400000000000004b
+D	initial	shared_history	76	b_076	400000000000004c
+D	initial	shared_history	77	b_077	400000000000004d
+D	initial	shared_history	78	b_078	400000000000004e
+D	initial	shared_history	79	b_079	400000000000004f
+D	initial	shared_history	80	b_080	4000000000000050
+D	initial	shared_history	81	b_081	4000000000000051
+D	initial	shared_history	82	b_082	4000000000000052
+D	initial	shared_history	83	b_083	4000000000000053
+D	initial	shared_history	84	b_084	4000000000000054
+D	initial	shared_history	85	b_085	4000000000000055
+D	initial	shared_history	86	b_086	4000000000000056
+D	initial	shared_history	87	b_087	4000000000000057
+D	initial	shared_history	88	b_088	4000000000000058
+D	initial	shared_history	89	b_089	4000000000000059
+D	initial	shared_history	90	b_090	400000000000005a
+D	initial	shared_history	91	b_091	400000000000005b
+D	initial	shared_history	92	b_092	400000000000005c
+D	initial	shared_history	93	b_093	400000000000005d
+D	initial	shared_history	94	b_094	400000000000005e
+D	initial	shared_history	95	b_095	400000000000005f
+D	initial	shared_history	96	b_096	4000000000000060
+D	initial	shared_history	97	b_097	4000000000000061
+D	initial	shared_history	98	b_098	4000000000000062
+H	initial	deathList	shared_history
+H	initial	birthList	shared_history
+H	initial	oxygenList	shared_history
+H	initial	carbonDioxideList	shared_history
+H	initial	methaneList	shared_history
+R	initial	995cd818acf5c21f9af31df613bc16f128d8f11d01f91254511a0cc6157f241e	aced0005737200106a6176612e7574696c2e52616e646f6d363296344bf00a530300035a0014686176654e6578744e657874476175737369616e4400106e6578744e657874476175737369616e4a000473656564787000000000000000000000000005dee0798978
+RP	initial	-3981345829458826657	901	3fd54a08163de1b8
+Z	initial	shared_99_history-initial.ser	2871	c106b512a3eea43d1fa0265b0b3ca17cccd55c075ebfbcd4a83c01503a89c86d
+K	event	eventTime
+KA	event	7	4031000000000000	4033000000000000	4037000000000000
+V	event	void
+X	event	none
+P	after_event	object_0
+S	after_event	aliveBeingMostChildren	GeneticCode	~
+S	after_event	aliveBeingMostChildrenNumber	int	0
+S	after_event	aliveBeingMostInfections	GeneticCode	~
+S	after_event	aliveBeingMostInfectionsNumber	int	0
+S	after_event	aliveBeingMostKills	GeneticCode	~
+S	after_event	aliveBeingMostKillsNumber	int	0
+S	after_event	beingMostChildren	GeneticCode	~
+S	after_event	beingMostChildrenNumber	int	0
+S	after_event	beingMostChildrenTime	long	0
+S	after_event	beingMostInfections	GeneticCode	~
+S	after_event	beingMostInfectionsNumber	int	0
+S	after_event	beingMostInfectionsTime	long	0
+S	after_event	beingMostKills	GeneticCode	~
+S	after_event	beingMostKillsNumber	int	0
+S	after_event	beingMostKillsTime	long	0
+S	after_event	birthLastTime	int	0
+S	after_event	birthList	List	shared_history
+S	after_event	birthSum	long	23
+S	after_event	carbonDioxideList	List	shared_history
+S	after_event	createdOrganisms	int	0
+S	after_event	deathLastTime	int	0
+S	after_event	deathList	List	shared_history
+S	after_event	deathSum	long	19
+S	after_event	infectionsSum	long	0
+S	after_event	lastBornBeing	GeneticCode	~
+S	after_event	lastDeadBeing	GeneticCode	~
+S	after_event	lastInfectedBeing	GeneticCode	~
+S	after_event	massExtintionState	int	2
+S	after_event	massExtintions	int	1
+S	after_event	maxBirths	int	13
+S	after_event	maxCarbonDioxide	double	411e848000000000
+S	after_event	maxCarbonDioxideTime	long	0
+S	after_event	maxDeaths	int	11
+S	after_event	maxMethane	double	408f400000000000
+S	after_event	maxMethaneTime	long	0
+S	after_event	maxOxygen	double	408f400000000000
+S	after_event	maxOxygenTime	long	0
+S	after_event	maxPopulation	int	0
+S	after_event	maxPopulationTime	long	0
+S	after_event	methaneList	List	shared_history
+S	after_event	minCarbonDioxide	double	4033000000000000
+S	after_event	minCarbonDioxideTime	long	6
+S	after_event	minMethane	double	4037000000000000
+S	after_event	minMethaneTime	long	6
+S	after_event	minOxygen	double	4031000000000000
+S	after_event	minOxygenTime	long	6
+S	after_event	minPopulation	int	0
+S	after_event	minPopulationTime	long	0
+S	after_event	oxygenList	List	shared_history
+S	after_event	populationList	List	shared_history
+S	after_event	populationSum	long	24
+S	after_event	time	long	6
+H	after_event	populationList	shared_history
+L	after_event	shared_history	java.util.ArrayList	100
+D	after_event	shared_history	0	b_nan_payload	7ff8000000000042
+D	after_event	shared_history	1	~	~
+D	after_event	shared_history	2	b_007	4000000000000007
+D	after_event	shared_history	3	b_008	4000000000000008
+D	after_event	shared_history	4	b_009	4000000000000009
+D	after_event	shared_history	5	b_010	400000000000000a
+D	after_event	shared_history	6	b_011	400000000000000b
+D	after_event	shared_history	7	b_012	400000000000000c
+D	after_event	shared_history	8	b_013	400000000000000d
+D	after_event	shared_history	9	b_014	400000000000000e
+D	after_event	shared_history	10	b_015	400000000000000f
+D	after_event	shared_history	11	b_016	4000000000000010
+D	after_event	shared_history	12	b_017	4000000000000011
+D	after_event	shared_history	13	b_018	4000000000000012
+D	after_event	shared_history	14	b_019	4000000000000013
+D	after_event	shared_history	15	b_020	4000000000000014
+D	after_event	shared_history	16	b_021	4000000000000015
+D	after_event	shared_history	17	b_022	4000000000000016
+D	after_event	shared_history	18	b_023	4000000000000017
+D	after_event	shared_history	19	b_024	4000000000000018
+D	after_event	shared_history	20	b_025	4000000000000019
+D	after_event	shared_history	21	b_026	400000000000001a
+D	after_event	shared_history	22	b_027	400000000000001b
+D	after_event	shared_history	23	b_028	400000000000001c
+D	after_event	shared_history	24	b_029	400000000000001d
+D	after_event	shared_history	25	b_030	400000000000001e
+D	after_event	shared_history	26	b_031	400000000000001f
+D	after_event	shared_history	27	b_032	4000000000000020
+D	after_event	shared_history	28	b_033	4000000000000021
+D	after_event	shared_history	29	b_034	4000000000000022
+D	after_event	shared_history	30	b_035	4000000000000023
+D	after_event	shared_history	31	b_036	4000000000000024
+D	after_event	shared_history	32	b_037	4000000000000025
+D	after_event	shared_history	33	b_038	4000000000000026
+D	after_event	shared_history	34	b_039	4000000000000027
+D	after_event	shared_history	35	b_040	4000000000000028
+D	after_event	shared_history	36	b_041	4000000000000029
+D	after_event	shared_history	37	b_042	400000000000002a
+D	after_event	shared_history	38	b_043	400000000000002b
+D	after_event	shared_history	39	b_044	400000000000002c
+D	after_event	shared_history	40	b_045	400000000000002d
+D	after_event	shared_history	41	b_046	400000000000002e
+D	after_event	shared_history	42	b_047	400000000000002f
+D	after_event	shared_history	43	b_048	4000000000000030
+D	after_event	shared_history	44	b_049	4000000000000031
+D	after_event	shared_history	45	b_050	4000000000000032
+D	after_event	shared_history	46	b_051	4000000000000033
+D	after_event	shared_history	47	b_052	4000000000000034
+D	after_event	shared_history	48	b_053	4000000000000035
+D	after_event	shared_history	49	b_054	4000000000000036
+D	after_event	shared_history	50	b_055	4000000000000037
+D	after_event	shared_history	51	b_056	4000000000000038
+D	after_event	shared_history	52	b_057	4000000000000039
+D	after_event	shared_history	53	b_058	400000000000003a
+D	after_event	shared_history	54	b_059	400000000000003b
+D	after_event	shared_history	55	b_060	400000000000003c
+D	after_event	shared_history	56	b_061	400000000000003d
+D	after_event	shared_history	57	b_062	400000000000003e
+D	after_event	shared_history	58	b_063	400000000000003f
+D	after_event	shared_history	59	b_064	4000000000000040
+D	after_event	shared_history	60	b_065	4000000000000041
+D	after_event	shared_history	61	b_066	4000000000000042
+D	after_event	shared_history	62	b_067	4000000000000043
+D	after_event	shared_history	63	b_068	4000000000000044
+D	after_event	shared_history	64	b_069	4000000000000045
+D	after_event	shared_history	65	b_070	4000000000000046
+D	after_event	shared_history	66	b_071	4000000000000047
+D	after_event	shared_history	67	b_072	4000000000000048
+D	after_event	shared_history	68	b_073	4000000000000049
+D	after_event	shared_history	69	b_074	400000000000004a
+D	after_event	shared_history	70	b_075	400000000000004b
+D	after_event	shared_history	71	b_076	400000000000004c
+D	after_event	shared_history	72	b_077	400000000000004d
+D	after_event	shared_history	73	b_078	400000000000004e
+D	after_event	shared_history	74	b_079	400000000000004f
+D	after_event	shared_history	75	b_080	4000000000000050
+D	after_event	shared_history	76	b_081	4000000000000051
+D	after_event	shared_history	77	b_082	4000000000000052
+D	after_event	shared_history	78	b_083	4000000000000053
+D	after_event	shared_history	79	b_084	4000000000000054
+D	after_event	shared_history	80	b_085	4000000000000055
+D	after_event	shared_history	81	b_086	4000000000000056
+D	after_event	shared_history	82	b_087	4000000000000057
+D	after_event	shared_history	83	b_088	4000000000000058
+D	after_event	shared_history	84	b_089	4000000000000059
+D	after_event	shared_history	85	b_090	400000000000005a
+D	after_event	shared_history	86	b_091	400000000000005b
+D	after_event	shared_history	87	b_092	400000000000005c
+D	after_event	shared_history	88	b_093	400000000000005d
+D	after_event	shared_history	89	b_094	400000000000005e
+D	after_event	shared_history	90	b_095	400000000000005f
+D	after_event	shared_history	91	b_096	4000000000000060
+D	after_event	shared_history	92	b_097	4000000000000061
+D	after_event	shared_history	93	b_098	4000000000000062
+D	after_event	shared_history	94	object_1	401c000000000000
+D	after_event	shared_history	95	object_2	4026000000000000
+D	after_event	shared_history	96	object_3	402a000000000000
+D	after_event	shared_history	97	object_4	4031000000000000
+D	after_event	shared_history	98	object_5	4033000000000000
+D	after_event	shared_history	99	object_6	4037000000000000
+H	after_event	deathList	shared_history
+H	after_event	birthList	shared_history
+H	after_event	oxygenList	shared_history
+H	after_event	carbonDioxideList	shared_history
+H	after_event	methaneList	shared_history
+R	after_event	995cd818acf5c21f9af31df613bc16f128d8f11d01f91254511a0cc6157f241e	aced0005737200106a6176612e7574696c2e52616e646f6d363296344bf00a530300035a0014686176654e6578744e657874476175737369616e4400106e6578744e657874476175737369616e4a000473656564787000000000000000000000000005dee0798978
+RP	after_event	-3981345829458826657	901	3fd54a08163de1b8
+Z	after_event	shared_99_history-after_event.ser	2894	2c98243bf0cae8d9883a6ba890e2ff7a5e93de84704f7807987a52196696db24
+E	shared_99_history
+C	late_methane_null	controlled_raw_history_boundary	827364
+U	INITIAL_ORGANISMS	int	0
+U	INITIAL_O2	double	408f400000000000
+U	INITIAL_CO2	double	411e848000000000
+U	INITIAL_CH4	double	408f400000000000
+IB	box_0	3ff0000000000000
+IL	history_0	java.util.ArrayList	1
+IE	history_0	0	box_0
+I	populationList	List	history_0
+IB	box_1	4000000000000000
+IL	history_1	java.util.ArrayList	1
+IE	history_1	0	box_1
+I	deathList	List	history_1
+IB	box_2	4008000000000000
+IL	history_2	java.util.ArrayList	1
+IE	history_2	0	box_2
+I	birthList	List	history_2
+IB	box_3	4010000000000000
+IL	history_3	java.util.ArrayList	1
+IE	history_3	0	box_3
+I	oxygenList	List	history_3
+IB	box_4	4014000000000000
+IL	history_4	java.util.ArrayList	1
+IE	history_4	0	box_4
+I	carbonDioxideList	List	history_4
+I	methaneList	List	~
+I	time	long	5
+I	populationSum	long	17
+I	deathSum	long	19
+I	birthSum	long	23
+I	deathLastTime	int	11
+I	birthLastTime	int	13
+I	maxBirths	int	3
+I	maxDeaths	int	5
+P	initial	object_0
+S	initial	aliveBeingMostChildren	GeneticCode	~
+S	initial	aliveBeingMostChildrenNumber	int	0
+S	initial	aliveBeingMostInfections	GeneticCode	~
+S	initial	aliveBeingMostInfectionsNumber	int	0
+S	initial	aliveBeingMostKills	GeneticCode	~
+S	initial	aliveBeingMostKillsNumber	int	0
+S	initial	beingMostChildren	GeneticCode	~
+S	initial	beingMostChildrenNumber	int	0
+S	initial	beingMostChildrenTime	long	0
+S	initial	beingMostInfections	GeneticCode	~
+S	initial	beingMostInfectionsNumber	int	0
+S	initial	beingMostInfectionsTime	long	0
+S	initial	beingMostKills	GeneticCode	~
+S	initial	beingMostKillsNumber	int	0
+S	initial	beingMostKillsTime	long	0
+S	initial	birthLastTime	int	13
+S	initial	birthList	List	history_2
+S	initial	birthSum	long	23
+S	initial	carbonDioxideList	List	history_4
+S	initial	createdOrganisms	int	0
+S	initial	deathLastTime	int	11
+S	initial	deathList	List	history_1
+S	initial	deathSum	long	19
+S	initial	infectionsSum	long	0
+S	initial	lastBornBeing	GeneticCode	~
+S	initial	lastDeadBeing	GeneticCode	~
+S	initial	lastInfectedBeing	GeneticCode	~
+S	initial	massExtintionState	int	0
+S	initial	massExtintions	int	0
+S	initial	maxBirths	int	3
+S	initial	maxCarbonDioxide	double	411e848000000000
+S	initial	maxCarbonDioxideTime	long	0
+S	initial	maxDeaths	int	5
+S	initial	maxMethane	double	408f400000000000
+S	initial	maxMethaneTime	long	0
+S	initial	maxOxygen	double	408f400000000000
+S	initial	maxOxygenTime	long	0
+S	initial	maxPopulation	int	0
+S	initial	maxPopulationTime	long	0
+S	initial	methaneList	List	~
+S	initial	minCarbonDioxide	double	411e848000000000
+S	initial	minCarbonDioxideTime	long	0
+S	initial	minMethane	double	408f400000000000
+S	initial	minMethaneTime	long	0
+S	initial	minOxygen	double	408f400000000000
+S	initial	minOxygenTime	long	0
+S	initial	minPopulation	int	0
+S	initial	minPopulationTime	long	0
+S	initial	oxygenList	List	history_3
+S	initial	populationList	List	history_0
+S	initial	populationSum	long	17
+S	initial	time	long	5
+H	initial	populationList	history_0
+L	initial	history_0	java.util.ArrayList	1
+D	initial	history_0	0	box_0	3ff0000000000000
+H	initial	deathList	history_1
+L	initial	history_1	java.util.ArrayList	1
+D	initial	history_1	0	box_1	4000000000000000
+H	initial	birthList	history_2
+L	initial	history_2	java.util.ArrayList	1
+D	initial	history_2	0	box_2	4008000000000000
+H	initial	oxygenList	history_3
+L	initial	history_3	java.util.ArrayList	1
+D	initial	history_3	0	box_3	4010000000000000
+H	initial	carbonDioxideList	history_4
+L	initial	history_4	java.util.ArrayList	1
+D	initial	history_4	0	box_4	4014000000000000
+H	initial	methaneList	~
+R	initial	995cd818acf5c21f9af31df613bc16f128d8f11d01f91254511a0cc6157f241e	aced0005737200106a6176612e7574696c2e52616e646f6d363296344bf00a530300035a0014686176654e6578744e657874476175737369616e4400106e6578744e657874476175737369616e4a000473656564787000000000000000000000000005dee0798978
+RP	initial	-3981345829458826657	901	3fd54a08163de1b8
+Z	initial	late_methane_null-initial.ser	1621	e91dac76e0378cc37dcf27d9971326436da492bd51a3624cbe6c025acad8c0a4
+K	getter	getMethaneList
+V	getter	List	~
+X	getter	none
+P	after_getter	object_0
+S	after_getter	aliveBeingMostChildren	GeneticCode	~
+S	after_getter	aliveBeingMostChildrenNumber	int	0
+S	after_getter	aliveBeingMostInfections	GeneticCode	~
+S	after_getter	aliveBeingMostInfectionsNumber	int	0
+S	after_getter	aliveBeingMostKills	GeneticCode	~
+S	after_getter	aliveBeingMostKillsNumber	int	0
+S	after_getter	beingMostChildren	GeneticCode	~
+S	after_getter	beingMostChildrenNumber	int	0
+S	after_getter	beingMostChildrenTime	long	0
+S	after_getter	beingMostInfections	GeneticCode	~
+S	after_getter	beingMostInfectionsNumber	int	0
+S	after_getter	beingMostInfectionsTime	long	0
+S	after_getter	beingMostKills	GeneticCode	~
+S	after_getter	beingMostKillsNumber	int	0
+S	after_getter	beingMostKillsTime	long	0
+S	after_getter	birthLastTime	int	13
+S	after_getter	birthList	List	history_2
+S	after_getter	birthSum	long	23
+S	after_getter	carbonDioxideList	List	history_4
+S	after_getter	createdOrganisms	int	0
+S	after_getter	deathLastTime	int	11
+S	after_getter	deathList	List	history_1
+S	after_getter	deathSum	long	19
+S	after_getter	infectionsSum	long	0
+S	after_getter	lastBornBeing	GeneticCode	~
+S	after_getter	lastDeadBeing	GeneticCode	~
+S	after_getter	lastInfectedBeing	GeneticCode	~
+S	after_getter	massExtintionState	int	0
+S	after_getter	massExtintions	int	0
+S	after_getter	maxBirths	int	3
+S	after_getter	maxCarbonDioxide	double	411e848000000000
+S	after_getter	maxCarbonDioxideTime	long	0
+S	after_getter	maxDeaths	int	5
+S	after_getter	maxMethane	double	408f400000000000
+S	after_getter	maxMethaneTime	long	0
+S	after_getter	maxOxygen	double	408f400000000000
+S	after_getter	maxOxygenTime	long	0
+S	after_getter	maxPopulation	int	0
+S	after_getter	maxPopulationTime	long	0
+S	after_getter	methaneList	List	~
+S	after_getter	minCarbonDioxide	double	411e848000000000
+S	after_getter	minCarbonDioxideTime	long	0
+S	after_getter	minMethane	double	408f400000000000
+S	after_getter	minMethaneTime	long	0
+S	after_getter	minOxygen	double	408f400000000000
+S	after_getter	minOxygenTime	long	0
+S	after_getter	minPopulation	int	0
+S	after_getter	minPopulationTime	long	0
+S	after_getter	oxygenList	List	history_3
+S	after_getter	populationList	List	history_0
+S	after_getter	populationSum	long	17
+S	after_getter	time	long	5
+H	after_getter	populationList	history_0
+L	after_getter	history_0	java.util.ArrayList	1
+D	after_getter	history_0	0	box_0	3ff0000000000000
+H	after_getter	deathList	history_1
+L	after_getter	history_1	java.util.ArrayList	1
+D	after_getter	history_1	0	box_1	4000000000000000
+H	after_getter	birthList	history_2
+L	after_getter	history_2	java.util.ArrayList	1
+D	after_getter	history_2	0	box_2	4008000000000000
+H	after_getter	oxygenList	history_3
+L	after_getter	history_3	java.util.ArrayList	1
+D	after_getter	history_3	0	box_3	4010000000000000
+H	after_getter	carbonDioxideList	history_4
+L	after_getter	history_4	java.util.ArrayList	1
+D	after_getter	history_4	0	box_4	4014000000000000
+H	after_getter	methaneList	~
+R	after_getter	995cd818acf5c21f9af31df613bc16f128d8f11d01f91254511a0cc6157f241e	aced0005737200106a6176612e7574696c2e52616e646f6d363296344bf00a530300035a0014686176654e6578744e657874476175737369616e4400106e6578744e657874476175737369616e4a000473656564787000000000000000000000000005dee0798978
+RP	after_getter	-3981345829458826657	901	3fd54a08163de1b8
+Z	after_getter	late_methane_null-after_getter.ser	1621	e91dac76e0378cc37dcf27d9971326436da492bd51a3624cbe6c025acad8c0a4
+K	event	eventTime
+KA	event	7	4031000000000000	4033000000000000	4037000000000000
+X	event	java.lang.NullPointerException	biogenesis.WorldStatistics	eventTime	481
+P	after_event	object_0
+S	after_event	aliveBeingMostChildren	GeneticCode	~
+S	after_event	aliveBeingMostChildrenNumber	int	0
+S	after_event	aliveBeingMostInfections	GeneticCode	~
+S	after_event	aliveBeingMostInfectionsNumber	int	0
+S	after_event	aliveBeingMostKills	GeneticCode	~
+S	after_event	aliveBeingMostKillsNumber	int	0
+S	after_event	beingMostChildren	GeneticCode	~
+S	after_event	beingMostChildrenNumber	int	0
+S	after_event	beingMostChildrenTime	long	0
+S	after_event	beingMostInfections	GeneticCode	~
+S	after_event	beingMostInfectionsNumber	int	0
+S	after_event	beingMostInfectionsTime	long	0
+S	after_event	beingMostKills	GeneticCode	~
+S	after_event	beingMostKillsNumber	int	0
+S	after_event	beingMostKillsTime	long	0
+S	after_event	birthLastTime	int	13
+S	after_event	birthList	List	history_2
+S	after_event	birthSum	long	23
+S	after_event	carbonDioxideList	List	history_4
+S	after_event	createdOrganisms	int	0
+S	after_event	deathLastTime	int	11
+S	after_event	deathList	List	history_1
+S	after_event	deathSum	long	19
+S	after_event	infectionsSum	long	0
+S	after_event	lastBornBeing	GeneticCode	~
+S	after_event	lastDeadBeing	GeneticCode	~
+S	after_event	lastInfectedBeing	GeneticCode	~
+S	after_event	massExtintionState	int	2
+S	after_event	massExtintions	int	1
+S	after_event	maxBirths	int	13
+S	after_event	maxCarbonDioxide	double	411e848000000000
+S	after_event	maxCarbonDioxideTime	long	0
+S	after_event	maxDeaths	int	11
+S	after_event	maxMethane	double	408f400000000000
+S	after_event	maxMethaneTime	long	0
+S	after_event	maxOxygen	double	408f400000000000
+S	after_event	maxOxygenTime	long	0
+S	after_event	maxPopulation	int	0
+S	after_event	maxPopulationTime	long	0
+S	after_event	methaneList	List	~
+S	after_event	minCarbonDioxide	double	4033000000000000
+S	after_event	minCarbonDioxideTime	long	6
+S	after_event	minMethane	double	4037000000000000
+S	after_event	minMethaneTime	long	6
+S	after_event	minOxygen	double	4031000000000000
+S	after_event	minOxygenTime	long	6
+S	after_event	minPopulation	int	0
+S	after_event	minPopulationTime	long	0
+S	after_event	oxygenList	List	history_3
+S	after_event	populationList	List	history_0
+S	after_event	populationSum	long	24
+S	after_event	time	long	6
+H	after_event	populationList	history_0
+L	after_event	history_0	java.util.ArrayList	2
+D	after_event	history_0	0	box_0	3ff0000000000000
+D	after_event	history_0	1	object_1	401c000000000000
+H	after_event	deathList	history_1
+L	after_event	history_1	java.util.ArrayList	2
+D	after_event	history_1	0	box_1	4000000000000000
+D	after_event	history_1	1	object_2	4026000000000000
+H	after_event	birthList	history_2
+L	after_event	history_2	java.util.ArrayList	2
+D	after_event	history_2	0	box_2	4008000000000000
+D	after_event	history_2	1	object_3	402a000000000000
+H	after_event	oxygenList	history_3
+L	after_event	history_3	java.util.ArrayList	2
+D	after_event	history_3	0	box_3	4010000000000000
+D	after_event	history_3	1	object_4	4031000000000000
+H	after_event	carbonDioxideList	history_4
+L	after_event	history_4	java.util.ArrayList	2
+D	after_event	history_4	0	box_4	4014000000000000
+D	after_event	history_4	1	object_5	4033000000000000
+H	after_event	methaneList	~
+R	after_event	995cd818acf5c21f9af31df613bc16f128d8f11d01f91254511a0cc6157f241e	aced0005737200106a6176612e7574696c2e52616e646f6d363296344bf00a530300035a0014686176654e6578744e657874476175737369616e4400106e6578744e657874476175737369616e4a000473656564787000000000000000000000000005dee0798978
+RP	after_event	-3981345829458826657	901	3fd54a08163de1b8
+Z	after_event	late_methane_null-after_event.ser	1691	43f66dae1885927d580183a732ff20fbf05f55bbce6a880e4656dbe6222c5566
+E	late_methane_null
+C	null_box_graph	controlled_raw_history_boundary	827364
+U	INITIAL_ORGANISMS	int	0
+U	INITIAL_O2	double	408f400000000000
+U	INITIAL_CO2	double	411e848000000000
+U	INITIAL_CH4	double	408f400000000000
+IL	null_box_history	java.util.ArrayList	1
+IE	null_box_history	0	~
+I	populationList	List	null_box_history
+P	initial	object_0
+S	initial	aliveBeingMostChildren	GeneticCode	~
+S	initial	aliveBeingMostChildrenNumber	int	0
+S	initial	aliveBeingMostInfections	GeneticCode	~
+S	initial	aliveBeingMostInfectionsNumber	int	0
+S	initial	aliveBeingMostKills	GeneticCode	~
+S	initial	aliveBeingMostKillsNumber	int	0
+S	initial	beingMostChildren	GeneticCode	~
+S	initial	beingMostChildrenNumber	int	0
+S	initial	beingMostChildrenTime	long	0
+S	initial	beingMostInfections	GeneticCode	~
+S	initial	beingMostInfectionsNumber	int	0
+S	initial	beingMostInfectionsTime	long	0
+S	initial	beingMostKills	GeneticCode	~
+S	initial	beingMostKillsNumber	int	0
+S	initial	beingMostKillsTime	long	0
+S	initial	birthLastTime	int	0
+S	initial	birthList	List	object_1
+S	initial	birthSum	long	0
+S	initial	carbonDioxideList	List	object_2
+S	initial	createdOrganisms	int	0
+S	initial	deathLastTime	int	0
+S	initial	deathList	List	object_3
+S	initial	deathSum	long	0
+S	initial	infectionsSum	long	0
+S	initial	lastBornBeing	GeneticCode	~
+S	initial	lastDeadBeing	GeneticCode	~
+S	initial	lastInfectedBeing	GeneticCode	~
+S	initial	massExtintionState	int	0
+S	initial	massExtintions	int	0
+S	initial	maxBirths	int	0
+S	initial	maxCarbonDioxide	double	411e848000000000
+S	initial	maxCarbonDioxideTime	long	0
+S	initial	maxDeaths	int	0
+S	initial	maxMethane	double	408f400000000000
+S	initial	maxMethaneTime	long	0
+S	initial	maxOxygen	double	408f400000000000
+S	initial	maxOxygenTime	long	0
+S	initial	maxPopulation	int	0
+S	initial	maxPopulationTime	long	0
+S	initial	methaneList	List	object_4
+S	initial	minCarbonDioxide	double	411e848000000000
+S	initial	minCarbonDioxideTime	long	0
+S	initial	minMethane	double	408f400000000000
+S	initial	minMethaneTime	long	0
+S	initial	minOxygen	double	408f400000000000
+S	initial	minOxygenTime	long	0
+S	initial	minPopulation	int	0
+S	initial	minPopulationTime	long	0
+S	initial	oxygenList	List	object_5
+S	initial	populationList	List	null_box_history
+S	initial	populationSum	long	0
+S	initial	time	long	0
+H	initial	populationList	null_box_history
+L	initial	null_box_history	java.util.ArrayList	1
+D	initial	null_box_history	0	~	~
+H	initial	deathList	object_3
+L	initial	object_3	java.util.ArrayList	0
+H	initial	birthList	object_1
+L	initial	object_1	java.util.ArrayList	0
+H	initial	oxygenList	object_5
+L	initial	object_5	java.util.ArrayList	0
+H	initial	carbonDioxideList	object_2
+L	initial	object_2	java.util.ArrayList	0
+H	initial	methaneList	object_4
+L	initial	object_4	java.util.ArrayList	0
+R	initial	995cd818acf5c21f9af31df613bc16f128d8f11d01f91254511a0cc6157f241e	aced0005737200106a6176612e7574696c2e52616e646f6d363296344bf00a530300035a0014686176654e6578744e657874476175737369616e4400106e6578744e657874476175737369616e4a000473656564787000000000000000000000000005dee0798978
+RP	initial	-3981345829458826657	901	3fd54a08163de1b8
+Z	initial	null_box_graph-initial.ser	1502	65a148c1da99921334c61dded915cf5e163f2467c00616b6ea6e187597535e2b
+K	graph	GraphInfo
+KA	graph	populationList	3ff0000000000000	0000000000000000	100	80	ffffffff	history
+X	graph	java.lang.NullPointerException	biogenesis.GraphInfo	<init>	516
+P	after_graph	object_0
+S	after_graph	aliveBeingMostChildren	GeneticCode	~
+S	after_graph	aliveBeingMostChildrenNumber	int	0
+S	after_graph	aliveBeingMostInfections	GeneticCode	~
+S	after_graph	aliveBeingMostInfectionsNumber	int	0
+S	after_graph	aliveBeingMostKills	GeneticCode	~
+S	after_graph	aliveBeingMostKillsNumber	int	0
+S	after_graph	beingMostChildren	GeneticCode	~
+S	after_graph	beingMostChildrenNumber	int	0
+S	after_graph	beingMostChildrenTime	long	0
+S	after_graph	beingMostInfections	GeneticCode	~
+S	after_graph	beingMostInfectionsNumber	int	0
+S	after_graph	beingMostInfectionsTime	long	0
+S	after_graph	beingMostKills	GeneticCode	~
+S	after_graph	beingMostKillsNumber	int	0
+S	after_graph	beingMostKillsTime	long	0
+S	after_graph	birthLastTime	int	0
+S	after_graph	birthList	List	object_1
+S	after_graph	birthSum	long	0
+S	after_graph	carbonDioxideList	List	object_2
+S	after_graph	createdOrganisms	int	0
+S	after_graph	deathLastTime	int	0
+S	after_graph	deathList	List	object_3
+S	after_graph	deathSum	long	0
+S	after_graph	infectionsSum	long	0
+S	after_graph	lastBornBeing	GeneticCode	~
+S	after_graph	lastDeadBeing	GeneticCode	~
+S	after_graph	lastInfectedBeing	GeneticCode	~
+S	after_graph	massExtintionState	int	0
+S	after_graph	massExtintions	int	0
+S	after_graph	maxBirths	int	0
+S	after_graph	maxCarbonDioxide	double	411e848000000000
+S	after_graph	maxCarbonDioxideTime	long	0
+S	after_graph	maxDeaths	int	0
+S	after_graph	maxMethane	double	408f400000000000
+S	after_graph	maxMethaneTime	long	0
+S	after_graph	maxOxygen	double	408f400000000000
+S	after_graph	maxOxygenTime	long	0
+S	after_graph	maxPopulation	int	0
+S	after_graph	maxPopulationTime	long	0
+S	after_graph	methaneList	List	object_4
+S	after_graph	minCarbonDioxide	double	411e848000000000
+S	after_graph	minCarbonDioxideTime	long	0
+S	after_graph	minMethane	double	408f400000000000
+S	after_graph	minMethaneTime	long	0
+S	after_graph	minOxygen	double	408f400000000000
+S	after_graph	minOxygenTime	long	0
+S	after_graph	minPopulation	int	0
+S	after_graph	minPopulationTime	long	0
+S	after_graph	oxygenList	List	object_5
+S	after_graph	populationList	List	null_box_history
+S	after_graph	populationSum	long	0
+S	after_graph	time	long	0
+H	after_graph	populationList	null_box_history
+L	after_graph	null_box_history	java.util.ArrayList	1
+D	after_graph	null_box_history	0	~	~
+H	after_graph	deathList	object_3
+L	after_graph	object_3	java.util.ArrayList	0
+H	after_graph	birthList	object_1
+L	after_graph	object_1	java.util.ArrayList	0
+H	after_graph	oxygenList	object_5
+L	after_graph	object_5	java.util.ArrayList	0
+H	after_graph	carbonDioxideList	object_2
+L	after_graph	object_2	java.util.ArrayList	0
+H	after_graph	methaneList	object_4
+L	after_graph	object_4	java.util.ArrayList	0
+R	after_graph	995cd818acf5c21f9af31df613bc16f128d8f11d01f91254511a0cc6157f241e	aced0005737200106a6176612e7574696c2e52616e646f6d363296344bf00a530300035a0014686176654e6578744e657874476175737369616e4400106e6578744e657874476175737369616e4a000473656564787000000000000000000000000005dee0798978
+RP	after_graph	-3981345829458826657	901	3fd54a08163de1b8
+Z	after_graph	null_box_graph-after_graph.ser	1502	65a148c1da99921334c61dded915cf5e163f2467c00616b6ea6e187597535e2b
+E	null_box_graph
+C	compatibility_integer	controlled_raw_history_boundary	827364
+U	INITIAL_ORGANISMS	int	0
+U	INITIAL_O2	double	408f400000000000
+U	INITIAL_CO2	double	411e848000000000
+U	INITIAL_CH4	double	408f400000000000
+IB	wire_box	3fe8000000000000
+IL	wire_history	java.util.ArrayList	2
+IE	wire_history	0	wire_box
+IE	wire_history	1	wire_box
+I	populationList	List	wire_history
+I	deathList	List	wire_history
+I	birthList	List	wire_history
+I	oxygenList	List	wire_history
+I	carbonDioxideList	List	wire_history
+I	methaneList	List	wire_history
+P	initial	object_0
+S	initial	aliveBeingMostChildren	GeneticCode	~
+S	initial	aliveBeingMostChildrenNumber	int	0
+S	initial	aliveBeingMostInfections	GeneticCode	~
+S	initial	aliveBeingMostInfectionsNumber	int	0
+S	initial	aliveBeingMostKills	GeneticCode	~
+S	initial	aliveBeingMostKillsNumber	int	0
+S	initial	beingMostChildren	GeneticCode	~
+S	initial	beingMostChildrenNumber	int	0
+S	initial	beingMostChildrenTime	long	0
+S	initial	beingMostInfections	GeneticCode	~
+S	initial	beingMostInfectionsNumber	int	0
+S	initial	beingMostInfectionsTime	long	0
+S	initial	beingMostKills	GeneticCode	~
+S	initial	beingMostKillsNumber	int	0
+S	initial	beingMostKillsTime	long	0
+S	initial	birthLastTime	int	0
+S	initial	birthList	List	wire_history
+S	initial	birthSum	long	0
+S	initial	carbonDioxideList	List	wire_history
+S	initial	createdOrganisms	int	0
+S	initial	deathLastTime	int	0
+S	initial	deathList	List	wire_history
+S	initial	deathSum	long	0
+S	initial	infectionsSum	long	0
+S	initial	lastBornBeing	GeneticCode	~
+S	initial	lastDeadBeing	GeneticCode	~
+S	initial	lastInfectedBeing	GeneticCode	~
+S	initial	massExtintionState	int	0
+S	initial	massExtintions	int	0
+S	initial	maxBirths	int	0
+S	initial	maxCarbonDioxide	double	411e848000000000
+S	initial	maxCarbonDioxideTime	long	0
+S	initial	maxDeaths	int	0
+S	initial	maxMethane	double	408f400000000000
+S	initial	maxMethaneTime	long	0
+S	initial	maxOxygen	double	408f400000000000
+S	initial	maxOxygenTime	long	0
+S	initial	maxPopulation	int	0
+S	initial	maxPopulationTime	long	0
+S	initial	methaneList	List	wire_history
+S	initial	minCarbonDioxide	double	411e848000000000
+S	initial	minCarbonDioxideTime	long	0
+S	initial	minMethane	double	408f400000000000
+S	initial	minMethaneTime	long	0
+S	initial	minOxygen	double	408f400000000000
+S	initial	minOxygenTime	long	0
+S	initial	minPopulation	int	0
+S	initial	minPopulationTime	long	0
+S	initial	oxygenList	List	wire_history
+S	initial	populationList	List	wire_history
+S	initial	populationSum	long	0
+S	initial	time	long	0
+H	initial	populationList	wire_history
+L	initial	wire_history	java.util.ArrayList	2
+D	initial	wire_history	0	wire_box	3fe8000000000000
+D	initial	wire_history	1	wire_box	3fe8000000000000
+H	initial	deathList	wire_history
+H	initial	birthList	wire_history
+H	initial	oxygenList	wire_history
+H	initial	carbonDioxideList	wire_history
+H	initial	methaneList	wire_history
+R	initial	995cd818acf5c21f9af31df613bc16f128d8f11d01f91254511a0cc6157f241e	aced0005737200106a6176612e7574696c2e52616e646f6d363296344bf00a530300035a0014686176654e6578744e657874476175737369616e4400106e6578744e657874476175737369616e4a000473656564787000000000000000000000000005dee0798978
+RP	initial	-3981345829458826657	901	3fd54a08163de1b8
+Z	initial	compatibility_integer-original.ser	1526	bb1cf62a5071a6993db8680a66d0d495ff61a3a85c23a14e7355d6c550b20dc0
+IW	ArrayList.custom.compatibility_int	int	-7
+F	modified	compatibility_integer-modified.ser	1526	129d39c6f1550c162566925f59434b552629244fb8925ab1994cd0f5166eaa1f	1408	00000002	fffffff9
+K	read_first	read_first
+V	read_first	WorldStatistics	object_1
+X	read_first	none
+K	write_first	write_first
+V	write_first	bytes	1526	bb1cf62a5071a6993db8680a66d0d495ff61a3a85c23a14e7355d6c550b20dc0
+X	write_first	none
+P	after_first	object_1
+S	after_first	aliveBeingMostChildren	GeneticCode	~
+S	after_first	aliveBeingMostChildrenNumber	int	0
+S	after_first	aliveBeingMostInfections	GeneticCode	~
+S	after_first	aliveBeingMostInfectionsNumber	int	0
+S	after_first	aliveBeingMostKills	GeneticCode	~
+S	after_first	aliveBeingMostKillsNumber	int	0
+S	after_first	beingMostChildren	GeneticCode	~
+S	after_first	beingMostChildrenNumber	int	0
+S	after_first	beingMostChildrenTime	long	0
+S	after_first	beingMostInfections	GeneticCode	~
+S	after_first	beingMostInfectionsNumber	int	0
+S	after_first	beingMostInfectionsTime	long	0
+S	after_first	beingMostKills	GeneticCode	~
+S	after_first	beingMostKillsNumber	int	0
+S	after_first	beingMostKillsTime	long	0
+S	after_first	birthLastTime	int	0
+S	after_first	birthList	List	object_2
+S	after_first	birthSum	long	0
+S	after_first	carbonDioxideList	List	object_2
+S	after_first	createdOrganisms	int	0
+S	after_first	deathLastTime	int	0
+S	after_first	deathList	List	object_2
+S	after_first	deathSum	long	0
+S	after_first	infectionsSum	long	0
+S	after_first	lastBornBeing	GeneticCode	~
+S	after_first	lastDeadBeing	GeneticCode	~
+S	after_first	lastInfectedBeing	GeneticCode	~
+S	after_first	massExtintionState	int	0
+S	after_first	massExtintions	int	0
+S	after_first	maxBirths	int	0
+S	after_first	maxCarbonDioxide	double	411e848000000000
+S	after_first	maxCarbonDioxideTime	long	0
+S	after_first	maxDeaths	int	0
+S	after_first	maxMethane	double	408f400000000000
+S	after_first	maxMethaneTime	long	0
+S	after_first	maxOxygen	double	408f400000000000
+S	after_first	maxOxygenTime	long	0
+S	after_first	maxPopulation	int	0
+S	after_first	maxPopulationTime	long	0
+S	after_first	methaneList	List	object_2
+S	after_first	minCarbonDioxide	double	411e848000000000
+S	after_first	minCarbonDioxideTime	long	0
+S	after_first	minMethane	double	408f400000000000
+S	after_first	minMethaneTime	long	0
+S	after_first	minOxygen	double	408f400000000000
+S	after_first	minOxygenTime	long	0
+S	after_first	minPopulation	int	0
+S	after_first	minPopulationTime	long	0
+S	after_first	oxygenList	List	object_2
+S	after_first	populationList	List	object_2
+S	after_first	populationSum	long	0
+S	after_first	time	long	0
+H	after_first	populationList	object_2
+L	after_first	object_2	java.util.ArrayList	2
+D	after_first	object_2	0	object_3	3fe8000000000000
+D	after_first	object_2	1	object_3	3fe8000000000000
+H	after_first	deathList	object_2
+H	after_first	birthList	object_2
+H	after_first	oxygenList	object_2
+H	after_first	carbonDioxideList	object_2
+H	after_first	methaneList	object_2
+R	after_first	995cd818acf5c21f9af31df613bc16f128d8f11d01f91254511a0cc6157f241e	aced0005737200106a6176612e7574696c2e52616e646f6d363296344bf00a530300035a0014686176654e6578744e657874476175737369616e4400106e6578744e657874476175737369616e4a000473656564787000000000000000000000000005dee0798978
+RP	after_first	-3981345829458826657	901	3fd54a08163de1b8
+Z	after_first	compatibility_integer-first.ser	1526	bb1cf62a5071a6993db8680a66d0d495ff61a3a85c23a14e7355d6c550b20dc0
+K	read_second	read_second
+V	read_second	WorldStatistics	object_4
+X	read_second	none
+K	write_second	write_second
+V	write_second	bytes	1526	bb1cf62a5071a6993db8680a66d0d495ff61a3a85c23a14e7355d6c550b20dc0
+X	write_second	none
+P	after_second	object_4
+S	after_second	aliveBeingMostChildren	GeneticCode	~
+S	after_second	aliveBeingMostChildrenNumber	int	0
+S	after_second	aliveBeingMostInfections	GeneticCode	~
+S	after_second	aliveBeingMostInfectionsNumber	int	0
+S	after_second	aliveBeingMostKills	GeneticCode	~
+S	after_second	aliveBeingMostKillsNumber	int	0
+S	after_second	beingMostChildren	GeneticCode	~
+S	after_second	beingMostChildrenNumber	int	0
+S	after_second	beingMostChildrenTime	long	0
+S	after_second	beingMostInfections	GeneticCode	~
+S	after_second	beingMostInfectionsNumber	int	0
+S	after_second	beingMostInfectionsTime	long	0
+S	after_second	beingMostKills	GeneticCode	~
+S	after_second	beingMostKillsNumber	int	0
+S	after_second	beingMostKillsTime	long	0
+S	after_second	birthLastTime	int	0
+S	after_second	birthList	List	object_5
+S	after_second	birthSum	long	0
+S	after_second	carbonDioxideList	List	object_5
+S	after_second	createdOrganisms	int	0
+S	after_second	deathLastTime	int	0
+S	after_second	deathList	List	object_5
+S	after_second	deathSum	long	0
+S	after_second	infectionsSum	long	0
+S	after_second	lastBornBeing	GeneticCode	~
+S	after_second	lastDeadBeing	GeneticCode	~
+S	after_second	lastInfectedBeing	GeneticCode	~
+S	after_second	massExtintionState	int	0
+S	after_second	massExtintions	int	0
+S	after_second	maxBirths	int	0
+S	after_second	maxCarbonDioxide	double	411e848000000000
+S	after_second	maxCarbonDioxideTime	long	0
+S	after_second	maxDeaths	int	0
+S	after_second	maxMethane	double	408f400000000000
+S	after_second	maxMethaneTime	long	0
+S	after_second	maxOxygen	double	408f400000000000
+S	after_second	maxOxygenTime	long	0
+S	after_second	maxPopulation	int	0
+S	after_second	maxPopulationTime	long	0
+S	after_second	methaneList	List	object_5
+S	after_second	minCarbonDioxide	double	411e848000000000
+S	after_second	minCarbonDioxideTime	long	0
+S	after_second	minMethane	double	408f400000000000
+S	after_second	minMethaneTime	long	0
+S	after_second	minOxygen	double	408f400000000000
+S	after_second	minOxygenTime	long	0
+S	after_second	minPopulation	int	0
+S	after_second	minPopulationTime	long	0
+S	after_second	oxygenList	List	object_5
+S	after_second	populationList	List	object_5
+S	after_second	populationSum	long	0
+S	after_second	time	long	0
+H	after_second	populationList	object_5
+L	after_second	object_5	java.util.ArrayList	2
+D	after_second	object_5	0	object_6	3fe8000000000000
+D	after_second	object_5	1	object_6	3fe8000000000000
+H	after_second	deathList	object_5
+H	after_second	birthList	object_5
+H	after_second	oxygenList	object_5
+H	after_second	carbonDioxideList	object_5
+H	after_second	methaneList	object_5
+R	after_second	995cd818acf5c21f9af31df613bc16f128d8f11d01f91254511a0cc6157f241e	aced0005737200106a6176612e7574696c2e52616e646f6d363296344bf00a530300035a0014686176654e6578744e657874476175737369616e4400106e6578744e657874476175737369616e4a000473656564787000000000000000000000000005dee0798978
+RP	after_second	-3981345829458826657	901	3fd54a08163de1b8
+Z	after_second	compatibility_integer-second.ser	1526	bb1cf62a5071a6993db8680a66d0d495ff61a3a85c23a14e7355d6c550b20dc0
+E	compatibility_integer

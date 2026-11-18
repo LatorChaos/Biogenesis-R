@@ -1,0 +1,12 @@
+{
+  "generated": "2026-10-25",
+  "helper_sha256": "1fe1f2cb15b05a10175f58038a0989ffd56f727a33a3f1fbcceec455d06ffef2",
+  "fixture_sha256": "cf9b83da280e3e7aa812ae7cf2caee7293ce805c8109aebaa2891a69227b3336",
+  "fixture_bytes": 139278,
+  "fixture_lines": 4430,
+  "source_and_jar_identical": true,
+  "command_receipts": ".workflow-local/core-oracles/commands.json",
+  "reference_manifest": "docs/evidence/reference-manifest.json",
+  "core_fixture_sha256": "5f5aa228b3ec67685b3a180a1dca1d42364d099240112bdd33c1ed209a080b10",
+  "scope": "Direct real object construction and geometry only; no World.genesis or organism frame acceptance"
+}

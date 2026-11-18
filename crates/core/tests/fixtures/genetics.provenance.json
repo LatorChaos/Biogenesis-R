@@ -1,0 +1,875 @@
+{
+  "schema": "biogenesis-genetics-oracle-v1",
+  "generated_utc": "2026-10-25T20:54:21.458679+00:00",
+  "helper": {
+    "path": "tools/reference/GeneticsOracle.java",
+    "sha256": "015d34b189d9de11435875d24ef26135e7aa2c67d752054e95e4bc5d5b1ec663",
+    "compiled_classes": {
+      "helpers-source/biogenesis/GeneticsOracle$Draw.class": "900ada8a28c1f62367d28312ba0d047ed0c12d35a00cd5238df2df173aeee226",
+      "helpers-source/biogenesis/GeneticsOracle$RecordingRandom.class": "7af65aa00e35ac11e5d28e7a14195d2b508fdd5545f95bdfb54ff727d156d041",
+      "helpers-source/biogenesis/GeneticsOracle$Result.class": "a0a835d7627bbf2c8935ce233ac182b42bd88f8d927dd966e54d961f79e2fbca",
+      "helpers-source/biogenesis/GeneticsOracle$Spec.class": "0a6ea8a499a577a552a776ab90bb68db379c9a7b36be76719f97a1748138c694",
+      "helpers-source/biogenesis/GeneticsOracle.class": "822c08b28e6080514941d34cc8bf38715890d9eec43caf190e67a78d968bcbcf",
+      "helpers-jar/biogenesis/GeneticsOracle$Draw.class": "900ada8a28c1f62367d28312ba0d047ed0c12d35a00cd5238df2df173aeee226",
+      "helpers-jar/biogenesis/GeneticsOracle$RecordingRandom.class": "7af65aa00e35ac11e5d28e7a14195d2b508fdd5545f95bdfb54ff727d156d041",
+      "helpers-jar/biogenesis/GeneticsOracle$Result.class": "a0a835d7627bbf2c8935ce233ac182b42bd88f8d927dd966e54d961f79e2fbca",
+      "helpers-jar/biogenesis/GeneticsOracle$Spec.class": "0a6ea8a499a577a552a776ab90bb68db379c9a7b36be76719f97a1748138c694",
+      "helpers-jar/biogenesis/GeneticsOracle.class": "822c08b28e6080514941d34cc8bf38715890d9eec43caf190e67a78d968bcbcf"
+    }
+  },
+  "fixture": {
+    "path": "crates/core/tests/fixtures/genetics.tsv",
+    "sha256": "1fc3f745a83427c499d84884dfdb6864fdc222861feb30488d7083a4a0126b71",
+    "bytes": 3570749,
+    "lines": 113552,
+    "cases": 126,
+    "valid_cases": 124,
+    "exception_cases": 2,
+    "operations": {
+      "gene-blank": 1,
+      "gene-explicit": 1,
+      "gene-setters": 1,
+      "gene-clone": 1,
+      "genome-empty": 1,
+      "genome-explicit": 3,
+      "genome-clone": 1,
+      "gene-random": 7,
+      "gene-color": 46,
+      "genome-random": 7,
+      "inherit": 57
+    }
+  },
+  "comparison": {
+    "all_three_outputs_byte_identical": true,
+    "prior125case_bytes_preserved": true,
+    "files": {
+      "genetics.tsv": {
+        "sha256": "1fc3f745a83427c499d84884dfdb6864fdc222861feb30488d7083a4a0126b71",
+        "bytes": 3570749,
+        "lines": 113552
+      },
+      "traces.tsv": {
+        "sha256": "12fd6c5cf0035294676bd6244edce7bf98ae8712ccd314ebc02f95f45aac9e38",
+        "bytes": 3065650,
+        "lines": 40906
+      },
+      "coverage.txt": {
+        "sha256": "4068527b7b5e378f48837e52a13577bfcc98c9887251d79605a584c4b44b6952",
+        "bytes": 3072,
+        "lines": 194
+      }
+    }
+  },
+  "reference": {
+    "original_files_checked": 74,
+    "original_manifest": "docs/evidence/reference-manifest.json",
+    "source_sha256": {
+      "Gene.java": "d070db688526a401c8b55904c06066b2169ca82c76837e3001b4c423bc80e720",
+      "GeneticCode.java": "f8bf3d0315cec8a2bf515a1626391fe5b646e47566234d398ef58bbdbc3a9004",
+      "Utils.java": "7b3306148684ba111629690a928dcb45abd4825104cfb90b530cd2d0dc6dd2b3"
+    },
+    "compiled_source_sha256": {
+      "Gene.java": "29fe7b153555ded4383072debd0452bed5f92692afd0488a88c297d5f04f6ea8",
+      "GeneticCode.java": "4bbf99eaf9006840ecbba0958496372a220ed44c4e57c8341c4de3dc29f3fb30",
+      "Utils.java": "67adba4432972ffa3922b6f622d2cc12bf0e703a7dfbf97ae94f3f95387b1884"
+    },
+    "source_compile_receipt": ".workflow-local/reference-build/compile.json",
+    "jar_path": "../Colormod/ColorMod_2_01/biogenesis.jar",
+    "jar_sha256": "0baeae8d29f5fdbbb830c1a9e51c7f2b5314a33011b20ec7471eeaa27f0398e1",
+    "jts_sha256": "00102cde26c457b81fbb0248e4f8845884243caba0dc9b7fb42e0ea877383bc1"
+  },
+  "execution": {
+    "versions": {
+      "java": "openjdk version \"21.0.12.1\" 2026-08-18\nOpenJDK Runtime Environment (build 21.0.12.1+1)\nOpenJDK 64-Bit Server VM (build 21.0.12.1+1, mixed mode, sharing)\n",
+      "javac": "javac 21.0.12.1\n"
+    },
+    "compile_commands": [
+      {
+        "argv": [
+          "javac",
+          "-encoding",
+          "UTF-8",
+          "-cp",
+          "<reference-root>/ColorMod_2_01/biogenesis.jar:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "-d",
+          "<project-root>/.workflow-local/genetics-oracle-gkip7tro/helpers-jar",
+          "<project-root>/tools/reference/GeneticsOracle.java"
+        ],
+        "cwd": "<project-root>/.workflow-local/genetics-oracle-gkip7tro",
+        "pid": 32,
+        "process_group": 32,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.5878490079994663,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "javac",
+          "-version"
+        ],
+        "cwd": "<project-root>/.workflow-local/genetics-oracle-gkip7tro",
+        "pid": 21,
+        "process_group": 21,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.18862290799916082,
+        "stdout": "javac 21.0.12.1\n",
+        "stderr": ""
+      }
+    ],
+    "final_runs": [
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx384m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/genetics-oracle-gkip7tro/source-final2-a/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/genetics-oracle-gkip7tro/source-final2-a/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/genetics-oracle-gkip7tro/source-final2-a/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/genetics-oracle-gkip7tro/source-final2-a/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/genetics-oracle-gkip7tro/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.GeneticsOracle",
+          "<project-root>/.workflow-local/genetics-oracle-gkip7tro/source-final2-a/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/genetics-oracle-gkip7tro/source-final2-a",
+        "pid": 5,
+        "process_group": 5,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 4.963904779000586,
+        "stdout": "GENETICS_ORACLE PASS cases=126 coverage_tags=194 search_limit=2048\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx384m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/genetics-oracle-gkip7tro/source-final2-b/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/genetics-oracle-gkip7tro/source-final2-b/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/genetics-oracle-gkip7tro/source-final2-b/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/genetics-oracle-gkip7tro/source-final2-b/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/genetics-oracle-gkip7tro/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.GeneticsOracle",
+          "<project-root>/.workflow-local/genetics-oracle-gkip7tro/source-final2-b/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/genetics-oracle-gkip7tro/source-final2-b",
+        "pid": 41,
+        "process_group": 41,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 4.965489351001452,
+        "stdout": "GENETICS_ORACLE PASS cases=126 coverage_tags=194 search_limit=2048\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx384m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/genetics-oracle-gkip7tro/jar-final2/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/genetics-oracle-gkip7tro/jar-final2/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/genetics-oracle-gkip7tro/jar-final2/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/genetics-oracle-gkip7tro/jar-final2/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/genetics-oracle-gkip7tro/helpers-jar:<reference-root>/ColorMod_2_01/biogenesis.jar:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.GeneticsOracle",
+          "<project-root>/.workflow-local/genetics-oracle-gkip7tro/jar-final2/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/genetics-oracle-gkip7tro/jar-final2",
+        "pid": 81,
+        "process_group": 81,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 5.180154151999886,
+        "stdout": "GENETICS_ORACLE PASS cases=126 coverage_tags=194 search_limit=2048\n",
+        "stderr": ""
+      }
+    ],
+    "raw_receipts": ".workflow-local/genetics-oracle-gkip7tro/commands.json",
+    "final_run_modes": [
+      "source-final2-a",
+      "source-final2-b",
+      "jar-final2"
+    ],
+    "headless": true,
+    "explicit_profile_properties": [
+      "user.home",
+      "java.io.tmpdir",
+      "java.util.prefs.userRoot",
+      "java.util.prefs.systemRoot"
+    ],
+    "plain_random_crosscheck": "Every selected case must match complete states, identity assertions, edits, and following nextLong/nextInt/nextDouble results"
+  },
+  "schema_fields": {
+    "genome": [
+      "_activity",
+      "_adaptspore",
+      "_altruist",
+      "_cladeID",
+      "_clockwise",
+      "_disperseChildren",
+      "_familial",
+      "_generation",
+      "_generationBattle",
+      "_mimicall",
+      "_mirror",
+      "_modifiescream",
+      "_modifiesfallow",
+      "_modifieslilac",
+      "_modifiespink",
+      "_modifiessky",
+      "_modifiesspore",
+      "_mutationrate",
+      "_passive",
+      "_peaceful",
+      "_plague",
+      "_selfish",
+      "_siblingBattle",
+      "_social",
+      "_symmetry",
+      "_updateClade"
+    ],
+    "gene": [
+      "_alias_index",
+      "_barkreaction",
+      "_bluereaction",
+      "_branch",
+      "_brokenreaction",
+      "_brownreaction",
+      "_color",
+      "_consumerreaction",
+      "_coralreaction",
+      "_creamreaction",
+      "_defaultreaction",
+      "_fallowreaction",
+      "_firereaction",
+      "_friendreaction",
+      "_grayreaction",
+      "_greenbrownreaction",
+      "_greenreaction",
+      "_icereaction",
+      "_length",
+      "_lightbluereaction",
+      "_lightbrownreaction",
+      "_lilacreaction",
+      "_magentareaction",
+      "_maroonreaction",
+      "_mintreaction",
+      "_ochrereaction",
+      "_olivereaction",
+      "_orangereaction",
+      "_pinkreaction",
+      "_plaguereaction",
+      "_plantreaction",
+      "_redreaction",
+      "_scourgereaction",
+      "_shared_parent_index",
+      "_sickreaction",
+      "_silverreaction",
+      "_skyreaction",
+      "_spikereaction",
+      "_theta",
+      "_violetreaction",
+      "_virusreaction",
+      "_whitereaction"
+    ],
+    "virtual_gene_fields": [
+      "_alias_index",
+      "_shared_parent_index"
+    ]
+  },
+  "coverage": {
+    "observable_trace_tags": [
+      "count:unchanged",
+      "gate:756:false",
+      "gate:760:false",
+      "gate:768:false",
+      "gate:839:false",
+      "gate:841:false",
+      "gate:843:false",
+      "gate:845:false",
+      "gate:847:false",
+      "gate:849:false",
+      "gate:851:false",
+      "gate:853:false",
+      "gate:855:false",
+      "gate:857:false",
+      "gate:859:false",
+      "gate:861:false",
+      "gate:863:false",
+      "gate:865:false",
+      "gate:867:false",
+      "gate:869:false",
+      "gate:871:false",
+      "gate:873:false",
+      "gate:875:false",
+      "gate:877:false",
+      "gate:879:false",
+      "gate:881:false",
+      "gate:883:false",
+      "gate:885:false",
+      "gate:887:false",
+      "gate:889:false",
+      "gate:891:false",
+      "gate:893:false",
+      "gate:895:false",
+      "gate:897:false",
+      "gate:899:false",
+      "gate:901:false",
+      "gate:903:false",
+      "gate:905:false",
+      "gate:907:false",
+      "gate:909:false",
+      "gate:911:false",
+      "gate:913:false",
+      "gate:915:false",
+      "gate:917:false",
+      "gate:1143:false",
+      "gate:1147:false",
+      "gate:1151:false",
+      "gate:1155:false",
+      "gate:1159:false",
+      "gate:1163:false",
+      "gate:1167:false",
+      "gate:1171:false",
+      "gate:1175:false",
+      "gate:1179:false",
+      "gate:1183:false",
+      "gate:1187:false",
+      "gate:1191:false",
+      "gate:1195:false",
+      "gate:1199:false",
+      "gate:1203:false",
+      "gate:1207:false",
+      "gate:1211:false",
+      "gate:1215:false",
+      "gate:1219:false",
+      "gate:756:true",
+      "gate:760:true",
+      "gate:839:true",
+      "gate:841:true",
+      "gate:843:true",
+      "gate:845:true",
+      "gate:847:true",
+      "gate:849:true",
+      "gate:851:true",
+      "gate:853:true",
+      "gate:855:true",
+      "gate:857:true",
+      "gate:859:true",
+      "gate:861:true",
+      "gate:863:true",
+      "gate:865:true",
+      "gate:867:true",
+      "gate:869:true",
+      "gate:871:true",
+      "gate:873:true",
+      "gate:875:true",
+      "gate:877:true",
+      "gate:879:true",
+      "gate:881:true",
+      "gate:883:true",
+      "gate:885:true",
+      "gate:887:true",
+      "gate:889:true",
+      "gate:891:true",
+      "gate:893:true",
+      "gate:895:true",
+      "gate:897:true",
+      "gate:899:true",
+      "gate:901:true",
+      "gate:903:true",
+      "gate:905:true",
+      "gate:907:true",
+      "gate:909:true",
+      "gate:911:true",
+      "gate:913:true",
+      "gate:915:true",
+      "gate:917:true",
+      "boolean:972:false",
+      "boolean:972:true",
+      "gate:1143:true",
+      "gate:1147:true",
+      "gate:1151:true",
+      "gate:1155:true",
+      "gate:1159:true",
+      "gate:1163:true",
+      "boolean:463:false",
+      "gate:1167:true",
+      "boolean:470:false",
+      "gate:1171:true",
+      "boolean:477:true",
+      "gate:1175:true",
+      "boolean:484:true",
+      "gate:1179:true",
+      "boolean:491:true",
+      "gate:1183:true",
+      "boolean:498:true",
+      "gate:1187:true",
+      "boolean:505:false",
+      "gate:1191:true",
+      "boolean:512:false",
+      "gate:1195:true",
+      "boolean:519:true",
+      "gate:1199:true",
+      "boolean:526:true",
+      "gate:1203:true",
+      "boolean:533:false",
+      "gate:1207:true",
+      "boolean:539:true",
+      "gate:1211:true",
+      "boolean:563:true",
+      "gate:1215:true",
+      "boolean:575:true",
+      "gate:1219:true",
+      "boolean:581:true",
+      "symmetry:selected-different",
+      "boolean:470:true",
+      "boolean:477:false",
+      "boolean:491:false",
+      "boolean:498:false",
+      "boolean:526:false",
+      "boolean:533:true",
+      "boolean:539:false",
+      "boolean:563:false",
+      "symmetry:selected-same",
+      "boolean:519:false",
+      "boolean:505:true",
+      "boolean:575:false",
+      "count:delete",
+      "gate:768:true",
+      "boolean:770:false",
+      "boolean:463:true",
+      "count:insert",
+      "boolean:770:true",
+      "boolean:824:false",
+      "boolean:484:false",
+      "insert:new",
+      "boolean:581:false",
+      "boolean:824:true",
+      "boolean:512:true",
+      "boolean:809:false",
+      "boolean:928:true",
+      "boolean:944:false",
+      "boolean:947:false",
+      "insert:clone-after",
+      "boolean:928:false",
+      "boolean:935:false",
+      "boolean:944:true",
+      "insert:clone-last",
+      "boolean:809:true",
+      "insert:clone-before",
+      "boolean:947:true",
+      "boolean:935:true",
+      "insert:clone-first",
+      "boolean:952:true",
+      "boolean:953:true",
+      "boolean:953:false",
+      "boolean:952:false",
+      "boolean:730:true",
+      "meta:large-increase",
+      "boolean:730:false",
+      "meta:large-decrease",
+      "boolean:739:true",
+      "meta:small-increase",
+      "boolean:739:false",
+      "meta:small-decrease"
+    ],
+    "field_gate_outcomes": [
+      {
+        "source_line": 839,
+        "gate": "randomLength",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 841,
+        "gate": "randomTheta",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 843,
+        "gate": "randomBranch",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 845,
+        "gate": "randomredReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 847,
+        "gate": "randomgreenReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 849,
+        "gate": "randomblueReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 851,
+        "gate": "randomplagueReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 853,
+        "gate": "randomscourgeReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 855,
+        "gate": "randomwhiteReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 857,
+        "gate": "randomgrayReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 859,
+        "gate": "randomsilverReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 861,
+        "gate": "randomdefaultReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 863,
+        "gate": "randomconsumerReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 865,
+        "gate": "randomplantReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 867,
+        "gate": "randommagentaReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 869,
+        "gate": "randompinkReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 871,
+        "gate": "randomcoralReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 873,
+        "gate": "randomorangeReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 875,
+        "gate": "randombarkReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 877,
+        "gate": "randomvioletReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 879,
+        "gate": "randomvirusReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 881,
+        "gate": "randommaroonReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 883,
+        "gate": "randomoliveReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 885,
+        "gate": "randommintReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 887,
+        "gate": "randomcreamReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 889,
+        "gate": "randomspikeReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 891,
+        "gate": "randomfallowReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 893,
+        "gate": "randomlightblueReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 895,
+        "gate": "randomochreReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 897,
+        "gate": "randomskyReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 899,
+        "gate": "randomlilacReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 901,
+        "gate": "randomfireReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 903,
+        "gate": "randomlightbrownReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 905,
+        "gate": "randomgreenbrownReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 907,
+        "gate": "randombrownReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 909,
+        "gate": "randomiceReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 911,
+        "gate": "randombrokenReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 913,
+        "gate": "randomsickReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 915,
+        "gate": "randomfriendReaction",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      },
+      {
+        "source_line": 917,
+        "gate": "randomColor",
+        "observed": {
+          "false": true,
+          "true": true
+        }
+      }
+    ],
+    "search_limit_exclusive": 2048,
+    "partial_search_range": [
+      0,
+      2047
+    ],
+    "target_searches": "Each named target searches increasing seeds below2048; selected seeds appear in C rows",
+    "full_complexity101_case": [
+      "C",
+      "random-complexity-101-full-count",
+      "genome-random",
+      "72",
+      "101",
+      "0",
+      "100",
+      "0",
+      "25"
+    ],
+    "branch_site_basis": "Pinned unchanged GeneticCode.java line tables; traces remain separate from expected states"
+  },
+  "negative_checks": [
+    {
+      "name": "no-profile-final",
+      "argv": [
+        "java",
+        "-Djava.awt.headless=true",
+        "-cp",
+        "<project-root>/.workflow-local/genetics-oracle-gkip7tro/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+        "biogenesis.GeneticsOracle",
+        "<project-root>/.workflow-local/genetics-oracle-gkip7tro/no-profile-final/observations"
+      ],
+      "exit_code": 1,
+      "output_created": false,
+      "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: user.home\n\tat biogenesis.GeneticsOracle.require(GeneticsOracle.java:109)\n\tat biogenesis.GeneticsOracle.main(GeneticsOracle.java:384)\n"
+    },
+    {
+      "name": "existing-output-final",
+      "argv": [
+        "java",
+        "-Djava.awt.headless=true",
+        "-Duser.home=<project-root>/.workflow-local/genetics-oracle-gkip7tro/source-final2-a/home",
+        "-Djava.io.tmpdir=<project-root>/.workflow-local/genetics-oracle-gkip7tro/source-final2-a/tmp",
+        "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/genetics-oracle-gkip7tro/source-final2-a/prefs-user",
+        "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/genetics-oracle-gkip7tro/source-final2-a/prefs-system",
+        "-cp",
+        "<project-root>/.workflow-local/genetics-oracle-gkip7tro/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+        "biogenesis.GeneticsOracle",
+        "<project-root>/.workflow-local/genetics-oracle-gkip7tro/source-final2-a/observations"
+      ],
+      "exit_code": 1,
+      "output_created": true,
+      "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Output directory must not exist\n\tat biogenesis.GeneticsOracle.require(GeneticsOracle.java:109)\n\tat biogenesis.GeneticsOracle.main(GeneticsOracle.java:386)\n"
+    }
+  ],
+  "negative_existing_fixture_preserved": true,
+  "limitations": [
+    "Observable trace tags are not formal all-edge Java branch coverage.",
+    "Malformed-setting Java RNG behavior is recorded separately from Rust validation-before-draw behavior.",
+    "Java immutable Color identity is represented by exact nullable ARGB value semantics in Rust.",
+    "Birth placement, spore effects, and actual clade suffix appending remain TASK-7/TASK-8 dependencies.",
+    "The helper does not execute Organism.inherit/inheritTransformation, UI controls, rendering, or networking.",
+    "These fixtures establish bounded genetics evidence and do not establish complete game parity."
+  ]
+}

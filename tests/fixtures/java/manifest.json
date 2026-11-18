@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "source_manifest": "../../../docs/evidence/reference-manifest.json",
+  "generator": "../../../tools/reference/ReferenceOracle.java",
+  "recipe": "python3 tools/run_reference_oracles.py",
+  "observations": "Captured from unchanged source; verified against repeated source and bundled JAR execution",
+  "runtime": "OpenJDK21.0.12.1",
+  "files": {
+    "core.jsonl": {
+      "sha256": "5f5aa228b3ec67685b3a180a1dca1d42364d099240112bdd33c1ed209a080b10",
+      "bytes": 196159
+    },
+    "gene.ser": {
+      "sha256": "6361413b00c5104991b85916ee7e1bcd536aad9d58b9b3bb22a610bb57665d50",
+      "bytes": 1012
+    },
+    "genome.ser": {
+      "sha256": "3d614dad022369646091b8b33a27a2a2a9b2a7120663d48a855382bb56aaa5fc",
+      "bytes": 1760
+    },
+    "statistics.ser": {
+      "sha256": "209ba58fd36396740ff02ccf3d8d2d768c76113fc8fc1f2a97449b03dcf511ab",
+      "bytes": 12160
+    },
+    "world.ser": {
+      "sha256": "5523cae5b7a2f62457184536f78e41d221fd0e57c81adf3e603111cbdb4f8acf",
+      "bytes": 2279
+    },
+    "genome.bgg": {
+      "sha256": "d381c053e5da5c1db93e1ac2f55687893e693afd86d9b005811773d35e0b9318",
+      "bytes": 5557
+    },
+    "invalid-symmetry.bgg": {
+      "sha256": "594bb51d4ad5c55c0696d1c349afc416edc3cee3444c252cafe0bd8a3af67053",
+      "bytes": 5557
+    }
+  },
+  "generator_sha256": "e4850de4f070e6a42d85776100613e38299f76473a16ba35a590ad29116b4236",
+  "reference_jar_sha256": "0baeae8d29f5fdbbb830c1a9e51c7f2b5314a33011b20ec7471eeaa27f0398e1"
+}

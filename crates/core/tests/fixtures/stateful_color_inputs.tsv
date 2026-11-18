@@ -1,0 +1,1063 @@
+C	dark-copy-react-rebuild	S01	recovery	827364
+G	g0	0	405e000000000000	3ff921fb54442d18	TEAL	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g0	1	405e000000000000	0000000000000000	DARK	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g1	0	405e000000000000	0000000000000000	RED	0	3,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136
+G	g2	0	4028000000000000	0000000000000000	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+I	step-0	actor:victim:_centerX	int	3500
+I	step-0	actor:victim:_centerY	int	3500
+I	step-0	actor:victim:_dCenterX	double	40ab580000000000
+I	step-0	actor:victim:_dCenterY	double	40ab580000000000
+I	step-0	actor:victim:_theta	double	0000000000000000
+I	step-0	actor:victim:_age	int	8
+I	step-0	actor:victim:_growthRatio	int	1
+I	step-0	actor:victim:_energy	double	408f400000000000
+K	step-0	symmetric	victim	~
+K	step-1	bounds	victim	true
+I	step-2	actor:killer:_centerX	int	3500
+I	step-2	actor:killer:_centerY	int	3500
+I	step-2	actor:killer:_dCenterX	double	40ab580000000000
+I	step-2	actor:killer:_dCenterY	double	40ab580000000000
+I	step-2	actor:killer:_theta	double	3ff921fb54442d18
+I	step-2	actor:killer:_age	int	8
+I	step-2	actor:killer:_growthRatio	int	1
+I	step-2	actor:killer:_energy	double	408f400000000000
+K	step-2	symmetric	killer	~
+K	step-3	bounds	killer	true
+K	step-4	build_tree	world	victim,killer
+K	step-5	checkHit	victim	~
+F	step-5	copied36	copied	victim	1	killer,0
+F	step-5	mimicked-red	containsColor	victim	~	RED
+F	step-5	reaction-capable	eq	victim	_canreact	true
+F	step-5	same-contact-reaction-draw	rngChanged	victim	~	~
+K	step-6	symmetric	victim	~
+F	step-6	copied36-after-rebuild	copied	victim	1	killer,0
+K	step-7	bounds	victim	true
+I	step-8	actor:killer:_centerX	int	5000
+I	step-8	actor:killer:_centerY	int	5000
+I	step-8	actor:killer:_dCenterX	double	40b3880000000000
+I	step-8	actor:killer:_dCenterY	double	40b3880000000000
+I	step-8	actor:killer:_theta	double	0000000000000000
+K	step-8	bounds	killer	true
+K	step-9	time	world	~
+K	step-10	time	world	~
+E
+C	forest-two-contributors-consume	S02	recovery	827364
+G	g0	0	405e000000000000	0000000000000000	FOREST	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g1	0	405e000000000000	0000000000000000	FOREST	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g2	0	405e000000000000	0000000000000000	FOREST	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+I	step-0	actor:victim:_centerX	int	3500
+I	step-0	actor:victim:_centerY	int	3500
+I	step-0	actor:victim:_dCenterX	double	40ab580000000000
+I	step-0	actor:victim:_dCenterY	double	40ab580000000000
+I	step-0	actor:victim:_theta	double	0000000000000000
+I	step-0	actor:victim:_age	int	8
+I	step-0	actor:victim:_growthRatio	int	1
+I	step-0	actor:victim:_energy	double	4034000000000000
+K	step-0	symmetric	victim	~
+K	step-1	bounds	victim	true
+I	step-2	actor:killer:_centerX	int	5000
+I	step-2	actor:killer:_centerY	int	5000
+I	step-2	actor:killer:_dCenterX	double	40b3880000000000
+I	step-2	actor:killer:_dCenterY	double	40b3880000000000
+I	step-2	actor:killer:_theta	double	3ff921fb54442d18
+I	step-2	actor:killer:_age	int	8
+I	step-2	actor:killer:_growthRatio	int	1
+I	step-2	actor:killer:_energy	double	4034000000000000
+K	step-2	symmetric	killer	~
+K	step-3	bounds	killer	true
+I	step-4	actor:selector:_centerX	int	1000
+I	step-4	actor:selector:_centerY	int	1000
+I	step-4	actor:selector:_dCenterX	double	408f400000000000
+I	step-4	actor:selector:_dCenterY	double	408f400000000000
+I	step-4	actor:selector:_theta	double	3ff921fb54442d18
+I	step-4	actor:selector:_age	int	8
+I	step-4	actor:selector:_growthRatio	int	1
+I	step-4	actor:selector:_energy	double	4034000000000000
+K	step-4	symmetric	selector	~
+K	step-5	bounds	selector	true
+K	step-6	time	world	~
+I	step-7	actor:selector:_centerX	int	3500
+I	step-7	actor:selector:_centerY	int	3500
+I	step-7	actor:selector:_dCenterX	double	40ab580000000000
+I	step-7	actor:selector:_dCenterY	double	40ab580000000000
+I	step-7	actor:selector:_theta	double	3ff921fb54442d18
+K	step-7	bounds	selector	true
+I	step-8	actor:killer:_centerX	int	3500
+I	step-8	actor:killer:_centerY	int	3500
+I	step-8	actor:killer:_dCenterX	double	40ab580000000000
+I	step-8	actor:killer:_dCenterY	double	40ab580000000000
+I	step-8	actor:killer:_theta	double	3ff921fb54442d18
+K	step-8	bounds	killer	true
+K	step-9	build_tree	world	victim,selector
+K	step-10	checkHit	victim	~
+F	step-10	first-colony-contribution	positive	victim	_colonyPhotosynthesis	~
+K	step-11	build_tree	world	victim,killer
+K	step-12	checkHit	victim	~
+F	step-12	second-colony-contribution	increased	victim	_colonyPhotosynthesis	~
+I	step-13	actor:selector:_centerX	int	1000
+I	step-13	actor:selector:_centerY	int	1000
+I	step-13	actor:selector:_dCenterX	double	408f400000000000
+I	step-13	actor:selector:_dCenterY	double	408f400000000000
+I	step-13	actor:selector:_theta	double	0000000000000000
+K	step-13	bounds	selector	true
+I	step-14	actor:killer:_centerX	int	5000
+I	step-14	actor:killer:_centerY	int	5000
+I	step-14	actor:killer:_dCenterX	double	40b3880000000000
+I	step-14	actor:killer:_dCenterY	double	40b3880000000000
+I	step-14	actor:killer:_theta	double	0000000000000000
+K	step-14	bounds	killer	true
+K	step-15	time	world	~
+F	step-15	cache-consumed	eq	victim	_colonyPhotosynthesis	0000000000000000
+K	step-16	time	world	~
+E
+C	rose-symbiosis-tint-expiry	S03	recovery	827364
+G	g0	0	405e000000000000	0000000000000000	ROSE	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g1	0	405e000000000000	0000000000000000	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g2	0	4028000000000000	0000000000000000	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+I	step-0	actor:victim:_centerX	int	3500
+I	step-0	actor:victim:_centerY	int	3500
+I	step-0	actor:victim:_dCenterX	double	40ab580000000000
+I	step-0	actor:victim:_dCenterY	double	40ab580000000000
+I	step-0	actor:victim:_theta	double	0000000000000000
+I	step-0	actor:victim:_age	int	8
+I	step-0	actor:victim:_growthRatio	int	1
+I	step-0	actor:victim:_energy	double	4034000000000000
+K	step-0	symmetric	victim	~
+K	step-1	bounds	victim	true
+I	step-2	actor:killer:_centerX	int	5000
+I	step-2	actor:killer:_centerY	int	5000
+I	step-2	actor:killer:_dCenterX	double	40b3880000000000
+I	step-2	actor:killer:_dCenterY	double	40b3880000000000
+I	step-2	actor:killer:_theta	double	3ff921fb54442d18
+I	step-2	actor:killer:_age	int	8
+I	step-2	actor:killer:_growthRatio	int	1
+I	step-2	actor:killer:_energy	double	4034000000000000
+K	step-2	symmetric	killer	~
+K	step-3	bounds	killer	true
+K	step-4	time	world	~
+I	step-5	actor:killer:_centerX	int	3500
+I	step-5	actor:killer:_centerY	int	3500
+I	step-5	actor:killer:_dCenterX	double	40ab580000000000
+I	step-5	actor:killer:_dCenterY	double	40ab580000000000
+I	step-5	actor:killer:_theta	double	3ff921fb54442d18
+K	step-5	bounds	killer	true
+K	step-6	build_tree	world	victim,killer
+K	step-7	checkHit	victim	~
+F	step-7	rose-feedback-tint	positive	victim	_framesColor	~
+I	step-8	actor:killer:_centerX	int	5000
+I	step-8	actor:killer:_centerY	int	5000
+I	step-8	actor:killer:_dCenterX	double	40b3880000000000
+I	step-8	actor:killer:_dCenterY	double	40b3880000000000
+I	step-8	actor:killer:_theta	double	0000000000000000
+K	step-8	bounds	killer	true
+K	step-9	time	world	~
+K	step-10	time	world	~
+K	step-11	time	world	~
+K	step-12	time	world	~
+K	step-13	time	world	~
+K	step-14	time	world	~
+K	step-15	time	world	~
+K	step-16	time	world	~
+K	step-17	time	world	~
+K	step-18	time	world	~
+F	step-18	tint-expired	eq	victim	_framesColor	0
+E
+C	violet-next-turn-magenta-repair	S04	recovery	827364
+M	g0	altruist	true
+M	g2	altruist	true
+G	g0	0	405e000000000000	3ff921fb54442d18	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g0	1	405e000000000000	0000000000000000	CYAN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g1	0	405e000000000000	3ff921fb54442d18	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g1	1	405e000000000000	0000000000000000	VIOLET	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g2	0	405e000000000000	0000000000000000	MAGENTA	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+I	step-0	actor:victim:_centerX	int	3500
+I	step-0	actor:victim:_centerY	int	3500
+I	step-0	actor:victim:_dCenterX	double	40ab580000000000
+I	step-0	actor:victim:_dCenterY	double	40ab580000000000
+I	step-0	actor:victim:_theta	double	0000000000000000
+I	step-0	actor:victim:_age	int	8
+I	step-0	actor:victim:_growthRatio	int	1
+I	step-0	actor:victim:_energy	double	408f400000000000
+K	step-0	symmetric	victim	~
+K	step-1	bounds	victim	true
+I	step-2	actor:killer:_centerX	int	3500
+I	step-2	actor:killer:_centerY	int	3500
+I	step-2	actor:killer:_dCenterX	double	40ab580000000000
+I	step-2	actor:killer:_dCenterY	double	40ab580000000000
+I	step-2	actor:killer:_theta	double	3ff921fb54442d18
+I	step-2	actor:killer:_age	int	8
+I	step-2	actor:killer:_growthRatio	int	1
+I	step-2	actor:killer:_energy	double	4034000000000000
+K	step-2	symmetric	killer	~
+K	step-3	bounds	killer	true
+K	step-4	build_tree	world	killer,victim
+K	step-5	checkHit	killer	~
+F	step-5	injured-by-violet	eq	victim	_isinjured	true
+I	step-6	actor:killer:_centerX	int	5000
+I	step-6	actor:killer:_centerY	int	5000
+I	step-6	actor:killer:_dCenterX	double	40b3880000000000
+I	step-6	actor:killer:_dCenterY	double	40b3880000000000
+I	step-6	actor:killer:_theta	double	0000000000000000
+K	step-6	bounds	killer	true
+K	step-7	time	world	~
+F	step-7	damage-survives-next-turn	eq	victim	_isinjured	true
+F	step-7	cached-capability-retained	eq	victim	_canmove	true
+F	step-7	damaged-motor-coefficient	elementEq	victim	_mphoto	1,0000000000000000
+F	step-7	poisoned-motor-color	elementEq	victim	_segColor	1,ff808440
+F	step-7	damaged-turn-motion-unchanged	unchangedMotion	victim	~	~
+I	step-8	actor:selector:_centerX	int	3500
+I	step-8	actor:selector:_centerY	int	3500
+I	step-8	actor:selector:_dCenterX	double	40ab580000000000
+I	step-8	actor:selector:_dCenterY	double	40ab580000000000
+I	step-8	actor:selector:_theta	double	3ff921fb54442d18
+I	step-8	actor:selector:_age	int	8
+I	step-8	actor:selector:_growthRatio	int	1
+I	step-8	actor:selector:_energy	double	4034000000000000
+K	step-8	symmetric	selector	~
+K	step-9	bounds	selector	true
+K	step-10	build_tree	world	selector,victim
+K	step-11	checkHit	selector	~
+F	step-11	magenta-restored-motor	elementEq	victim	_mphoto	1,c008000000000000
+I	step-12	actor:selector:_centerX	int	1000
+I	step-12	actor:selector:_centerY	int	1000
+I	step-12	actor:selector:_dCenterX	double	408f400000000000
+I	step-12	actor:selector:_dCenterY	double	408f400000000000
+I	step-12	actor:selector:_theta	double	0000000000000000
+K	step-12	bounds	selector	true
+K	step-13	time	world	~
+K	step-14	time	world	~
+F	step-14	cached-capability-still-retained	eq	victim	_canmove	true
+F	step-14	genetic-cyan-restored	containsColor	victim	~	CYAN
+E
+C	defense-partial-repeat-sky	S05	defense	827364
+G	g0	0	405e000000000000	0000000000000000	SKY	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g1	0	405e000000000000	3ff921fb54442d18	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g1	1	405e000000000000	0000000000000000	CYAN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g2	0	4028000000000000	0000000000000000	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+U	SKY_ENERGY_CONSUMPTION	double	4000000000000000
+I	step-0	actor:victim:_centerX	int	3500
+I	step-0	actor:victim:_centerY	int	3500
+I	step-0	actor:victim:_dCenterX	double	40ab580000000000
+I	step-0	actor:victim:_dCenterY	double	40ab580000000000
+I	step-0	actor:victim:_theta	double	0000000000000000
+I	step-0	actor:victim:_age	int	8
+I	step-0	actor:victim:_growthRatio	int	1
+I	step-0	actor:victim:_energy	double	4034000000000000
+K	step-0	symmetric	victim	~
+K	step-1	bounds	victim	true
+I	step-2	actor:killer:_centerX	int	3500
+I	step-2	actor:killer:_centerY	int	3500
+I	step-2	actor:killer:_dCenterX	double	40ab580000000000
+I	step-2	actor:killer:_dCenterY	double	40ab580000000000
+I	step-2	actor:killer:_theta	double	3ff921fb54442d18
+I	step-2	actor:killer:_age	int	8
+I	step-2	actor:killer:_growthRatio	int	1
+I	step-2	actor:killer:_energy	double	408f400000000000
+K	step-2	symmetric	killer	~
+K	step-3	bounds	killer	true
+I	step-4	world:_O2	double	3fd0000000000000
+K	step-4	build_tree	world	victim,killer
+K	step-5	checkHit	victim	~
+F	step-5	partial-payment-spent	decreased	victim	_energy	~
+I	step-6	world:_O2	double	408f400000000000
+K	step-6	build_tree	world	victim,killer
+K	step-7	checkHit	victim	~
+F	step-7	paid-followup-state	containsColor	killer	~	ICE
+I	step-8	actor:victim:_centerX	int	1000
+I	step-8	actor:victim:_centerY	int	1000
+I	step-8	actor:victim:_dCenterX	double	408f400000000000
+I	step-8	actor:victim:_dCenterY	double	408f400000000000
+I	step-8	actor:victim:_theta	double	0000000000000000
+K	step-8	bounds	victim	true
+K	step-9	time	world	~
+K	step-10	time	world	~
+E
+C	defense-partial-repeat-olive	S05	defense	827364
+G	g0	0	405e000000000000	0000000000000000	OLIVE	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g1	0	405e000000000000	3ff921fb54442d18	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g1	1	405e000000000000	0000000000000000	SKY	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g2	0	4028000000000000	0000000000000000	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+U	OLIVE_ENERGY_CONSUMPTION	double	4000000000000000
+I	step-0	actor:victim:_centerX	int	3500
+I	step-0	actor:victim:_centerY	int	3500
+I	step-0	actor:victim:_dCenterX	double	40ab580000000000
+I	step-0	actor:victim:_dCenterY	double	40ab580000000000
+I	step-0	actor:victim:_theta	double	0000000000000000
+I	step-0	actor:victim:_age	int	8
+I	step-0	actor:victim:_growthRatio	int	1
+I	step-0	actor:victim:_energy	double	4034000000000000
+K	step-0	symmetric	victim	~
+K	step-1	bounds	victim	true
+I	step-2	actor:killer:_centerX	int	3500
+I	step-2	actor:killer:_centerY	int	3500
+I	step-2	actor:killer:_dCenterX	double	40ab580000000000
+I	step-2	actor:killer:_dCenterY	double	40ab580000000000
+I	step-2	actor:killer:_theta	double	3ff921fb54442d18
+I	step-2	actor:killer:_age	int	8
+I	step-2	actor:killer:_growthRatio	int	1
+I	step-2	actor:killer:_energy	double	408f400000000000
+K	step-2	symmetric	killer	~
+K	step-3	bounds	killer	true
+I	step-4	world:_O2	double	3fd0000000000000
+K	step-4	build_tree	world	victim,killer
+K	step-5	checkHit	victim	~
+F	step-5	partial-payment-spent	decreased	victim	_energy	~
+I	step-6	world:_O2	double	408f400000000000
+K	step-6	build_tree	world	victim,killer
+K	step-7	checkHit	victim	~
+F	step-7	paid-followup-state	containsColor	killer	~	LIGHT_BLUE
+I	step-8	actor:victim:_centerX	int	1000
+I	step-8	actor:victim:_centerY	int	1000
+I	step-8	actor:victim:_dCenterX	double	408f400000000000
+I	step-8	actor:victim:_dCenterY	double	408f400000000000
+I	step-8	actor:victim:_theta	double	0000000000000000
+K	step-8	bounds	victim	true
+K	step-9	time	world	~
+K	step-10	time	world	~
+E
+C	dodge-repeated-scheduled-reset	S06	defense	827364
+G	g0	0	405e000000000000	3ff921fb54442d18	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g0	1	405e000000000000	0000000000000000	TEAL	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g1	0	405e000000000000	0000000000000000	ORANGE	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g2	0	4028000000000000	0000000000000000	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+I	step-0	actor:victim:_centerX	int	3500
+I	step-0	actor:victim:_centerY	int	3500
+I	step-0	actor:victim:_dCenterX	double	40ab580000000000
+I	step-0	actor:victim:_dCenterY	double	40ab580000000000
+I	step-0	actor:victim:_theta	double	0000000000000000
+I	step-0	actor:victim:_age	int	8
+I	step-0	actor:victim:_growthRatio	int	1
+I	step-0	actor:victim:_energy	double	408f400000000000
+K	step-0	symmetric	victim	~
+K	step-1	bounds	victim	true
+I	step-2	actor:killer:_centerX	int	5000
+I	step-2	actor:killer:_centerY	int	5000
+I	step-2	actor:killer:_dCenterX	double	40b3880000000000
+I	step-2	actor:killer:_dCenterY	double	40b3880000000000
+I	step-2	actor:killer:_theta	double	0000000000000000
+I	step-2	actor:killer:_age	int	8
+I	step-2	actor:killer:_growthRatio	int	1
+I	step-2	actor:killer:_energy	double	4034000000000000
+K	step-2	symmetric	killer	~
+K	step-3	bounds	killer	true
+K	step-4	time	world	~
+K	step-5	time	world	~
+F	step-5	dodge-ready	eq	victim	_dodge	true
+I	step-6	actor:victim:_centerX	int	3500
+I	step-6	actor:victim:_centerY	int	3500
+I	step-6	actor:victim:_dCenterX	double	40ab580000000000
+I	step-6	actor:victim:_dCenterY	double	40ab580000000000
+I	step-6	actor:victim:_theta	double	0000000000000000
+K	step-6	bounds	victim	true
+I	step-7	actor:killer:_centerX	int	3500
+I	step-7	actor:killer:_centerY	int	3500
+I	step-7	actor:killer:_dCenterX	double	40ab580000000000
+I	step-7	actor:killer:_dCenterY	double	40ab580000000000
+I	step-7	actor:killer:_theta	double	3ff921fb54442d18
+K	step-7	bounds	killer	true
+K	step-8	build_tree	world	killer,victim
+K	step-9	checkHit	killer	~
+F	step-9	attack-marks-cycle	eq	victim	_hasdodged	true
+I	step-10	actor:killer:_centerX	int	5000
+I	step-10	actor:killer:_centerY	int	5000
+I	step-10	actor:killer:_dCenterX	double	40b3880000000000
+I	step-10	actor:killer:_dCenterY	double	40b3880000000000
+I	step-10	actor:killer:_theta	double	0000000000000000
+K	step-10	bounds	killer	true
+K	step-11	time	world	~
+F	step-11	scheduled-cycle-reset	eq	victim	_hasdodged	false
+I	step-12	actor:victim:_centerX	int	3500
+I	step-12	actor:victim:_centerY	int	3500
+I	step-12	actor:victim:_dCenterX	double	40ab580000000000
+I	step-12	actor:victim:_dCenterY	double	40ab580000000000
+I	step-12	actor:victim:_theta	double	0000000000000000
+K	step-12	bounds	victim	true
+I	step-13	actor:killer:_centerX	int	3500
+I	step-13	actor:killer:_centerY	int	3500
+I	step-13	actor:killer:_dCenterX	double	40ab580000000000
+I	step-13	actor:killer:_dCenterY	double	40ab580000000000
+I	step-13	actor:killer:_theta	double	3ff921fb54442d18
+K	step-13	bounds	killer	true
+K	step-14	build_tree	world	killer,victim
+K	step-15	checkHit	killer	~
+F	step-15	attack-marks-cycle	eq	victim	_hasdodged	true
+I	step-16	actor:killer:_centerX	int	5000
+I	step-16	actor:killer:_centerY	int	5000
+I	step-16	actor:killer:_dCenterX	double	40b3880000000000
+I	step-16	actor:killer:_dCenterY	double	40b3880000000000
+I	step-16	actor:killer:_theta	double	0000000000000000
+K	step-16	bounds	killer	true
+K	step-17	time	world	~
+K	step-18	time	world	~
+F	step-18	scheduled-cycle-reset	eq	victim	_hasdodged	false
+I	step-19	actor:victim:_centerX	int	3500
+I	step-19	actor:victim:_centerY	int	3500
+I	step-19	actor:victim:_dCenterX	double	40ab580000000000
+I	step-19	actor:victim:_dCenterY	double	40ab580000000000
+I	step-19	actor:victim:_theta	double	0000000000000000
+K	step-19	bounds	victim	true
+I	step-20	actor:killer:_centerX	int	3500
+I	step-20	actor:killer:_centerY	int	3500
+I	step-20	actor:killer:_dCenterX	double	40ab580000000000
+I	step-20	actor:killer:_dCenterY	double	40ab580000000000
+I	step-20	actor:killer:_theta	double	3ff921fb54442d18
+K	step-20	bounds	killer	true
+K	step-21	build_tree	world	killer,victim
+K	step-22	checkHit	killer	~
+F	step-22	attack-marks-cycle	eq	victim	_hasdodged	true
+I	step-23	actor:killer:_centerX	int	5000
+I	step-23	actor:killer:_centerY	int	5000
+I	step-23	actor:killer:_dCenterX	double	40b3880000000000
+I	step-23	actor:killer:_dCenterY	double	40b3880000000000
+I	step-23	actor:killer:_theta	double	0000000000000000
+K	step-23	bounds	killer	true
+K	step-24	time	world	~
+K	step-25	time	world	~
+F	step-25	scheduled-cycle-reset	eq	victim	_hasdodged	false
+E
+C	fallow-stillbirth-scheduled-mint-clear	S07	defense	827364
+M	g0	altruist	true
+M	g1	fallow	3
+M	g2	altruist	true
+G	g0	0	405e000000000000	3ff921fb54442d18	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g0	1	405e000000000000	0000000000000000	CYAN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g1	0	405e000000000000	0000000000000000	FALLOW	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g2	0	405e000000000000	0000000000000000	MINT	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+I	setup	actor:victim:_timeToReproduce	int	0
+I	step-0	actor:victim:_centerX	int	3500
+I	step-0	actor:victim:_centerY	int	3500
+I	step-0	actor:victim:_dCenterX	double	40ab580000000000
+I	step-0	actor:victim:_dCenterY	double	40ab580000000000
+I	step-0	actor:victim:_theta	double	0000000000000000
+I	step-0	actor:victim:_age	int	8
+I	step-0	actor:victim:_growthRatio	int	1
+I	step-0	actor:victim:_energy	double	408f400000000000
+K	step-0	symmetric	victim	~
+K	step-1	bounds	victim	true
+I	step-2	actor:killer:_centerX	int	3500
+I	step-2	actor:killer:_centerY	int	3500
+I	step-2	actor:killer:_dCenterX	double	40ab580000000000
+I	step-2	actor:killer:_dCenterY	double	40ab580000000000
+I	step-2	actor:killer:_theta	double	3ff921fb54442d18
+I	step-2	actor:killer:_age	int	8
+I	step-2	actor:killer:_growthRatio	int	1
+I	step-2	actor:killer:_energy	double	4034000000000000
+K	step-2	symmetric	killer	~
+K	step-3	bounds	killer	true
+K	step-4	build_tree	world	killer,victim
+K	step-5	checkHit	killer	~
+F	step-5	stillbirth-created	negative	victim	_reproducelate	~
+I	step-6	actor:killer:_centerX	int	5000
+I	step-6	actor:killer:_centerY	int	5000
+I	step-6	actor:killer:_dCenterX	double	40b3880000000000
+I	step-6	actor:killer:_dCenterY	double	40b3880000000000
+I	step-6	actor:killer:_theta	double	0000000000000000
+K	step-6	bounds	killer	true
+K	step-7	time	world	~
+K	step-8	time	world	~
+K	step-9	time	world	~
+K	step-10	time	world	~
+K	step-11	time	world	~
+K	step-12	time	world	~
+K	step-13	time	world	~
+K	step-14	time	world	~
+K	step-15	time	world	~
+K	step-16	time	world	~
+K	step-17	time	world	~
+K	step-18	time	world	~
+K	step-19	time	world	~
+K	step-20	time	world	~
+K	step-21	time	world	~
+K	step-22	time	world	~
+K	step-23	time	world	~
+K	step-24	time	world	~
+K	step-25	time	world	~
+K	step-26	time	world	~
+K	step-27	time	world	~
+K	step-28	time	world	~
+K	step-29	time	world	~
+K	step-30	time	world	~
+K	step-31	time	world	~
+K	step-32	time	world	~
+K	step-33	time	world	~
+K	step-34	time	world	~
+K	step-35	time	world	~
+K	step-36	time	world	~
+K	step-37	time	world	~
+K	step-38	time	world	~
+K	step-39	time	world	~
+K	step-40	time	world	~
+K	step-41	time	world	~
+K	step-42	time	world	~
+K	step-43	time	world	~
+K	step-44	time	world	~
+K	step-45	time	world	~
+K	step-46	time	world	~
+K	step-47	time	world	~
+K	step-48	time	world	~
+K	step-49	time	world	~
+K	step-50	time	world	~
+K	step-51	time	world	~
+K	step-52	time	world	~
+K	step-53	time	world	~
+K	step-54	time	world	~
+K	step-55	time	world	~
+K	step-56	time	world	~
+K	step-57	time	world	~
+K	step-58	time	world	~
+K	step-59	time	world	~
+K	step-60	time	world	~
+K	step-61	time	world	~
+K	step-62	time	world	~
+K	step-63	time	world	~
+K	step-64	time	world	~
+K	step-65	time	world	~
+K	step-66	time	world	~
+K	step-67	time	world	~
+K	step-68	time	world	~
+K	step-69	time	world	~
+K	step-70	time	world	~
+K	step-71	time	world	~
+K	step-72	time	world	~
+K	step-73	time	world	~
+K	step-74	time	world	~
+K	step-75	time	world	~
+K	step-76	time	world	~
+K	step-77	time	world	~
+K	step-78	time	world	~
+K	step-79	time	world	~
+K	step-80	time	world	~
+K	step-81	time	world	~
+K	step-82	time	world	~
+K	step-83	time	world	~
+K	step-84	time	world	~
+K	step-85	time	world	~
+K	step-86	time	world	~
+K	step-87	time	world	~
+K	step-88	time	world	~
+K	step-89	time	world	~
+K	step-90	time	world	~
+K	step-91	time	world	~
+K	step-92	time	world	~
+K	step-93	time	world	~
+K	step-94	time	world	~
+K	step-95	time	world	~
+K	step-96	time	world	~
+K	step-97	time	world	~
+K	step-98	time	world	~
+K	step-99	time	world	~
+K	step-100	time	world	~
+K	step-101	time	world	~
+K	step-102	time	world	~
+K	step-103	time	world	~
+K	step-104	time	world	~
+K	step-105	time	world	~
+K	step-106	time	world	~
+K	step-107	time	world	~
+K	step-108	time	world	~
+K	step-109	time	world	~
+K	step-110	time	world	~
+K	step-111	time	world	~
+K	step-112	time	world	~
+K	step-113	time	world	~
+K	step-114	time	world	~
+K	step-115	time	world	~
+K	step-116	time	world	~
+K	step-117	time	world	~
+K	step-118	time	world	~
+K	step-119	time	world	~
+K	step-120	time	world	~
+K	step-121	time	world	~
+K	step-122	time	world	~
+K	step-123	time	world	~
+K	step-124	time	world	~
+K	step-125	time	world	~
+K	step-126	time	world	~
+K	step-127	time	world	~
+K	step-128	time	world	~
+K	step-129	time	world	~
+K	step-130	time	world	~
+K	step-131	time	world	~
+K	step-132	time	world	~
+K	step-133	time	world	~
+K	step-134	time	world	~
+K	step-135	time	world	~
+K	step-136	time	world	~
+K	step-137	time	world	~
+K	step-138	time	world	~
+K	step-139	time	world	~
+K	step-140	time	world	~
+K	step-141	time	world	~
+K	step-142	time	world	~
+K	step-143	time	world	~
+K	step-144	time	world	~
+K	step-145	time	world	~
+K	step-146	time	world	~
+F	step-146	stillbirth-reaches-turns	negative	victim	_reproducelate	~
+F	step-146	no-success-yet	eq	victim	_nTotalChildren	0
+I	step-147	actor:selector:_centerX	int	3500
+I	step-147	actor:selector:_centerY	int	3500
+I	step-147	actor:selector:_dCenterX	double	40ab580000000000
+I	step-147	actor:selector:_dCenterY	double	40ab580000000000
+I	step-147	actor:selector:_theta	double	3ff921fb54442d18
+I	step-147	actor:selector:_age	int	8
+I	step-147	actor:selector:_growthRatio	int	1
+I	step-147	actor:selector:_energy	double	4034000000000000
+K	step-147	symmetric	selector	~
+K	step-148	bounds	selector	true
+I	step-149	actor:victim:_centerX	int	3500
+I	step-149	actor:victim:_centerY	int	3500
+I	step-149	actor:victim:_dCenterX	double	40ab580000000000
+I	step-149	actor:victim:_dCenterY	double	40ab580000000000
+I	step-149	actor:victim:_theta	double	0000000000000000
+K	step-149	bounds	victim	true
+K	step-150	build_tree	world	selector,victim
+K	step-151	checkHit	selector	~
+F	step-151	mint-cleared-stillbirth	eq	victim	_reproducelate	0
+I	step-152	actor:selector:_centerX	int	1000
+I	step-152	actor:selector:_centerY	int	1000
+I	step-152	actor:selector:_dCenterX	double	408f400000000000
+I	step-152	actor:selector:_dCenterY	double	408f400000000000
+I	step-152	actor:selector:_theta	double	0000000000000000
+K	step-152	bounds	selector	true
+K	step-153	time	world	~
+K	step-154	time	world	~
+K	step-155	time	world	~
+K	step-156	time	world	~
+K	step-157	time	world	~
+K	step-158	time	world	~
+K	step-159	time	world	~
+K	step-160	time	world	~
+K	step-161	time	world	~
+K	step-162	time	world	~
+K	step-163	time	world	~
+K	step-164	time	world	~
+K	step-165	time	world	~
+K	step-166	time	world	~
+K	step-167	time	world	~
+K	step-168	time	world	~
+K	step-169	time	world	~
+K	step-170	time	world	~
+K	step-171	time	world	~
+K	step-172	time	world	~
+K	step-173	time	world	~
+K	step-174	time	world	~
+K	step-175	time	world	~
+K	step-176	time	world	~
+K	step-177	time	world	~
+K	step-178	time	world	~
+K	step-179	time	world	~
+K	step-180	time	world	~
+K	step-181	time	world	~
+K	step-182	time	world	~
+K	step-183	time	world	~
+K	step-184	time	world	~
+F	step-184	later-scheduled-success	positive	victim	_nTotalChildren	~
+E
+C	inherited-fruit-1	S08	children	827364
+M	g0	spore	1
+M	g0	adapt	1
+M	g0	disperse	true
+G	g0	0	405e000000000000	0000000000000000	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g0	1	405e000000000000	3fd0000000000000	SPORE	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g0	2	405e000000000000	3fe0000000000000	CYAN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g0	3	405e000000000000	3fe8000000000000	EYE	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g1	0	405e000000000000	0000000000000000	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g2	0	4028000000000000	0000000000000000	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+I	step-0	actor:victim:_centerX	int	3500
+I	step-0	actor:victim:_centerY	int	3500
+I	step-0	actor:victim:_dCenterX	double	40ab580000000000
+I	step-0	actor:victim:_dCenterY	double	40ab580000000000
+I	step-0	actor:victim:_theta	double	0000000000000000
+I	step-0	actor:victim:_age	int	8
+I	step-0	actor:victim:_growthRatio	int	1
+I	step-0	actor:victim:_energy	double	40c3880000000000
+K	step-0	symmetric	victim	~
+K	step-1	bounds	victim	true
+I	step-2	actor:victim:dx	double	3ff4000000000000
+I	step-2	actor:victim:dy	double	bfe8000000000000
+K	step-2	reproduce	victim	~
+I	step-3	actor:arrival0:_centerX	int	4000
+I	step-3	actor:arrival0:_centerY	int	3500
+I	step-3	actor:arrival0:_dCenterX	double	40af400000000000
+I	step-3	actor:arrival0:_dCenterY	double	40ab580000000000
+I	step-3	actor:arrival0:_theta	double	0000000000000000
+K	step-3	bounds	arrival0	true
+F	step-3	genuine-inactive-child	eq	arrival0	active	false
+F	step-3	birth-phenotype	allColor	arrival0	~	FRUIT
+I	step-4	actor:victim:_centerX	int	1000
+I	step-4	actor:victim:_centerY	int	1000
+I	step-4	actor:victim:_dCenterX	double	408f400000000000
+I	step-4	actor:victim:_dCenterY	double	408f400000000000
+I	step-4	actor:victim:_theta	double	0000000000000000
+K	step-4	bounds	victim	true
+I	step-5	actor:killer:_centerX	int	4000
+I	step-5	actor:killer:_centerY	int	3500
+I	step-5	actor:killer:_dCenterX	double	40af400000000000
+I	step-5	actor:killer:_dCenterY	double	40ab580000000000
+I	step-5	actor:killer:_theta	double	3ff921fb54442d18
+I	step-5	actor:killer:_age	int	8
+I	step-5	actor:killer:_growthRatio	int	1
+I	step-5	actor:killer:_energy	double	408f400000000000
+K	step-5	symmetric	killer	~
+K	step-6	bounds	killer	true
+K	step-7	build_tree	world	arrival0,killer
+K	step-8	checkHit	arrival0	~
+F	step-8	fruit-infection-identity	reference	killer	_infectedGeneticCode	arrival0
+I	step-9	actor:killer:_centerX	int	5000
+I	step-9	actor:killer:_centerY	int	5000
+I	step-9	actor:killer:_dCenterX	double	40b3880000000000
+I	step-9	actor:killer:_dCenterY	double	40b3880000000000
+I	step-9	actor:killer:_theta	double	0000000000000000
+K	step-9	bounds	killer	true
+K	step-10	time	world	~
+K	step-11	time	world	~
+E
+C	inherited-fruit-2	S08	children	827364
+M	g0	spore	2
+M	g0	adapt	1
+M	g0	disperse	true
+G	g0	0	405e000000000000	0000000000000000	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g0	1	405e000000000000	3fd0000000000000	SPORE	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g0	2	405e000000000000	3fe0000000000000	CYAN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g0	3	405e000000000000	3fe8000000000000	EYE	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g1	0	405e000000000000	0000000000000000	PINK	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g2	0	4028000000000000	0000000000000000	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+I	step-0	actor:victim:_centerX	int	3500
+I	step-0	actor:victim:_centerY	int	3500
+I	step-0	actor:victim:_dCenterX	double	40ab580000000000
+I	step-0	actor:victim:_dCenterY	double	40ab580000000000
+I	step-0	actor:victim:_theta	double	0000000000000000
+I	step-0	actor:victim:_age	int	8
+I	step-0	actor:victim:_growthRatio	int	1
+I	step-0	actor:victim:_energy	double	40c3880000000000
+K	step-0	symmetric	victim	~
+K	step-1	bounds	victim	true
+I	step-2	actor:victim:dx	double	3ff4000000000000
+I	step-2	actor:victim:dy	double	bfe8000000000000
+K	step-2	reproduce	victim	~
+I	step-3	actor:arrival0:_centerX	int	4000
+I	step-3	actor:arrival0:_centerY	int	3500
+I	step-3	actor:arrival0:_dCenterX	double	40af400000000000
+I	step-3	actor:arrival0:_dCenterY	double	40ab580000000000
+I	step-3	actor:arrival0:_theta	double	0000000000000000
+K	step-3	bounds	arrival0	true
+F	step-3	genuine-inactive-child	eq	arrival0	active	false
+F	step-3	birth-phenotype	allColor	arrival0	~	FRUIT
+I	step-4	actor:victim:_centerX	int	1000
+I	step-4	actor:victim:_centerY	int	1000
+I	step-4	actor:victim:_dCenterX	double	408f400000000000
+I	step-4	actor:victim:_dCenterY	double	408f400000000000
+I	step-4	actor:victim:_theta	double	0000000000000000
+K	step-4	bounds	victim	true
+I	step-5	actor:killer:_centerX	int	4000
+I	step-5	actor:killer:_centerY	int	3500
+I	step-5	actor:killer:_dCenterX	double	40af400000000000
+I	step-5	actor:killer:_dCenterY	double	40ab580000000000
+I	step-5	actor:killer:_theta	double	3ff921fb54442d18
+I	step-5	actor:killer:_age	int	8
+I	step-5	actor:killer:_growthRatio	int	1
+I	step-5	actor:killer:_energy	double	408f400000000000
+K	step-5	symmetric	killer	~
+K	step-6	bounds	killer	true
+K	step-7	build_tree	world	killer,arrival0
+K	step-8	checkHit	killer	~
+F	step-8	fruit-infection-identity	reference	killer	_infectedGeneticCode	arrival0
+I	step-9	actor:killer:_centerX	int	5000
+I	step-9	actor:killer:_centerY	int	5000
+I	step-9	actor:killer:_dCenterX	double	40b3880000000000
+I	step-9	actor:killer:_dCenterY	double	40b3880000000000
+I	step-9	actor:killer:_theta	double	0000000000000000
+K	step-9	bounds	killer	true
+K	step-10	time	world	~
+K	step-11	time	world	~
+E
+C	inherited-dormant-eye-8	S09	children	827364
+M	g0	spore	8
+M	g0	adapt	1
+M	g0	disperse	true
+G	g0	0	405e000000000000	0000000000000000	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g0	1	405e000000000000	3fd0000000000000	SPORE	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g0	2	405e000000000000	3fe0000000000000	CYAN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g0	3	405e000000000000	3fe8000000000000	EYE	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g1	0	405e000000000000	0000000000000000	RED	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g2	0	4028000000000000	0000000000000000	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+I	step-0	actor:victim:_centerX	int	3500
+I	step-0	actor:victim:_centerY	int	3500
+I	step-0	actor:victim:_dCenterX	double	40ab580000000000
+I	step-0	actor:victim:_dCenterY	double	40ab580000000000
+I	step-0	actor:victim:_theta	double	0000000000000000
+I	step-0	actor:victim:_age	int	8
+I	step-0	actor:victim:_growthRatio	int	1
+I	step-0	actor:victim:_energy	double	40c3880000000000
+K	step-0	symmetric	victim	~
+K	step-1	bounds	victim	true
+I	step-2	actor:victim:dx	double	3ff4000000000000
+I	step-2	actor:victim:dy	double	bfe8000000000000
+K	step-2	reproduce	victim	~
+I	step-3	actor:arrival0:_centerX	int	4000
+I	step-3	actor:arrival0:_centerY	int	3500
+I	step-3	actor:arrival0:_dCenterX	double	40af400000000000
+I	step-3	actor:arrival0:_dCenterY	double	40ab580000000000
+I	step-3	actor:arrival0:_theta	double	0000000000000000
+K	step-3	bounds	arrival0	true
+F	step-3	genuine-inactive-child	eq	arrival0	active	false
+F	step-3	birth-phenotype	allColor	arrival0	~	BLUE
+I	step-4	actor:victim:_centerX	int	1000
+I	step-4	actor:victim:_centerY	int	1000
+I	step-4	actor:victim:_dCenterX	double	408f400000000000
+I	step-4	actor:victim:_dCenterY	double	408f400000000000
+I	step-4	actor:victim:_theta	double	0000000000000000
+K	step-4	bounds	victim	true
+I	step-5	actor:killer:_centerX	int	4000
+I	step-5	actor:killer:_centerY	int	3500
+I	step-5	actor:killer:_dCenterX	double	40af400000000000
+I	step-5	actor:killer:_dCenterY	double	40ab580000000000
+I	step-5	actor:killer:_theta	double	3ff921fb54442d18
+I	step-5	actor:killer:_age	int	8
+I	step-5	actor:killer:_growthRatio	int	1
+I	step-5	actor:killer:_energy	double	408f400000000000
+K	step-5	symmetric	killer	~
+K	step-6	bounds	killer	true
+K	step-7	build_tree	world	arrival0,killer
+K	step-8	checkHit	arrival0	~
+F	step-8	contact-hatched	eq	arrival0	active	true
+F	step-8	eyes-restored	eq	arrival0	_haseyes	true
+F	step-8	movement-restored	eq	arrival0	_canmove	true
+I	step-9	actor:killer:_centerX	int	5000
+I	step-9	actor:killer:_centerY	int	5000
+I	step-9	actor:killer:_dCenterX	double	40b3880000000000
+I	step-9	actor:killer:_dCenterY	double	40b3880000000000
+I	step-9	actor:killer:_theta	double	0000000000000000
+K	step-9	bounds	killer	true
+K	step-10	time	world	~
+K	step-11	time	world	~
+F	step-11	next-frame-motion	motion	arrival0	~	~
+E
+C	inherited-dormant-eye-11	S09	children	827389
+M	g0	spore	11
+M	g0	adapt	51
+M	g0	disperse	true
+G	g0	0	405e000000000000	0000000000000000	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g0	1	405e000000000000	3fd0000000000000	SPORE	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g0	2	405e000000000000	3fe0000000000000	CYAN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g0	3	405e000000000000	3fe8000000000000	EYE	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g1	0	405e000000000000	0000000000000000	RED	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g2	0	4028000000000000	0000000000000000	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+I	step-0	actor:victim:_centerX	int	3500
+I	step-0	actor:victim:_centerY	int	3500
+I	step-0	actor:victim:_dCenterX	double	40ab580000000000
+I	step-0	actor:victim:_dCenterY	double	40ab580000000000
+I	step-0	actor:victim:_theta	double	0000000000000000
+I	step-0	actor:victim:_age	int	8
+I	step-0	actor:victim:_growthRatio	int	1
+I	step-0	actor:victim:_energy	double	40c3880000000000
+K	step-0	symmetric	victim	~
+K	step-1	bounds	victim	true
+I	step-2	actor:victim:dx	double	3ff4000000000000
+I	step-2	actor:victim:dy	double	bfe8000000000000
+K	step-2	reproduce	victim	~
+I	step-3	actor:arrival0:_centerX	int	4000
+I	step-3	actor:arrival0:_centerY	int	3500
+I	step-3	actor:arrival0:_dCenterX	double	40af400000000000
+I	step-3	actor:arrival0:_dCenterY	double	40ab580000000000
+I	step-3	actor:arrival0:_theta	double	0000000000000000
+K	step-3	bounds	arrival0	true
+F	step-3	genuine-inactive-child	eq	arrival0	active	false
+F	step-3	birth-phenotype	allColor	arrival0	~	BLUE
+I	step-4	actor:victim:_centerX	int	1000
+I	step-4	actor:victim:_centerY	int	1000
+I	step-4	actor:victim:_dCenterX	double	408f400000000000
+I	step-4	actor:victim:_dCenterY	double	408f400000000000
+I	step-4	actor:victim:_theta	double	0000000000000000
+K	step-4	bounds	victim	true
+I	step-5	actor:killer:_centerX	int	4000
+I	step-5	actor:killer:_centerY	int	3500
+I	step-5	actor:killer:_dCenterX	double	40af400000000000
+I	step-5	actor:killer:_dCenterY	double	40ab580000000000
+I	step-5	actor:killer:_theta	double	3ff921fb54442d18
+I	step-5	actor:killer:_age	int	8
+I	step-5	actor:killer:_growthRatio	int	1
+I	step-5	actor:killer:_energy	double	408f400000000000
+K	step-5	symmetric	killer	~
+K	step-6	bounds	killer	true
+K	step-7	build_tree	world	arrival0,killer
+K	step-8	checkHit	arrival0	~
+F	step-8	contact-hatched	eq	arrival0	active	true
+F	step-8	eyes-restored	eq	arrival0	_haseyes	true
+F	step-8	movement-restored	eq	arrival0	_canmove	true
+I	step-9	actor:killer:_centerX	int	5000
+I	step-9	actor:killer:_centerY	int	5000
+I	step-9	actor:killer:_dCenterX	double	40b3880000000000
+I	step-9	actor:killer:_dCenterY	double	40b3880000000000
+I	step-9	actor:killer:_theta	double	0000000000000000
+K	step-9	bounds	killer	true
+K	step-10	time	world	~
+K	step-11	time	world	~
+F	step-11	next-frame-motion	motion	arrival0	~	~
+E
+C	mixed-plant-consumer	MIX-plant-consumer	recovery	827364
+G	g0	0	405e000000000000	3ff921fb54442d18	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g0	1	405e000000000000	0000000000000000	RED	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g1	0	405e000000000000	0000000000000000	ORANGE	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g2	0	4028000000000000	0000000000000000	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+I	step-0	actor:victim:_centerX	int	3500
+I	step-0	actor:victim:_centerY	int	3500
+I	step-0	actor:victim:_dCenterX	double	40ab580000000000
+I	step-0	actor:victim:_dCenterY	double	40ab580000000000
+I	step-0	actor:victim:_theta	double	0000000000000000
+I	step-0	actor:victim:_age	int	8
+I	step-0	actor:victim:_growthRatio	int	1
+I	step-0	actor:victim:_energy	double	408f400000000000
+K	step-0	symmetric	victim	~
+K	step-1	bounds	victim	true
+F	step-1	intrinsic-_isaplant	eq	victim	_isaplant	true
+F	step-1	intrinsic-_isaconsumer	eq	victim	_isaconsumer	true
+I	step-2	actor:killer:_centerX	int	3500
+I	step-2	actor:killer:_centerY	int	3500
+I	step-2	actor:killer:_dCenterX	double	40ab580000000000
+I	step-2	actor:killer:_dCenterY	double	40ab580000000000
+I	step-2	actor:killer:_theta	double	3ff921fb54442d18
+I	step-2	actor:killer:_age	int	8
+I	step-2	actor:killer:_growthRatio	int	1
+I	step-2	actor:killer:_energy	double	4034000000000000
+K	step-2	symmetric	killer	~
+K	step-3	bounds	killer	true
+K	step-4	build_tree	world	victim,killer
+K	step-5	checkHit	victim	~
+K	step-6	time	world	~
+E
+C	mixed-fungus-consumer	MIX-fungus-consumer	recovery	827364
+G	g0	0	405e000000000000	3ff921fb54442d18	PINK	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g0	1	405e000000000000	0000000000000000	RED	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g1	0	405e000000000000	0000000000000000	ORANGE	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g2	0	4028000000000000	0000000000000000	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+I	step-0	actor:victim:_centerX	int	3500
+I	step-0	actor:victim:_centerY	int	3500
+I	step-0	actor:victim:_dCenterX	double	40ab580000000000
+I	step-0	actor:victim:_dCenterY	double	40ab580000000000
+I	step-0	actor:victim:_theta	double	0000000000000000
+I	step-0	actor:victim:_age	int	8
+I	step-0	actor:victim:_growthRatio	int	1
+I	step-0	actor:victim:_energy	double	408f400000000000
+K	step-0	symmetric	victim	~
+K	step-1	bounds	victim	true
+F	step-1	intrinsic-_isafungus	eq	victim	_isafungus	true
+F	step-1	intrinsic-_isaconsumer	eq	victim	_isaconsumer	true
+I	step-2	actor:killer:_centerX	int	3500
+I	step-2	actor:killer:_centerY	int	3500
+I	step-2	actor:killer:_dCenterX	double	40ab580000000000
+I	step-2	actor:killer:_dCenterY	double	40ab580000000000
+I	step-2	actor:killer:_theta	double	3ff921fb54442d18
+I	step-2	actor:killer:_age	int	8
+I	step-2	actor:killer:_growthRatio	int	1
+I	step-2	actor:killer:_energy	double	4034000000000000
+K	step-2	symmetric	killer	~
+K	step-3	bounds	killer	true
+K	step-4	build_tree	world	victim,killer
+K	step-5	checkHit	victim	~
+K	step-6	time	world	~
+E
+C	mixed-silver-coral-infectious	MIX-silver-coral-infectious	recovery	827364
+G	g0	0	405e000000000000	3ff921fb54442d18	SILVER	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g0	1	405e000000000000	0000000000000000	CORAL	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g1	0	405e000000000000	0000000000000000	ORANGE	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g2	0	4028000000000000	0000000000000000	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+I	step-0	actor:victim:_centerX	int	3500
+I	step-0	actor:victim:_centerY	int	3500
+I	step-0	actor:victim:_dCenterX	double	40ab580000000000
+I	step-0	actor:victim:_dCenterY	double	40ab580000000000
+I	step-0	actor:victim:_theta	double	0000000000000000
+I	step-0	actor:victim:_age	int	8
+I	step-0	actor:victim:_growthRatio	int	1
+I	step-0	actor:victim:_energy	double	408f400000000000
+K	step-0	symmetric	victim	~
+K	step-1	bounds	victim	true
+F	step-1	intrinsic-_issilver	eq	victim	_issilver	true
+F	step-1	intrinsic-_iscoral	eq	victim	_iscoral	true
+F	step-1	intrinsic-_isinfectious	eq	victim	_isinfectious	true
+I	step-2	actor:killer:_centerX	int	3500
+I	step-2	actor:killer:_centerY	int	3500
+I	step-2	actor:killer:_dCenterX	double	40ab580000000000
+I	step-2	actor:killer:_dCenterY	double	40ab580000000000
+I	step-2	actor:killer:_theta	double	3ff921fb54442d18
+I	step-2	actor:killer:_age	int	8
+I	step-2	actor:killer:_growthRatio	int	1
+I	step-2	actor:killer:_energy	double	4034000000000000
+K	step-2	symmetric	killer	~
+K	step-3	bounds	killer	true
+K	step-4	build_tree	world	victim,killer
+K	step-5	checkHit	victim	~
+K	step-6	time	world	~
+E
+C	mixed-c4-disqualified	MIX-c4-disqualified	recovery	827364
+G	g0	0	405e000000000000	3ff921fb54442d18	C4	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g0	1	405e000000000000	0000000000000000	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g1	0	405e000000000000	0000000000000000	ORANGE	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g2	0	4028000000000000	0000000000000000	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+I	step-0	actor:victim:_centerX	int	3500
+I	step-0	actor:victim:_centerY	int	3500
+I	step-0	actor:victim:_dCenterX	double	40ab580000000000
+I	step-0	actor:victim:_dCenterY	double	40ab580000000000
+I	step-0	actor:victim:_theta	double	0000000000000000
+I	step-0	actor:victim:_age	int	8
+I	step-0	actor:victim:_growthRatio	int	1
+I	step-0	actor:victim:_energy	double	408f400000000000
+K	step-0	symmetric	victim	~
+K	step-1	bounds	victim	true
+F	step-1	intrinsic-_isaplant	eq	victim	_isaplant	true
+F	step-1	only-c4-disqualified	eq	victim	_isonlyc4	false
+I	step-2	actor:killer:_centerX	int	3500
+I	step-2	actor:killer:_centerY	int	3500
+I	step-2	actor:killer:_dCenterX	double	40ab580000000000
+I	step-2	actor:killer:_dCenterY	double	40ab580000000000
+I	step-2	actor:killer:_theta	double	3ff921fb54442d18
+I	step-2	actor:killer:_age	int	8
+I	step-2	actor:killer:_growthRatio	int	1
+I	step-2	actor:killer:_energy	double	4034000000000000
+K	step-2	symmetric	killer	~
+K	step-3	bounds	killer	true
+K	step-4	build_tree	world	victim,killer
+K	step-5	checkHit	victim	~
+K	step-6	time	world	~
+E
+C	raw-c1-unknown	RAW-c1-unknown	argb	827364
+G	g0	0	405e000000000000	0000000000000000	argb:ff123456	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g1	0	405e000000000000	0000000000000000	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g2	0	4028000000000000	0000000000000000	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+K	step-0	touchEffects1.DEFAULT	victim	killer,0,0
+I	step-1	actor:killer:_energy	double	3e45798ee2308c3a
+K	step-1	touchEffects1.DEFAULT	victim	killer,0,0
+F	step-1	common-peer-death	eq	killer	alive	false
+K	step-2	time	world	~
+E
+C	raw-c1-translucent-red	RAW-c1-translucent-red	argb	827364
+G	g0	0	405e000000000000	0000000000000000	argb:80ff0000	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g1	0	405e000000000000	0000000000000000	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g2	0	4028000000000000	0000000000000000	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+K	step-0	touchEffects1.DEFAULT	victim	killer,0,0
+I	step-1	actor:killer:_energy	double	3e45798ee2308c3a
+K	step-1	touchEffects1.DEFAULT	victim	killer,0,0
+F	step-1	common-peer-death	eq	killer	alive	false
+K	step-2	time	world	~
+E
+C	raw-c2-unknown	RAW-c2-unknown	argb	827364
+G	g0	0	405e000000000000	0000000000000000	argb:ff123456	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g1	0	405e000000000000	0000000000000000	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g2	0	4028000000000000	0000000000000000	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+K	step-0	touchEffects2.DEFAULT	victim	killer,0,0
+I	step-1	actor:killer:_energy	double	3e45798ee2308c3a
+K	step-1	touchEffects2.DEFAULT	victim	killer,0,0
+F	step-1	common-peer-death	eq	killer	alive	false
+K	step-2	time	world	~
+E
+C	raw-c2-translucent-white	RAW-c2-translucent-white	argb	827364
+G	g0	0	405e000000000000	0000000000000000	argb:80ffffff	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g1	0	405e000000000000	0000000000000000	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+G	g2	0	4028000000000000	0000000000000000	GREEN	0	0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+K	step-0	touchEffects2.DEFAULT	victim	killer,0,0
+I	step-1	actor:killer:_energy	double	3e45798ee2308c3a
+K	step-1	touchEffects2.DEFAULT	victim	killer,0,0
+F	step-1	common-peer-death	eq	killer	alive	false
+K	step-2	time	world	~
+E

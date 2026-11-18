@@ -1,0 +1,155 @@
+kind	case	stage	object	field	value	extra1	extra2
+GENOME	equal-bounds-first-match-and-repeat	setup	code-a	recipe	green-length12-theta0-branch-(-1)	symmetry=1;mirror=0;mutation=0;activity=0	all flags=false; reactions=0
+GENOME	equal-bounds-first-match-and-repeat	setup	code-b	recipe	green-length12-theta0-branch-(-1)	symmetry=1;mirror=0;mutation=0;activity=0	all flags=false; reactions=0
+GENOME	equal-bounds-first-match-and-repeat	setup	code-b2	recipe	green-length12-theta0-branch-(-1)	symmetry=1;mirror=0;mutation=0;activity=0	all flags=false; reactions=0
+STATE	equal-bounds-first-match-and-repeat	before	world	in-list	in-a,in-b	out-a,out-b	true
+STATE	equal-bounds-first-match-and-repeat	before	world	population	0	411e848000000000	0000000000000000
+STATE	equal-bounds-first-match-and-repeat	before	world	methane	0000000000000000	0	
+OBJECT	equal-bounds-first-match-and-repeat	before	in-a	rect	40,50,20,30	code-a#1	~,~
+OBJECT	equal-bounds-first-match-and-repeat	before	in-b	rect	40,50,20,30	code-b,code-b2#2	~,~
+OBJECT	equal-bounds-first-match-and-repeat	before	out-a	rect	100,110,20,30	~	~,traveller-a
+OBJECT	equal-bounds-first-match-and-repeat	before	out-b	rect	100,110,20,30	~	~,traveller-b
+LIST	equal-bounds-first-match-and-repeat	remove-b	in	remove-start	in-b	in-a,in-b	40,50,20,30
+LIST	equal-bounds-first-match-and-repeat	remove-b	in	remove-end	true	in-b	40,50,20,30
+LIST	equal-bounds-first-match-and-repeat	remove-b	out	remove-start	out-b	out-a,out-b	100,110,20,30
+LIST	equal-bounds-first-match-and-repeat	remove-b	out	remove-end	true	out-b	100,110,20,30
+REPAINT	equal-bounds-first-match-and-repeat	remove-b	in-b	order	0	40,50,21,31	
+REPAINT	equal-bounds-first-match-and-repeat	remove-b	out-b	order	1	100,110,21,31	
+STATE	equal-bounds-first-match-and-repeat	remove-b-after	world	in-list	in-b	out-b	true
+STATE	equal-bounds-first-match-and-repeat	remove-b-after	world	population	0	411e848000000000	0000000000000000
+STATE	equal-bounds-first-match-and-repeat	remove-b-after	world	methane	0000000000000000	0	
+OBJECT	equal-bounds-first-match-and-repeat	remove-b-after	in-b	rect	40,50,21,31	code-b,code-b2#2	~,~
+OBJECT	equal-bounds-first-match-and-repeat	remove-b-after	out-b	rect	100,110,21,31	~	~,traveller-b
+RNG	equal-bounds-first-match-and-repeat	remove-b	probe	random	next-long	d3b3992d45a2f5df	d3b3992d45a2f5df
+LIST	equal-bounds-first-match-and-repeat	repeat-b	in	remove-start	in-b	in-b	40,50,21,31
+LIST	equal-bounds-first-match-and-repeat	repeat-b	in	remove-end	true	~	40,50,21,31
+LIST	equal-bounds-first-match-and-repeat	repeat-b	out	remove-start	out-b	out-b	100,110,21,31
+LIST	equal-bounds-first-match-and-repeat	repeat-b	out	remove-end	true	~	100,110,21,31
+REPAINT	equal-bounds-first-match-and-repeat	repeat-b	in-b	order	0	40,50,22,32	
+REPAINT	equal-bounds-first-match-and-repeat	repeat-b	out-b	order	1	100,110,22,32	
+STATE	equal-bounds-first-match-and-repeat	repeat-b-after	world	in-list	~	~	true
+STATE	equal-bounds-first-match-and-repeat	repeat-b-after	world	population	0	411e848000000000	0000000000000000
+STATE	equal-bounds-first-match-and-repeat	repeat-b-after	world	methane	0000000000000000	0	
+OBJECT	equal-bounds-first-match-and-repeat	repeat-b-after	in-b	rect	40,50,22,32	code-b,code-b2#2	~,~
+OBJECT	equal-bounds-first-match-and-repeat	repeat-b-after	out-b	rect	100,110,22,32	~	~,traveller-b
+LIST	equal-bounds-first-match-and-repeat	repeat-absent-b	in	remove-start	in-b	~	40,50,22,32
+LIST	equal-bounds-first-match-and-repeat	repeat-absent-b	in	remove-end	false	~	40,50,22,32
+LIST	equal-bounds-first-match-and-repeat	repeat-absent-b	out	remove-start	out-b	~	100,110,22,32
+LIST	equal-bounds-first-match-and-repeat	repeat-absent-b	out	remove-end	false	~	100,110,22,32
+REPAINT	equal-bounds-first-match-and-repeat	repeat-absent-b	in-b	order	0	40,50,23,33	
+REPAINT	equal-bounds-first-match-and-repeat	repeat-absent-b	out-b	order	1	100,110,23,33	
+STATE	equal-bounds-first-match-and-repeat	repeat-absent-b-after	world	in-list	~	~	true
+STATE	equal-bounds-first-match-and-repeat	repeat-absent-b-after	world	population	0	411e848000000000	0000000000000000
+STATE	equal-bounds-first-match-and-repeat	repeat-absent-b-after	world	methane	0000000000000000	0	
+OBJECT	equal-bounds-first-match-and-repeat	repeat-absent-b-after	in-b	rect	40,50,23,33	code-b,code-b2#2	~,~
+OBJECT	equal-bounds-first-match-and-repeat	repeat-absent-b-after	out-b	rect	100,110,23,33	~	~,traveller-b
+GENOME	duplicate-aliases-and-repeated-removal	setup	alias-code	recipe	green-length12-theta0-branch-(-1)	symmetry=1;mirror=0;mutation=0;activity=0	all flags=false; reactions=0
+STATE	duplicate-aliases-and-repeated-removal	before	world	in-list	in-alias,in-alias	out-alias,out-alias	true
+STATE	duplicate-aliases-and-repeated-removal	before	world	population	0	411e848000000000	0000000000000000
+STATE	duplicate-aliases-and-repeated-removal	before	world	methane	0000000000000000	0	
+OBJECT	duplicate-aliases-and-repeated-removal	before	in-alias	rect	70,80,11,12	alias-code#1	~,~
+OBJECT	duplicate-aliases-and-repeated-removal	before	out-alias	rect	170,180,13,14	~	~,alias-traveller
+LIST	duplicate-aliases-and-repeated-removal	alias-remove-first	in	remove-start	in-alias	in-alias,in-alias	70,80,11,12
+LIST	duplicate-aliases-and-repeated-removal	alias-remove-first	in	remove-end	true	in-alias	70,80,11,12
+LIST	duplicate-aliases-and-repeated-removal	alias-remove-first	out	remove-start	out-alias	out-alias,out-alias	170,180,13,14
+LIST	duplicate-aliases-and-repeated-removal	alias-remove-first	out	remove-end	true	out-alias	170,180,13,14
+REPAINT	duplicate-aliases-and-repeated-removal	alias-remove-first	in-alias	order	0	70,80,12,13	
+REPAINT	duplicate-aliases-and-repeated-removal	alias-remove-first	out-alias	order	1	170,180,14,15	
+STATE	duplicate-aliases-and-repeated-removal	alias-remove-first-after	world	in-list	in-alias	out-alias	true
+STATE	duplicate-aliases-and-repeated-removal	alias-remove-first-after	world	population	0	411e848000000000	0000000000000000
+STATE	duplicate-aliases-and-repeated-removal	alias-remove-first-after	world	methane	0000000000000000	0	
+OBJECT	duplicate-aliases-and-repeated-removal	alias-remove-first-after	in-alias	rect	70,80,12,13	alias-code#1	~,~
+OBJECT	duplicate-aliases-and-repeated-removal	alias-remove-first-after	out-alias	rect	170,180,14,15	~	~,alias-traveller
+LIST	duplicate-aliases-and-repeated-removal	alias-remove-second	in	remove-start	in-alias	in-alias	70,80,12,13
+LIST	duplicate-aliases-and-repeated-removal	alias-remove-second	in	remove-end	true	~	70,80,12,13
+LIST	duplicate-aliases-and-repeated-removal	alias-remove-second	out	remove-start	out-alias	out-alias	170,180,14,15
+LIST	duplicate-aliases-and-repeated-removal	alias-remove-second	out	remove-end	true	~	170,180,14,15
+REPAINT	duplicate-aliases-and-repeated-removal	alias-remove-second	in-alias	order	0	70,80,13,14	
+REPAINT	duplicate-aliases-and-repeated-removal	alias-remove-second	out-alias	order	1	170,180,15,16	
+STATE	duplicate-aliases-and-repeated-removal	alias-remove-second-after	world	in-list	~	~	true
+STATE	duplicate-aliases-and-repeated-removal	alias-remove-second-after	world	population	0	411e848000000000	0000000000000000
+STATE	duplicate-aliases-and-repeated-removal	alias-remove-second-after	world	methane	0000000000000000	0	
+OBJECT	duplicate-aliases-and-repeated-removal	alias-remove-second-after	in-alias	rect	70,80,13,14	alias-code#1	~,~
+OBJECT	duplicate-aliases-and-repeated-removal	alias-remove-second-after	out-alias	rect	170,180,15,16	~	~,alias-traveller
+LIST	duplicate-aliases-and-repeated-removal	alias-remove-absent	in	remove-start	in-alias	~	70,80,13,14
+LIST	duplicate-aliases-and-repeated-removal	alias-remove-absent	in	remove-end	false	~	70,80,13,14
+LIST	duplicate-aliases-and-repeated-removal	alias-remove-absent	out	remove-start	out-alias	~	170,180,15,16
+LIST	duplicate-aliases-and-repeated-removal	alias-remove-absent	out	remove-end	false	~	170,180,15,16
+REPAINT	duplicate-aliases-and-repeated-removal	alias-remove-absent	in-alias	order	0	70,80,14,15	
+REPAINT	duplicate-aliases-and-repeated-removal	alias-remove-absent	out-alias	order	1	170,180,16,17	
+STATE	duplicate-aliases-and-repeated-removal	alias-remove-absent-after	world	in-list	~	~	true
+STATE	duplicate-aliases-and-repeated-removal	alias-remove-absent-after	world	population	0	411e848000000000	0000000000000000
+STATE	duplicate-aliases-and-repeated-removal	alias-remove-absent-after	world	methane	0000000000000000	0	
+OBJECT	duplicate-aliases-and-repeated-removal	alias-remove-absent-after	in-alias	rect	70,80,14,15	alias-code#1	~,~
+OBJECT	duplicate-aliases-and-repeated-removal	alias-remove-absent-after	out-alias	rect	170,180,16,17	~	~,alias-traveller
+STATE	absent-members-do-not-set-sticky-flag	before	world	in-list	~	~	false
+STATE	absent-members-do-not-set-sticky-flag	before	world	population	0	411e848000000000	0000000000000000
+STATE	absent-members-do-not-set-sticky-flag	before	world	methane	0000000000000000	0	
+OBJECT	absent-members-do-not-set-sticky-flag	before	in-absent	rect	5,6,7,8	~#0	~,~
+OBJECT	absent-members-do-not-set-sticky-flag	before	out-absent	rect	15,16,17,18	~	~,~
+LIST	absent-members-do-not-set-sticky-flag	remove-absent	in	remove-start	in-absent	~	5,6,7,8
+LIST	absent-members-do-not-set-sticky-flag	remove-absent	in	remove-end	false	~	5,6,7,8
+LIST	absent-members-do-not-set-sticky-flag	remove-absent	out	remove-start	out-absent	~	15,16,17,18
+LIST	absent-members-do-not-set-sticky-flag	remove-absent	out	remove-end	false	~	15,16,17,18
+REPAINT	absent-members-do-not-set-sticky-flag	remove-absent	in-absent	order	0	5,6,8,9	
+REPAINT	absent-members-do-not-set-sticky-flag	remove-absent	out-absent	order	1	15,16,18,19	
+STATE	absent-members-do-not-set-sticky-flag	remove-absent-after	world	in-list	~	~	false
+STATE	absent-members-do-not-set-sticky-flag	remove-absent-after	world	population	0	411e848000000000	0000000000000000
+STATE	absent-members-do-not-set-sticky-flag	remove-absent-after	world	methane	0000000000000000	0	
+OBJECT	absent-members-do-not-set-sticky-flag	remove-absent-after	in-absent	rect	5,6,8,9	~#0	~,~
+OBJECT	absent-members-do-not-set-sticky-flag	remove-absent-after	out-absent	rect	15,16,18,19	~	~,~
+STATE	i32-width-height-increment-wrap	before	world	in-list	~	~	false
+STATE	i32-width-height-increment-wrap	before	world	population	0	411e848000000000	0000000000000000
+STATE	i32-width-height-increment-wrap	before	world	methane	0000000000000000	0	
+OBJECT	i32-width-height-increment-wrap	before	in-wrap	rect	1,2,2147483647,2147483647	~#0	~,~
+OBJECT	i32-width-height-increment-wrap	before	out-wrap	rect	3,4,2147483647,2147483647	~	~,~
+LIST	i32-width-height-increment-wrap	remove-wrap	in	remove-start	in-wrap	~	1,2,2147483647,2147483647
+LIST	i32-width-height-increment-wrap	remove-wrap	in	remove-end	false	~	1,2,2147483647,2147483647
+LIST	i32-width-height-increment-wrap	remove-wrap	out	remove-start	out-wrap	~	3,4,2147483647,2147483647
+LIST	i32-width-height-increment-wrap	remove-wrap	out	remove-end	false	~	3,4,2147483647,2147483647
+REPAINT	i32-width-height-increment-wrap	remove-wrap	in-wrap	order	0	1,2,-2147483648,-2147483648	
+REPAINT	i32-width-height-increment-wrap	remove-wrap	out-wrap	order	1	3,4,-2147483648,-2147483648	
+STATE	i32-width-height-increment-wrap	remove-wrap-after	world	in-list	~	~	false
+STATE	i32-width-height-increment-wrap	remove-wrap-after	world	population	0	411e848000000000	0000000000000000
+STATE	i32-width-height-increment-wrap	remove-wrap-after	world	methane	0000000000000000	0	
+OBJECT	i32-width-height-increment-wrap	remove-wrap-after	in-wrap	rect	1,2,-2147483648,-2147483648	~#0	~,~
+OBJECT	i32-width-height-increment-wrap	remove-wrap-after	out-wrap	rect	3,4,-2147483648,-2147483648	~	~,~
+GENOME	frame-first-equal-removed-retained-alias-active	setup	removed-code	recipe	green-length12-theta0-branch-(-1)	symmetry=1;mirror=0;mutation=0;activity=0	all flags=false; reactions=0
+GENOME	frame-first-equal-removed-retained-alias-active	setup	retained-code	recipe	green-length12-theta0-branch-(-1)	symmetry=1;mirror=0;mutation=0;activity=0	all flags=false; reactions=0
+STATE	frame-first-equal-removed-retained-alias-active	before-remove	world	in-list	in-removed,in-retained,in-retained	out-removed,out-retained,out-retained	true
+STATE	frame-first-equal-removed-retained-alias-active	before-remove	world	population	0	411e848000000000	0000000000000000
+STATE	frame-first-equal-removed-retained-alias-active	before-remove	world	methane	0000000000000000	0	
+OBJECT	frame-first-equal-removed-retained-alias-active	before-remove	in-removed	rect	10,10,40,40	removed-code#1	~,~
+OBJECT	frame-first-equal-removed-retained-alias-active	before-remove	in-retained	rect	10,10,40,40	retained-code#1	~,~
+OBJECT	frame-first-equal-removed-retained-alias-active	before-remove	out-removed	rect	100,100,40,40	~	~,~
+OBJECT	frame-first-equal-removed-retained-alias-active	before-remove	out-retained	rect	100,100,40,40	~	~,~
+LIST	frame-first-equal-removed-retained-alias-active	remove-equal-first	in	remove-start	in-retained	in-removed,in-retained,in-retained	10,10,40,40
+LIST	frame-first-equal-removed-retained-alias-active	remove-equal-first	in	remove-end	true	in-retained,in-retained	10,10,40,40
+LIST	frame-first-equal-removed-retained-alias-active	remove-equal-first	out	remove-start	out-retained	out-removed,out-retained,out-retained	100,100,40,40
+LIST	frame-first-equal-removed-retained-alias-active	remove-equal-first	out	remove-end	true	out-retained,out-retained	100,100,40,40
+REPAINT	frame-first-equal-removed-retained-alias-active	remove-equal-first	in-retained	order	0	10,10,41,41	
+REPAINT	frame-first-equal-removed-retained-alias-active	remove-equal-first	out-retained	order	1	100,100,41,41	
+STATE	frame-first-equal-removed-retained-alias-active	remove-equal-first-after	world	in-list	in-retained,in-retained	out-retained,out-retained	true
+STATE	frame-first-equal-removed-retained-alias-active	remove-equal-first-after	world	population	0	411e848000000000	0000000000000000
+STATE	frame-first-equal-removed-retained-alias-active	remove-equal-first-after	world	methane	0000000000000000	0	
+OBJECT	frame-first-equal-removed-retained-alias-active	remove-equal-first-after	in-retained	rect	10,10,41,41	retained-code#1	~,~
+OBJECT	frame-first-equal-removed-retained-alias-active	remove-equal-first-after	out-retained	rect	100,100,41,41	~	~,~
+STATE	frame-first-equal-removed-retained-alias-active	before-frame	world	in-list	in-retained,in-retained	out-retained,out-retained	true
+STATE	frame-first-equal-removed-retained-alias-active	before-frame	world	population	0	411e848000000000	0000000000000000
+STATE	frame-first-equal-removed-retained-alias-active	before-frame	world	methane	0000000000000000	0	
+OBJECT	frame-first-equal-removed-retained-alias-active	before-frame	in-removed	rect	10,10,40,40	removed-code#1	~,~
+OBJECT	frame-first-equal-removed-retained-alias-active	before-frame	in-retained	rect	10,10,41,41	retained-code#1	~,~
+OBJECT	frame-first-equal-removed-retained-alias-active	before-frame	out-removed	rect	100,100,40,40	~	~,~
+OBJECT	frame-first-equal-removed-retained-alias-active	before-frame	out-retained	rect	100,100,41,41	~	~,~
+ADMIT	frame-first-equal-removed-retained-alias-active	world-time	admitted-0	genome	retained-code	0	1
+STATE	frame-first-equal-removed-retained-alias-active	after-frame	world	in-list	in-retained,in-retained	out-retained,out-retained	true
+STATE	frame-first-equal-removed-retained-alias-active	after-frame	world	population	1	411e7c101a1fac52	404401db3c70a5cc
+STATE	frame-first-equal-removed-retained-alias-active	after-frame	world	methane	407f3f5c19c0a03b	1	
+OBJECT	frame-first-equal-removed-retained-alias-active	after-frame	in-removed	rect	10,10,40,40	removed-code#1	~,~
+OBJECT	frame-first-equal-removed-retained-alias-active	after-frame	in-retained	rect	10,10,41,41	~#0	~,~
+OBJECT	frame-first-equal-removed-retained-alias-active	after-frame	out-removed	rect	100,100,40,40	~	~,~
+OBJECT	frame-first-equal-removed-retained-alias-active	after-frame	out-retained	rect	100,100,41,41	~	~,~
+HIT	frame-first-equal-removed-retained-alias-active	after-frame	checkHitCorridor	out-retained	center	101,101	2
+DRAW	frame-first-equal-removed-retained-alias-active	after-frame	world	corridor-calls	2,2	edge-rgb	ff0000ff
+DRAW	frame-first-equal-removed-retained-alias-active	after-frame	world	fill-rgb	ff000080	in-alias-count	2
+SUMMARY	all	terminal	oracle	cases	5	records	153

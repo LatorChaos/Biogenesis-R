@@ -1,0 +1,17 @@
+{
+  "schema": "biogenesis-gas-observation-projection-v1",
+  "generated_utc": "2026-10-25T23:25:44.967567+00:00",
+  "input": "tests/fixtures/java/core.jsonl",
+  "input_sha256": "5f5aa228b3ec67685b3a180a1dca1d42364d099240112bdd33c1ed209a080b10",
+  "input_manifest": "tests/fixtures/java/manifest.json",
+  "scenarios": [
+    "world_gas_methods",
+    "negative_gas_request_quirk"
+  ],
+  "rows": 22,
+  "fixture_sha256": "0ea73389506dce4286389f75388ef55475541bd5062cddd149f619b12cd3b6c8",
+  "conversion": "float.fromhex for Java hexadecimal floats; IEEE754 binary64 big-endian bytes rendered as hexadecimal",
+  "new_java_execution": false,
+  "runtime": "3.14.8 (main, Oct 13 2026, 10:33:10) [GCC 16.2.1 20260810]",
+  "comparison": "Exact request/result and three gas bit patterns; no tolerance"
+}

@@ -1,0 +1,1916 @@
+{
+  "status": "EXACT_ORIGINAL_INPUT_AND_OBSERVATION_COPY_FOR_PRIVATE_UNEXECUTED_RUST_REPLAY",
+  "capture_root_readback": {
+    "path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/root-readback.json",
+    "sha256": "365580e1dcafd737c8c6875c2e7c3c777222620bb2fb3b32e1cc86e7caa11852"
+  },
+  "routes": [
+    {
+      "route": "source-a",
+      "path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/execution-a/source-a/capture/observations.tsv",
+      "sha256": "08c617ebfffc0b457d51e92164551c9516c543a104c7a4a8d9a555322b22abf9",
+      "bytes": 1698921
+    },
+    {
+      "route": "source-b",
+      "path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/execution-a/source-b/capture/observations.tsv",
+      "sha256": "08c617ebfffc0b457d51e92164551c9516c543a104c7a4a8d9a555322b22abf9",
+      "bytes": 1698921
+    },
+    {
+      "route": "jar",
+      "path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/execution-a/jar/capture/observations.tsv",
+      "sha256": "08c617ebfffc0b457d51e92164551c9516c543a104c7a4a8d9a555322b22abf9",
+      "bytes": 1698921
+    }
+  ],
+  "case_count": 260,
+  "source_successes": 226,
+  "source_errors": 34,
+  "source_rows": 55634,
+  "Source_rows_are_not_Rust_output": true,
+  "fixtures": {
+    "cases/byte-00.bgg": {
+      "sha256": "6c95bfd37162d4177c3db9650c2835f9efb60635dfc1fc04f49002d0f4d5bb60",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-00.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-01.bgg": {
+      "sha256": "5bff562496f97b2228c825692ecc4ad3d6720a9cb3d6c9eebc48be26e9fbdf9b",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-01.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-02.bgg": {
+      "sha256": "b77f7a0eaf67e4b3a70cc988a87b6cc777318337f78b7c3fa5945ca7e661481c",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-02.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-03.bgg": {
+      "sha256": "d114d3ed27946dfdc1fe506fa4965584acdbb6d8a6bf367730090c364c11f3d6",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-03.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-04.bgg": {
+      "sha256": "c536cdb7559db06af3e37b017423097bf93647e1c76316328e481a7037b3d95e",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-04.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-05.bgg": {
+      "sha256": "fd291487b129619372b68bac2b333c4e8977cd971560c58fd99b1115558d54fa",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-05.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-06.bgg": {
+      "sha256": "f65f0a28911e5d6196dd9ae3d098e30559bf9472b5b344c7d77114e9f5696f6f",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-06.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-07.bgg": {
+      "sha256": "d096663c853bf83b3e9de718d45c4179da4ae3ae3a63fe710d2a28a7488f9c66",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-07.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-08.bgg": {
+      "sha256": "7c24d417fad20aadc1dd3f146216bc29a1e7cb21e14b74ddaaecc5d5e124e45f",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-08.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-09.bgg": {
+      "sha256": "a493f122cffd34ce4e8e26e9ee26e3083f1ee7afbf197f6fdfb40904c16f31d7",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-09.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-0a.bgg": {
+      "sha256": "cc8811970315334f66a4e7450e662a2b8871623b409d9d876e8c60f99e460973",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-0a.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-0b.bgg": {
+      "sha256": "f524daa72ff9660facd5d037a28c6909f5d00c6ed41586e6afd91af5c96abb8b",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-0b.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-0c.bgg": {
+      "sha256": "a5d7183568c1de703788512a463f274a94591f570387c1fa7e63c9f61c4139bb",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-0c.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-0d.bgg": {
+      "sha256": "2a894ee2089aeb7b08ac76af5d438fbdeae6b5e95204acc0649ab2b3a8f20387",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-0d.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-0e.bgg": {
+      "sha256": "5a95a79e4b355312bb35b31b459b6a6a5a9c835210fa9195faa316ab3db32dcf",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-0e.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-0f.bgg": {
+      "sha256": "6346702646171decbb91e12eb3819f4193b2bc722a6c747abcb4872fdc7b50e9",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-0f.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-10.bgg": {
+      "sha256": "f654c089aa6bba728d64877147943877c550f429243d990eec7906d8fd87d9ac",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-10.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-11.bgg": {
+      "sha256": "a6d0bab455723143a17dfca2bef23918f963b6306cba53c2e96fd995d3a84eff",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-11.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-12.bgg": {
+      "sha256": "eed2d32e861f75710980403691b0f242e6c0208b480b3749073a5b333b7ca7ae",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-12.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-13.bgg": {
+      "sha256": "995c7790f63fe5e970f064ffedd89c804c229bd952a3e9243455fbd91bd15288",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-13.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-14.bgg": {
+      "sha256": "a28f5eda59435d778c475eefa9ff23b7c2097a483257dc58f2bd4155c1dc69f0",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-14.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-15.bgg": {
+      "sha256": "b78e6518b9c120d0b7735fbbb66add1b3d2c16aeeff4a08c21f770fef8e0adb7",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-15.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-16.bgg": {
+      "sha256": "83a2aafe40424a46134b76d547d50f5044059eab1838e419f3cbfb3766666af7",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-16.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-17.bgg": {
+      "sha256": "7ac9408b16382b2d87a3223219e323d779605c2a28ef7a2b072894908622edfc",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-17.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-18.bgg": {
+      "sha256": "2e3b0ce65107e3a95a4ee9213f7af390fa73b3c6104d463698b9a6af35195690",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-18.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-19.bgg": {
+      "sha256": "d54ca255cac2c48a24fedb4dda61d3f37e28cec3f12c3fa67656b4342574dbbc",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-19.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-1a.bgg": {
+      "sha256": "feb8abf9f6ed32dacebfed86e83bb4a5bbf993dcd05b4a47c838cee0e9de8be0",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-1a.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-1b.bgg": {
+      "sha256": "c25cbb21e2f14dd758b69ff8f08b789515ca05089d4acf37fb3dc49c0a99f54e",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-1b.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-1c.bgg": {
+      "sha256": "498dd13340b8d23f27f1bec65cd4392158cc4e0ead8955a47f57a2beb2ac5639",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-1c.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-1d.bgg": {
+      "sha256": "8bf3e1ce22016d7ab62edc86ed3daa3ca5d3fe109b9099e8689d4bd6c7709508",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-1d.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-1e.bgg": {
+      "sha256": "471a620eb078569c462c56a1a9e61a77b5a6227ab44869826c323b1676b55fcc",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-1e.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-1f.bgg": {
+      "sha256": "f0ce4a8cc19d17d7593ed044a5971514f629c76e475021ed7ed36307a0e39a93",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-1f.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-20.bgg": {
+      "sha256": "52f9c5041a1c955c1621753d3ba8d9abb1cda48f062af1923a27c45705670147",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-20.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-21.bgg": {
+      "sha256": "91c0ce36e966c7553f1dd4213aa00b99306966d3b8cabe6759a8a59230d05039",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-21.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-22.bgg": {
+      "sha256": "4496882c731db1c01df0d15077b6c18676b9ead752a2121a0c9ae6fdcb49f613",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-22.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-23.bgg": {
+      "sha256": "a8d3ae51561e75992bb4a090f4fd3bb8bbfb219c11d7e791a0fc7c1c0969cf0b",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-23.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-24.bgg": {
+      "sha256": "a087375c3e1c06ca23b0b8eb7f0f15ee2a4c7277110d53dd15e6b8400620a26a",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-24.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-25.bgg": {
+      "sha256": "7a5060c67dcdab57e56d7eea672df220aa9b1b19344a4b018d48e5bb62bfed44",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-25.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-26.bgg": {
+      "sha256": "2f587652d00fd0cb1bfbc88c51f5ea6a5678b53ea7afedde1fa0cd887df314dd",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-26.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-27.bgg": {
+      "sha256": "3fcf3e2817e0a20dccb8ba3ab6bfc62a847391f2aa70090d92477248d388f3f6",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-27.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-28.bgg": {
+      "sha256": "a8e4c07aa71bfa053ace57841203ebf60b832cfa7417009541febf458143d233",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-28.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-29.bgg": {
+      "sha256": "1c7b3e374ebbd20090c9d4a37ec51216c5236346a05aaf2b934c141f1b3f695c",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-29.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-2a.bgg": {
+      "sha256": "4ae74ef65b87e47e92bc4e616efde0349e96a777aecfca9683dc50d237c14227",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-2a.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-2b.bgg": {
+      "sha256": "12e33cddaa745f252ce4094aa9de4eb3556ad7b7e36e6887d55069bfab1d1bd9",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-2b.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-2c.bgg": {
+      "sha256": "41101f6ac9dab31692bb9ce6ff416790fd243b187a72b66d38c8299cc7d6fd95",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-2c.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-2d.bgg": {
+      "sha256": "7c7b3cdcfcc9c8c382248a94b8460898bb5d000278faa8022897b88e9346a521",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-2d.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-2e.bgg": {
+      "sha256": "4f105c8fa7df9cb6dd21fa12145faca3f00e8b7da7450f22156e752be38232d0",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-2e.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-2f.bgg": {
+      "sha256": "85588ba6d20d2f2c4c3abea23ca4632c55d8791cd8f489a9cfda500b9f93635c",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-2f.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-30.bgg": {
+      "sha256": "49a2eaaf2d9ba8479ffa980e57fe5c698d3e7aec2ba98b8020d5f3a59ef50fbd",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-30.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-31.bgg": {
+      "sha256": "c372d3c6a9ba3e7849cf2b9a1576298bc13f24e9acd0e921d25dc451878a0488",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-31.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-32.bgg": {
+      "sha256": "6a738d77beeb3afe896cbdfea665acdbf85f5b0327b90596d11d2a451860171f",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-32.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-33.bgg": {
+      "sha256": "f29157a224ed12239d3274ebad409efbe4dbdb448101ebd74bb36d2ecfb648e0",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-33.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-34.bgg": {
+      "sha256": "97ccf223e55fab47d0ee6fe97553449337a41f7a3e9a3d20ed6adee0f5061089",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-34.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-35.bgg": {
+      "sha256": "dce7076a7e7080bf8667ef1be97d93354dab85f6d0d800adcb94e4327840fd21",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-35.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-36.bgg": {
+      "sha256": "c9d9710d98da6b2e7c4a684daa2c24d3f485d104ba0be89e101d48559b7586de",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-36.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-37.bgg": {
+      "sha256": "bb8ac08eb6cb795a2709fa0a6721ca7983650401c42c212ae9221d778e09a67a",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-37.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-38.bgg": {
+      "sha256": "a4fdc8ed251e104643584adcdb8a0519a8c954da239b56419ff97b3358057b50",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-38.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-39.bgg": {
+      "sha256": "45efd6d25e086ddb3d2d2a462ce3aec2b2ce25630a0c5432b5473845d0c80a57",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-39.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-3a.bgg": {
+      "sha256": "fbb39521d844676d0aa25a3f3a977a863e329e0efc31d1f459cc5ffb08d3f8ae",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-3a.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-3b.bgg": {
+      "sha256": "4f879e9086f0ef781b345ebd17ac377222759a7c3a2c6bf9534be822a442df2a",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-3b.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-3c.bgg": {
+      "sha256": "ef1ff97a3360056a32b1a75524699a917261042120c3c929a037ef1353afa658",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-3c.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-3d.bgg": {
+      "sha256": "484b235b45aac3367895631ffb2809aae6d41b1ca080cb00f3b8e0fb9a2b7d64",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-3d.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-3e.bgg": {
+      "sha256": "22460cb2789939a4f7f4adeef664433857135d741bf2800f679069efe5b2f7d9",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-3e.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-3f.bgg": {
+      "sha256": "d9172596a00c19fe4983ed39da37aaf90fa1f6c59910f1467d24c92d6c1c576c",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-3f.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-40.bgg": {
+      "sha256": "1370399fcf864fb9ee30aebc2d39f8e55431306a6876dcb0c13072902e8e47f6",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-40.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-41.bgg": {
+      "sha256": "77823208d5ec0c679b248502c1402bb5d72a1c07ac2bf181273580c8090fbdcc",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-41.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-42.bgg": {
+      "sha256": "98e62fee8fc74e56c8792b172285981955540e1c38e2c52c267688e669c2db01",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-42.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-43.bgg": {
+      "sha256": "cef2a66b89b7c916a74833cc9746c53abf09f3ea8a70c1412badfb6e3b0f2384",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-43.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-44.bgg": {
+      "sha256": "28c0076df82448b4e85314bcaeaaac54173d6585432bbc3fe4f391a8ebf88974",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-44.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-45.bgg": {
+      "sha256": "37717a8c7b7749c40cd3f7152b23c94e5530f3b5106f09922f70fd23d608d5bd",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-45.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-46.bgg": {
+      "sha256": "09adcebdc3e4e01c19a17bb504671ffc15f053f7ba92758e41450e1b3888f0ac",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-46.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-47.bgg": {
+      "sha256": "ce75dc89be957b914f5c697993ec62b18809460971187f8724dba74551e602bb",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-47.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-48.bgg": {
+      "sha256": "16ce6088680c7e0bbb9279a4fb16735e8ee84642b0897f650c094262cb1968de",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-48.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-49.bgg": {
+      "sha256": "6deb7f3ded186cdd0c49ce41a02c937eafcfb39a61c99f9e480c101b18daa084",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-49.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-4a.bgg": {
+      "sha256": "16d9180112e97e52fa9ce5ff241832c00c4a544acaa09ee1a2fa6415641cd237",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-4a.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-4b.bgg": {
+      "sha256": "98e292101f40747b646c5a24e233d8e0f774222f950559a2c940ef2d049c61dd",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-4b.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-4c.bgg": {
+      "sha256": "83d0ce2858ce3511b97615197fffb308c8e0eacdcc46b0b3ce69d715445a676a",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-4c.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-4d.bgg": {
+      "sha256": "007265962f9e6684a996b708d3a68ba456886cf4ddbd39e0857b6193d82e68ce",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-4d.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-4e.bgg": {
+      "sha256": "f526718a369bedc935c36d9a266ebdb9bc2e5280d70a13d50e1d185ba0faa92c",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-4e.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-4f.bgg": {
+      "sha256": "8059b581e146889bc73dec53dedf213add0316703963165acf8ff9cd3650f25c",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-4f.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-50.bgg": {
+      "sha256": "88ea36b09442c60b0d39927f78b8826d03c9f913570c9804ac0a56710f784fb0",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-50.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-51.bgg": {
+      "sha256": "1471547dc9d899b7f45ff17a715844b5518db83100fec2d72fbe5a2a0b739715",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-51.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-52.bgg": {
+      "sha256": "bfe0f6b2a870a56ae30c53ea87e125517bc7e4c4e2e60200a31e50528b69fe4b",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-52.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-53.bgg": {
+      "sha256": "443848b2fb81c60c71c1c5a2ed6706ca423b08543da4f58c713eb7a761e07aa6",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-53.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-54.bgg": {
+      "sha256": "7ff88ee8b2cf8d32b429c1067bc758564dfce23c0df822d3075bb8d926f246e1",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-54.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-55.bgg": {
+      "sha256": "3b39f067fd829aad320c0eb61da02cdb199d1edc0254b64ef55ad5f0fb1ac6fa",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-55.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-56.bgg": {
+      "sha256": "125953fc30c42bf6c7ab62bdaf64fbb638ba3ed432ebada8ffbd32d687ded5fb",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-56.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-57.bgg": {
+      "sha256": "3f672ede43f283c1612cb001391325b81a27a529700744864cf7778e30428160",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-57.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-58.bgg": {
+      "sha256": "dbb019682889b5897c2ef2476118d4ecf0cad8e7c3e154cb835582c325df0acb",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-58.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-59.bgg": {
+      "sha256": "be01914c1d53f989fd6f35686ae69a705a96d213fd3c889f2afb924c2ff0623c",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-59.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-5a.bgg": {
+      "sha256": "25259130bd170029cc85379104badc62b3a1ef17434415412efa1272a9b72b78",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-5a.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-5b.bgg": {
+      "sha256": "37907ea8167e8de141d8d89e9965f8181f63f010bc7283c0fe97deecf48167a8",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-5b.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-5c.bgg": {
+      "sha256": "bc4d45198af9d5af4a3b7c34dfb24f5b28adf2c276515b032794bd9df4fe1380",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-5c.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-5d.bgg": {
+      "sha256": "75f35d7571f7b17ad330fe35a664298c4c6c744448560af55df57c5729ef92fd",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-5d.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-5e.bgg": {
+      "sha256": "4fc028164f271c0870a9f5e58104fbdfa0897cc718fb8275cd1454046248b70f",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-5e.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-5f.bgg": {
+      "sha256": "acf4497ec491139a930d566844022a7805e7a60fb53d4061976a987253d5f8be",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-5f.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-60.bgg": {
+      "sha256": "9a78c2847a986bb4573f6e7755e19675a96073ec59b6e6441ccd632a4d6571f6",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-60.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-61.bgg": {
+      "sha256": "d41b643672392596ca5e14ef1cdb3c80d81ba6a622e4627542a7e1c68e6bd846",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-61.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-62.bgg": {
+      "sha256": "d9df5e63644ebb5f860da96d34daa2f1d5c7564d32bbc447f027efed5e627f9b",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-62.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-63.bgg": {
+      "sha256": "2a28470793606085837a39a5193cfbdda2dc77872dcc7fdd01a725547fb4e3c5",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-63.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-64.bgg": {
+      "sha256": "ad1c6d0d3d883709996f28512f40e7f18ed96f41bc155ca71fdad6cf85dd1cc7",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-64.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-65.bgg": {
+      "sha256": "4d9d0ec7f05e3dc49aca2cba9e12ebc04849d66765877f2cd5c381b765c82293",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-65.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-66.bgg": {
+      "sha256": "3251a128bd366a89ce52cc66baf7b132456f418b2c1351416004b81edbb5541e",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-66.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-67.bgg": {
+      "sha256": "43c3d15d5037770fecaee5a2faa02a9096aac0b19fb788048153e4012dcc9a6a",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-67.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-68.bgg": {
+      "sha256": "d10d5573177a913de81f8bf1b5b64edaaf7745a3d32c5c799cb0f6fa75a0fc57",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-68.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-69.bgg": {
+      "sha256": "a0165413371c4b19edf175d98f709575984e79ae32d3cb169bb91a800968862e",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-69.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-6a.bgg": {
+      "sha256": "d2701185deed28d2be755b59e692d8c4ad9aae62cde4a347f3033a3ba759ce91",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-6a.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-6b.bgg": {
+      "sha256": "432942141d367a07b3242ae9260024effa0b6a997174ed47d0b426ca469ef5f6",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-6b.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-6c.bgg": {
+      "sha256": "d4a6d656d8112b543cbe2a5a9047c07ec12602c92f6584c1ddc33d1f9d691d79",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-6c.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-6d.bgg": {
+      "sha256": "ea51ac93146dea30c8b38c44acc9487f5c6b0ab27dcefc3d9dc01075f3e839f8",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-6d.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-6e.bgg": {
+      "sha256": "594ce2ef7d8ce39ab8a3107f7058ac36d1753f0ed571af93c4e6d8ca846f31c0",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-6e.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-6f.bgg": {
+      "sha256": "43d41821e7955a5ce9bd0faa21ae55a8e1cff7d03a0ed72117db471745b53a3b",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-6f.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-70.bgg": {
+      "sha256": "848d06d72c216af535deb87dea83412f955506cff01c3447c708e23b745d9a2c",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-70.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-71.bgg": {
+      "sha256": "b2a8cd723ccc1f43c09642bc25fac7046c3cb7eba7a4e0485ff6edbfa1a0c41d",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-71.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-72.bgg": {
+      "sha256": "1b911298302e590e6fade78f6f2897fcca113c62d9e979c6771c028be03f4088",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-72.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-73.bgg": {
+      "sha256": "e918ff3d9137a639ca7de0172d11f09450e7f3f33b338ae152b9a6f2c7e604b8",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-73.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-74.bgg": {
+      "sha256": "3edd3e397899aff94b733e62be36c8c92a3187433afbfcf99415031f16e64807",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-74.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-75.bgg": {
+      "sha256": "2c026b4625450cd11881b4d7e168f6ad297a1109ec8007bbed7db1cad01190ff",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-75.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-76.bgg": {
+      "sha256": "f05e47d8b1d994ef551e68bd003e1ccde19852db2dfeca67ae0f10146142dd2f",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-76.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-77.bgg": {
+      "sha256": "7eec7433c2b4cfb555bdff524a734778b38c95bb18cf654d2afdec1b1304cba9",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-77.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-78.bgg": {
+      "sha256": "6c590fc088a9a4d12ca2ded555da34cfd83b2a78387f246bd227ac7e44c2e068",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-78.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-79.bgg": {
+      "sha256": "329d6f8cfe971f9c8c850767668a7638e254d8326f6d887a8a85183729603dde",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-79.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-7a.bgg": {
+      "sha256": "0ca954773cbab91b488cefef0e9dd75636640cb269a37b480fe5e3fe49479d58",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-7a.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-7b.bgg": {
+      "sha256": "7469c33a4a437b1512a4dd04b902e745e7c257c20f2b334891d4f1a4ef74accc",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-7b.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-7c.bgg": {
+      "sha256": "17e099ba673dc8f67f22864e1936bebe75f6865e97e644beb9fe4916e7047396",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-7c.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-7d.bgg": {
+      "sha256": "275e808f308c1f3f3b1dcc06a9d486d71aa4c04251a5db639bd423b4ca25131f",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-7d.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-7e.bgg": {
+      "sha256": "707b9984c1eacf0bcd56503a4bd8ae6e04245e77f2f15b5464ce36296a355383",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-7e.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-7f.bgg": {
+      "sha256": "0c1e2402e5e1ae2898523eb1fb8cc13a74e573074106f364b30b8d4ed588bad1",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-7f.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-80.bgg": {
+      "sha256": "70967a8c880b35789d21b79a40c84a0d080e1e5789411b791ecd638b9c8aa1d4",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-80.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-81.bgg": {
+      "sha256": "e45acb37b1ed6b04cb146f3d3048d9c75e99583f98938b4817ed2e47d95065be",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-81.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-82.bgg": {
+      "sha256": "3f21c7aefa66a7a92c8bf35bb55e3f615bf2059cf59edcf0de2546c2ea44378c",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-82.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-83.bgg": {
+      "sha256": "348e7be80c4fe4c8d2af28e95ada09b0e4a4251bacfac980fc2c8a4eceade091",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-83.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-84.bgg": {
+      "sha256": "9aee0968f0df7b6207b66e236974409eb35a407ea8cf9ea611c7fa62a087e641",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-84.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-85.bgg": {
+      "sha256": "cac88331a31e1057f89f6ffa66f818e865025836fb8c52e4de90a294dcbee5b7",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-85.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-86.bgg": {
+      "sha256": "c6f859b63408d76f82f2edd40212e432e7d1a2c23b31f8496446281937d6bbe1",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-86.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-87.bgg": {
+      "sha256": "5900c7e5155d00683f8c70bd83ad68e8fd8a2d51f63e72fb1bc6fd937e4a1a6b",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-87.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-88.bgg": {
+      "sha256": "5f86f536b2fbe1f22707176d14cab45df80a6f94c5c6e674b9befe79ef3e0dd6",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-88.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-89.bgg": {
+      "sha256": "2d5a81a7ced0f8414208dc024c8534c4b5b832937c04ce087d7cc32cd947a9fa",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-89.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-8a.bgg": {
+      "sha256": "d64a33866ccacb69aa7fad7a253c16507de14a144000ba9d69b4db34ec4ee2ee",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-8a.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-8b.bgg": {
+      "sha256": "00e02d69344a81d10f2ff4c2789702cd8aa6f748a4e73b011b1fdbd93cfa2b73",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-8b.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-8c.bgg": {
+      "sha256": "bb981460bcc6c94cbd63ec250cb7e7291c5bfcfa47cdb8e3a6175358c7091ce0",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-8c.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-8d.bgg": {
+      "sha256": "0b0dfe3a5befed22e08941690b91bc630a2a4be22c9f5a3765072ca24cd2e340",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-8d.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-8e.bgg": {
+      "sha256": "afdc69479cada6e09e737075a36f995ac15a7971d26aef193de41f5431285149",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-8e.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-8f.bgg": {
+      "sha256": "3330261b43927e97aff830ad716f76db12b2bb009abf777cf472279fabad44be",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-8f.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-90.bgg": {
+      "sha256": "2177faa335e5c013ba879a96b30bb19f17d091ce496726362ce2742219aee378",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-90.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-91.bgg": {
+      "sha256": "aa845b5686f6c36c86156bf32ae146fbea7310a3ed47703d83aa0158abe13d29",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-91.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-92.bgg": {
+      "sha256": "8c7df96cbf567c1e3d3ae91e5b0c408b0c48a780671f37a9ab500adca4895ac7",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-92.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-93.bgg": {
+      "sha256": "b4f3a5fb25f9322c8b209f121242e90f45e0ba1effa437cfe559dd0e9e3b98aa",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-93.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-94.bgg": {
+      "sha256": "010c30a5992e0b1e38e69f30faf86143b442b45bc65b088f7c3c95c99f5e3404",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-94.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-95.bgg": {
+      "sha256": "bfdd981dfcd75768a1938844018d07a2bbf2773cf22642a4590a0d9a54a23d8b",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-95.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-96.bgg": {
+      "sha256": "1fe34f944b94e71db4296b42372c44e93f9e7472fa4ee8bb1547c0f6c63c4e64",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-96.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-97.bgg": {
+      "sha256": "0b116ae3aa65295160dcd5180a643bf5e4373d1f615caa51b8b0b3f58ec739c7",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-97.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-98.bgg": {
+      "sha256": "367e3455ddf149e0378847aac5cc78b269c0cefe5cf3d595eab3161160ea8f5e",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-98.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-99.bgg": {
+      "sha256": "e5fafc35ebb0230ad63f1216f582592b582bc53ceb5c440e732d41b47ba26129",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-99.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-9a.bgg": {
+      "sha256": "6d7bf83af094c2c6254948c89093e5b9a1e80487b501104c84c515664ec32da9",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-9a.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-9b.bgg": {
+      "sha256": "be8c4898ae9d84544bb7407f2a46310ed07cc6e253edb7068e8701d286981121",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-9b.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-9c.bgg": {
+      "sha256": "6eeab8638d390174a53ccb44d368cf9ad1668511919e27b3fdb8e817deac2f55",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-9c.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-9d.bgg": {
+      "sha256": "0800ca3e15c176a2fcabcec8aa4f6787ea238ac3a7121249fd6b2bf7abceb727",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-9d.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-9e.bgg": {
+      "sha256": "cb02eea59e7ffe73b89996d2a0db10650eb749f1fa6baffdc69296f43a442e3f",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-9e.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-9f.bgg": {
+      "sha256": "ffd87f49dbb670a14b877b092585fdf36ebbbcfd1f1b7724e3e09e4cb56d1b63",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-9f.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-a0.bgg": {
+      "sha256": "c477c2858d81763908cba189e9594c3fb933c1d6519fcb275ae361c2efe419c7",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-a0.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-a1.bgg": {
+      "sha256": "76261c402e9fc5c558692a62408c7de501fba4e866c3e3b0b1131a8c4b6acb4b",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-a1.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-a2.bgg": {
+      "sha256": "a08fc2da762049a8596427a1aa4da32ee64db1fd698709ad704b2fb8dd62532b",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-a2.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-a3.bgg": {
+      "sha256": "e7438ff88b0314de6ea12488c24710fdf891b90a18fb68a32db1adf5f50cec49",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-a3.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-a4.bgg": {
+      "sha256": "05caa3ac2a8dd59bb0d0f94853344ab0feb09f6d6ace9d1ecb5b828b23b440b2",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-a4.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-a5.bgg": {
+      "sha256": "7c634bef34f3403762d2a59e67f43aad9665cec281a2ba218f16a125d34cb8ab",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-a5.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-a6.bgg": {
+      "sha256": "c69aae4d551f6a00d2be1b7d8207309a2235084ded78b0b5103f0eafd88d18d2",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-a6.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-a7.bgg": {
+      "sha256": "fae6befe2bbfb9cdfd59514fbec514134c44c3541b503e0f069720adeb96d066",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-a7.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-a8.bgg": {
+      "sha256": "1a67306cddca373241667ad87d3b8cc4d351c7fea33ccb3f222bdd65b1cec92c",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-a8.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-a9.bgg": {
+      "sha256": "d992a25d55f2992a687ec64145dd03d2b66b902a24a8ebd644c7c94a5ba29045",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-a9.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-aa.bgg": {
+      "sha256": "e08bdf120b021abb826632b7269c8039661d9a39ac35eb648775e7de4667047d",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-aa.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-ab.bgg": {
+      "sha256": "021c460e8fc839ec67d49c8796b167fead4f2224ec603b66922159f3d43b3f81",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-ab.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-ac.bgg": {
+      "sha256": "41249096f21c13f8a4d670cd8edc341801df905586975af7b545a08d7160dd5d",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-ac.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-ad.bgg": {
+      "sha256": "8c4502dd3ffcc8e9cf8273b48d35320f0a78c51030d4ae5581df9bd8ad521da2",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-ad.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-ae.bgg": {
+      "sha256": "c487eb60205b3567d8eed33406aa1571a385a94dc44bd55124c7c864b750cbfe",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-ae.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-af.bgg": {
+      "sha256": "0f4ded2c5bbf5aca48c91d84cd7a851aeff1dfaca8be39993b38261b28f80874",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-af.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-b0.bgg": {
+      "sha256": "14da900ca9b7bf257b5df3adc445bdccad534a52d001ec09065a842dd2c69666",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-b0.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-b1.bgg": {
+      "sha256": "021a1cb5b4baeca4b732a4b9f1861a51d53610a18ef15e0d94188692ab35da1d",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-b1.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-b2.bgg": {
+      "sha256": "7e1b3341bf2283932ab9168799d06e2bc957d97fbaf1ef7ac001aa95c41aad7d",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-b2.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-b3.bgg": {
+      "sha256": "e6036d1e8ae41606407d63117a238f454bdd2c81d449f2ff8830604da4224235",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-b3.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-b4.bgg": {
+      "sha256": "0401e47b1304b61850cf1554e7ed1e5f2f04aa75c2b4b0bff61dafe9b96e76af",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-b4.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-b5.bgg": {
+      "sha256": "848c9d0091e43259f660b3191152437c8f488bf1aa72f926a6640ffb1000f0de",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-b5.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-b6.bgg": {
+      "sha256": "e1229163e6c10fdb09dcb7f9f5d1138648722ffc68847e0476405a4453318afe",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-b6.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-b7.bgg": {
+      "sha256": "a9d1794d7f093d3f6d7b73702f0377957ee8cb90119a9debefec6a324477a92a",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-b7.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-b8.bgg": {
+      "sha256": "6f42d23365e76d65d1ad9c5c0f423b2b0681c791fc35c5bc1a0b4d2b4ebd326e",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-b8.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-b9.bgg": {
+      "sha256": "7215d7afc748a1ff68f8e475919ebddcf416fcfa45fa85e25799e31b4987acda",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-b9.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-ba.bgg": {
+      "sha256": "d545f28a3d4815942349d57301edae59434d5bc98564ce866d323f5e01b0677b",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-ba.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-bb.bgg": {
+      "sha256": "d320172032852e0c480d1fbaa08d02d02cfb31263b3aa4cc4b862835ff967f72",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-bb.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-bc.bgg": {
+      "sha256": "79f0e83d86a5349622db7e7b173e41b8e74875360903e1c8f76bd6ad8e73db8c",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-bc.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-bd.bgg": {
+      "sha256": "9d5c9e0cff1d5511352f28133ce6fef75676e66a9fa88335467b3d7863114e66",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-bd.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-be.bgg": {
+      "sha256": "67f1fa7ab700b186f8bfdf5d3519a3375d973a413f42dc2bbbb4d513dc6cad19",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-be.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-bf.bgg": {
+      "sha256": "4355120706d34df178252a6c6a905d799a98620a2c26d290a717628f13f3064c",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-bf.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-c0.bgg": {
+      "sha256": "4d1d1a74cb3a46632df499715a756b292f6bf42a8273e644ef032cbcce7d2e3c",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-c0.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-c1.bgg": {
+      "sha256": "052f978528c9afb65f27fdd24a72ad76f6d7b6b81644df962e1b9ded24fdc70e",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-c1.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-c2.bgg": {
+      "sha256": "f6e15a95d7eab0c32a8a91685478f19c987dfd325777957d968f09f7b8d7d2bf",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-c2.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-c3.bgg": {
+      "sha256": "c1c25ecbc980dd364a8b349ea017350c976f01294a7d0adc66eb613568103c75",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-c3.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-c4.bgg": {
+      "sha256": "2c295798a52e42d01f7b8fd7454b9faeafbc81b2e59fcf1ca2313b2befbfd019",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-c4.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-c5.bgg": {
+      "sha256": "69834018fcaf35887a03810f39db83cd48384c6388c70ff8008a79c9131124d4",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-c5.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-c6.bgg": {
+      "sha256": "99dd77957f42ee47314d029f7203aef0c131d98f81081777e09854447b1cd8c6",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-c6.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-c7.bgg": {
+      "sha256": "50411574f7de25c87a41c3021695e838656b0e9dab5ff1de45fcf092abb07703",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-c7.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-c8.bgg": {
+      "sha256": "168c9165cbbb83da27795d4cfeefc52d0d7f9fac19d4e1c99132903577c20882",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-c8.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-c9.bgg": {
+      "sha256": "310e38d21cd7af6e233c93b20916536cc909888e96c186fc99edd7be264153b6",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-c9.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-ca.bgg": {
+      "sha256": "bd6e34f579eb85c0ee7ec578303cc65e327adcde8a9fa10e654a208f5685ceec",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-ca.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-cb.bgg": {
+      "sha256": "93a5117ea1c5819d545a44634f195efa995959047b90e2eaeea9ac5fe0758893",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-cb.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-cc.bgg": {
+      "sha256": "2ba68cc403c62fc5612d1d32e3c80ebc42cf880c2bc938c53fcd61b8c2cb72da",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-cc.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-cd.bgg": {
+      "sha256": "fdc9b00669b3f13318ec178dd1c8384fde33277d7d4228ee9eefda061b17393c",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-cd.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-ce.bgg": {
+      "sha256": "502d38b5fb27d0a3bffe9b62e541b1ef39984406cb0378ae42b877c154195132",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-ce.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-cf.bgg": {
+      "sha256": "583ddcbdcddcb4d0d7c0fe03253bb3428660b5fd96588d6bd87083c9ca4bf1aa",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-cf.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-d0.bgg": {
+      "sha256": "de16238ebf0564a1afec09b98cbcee3f44fac77bac1deb482c24a6f962be0e6c",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-d0.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-d1.bgg": {
+      "sha256": "3b7e48fc023070f937bd1c40f3e4012e1955ac02a10e0080e08ef547face4a53",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-d1.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-d2.bgg": {
+      "sha256": "471e114cd64596ceedc0bf62a4653f00fa604762e0d7a3fb34011bf12a89ff21",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-d2.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-d3.bgg": {
+      "sha256": "833295c91aec1f391d763cb3f514c08bffd506ec8f580812c32101af100a3d3f",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-d3.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-d4.bgg": {
+      "sha256": "8535d9e6e63682982b32b3726efec405a9ec00e6e812c596c975d1accc1bf9d7",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-d4.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-d5.bgg": {
+      "sha256": "7389b19c11ee0b399776a3120161d6d719bc2cd316292c5d4ef8695c075662e7",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-d5.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-d6.bgg": {
+      "sha256": "2489382b478e63b48fa05b073dfd7af80a0d7d043a6e549845f07c286c5375b5",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-d6.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-d7.bgg": {
+      "sha256": "ff241b3822f3df35ae8f11149b0a71ab58b9314a582aa95f370f6730bc038d26",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-d7.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-d8.bgg": {
+      "sha256": "2b39e359bbdd5c6339ded6f74a80695bf618302f668d62029f3ea168c48efb1a",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-d8.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-d9.bgg": {
+      "sha256": "07d39bd86b85bc06d52cf78c5bb94bd9e31bf0f7daecd72341c81116400f0e59",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-d9.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-da.bgg": {
+      "sha256": "95474b5a925dc4e456b5fdb464e99f116f9963d99ce99caff03ba1b4f08da76e",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-da.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-db.bgg": {
+      "sha256": "bb5fbb7f6976b9faaa9c7ee348a37378d603e87c5f925574c3aa4575e27f0098",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-db.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-dc.bgg": {
+      "sha256": "b9c5abf806908b12e6852354626468cb11e4dc5fea4c1c1c6c29b7bfb59e174c",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-dc.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-dd.bgg": {
+      "sha256": "615c15282d17b1a6d3888249bf99f7929b775b7c95bfe4f485f900f1cbc5cfeb",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-dd.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-de.bgg": {
+      "sha256": "f1bc0f92362d079737744c80738727d5ba1d0c4e7fa29760f94746ead84d4ef5",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-de.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-df.bgg": {
+      "sha256": "80295f2a1c726592a842d4a35471fe604c946350286842cde8231628cc502c79",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-df.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-e0.bgg": {
+      "sha256": "c8385028296148e9b8c25871bbc3092a809c4c043d8c9187ec07f68518feacee",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-e0.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-e1.bgg": {
+      "sha256": "c889dfb1f0d8a4e74a53c87a5c259124ff01e9c327a07e3368ebb551c56353bd",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-e1.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-e2.bgg": {
+      "sha256": "5cb049a7ab485ed4d42db37cdbdb76dd4d89241de67b3bed7e433d6482765981",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-e2.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-e3.bgg": {
+      "sha256": "06e9dff49c8ab711c9be88dbb1cada83915892a842a08c44a26cc00f7b1921d0",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-e3.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-e4.bgg": {
+      "sha256": "751ffd9378590d365d6d0817b40129a7645cfa4bd91a60648b510d924e643968",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-e4.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-e5.bgg": {
+      "sha256": "07f6b821dea868f38d5716382926cdacb39e1fcd22d52a6e4b1c4cc16629622f",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-e5.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-e6.bgg": {
+      "sha256": "e2c447faab08ca498730dc2ed681b3b1d6aaed447bc5e1442a6bfc96eb30bb67",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-e6.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-e7.bgg": {
+      "sha256": "936d308e1b903ca576344000edf0b8cbda286b064b1d5a460f012689acdc561b",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-e7.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-e8.bgg": {
+      "sha256": "19b9280f458febdc2cacd9d730b243ad0f5b859c3ce49454273800e56ce54b47",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-e8.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-e9.bgg": {
+      "sha256": "0fb9768f353aae7a0c5c81d7f11771ada672c397c1ab577d01fe54718a0f06d3",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-e9.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-ea.bgg": {
+      "sha256": "38408ea027bc9ea61c1ec1b5c3a58bec545ad863bab892086988c6ec9b12db6b",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-ea.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-eb.bgg": {
+      "sha256": "fe9baca3b81b6ac99564758eaf1c778b059c38cf4268b9a115621fe14b09cf3f",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-eb.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-ec.bgg": {
+      "sha256": "f425492695b48dd7dfe505dd24e2e1c1218f93003cfd8e792b84f08d404d8fcb",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-ec.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-ed.bgg": {
+      "sha256": "c4c41882893cc1cabc4954a0344d247297a4e8e7f131fdd9bd5f1e907898288e",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-ed.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-ee.bgg": {
+      "sha256": "e027c818f0ab0b4354d7d7772de8a472b3f8c552fcc09f67966d6caaaa316441",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-ee.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-ef.bgg": {
+      "sha256": "aa3a1b4494a3782ce6346261b038ef321b84eb6db16b42b33de876e8f1cde79d",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-ef.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-f0.bgg": {
+      "sha256": "b54a3644d25222307d746d06537f6929b0494aebc8becdfed9eb0b26cbddc344",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-f0.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-f1.bgg": {
+      "sha256": "21f1e1d706d44590ee6833742e149867bf6d5dc8d697d89ac73ed0d4232e688a",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-f1.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-f2.bgg": {
+      "sha256": "689792783eb38ea9d7324111bc07f90924af6d13e0d60813eabebccbf3e259f2",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-f2.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-f3.bgg": {
+      "sha256": "0757bf26ee559cafb138040dd2bfeb6baea351f8bb117de896be9e706d1d082b",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-f3.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-f4.bgg": {
+      "sha256": "202f57e23cc11df569b1a619ccfeb51abbe11afc4c00cb1402f020b857fb5e8a",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-f4.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-f5.bgg": {
+      "sha256": "d674b4db6ff46674cbd4e30480ff59d801f256ae1ca9cde489f9012746191f15",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-f5.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-f6.bgg": {
+      "sha256": "bbec92df438516f2027a537d7086b5fe21314a75a2ef10b111c8910b9b515867",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-f6.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-f7.bgg": {
+      "sha256": "cee89058ffe55fb4c8dd7a2985a09ca680f9f4ed45b40e90739ff27cd83f4666",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-f7.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-f8.bgg": {
+      "sha256": "867de89600690b41309fc6ecbe579c7340a078288fd07c20a163abf0830b85ca",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-f8.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-f9.bgg": {
+      "sha256": "2df120bde4b9d816791029b883f1d832401009a8ec449e728ddbd392d9428687",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-f9.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-fa.bgg": {
+      "sha256": "177aaee77c5a2b0eb1a3f4b46ff7d14bb9e1494f6aceacb5715d57a699908096",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-fa.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-fb.bgg": {
+      "sha256": "bff764832932288fa7597bc9841537afe2710ecadb15ca95ce0b3863b565c76e",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-fb.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-fc.bgg": {
+      "sha256": "f92d905b65b2f92d73f15ccf6e7fc41d1c7658f45750f170bb790bed9f2660ad",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-fc.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-fd.bgg": {
+      "sha256": "7611af6d11ec2ae999bcf1f254421230d557e131ba0afb26593449cc8ad2d18d",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-fd.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-fe.bgg": {
+      "sha256": "35634277c81b7f0e9a9c71fbf7f84256c9a2a700069a63a1c97bd40c2e827ae8",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-fe.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/byte-ff.bgg": {
+      "sha256": "3f862291f36c3555d6b41981bcb739f8bfd65b37db2da320ae733326728c8f90",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/byte-ff.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/ascii-control.bgg": {
+      "sha256": "4b9b7f6d06d3c21cbeffd23261b60f830667d78a22ba973274a94f1ebc52f08e",
+      "bytes": 4858,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/ascii-control.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/non-ascii-positive.bgg": {
+      "sha256": "0fb9768f353aae7a0c5c81d7f11771ada672c397c1ab577d01fe54718a0f06d3",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/non-ascii-positive.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/forbidden-control.bgg": {
+      "sha256": "6c95bfd37162d4177c3db9650c2835f9efb60635dfc1fc04f49002d0f4d5bb60",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/forbidden-control.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "cases/declaration-conflict.bgg": {
+      "sha256": "adb789f59c10ec0ea6fcfa0d2f8ac2dc3645fc9be349c66b314e703d36a0a520",
+      "bytes": 9710,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/inputs/declaration-conflict.bgg",
+      "original_mode": 384,
+      "fixture_mode": 420
+    },
+    "observations.tsv": {
+      "sha256": "08c617ebfffc0b457d51e92164551c9516c543a104c7a4a8d9a555322b22abf9",
+      "bytes": 1698921,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-proof-a/execution-a/source-a/capture/observations.tsv",
+      "fixture_mode": 420
+    },
+    "casing/0.bgg": {
+      "sha256": "ad75c656cc50b60e0127b92d37591d1dd6e2df1c5d7060302016d8985e314269",
+      "bytes": 4858,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-casing-a/inputs/0.bgg",
+      "fixture_mode": 420
+    },
+    "casing/1.bgg": {
+      "sha256": "8392b06081df535d556f45fa183bdcd7cdf7419d13ea6d3f73bbbc94580cb082",
+      "bytes": 4854,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-casing-a/inputs/1.bgg",
+      "fixture_mode": 420
+    },
+    "casing/observations.tsv": {
+      "sha256": "61fb2da37b66810e5159a2a0cbaf1a54e090be5f09bd9cf7c5971a87d18eda12",
+      "bytes": 100,
+      "original_path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-casing-a/execution-a/source-a/observations.tsv",
+      "fixture_mode": 420
+    }
+  },
+  "observed_nonidentity_byte_mapping": {
+    "d0": "0000011e",
+    "dd": "00000130",
+    "de": "0000015e",
+    "f0": "0000011f",
+    "fd": "00000131",
+    "fe": "0000015f"
+  },
+  "attribute_whitespace_normalization": {
+    "09": "00000020",
+    "0a": "00000020",
+    "0d": "00000020"
+  },
+  "label": "ISO-8859-9",
+  "case_folding_policy": "Existing name case-folding is backed by the lowercase and mixed-case original Source/source/JAR supplement. Distinct unproved aliases remain rejected.",
+  "limits": "Existing XML limits, external-resource denial and unsupported DTD/XML1.1 boundaries remain unchanged.",
+  "worker_JVM_or_Rust_workloads": 0,
+  "canonical_fixtures_changed": false,
+  "casing_capture": {
+    "root_readback": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/iso-8859-9-casing-a/root-readback.json",
+    "sha256": "18adf07241488009deb523e9855aa15a2a7d8bcd0c19c06da546b38ba1c9b715",
+    "cases": 2,
+    "names": [
+      "iso-8859-9",
+      "Iso-8859-9"
+    ],
+    "full_genome_expectations": "Reuse uppercase Source observations for identical document bodies; supplementary observer records gene count and carrier points only."
+  },
+  "independent_actual_reviews": [
+    {
+      "path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/reviews/iso-8859-9-proof-a-actual-independent.json",
+      "sha256": "de22fec6d4baa16a5a4a030483c7bb9c5718df018ea75c54de09cd9d6ac65d68"
+    },
+    {
+      "path": "<project-root>/.workflow-local/xml-ac1-continuation-preparation-a/reviews/iso-8859-9-casing-a-actual-independent.json",
+      "sha256": "ae60d81508d2bb01a08e2d2c6a99fa1c9a44dd90291fcc301c0e50bcf903cc97"
+    }
+  ]
+}

@@ -1,0 +1,1072 @@
+{
+  "schema": "biogenesis-draw-oracle-v1",
+  "generated_utc": "2026-10-26T15:09:00.162976+00:00",
+  "helper": {
+    "path": "tools/reference/DrawOracle.java",
+    "sha256": "88f1369ed548c334c4f38c4bf10a3b75a5d0da5dde23ae7024460f243cdee6d7",
+    "compiled_classes": {
+      "source": {
+        "DrawOracle$Code.class": "cc88038e39d13d4db7ecf089156ba7b6b16c6c954a1dab4eb1ce6b5d8e489b08",
+        "DrawOracle$Action.class": "1ebd3dba675aa9cb7f1d1d0a42b48d49bf628cc9b904c9d240b5fd2f07311c6e",
+        "DrawOracle$Spec.class": "c1aa3811666c2025a89bccae195eff2a251517c92c0190149f7953ce52c29f60",
+        "DrawOracle$Capture.class": "4825e070ac1142a7fe8d3827a5fbe5627964ad2dc53b492e30109da2468ebf67",
+        "DrawOracle$RecordingGraphics.class": "fd8ea29be196ce16180fd130d18dfb74183582e0a91ac3c22faa7a9f2bd57611",
+        "DrawOracle.class": "9bb8c3ad3aaf60fb28585524b8c512f872f9d6c5013c43d51d3cfdd1f3c3e315"
+      },
+      "jar": {
+        "DrawOracle$Code.class": "cc88038e39d13d4db7ecf089156ba7b6b16c6c954a1dab4eb1ce6b5d8e489b08",
+        "DrawOracle$Action.class": "1ebd3dba675aa9cb7f1d1d0a42b48d49bf628cc9b904c9d240b5fd2f07311c6e",
+        "DrawOracle$Spec.class": "c1aa3811666c2025a89bccae195eff2a251517c92c0190149f7953ce52c29f60",
+        "DrawOracle$Capture.class": "4825e070ac1142a7fe8d3827a5fbe5627964ad2dc53b492e30109da2468ebf67",
+        "DrawOracle$RecordingGraphics.class": "fd8ea29be196ce16180fd130d18dfb74183582e0a91ac3c22faa7a9f2bd57611",
+        "DrawOracle.class": "9bb8c3ad3aaf60fb28585524b8c512f872f9d6c5013c43d51d3cfdd1f3c3e315"
+      }
+    },
+    "source_jar_helper_classes_identical": true,
+    "copied_observer_authority": "Frozen Frame dynamic observer and real UI bootstrap; original World/Organism methods supply every output",
+    "expected_values_from_Rust": false
+  },
+  "fixture": {
+    "path": "crates/core/tests/fixtures/draw.tsv",
+    "sha256": "8cc4c6ccfcf68d7abdb9c7c6eaf79e6929bab639b6b8788da29d3d149b14ead2",
+    "bytes": 3806963,
+    "rows": 106904,
+    "cases": 27,
+    "snapshots": 97,
+    "actor_views": 99,
+    "discovered_members": 1,
+    "calls": 38,
+    "operations": {
+      "draw": 32,
+      "bounds": 4,
+      "die": 1,
+      "genesis": 1
+    },
+    "line_commands": 142,
+    "row_types": {
+      "C": 27,
+      "U": 3969,
+      "I": 276,
+      "G": 17528,
+      "N": 56320,
+      "P": 97,
+      "W": 970,
+      "V": 1455,
+      "S": 5044,
+      "T": 4753,
+      "Y": 491,
+      "R": 97,
+      "K": 38,
+      "E": 27,
+      "A": 27,
+      "O": 15246,
+      "H": 297,
+      "Q": 99,
+      "L": 142,
+      "D": 1
+    },
+    "ledger": {
+      "derived_comparisons": 84626,
+      "input_GN_checks": 16740,
+      "O_collaborators": 198,
+      "V_collaborators": 388,
+      "selection_metadata": 0,
+      "genotype_scope_metadata": 491,
+      "inputs_schema_commands": 4461
+    },
+    "source_source_jar_outputs_identical": true,
+    "organism_fields_per_actor": 154,
+    "reference_holders_per_actor": 3,
+    "World_getters": 10,
+    "World_instance_fields": 15,
+    "statistics_fields": 52,
+    "statistics_getters": 49,
+    "mutable_primitive_utils": 147,
+    "genome_fields": 28,
+    "gene_fields": 40
+  },
+  "reference": {
+    "manifest": "docs/evidence/reference-manifest.json",
+    "original_hash_size_mode_checks": 74,
+    "source_compile_receipt": ".workflow-local/reference-build/compile.json",
+    "source_compile_receipt_sha256": "4fc1785c218238508d72b89ba883d94bc8a1fa24631e990463dd71502a78e184",
+    "source_sha256": {
+      "Gene": "d070db688526a401c8b55904c06066b2169ca82c76837e3001b4c423bc80e720",
+      "GeneticCode": "f8bf3d0315cec8a2bf515a1626391fe5b646e47566234d398ef58bbdbc3a9004",
+      "Organism": "8650cb0983069dbae09e2ca704059fb82761fa6e0d87f35218c2342ffc60df46",
+      "Utils": "7b3306148684ba111629690a928dcb45abd4825104cfb90b530cd2d0dc6dd2b3",
+      "World": "a67543055a665a9a378e37c860671996e2ca0f510cb622375172a24333d7cae1",
+      "WorldStatistics": "407bcd4bec5e947f26ccfb02a1a590bec6eb9f22f675ad88d9bb974f686ebe15",
+      "VisibleWorld": "b14b41135de13d935f24e42b2f82a72457a015831d1b62f30a26bd5be7faedc5"
+    },
+    "backend_class_sha256": {
+      "Gene": {
+        "compiled_source": "29fe7b153555ded4383072debd0452bed5f92692afd0488a88c297d5f04f6ea8",
+        "bundled_jar": "b307c29cbd73a98cdcbf7d5da9a3ed771fd4d419f6426fbfd41510934c0a7988"
+      },
+      "GeneticCode": {
+        "compiled_source": "4bbf99eaf9006840ecbba0958496372a220ed44c4e57c8341c4de3dc29f3fb30",
+        "bundled_jar": "2aba7f494115279c26bb918dc8156c7ff67af047c2bcb32e35db113f2b87c51e"
+      },
+      "Organism": {
+        "compiled_source": "e8facb409642f0288411785985cbfd96440f644226795f14de24705554a46e22",
+        "bundled_jar": "561d53132aa1765ba766c7d251a98090617c7e9884ae8ed1f9543237e32257f0"
+      },
+      "Utils": {
+        "compiled_source": "67adba4432972ffa3922b6f622d2cc12bf0e703a7dfbf97ae94f3f95387b1884",
+        "bundled_jar": "8f258ba2cb30beea85f44a60ecb4189faf7493f39102712bc9ff1114456e1060"
+      },
+      "World": {
+        "compiled_source": "9091d4e5cae555493971a37a9c8fc77e2250e68db073a120a3a08b57b03e131e",
+        "bundled_jar": "be8067767dc18b46fbd7fd798c5e67e8a58ff6922b78d65eee28ab033360bd33"
+      },
+      "WorldStatistics": {
+        "compiled_source": "ab04358e54edf5120d703f0d980c72a136ab74165e5bbec4b55719ab097c7863",
+        "bundled_jar": "cc5e6f8d4adfb96a41269b4dc7a3ab27224513d8076d68ee42be2ab518e0c236"
+      },
+      "VisibleWorld": {
+        "compiled_source": "f9f559ac40de41b7d84cb6d624b5bcad538ac016d566779bc6c45512c5d68168",
+        "bundled_jar": "b1a0dced3a53afcef5f80132f122ac1ba0baf41f02d3e6e48cb99e4236c1385c"
+      }
+    },
+    "jar_sha256": "0baeae8d29f5fdbbb830c1a9e51c7f2b5314a33011b20ec7471eeaa27f0398e1",
+    "jts_sha256": "00102cde26c457b81fbb0248e4f8845884243caba0dc9b7fb42e0ea877383bc1",
+    "prior_tsv_sha256": {
+      "construction.tsv": "cf9b83da280e3e7aa812ae7cf2caee7293ce805c8109aebaa2891a69227b3336",
+      "geometry.tsv": "364c17c289c7d3f85b4ae3bdf7ce8ddcaac773547b1bb3c14360cae58e766a96",
+      "genetics.tsv": "1fc3f745a83427c499d84884dfdb6864fdc222861feb30488d7083a4a0126b71",
+      "geometry-rebuild.tsv": "a484994dbc4f69d8deb45c0622c127eb5dc5dd95eba1b61a412e015cf8b2a3d8",
+      "organism_state.tsv": "298e7a37eb2983252797a40e45ff721141ba22e6b8cfdaba91a1bfa079552f8b",
+      "paste_rejection.tsv": "73b1fa2480d2211e29cbbb24c4653c18d3a0786c5e0074f84e0c378b0b333db9",
+      "genotype_identity.tsv": "b6a85cb8b2b628a8a8b25c3de2db1445a61433b06c7b66647670c07a1ea0b9ac",
+      "spatial.tsv": "a2cf3205b94144694f6484c81aaa9916f42824766a521c2cb05d2f14f344225a",
+      "birth.tsv": "8b9bcee0ed1232b1d90050587e52cb19548a14f833da63749dcd6c96ccae8a22",
+      "birth_variants.tsv": "ababf3bdecebcfda1c56b99cf08343157b6091e2b95f9ab63010de1c13e04b96",
+      "physics.tsv": "50151aaaeb0de8502bb1e22d0256ce77273e83851713a0b43337b66835de72ff",
+      "gases.tsv": "0ea73389506dce4286389f75388ef55475541bd5062cddd149f619b12cd3b6c8",
+      "movement.tsv": "ca8c5078821d339f6aaabb47e593de0da62e44c59df69bf5d4ee8ee01dc84207",
+      "statistics.tsv": "bcc5c8b489b5591f318486176b2647e816d899ec05af854a077e26fe771bcf8a",
+      "statistics_null_genome.tsv": "049301b93bd1062bc6be3cfdac6b58caff10ccb53d1d58a67ece583676c345c1",
+      "death.tsv": "198a17283df6d96826fef2c6464acf6ad222f1e5234c884ec781b05080941720",
+      "death_invalid.tsv": "5bddabd10826003e147df8c688c3db9d3d99b7c64212685a9ade474b92bcbb62",
+      "infection.tsv": "6155d428aca3a6ef337fec20921db969382f47ff72db00388b1985665424b704",
+      "infection_callback.tsv": "02749c101e2f597c4fc42e24f32f6c0e76f5cc1ae320a826dd7dabfc88e982e3",
+      "maintenance.tsv": "266e604b25a4f1e238e3c07131e5d1e42d1a1e73192adb52723e144bc43e8bb9",
+      "reproduction.tsv": "3067af9973d1539781dd72ade76e33e9dda0303dd9aa69f467b7aa13e6277441",
+      "transformation.tsv": "92c7be8b067132fa8fc22fe57416c0d11004028c26189c00195a04eb937797db",
+      "thresholds.tsv": "07a1fa146dd5ed0724447a773ba7267f3b43dd2f93a25a942af88328320f0cad",
+      "contact_state.tsv": "30297653120fdc9817a361992dbedd835e00268584fc4f4f68eed544f7fe47c4",
+      "contact_support.tsv": "931b7133bea398aef9a84947a0332f6d813aea3eff0197066e140c7cf95e195a",
+      "reactions.tsv": "6aa930bec22711537fda10da041a6971640b7acadc23b4777b57305b7a6bc2cd",
+      "frame_effects.tsv": "c10f443f099194aa94f957a771490087674eecf8f4cdc74f79e95a759da4a00d",
+      "coral.tsv": "b7588817c0c488880bbc19b7dfb7fb41bb44c05e56c0fcb8cfe03d8c3d5f2124",
+      "cream_lilac.tsv": "6769fde1a5ab440fe00ff7e005f71e3a054c8f33d3f022ed2fe35690f54cc0b1",
+      "draining.tsv": "feeaf88817ada9b905a2a22efbf3c3f99a5904f750a4782112ede4943c0458c0",
+      "cooperative.tsv": "42cc9fec7423842a42f6e5bcb4f88755c14d3dac5eb234433ef56ac4498c11f6",
+      "special_contacts.tsv": "14a8db5d3c70bcae8ffe1046b92cd9bc7f40218b83bf723454c6423201c0c869",
+      "white_fruit.tsv": "8baaf841898b65774d3a4af6fc3737fa824f4a4d9c276d730e0cd133d7f592c7",
+      "disabling.tsv": "6e650b8005e97b23b770f3a3d53422ad2d730216d994927954a976eeade27e65",
+      "plague_fallow.tsv": "14b0c5a484c9b07d36eeb45e95fec4c34820af55b0fe54915c63e3f929a96d00",
+      "contact.tsv": "476f9337c9f572d972ed9a2f2ec97f2ccfe197f5aa6550138d2301ab10621beb",
+      "frame.tsv": "8033a455d2b08192be15d826285d428b7cd9502cd33cc9f61b2c92f3913af3db"
+    },
+    "compiled_reference_class_pins": 159,
+    "compiled_reference_manifest": {
+      "path": ".workflow-local/draw-oracle-9efpussl/baseline.json",
+      "sha256": "0dcfea13eb3a3783edd1935fcd4ea3b0a6bd7d1fd2cad1f54278f11d0268efde",
+      "key": "source_classes"
+    }
+  },
+  "execution": {
+    "native_capture": {
+      "path": ".workflow-local/draw-native-rea.json",
+      "sha256": "6f4913218e0c0bf40134699c259413df7de1ca04c11ba5a0db4ba6b2f500a437",
+      "evidence_id": "ev_b466b4899355d43805410bf7160b6d7215ef21fb49c416947d01f7e07aaf6eaf",
+      "exit": {
+        "code": 0,
+        "signal": 0,
+        "reason": "exited"
+      },
+      "cleanup": {
+        "owned_process_group": "verified",
+        "temporary_root": "removed",
+        "unverified_processes": [
+          {
+            "pid": 1397453,
+            "reason": "EACCES: permission denied, open '/proc/1397453/environ'"
+          },
+          {
+            "pid": 1397475,
+            "reason": "EACCES: permission denied, open '/proc/1397475/environ'"
+          }
+        ]
+      },
+      "limitations": [
+        "Artifact identity is unavailable for this observation.",
+        "The executable digest is a prelaunch file sample; matching path metadata immediately after spawn does not prove an atomic operating-system image binding.",
+        "Process trees are sampled and may omit short-lived descendants.",
+        "Filesystem observations are before/after snapshots, not syscall traces.",
+        "Inherited host environment variables are not recorded and may affect results.",
+        "No filesystem observation paths were selected; filesystem effects remain unknown."
+      ],
+      "residual_unknowns": [
+        {
+          "scope": "process",
+          "reason": "Process trees are sampled and may omit short-lived descendants."
+        },
+        {
+          "scope": "process",
+          "reason": "The executable digest is a prelaunch file sample; operating-system image binding is not atomically observed."
+        },
+        {
+          "scope": "environment",
+          "reason": "Inherited host environment variables are not recorded."
+        },
+        {
+          "scope": "network",
+          "reason": "Network activity is not observed by this capture."
+        },
+        {
+          "scope": "filesystem",
+          "reason": "No filesystem observation paths were selected; filesystem effects remain unknown."
+        },
+        {
+          "scope": "process",
+          "reason": "Ownership of unrelated process 1397453 could not be verified; it was left untouched: EACCES: permission denied, open '/proc/1397453/environ'"
+        },
+        {
+          "scope": "process",
+          "reason": "Ownership of unrelated process 1397475 could not be verified; it was left untouched: EACCES: permission denied, open '/proc/1397475/environ'"
+        }
+      ]
+    },
+    "raw_receipts": ".workflow-local/draw-oracle-9efpussl/commands.json",
+    "raw_receipts_sha256": "db3db959b004f85c1ea69f7010a52f9c501b6a302cb09253cb97cbfc0deb4d1a",
+    "versions": {
+      "java": "openjdk version \"21.0.12.1\" 2026-08-18\nOpenJDK Runtime Environment (build 21.0.12.1+1)\nOpenJDK 64-Bit Server VM (build 21.0.12.1+1, mixed mode, sharing)\n",
+      "javac": "javac 21.0.12.1\n"
+    },
+    "compile_commands": [
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/javac",
+          "-encoding",
+          "UTF-8",
+          "-cp",
+          "<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "-d",
+          "<project-root>/.workflow-local/draw-oracle-9efpussl/helpers-source",
+          "<project-root>/tools/reference/DrawOracle.java"
+        ],
+        "cwd": "<project-root>/.workflow-local/draw-oracle-9efpussl",
+        "pid": 1397249,
+        "process_group": 1397249,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.783145492998301,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/javac",
+          "-encoding",
+          "UTF-8",
+          "-cp",
+          "<reference-root>/ColorMod_2_01/biogenesis.jar:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "-d",
+          "<project-root>/.workflow-local/draw-oracle-9efpussl/helpers-jar",
+          "<project-root>/tools/reference/DrawOracle.java"
+        ],
+        "cwd": "<project-root>/.workflow-local/draw-oracle-9efpussl",
+        "pid": 1397278,
+        "process_group": 1397278,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.7902401699975599,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "positive_runs": [
+      {
+        "argv": [
+          "/usr/bin/xvfb-run",
+          "-a",
+          "-n",
+          "280",
+          "-e",
+          "<project-root>/.workflow-local/draw-oracle-9efpussl/source-a/xvfb.log",
+          "-s",
+          "-screen 0 1280x960x24 -nolisten tcp",
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=false",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/draw-oracle-9efpussl/source-a/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/draw-oracle-9efpussl/source-a/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/draw-oracle-9efpussl/source-a/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/draw-oracle-9efpussl/source-a/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/draw-oracle-9efpussl/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.DrawOracle",
+          "<project-root>/.workflow-local/draw-oracle-9efpussl/source-a/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/draw-oracle-9efpussl/source-a",
+        "pid": 1397336,
+        "process_group": 1397336,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 3.905428951999056,
+        "stdout": "DRAW_ORACLE PASS cases=27 snapshots=97 calls=38 discoveries=1\n",
+        "stderr": "Oct 26, 2026 11:05:29 AM java.util.prefs.FileSystemPreferences$1 run\nINFO: Created user preferences directory.\n"
+      },
+      {
+        "argv": [
+          "/usr/bin/xvfb-run",
+          "-a",
+          "-n",
+          "280",
+          "-e",
+          "<project-root>/.workflow-local/draw-oracle-9efpussl/source-b/xvfb.log",
+          "-s",
+          "-screen 0 1280x960x24 -nolisten tcp",
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=false",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/draw-oracle-9efpussl/source-b/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/draw-oracle-9efpussl/source-b/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/draw-oracle-9efpussl/source-b/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/draw-oracle-9efpussl/source-b/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/draw-oracle-9efpussl/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.DrawOracle",
+          "<project-root>/.workflow-local/draw-oracle-9efpussl/source-b/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/draw-oracle-9efpussl/source-b",
+        "pid": 1397456,
+        "process_group": 1397456,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 3.6849880869995104,
+        "stdout": "DRAW_ORACLE PASS cases=27 snapshots=97 calls=38 discoveries=1\n",
+        "stderr": "Oct 26, 2026 11:05:33 AM java.util.prefs.FileSystemPreferences$1 run\nINFO: Created user preferences directory.\n"
+      },
+      {
+        "argv": [
+          "/usr/bin/xvfb-run",
+          "-a",
+          "-n",
+          "280",
+          "-e",
+          "<project-root>/.workflow-local/draw-oracle-9efpussl/jar/xvfb.log",
+          "-s",
+          "-screen 0 1280x960x24 -nolisten tcp",
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=false",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/draw-oracle-9efpussl/jar/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/draw-oracle-9efpussl/jar/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/draw-oracle-9efpussl/jar/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/draw-oracle-9efpussl/jar/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/draw-oracle-9efpussl/helpers-jar:<reference-root>/ColorMod_2_01/biogenesis.jar:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.DrawOracle",
+          "<project-root>/.workflow-local/draw-oracle-9efpussl/jar/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/draw-oracle-9efpussl/jar",
+        "pid": 1397614,
+        "process_group": 1397614,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 3.69428197099478,
+        "stdout": "DRAW_ORACLE PASS cases=27 snapshots=97 calls=38 discoveries=1\n",
+        "stderr": "Oct 26, 2026 11:05:37 AM java.util.prefs.FileSystemPreferences$1 run\nINFO: Created user preferences directory.\n"
+      }
+    ],
+    "positive_outputs": [
+      ".workflow-local/draw-oracle-9efpussl/source-a/observations/draw.tsv",
+      ".workflow-local/draw-oracle-9efpussl/source-b/observations/draw.tsv",
+      ".workflow-local/draw-oracle-9efpussl/jar/observations/draw.tsv"
+    ],
+    "negative_guards": [
+      {
+        "condition": "omit-user.home",
+        "exit_code": 1,
+        "output_preserved": true
+      },
+      {
+        "condition": "omit-java.io.tmpdir",
+        "exit_code": 1,
+        "output_preserved": true
+      },
+      {
+        "condition": "omit-java.util.prefs.userRoot",
+        "exit_code": 1,
+        "output_preserved": true
+      },
+      {
+        "condition": "omit-java.util.prefs.systemRoot",
+        "exit_code": 1,
+        "output_preserved": true
+      },
+      {
+        "condition": "escaped-profile",
+        "exit_code": 1,
+        "output_preserved": true
+      },
+      {
+        "condition": "existing-output",
+        "exit_code": 1,
+        "output_preserved": true
+      }
+    ],
+    "negative_invocations": [
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=false",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/draw-oracle-9efpussl/omit-user.home/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/draw-oracle-9efpussl/omit-user.home/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/draw-oracle-9efpussl/omit-user.home/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/draw-oracle-9efpussl/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.DrawOracle",
+          "<project-root>/.workflow-local/draw-oracle-9efpussl/omit-user.home/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/draw-oracle-9efpussl/omit-user.home",
+        "pid": 1397710,
+        "process_group": 1397710,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.029151234004530124,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: user.home\n\tat biogenesis.DrawOracle.require(DrawOracle.java:288)\n\tat biogenesis.DrawOracle.main(DrawOracle.java:363)\n"
+      },
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=false",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/draw-oracle-9efpussl/omit-java.io.tmpdir/home",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/draw-oracle-9efpussl/omit-java.io.tmpdir/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/draw-oracle-9efpussl/omit-java.io.tmpdir/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/draw-oracle-9efpussl/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.DrawOracle",
+          "<project-root>/.workflow-local/draw-oracle-9efpussl/omit-java.io.tmpdir/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/draw-oracle-9efpussl/omit-java.io.tmpdir",
+        "pid": 1397728,
+        "process_group": 1397728,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.02738349200808443,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: java.io.tmpdir\n\tat biogenesis.DrawOracle.require(DrawOracle.java:288)\n\tat biogenesis.DrawOracle.main(DrawOracle.java:363)\n"
+      },
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=false",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/draw-oracle-9efpussl/omit-java.util.prefs.userRoot/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/draw-oracle-9efpussl/omit-java.util.prefs.userRoot/tmp",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/draw-oracle-9efpussl/omit-java.util.prefs.userRoot/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/draw-oracle-9efpussl/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.DrawOracle",
+          "<project-root>/.workflow-local/draw-oracle-9efpussl/omit-java.util.prefs.userRoot/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/draw-oracle-9efpussl/omit-java.util.prefs.userRoot",
+        "pid": 1397746,
+        "process_group": 1397746,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.026317876006942242,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: java.util.prefs.userRoot\n\tat biogenesis.DrawOracle.require(DrawOracle.java:288)\n\tat biogenesis.DrawOracle.main(DrawOracle.java:363)\n"
+      },
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=false",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/draw-oracle-9efpussl/omit-java.util.prefs.systemRoot/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/draw-oracle-9efpussl/omit-java.util.prefs.systemRoot/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/draw-oracle-9efpussl/omit-java.util.prefs.systemRoot/prefs-user",
+          "-cp",
+          "<project-root>/.workflow-local/draw-oracle-9efpussl/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.DrawOracle",
+          "<project-root>/.workflow-local/draw-oracle-9efpussl/omit-java.util.prefs.systemRoot/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/draw-oracle-9efpussl/omit-java.util.prefs.systemRoot",
+        "pid": 1397764,
+        "process_group": 1397764,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.028334870003163815,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: java.util.prefs.systemRoot\n\tat biogenesis.DrawOracle.require(DrawOracle.java:288)\n\tat biogenesis.DrawOracle.main(DrawOracle.java:363)\n"
+      },
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=false",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/draw-oracle-9efpussl/escaped-profile/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/draw-oracle-9efpussl/escaped-profile/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/draw-oracle-9efpussl/escaped-profile/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/draw-oracle-9efpussl/escaped-profile/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/draw-oracle-9efpussl/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.DrawOracle",
+          "<project-root>/.workflow-local/draw-oracle-9efpussl/escaped-profile/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/draw-oracle-9efpussl/escaped-profile",
+        "pid": 1397782,
+        "process_group": 1397782,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.02776192298915703,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: java.util.prefs.userRoot\n\tat biogenesis.DrawOracle.require(DrawOracle.java:288)\n\tat biogenesis.DrawOracle.main(DrawOracle.java:363)\n"
+      },
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=false",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/draw-oracle-9efpussl/source-a/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/draw-oracle-9efpussl/source-a/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/draw-oracle-9efpussl/source-a/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/draw-oracle-9efpussl/source-a/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/draw-oracle-9efpussl/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.DrawOracle",
+          "<project-root>/.workflow-local/draw-oracle-9efpussl/source-a/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/draw-oracle-9efpussl/source-a",
+        "pid": 1397800,
+        "process_group": 1397800,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.028812597010983154,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Output directory must not exist\n\tat biogenesis.DrawOracle.require(DrawOracle.java:288)\n\tat biogenesis.DrawOracle.main(DrawOracle.java:365)\n"
+      }
+    ],
+    "positive_timeout_seconds": 120,
+    "compile_timeout_seconds": 60,
+    "negative_timeout_seconds": 30,
+    "environment_allowlist": [
+      "PATH=/usr/bin:/bin",
+      "HOME=run/home",
+      "TMPDIR=run/tmp",
+      "XDG_CONFIG_HOME=run/config",
+      "XDG_CACHE_HOME=run/cache",
+      "XDG_DATA_HOME=run/data",
+      "LANG=C.UTF-8",
+      "LC_ALL=C.UTF-8",
+      "PYTHONDONTWRITEBYTECODE=1",
+      "BGR_ISOLATED_XVFB=1"
+    ],
+    "profile_roots": [
+      "user.home",
+      "java.io.tmpdir",
+      "java.util.prefs.userRoot",
+      "java.util.prefs.systemRoot"
+    ],
+    "job_ownership": "Existing runner starts an owned process group for each Java/Xvfb command and cleans it on every outcome",
+    "final_checks": ".workflow-local/draw-oracle-9efpussl/final-checks.json",
+    "final_checks_sha256": "767f9e7a2891cbf56663e2005f4b23db2c5085ecf8c2554d1ed58cb1a9fbac9e",
+    "all_original_hash_size_mode_checks": 74,
+    "prior_fixture_count": 37,
+    "prior_tsv_sha256": {
+      "construction.tsv": "cf9b83da280e3e7aa812ae7cf2caee7293ce805c8109aebaa2891a69227b3336",
+      "geometry.tsv": "364c17c289c7d3f85b4ae3bdf7ce8ddcaac773547b1bb3c14360cae58e766a96",
+      "genetics.tsv": "1fc3f745a83427c499d84884dfdb6864fdc222861feb30488d7083a4a0126b71",
+      "geometry-rebuild.tsv": "a484994dbc4f69d8deb45c0622c127eb5dc5dd95eba1b61a412e015cf8b2a3d8",
+      "organism_state.tsv": "298e7a37eb2983252797a40e45ff721141ba22e6b8cfdaba91a1bfa079552f8b",
+      "paste_rejection.tsv": "73b1fa2480d2211e29cbbb24c4653c18d3a0786c5e0074f84e0c378b0b333db9",
+      "genotype_identity.tsv": "b6a85cb8b2b628a8a8b25c3de2db1445a61433b06c7b66647670c07a1ea0b9ac",
+      "spatial.tsv": "a2cf3205b94144694f6484c81aaa9916f42824766a521c2cb05d2f14f344225a",
+      "birth.tsv": "8b9bcee0ed1232b1d90050587e52cb19548a14f833da63749dcd6c96ccae8a22",
+      "birth_variants.tsv": "ababf3bdecebcfda1c56b99cf08343157b6091e2b95f9ab63010de1c13e04b96",
+      "physics.tsv": "50151aaaeb0de8502bb1e22d0256ce77273e83851713a0b43337b66835de72ff",
+      "gases.tsv": "0ea73389506dce4286389f75388ef55475541bd5062cddd149f619b12cd3b6c8",
+      "movement.tsv": "ca8c5078821d339f6aaabb47e593de0da62e44c59df69bf5d4ee8ee01dc84207",
+      "statistics.tsv": "bcc5c8b489b5591f318486176b2647e816d899ec05af854a077e26fe771bcf8a",
+      "statistics_null_genome.tsv": "049301b93bd1062bc6be3cfdac6b58caff10ccb53d1d58a67ece583676c345c1",
+      "death.tsv": "198a17283df6d96826fef2c6464acf6ad222f1e5234c884ec781b05080941720",
+      "death_invalid.tsv": "5bddabd10826003e147df8c688c3db9d3d99b7c64212685a9ade474b92bcbb62",
+      "infection.tsv": "6155d428aca3a6ef337fec20921db969382f47ff72db00388b1985665424b704",
+      "infection_callback.tsv": "02749c101e2f597c4fc42e24f32f6c0e76f5cc1ae320a826dd7dabfc88e982e3",
+      "maintenance.tsv": "266e604b25a4f1e238e3c07131e5d1e42d1a1e73192adb52723e144bc43e8bb9",
+      "reproduction.tsv": "3067af9973d1539781dd72ade76e33e9dda0303dd9aa69f467b7aa13e6277441",
+      "transformation.tsv": "92c7be8b067132fa8fc22fe57416c0d11004028c26189c00195a04eb937797db",
+      "thresholds.tsv": "07a1fa146dd5ed0724447a773ba7267f3b43dd2f93a25a942af88328320f0cad",
+      "contact_state.tsv": "30297653120fdc9817a361992dbedd835e00268584fc4f4f68eed544f7fe47c4",
+      "contact_support.tsv": "931b7133bea398aef9a84947a0332f6d813aea3eff0197066e140c7cf95e195a",
+      "reactions.tsv": "6aa930bec22711537fda10da041a6971640b7acadc23b4777b57305b7a6bc2cd",
+      "frame_effects.tsv": "c10f443f099194aa94f957a771490087674eecf8f4cdc74f79e95a759da4a00d",
+      "coral.tsv": "b7588817c0c488880bbc19b7dfb7fb41bb44c05e56c0fcb8cfe03d8c3d5f2124",
+      "cream_lilac.tsv": "6769fde1a5ab440fe00ff7e005f71e3a054c8f33d3f022ed2fe35690f54cc0b1",
+      "draining.tsv": "feeaf88817ada9b905a2a22efbf3c3f99a5904f750a4782112ede4943c0458c0",
+      "cooperative.tsv": "42cc9fec7423842a42f6e5bcb4f88755c14d3dac5eb234433ef56ac4498c11f6",
+      "special_contacts.tsv": "14a8db5d3c70bcae8ffe1046b92cd9bc7f40218b83bf723454c6423201c0c869",
+      "white_fruit.tsv": "8baaf841898b65774d3a4af6fc3737fa824f4a4d9c276d730e0cd133d7f592c7",
+      "disabling.tsv": "6e650b8005e97b23b770f3a3d53422ad2d730216d994927954a976eeade27e65",
+      "plague_fallow.tsv": "14b0c5a484c9b07d36eeb45e95fec4c34820af55b0fe54915c63e3f929a96d00",
+      "contact.tsv": "476f9337c9f572d972ed9a2f2ec97f2ccfe197f5aa6550138d2301ab10621beb",
+      "frame.tsv": "8033a455d2b08192be15d826285d428b7cd9502cd33cc9f61b2c92f3913af3db"
+    },
+    "source_class_count": 159,
+    "source_class_hashes_preserved": true,
+    "driver": {
+      "path": ".workflow-local/draw-driver.py",
+      "sha256": "ca298ca9e83f0c53c0cf6d5a74c2567655c52ad4ea41e2785d627899e18675c8"
+    }
+  },
+  "comparison_contract": {
+    "established_before_Rust_replay": true,
+    "L_schema": [
+      "L",
+      "stage",
+      "zero_based_ordinal",
+      "x1_i32",
+      "y1_i32",
+      "x2_i32",
+      "y2_i32",
+      "ARGB_i32"
+    ],
+    "L_exact": "Signed i32 coordinates/full ARGB,zero-based per-draw ordinal,and command order",
+    "exact": "All nongeometric floating bits,gas/statistics/RNG,integers,ARGB,reactions,endpoints,bounds,reference identity and ordering",
+    "geometry_only_fields": [
+      "_m",
+      "_m1",
+      "_m2",
+      "_mass",
+      "_I"
+    ],
+    "finite_geometry_allowance": "1e-10 * max(1,abs(expected))",
+    "nonfinite_geometry": "NaN classification and signed infinity",
+    "no_new_numeric_allowance": true,
+    "L_D": "Derived line-command and member-identity observations",
+    "P": "Ordering metadata",
+    "UI_sidecars": "Source UI bootstrap/callback evidence only; outside core parity"
+  },
+  "explicit_exclusions": {
+    "organism_collaborators": {
+      "fields": [
+        "_world",
+        "_visibleWorld"
+      ],
+      "rows": 198
+    },
+    "World_collaborators": {
+      "fields": [
+        "_visibleWorld",
+        "inCorridors",
+        "outCorridors",
+        "_corridorexists"
+      ],
+      "rows": 388
+    },
+    "selection_metadata": {
+      "target": "visible:selected",
+      "rows": 0
+    },
+    "genotype_scope_metadata": {
+      "tag": "Y",
+      "rows": 491,
+      "all": "observable"
+    },
+    "rejected_candidate_dispositions": 0,
+    "other_core_observation_exclusions": []
+  },
+  "UI_sidecars": {
+    "backend_records": {
+      "source-a": {
+        "ui.tsv": {
+          "path": ".workflow-local/draw-oracle-9efpussl/source-a/observations/ui.tsv",
+          "sha256": "16c51f3f000caec65fa4605af36c7a7fd2cf6dad6f24ba4d35fabb268c6a4931",
+          "bytes": 5233
+        },
+        "bootstrap.json": {
+          "path": ".workflow-local/draw-oracle-9efpussl/source-a/observations/bootstrap.json",
+          "sha256": "3e8e4758506798292abd1f30315222f75fab0b58b8470d3dd834c7423b6fcec6",
+          "bytes": 151
+        }
+      },
+      "source-b": {
+        "ui.tsv": {
+          "path": ".workflow-local/draw-oracle-9efpussl/source-b/observations/ui.tsv",
+          "sha256": "16c51f3f000caec65fa4605af36c7a7fd2cf6dad6f24ba4d35fabb268c6a4931",
+          "bytes": 5233
+        },
+        "bootstrap.json": {
+          "path": ".workflow-local/draw-oracle-9efpussl/source-b/observations/bootstrap.json",
+          "sha256": "3e8e4758506798292abd1f30315222f75fab0b58b8470d3dd834c7423b6fcec6",
+          "bytes": 151
+        }
+      },
+      "jar": {
+        "ui.tsv": {
+          "path": ".workflow-local/draw-oracle-9efpussl/jar/observations/ui.tsv",
+          "sha256": "16c51f3f000caec65fa4605af36c7a7fd2cf6dad6f24ba4d35fabb268c6a4931",
+          "bytes": 5233
+        },
+        "bootstrap.json": {
+          "path": ".workflow-local/draw-oracle-9efpussl/jar/observations/bootstrap.json",
+          "sha256": "3e8e4758506798292abd1f30315222f75fab0b58b8470d3dd834c7423b6fcec6",
+          "bytes": 151
+        }
+      }
+    },
+    "source_source_jar_bytes_identical": true,
+    "bootstrap": "Actual MainWindow.main on EDT with private preferences,paused window and cancelled timer",
+    "case_link": "Each real new World uses actual VisibleWorld and is assigned to actual MainWindow before setup",
+    "cleanup": "Cancel all remaining MainWindow timers,dispose every Window on EDT,retain suppressed cleanup failures,and exit with real status",
+    "acceptance_limit": "No Godot UI,pixel,presentation,hardware,player-control or networking parity claim"
+  },
+  "coverage": {
+    "case_names": [
+      "empty-world",
+      "pasted-single",
+      "pasted-mirrored-symmetry3",
+      "changed-angle-retains-cache-until-force",
+      "cached-wrapping-integer-endpoints",
+      "alive-complete-66-argb-palette",
+      "unknown-and-translucent-current-argb",
+      "positive-timer-solid-tint",
+      "zero-timer-ignores-tint",
+      "negative-timer-ignores-tint",
+      "positive-eyes-exempts-only-exact-eye",
+      "eye-phenotype-with-no-eyes-flag-is-tinted",
+      "dead-no-eyes-brown",
+      "dead-eyes-retains-current-phenotype",
+      "dead-positive-timer-tint-no-eyes",
+      "dead-positive-timer-eyes-exemption",
+      "null-tint-no-eyes-retains-initial-white",
+      "null-tint-after-eye-retains-eye-color",
+      "null-tint-before-and-after-eye",
+      "ordered-actors-null-tint-retains-previous-red",
+      "ordered-actors-null-tint-retains-previous-eye",
+      "nullable-phenotype-uses-real-graphics-retention",
+      "real-death-retains-eyes-and-brown-other-segments",
+      "real-genesis-zero-caches-then-force-bounds",
+      "same-angle-nonforce-preserves-supplied-caches",
+      "draw-uses-integer-centers-not-fractional-or-bounds",
+      "timer-positive-zero-negative-sequence"
+    ],
+    "typed_input_targets": 27,
+    "source_outcome_families": [
+      "Empty World and actual forward actor/segment ordering",
+      "Pasted/mirrored geometry,changed angle without force,same-angle cache preservation and forced bounds",
+      "Java wrapped integer-center sums versus fractional centers and supplied rectangles",
+      "Complete66current palette values,unknown/translucent ARGB",
+      "Positive,zero,negative and sequential temporary-color timers",
+      "Exact EYE exemption versus translucent lookalike/VISION and disabled eye flag",
+      "Dead no-eyes brown,dead eye phenotype,dead temporary tints,and actual die preparation",
+      "Null tint initial WHITE versus previous EYE/previous actor color retention",
+      "Explicit nullable phenotype boundary with real delegate retention",
+      "Actual randomCreate zero endpoint caches through genesis,then real forced bounds"
+    ],
+    "complete_schema": true,
+    "all_genotype_scopes_observable": true,
+    "all_role_reference_tokens_valid": true,
+    "all_draw_pre_post_snapshots_identical": true,
+    "current_membership": "Observed V._organisms output; never a reconstruction input",
+    "all_combinations_exhaustive": false
+  },
+  "source_mapping": {
+    "path": ".workflow-local/draw-oracle-9efpussl/source-map.json",
+    "sha256": "897f73feb5d668f5505d139381ee7201afb43f2d2cc997331694a7c0eaf2388b",
+    "source_files": {
+      "Colormod/src/biogenesis/World.java": "a67543055a665a9a378e37c860671996e2ca0f510cb622375172a24333d7cae1",
+      "Colormod/src/biogenesis/Organism.java": "8650cb0983069dbae09e2ca704059fb82761fa6e0d87f35218c2342ffc60df46",
+      "Colormod/src/biogenesis/MainWindow.java": "598a9d2cca12b716a2222b98e2f5a6e96215f8a40f42d9d8c25ce4b55a0a2a6e",
+      "Colormod/src/biogenesis/InfoToolbar.java": "54721300eac5cb1381824ae4274adccb5f57c1d974d5c1a63733da48bb2d3f3a",
+      "Colormod/src/biogenesis/VisibleWorld.java": "b14b41135de13d935f24e42b2f82a72457a015831d1b62f30a26bd5be7faedc5"
+    },
+    "actual_methods": {
+      "World.draw": [
+        471,
+        494
+      ],
+      "Organism.draw": [
+        3517,
+        3565
+      ],
+      "Organism.calculateBounds": [
+        3577,
+        3602
+      ],
+      "Organism.randomCreate": [
+        1765,
+        1781
+      ],
+      "Organism.placeRandom": [
+        3282,
+        3327
+      ],
+      "World.genesis": [
+        414,
+        437
+      ],
+      "Organism.die": [
+        5201,
+        5224
+      ],
+      "MainWindow.main": [
+        166,
+        179
+      ]
+    },
+    "expected_value_authority": "Actual original World.draw and Organism.draw through real BufferedImage Graphics delegate",
+    "drawing_observer": "RecordingGraphics delegates every abstract Graphics method; drawLine records actual arguments and current delegate.getColor().getRGB(),then forwards the call",
+    "graphics_initialization": "New owned64x64TYPE_INT_ARGB BufferedImage; actual delegate.setColor(Color.WHITE) before each World.draw",
+    "observer_draw_rules_reimplementation": false,
+    "ordinary_scope": "No corridors; line-command observations without pixel/hardware acceptance"
+  },
+  "input_target_types": {
+    "actor:killer:_color": [
+      "Color"
+    ],
+    "actor:killer:_framesColor": [
+      "int"
+    ],
+    "actor:killer:_haseyes": [
+      "boolean"
+    ],
+    "actor:victim:_centerX": [
+      "int"
+    ],
+    "actor:victim:_centerY": [
+      "int"
+    ],
+    "actor:victim:_color": [
+      "Color"
+    ],
+    "actor:victim:_dCenterX": [
+      "double"
+    ],
+    "actor:victim:_dCenterY": [
+      "double"
+    ],
+    "actor:victim:_framesColor": [
+      "int"
+    ],
+    "actor:victim:_haseyes": [
+      "boolean"
+    ],
+    "actor:victim:_lastTheta": [
+      "double"
+    ],
+    "actor:victim:_segColor": [
+      "Color[]"
+    ],
+    "actor:victim:_theta": [
+      "double"
+    ],
+    "actor:victim:alive": [
+      "boolean"
+    ],
+    "actor:victim:bounds": [
+      "Rectangle"
+    ],
+    "actor:victim:x1": [
+      "int[]"
+    ],
+    "actor:victim:x2": [
+      "int[]"
+    ],
+    "actor:victim:y1": [
+      "int[]"
+    ],
+    "actor:victim:y2": [
+      "int[]"
+    ],
+    "genome:g0:construction": [
+      "String"
+    ],
+    "genome:g1:construction": [
+      "String"
+    ],
+    "genome:g2:construction": [
+      "String"
+    ],
+    "genome:g3:construction": [
+      "String"
+    ],
+    "genome:g4:construction": [
+      "String"
+    ],
+    "world:_CH4": [
+      "double"
+    ],
+    "world:_CO2": [
+      "double"
+    ],
+    "world:_O2": [
+      "double"
+    ]
+  },
+  "local_readback": {
+    "path": ".workflow-local/draw-oracle-9efpussl/ledger.json",
+    "sha256": "14be3206c9ab2e5a0ff6cfdc3a870d4630e49f420d992e8c39718b78fa7ca417",
+    "selected_observations": ".workflow-local/draw-oracle-9efpussl/selected-observations.json",
+    "selected_observations_sha256": "db7f2fa33fd7a3e4bfdfc807768c5d301320f1b21c8f56a65c051bc5fd7905d8",
+    "readback_script": ".workflow-local/draw-readback.py",
+    "readback_script_sha256": "ec132c352adbe24e984824d575c0671a14c599620ee591cf417c0586bd577d23"
+  },
+  "preserved_Frame_artifact_sha256": {
+    "tools/reference/FrameOracle.java": "65f3ce977f05a9b1eb1f0d084d9a30220a82b22c2651f73264b7ac1ec93a6568",
+    "crates/core/tests/fixtures/frame.tsv": "8033a455d2b08192be15d826285d428b7cd9502cd33cc9f61b2c92f3913af3db",
+    "crates/core/tests/fixtures/frame.README.md": "837e0b29e816c6214bd1b8adfe29b569554819902deba204e7cbb3171a547796",
+    "crates/core/tests/fixtures/frame.provenance.json": "9b58fb4b30db86f502aaaf98456c5353c3b3e01ad8cab286b830896b01c52b13"
+  },
+  "compile_only_preflights": [
+    {
+      "run": ".workflow-local/draw-oracle-kak6h0lb",
+      "commands_sha256": "6724cb0734b479981cbe9309b00b913ec404c6b650ec4bd53514a517bc836026",
+      "both_backends_passed": true
+    }
+  ],
+  "failed_producer_runs": [],
+  "limits": [
+    "Actual original draw-command observations; no producer Rust parity claim",
+    "Corridor drawing,pixels,antialiasing,clipping fidelity,hardware and full presentation require separate acceptance",
+    "Controlled phenotype/geometry states do not claim natural lifecycle reachability",
+    "UI sidecars remain excluded from core comparisons",
+    "Mutable Gene alias topology remains the separate genetics corpus obligation",
+    "No full-host absence or network-observation claim; native cleanup scope is its owned process group"
+  ],
+  "readme": {
+    "path": "crates/core/tests/fixtures/draw.README.md",
+    "sha256": "389bbf38954d316d6d708fe078f606ca8e5c2bf1e89c1659be8729bba8cecd13"
+  },
+  "controlled_nullable_phenotype_boundary": {
+    "path": ".workflow-local/draw-oracle-9efpussl/nullable-phenotype-reachability.json",
+    "sha256": "f1242cec6c6599387ebbbcc2c7c946e5acdd7f9a07aab41c9c8cddd6b3c471d1",
+    "case": "nullable-phenotype-uses-real-graphics-retention",
+    "input": [
+      "I",
+      "setup",
+      "actor:victim:_segColor",
+      "Color[]",
+      "~,ffff0000,~"
+    ],
+    "array_null": false,
+    "null_elements": [
+      0,
+      2
+    ],
+    "non_null_element_1_argb": "ffff0000",
+    "authority": "Labelled controlled reflective phenotype input; no established valid placed gameplay/API producer",
+    "observed_draw_behavior": "Actual Graphics.setColor(null) retains preceding real delegate color on timer0/no-eyes branch",
+    "observed_L": [
+      [
+        "L",
+        "step-0",
+        "0",
+        "3500",
+        "3500",
+        "3500",
+        "3500",
+        "-1"
+      ],
+      [
+        "L",
+        "step-0",
+        "1",
+        "3500",
+        "3500",
+        "3501",
+        "3500",
+        "-65536"
+      ],
+      [
+        "L",
+        "step-0",
+        "2",
+        "3500",
+        "3500",
+        "3501",
+        "3500",
+        "-65536"
+      ]
+    ],
+    "source_findings": {
+      "no_literal_null_phenotype_assignment": true,
+      "other_assignment_rhs_categories": [
+        "nonnull Color constants",
+        "copied Gene.getColor",
+        "copied peer phenotype"
+      ],
+      "raw_public_Gene_setColor": [
+        781,
+        783
+      ],
+      "constructor_null_color_failure": [
+        "Organism.java819 copies gene color",
+        "Organism.java820 immediately calls _segColor[i].equals"
+      ],
+      "normal_producers": [
+        "Gene.randomizeColor155-384 assigns constants",
+        "BioXMLParser.stringToColor483-530 returns constants or throws",
+        "ColorComboBox.getSelectedColor32-97 returns constants,default BROWN"
+      ],
+      "late_external_mutation": "Public Gene.setColor permits null after construction; later copy paths exist,without an established valid normal gameplay path"
+    },
+    "disposition": "Retain immutable observations; Rust representation/diagnostic disposition remains lead-owned. No Rust parity claim for this case."
+  },
+  "preserved_metadata_draft": {
+    "path": ".workflow-local/draw-oracle-9efpussl/before-metadata-clarification",
+    "reason": "Correct exact method end anchors and document inspected nullable-phenotype reachability; helper/data/ledger unchanged",
+    "sha256": {
+      "draw.provenance.json": "28efd4e807d6135dc53e5b23c9a83515ba53b8b54e579f9780db40556d4248d0",
+      "draw.README.md": "d242e87e0fc9524a4666ef6c02859fc26d7d79759af84a6780cda0bd89a957e9",
+      "source-map.json": "f64b644c5b646ded4c91a03be256a207003247b6a5a2010a66f5e71244a44459"
+    }
+  }
+}

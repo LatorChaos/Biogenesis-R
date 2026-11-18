@@ -1,0 +1,134 @@
+{
+  "status": "ACTUAL_ACCEPTED_SOURCE_FILES_BOUND_COMPARISON_ONLY",
+  "capture_origin": "<project-root>/.workflow-local/organism-array-witness-preparation/runs/first-attempt/source/observations",
+  "equivalent_jar_origin": "<project-root>/.workflow-local/organism-array-witness-preparation/runs/first-attempt/jar/observations",
+  "actual_independent_review": {
+    "path": "<project-root>/.workflow-local/reviews/organism-array-witness-actual-independent-2026-10-28.json",
+    "sha256": "578b55a74f2f0868289656f839d7150ed741d0ae735ad6b7d2520b318177c93a"
+  },
+  "readback_sha256": "8a5259c8a214a7138e6dd624d050e45fc767eb13d91fdb372cb7ba9f0cebb342",
+  "files": {
+    "array_bounds_bypass_prefix-initial.ser": {
+      "sha256": "20c6fc16118aae6946650c62d4c605730d90f1f0b9828eac7da75b27d10eda29",
+      "bytes": 10714
+    },
+    "array_bounds_bypass_prefix-step_0.ser": {
+      "sha256": "1cf532ebdc9f8ad633b970cbc29bef856cb824febfa4eed04db666bb0e296990",
+      "bytes": 10714
+    },
+    "array_bounds_bypass_prefix-step_1.ser": {
+      "sha256": "6424b403acf5e206f6c8ea6e00877701d1f60de197f085e51fd49929311e5ed9",
+      "bytes": 10807
+    },
+    "array_create_prefix-initial.ser": {
+      "sha256": "d4d1ea80771f2b3ece98d934e3cd8f8bb4eac93c0d10e233b8e0466d522b8286",
+      "bytes": 11041
+    },
+    "array_create_prefix-step_0.ser": {
+      "sha256": "47132ea9107654d75ba8486eb4edf818e27e3883446367345ad105b67686f631",
+      "bytes": 10888
+    },
+    "array_mimic_channel_alias-initial.ser": {
+      "sha256": "e60c8f935af89e358cdc2389c3d8d4aea6bca052515b56b9bcefcc435d09e22b",
+      "bytes": 10830
+    },
+    "array_mimic_channel_alias-step_0.ser": {
+      "sha256": "a7df20193816a64ac109826515fb7fa3aa275634fcdc8cd90320ddfee3aeed99",
+      "bytes": 10830
+    },
+    "array_signed_count-initial.ser": {
+      "sha256": "90dbef09e74560bd2d863465abd698c3668a715e687cbc33a31155266d339425",
+      "bytes": 10813
+    },
+    "array_signed_count-step_0.ser": {
+      "sha256": "90dbef09e74560bd2d863465abd698c3668a715e687cbc33a31155266d339425",
+      "bytes": 10813
+    },
+    "array_signed_count-step_1.ser": {
+      "sha256": "90dbef09e74560bd2d863465abd698c3668a715e687cbc33a31155266d339425",
+      "bytes": 10813
+    },
+    "array_signed_count-step_2.ser": {
+      "sha256": "9c0acdda76768f39ca5a7d017c0c9bf47b45b1098d860f597d96cdffc9ae6307",
+      "bytes": 10827
+    },
+    "array_signed_count-step_3.ser": {
+      "sha256": "9c0acdda76768f39ca5a7d017c0c9bf47b45b1098d860f597d96cdffc9ae6307",
+      "bytes": 10827
+    },
+    "organism_array.tsv": {
+      "sha256": "40eaab4ab4dc2eb44ddf5034f7cc7b22969b8459c57a1d7ce74aa744fe83ebbe",
+      "bytes": 256709
+    }
+  },
+  "helper_controller_and_preparation_pins": {
+    "OrganismArrayOracle.java": {
+      "path": "<project-root>/.workflow-local/organism-array-witness-preparation/OrganismArrayOracle.java",
+      "sha256": "c39c8bd4d05898426166f2c896443118ee97884397dd61dc286c3b8b3cd1a748"
+    },
+    "controller.py": {
+      "path": "<project-root>/.workflow-local/organism-array-witness-preparation/controller.py",
+      "sha256": "dc0fe7d3390daf3b3db2d88624fc80b341e9d117a17b58c1d1e5f11dbd2a8d6c"
+    },
+    "seal.json": {
+      "path": "<project-root>/.workflow-local/organism-array-witness-preparation/seal.json",
+      "sha256": "0402a6aa29aee8e7bbb6c05658233ee50c294969922f89a33a10008c00d148cd"
+    },
+    "freeze.json": {
+      "path": "<project-root>/.workflow-local/organism-array-witness-preparation/freeze.json",
+      "sha256": "808dacb165f24875c62c51c2f88da810ea62234dd389303b7422eb756e5f5bab"
+    },
+    "execution-binding.json": {
+      "path": "<project-root>/.workflow-local/organism-array-witness-preparation/execution-binding.json",
+      "sha256": "8197036bc78df5eb6aa53f44ba1fa8f81ab1b507842d3dd2b55deefee6a687c7"
+    },
+    "input-pins.json": {
+      "path": "<project-root>/.workflow-local/organism-array-witness-preparation/input-pins.json",
+      "sha256": "f591602c41b7b620ed6985612099ac0cb7ce19c283668a552beb03d28985c9dd"
+    },
+    "capture-plan.json": {
+      "path": "<project-root>/.workflow-local/organism-array-witness-preparation/capture-plan.json",
+      "sha256": "2cb16d325ab31a23e67b938e8a7e27bc16399386f0c782689e20ee32eedb986c"
+    },
+    "array-payload-mapping.json": {
+      "path": "<project-root>/.workflow-local/organism-array-witness-preparation/array-payload-mapping.json",
+      "sha256": "0ab5840756233f7265f7e28cc674f8a6b7b282a8630608ce53aec47c5ea14e60"
+    },
+    "root-all-four-java-actual-readback.json": {
+      "path": "<project-root>/.workflow-local/organism-array-witness-preparation/root-all-four-java-actual-readback.json",
+      "sha256": "8a5259c8a214a7138e6dd624d050e45fc767eb13d91fdb372cb7ba9f0cebb342"
+    },
+    "root-source_capture-readback.json": {
+      "path": "<project-root>/.workflow-local/organism-array-witness-preparation/root-source_capture-readback.json",
+      "sha256": "c6f705393e63fcb9f8b6ffd14cd012efba8943013f1f519d92aafd1e920ff7fc"
+    },
+    "root-jar_capture-readback.json": {
+      "path": "<project-root>/.workflow-local/organism-array-witness-preparation/root-jar_capture-readback.json",
+      "sha256": "e71c261a52c9c4fef300d12e2ab98cc02629e5c695055c9be9268801e1e73c5f"
+    }
+  },
+  "mapping_pins": {
+    "mapping.json": {
+      "path": "<project-root>/.workflow-local/organism-array-replay-mapping/mapping.json",
+      "sha256": "3b6adea20379e046ff90a5c080fd8dddb3d529b470e04385c36979f8dec05f55"
+    },
+    "input-recipes.json": {
+      "path": "<project-root>/.workflow-local/organism-array-replay-mapping/input-recipes.json",
+      "sha256": "439466b78ce6877acb413c32f079a72013800f021f9da4372c8d27f6ff919287"
+    },
+    "handoff.json": {
+      "path": "<project-root>/.workflow-local/organism-array-replay-mapping/handoff.json",
+      "sha256": "7d72c8b2bf8d7d810a3b92f272948cddc432efde0078ebddca7265e35ba36d1b"
+    }
+  },
+  "actual_denominators": {
+    "cases": 4,
+    "calls": 8,
+    "snapshots": 12,
+    "World_streams": 12,
+    "TSV_rows": 6531
+  },
+  "construction_authority": "Only C/U/GI/A/IA/IC/I/K authored inputs. O/Q/PA/AR/AC/G/GM/N/B/W/M/S/R/RP/X/Z are comparisons. Parsed World streams never hydrate replay inputs.",
+  "math_allowances": "Only the existing five geometric O-field tolerances remain. Typed stream rawbits and identity joins remain exact.",
+  "raw_R": "Java serialized Random digest is retained provenance. Cloned model RP observations verify RNG without consuming it."
+}

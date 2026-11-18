@@ -1,0 +1,600 @@
+{
+  "connection_boundary": "RecordingConnection.send records actual genotype references and performs no transport; Rust pending admissions provide the declared history boundary",
+  "consumer": {
+    "debug_execution": {
+      "failed": 0,
+      "ignored": 7,
+      "passed": 756,
+      "registered": 763,
+      "result_path": ".workflow-local/world-rules-oracle-a/core-controls/core-debug-a/result.json",
+      "result_sha256": "08b27c9565316f82ae51631460b5f4377c709e052ea7fd2a6304535531b8f26c",
+      "review_path": ".workflow-local/world-rules-oracle-a/core-controls/debug-actuals-review.json",
+      "review_sha256": "541d42cd789b49065bca11648952cdbbddc9800f8ada67467cfeaf422811d1cd"
+    },
+    "extra_test_registrations": 1,
+    "prepared_prebinding_sha256": "689bba81f396e1f1946768bb4c9e7591aabdfcd4e70cfe5d065ee15d799a7a81",
+    "private_candidate_sha256": "dad140557c1196fd3e26a9117ccb6a97023f3c003365cc45dade3845714ef829",
+    "production_API_changes": false,
+    "release_execution": {
+      "failed": 0,
+      "ignored": 7,
+      "passed": 756,
+      "registered": 763,
+      "result_path": ".workflow-local/world-rules-oracle-a/core-controls/core-release-a/result.json",
+      "result_sha256": "bd69b404e046fbde0b1695484ef8a777d704045ffe990b0c03ce59861dad6356",
+      "review_path": ".workflow-local/world-rules-oracle-a/core-controls/release-actuals-review.json",
+      "review_sha256": "43cb0a01eebcdf9a863ee8b05a260aef26416978e0c97a41efa3e4f8da3cbc4b"
+    },
+    "setup": "Existing Frame empty_with_parameters pattern preserves declared initial attempts without extra genesis"
+  },
+  "date": "2026-11-08",
+  "evidence": {
+    "capture": {
+      "path": ".workflow-local/world-rules-oracle-a/controls/capture/result.json",
+      "sha256": "ac54d44192f1239420bbf820b4c010a935dcad1fb7efb89e1ff8a131e3ae81a2"
+    },
+    "compile": {
+      "path": ".workflow-local/world-rules-oracle-a/controls/compile/result.json",
+      "sha256": "203b3a436ce38933b53afcd3caf254abcbe2c8fe396ae8e911e7d4f48c9f5063"
+    },
+    "fixed_recipes": {
+      "path": ".workflow-local/world-rules-oracle-a/producer/recipes.json",
+      "sha256": "10accecada1b27c3859683d4943d466d9e0a1cc0e01e06a1ef4ac32129edc83a"
+    },
+    "frozen_manifest": {
+      "path": ".workflow-local/world-rules-oracle-a/frozen-reference/manifest.json",
+      "sha256": "ba98365174b66ef0aadcff6c5fd86f291f4f1627a119c78b0b82a8fbf1415ccd"
+    },
+    "helper_classes": {
+      "path": ".workflow-local/world-rules-oracle-a/controls/compile/helper-classes.json",
+      "sha256": "bb01604a25e441dd08e65e3943fc816ad09e35bec9549c9deba93795620e40ef"
+    },
+    "inputs": {
+      "path": ".workflow-local/world-rules-oracle-a/controls/inputs.json",
+      "sha256": "2e5e4cd348761b3ffd2bba1155b63bc7db55314f4c3c2a056ec802164e32296e"
+    },
+    "prepared_claim": {
+      "path": ".workflow-local/world-rules-oracle-a/claim.json",
+      "sha256": "d225c19d29ec6a7df2240200908030dafb2dfbda6abaeb3dd1c98499348f976c"
+    }
+  },
+  "fixture": {
+    "World_getters": 10,
+    "World_instance_fields": 15,
+    "actor_views": 168,
+    "bytes": 2114138,
+    "cases": [
+      "active-pair-genesis-retains-queue-candidate-traveller",
+      "global-mixed-sufficient-o2",
+      "global-mixed-partial-o2",
+      "global-mixed-zero-o2"
+    ],
+    "incoming_fields": 7,
+    "organism_fields_per_actor": 154,
+    "organism_reference_holders_per_actor": 3,
+    "outgoing_fields": 6,
+    "path": "crates/core/tests/fixtures/world_rules.tsv",
+    "row_tags": {
+      "A": 12,
+      "C": 4,
+      "CC": 45,
+      "D": 4,
+      "E": 4,
+      "F": 84,
+      "G": 7700,
+      "H": 504,
+      "I": 60,
+      "ID": 509,
+      "IN": 91,
+      "J": 24,
+      "K": 31,
+      "L": 13,
+      "N": 12560,
+      "O": 25872,
+      "P": 49,
+      "Q": 168,
+      "R": 49,
+      "S": 2548,
+      "T": 2401,
+      "U": 588,
+      "V": 735,
+      "W": 490,
+      "Y": 255
+    },
+    "rows": 54800,
+    "sha256": "50ab3eff780afdabeb1485d5c1e65301988bed0f0ddfddf48d39ebd45793d545",
+    "snapshots": 49,
+    "statistics_fields": 52,
+    "statistics_getters": 49
+  },
+  "frozen_source": {
+    "Source_poststates_used_as_Rust_inputs": false,
+    "authority": "Actual original Source twice and bundled JAR once; byte-identical TSV outputs",
+    "expected_values_from_Rust": false,
+    "helper_sha256": "de8097828cda69f94d740ed5006d2e8d604281865a43a342dc4b50ea8744e758",
+    "output_receipts": {
+      "bytes": 2114138,
+      "paths": [
+        "<project-root>/.workflow-local/world-rules-oracle-a/controls/capture/source-a/observations/world_rules.tsv",
+        "<project-root>/.workflow-local/world-rules-oracle-a/controls/capture/source-b/observations/world_rules.tsv",
+        "<project-root>/.workflow-local/world-rules-oracle-a/controls/capture/jar/observations/world_rules.tsv"
+      ],
+      "sha256": "50ab3eff780afdabeb1485d5c1e65301988bed0f0ddfddf48d39ebd45793d545"
+    },
+    "precomparison_freeze_utc": "2026-11-08T20:27:45.940406+00:00",
+    "recipes_sha256": "10accecada1b27c3859683d4943d466d9e0a1cc0e01e06a1ef4ac32129edc83a"
+  },
+  "limits": [
+    "Both ordinary Core suites and the fixed four-case comparison passed; wider acceptance remains separately gated",
+    "Method characterization only; no rendered/native-input player journey claim",
+    "No transport interoperability, performance, Pi, or complete conversion acceptance",
+    "Source UI sidecars remain separately attributed to actual Java capture"
+  ],
+  "negative_checks": {
+    "bindings": [
+      [
+        "active-pair-genesis-retains-queue-candidate-traveller",
+        "F",
+        "before-step-9",
+        "c0",
+        "travellingOrganism",
+        "Organism",
+        "victim"
+      ],
+      [
+        "active-pair-genesis-retains-queue-candidate-traveller",
+        "IN",
+        "before-step-9",
+        "i0",
+        "nextOrganism",
+        "Organism",
+        "arrival0"
+      ],
+      [
+        "active-pair-genesis-retains-queue-candidate-traveller",
+        "IN",
+        "before-step-9",
+        "i0",
+        "pendingOrganisms",
+        "Queue",
+        "g0,g4"
+      ],
+      [
+        "active-pair-genesis-retains-queue-candidate-traveller",
+        "ID",
+        "before-step-9",
+        "world",
+        "world0"
+      ],
+      [
+        "active-pair-genesis-retains-queue-candidate-traveller",
+        "ID",
+        "before-step-9",
+        "statistics",
+        "statistics0"
+      ],
+      [
+        "active-pair-genesis-retains-queue-candidate-traveller",
+        "ID",
+        "before-step-9",
+        "members",
+        "members0"
+      ],
+      [
+        "active-pair-genesis-retains-queue-candidate-traveller",
+        "ID",
+        "before-step-9",
+        "inCorridors",
+        "incoming-list0"
+      ],
+      [
+        "active-pair-genesis-retains-queue-candidate-traveller",
+        "ID",
+        "before-step-9",
+        "outCorridors",
+        "outgoing-list0"
+      ],
+      [
+        "active-pair-genesis-retains-queue-candidate-traveller",
+        "ID",
+        "before-step-9",
+        "actor:selector:world",
+        "world0"
+      ],
+      [
+        "active-pair-genesis-retains-queue-candidate-traveller",
+        "ID",
+        "before-step-9",
+        "actor:victim:world",
+        "world0"
+      ],
+      [
+        "active-pair-genesis-retains-queue-candidate-traveller",
+        "ID",
+        "before-step-9",
+        "actor:blocker:world",
+        "world0"
+      ],
+      [
+        "active-pair-genesis-retains-queue-candidate-traveller",
+        "ID",
+        "before-step-9",
+        "actor:arrival0:world",
+        "world0"
+      ],
+      [
+        "active-pair-genesis-retains-queue-candidate-traveller",
+        "ID",
+        "before-step-9",
+        "incoming:i0",
+        "i0:0"
+      ],
+      [
+        "active-pair-genesis-retains-queue-candidate-traveller",
+        "ID",
+        "before-step-9",
+        "pending:i0",
+        "queue:i0:0"
+      ],
+      [
+        "active-pair-genesis-retains-queue-candidate-traveller",
+        "ID",
+        "before-step-9",
+        "incoming:i0:world",
+        "world0"
+      ],
+      [
+        "active-pair-genesis-retains-queue-candidate-traveller",
+        "ID",
+        "before-step-9",
+        "connection:n0",
+        "n0:0"
+      ],
+      [
+        "active-pair-genesis-retains-queue-candidate-traveller",
+        "ID",
+        "before-step-9",
+        "outgoing:c0",
+        "c0:0"
+      ],
+      [
+        "active-pair-genesis-retains-queue-candidate-traveller",
+        "ID",
+        "before-step-9",
+        "outgoing:c0:world",
+        "world0"
+      ],
+      [
+        "active-pair-genesis-retains-queue-candidate-traveller",
+        "ID",
+        "before-step-9",
+        "outgoing:c0:connection",
+        "n0:0"
+      ],
+      [
+        "global-mixed-sufficient-o2",
+        "S",
+        "step-1",
+        "deathSum",
+        "long",
+        "3"
+      ],
+      [
+        "global-mixed-sufficient-o2",
+        "S",
+        "step-1",
+        "lastDeadBeing",
+        "GeneticCode",
+        "g1"
+      ],
+      [
+        "global-mixed-sufficient-o2",
+        "W",
+        "step-3",
+        "_O2",
+        "double",
+        "4036000000000000"
+      ],
+      [
+        "global-mixed-sufficient-o2",
+        "W",
+        "step-3",
+        "_CO2",
+        "double",
+        "411e834800000000"
+      ],
+      [
+        "global-mixed-zero-o2",
+        "R",
+        "step-5",
+        "8191212473729094355",
+        "4934",
+        "3feb11fff9952167"
+      ]
+    ],
+    "corruptions": [
+      "O2",
+      "CO2",
+      "pending genotype order and alias",
+      "cached candidate identity",
+      "outgoing traveller identity",
+      "lastDeadBeing order",
+      "deathSum count",
+      "final RNG suffix",
+      "missing row",
+      "duplicate row",
+      "unknown row"
+    ],
+    "single_test": "world::organism_oracle_tests::outgoing_oracle_tests::actual_java_global_world_rules_and_active_genesis_preserve_complete_state",
+    "status": "VERIFIED_DEBUG_AND_RELEASE"
+  },
+  "precomparison_ledger": {
+    "calls": {
+      "connection.new": 1,
+      "corridor.new": 1,
+      "die": 3,
+      "disperseAll": 6,
+      "genesis": 1,
+      "incoming.frame": 1,
+      "incoming.new": 1,
+      "incoming.receive": 3,
+      "killAll": 6,
+      "time": 6,
+      "world.addCorridors": 1,
+      "world.draw": 1
+    },
+    "collaborators": 385,
+    "eligible": 51968,
+    "input_genotypes": 1440,
+    "other": 1007,
+    "rows": 54800,
+    "tags": {
+      "A": 12,
+      "C": 4,
+      "CC": 45,
+      "D": 4,
+      "E": 4,
+      "F": 84,
+      "G": 7700,
+      "H": 504,
+      "I": 60,
+      "ID": 509,
+      "IN": 91,
+      "J": 24,
+      "K": 31,
+      "L": 13,
+      "N": 12560,
+      "O": 25872,
+      "P": 49,
+      "Q": 168,
+      "R": 49,
+      "S": 2548,
+      "T": 2401,
+      "U": 588,
+      "V": 735,
+      "W": 490,
+      "Y": 255
+    },
+    "targets": [
+      [
+        "actor:blocker:bounds",
+        "Rectangle",
+        1
+      ],
+      [
+        "actor:killer:_energy",
+        "double",
+        3
+      ],
+      [
+        "actor:selector:_energy",
+        "double",
+        3
+      ],
+      [
+        "actor:victim:_age",
+        "int",
+        1
+      ],
+      [
+        "actor:victim:_energy",
+        "double",
+        3
+      ],
+      [
+        "actor:victim:_growthRatio",
+        "int",
+        1
+      ],
+      [
+        "actor:victim:dtheta",
+        "double",
+        1
+      ],
+      [
+        "actor:victim:dx",
+        "double",
+        1
+      ],
+      [
+        "actor:victim:dy",
+        "double",
+        1
+      ],
+      [
+        "corridor:c0:bounds",
+        "Rectangle",
+        1
+      ],
+      [
+        "genome:g0:construction",
+        "String",
+        4
+      ],
+      [
+        "genome:g1:construction",
+        "String",
+        4
+      ],
+      [
+        "genome:g2:construction",
+        "String",
+        4
+      ],
+      [
+        "genome:g3:construction",
+        "String",
+        4
+      ],
+      [
+        "genome:g4:construction",
+        "String",
+        4
+      ],
+      [
+        "incoming:i0:bounds",
+        "Rectangle",
+        1
+      ],
+      [
+        "utils:USER_NAME",
+        "String",
+        4
+      ],
+      [
+        "visible:selected",
+        "String",
+        4
+      ],
+      [
+        "world:_CH4",
+        "double",
+        4
+      ],
+      [
+        "world:_CO2",
+        "double",
+        4
+      ],
+      [
+        "world:_O2",
+        "double",
+        7
+      ]
+    ]
+  },
+  "primary_row_dispositions": {
+    "A": {
+      "other": 12
+    },
+    "C": {
+      "other": 4
+    },
+    "CC": {
+      "eligible": 45
+    },
+    "D": {
+      "other": 4
+    },
+    "E": {
+      "other": 4
+    },
+    "F": {
+      "eligible": 84
+    },
+    "G": {
+      "eligible": 7140,
+      "input_genotypes": 560
+    },
+    "H": {
+      "eligible": 504
+    },
+    "I": {
+      "other": 60
+    },
+    "ID": {
+      "eligible": 509
+    },
+    "IN": {
+      "eligible": 91
+    },
+    "J": {
+      "eligible": 24
+    },
+    "K": {
+      "other": 31
+    },
+    "L": {
+      "eligible": 13
+    },
+    "N": {
+      "eligible": 11680,
+      "input_genotypes": 880
+    },
+    "O": {
+      "collaborators": 336,
+      "eligible": 25536
+    },
+    "P": {
+      "other": 49
+    },
+    "Q": {
+      "eligible": 168
+    },
+    "R": {
+      "eligible": 49
+    },
+    "S": {
+      "eligible": 2548
+    },
+    "T": {
+      "eligible": 2401
+    },
+    "U": {
+      "other": 588
+    },
+    "V": {
+      "collaborators": 49,
+      "eligible": 686
+    },
+    "W": {
+      "eligible": 490
+    },
+    "Y": {
+      "other": 255
+    }
+  },
+  "publication": "LOCAL_REFERENCE_FIXTURE_NOT_A_RELEASE",
+  "reference_backends": {
+    "helper": "<project-root>/.workflow-local/world-rules-oracle-a/producer/OutgoingOracle.java",
+    "jar": "<reference-root>/ColorMod_2_01/biogenesis.jar",
+    "java": "/usr/lib/jvm/java-21-openjdk/bin/java",
+    "javac": "/usr/lib/jvm/java-21-openjdk/bin/javac",
+    "jts": "<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+    "recipes": "<project-root>/.workflow-local/world-rules-oracle-a/producer/recipes.json",
+    "source_classes_root": "<project-root>/.workflow-local/reference-build/source-classes"
+  },
+  "row_disposition_contract": {
+    "allocation_projection": "Existing incoming allocation projection applies only before successful body creation; this frozen corpus has zero null array observations",
+    "annotation_counts_overlap_primary_partition": {
+      "actor_world_presence_logical_projection": 168,
+      "allocation_null_projection_rows_in_this_corpus": 0,
+      "corridor_world_presence_logical_projection": 27,
+      "incoming_absent_inherited_fields_projection": 26,
+      "pending_and_corridor_world_ID_logical_projections": 40,
+      "source_only_UI_collaborators": 217,
+      "source_only_visible_selected_input_controls": 4
+    },
+    "collaborators": "336 O World/UI presence rows and 49 V UI presence rows retain the existing collaborator ledger classification",
+    "comparison": "Actor holders, queue payload order/aliases, candidate, traveller, actual actor World associations, outgoing connection, member/corridor order, statistics, genotypes, frozen envelopes/query order, paint and RNG remain direct comparisons",
+    "denominator_policy": "Projection and metadata annotations do not remove rows or alter the frozen primary ledger",
+    "eligible": "Expected output rows pass existing exact comparison and complete schema checks; five existing organism geometry allowances remain unchanged",
+    "input_genotypes": "Only G/N input-stage rows construct the five declared genotype recipes; exact input schema and alias construction remain checked",
+    "other": "C,U,I,A,K are declared recipes/settings/controls/placement/actions; D validates actual identity discoveries; P/E delimit complete snapshots; Y compares observable genotype scope",
+    "partition": "54800 = 51968 eligible + 1440 input_GN + 385 collaborators + 1007 other",
+    "projection": "Explicit logical ownership maps Java corridor World and pending-container rows onto existing Rust owners; absent incoming inherited connection/traveller fields compare exact null",
+    "source_only": "217 O._visibleWorld/V._visibleWorld rows validate actual-Java presence without a Rust UI object; four I visible:selected controls remain Source UI collaborator metadata"
+  },
+  "schema": "biogenesis-world-rules-oracle-v1",
+  "status": "VERIFIED_ORIGINAL_JAVA_AND_RUST_DEBUG_RELEASE"
+}

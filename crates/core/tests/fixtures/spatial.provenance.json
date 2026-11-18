@@ -1,0 +1,530 @@
+{
+  "generated": "2026-10-25",
+  "fixture": "crates/core/tests/fixtures/spatial.tsv",
+  "fixture_sha256": "a2cf3205b94144694f6484c81aaa9916f42824766a521c2cb05d2f14f344225a",
+  "fixture_bytes": 2347819,
+  "record_counts": {
+    "M": 1,
+    "C": 113,
+    "Q": 3740,
+    "E": 113,
+    "I": 20282
+  },
+  "helper": "tools/reference/SpatialOracle.java",
+  "helper_sha256": "d0144640fe4b95c01ec4b5ade6344a78c62d1f8ca77e2fa5d08bb73511631581",
+  "rust_source": "crates/core/src/spatial.rs",
+  "rust_source_sha256": "ffe236f8c8cb94873785d4b007f3ba680f807f784158f2782960951b7f9bfde3",
+  "readme": "crates/core/tests/fixtures/spatial.README.md",
+  "readme_sha256": "756e606ac35949cab7928662f405400f039165a7201515cb577a676378dd6a53",
+  "reference_manifest": "docs/evidence/reference-manifest.json",
+  "reference_manifest_sha256": "1c6629c0dac3f66977a45228af811b1523cac5d6865004f60729e65982a5c45f",
+  "game_jar_sha256": "0baeae8d29f5fdbbb830c1a9e51c7f2b5314a33011b20ec7471eeaa27f0398e1",
+  "jts_jar_sha256": "00102cde26c457b81fbb0248e4f8845884243caba0dc9b7fb42e0ea877383bc1",
+  "jts_version_observed": "1.15.0",
+  "source_classes": {
+    "count": 159,
+    "fingerprint_sha256": "3da81a67e4e4733dd793da9964d7ff8eb99e5efc28b5ad3c8315999c259af82d",
+    "fingerprint_algorithm": "SHA256 over sorted relative class paths, NUL, then raw class bytes"
+  },
+  "source_source_jar_identical": true,
+  "actual_reference_objects": [
+    "World(null)",
+    "World.colDetTree = new STRtree()",
+    "Envelope(Rectangle.getX(), Rectangle.getMaxX(), Rectangle.getY(), Rectangle.getMaxY())"
+  ],
+  "coverage": {
+    "cases": 113,
+    "insertion_records": 20282,
+    "queries": 3740,
+    "largest_case_entries": 12500,
+    "counts": [
+      0,
+      1,
+      9,
+      10,
+      11,
+      20,
+      21,
+      99,
+      100,
+      101,
+      257,
+      1001,
+      12500
+    ],
+    "orders": [
+      "forward",
+      "reverse",
+      "seeded shuffle"
+    ],
+    "patterns": [
+      "tied center X",
+      "tied center Y",
+      "mixed centers",
+      "both centers tied",
+      "closed boundaries",
+      "negative dimensions",
+      "zero dimensions",
+      "integer extremes",
+      "duplicate tokens"
+    ]
+  },
+  "raw_receipts": ".workflow-local/spatial-oracle-qp5gnry2/commands.json",
+  "commands": [
+    {
+      "argv": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "-cp",
+        "<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+        "-d",
+        "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/helper-source",
+        "<project-root>/tools/reference/SpatialOracle.java"
+      ],
+      "cwd": "<project-root>/.workflow-local/spatial-oracle-qp5gnry2",
+      "pid": 13,
+      "process_group": 13,
+      "exit_code": 0,
+      "timed_out": false,
+      "interrupted": false,
+      "elapsed_seconds": 0.5267147819977254,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "javac",
+        "-encoding",
+        "UTF-8",
+        "-cp",
+        "<reference-root>/ColorMod_2_01/biogenesis.jar:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+        "-d",
+        "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/helper-jar",
+        "<project-root>/tools/reference/SpatialOracle.java"
+      ],
+      "cwd": "<project-root>/.workflow-local/spatial-oracle-qp5gnry2",
+      "pid": 41,
+      "process_group": 41,
+      "exit_code": 0,
+      "timed_out": false,
+      "interrupted": false,
+      "elapsed_seconds": 0.502727610997681,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "java",
+        "-Xms16m",
+        "-Xmx256m",
+        "-Djava.awt.headless=true",
+        "-Duser.language=en",
+        "-Duser.country=US",
+        "-Duser.home=<project-root>/.workflow-local/spatial-oracle-qp5gnry2/source-a/home",
+        "-Djava.io.tmpdir=<project-root>/.workflow-local/spatial-oracle-qp5gnry2/source-a/tmp",
+        "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/spatial-oracle-qp5gnry2/source-a/prefs-user",
+        "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/spatial-oracle-qp5gnry2/source-a/prefs-system",
+        "-cp",
+        "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/helper-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+        "biogenesis.SpatialOracle",
+        "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/source-a/observations"
+      ],
+      "cwd": "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/source-a",
+      "pid": 70,
+      "process_group": 70,
+      "exit_code": 0,
+      "timed_out": false,
+      "interrupted": false,
+      "elapsed_seconds": 0.3667349019997346,
+      "stdout": "SPATIAL_ORACLE PASS cases=113 queries=3740\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "java",
+        "-Xms16m",
+        "-Xmx256m",
+        "-Djava.awt.headless=true",
+        "-Duser.language=en",
+        "-Duser.country=US",
+        "-Duser.home=<project-root>/.workflow-local/spatial-oracle-qp5gnry2/source-b/home",
+        "-Djava.io.tmpdir=<project-root>/.workflow-local/spatial-oracle-qp5gnry2/source-b/tmp",
+        "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/spatial-oracle-qp5gnry2/source-b/prefs-user",
+        "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/spatial-oracle-qp5gnry2/source-b/prefs-system",
+        "-cp",
+        "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/helper-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+        "biogenesis.SpatialOracle",
+        "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/source-b/observations"
+      ],
+      "cwd": "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/source-b",
+      "pid": 99,
+      "process_group": 99,
+      "exit_code": 0,
+      "timed_out": false,
+      "interrupted": false,
+      "elapsed_seconds": 0.5008552409999538,
+      "stdout": "SPATIAL_ORACLE PASS cases=113 queries=3740\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "java",
+        "-Xms16m",
+        "-Xmx256m",
+        "-Djava.awt.headless=true",
+        "-Duser.language=en",
+        "-Duser.country=US",
+        "-Duser.home=<project-root>/.workflow-local/spatial-oracle-qp5gnry2/jar/home",
+        "-Djava.io.tmpdir=<project-root>/.workflow-local/spatial-oracle-qp5gnry2/jar/tmp",
+        "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/spatial-oracle-qp5gnry2/jar/prefs-user",
+        "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/spatial-oracle-qp5gnry2/jar/prefs-system",
+        "-cp",
+        "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/helper-jar:<reference-root>/ColorMod_2_01/biogenesis.jar:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+        "biogenesis.SpatialOracle",
+        "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/jar/observations"
+      ],
+      "cwd": "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/jar",
+      "pid": 128,
+      "process_group": 128,
+      "exit_code": 0,
+      "timed_out": false,
+      "interrupted": false,
+      "elapsed_seconds": 0.3780261749998317,
+      "stdout": "SPATIAL_ORACLE PASS cases=113 queries=3740\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "<rustc>",
+        "--edition=2024",
+        "--test",
+        "<project-root>/crates/core/src/lib.rs",
+        "-o",
+        "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/rust/spatial-debug"
+      ],
+      "cwd": "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/rust",
+      "pid": 13,
+      "process_group": 13,
+      "exit_code": 0,
+      "timed_out": false,
+      "interrupted": false,
+      "elapsed_seconds": 0.7883787889986706,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/rust/spatial-debug",
+        "spatial::tests",
+        "--nocapture"
+      ],
+      "cwd": "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/rust",
+      "pid": 54,
+      "process_group": 54,
+      "exit_code": 0,
+      "timed_out": false,
+      "interrupted": false,
+      "elapsed_seconds": 0.05179198599944357,
+      "stdout": "\nrunning 2 tests\ntest spatial::tests::tree_owns_frozen_envelopes_and_keeps_duplicate_tokens ... ok\ntest spatial::tests::frozen_spatial_queries_match_bundled_jts_order_and_envelopes ... ok\n\ntest result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 15 filtered out; finished in 0.05s\n\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "<rustc>",
+        "--edition=2024",
+        "--test",
+        "<project-root>/crates/core/src/lib.rs",
+        "-C",
+        "opt-level=2",
+        "-o",
+        "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/rust/spatial-optimized"
+      ],
+      "cwd": "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/rust",
+      "pid": 57,
+      "process_group": 57,
+      "exit_code": 0,
+      "timed_out": false,
+      "interrupted": false,
+      "elapsed_seconds": 2.5020560220000334,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/rust/spatial-optimized",
+        "spatial::tests",
+        "--nocapture"
+      ],
+      "cwd": "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/rust",
+      "pid": 115,
+      "process_group": 115,
+      "exit_code": 0,
+      "timed_out": false,
+      "interrupted": false,
+      "elapsed_seconds": 0.022220279002794996,
+      "stdout": "\nrunning 2 tests\ntest spatial::tests::tree_owns_frozen_envelopes_and_keeps_duplicate_tokens ... ok\ntest spatial::tests::frozen_spatial_queries_match_bundled_jts_order_and_envelopes ... ok\n\ntest result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 15 filtered out; finished in 0.01s\n\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "<rustc>",
+        "--edition=2024",
+        "--test",
+        "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/rust/negative-lib.rs",
+        "-o",
+        "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/rust/spatial-negative-capacity16"
+      ],
+      "cwd": "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/rust",
+      "pid": 118,
+      "process_group": 118,
+      "exit_code": 0,
+      "timed_out": false,
+      "interrupted": false,
+      "elapsed_seconds": 0.7906366709976282,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/rust/spatial-negative-capacity16",
+        "spatial::tests::frozen_spatial_queries_match_bundled_jts_order_and_envelopes",
+        "--nocapture"
+      ],
+      "cwd": "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/rust",
+      "pid": 159,
+      "process_group": 159,
+      "exit_code": 101,
+      "timed_out": false,
+      "interrupted": false,
+      "elapsed_seconds": 0.004660108003008645,
+      "stdout": "\nrunning 1 test\ntest spatial::tests::frozen_spatial_queries_match_bundled_jts_order_and_envelopes ... FAILED\n\nfailures:\n\nfailures:\n    spatial::tests::frozen_spatial_queries_match_bundled_jts_order_and_envelopes\n\ntest result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 16 filtered out; finished in 0.00s\n\n",
+      "stderr": "\nthread 'spatial::tests::frozen_spatial_queries_match_bundled_jts_order_and_envelopes' (160) panicked at <project-root>/.workflow-local/spatial-oracle-qp5gnry2/rust/spatial-capacity16.rs:255:21:\nassertion `left == right` failed: count-11-pattern-0-order-0 all-normal\n  left: [130, 79, 113, 45, 164, 96, 28, 181, 62, 147, 11]\n right: [130, 113, 164, 181, 147, 79, 45, 96, 28, 62, 11]\nnote: run with `RUST_BACKTRACE=1` environment variable to display a backtrace\n"
+    },
+    {
+      "argv": [
+        "java",
+        "-Djava.awt.headless=true",
+        "-cp",
+        "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/helper-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+        "biogenesis.SpatialOracle",
+        "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/profile-negative/observations"
+      ],
+      "cwd": "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/profile-negative",
+      "pid": 13,
+      "process_group": 13,
+      "exit_code": 1,
+      "timed_out": false,
+      "interrupted": false,
+      "elapsed_seconds": 0.028853864001575857,
+      "stdout": "",
+      "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: user.home\n\tat biogenesis.SpatialOracle.require(SpatialOracle.java:28)\n\tat biogenesis.SpatialOracle.main(SpatialOracle.java:170)\n"
+    },
+    {
+      "argv": [
+        "java",
+        "-Djava.awt.headless=true",
+        "-Duser.home=<project-root>/.workflow-local/spatial-oracle-qp5gnry2/source-a/home",
+        "-Djava.io.tmpdir=<project-root>/.workflow-local/spatial-oracle-qp5gnry2/source-a/tmp",
+        "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/spatial-oracle-qp5gnry2/source-a/prefs-user",
+        "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/spatial-oracle-qp5gnry2/source-a/prefs-system",
+        "-cp",
+        "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/helper-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+        "biogenesis.SpatialOracle",
+        "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/source-a/observations"
+      ],
+      "cwd": "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/profile-negative",
+      "pid": 31,
+      "process_group": 31,
+      "exit_code": 1,
+      "timed_out": false,
+      "interrupted": false,
+      "elapsed_seconds": 0.029394764998869505,
+      "stdout": "",
+      "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Output directory must not exist\n\tat biogenesis.SpatialOracle.require(SpatialOracle.java:28)\n\tat biogenesis.SpatialOracle.main(SpatialOracle.java:172)\n"
+    },
+    {
+      "argv": [
+        "java",
+        "-version"
+      ],
+      "cwd": "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/rust",
+      "pid": 13,
+      "process_group": 13,
+      "exit_code": 0,
+      "timed_out": false,
+      "interrupted": false,
+      "elapsed_seconds": 0.0245977890008362,
+      "stdout": "",
+      "stderr": "openjdk version \"21.0.12.1\" 2026-08-18\nOpenJDK Runtime Environment (build 21.0.12.1+1)\nOpenJDK 64-Bit Server VM (build 21.0.12.1+1, mixed mode, sharing)\n"
+    },
+    {
+      "argv": [
+        "javac",
+        "-version"
+      ],
+      "cwd": "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/rust",
+      "pid": 30,
+      "process_group": 30,
+      "exit_code": 0,
+      "timed_out": false,
+      "interrupted": false,
+      "elapsed_seconds": 0.09638492399972165,
+      "stdout": "javac 21.0.12.1\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "<rustc>",
+        "--version"
+      ],
+      "cwd": "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/rust",
+      "pid": 50,
+      "process_group": 50,
+      "exit_code": 0,
+      "timed_out": false,
+      "interrupted": false,
+      "elapsed_seconds": 0.00729750999744283,
+      "stdout": "rustc 1.96.0 (ac68faa20 2026-05-25)\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "<rustc>",
+        "--edition=2024",
+        "--test",
+        "<project-root>/crates/core/src/lib.rs",
+        "-o",
+        "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/rust/spatial-final-debug"
+      ],
+      "cwd": "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/rust",
+      "pid": 52,
+      "process_group": 52,
+      "exit_code": 0,
+      "timed_out": false,
+      "interrupted": false,
+      "elapsed_seconds": 0.7880629059982311,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/rust/spatial-final-debug",
+        "spatial::tests",
+        "--nocapture"
+      ],
+      "cwd": "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/rust",
+      "pid": 93,
+      "process_group": 93,
+      "exit_code": 0,
+      "timed_out": false,
+      "interrupted": false,
+      "elapsed_seconds": 0.05190625899922452,
+      "stdout": "\nrunning 2 tests\ntest spatial::tests::tree_owns_frozen_envelopes_and_keeps_duplicate_tokens ... ok\ntest spatial::tests::frozen_spatial_queries_match_bundled_jts_order_and_envelopes ... ok\n\ntest result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 16 filtered out; finished in 0.05s\n\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "<rustc>",
+        "--edition=2024",
+        "--test",
+        "<project-root>/crates/core/src/lib.rs",
+        "-C",
+        "opt-level=2",
+        "-o",
+        "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/rust/spatial-final-optimized"
+      ],
+      "cwd": "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/rust",
+      "pid": 96,
+      "process_group": 96,
+      "exit_code": 0,
+      "timed_out": false,
+      "interrupted": false,
+      "elapsed_seconds": 2.5314831219984626,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/rust/spatial-final-optimized",
+        "spatial::tests",
+        "--nocapture"
+      ],
+      "cwd": "<project-root>/.workflow-local/spatial-oracle-qp5gnry2/rust",
+      "pid": 154,
+      "process_group": 154,
+      "exit_code": 0,
+      "timed_out": false,
+      "interrupted": false,
+      "elapsed_seconds": 0.01527942000029725,
+      "stdout": "\nrunning 2 tests\ntest spatial::tests::tree_owns_frozen_envelopes_and_keeps_duplicate_tokens ... ok\ntest spatial::tests::frozen_spatial_queries_match_bundled_jts_order_and_envelopes ... ok\n\ntest result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 16 filtered out; finished in 0.01s\n\n",
+      "stderr": ""
+    }
+  ],
+  "bytecode_evidence": {
+    "bytecode-AbstractSTRtree.txt": {
+      "path": ".workflow-local/spatial-oracle-qp5gnry2/bytecode-AbstractSTRtree.txt",
+      "sha256": "4a0146590af11c434029da2bb9a2d7d0467b6fa89a5f3341ebfa4542b6df7e47"
+    },
+    "bytecode-Envelope.txt": {
+      "path": ".workflow-local/spatial-oracle-qp5gnry2/bytecode-Envelope.txt",
+      "sha256": "1a97ec32e63c7bbab33b1a0496fb35d0b6f98f77cb003f4470f02db14a6fcc4a"
+    },
+    "bytecode-STRtree$1.txt": {
+      "path": ".workflow-local/spatial-oracle-qp5gnry2/bytecode-STRtree$1.txt",
+      "sha256": "62b604ae624c4eee589e8f6549ca57b68b8096190074a037abb13667257a89e9"
+    },
+    "bytecode-STRtree$2.txt": {
+      "path": ".workflow-local/spatial-oracle-qp5gnry2/bytecode-STRtree$2.txt",
+      "sha256": "9594cf33db62e7043830daa72a5c55f8a2af533691dadd391eeebcb122f775dc"
+    },
+    "bytecode-STRtree.txt": {
+      "path": ".workflow-local/spatial-oracle-qp5gnry2/bytecode-STRtree.txt",
+      "sha256": "8ee1d8ab27ab6552d5bf6c6be661bc24df00d072657ecb85cff6a2784ebceeff"
+    }
+  },
+  "algorithm_authority": {
+    "versioned_artifact": "Exact embedded JTS 1.15.0 bytecode, matched against extracted bytes",
+    "primary_crosschecks": [
+      "https://raw.githubusercontent.com/locationtech/jts/master/modules/core/src/main/java/org/locationtech/jts/index/strtree/STRtree.java",
+      "https://raw.githubusercontent.com/locationtech/jts/master/modules/core/src/main/java/org/locationtech/jts/index/strtree/AbstractSTRtree.java",
+      "https://raw.githubusercontent.com/locationtech/jts/master/modules/core/src/main/java/org/locationtech/jts/geom/Envelope.java"
+    ],
+    "tagged_source_fetch": "Attempted official jts-1.15.0 source URLs returned cache misses; current master is not claimed as pinned source"
+  },
+  "license": {
+    "selected": "EDL-1.0 (BSD-3-Clause alternative)",
+    "artifact_evidence": "Embedded META-INF/MANIFEST.MF Bundle-License lists LICENSE_EPLv1.txt and LICENSE_EDLv1.txt",
+    "primary_release": "https://github.com/locationtech/jts/releases/tag/jts-1.15.0",
+    "primary_text": "https://raw.githubusercontent.com/locationtech/jts/master/LICENSE_EDLv1.txt",
+    "retained_notice": "Full Vivid Solutions 2016 and Eclipse 2007 notices, conditions, and disclaimer in spatial.rs",
+    "binary_attribution_requirement": "Retain the same notice in binary distribution attribution materials",
+    "new_runtime_dependencies": 0
+  },
+  "comparison_contract": {
+    "envelope": "Exact raw double bits for all item and query normalized envelopes",
+    "query": "Exact ordered token sequence including duplicates",
+    "tree": "Immutable eager build replaces source lazy build only after the complete insertion sequence",
+    "java_internal_assertions": "Exact query-result multiset matches independent linear membership enumeration using real Envelope.intersects; repeated results remain identical",
+    "rust_internal_assertions": "Every recorded envelope and ordered query matches; independent frozen ownership and duplicate-token checks pass"
+  },
+  "negative_controls": {
+    "capacity16": "Exit 101; count-11-pattern-0-order-0 all-normal query differs from expected capacity-10 order",
+    "missing_profile": "Exit 1 before output creation; user.home isolation rejected",
+    "existing_output": "Exit 1; existing output bytes remain unchanged"
+  },
+  "preservation": {
+    "reference_files_checked_before_and_after": 74,
+    "all_reference_files_unchanged": true,
+    "source_game_edits": false,
+    "worker_edits_to_tracker_config_or_shared_files": false,
+    "worker_git_mutation": false
+  },
+  "limitations": [
+    "No complete World frame, live object-lifetime, contact, energy, newborn, or corridor behavior is accepted.",
+    "Only integer Rectangle inputs are supported; null/nonfinite/floating Envelope API is excluded.",
+    "No dynamic insertion/removal or nearest-neighbor API is implemented.",
+    "The 12,500-entry case proves deterministic query parity, without establishing a performance budget.",
+    "Root owns shared workspace verification and World integration."
+  ]
+}

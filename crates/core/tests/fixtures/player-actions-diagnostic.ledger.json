@@ -1,0 +1,107 @@
+{
+  "status": "SOURCE_PROTOCOL_FROZEN_BEFORE_RUST",
+  "mode": "diagnostic",
+  "fixture_sha256": "c708fd1d7aa930084d0188b32fdcd1924fa49ba9537d82927ecd4223add5e3f9",
+  "fixture_bytes": 326241,
+  "rows": 8658,
+  "tags": {
+    "C": 2,
+    "U": 294,
+    "I": 20,
+    "G": 1680,
+    "N": 2160,
+    "A": 4,
+    "P": 10,
+    "O": 3080,
+    "H": 60,
+    "W": 100,
+    "V": 150,
+    "Q": 20,
+    "S": 520,
+    "T": 490,
+    "Y": 50,
+    "R": 10,
+    "K": 4,
+    "X": 2,
+    "E": 2
+  },
+  "cases": 2,
+  "snapshots": 10,
+  "operations": {
+    "kill": 2,
+    "revive": 2
+  },
+  "discoveries": 0,
+  "actor_views": 20,
+  "dispositions": {
+    "metadata_and_commands": 388,
+    "supplied_input_GN": 640,
+    "raw_diagnostic_unpassed_observations": 7560,
+    "organism_collaborators": 40,
+    "world_collaborators": 30
+  },
+  "logical_owner_projection_rows": 10,
+  "logical_owner_projection": "V.worldStatistics",
+  "typed_targets": [
+    {
+      "target": "actor:victim:_geneticCode",
+      "type": "GeneticCode",
+      "count": 1
+    },
+    {
+      "target": "genome:g0:construction",
+      "type": "String",
+      "count": 2
+    },
+    {
+      "target": "genome:g0:gene0._color",
+      "type": "Color",
+      "count": 1
+    },
+    {
+      "target": "genome:g1:construction",
+      "type": "String",
+      "count": 2
+    },
+    {
+      "target": "genome:g2:construction",
+      "type": "String",
+      "count": 2
+    },
+    {
+      "target": "genome:g3:construction",
+      "type": "String",
+      "count": 2
+    },
+    {
+      "target": "genome:g4:construction",
+      "type": "String",
+      "count": 2
+    },
+    {
+      "target": "visible:selected",
+      "type": "String",
+      "count": 2
+    },
+    {
+      "target": "world:_CH4",
+      "type": "double",
+      "count": 2
+    },
+    {
+      "target": "world:_CO2",
+      "type": "double",
+      "count": 2
+    },
+    {
+      "target": "world:_O2",
+      "type": "double",
+      "count": 2
+    }
+  ],
+  "pick_outcomes": {},
+  "genotype_scopes": {
+    "observable": 50
+  },
+  "rust_replay": "Not executed"
+}

@@ -1,0 +1,9 @@
+{
+  "scope": "Actual Math.round(int/10) and real pasted flower initial effects",
+  "helper_sha256": "75b8aec35972f0ef4250ada2457640d4fc500ae2b1901629f453e6ccb5df466e",
+  "helper_class_sha256": "7a8aa1a47006999fefa45c423c59d6099d007ce16461b3e3c11b66f7c36bff84",
+  "fixture_sha256": "07a1fa146dd5ed0724447a773ba7267f3b43dd2f93a25a942af88328320f0cad",
+  "rows": 20,
+  "source_source_jar_identical": true,
+  "receipt": ".workflow-local/threshold-oracle-7af3oq6q/commands.json"
+}

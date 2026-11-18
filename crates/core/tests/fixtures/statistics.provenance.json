@@ -1,0 +1,2061 @@
+{
+  "schema": "biogenesis-statistics-oracle-v1",
+  "generated_utc": "2026-10-26T00:49:34.537087+00:00",
+  "helper": {
+    "path": "tools/reference/StatisticsOracle.java",
+    "sha256": "14f90b9131a6bd5fe83d2c059647ec54ff48aa4064291c463109b12117140abf",
+    "compiled_classes": {
+      "helpers-source/biogenesis/StatisticsOracle$Capture.class": "5504d88850b77853e38cae16e7f026af34dae1b576e0cb77bf82df526772d585",
+      "helpers-source/biogenesis/StatisticsOracle.class": "2fdf6165bbbf26438fa40a920bb1d2f0d9190a844e3170c4e36a43d5d6b0bcf9",
+      "helpers-jar/biogenesis/StatisticsOracle$Capture.class": "5504d88850b77853e38cae16e7f026af34dae1b576e0cb77bf82df526772d585",
+      "helpers-jar/biogenesis/StatisticsOracle.class": "2fdf6165bbbf26438fa40a920bb1d2f0d9190a844e3170c4e36a43d5d6b0bcf9"
+    },
+    "source_jar_helper_classes_identical": true,
+    "mode": "canonical"
+  },
+  "fixture": {
+    "path": "crates/core/tests/fixtures/statistics.tsv",
+    "sha256": "bcc5c8b489b5591f318486176b2647e816d899ec05af854a077e26fe771bcf8a",
+    "bytes": 1809221,
+    "cases": 29,
+    "snapshots": 134,
+    "instance_fields_per_snapshot": 52,
+    "getters_per_snapshot": 49,
+    "actual_event_scan_calls": 255,
+    "events_by_method": {
+      "eventOrganismCreated": 3,
+      "eventPopulationIncrease": 5,
+      "eventTime": 138,
+      "eventPopulationDecrease": 4,
+      "eventOrganismBorn": 42,
+      "eventOrganismDie": 26,
+      "eventOrganismInfects": 29,
+      "findBestAliveBeings": 8
+    },
+    "rows": 47902,
+    "row_counts": {
+      "C": 29,
+      "U": 116,
+      "I": 303,
+      "G": 13692,
+      "N": 19560,
+      "A": 116,
+      "P": 134,
+      "S": 6968,
+      "T": 6566,
+      "R": 134,
+      "E": 29,
+      "K": 255
+    },
+    "S_T_G_N_rows_including_constructor_checks": 46786,
+    "derived_observation_rows": 40870,
+    "supplied_genotype_rows": 5916,
+    "metadata_and_commands": 982,
+    "constructor_rng_rows": 134,
+    "source_source_jar_outputs_identical": true
+  },
+  "reference": {
+    "manifest": "docs/evidence/reference-manifest.json",
+    "original_hash_size_mode_checks": 74,
+    "source_compile_receipt": ".workflow-local/reference-build/compile.json",
+    "source_compile_receipt_sha256": "4fc1785c218238508d72b89ba883d94bc8a1fa24631e990463dd71502a78e184",
+    "source_sha256": {
+      "Gene": "d070db688526a401c8b55904c06066b2169ca82c76837e3001b4c423bc80e720",
+      "GeneticCode": "f8bf3d0315cec8a2bf515a1626391fe5b646e47566234d398ef58bbdbc3a9004",
+      "Organism": "8650cb0983069dbae09e2ca704059fb82761fa6e0d87f35218c2342ffc60df46",
+      "Utils": "7b3306148684ba111629690a928dcb45abd4825104cfb90b530cd2d0dc6dd2b3",
+      "World": "a67543055a665a9a378e37c860671996e2ca0f510cb622375172a24333d7cae1",
+      "WorldStatistics": "407bcd4bec5e947f26ccfb02a1a590bec6eb9f22f675ad88d9bb974f686ebe15"
+    },
+    "backend_class_sha256": {
+      "Gene": {
+        "compiled_source": "29fe7b153555ded4383072debd0452bed5f92692afd0488a88c297d5f04f6ea8",
+        "bundled_jar": "b307c29cbd73a98cdcbf7d5da9a3ed771fd4d419f6426fbfd41510934c0a7988"
+      },
+      "GeneticCode": {
+        "compiled_source": "4bbf99eaf9006840ecbba0958496372a220ed44c4e57c8341c4de3dc29f3fb30",
+        "bundled_jar": "2aba7f494115279c26bb918dc8156c7ff67af047c2bcb32e35db113f2b87c51e"
+      },
+      "Organism": {
+        "compiled_source": "e8facb409642f0288411785985cbfd96440f644226795f14de24705554a46e22",
+        "bundled_jar": "561d53132aa1765ba766c7d251a98090617c7e9884ae8ed1f9543237e32257f0"
+      },
+      "Utils": {
+        "compiled_source": "67adba4432972ffa3922b6f622d2cc12bf0e703a7dfbf97ae94f3f95387b1884",
+        "bundled_jar": "8f258ba2cb30beea85f44a60ecb4189faf7493f39102712bc9ff1114456e1060"
+      },
+      "World": {
+        "compiled_source": "9091d4e5cae555493971a37a9c8fc77e2250e68db073a120a3a08b57b03e131e",
+        "bundled_jar": "be8067767dc18b46fbd7fd798c5e67e8a58ff6922b78d65eee28ab033360bd33"
+      },
+      "WorldStatistics": {
+        "compiled_source": "ab04358e54edf5120d703f0d980c72a136ab74165e5bbec4b55719ab097c7863",
+        "bundled_jar": "cc5e6f8d4adfb96a41269b4dc7a3ab27224513d8076d68ee42be2ab518e0c236"
+      }
+    },
+    "jar_sha256": "0baeae8d29f5fdbbb830c1a9e51c7f2b5314a33011b20ec7471eeaa27f0398e1",
+    "jts_sha256": "00102cde26c457b81fbb0248e4f8845884243caba0dc9b7fb42e0ea877383bc1",
+    "eight_prior_tsv_sha256": {
+      "genetics.tsv": "1fc3f745a83427c499d84884dfdb6864fdc222861feb30488d7083a4a0126b71",
+      "organism_state.tsv": "298e7a37eb2983252797a40e45ff721141ba22e6b8cfdaba91a1bfa079552f8b",
+      "paste_rejection.tsv": "73b1fa2480d2211e29cbbb24c4653c18d3a0786c5e0074f84e0c378b0b333db9",
+      "genotype_identity.tsv": "b6a85cb8b2b628a8a8b25c3de2db1445a61433b06c7b66647670c07a1ea0b9ac",
+      "birth.tsv": "8b9bcee0ed1232b1d90050587e52cb19548a14f833da63749dcd6c96ccae8a22",
+      "birth_variants.tsv": "ababf3bdecebcfda1c56b99cf08343157b6091e2b95f9ab63010de1c13e04b96",
+      "physics.tsv": "50151aaaeb0de8502bb1e22d0256ce77273e83851713a0b43337b66835de72ff",
+      "movement.tsv": "ca8c5078821d339f6aaabb47e593de0da62e44c59df69bf5d4ee8ee01dc84207"
+    }
+  },
+  "execution": {
+    "raw_receipts": ".workflow-local/statistics-oracle-969bab_9/commands.json",
+    "versions": {
+      "java": "openjdk version \"21.0.12.1\" 2026-08-18\nOpenJDK Runtime Environment (build 21.0.12.1+1)\nOpenJDK 64-Bit Server VM (build 21.0.12.1+1, mixed mode, sharing)\n",
+      "javac": "javac 21.0.12.1\n"
+    },
+    "compile_commands": [
+      {
+        "argv": [
+          "javac",
+          "-encoding",
+          "UTF-8",
+          "-cp",
+          "<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "-d",
+          "<project-root>/.workflow-local/statistics-oracle-969bab_9/helpers-source",
+          "<project-root>/tools/reference/StatisticsOracle.java"
+        ],
+        "cwd": "<project-root>/.workflow-local/statistics-oracle-969bab_9",
+        "pid": 4,
+        "process_group": 4,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.5944908080018649,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "javac",
+          "-encoding",
+          "UTF-8",
+          "-cp",
+          "<reference-root>/ColorMod_2_01/biogenesis.jar:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "-d",
+          "<project-root>/.workflow-local/statistics-oracle-969bab_9/helpers-jar",
+          "<project-root>/tools/reference/StatisticsOracle.java"
+        ],
+        "cwd": "<project-root>/.workflow-local/statistics-oracle-969bab_9",
+        "pid": 32,
+        "process_group": 32,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.5762401060019329,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "positive_runs": [
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx384m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/statistics-oracle-969bab_9/canonical-source-a/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/statistics-oracle-969bab_9/canonical-source-a/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/statistics-oracle-969bab_9/canonical-source-a/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/statistics-oracle-969bab_9/canonical-source-a/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/statistics-oracle-969bab_9/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.StatisticsOracle",
+          "<project-root>/.workflow-local/statistics-oracle-969bab_9/canonical-source-a/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/statistics-oracle-969bab_9/canonical-source-a",
+        "pid": 61,
+        "process_group": 61,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.2950844910010346,
+        "stdout": "STATISTICS_ORACLE PASS cases=29 snapshots=134 events=255\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx384m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/statistics-oracle-969bab_9/canonical-source-b/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/statistics-oracle-969bab_9/canonical-source-b/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/statistics-oracle-969bab_9/canonical-source-b/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/statistics-oracle-969bab_9/canonical-source-b/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/statistics-oracle-969bab_9/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.StatisticsOracle",
+          "<project-root>/.workflow-local/statistics-oracle-969bab_9/canonical-source-b/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/statistics-oracle-969bab_9/canonical-source-b",
+        "pid": 4,
+        "process_group": 4,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.299908711000171,
+        "stdout": "STATISTICS_ORACLE PASS cases=29 snapshots=134 events=255\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx384m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/statistics-oracle-969bab_9/canonical-jar/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/statistics-oracle-969bab_9/canonical-jar/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/statistics-oracle-969bab_9/canonical-jar/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/statistics-oracle-969bab_9/canonical-jar/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/statistics-oracle-969bab_9/helpers-jar:<reference-root>/ColorMod_2_01/biogenesis.jar:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.StatisticsOracle",
+          "<project-root>/.workflow-local/statistics-oracle-969bab_9/canonical-jar/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/statistics-oracle-969bab_9/canonical-jar",
+        "pid": 33,
+        "process_group": 33,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.25287269900218234,
+        "stdout": "STATISTICS_ORACLE PASS cases=29 snapshots=134 events=255\n",
+        "stderr": ""
+      }
+    ],
+    "negative_guards": [
+      {
+        "argv": [
+          "java",
+          "-Djava.awt.headless=true",
+          "-cp",
+          "<project-root>/.workflow-local/statistics-oracle-969bab_9/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.StatisticsOracle",
+          "<project-root>/.workflow-local/statistics-oracle-969bab_9/canonical-negative/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/statistics-oracle-969bab_9/canonical-negative",
+        "pid": 40,
+        "process_group": 40,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.02847712400034652,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: user.home\n\tat biogenesis.StatisticsOracle.require(StatisticsOracle.java:141)\n\tat biogenesis.StatisticsOracle.main(StatisticsOracle.java:238)\n"
+      },
+      {
+        "argv": [
+          "java",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/statistics-oracle-969bab_9/canonical-source-a/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/statistics-oracle-969bab_9/canonical-source-a/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/statistics-oracle-969bab_9/canonical-source-a/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/statistics-oracle-969bab_9/canonical-source-a/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/statistics-oracle-969bab_9/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.StatisticsOracle",
+          "<project-root>/.workflow-local/statistics-oracle-969bab_9/canonical-source-a/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/statistics-oracle-969bab_9/canonical-negative",
+        "pid": 58,
+        "process_group": 58,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.029678109000087716,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Output directory must not exist\n\tat biogenesis.StatisticsOracle.require(StatisticsOracle.java:141)\n\tat biogenesis.StatisticsOracle.main(StatisticsOracle.java:240)\n"
+      }
+    ],
+    "headless": true,
+    "explicit_profile_properties": [
+      "user.home",
+      "java.io.tmpdir",
+      "java.util.prefs.userRoot",
+      "java.util.prefs.systemRoot"
+    ]
+  },
+  "comparison_contract": {
+    "declared_before_rust_comparison": true,
+    "scalars": "Exact bits, including signed zero, signed NaNs, payloads and infinities; no floating tolerance.",
+    "classification_and_order": "Exact state integers, comparisons, ties, list order and source word wrapping.",
+    "references": "Exact mutable GenomeRef topology; no equal-value substitution.",
+    "constructor_genotypes": "Input G/N rows are supplied recipes and optional constructor checks, not statistics-derived outputs.",
+    "constructor_rng_exclusions": {
+      "rows": 134,
+      "seed": 506172,
+      "actual_organism_constructors": 4,
+      "nextDouble_draws_per_constructor": 1,
+      "plain_random_crosscheck": true,
+      "reason": "Rust statistics API contains no RNG and does not claim Java actor allocation parity."
+    },
+    "rust_status": "This provenance reports Java evidence only, without claiming Rust or World integration parity."
+  },
+  "input_contract": {
+    "actors": "Four real unplaced Organism(world, supplied GeneticCode) instances with labelled counters, raw age, alive and active flags.",
+    "genomes": "g0 explicit; g1 actual clone of g0; g2 independent explicit; all equal-valued initially.",
+    "shared_alias": "Actors a/c share g0; b uses g1; d uses g2, except the raw-null diagnostic.",
+    "typed_controls": "Named actor/statistics/genome targets apply in exact recorded row order.",
+    "history_controls": "Actual Java getter-returned lists are seeded with labelled raw history inputs; Rust may seed private state without a mutable UI getter claim."
+  },
+  "observed_cases": [
+    {
+      "name": "defaults",
+      "mode": "canonical",
+      "events": []
+    },
+    {
+      "name": "population-events-and-times",
+      "mode": "canonical",
+      "events": [
+        [
+          "eventOrganismCreated"
+        ],
+        [
+          "eventOrganismCreated"
+        ],
+        [
+          "eventPopulationIncrease",
+          "32"
+        ],
+        [
+          "eventTime",
+          "32",
+          "3ff0000000000000",
+          "411e848400000000",
+          "bff0000000000000"
+        ],
+        [
+          "eventPopulationIncrease",
+          "32"
+        ],
+        [
+          "eventPopulationIncrease",
+          "33"
+        ],
+        [
+          "eventPopulationDecrease",
+          "32"
+        ],
+        [
+          "eventPopulationDecrease",
+          "0"
+        ],
+        [
+          "eventTime",
+          "1000",
+          "3ff0000000000000",
+          "411e848400000000",
+          "bff0000000000000"
+        ],
+        [
+          "eventPopulationIncrease",
+          "33"
+        ],
+        [
+          "eventPopulationDecrease",
+          "0"
+        ],
+        [
+          "eventPopulationIncrease",
+          "2147483647"
+        ],
+        [
+          "eventPopulationDecrease",
+          "-2147483648"
+        ]
+      ]
+    },
+    {
+      "name": "record-ties-and-optional-donors",
+      "mode": "canonical",
+      "events": [
+        [
+          "eventOrganismBorn",
+          "d",
+          "a"
+        ],
+        [
+          "eventOrganismDie",
+          "c",
+          "a"
+        ],
+        [
+          "eventOrganismInfects",
+          "b",
+          "a"
+        ],
+        [
+          "eventTime",
+          "12",
+          "4000000000000000",
+          "411e847c00000000",
+          "4008000000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "b"
+        ],
+        [
+          "eventOrganismDie",
+          "a",
+          "b"
+        ],
+        [
+          "eventOrganismInfects",
+          "c",
+          "b"
+        ],
+        [
+          "eventOrganismBorn",
+          "a",
+          "b"
+        ],
+        [
+          "eventOrganismDie",
+          "b",
+          "b"
+        ],
+        [
+          "eventOrganismInfects",
+          "a",
+          "b"
+        ],
+        [
+          "eventOrganismDie",
+          "d",
+          "~"
+        ],
+        [
+          "eventOrganismInfects",
+          "d",
+          "~"
+        ]
+      ]
+    },
+    {
+      "name": "alive-scans-reset-order-and-inactive",
+      "mode": "canonical",
+      "events": [
+        [
+          "findBestAliveBeings",
+          "a,b,c,d"
+        ],
+        [
+          "findBestAliveBeings",
+          "b,a,c,d"
+        ],
+        [
+          "findBestAliveBeings",
+          "a,b,c,d"
+        ],
+        [
+          "findBestAliveBeings",
+          "a,b,c,d"
+        ],
+        [
+          "findBestAliveBeings",
+          "a,b,c,d"
+        ],
+        [
+          "findBestAliveBeings",
+          "~"
+        ],
+        [
+          "findBestAliveBeings",
+          "a"
+        ]
+      ]
+    },
+    {
+      "name": "shared-genomes-and-metadata-propagation",
+      "mode": "canonical",
+      "events": [
+        [
+          "eventOrganismBorn",
+          "d",
+          "a"
+        ],
+        [
+          "eventOrganismDie",
+          "b",
+          "a"
+        ],
+        [
+          "eventOrganismInfects",
+          "c",
+          "a"
+        ],
+        [
+          "findBestAliveBeings",
+          "a,b,c"
+        ]
+      ]
+    },
+    {
+      "name": "natural-extinction-states",
+      "mode": "canonical",
+      "events": [
+        [
+          "eventTime",
+          "32",
+          "0000000000000000",
+          "411e848000000000",
+          "0000000000000000"
+        ],
+        [
+          "eventOrganismDie",
+          "d",
+          "~"
+        ],
+        [
+          "eventTime",
+          "31",
+          "0000000000000000",
+          "411e848000000000",
+          "0000000000000000"
+        ],
+        [
+          "eventOrganismDie",
+          "d",
+          "~"
+        ],
+        [
+          "eventOrganismDie",
+          "d",
+          "~"
+        ],
+        [
+          "eventTime",
+          "29",
+          "0000000000000000",
+          "411e848000000000",
+          "0000000000000000"
+        ],
+        [
+          "eventTime",
+          "29",
+          "0000000000000000",
+          "411e848000000000",
+          "0000000000000000"
+        ],
+        [
+          "eventTime",
+          "29",
+          "0000000000000000",
+          "411e848000000000",
+          "0000000000000000"
+        ]
+      ]
+    },
+    {
+      "name": "extinction-state-0-deaths-3",
+      "mode": "canonical",
+      "events": [
+        [
+          "eventTime",
+          "12",
+          "0000000000000000",
+          "411e848000000000",
+          "0000000000000000"
+        ]
+      ]
+    },
+    {
+      "name": "extinction-state-0-deaths-4",
+      "mode": "canonical",
+      "events": [
+        [
+          "eventTime",
+          "12",
+          "0000000000000000",
+          "411e848000000000",
+          "0000000000000000"
+        ]
+      ]
+    },
+    {
+      "name": "extinction-state-0-deaths-6",
+      "mode": "canonical",
+      "events": [
+        [
+          "eventTime",
+          "12",
+          "0000000000000000",
+          "411e848000000000",
+          "0000000000000000"
+        ]
+      ]
+    },
+    {
+      "name": "extinction-state-0-deaths-7",
+      "mode": "canonical",
+      "events": [
+        [
+          "eventTime",
+          "12",
+          "0000000000000000",
+          "411e848000000000",
+          "0000000000000000"
+        ]
+      ]
+    },
+    {
+      "name": "extinction-state-1-deaths-3",
+      "mode": "canonical",
+      "events": [
+        [
+          "eventTime",
+          "12",
+          "0000000000000000",
+          "411e848000000000",
+          "0000000000000000"
+        ]
+      ]
+    },
+    {
+      "name": "extinction-state-1-deaths-4",
+      "mode": "canonical",
+      "events": [
+        [
+          "eventTime",
+          "12",
+          "0000000000000000",
+          "411e848000000000",
+          "0000000000000000"
+        ]
+      ]
+    },
+    {
+      "name": "extinction-state-1-deaths-6",
+      "mode": "canonical",
+      "events": [
+        [
+          "eventTime",
+          "12",
+          "0000000000000000",
+          "411e848000000000",
+          "0000000000000000"
+        ]
+      ]
+    },
+    {
+      "name": "extinction-state-1-deaths-7",
+      "mode": "canonical",
+      "events": [
+        [
+          "eventTime",
+          "12",
+          "0000000000000000",
+          "411e848000000000",
+          "0000000000000000"
+        ]
+      ]
+    },
+    {
+      "name": "extinction-state-2-deaths-3",
+      "mode": "canonical",
+      "events": [
+        [
+          "eventTime",
+          "12",
+          "0000000000000000",
+          "411e848000000000",
+          "0000000000000000"
+        ]
+      ]
+    },
+    {
+      "name": "extinction-state-2-deaths-4",
+      "mode": "canonical",
+      "events": [
+        [
+          "eventTime",
+          "12",
+          "0000000000000000",
+          "411e848000000000",
+          "0000000000000000"
+        ]
+      ]
+    },
+    {
+      "name": "extinction-state-2-deaths-6",
+      "mode": "canonical",
+      "events": [
+        [
+          "eventTime",
+          "12",
+          "0000000000000000",
+          "411e848000000000",
+          "0000000000000000"
+        ]
+      ]
+    },
+    {
+      "name": "extinction-state-2-deaths-7",
+      "mode": "canonical",
+      "events": [
+        [
+          "eventTime",
+          "12",
+          "0000000000000000",
+          "411e848000000000",
+          "0000000000000000"
+        ]
+      ]
+    },
+    {
+      "name": "extinction-state-3-deaths-3",
+      "mode": "canonical",
+      "events": [
+        [
+          "eventTime",
+          "12",
+          "0000000000000000",
+          "411e848000000000",
+          "0000000000000000"
+        ]
+      ]
+    },
+    {
+      "name": "extinction-state-3-deaths-4",
+      "mode": "canonical",
+      "events": [
+        [
+          "eventTime",
+          "12",
+          "0000000000000000",
+          "411e848000000000",
+          "0000000000000000"
+        ]
+      ]
+    },
+    {
+      "name": "extinction-state-3-deaths-6",
+      "mode": "canonical",
+      "events": [
+        [
+          "eventTime",
+          "12",
+          "0000000000000000",
+          "411e848000000000",
+          "0000000000000000"
+        ]
+      ]
+    },
+    {
+      "name": "extinction-state-3-deaths-7",
+      "mode": "canonical",
+      "events": [
+        [
+          "eventTime",
+          "12",
+          "0000000000000000",
+          "411e848000000000",
+          "0000000000000000"
+        ]
+      ]
+    },
+    {
+      "name": "history-rollover-105",
+      "mode": "canonical",
+      "events": [
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventOrganismDie",
+          "d",
+          "b"
+        ],
+        [
+          "eventOrganismInfects",
+          "b",
+          "c"
+        ],
+        [
+          "eventTime",
+          "-52",
+          "0000000000000000",
+          "411e848000000000",
+          "0000000000000000"
+        ],
+        [
+          "eventTime",
+          "-51",
+          "3fd0000000000000",
+          "411e847200000000",
+          "bfc0000000000000"
+        ],
+        [
+          "eventTime",
+          "-50",
+          "3fe0000000000000",
+          "411e846400000000",
+          "bfd0000000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventTime",
+          "-49",
+          "3fe8000000000000",
+          "411e845600000000",
+          "bfd8000000000000"
+        ],
+        [
+          "eventTime",
+          "-48",
+          "3ff0000000000000",
+          "411e844800000000",
+          "bfe0000000000000"
+        ],
+        [
+          "eventOrganismInfects",
+          "b",
+          "c"
+        ],
+        [
+          "eventTime",
+          "-47",
+          "3ff4000000000000",
+          "411e843a00000000",
+          "bfe4000000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventTime",
+          "-46",
+          "3ff8000000000000",
+          "411e842c00000000",
+          "bfe8000000000000"
+        ],
+        [
+          "eventOrganismDie",
+          "d",
+          "b"
+        ],
+        [
+          "eventTime",
+          "-45",
+          "3ffc000000000000",
+          "411e841e00000000",
+          "bfec000000000000"
+        ],
+        [
+          "eventTime",
+          "-44",
+          "4000000000000000",
+          "411e841000000000",
+          "bff0000000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventTime",
+          "-43",
+          "4002000000000000",
+          "411e840200000000",
+          "bff2000000000000"
+        ],
+        [
+          "eventOrganismInfects",
+          "b",
+          "c"
+        ],
+        [
+          "eventTime",
+          "-42",
+          "4004000000000000",
+          "411e83f400000000",
+          "bff4000000000000"
+        ],
+        [
+          "eventTime",
+          "-41",
+          "4006000000000000",
+          "411e83e600000000",
+          "bff6000000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventTime",
+          "-40",
+          "4008000000000000",
+          "411e83d800000000",
+          "bff8000000000000"
+        ],
+        [
+          "eventTime",
+          "-39",
+          "400a000000000000",
+          "411e83ca00000000",
+          "bffa000000000000"
+        ],
+        [
+          "eventOrganismDie",
+          "d",
+          "b"
+        ],
+        [
+          "eventTime",
+          "-38",
+          "400c000000000000",
+          "411e83bc00000000",
+          "bffc000000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventOrganismInfects",
+          "b",
+          "c"
+        ],
+        [
+          "eventTime",
+          "-37",
+          "400e000000000000",
+          "411e83ae00000000",
+          "bffe000000000000"
+        ],
+        [
+          "eventTime",
+          "-36",
+          "4010000000000000",
+          "411e83a000000000",
+          "c000000000000000"
+        ],
+        [
+          "eventTime",
+          "-35",
+          "4011000000000000",
+          "411e839200000000",
+          "c001000000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventTime",
+          "-34",
+          "4012000000000000",
+          "411e838400000000",
+          "c002000000000000"
+        ],
+        [
+          "eventTime",
+          "-33",
+          "4013000000000000",
+          "411e837600000000",
+          "c003000000000000"
+        ],
+        [
+          "eventOrganismInfects",
+          "b",
+          "c"
+        ],
+        [
+          "eventTime",
+          "-32",
+          "4014000000000000",
+          "411e836800000000",
+          "c004000000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventOrganismDie",
+          "d",
+          "b"
+        ],
+        [
+          "eventTime",
+          "-31",
+          "4015000000000000",
+          "411e835a00000000",
+          "c005000000000000"
+        ],
+        [
+          "eventTime",
+          "-30",
+          "4016000000000000",
+          "411e834c00000000",
+          "c006000000000000"
+        ],
+        [
+          "eventTime",
+          "-29",
+          "4017000000000000",
+          "411e833e00000000",
+          "c007000000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventTime",
+          "-28",
+          "4018000000000000",
+          "411e833000000000",
+          "c008000000000000"
+        ],
+        [
+          "eventOrganismInfects",
+          "b",
+          "c"
+        ],
+        [
+          "eventTime",
+          "-27",
+          "4019000000000000",
+          "411e832200000000",
+          "c009000000000000"
+        ],
+        [
+          "eventTime",
+          "-26",
+          "401a000000000000",
+          "411e831400000000",
+          "c00a000000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventTime",
+          "-25",
+          "401b000000000000",
+          "411e830600000000",
+          "c00b000000000000"
+        ],
+        [
+          "eventOrganismDie",
+          "d",
+          "b"
+        ],
+        [
+          "eventTime",
+          "-24",
+          "401c000000000000",
+          "411e82f800000000",
+          "c00c000000000000"
+        ],
+        [
+          "eventTime",
+          "-23",
+          "401d000000000000",
+          "411e82ea00000000",
+          "c00d000000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventOrganismInfects",
+          "b",
+          "c"
+        ],
+        [
+          "eventTime",
+          "-22",
+          "401e000000000000",
+          "411e82dc00000000",
+          "c00e000000000000"
+        ],
+        [
+          "eventTime",
+          "-21",
+          "401f000000000000",
+          "411e82ce00000000",
+          "c00f000000000000"
+        ],
+        [
+          "eventTime",
+          "-20",
+          "4020000000000000",
+          "411e82c000000000",
+          "c010000000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventTime",
+          "-19",
+          "4020800000000000",
+          "411e82b200000000",
+          "c010800000000000"
+        ],
+        [
+          "eventTime",
+          "-18",
+          "4021000000000000",
+          "411e82a400000000",
+          "c011000000000000"
+        ],
+        [
+          "eventOrganismDie",
+          "d",
+          "b"
+        ],
+        [
+          "eventOrganismInfects",
+          "b",
+          "c"
+        ],
+        [
+          "eventTime",
+          "-17",
+          "4021800000000000",
+          "411e829600000000",
+          "c011800000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventTime",
+          "-16",
+          "4022000000000000",
+          "411e828800000000",
+          "c012000000000000"
+        ],
+        [
+          "eventTime",
+          "-15",
+          "4022800000000000",
+          "411e827a00000000",
+          "c012800000000000"
+        ],
+        [
+          "eventTime",
+          "-14",
+          "4023000000000000",
+          "411e826c00000000",
+          "c013000000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventTime",
+          "-13",
+          "4023800000000000",
+          "411e825e00000000",
+          "c013800000000000"
+        ],
+        [
+          "eventOrganismInfects",
+          "b",
+          "c"
+        ],
+        [
+          "eventTime",
+          "-12",
+          "4024000000000000",
+          "411e825000000000",
+          "c014000000000000"
+        ],
+        [
+          "eventTime",
+          "-11",
+          "4024800000000000",
+          "411e824200000000",
+          "c014800000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventOrganismDie",
+          "d",
+          "b"
+        ],
+        [
+          "eventTime",
+          "-10",
+          "4025000000000000",
+          "411e823400000000",
+          "c015000000000000"
+        ],
+        [
+          "eventTime",
+          "-9",
+          "4025800000000000",
+          "411e822600000000",
+          "c015800000000000"
+        ],
+        [
+          "eventTime",
+          "-8",
+          "4026000000000000",
+          "411e821800000000",
+          "c016000000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventOrganismInfects",
+          "b",
+          "c"
+        ],
+        [
+          "eventTime",
+          "-7",
+          "4026800000000000",
+          "411e820a00000000",
+          "c016800000000000"
+        ],
+        [
+          "eventTime",
+          "-6",
+          "4027000000000000",
+          "411e81fc00000000",
+          "c017000000000000"
+        ],
+        [
+          "eventTime",
+          "-5",
+          "4027800000000000",
+          "411e81ee00000000",
+          "c017800000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventTime",
+          "-4",
+          "4028000000000000",
+          "411e81e000000000",
+          "c018000000000000"
+        ],
+        [
+          "eventOrganismDie",
+          "d",
+          "b"
+        ],
+        [
+          "eventTime",
+          "-3",
+          "4028800000000000",
+          "411e81d200000000",
+          "c018800000000000"
+        ],
+        [
+          "eventOrganismInfects",
+          "b",
+          "c"
+        ],
+        [
+          "eventTime",
+          "-2",
+          "4029000000000000",
+          "411e81c400000000",
+          "c019000000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventTime",
+          "-1",
+          "4029800000000000",
+          "411e81b600000000",
+          "c019800000000000"
+        ],
+        [
+          "eventTime",
+          "0",
+          "402a000000000000",
+          "411e81a800000000",
+          "c01a000000000000"
+        ],
+        [
+          "eventTime",
+          "1",
+          "402a800000000000",
+          "411e819a00000000",
+          "c01a800000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventTime",
+          "2",
+          "402b000000000000",
+          "411e818c00000000",
+          "c01b000000000000"
+        ],
+        [
+          "eventOrganismInfects",
+          "b",
+          "c"
+        ],
+        [
+          "eventTime",
+          "3",
+          "402b800000000000",
+          "411e817e00000000",
+          "c01b800000000000"
+        ],
+        [
+          "eventOrganismDie",
+          "d",
+          "b"
+        ],
+        [
+          "eventTime",
+          "4",
+          "402c000000000000",
+          "411e817000000000",
+          "c01c000000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventTime",
+          "5",
+          "402c800000000000",
+          "411e816200000000",
+          "c01c800000000000"
+        ],
+        [
+          "eventTime",
+          "6",
+          "402d000000000000",
+          "411e815400000000",
+          "c01d000000000000"
+        ],
+        [
+          "eventTime",
+          "7",
+          "402d800000000000",
+          "411e814600000000",
+          "c01d800000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventOrganismInfects",
+          "b",
+          "c"
+        ],
+        [
+          "eventTime",
+          "8",
+          "402e000000000000",
+          "411e813800000000",
+          "c01e000000000000"
+        ],
+        [
+          "eventTime",
+          "9",
+          "402e800000000000",
+          "411e812a00000000",
+          "c01e800000000000"
+        ],
+        [
+          "eventTime",
+          "10",
+          "402f000000000000",
+          "411e811c00000000",
+          "c01f000000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventOrganismDie",
+          "d",
+          "b"
+        ],
+        [
+          "eventTime",
+          "11",
+          "402f800000000000",
+          "411e810e00000000",
+          "c01f800000000000"
+        ],
+        [
+          "eventTime",
+          "12",
+          "4030000000000000",
+          "411e810000000000",
+          "c020000000000000"
+        ],
+        [
+          "eventOrganismInfects",
+          "b",
+          "c"
+        ],
+        [
+          "eventTime",
+          "13",
+          "4030400000000000",
+          "411e80f200000000",
+          "c020400000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventTime",
+          "14",
+          "4030800000000000",
+          "411e80e400000000",
+          "c020800000000000"
+        ],
+        [
+          "eventTime",
+          "15",
+          "4030c00000000000",
+          "411e80d600000000",
+          "c020c00000000000"
+        ],
+        [
+          "eventTime",
+          "16",
+          "4031000000000000",
+          "411e80c800000000",
+          "c021000000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventTime",
+          "17",
+          "4031400000000000",
+          "411e80ba00000000",
+          "c021400000000000"
+        ],
+        [
+          "eventOrganismDie",
+          "d",
+          "b"
+        ],
+        [
+          "eventOrganismInfects",
+          "b",
+          "c"
+        ],
+        [
+          "eventTime",
+          "18",
+          "4031800000000000",
+          "411e80ac00000000",
+          "c021800000000000"
+        ],
+        [
+          "eventTime",
+          "19",
+          "4031c00000000000",
+          "411e809e00000000",
+          "c021c00000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventTime",
+          "20",
+          "4032000000000000",
+          "411e809000000000",
+          "c022000000000000"
+        ],
+        [
+          "eventTime",
+          "21",
+          "4032400000000000",
+          "411e808200000000",
+          "c022400000000000"
+        ],
+        [
+          "eventTime",
+          "22",
+          "4032800000000000",
+          "411e807400000000",
+          "c022800000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventOrganismInfects",
+          "b",
+          "c"
+        ],
+        [
+          "eventTime",
+          "23",
+          "4032c00000000000",
+          "411e806600000000",
+          "c022c00000000000"
+        ],
+        [
+          "eventTime",
+          "24",
+          "4033000000000000",
+          "411e805800000000",
+          "c023000000000000"
+        ],
+        [
+          "eventOrganismDie",
+          "d",
+          "b"
+        ],
+        [
+          "eventTime",
+          "25",
+          "4033400000000000",
+          "411e804a00000000",
+          "c023400000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventTime",
+          "26",
+          "4033800000000000",
+          "411e803c00000000",
+          "c023800000000000"
+        ],
+        [
+          "eventTime",
+          "27",
+          "4033c00000000000",
+          "411e802e00000000",
+          "c023c00000000000"
+        ],
+        [
+          "eventOrganismInfects",
+          "b",
+          "c"
+        ],
+        [
+          "eventTime",
+          "28",
+          "4034000000000000",
+          "411e802000000000",
+          "c024000000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventTime",
+          "29",
+          "4034400000000000",
+          "411e801200000000",
+          "c024400000000000"
+        ],
+        [
+          "eventTime",
+          "30",
+          "4034800000000000",
+          "411e800400000000",
+          "c024800000000000"
+        ],
+        [
+          "eventTime",
+          "31",
+          "4034c00000000000",
+          "411e7ff600000000",
+          "c024c00000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventOrganismDie",
+          "d",
+          "b"
+        ],
+        [
+          "eventTime",
+          "32",
+          "4035000000000000",
+          "411e7fe800000000",
+          "c025000000000000"
+        ],
+        [
+          "eventOrganismInfects",
+          "b",
+          "c"
+        ],
+        [
+          "eventTime",
+          "33",
+          "4035400000000000",
+          "411e7fda00000000",
+          "c025400000000000"
+        ],
+        [
+          "eventTime",
+          "34",
+          "4035800000000000",
+          "411e7fcc00000000",
+          "c025800000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventTime",
+          "35",
+          "4035c00000000000",
+          "411e7fbe00000000",
+          "c025c00000000000"
+        ],
+        [
+          "eventTime",
+          "36",
+          "4036000000000000",
+          "411e7fb000000000",
+          "c026000000000000"
+        ],
+        [
+          "eventTime",
+          "37",
+          "4036400000000000",
+          "411e7fa200000000",
+          "c026400000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventOrganismInfects",
+          "b",
+          "c"
+        ],
+        [
+          "eventTime",
+          "38",
+          "4036800000000000",
+          "411e7f9400000000",
+          "c026800000000000"
+        ],
+        [
+          "eventOrganismDie",
+          "d",
+          "b"
+        ],
+        [
+          "eventTime",
+          "39",
+          "4036c00000000000",
+          "411e7f8600000000",
+          "c026c00000000000"
+        ],
+        [
+          "eventTime",
+          "40",
+          "4037000000000000",
+          "411e7f7800000000",
+          "c027000000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventTime",
+          "41",
+          "4037400000000000",
+          "411e7f6a00000000",
+          "c027400000000000"
+        ],
+        [
+          "eventTime",
+          "42",
+          "4037800000000000",
+          "411e7f5c00000000",
+          "c027800000000000"
+        ],
+        [
+          "eventOrganismInfects",
+          "b",
+          "c"
+        ],
+        [
+          "eventTime",
+          "43",
+          "4037c00000000000",
+          "411e7f4e00000000",
+          "c027c00000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventTime",
+          "44",
+          "4038000000000000",
+          "411e7f4000000000",
+          "c028000000000000"
+        ],
+        [
+          "eventTime",
+          "45",
+          "4038400000000000",
+          "411e7f3200000000",
+          "c028400000000000"
+        ],
+        [
+          "eventOrganismDie",
+          "d",
+          "b"
+        ],
+        [
+          "eventTime",
+          "46",
+          "4038800000000000",
+          "411e7f2400000000",
+          "c028800000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventTime",
+          "47",
+          "4038c00000000000",
+          "411e7f1600000000",
+          "c028c00000000000"
+        ],
+        [
+          "eventOrganismInfects",
+          "b",
+          "c"
+        ],
+        [
+          "eventTime",
+          "48",
+          "4039000000000000",
+          "411e7f0800000000",
+          "c029000000000000"
+        ],
+        [
+          "eventTime",
+          "49",
+          "4039400000000000",
+          "411e7efa00000000",
+          "c029400000000000"
+        ],
+        [
+          "eventOrganismBorn",
+          "c",
+          "a"
+        ],
+        [
+          "eventTime",
+          "50",
+          "4039800000000000",
+          "411e7eec00000000",
+          "c029800000000000"
+        ],
+        [
+          "eventTime",
+          "51",
+          "4039c00000000000",
+          "411e7ede00000000",
+          "c029c00000000000"
+        ],
+        [
+          "eventTime",
+          "52",
+          "403a000000000000",
+          "411e7ed000000000",
+          "c02a000000000000"
+        ]
+      ]
+    },
+    {
+      "name": "externally-seeded-history-over-100",
+      "mode": "canonical",
+      "events": [
+        [
+          "eventTime",
+          "7",
+          "8000000000000000",
+          "7ff8000000000000",
+          "7ff0000000000000"
+        ]
+      ]
+    },
+    {
+      "name": "gas-signed-zero-nan-infinity",
+      "mode": "canonical",
+      "events": [
+        [
+          "eventTime",
+          "4",
+          "8000000000000000",
+          "411e848000000000",
+          "8000000000000000"
+        ],
+        [
+          "eventTime",
+          "4",
+          "7ff8000000000042",
+          "7ff0000000000000",
+          "fff0000000000000"
+        ],
+        [
+          "eventTime",
+          "4",
+          "7ff0000000000000",
+          "fff0000000000000",
+          "7ff8000000000000"
+        ],
+        [
+          "eventTime",
+          "4",
+          "fff0000000000000",
+          "7ff8000000000000",
+          "7ff0000000000000"
+        ]
+      ]
+    },
+    {
+      "name": "constructor-nan-and-signed-zero",
+      "mode": "canonical",
+      "events": [
+        [
+          "eventTime",
+          "0",
+          "3ff0000000000000",
+          "0000000000000000",
+          "fff0000000000000"
+        ],
+        [
+          "eventTime",
+          "0",
+          "fff0000000000000",
+          "7ff0000000000000",
+          "0000000000000000"
+        ]
+      ]
+    },
+    {
+      "name": "integer-and-long-wrapping",
+      "mode": "canonical",
+      "events": [
+        [
+          "eventOrganismCreated"
+        ],
+        [
+          "eventOrganismBorn",
+          "d",
+          "a"
+        ],
+        [
+          "eventOrganismDie",
+          "c",
+          "~"
+        ],
+        [
+          "eventOrganismInfects",
+          "b",
+          "~"
+        ],
+        [
+          "eventTime",
+          "1",
+          "0000000000000000",
+          "411e848000000000",
+          "0000000000000000"
+        ]
+      ]
+    },
+    {
+      "name": "time-and-extinction-counter-wrapping",
+      "mode": "canonical",
+      "events": [
+        [
+          "eventTime",
+          "2147483647",
+          "3ff0000000000000",
+          "411e848400000000",
+          "3ff0000000000000"
+        ]
+      ]
+    },
+    {
+      "name": "actor-counter-limits-and-negative-averages",
+      "mode": "canonical",
+      "events": [
+        [
+          "eventOrganismBorn",
+          "d",
+          "a"
+        ],
+        [
+          "eventOrganismDie",
+          "c",
+          "a"
+        ],
+        [
+          "eventOrganismInfects",
+          "b",
+          "a"
+        ],
+        [
+          "eventOrganismBorn",
+          "d",
+          "b"
+        ],
+        [
+          "eventOrganismDie",
+          "c",
+          "b"
+        ],
+        [
+          "eventOrganismInfects",
+          "a",
+          "b"
+        ]
+      ]
+    }
+  ],
+  "preservation": {
+    "original_hash_size_mode_unchanged": 74,
+    "prior_tsv_fixtures_unchanged": 8,
+    "existing_outputs_preserved": true,
+    "omitted_profiles_failed_before_output_creation": true
+  },
+  "limitations": [
+    "No full World frame, UI, serialization migration, biological contact, movement or reproduction integration is executed.",
+    "The source class has no oldest-age metric.",
+    "Constructor RNG is recorded but excluded from Rust statistics comparison.",
+    "Java mutable history getter capability is not claimed for Rust UI APIs.",
+    "Rust comparisons and caller event routing are tracked separately."
+  ],
+  "observed_diagnostics": {
+    "natural_extinction_state_sequence": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      2,
+      3,
+      0
+    ],
+    "history_rollover_lengths": [
+      0,
+      1,
+      2,
+      99,
+      100,
+      100,
+      100
+    ],
+    "controlled_oversize_history_lengths": [
+      0,
+      101,
+      102
+    ],
+    "all29cases_preserve_constructor_rng_across_events": true,
+    "exact_S_T_G_N_rows_including_constructor_checks": 46786,
+    "derived_observation_rows": 40870,
+    "supplied_genotype_rows": 5916,
+    "metadata_and_commands": 982,
+    "constructor_rng_exclusions": 134,
+    "rows": 47902
+  }
+}

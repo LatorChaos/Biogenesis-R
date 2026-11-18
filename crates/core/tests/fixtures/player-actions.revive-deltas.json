@@ -1,0 +1,2374 @@
+{
+  "authority": "Actual original before-step-1 and step-1 observations",
+  "scope": "Source equality comparisons only; not Rust or reset-list reconstruction",
+  "cases": [
+    {
+      "case": "revive-retained-mixed",
+      "changed_fields": {
+        "_age": {
+          "before": [
+            "int",
+            "-2147483648"
+          ],
+          "after": [
+            "int",
+            "1"
+          ]
+        },
+        "_allfrozen": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_dodge": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_earlyReproduceEnergy": {
+          "before": [
+            "int",
+            "991"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_fallowversion": {
+          "before": [
+            "int",
+            "9"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_hasdodged": {
+          "before": [
+            "boolean",
+            "false"
+          ],
+          "after": [
+            "boolean",
+            "true"
+          ]
+        },
+        "_haseyes": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isaconsumer": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isafungus": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isakiller": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isauburn": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isblond": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_iscoral": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isenhanced": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isfrozen": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isgray": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isinfectious": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isinjured": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isonlyc4": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isreproductive": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_issilver": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_jadefactor": {
+          "before": [
+            "int",
+            "5"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_lengthfriend": {
+          "before": [
+            "int",
+            "17"
+          ],
+          "after": [
+            "int",
+            "12"
+          ]
+        },
+        "_methanotrophy": {
+          "before": [
+            "double",
+            "4011000000000000"
+          ],
+          "after": [
+            "double",
+            "3ff0000000000000"
+          ]
+        },
+        "_mphoto": {
+          "before": [
+            "double[]",
+            "c058c00000000000,c058c00000000000,c058c00000000000"
+          ],
+          "after": [
+            "double[]",
+            "3fb336a46f471de9,c058c00000000000,c000000000000000"
+          ]
+        },
+        "_plagueversion": {
+          "before": [
+            "int",
+            "10"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_reproducelate": {
+          "before": [
+            "int",
+            "11"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_segColor": {
+          "before": [
+            "Color[]",
+            "ff964b00,ff964b00,ff964b00"
+          ],
+          "after": [
+            "Color[]",
+            "ff00ff00,ffa80054,ffff0080"
+          ]
+        },
+        "_segmentpretoucheffects": {
+          "before": [
+            "int",
+            "123"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_skyversion": {
+          "before": [
+            "int",
+            "8"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_thetafriend": {
+          "before": [
+            "int",
+            "19"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_updateEffects": {
+          "before": [
+            "int",
+            "7"
+          ],
+          "after": [
+            "int",
+            "2"
+          ]
+        },
+        "active": {
+          "before": [
+            "boolean",
+            "false"
+          ],
+          "after": [
+            "boolean",
+            "true"
+          ]
+        },
+        "alive": {
+          "before": [
+            "boolean",
+            "false"
+          ],
+          "after": [
+            "boolean",
+            "true"
+          ]
+        },
+        "hasMoved": {
+          "before": [
+            "boolean",
+            "false"
+          ],
+          "after": [
+            "boolean",
+            "true"
+          ]
+        }
+      },
+      "unchanged_fields": [
+        "_I",
+        "_ID",
+        "_altruist",
+        "_antiviral",
+        "_candodge",
+        "_canmove",
+        "_canreact",
+        "_centerX",
+        "_centerY",
+        "_clockwise",
+        "_colonyPhotosynthesis",
+        "_color",
+        "_createlavender",
+        "_crowded",
+        "_dCenterX",
+        "_dCenterY",
+        "_endPointX",
+        "_endPointY",
+        "_energy",
+        "_forestphoto",
+        "_framesColor",
+        "_generationbattle",
+        "_geneticCode",
+        "_gold",
+        "_growthRatio",
+        "_hasgoodvision",
+        "_healing",
+        "_indigo",
+        "_infectedGeneticCode",
+        "_infectedReproduceEnergy",
+        "_isaplant",
+        "_islime",
+        "_isspike",
+        "_lastTheta",
+        "_lavender",
+        "_leafphoto",
+        "_lowersymmetric",
+        "_m",
+        "_m1",
+        "_m2",
+        "_maintenance",
+        "_mass",
+        "_max_age",
+        "_nChildren",
+        "_nPosition",
+        "_nTotalChildren",
+        "_nTotalInfected",
+        "_nTotalKills",
+        "_nVirusChildren",
+        "_parentID",
+        "_photosynthesis",
+        "_reproduceEnergy",
+        "_savedGeneticCode",
+        "_segbarkReaction",
+        "_segblueReaction",
+        "_segbrokenReaction",
+        "_segbrownReaction",
+        "_segconsumerReaction",
+        "_segcoralReaction",
+        "_segcreamReaction",
+        "_segdefaultReaction",
+        "_segfallowReaction",
+        "_segfireReaction",
+        "_segfriendReaction",
+        "_seggrayReaction",
+        "_seggreenReaction",
+        "_seggreenbrownReaction",
+        "_segiceReaction",
+        "_seglightblueReaction",
+        "_seglightbrownReaction",
+        "_seglilacReaction",
+        "_segmagentaReaction",
+        "_segmaroonReaction",
+        "_segments",
+        "_segmintReaction",
+        "_segochreReaction",
+        "_segoliveReaction",
+        "_segorangeReaction",
+        "_segpinkReaction",
+        "_segplagueReaction",
+        "_segplantReaction",
+        "_segredReaction",
+        "_segscourgeReaction",
+        "_segsickReaction",
+        "_segsilverReaction",
+        "_segskyReaction",
+        "_segspikeReaction",
+        "_segvioletReaction",
+        "_segvirusReaction",
+        "_segwhiteReaction",
+        "_siblingbattle",
+        "_sizeRect",
+        "_spin",
+        "_sporetime",
+        "_sporeversion",
+        "_startPointX",
+        "_startPointY",
+        "_summerinactivity",
+        "_theta",
+        "_timeToReproduce",
+        "_timeToReproduceMax",
+        "_transfersenergy",
+        "_useextraeffects",
+        "_useframemovement",
+        "_usefriendeffects",
+        "_usepretoucheffects",
+        "_visibleWorld",
+        "_world",
+        "_yellowCounter",
+        "dtheta",
+        "dx",
+        "dy",
+        "hasGrown",
+        "lastFrame",
+        "x1",
+        "x2",
+        "y1",
+        "y2",
+        "bounds",
+        "H.genotype",
+        "H.infected",
+        "H.saved"
+      ]
+    },
+    {
+      "case": "revive-retained-eye",
+      "changed_fields": {
+        "_age": {
+          "before": [
+            "int",
+            "-2147483648"
+          ],
+          "after": [
+            "int",
+            "1"
+          ]
+        },
+        "_allfrozen": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_dodge": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_earlyReproduceEnergy": {
+          "before": [
+            "int",
+            "991"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_fallowversion": {
+          "before": [
+            "int",
+            "9"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_hasdodged": {
+          "before": [
+            "boolean",
+            "false"
+          ],
+          "after": [
+            "boolean",
+            "true"
+          ]
+        },
+        "_isaconsumer": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isafungus": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isakiller": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isauburn": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isblond": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_iscoral": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isenhanced": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isfrozen": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isgray": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isinfectious": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isinjured": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isonlyc4": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isreproductive": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_issilver": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_jadefactor": {
+          "before": [
+            "int",
+            "5"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_lengthfriend": {
+          "before": [
+            "int",
+            "17"
+          ],
+          "after": [
+            "int",
+            "-1"
+          ]
+        },
+        "_methanotrophy": {
+          "before": [
+            "double",
+            "4011000000000000"
+          ],
+          "after": [
+            "double",
+            "3ff0000000000000"
+          ]
+        },
+        "_mphoto": {
+          "before": [
+            "double[]",
+            "c058c00000000000,c058c00000000000,c058c00000000000"
+          ],
+          "after": [
+            "double[]",
+            "3fb336a46f471de9,c058c00000000000,c058c00000000000"
+          ]
+        },
+        "_plagueversion": {
+          "before": [
+            "int",
+            "10"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_reproducelate": {
+          "before": [
+            "int",
+            "11"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_segColor": {
+          "before": [
+            "Color[]",
+            "ff964b00,ff004040,ff964b00"
+          ],
+          "after": [
+            "Color[]",
+            "ff00ff00,ff004040,ffa80054"
+          ]
+        },
+        "_segmentpretoucheffects": {
+          "before": [
+            "int",
+            "123"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_skyversion": {
+          "before": [
+            "int",
+            "8"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_thetafriend": {
+          "before": [
+            "int",
+            "19"
+          ],
+          "after": [
+            "int",
+            "-1"
+          ]
+        },
+        "_transfersenergy": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_updateEffects": {
+          "before": [
+            "int",
+            "7"
+          ],
+          "after": [
+            "int",
+            "2"
+          ]
+        },
+        "active": {
+          "before": [
+            "boolean",
+            "false"
+          ],
+          "after": [
+            "boolean",
+            "true"
+          ]
+        },
+        "alive": {
+          "before": [
+            "boolean",
+            "false"
+          ],
+          "after": [
+            "boolean",
+            "true"
+          ]
+        },
+        "hasMoved": {
+          "before": [
+            "boolean",
+            "false"
+          ],
+          "after": [
+            "boolean",
+            "true"
+          ]
+        }
+      },
+      "unchanged_fields": [
+        "_I",
+        "_ID",
+        "_altruist",
+        "_antiviral",
+        "_candodge",
+        "_canmove",
+        "_canreact",
+        "_centerX",
+        "_centerY",
+        "_clockwise",
+        "_colonyPhotosynthesis",
+        "_color",
+        "_createlavender",
+        "_crowded",
+        "_dCenterX",
+        "_dCenterY",
+        "_endPointX",
+        "_endPointY",
+        "_energy",
+        "_forestphoto",
+        "_framesColor",
+        "_generationbattle",
+        "_geneticCode",
+        "_gold",
+        "_growthRatio",
+        "_haseyes",
+        "_hasgoodvision",
+        "_healing",
+        "_indigo",
+        "_infectedGeneticCode",
+        "_infectedReproduceEnergy",
+        "_isaplant",
+        "_islime",
+        "_isspike",
+        "_lastTheta",
+        "_lavender",
+        "_leafphoto",
+        "_lowersymmetric",
+        "_m",
+        "_m1",
+        "_m2",
+        "_maintenance",
+        "_mass",
+        "_max_age",
+        "_nChildren",
+        "_nPosition",
+        "_nTotalChildren",
+        "_nTotalInfected",
+        "_nTotalKills",
+        "_nVirusChildren",
+        "_parentID",
+        "_photosynthesis",
+        "_reproduceEnergy",
+        "_savedGeneticCode",
+        "_segbarkReaction",
+        "_segblueReaction",
+        "_segbrokenReaction",
+        "_segbrownReaction",
+        "_segconsumerReaction",
+        "_segcoralReaction",
+        "_segcreamReaction",
+        "_segdefaultReaction",
+        "_segfallowReaction",
+        "_segfireReaction",
+        "_segfriendReaction",
+        "_seggrayReaction",
+        "_seggreenReaction",
+        "_seggreenbrownReaction",
+        "_segiceReaction",
+        "_seglightblueReaction",
+        "_seglightbrownReaction",
+        "_seglilacReaction",
+        "_segmagentaReaction",
+        "_segmaroonReaction",
+        "_segments",
+        "_segmintReaction",
+        "_segochreReaction",
+        "_segoliveReaction",
+        "_segorangeReaction",
+        "_segpinkReaction",
+        "_segplagueReaction",
+        "_segplantReaction",
+        "_segredReaction",
+        "_segscourgeReaction",
+        "_segsickReaction",
+        "_segsilverReaction",
+        "_segskyReaction",
+        "_segspikeReaction",
+        "_segvioletReaction",
+        "_segvirusReaction",
+        "_segwhiteReaction",
+        "_siblingbattle",
+        "_sizeRect",
+        "_spin",
+        "_sporetime",
+        "_sporeversion",
+        "_startPointX",
+        "_startPointY",
+        "_summerinactivity",
+        "_theta",
+        "_timeToReproduce",
+        "_timeToReproduceMax",
+        "_useextraeffects",
+        "_useframemovement",
+        "_usefriendeffects",
+        "_usepretoucheffects",
+        "_visibleWorld",
+        "_world",
+        "_yellowCounter",
+        "dtheta",
+        "dx",
+        "dy",
+        "hasGrown",
+        "lastFrame",
+        "x1",
+        "x2",
+        "y1",
+        "y2",
+        "bounds",
+        "H.genotype",
+        "H.infected",
+        "H.saved"
+      ]
+    },
+    {
+      "case": "revive-spore5-age1",
+      "changed_fields": {
+        "_age": {
+          "before": [
+            "int",
+            "-2147483648"
+          ],
+          "after": [
+            "int",
+            "1"
+          ]
+        },
+        "_allfrozen": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_dodge": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_earlyReproduceEnergy": {
+          "before": [
+            "int",
+            "991"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_fallowversion": {
+          "before": [
+            "int",
+            "9"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_hasdodged": {
+          "before": [
+            "boolean",
+            "false"
+          ],
+          "after": [
+            "boolean",
+            "true"
+          ]
+        },
+        "_haseyes": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isaconsumer": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isafungus": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isakiller": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isauburn": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isblond": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_iscoral": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isenhanced": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isfrozen": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isgray": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isinfectious": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isinjured": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isonlyc4": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_issilver": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_jadefactor": {
+          "before": [
+            "int",
+            "5"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_lengthfriend": {
+          "before": [
+            "int",
+            "17"
+          ],
+          "after": [
+            "int",
+            "-1"
+          ]
+        },
+        "_mphoto": {
+          "before": [
+            "double[]",
+            "c058c00000000000,c058c00000000000"
+          ],
+          "after": [
+            "double[]",
+            "3fb3d25b1992b66e,c058c00000000000"
+          ]
+        },
+        "_plagueversion": {
+          "before": [
+            "int",
+            "10"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_reproducelate": {
+          "before": [
+            "int",
+            "11"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_segColor": {
+          "before": [
+            "Color[]",
+            "ff964b00,ff964b00"
+          ],
+          "after": [
+            "Color[]",
+            "ff00ff00,ff0050a0"
+          ]
+        },
+        "_segmentpretoucheffects": {
+          "before": [
+            "int",
+            "123"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_skyversion": {
+          "before": [
+            "int",
+            "8"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_thetafriend": {
+          "before": [
+            "int",
+            "19"
+          ],
+          "after": [
+            "int",
+            "-1"
+          ]
+        },
+        "_transfersenergy": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_updateEffects": {
+          "before": [
+            "int",
+            "7"
+          ],
+          "after": [
+            "int",
+            "2"
+          ]
+        },
+        "active": {
+          "before": [
+            "boolean",
+            "false"
+          ],
+          "after": [
+            "boolean",
+            "true"
+          ]
+        },
+        "alive": {
+          "before": [
+            "boolean",
+            "false"
+          ],
+          "after": [
+            "boolean",
+            "true"
+          ]
+        },
+        "hasMoved": {
+          "before": [
+            "boolean",
+            "false"
+          ],
+          "after": [
+            "boolean",
+            "true"
+          ]
+        }
+      },
+      "unchanged_fields": [
+        "_I",
+        "_ID",
+        "_altruist",
+        "_antiviral",
+        "_candodge",
+        "_canmove",
+        "_canreact",
+        "_centerX",
+        "_centerY",
+        "_clockwise",
+        "_colonyPhotosynthesis",
+        "_color",
+        "_createlavender",
+        "_crowded",
+        "_dCenterX",
+        "_dCenterY",
+        "_endPointX",
+        "_endPointY",
+        "_energy",
+        "_forestphoto",
+        "_framesColor",
+        "_generationbattle",
+        "_geneticCode",
+        "_gold",
+        "_growthRatio",
+        "_hasgoodvision",
+        "_healing",
+        "_indigo",
+        "_infectedGeneticCode",
+        "_infectedReproduceEnergy",
+        "_isaplant",
+        "_islime",
+        "_isreproductive",
+        "_isspike",
+        "_lastTheta",
+        "_lavender",
+        "_leafphoto",
+        "_lowersymmetric",
+        "_m",
+        "_m1",
+        "_m2",
+        "_maintenance",
+        "_mass",
+        "_max_age",
+        "_methanotrophy",
+        "_nChildren",
+        "_nPosition",
+        "_nTotalChildren",
+        "_nTotalInfected",
+        "_nTotalKills",
+        "_nVirusChildren",
+        "_parentID",
+        "_photosynthesis",
+        "_reproduceEnergy",
+        "_savedGeneticCode",
+        "_segbarkReaction",
+        "_segblueReaction",
+        "_segbrokenReaction",
+        "_segbrownReaction",
+        "_segconsumerReaction",
+        "_segcoralReaction",
+        "_segcreamReaction",
+        "_segdefaultReaction",
+        "_segfallowReaction",
+        "_segfireReaction",
+        "_segfriendReaction",
+        "_seggrayReaction",
+        "_seggreenReaction",
+        "_seggreenbrownReaction",
+        "_segiceReaction",
+        "_seglightblueReaction",
+        "_seglightbrownReaction",
+        "_seglilacReaction",
+        "_segmagentaReaction",
+        "_segmaroonReaction",
+        "_segments",
+        "_segmintReaction",
+        "_segochreReaction",
+        "_segoliveReaction",
+        "_segorangeReaction",
+        "_segpinkReaction",
+        "_segplagueReaction",
+        "_segplantReaction",
+        "_segredReaction",
+        "_segscourgeReaction",
+        "_segsickReaction",
+        "_segsilverReaction",
+        "_segskyReaction",
+        "_segspikeReaction",
+        "_segvioletReaction",
+        "_segvirusReaction",
+        "_segwhiteReaction",
+        "_siblingbattle",
+        "_sizeRect",
+        "_spin",
+        "_sporetime",
+        "_sporeversion",
+        "_startPointX",
+        "_startPointY",
+        "_summerinactivity",
+        "_theta",
+        "_timeToReproduce",
+        "_timeToReproduceMax",
+        "_useextraeffects",
+        "_useframemovement",
+        "_usefriendeffects",
+        "_usepretoucheffects",
+        "_visibleWorld",
+        "_world",
+        "_yellowCounter",
+        "dtheta",
+        "dx",
+        "dy",
+        "hasGrown",
+        "lastFrame",
+        "x1",
+        "x2",
+        "y1",
+        "y2",
+        "bounds",
+        "H.genotype",
+        "H.infected",
+        "H.saved"
+      ]
+    },
+    {
+      "case": "revive-blond-flower",
+      "changed_fields": {
+        "_age": {
+          "before": [
+            "int",
+            "-2147483648"
+          ],
+          "after": [
+            "int",
+            "1"
+          ]
+        },
+        "_allfrozen": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_dodge": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_earlyReproduceEnergy": {
+          "before": [
+            "int",
+            "991"
+          ],
+          "after": [
+            "int",
+            "43"
+          ]
+        },
+        "_fallowversion": {
+          "before": [
+            "int",
+            "9"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_hasdodged": {
+          "before": [
+            "boolean",
+            "false"
+          ],
+          "after": [
+            "boolean",
+            "true"
+          ]
+        },
+        "_haseyes": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isaconsumer": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isafungus": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isakiller": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isauburn": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_iscoral": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isenhanced": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isfrozen": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isgray": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isinfectious": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isinjured": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isonlyc4": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_issilver": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_jadefactor": {
+          "before": [
+            "int",
+            "5"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_lengthfriend": {
+          "before": [
+            "int",
+            "17"
+          ],
+          "after": [
+            "int",
+            "-1"
+          ]
+        },
+        "_mphoto": {
+          "before": [
+            "double[]",
+            "c058c00000000000,c058c00000000000,c058c00000000000"
+          ],
+          "after": [
+            "double[]",
+            "c058c00000000000,c058c00000000000,3fb336a46f471de9"
+          ]
+        },
+        "_plagueversion": {
+          "before": [
+            "int",
+            "10"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_reproducelate": {
+          "before": [
+            "int",
+            "11"
+          ],
+          "after": [
+            "int",
+            "12"
+          ]
+        },
+        "_segColor": {
+          "before": [
+            "Color[]",
+            "ff964b00,ff964b00,ff964b00"
+          ],
+          "after": [
+            "Color[]",
+            "ffffff80,ff8080ff,ff00ff00"
+          ]
+        },
+        "_segmentpretoucheffects": {
+          "before": [
+            "int",
+            "123"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_skyversion": {
+          "before": [
+            "int",
+            "8"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_thetafriend": {
+          "before": [
+            "int",
+            "19"
+          ],
+          "after": [
+            "int",
+            "-1"
+          ]
+        },
+        "_transfersenergy": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_updateEffects": {
+          "before": [
+            "int",
+            "7"
+          ],
+          "after": [
+            "int",
+            "2"
+          ]
+        },
+        "active": {
+          "before": [
+            "boolean",
+            "false"
+          ],
+          "after": [
+            "boolean",
+            "true"
+          ]
+        },
+        "alive": {
+          "before": [
+            "boolean",
+            "false"
+          ],
+          "after": [
+            "boolean",
+            "true"
+          ]
+        },
+        "hasMoved": {
+          "before": [
+            "boolean",
+            "false"
+          ],
+          "after": [
+            "boolean",
+            "true"
+          ]
+        }
+      },
+      "unchanged_fields": [
+        "_I",
+        "_ID",
+        "_altruist",
+        "_antiviral",
+        "_candodge",
+        "_canmove",
+        "_canreact",
+        "_centerX",
+        "_centerY",
+        "_clockwise",
+        "_colonyPhotosynthesis",
+        "_color",
+        "_createlavender",
+        "_crowded",
+        "_dCenterX",
+        "_dCenterY",
+        "_endPointX",
+        "_endPointY",
+        "_energy",
+        "_forestphoto",
+        "_framesColor",
+        "_generationbattle",
+        "_geneticCode",
+        "_gold",
+        "_growthRatio",
+        "_hasgoodvision",
+        "_healing",
+        "_indigo",
+        "_infectedGeneticCode",
+        "_infectedReproduceEnergy",
+        "_isaplant",
+        "_isblond",
+        "_islime",
+        "_isreproductive",
+        "_isspike",
+        "_lastTheta",
+        "_lavender",
+        "_leafphoto",
+        "_lowersymmetric",
+        "_m",
+        "_m1",
+        "_m2",
+        "_maintenance",
+        "_mass",
+        "_max_age",
+        "_methanotrophy",
+        "_nChildren",
+        "_nPosition",
+        "_nTotalChildren",
+        "_nTotalInfected",
+        "_nTotalKills",
+        "_nVirusChildren",
+        "_parentID",
+        "_photosynthesis",
+        "_reproduceEnergy",
+        "_savedGeneticCode",
+        "_segbarkReaction",
+        "_segblueReaction",
+        "_segbrokenReaction",
+        "_segbrownReaction",
+        "_segconsumerReaction",
+        "_segcoralReaction",
+        "_segcreamReaction",
+        "_segdefaultReaction",
+        "_segfallowReaction",
+        "_segfireReaction",
+        "_segfriendReaction",
+        "_seggrayReaction",
+        "_seggreenReaction",
+        "_seggreenbrownReaction",
+        "_segiceReaction",
+        "_seglightblueReaction",
+        "_seglightbrownReaction",
+        "_seglilacReaction",
+        "_segmagentaReaction",
+        "_segmaroonReaction",
+        "_segments",
+        "_segmintReaction",
+        "_segochreReaction",
+        "_segoliveReaction",
+        "_segorangeReaction",
+        "_segpinkReaction",
+        "_segplagueReaction",
+        "_segplantReaction",
+        "_segredReaction",
+        "_segscourgeReaction",
+        "_segsickReaction",
+        "_segsilverReaction",
+        "_segskyReaction",
+        "_segspikeReaction",
+        "_segvioletReaction",
+        "_segvirusReaction",
+        "_segwhiteReaction",
+        "_siblingbattle",
+        "_sizeRect",
+        "_spin",
+        "_sporetime",
+        "_sporeversion",
+        "_startPointX",
+        "_startPointY",
+        "_summerinactivity",
+        "_theta",
+        "_timeToReproduce",
+        "_timeToReproduceMax",
+        "_useextraeffects",
+        "_useframemovement",
+        "_usefriendeffects",
+        "_usepretoucheffects",
+        "_visibleWorld",
+        "_world",
+        "_yellowCounter",
+        "dtheta",
+        "dx",
+        "dy",
+        "hasGrown",
+        "lastFrame",
+        "x1",
+        "x2",
+        "y1",
+        "y2",
+        "bounds",
+        "H.genotype",
+        "H.infected",
+        "H.saved"
+      ]
+    },
+    {
+      "case": "revive-gold-maxage-wrap",
+      "changed_fields": {
+        "_age": {
+          "before": [
+            "int",
+            "-2147483648"
+          ],
+          "after": [
+            "int",
+            "1"
+          ]
+        },
+        "_allfrozen": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_dodge": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_earlyReproduceEnergy": {
+          "before": [
+            "int",
+            "991"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_fallowversion": {
+          "before": [
+            "int",
+            "9"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_hasdodged": {
+          "before": [
+            "boolean",
+            "false"
+          ],
+          "after": [
+            "boolean",
+            "true"
+          ]
+        },
+        "_haseyes": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isaconsumer": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isafungus": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isakiller": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isauburn": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isblond": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_iscoral": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isenhanced": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isfrozen": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isgray": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isinfectious": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isinjured": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isonlyc4": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_isreproductive": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_issilver": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_jadefactor": {
+          "before": [
+            "int",
+            "5"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_lengthfriend": {
+          "before": [
+            "int",
+            "17"
+          ],
+          "after": [
+            "int",
+            "-1"
+          ]
+        },
+        "_mphoto": {
+          "before": [
+            "double[]",
+            "c058c00000000000,c058c00000000000"
+          ],
+          "after": [
+            "double[]",
+            "c058c00000000000,3fb3d25b1992b66e"
+          ]
+        },
+        "_plagueversion": {
+          "before": [
+            "int",
+            "10"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_reproducelate": {
+          "before": [
+            "int",
+            "11"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_segColor": {
+          "before": [
+            "Color[]",
+            "ff964b00,ff964b00"
+          ],
+          "after": [
+            "Color[]",
+            "ffd4af37,ff00ff00"
+          ]
+        },
+        "_segmentpretoucheffects": {
+          "before": [
+            "int",
+            "123"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_skyversion": {
+          "before": [
+            "int",
+            "8"
+          ],
+          "after": [
+            "int",
+            "0"
+          ]
+        },
+        "_thetafriend": {
+          "before": [
+            "int",
+            "19"
+          ],
+          "after": [
+            "int",
+            "-1"
+          ]
+        },
+        "_transfersenergy": {
+          "before": [
+            "boolean",
+            "true"
+          ],
+          "after": [
+            "boolean",
+            "false"
+          ]
+        },
+        "_updateEffects": {
+          "before": [
+            "int",
+            "7"
+          ],
+          "after": [
+            "int",
+            "2"
+          ]
+        },
+        "active": {
+          "before": [
+            "boolean",
+            "false"
+          ],
+          "after": [
+            "boolean",
+            "true"
+          ]
+        },
+        "alive": {
+          "before": [
+            "boolean",
+            "false"
+          ],
+          "after": [
+            "boolean",
+            "true"
+          ]
+        },
+        "hasMoved": {
+          "before": [
+            "boolean",
+            "false"
+          ],
+          "after": [
+            "boolean",
+            "true"
+          ]
+        }
+      },
+      "unchanged_fields": [
+        "_I",
+        "_ID",
+        "_altruist",
+        "_antiviral",
+        "_candodge",
+        "_canmove",
+        "_canreact",
+        "_centerX",
+        "_centerY",
+        "_clockwise",
+        "_colonyPhotosynthesis",
+        "_color",
+        "_createlavender",
+        "_crowded",
+        "_dCenterX",
+        "_dCenterY",
+        "_endPointX",
+        "_endPointY",
+        "_energy",
+        "_forestphoto",
+        "_framesColor",
+        "_generationbattle",
+        "_geneticCode",
+        "_gold",
+        "_growthRatio",
+        "_hasgoodvision",
+        "_healing",
+        "_indigo",
+        "_infectedGeneticCode",
+        "_infectedReproduceEnergy",
+        "_isaplant",
+        "_islime",
+        "_isspike",
+        "_lastTheta",
+        "_lavender",
+        "_leafphoto",
+        "_lowersymmetric",
+        "_m",
+        "_m1",
+        "_m2",
+        "_maintenance",
+        "_mass",
+        "_max_age",
+        "_methanotrophy",
+        "_nChildren",
+        "_nPosition",
+        "_nTotalChildren",
+        "_nTotalInfected",
+        "_nTotalKills",
+        "_nVirusChildren",
+        "_parentID",
+        "_photosynthesis",
+        "_reproduceEnergy",
+        "_savedGeneticCode",
+        "_segbarkReaction",
+        "_segblueReaction",
+        "_segbrokenReaction",
+        "_segbrownReaction",
+        "_segconsumerReaction",
+        "_segcoralReaction",
+        "_segcreamReaction",
+        "_segdefaultReaction",
+        "_segfallowReaction",
+        "_segfireReaction",
+        "_segfriendReaction",
+        "_seggrayReaction",
+        "_seggreenReaction",
+        "_seggreenbrownReaction",
+        "_segiceReaction",
+        "_seglightblueReaction",
+        "_seglightbrownReaction",
+        "_seglilacReaction",
+        "_segmagentaReaction",
+        "_segmaroonReaction",
+        "_segments",
+        "_segmintReaction",
+        "_segochreReaction",
+        "_segoliveReaction",
+        "_segorangeReaction",
+        "_segpinkReaction",
+        "_segplagueReaction",
+        "_segplantReaction",
+        "_segredReaction",
+        "_segscourgeReaction",
+        "_segsickReaction",
+        "_segsilverReaction",
+        "_segskyReaction",
+        "_segspikeReaction",
+        "_segvioletReaction",
+        "_segvirusReaction",
+        "_segwhiteReaction",
+        "_siblingbattle",
+        "_sizeRect",
+        "_spin",
+        "_sporetime",
+        "_sporeversion",
+        "_startPointX",
+        "_startPointY",
+        "_summerinactivity",
+        "_theta",
+        "_timeToReproduce",
+        "_timeToReproduceMax",
+        "_useextraeffects",
+        "_useframemovement",
+        "_usefriendeffects",
+        "_usepretoucheffects",
+        "_visibleWorld",
+        "_world",
+        "_yellowCounter",
+        "dtheta",
+        "dx",
+        "dy",
+        "hasGrown",
+        "lastFrame",
+        "x1",
+        "x2",
+        "y1",
+        "y2",
+        "bounds",
+        "H.genotype",
+        "H.infected",
+        "H.saved"
+      ]
+    }
+  ]
+}

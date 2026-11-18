@@ -1,0 +1,69 @@
+G	_reference	g0
+G	_nGenes	1
+G	_activity	0
+G	_adaptspore	1
+G	_altruist	false
+G	_cladeID	~
+G	_clockwise	false
+G	_disperseChildren	false
+G	_familial	false
+G	_generation	0
+G	_generationBattle	false
+G	_mimicall	false
+G	_mirror	0
+G	_modifiescream	1
+G	_modifiesfallow	1
+G	_modifieslilac	false
+G	_modifiespink	false
+G	_modifiessky	false
+G	_modifiesspore	1
+G	_mutationrate	17
+G	_passive	false
+G	_peaceful	false
+G	_plague	false
+G	_selfish	false
+G	_siblingBattle	false
+G	_social	false
+G	_symmetry	1
+G	_updateClade	false
+N	0	_barkreaction	-7
+N	0	_bluereaction	-6
+N	0	_branch	-1
+N	0	_brokenreaction	-5
+N	0	_brownreaction	-4
+N	0	_color	ff00ff00
+N	0	_consumerreaction	-3
+N	0	_coralreaction	-2
+N	0	_creamreaction	-1
+N	0	_defaultreaction	0
+N	0	_fallowreaction	1
+N	0	_firereaction	2
+N	0	_friendreaction	3
+N	0	_grayreaction	4
+N	0	_greenbrownreaction	5
+N	0	_greenreaction	6
+N	0	_icereaction	7
+N	0	_length	4029000000000000
+N	0	_lightbluereaction	8
+N	0	_lightbrownreaction	9
+N	0	_lilacreaction	10
+N	0	_magentareaction	11
+N	0	_maroonreaction	12
+N	0	_mintreaction	13
+N	0	_ochrereaction	14
+N	0	_olivereaction	15
+N	0	_orangereaction	16
+N	0	_pinkreaction	17
+N	0	_plaguereaction	18
+N	0	_plantreaction	19
+N	0	_redreaction	20
+N	0	_scourgereaction	21
+N	0	_sickreaction	22
+N	0	_silverreaction	23
+N	0	_skyreaction	24
+N	0	_spikereaction	25
+N	0	_theta	bfd0000000000000
+N	0	_violetreaction	26
+N	0	_virusreaction	27
+N	0	_whitereaction	28
+A	0

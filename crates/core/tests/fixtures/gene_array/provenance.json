@@ -1,0 +1,129 @@
+{
+  "source": "Supplied Biogenesis Color Mod Source and shipped JAR",
+  "license": "GPL-2.0-or-later",
+  "actual_root": "f8f5af8e33d46d430808b5ece295fe533cc8bc3aa334785dd3650df5c00f72f8",
+  "actual_peer": "eac21c98eca23f943a0d4293afca320391d18ad28caa867f1664566b1de502dd",
+  "helper_sha256": "49b61e14b8f0281d102fee4d87af8c657dd18b4e0d831907d675b1aca67b9264",
+  "files": {
+    "clone_late_null_slot-authored.ser": {
+      "sha256": "790befb360a49e0a8b763e56635703725936255863ae7834b2ddf621fcb6f890",
+      "bytes": 7991
+    },
+    "clone_late_null_slot-call_0.ser": {
+      "sha256": "790befb360a49e0a8b763e56635703725936255863ae7834b2ddf621fcb6f890",
+      "bytes": 7991
+    },
+    "clone_null_array-authored.ser": {
+      "sha256": "b19186d8c2809d3dfb4342d96bc72b08d7680a3597cee3f31f9d3a546953c80a",
+      "bytes": 7801
+    },
+    "clone_null_array-call_0.ser": {
+      "sha256": "b19186d8c2809d3dfb4342d96bc72b08d7680a3597cee3f31f9d3a546953c80a",
+      "bytes": 7801
+    },
+    "getter_null_array-authored.ser": {
+      "sha256": "b19186d8c2809d3dfb4342d96bc72b08d7680a3597cee3f31f9d3a546953c80a",
+      "bytes": 7801
+    },
+    "getter_null_array-call_0.ser": {
+      "sha256": "b19186d8c2809d3dfb4342d96bc72b08d7680a3597cee3f31f9d3a546953c80a",
+      "bytes": 7801
+    },
+    "getter_null_array-call_1.ser": {
+      "sha256": "b19186d8c2809d3dfb4342d96bc72b08d7680a3597cee3f31f9d3a546953c80a",
+      "bytes": 7801
+    },
+    "getter_null_array-call_2.ser": {
+      "sha256": "b19186d8c2809d3dfb4342d96bc72b08d7680a3597cee3f31f9d3a546953c80a",
+      "bytes": 7801
+    },
+    "getter_null_array-call_3.ser": {
+      "sha256": "b19186d8c2809d3dfb4342d96bc72b08d7680a3597cee3f31f9d3a546953c80a",
+      "bytes": 7801
+    },
+    "getter_null_array-call_4.ser": {
+      "sha256": "b19186d8c2809d3dfb4342d96bc72b08d7680a3597cee3f31f9d3a546953c80a",
+      "bytes": 7801
+    },
+    "getter_null_slot_bounds-authored.ser": {
+      "sha256": "7925669066c2d7df7b14190f18ec4d3913e46ff0edf93366273b8cd6ab3fc2f9",
+      "bytes": 7811
+    },
+    "getter_null_slot_bounds-call_0.ser": {
+      "sha256": "7925669066c2d7df7b14190f18ec4d3913e46ff0edf93366273b8cd6ab3fc2f9",
+      "bytes": 7811
+    },
+    "getter_null_slot_bounds-call_1.ser": {
+      "sha256": "7925669066c2d7df7b14190f18ec4d3913e46ff0edf93366273b8cd6ab3fc2f9",
+      "bytes": 7811
+    },
+    "getter_null_slot_bounds-call_2.ser": {
+      "sha256": "7925669066c2d7df7b14190f18ec4d3913e46ff0edf93366273b8cd6ab3fc2f9",
+      "bytes": 7811
+    },
+    "getter_null_slot_bounds-call_3.ser": {
+      "sha256": "7925669066c2d7df7b14190f18ec4d3913e46ff0edf93366273b8cd6ab3fc2f9",
+      "bytes": 7811
+    },
+    "getter_null_slot_bounds-call_4.ser": {
+      "sha256": "7925669066c2d7df7b14190f18ec4d3913e46ff0edf93366273b8cd6ab3fc2f9",
+      "bytes": 7811
+    },
+    "getter_null_slot_bounds-call_5.ser": {
+      "sha256": "7925669066c2d7df7b14190f18ec4d3913e46ff0edf93366273b8cd6ab3fc2f9",
+      "bytes": 7811
+    },
+    "inherit_conditional_null_getters-authored.ser": {
+      "sha256": "3620d38fd3bdf91df42316dfe8d20a98ec2582def2fcca7a36150de9b6d86d65",
+      "bytes": 7811
+    },
+    "inherit_conditional_null_getters-call_0.ser": {
+      "sha256": "3620d38fd3bdf91df42316dfe8d20a98ec2582def2fcca7a36150de9b6d86d65",
+      "bytes": 7811
+    },
+    "inherit_conditional_null_getters-call_1.ser": {
+      "sha256": "dbbd276b1304d030209bbe4bf405e8ad04fe831de5f3d318beb1547b7a6c4bc8",
+      "bytes": 7823
+    },
+    "inherit_null_array_rng-authored.ser": {
+      "sha256": "e6342701468e29f3628534f19877e43aae9504b8e1d1dc2e0bf3b240fb2b5971",
+      "bytes": 7801
+    },
+    "inherit_null_array_rng-call_0.ser": {
+      "sha256": "e6342701468e29f3628534f19877e43aae9504b8e1d1dc2e0bf3b240fb2b5971",
+      "bytes": 7801
+    },
+    "inherit_nullable_unchanged-authored.ser": {
+      "sha256": "c877d6233894cfa14b0b2adfae43ea10d8c503d626ef09e5cdaa63e10801dc51",
+      "bytes": 7991
+    },
+    "inherit_nullable_unchanged-call_0.ser": {
+      "sha256": "393a27a1d71adf76d3a2f4b1bc902c9470a0cda1f89b679b9f3386e0beb5de01",
+      "bytes": 7827
+    },
+    "shared_slot_holder_replacement-authored.ser": {
+      "sha256": "bd0f46c94ce3a62b9e5e87105fa30a90f9c6ac0f709a8db177300eb8ae85a85b",
+      "bytes": 8057
+    },
+    "shared_slot_holder_replacement-call_0.ser": {
+      "sha256": "30ca582d21cf0f4b247b641ba0c40df9b95fdfc1fb86121421e719709787c601",
+      "bytes": 8239
+    },
+    "shared_slot_holder_replacement-call_1.ser": {
+      "sha256": "69fa7ca07f053ee0896a16df12475d91fbfda4e969edc63d414e41889f4ce84e",
+      "bytes": 8249
+    },
+    "shared_slot_holder_replacement-call_2.ser": {
+      "sha256": "69fa7ca07f053ee0896a16df12475d91fbfda4e969edc63d414e41889f4ce84e",
+      "bytes": 8249
+    },
+    "shared_slot_holder_replacement-call_3.ser": {
+      "sha256": "69fa7ca07f053ee0896a16df12475d91fbfda4e969edc63d414e41889f4ce84e",
+      "bytes": 8249
+    },
+    "gene_array.tsv": {
+      "sha256": "d4fc77bb6967c5e91ca262a5e5435e2efb244f421bdf2cae14c84aee09ca83bf",
+      "bytes": 837082
+    }
+  }
+}

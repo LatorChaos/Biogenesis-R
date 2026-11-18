@@ -1,0 +1,510 @@
+C	ui-hook-positive-partial	ui-hook-diagnostic	827364
+U	INITIAL_ORGANISMS	int	0
+U	INITIAL_O2	double	0000000000000000
+U	INITIAL_CO2	double	411e848000000000
+U	INITIAL_CH4	double	0000000000000000
+U	WORLD_WIDTH	int	7000
+U	WORLD_HEIGHT	int	7000
+U	CO2_TO_CH4_DIVISOR	int	999
+U	CH4_TO_CO2_DIVISOR	int	1000
+I	_CO2	double	4024000000000000
+I	_CH4	double	4008000000000000
+I	_O2	double	8000000000000000
+I	nFrames	int	0
+W	before	NEXT_ID	int	0
+W	before	_CH4	double	4008000000000000
+W	before	_CO2	double	4024000000000000
+W	before	_O2	double	8000000000000000
+W	before	_corridorexists	boolean	false
+W	before	_height	int	7000
+W	before	_organisms	List	
+W	before	_population	int	0
+W	before	_visibleWorld	VisibleWorld	~
+W	before	_width	int	7000
+W	before	colDetTree	STRtree	present
+W	before	inCorridors	List	
+W	before	nFrames	int	0
+W	before	outCorridors	List	
+W	before	worldStatistics	WorldStatistics	s0
+S	before	aliveBeingMostChildren	GeneticCode	~
+S	before	aliveBeingMostChildrenNumber	int	0
+S	before	aliveBeingMostInfections	GeneticCode	~
+S	before	aliveBeingMostInfectionsNumber	int	0
+S	before	aliveBeingMostKills	GeneticCode	~
+S	before	aliveBeingMostKillsNumber	int	0
+S	before	beingMostChildren	GeneticCode	~
+S	before	beingMostChildrenNumber	int	0
+S	before	beingMostChildrenTime	long	0
+S	before	beingMostInfections	GeneticCode	~
+S	before	beingMostInfectionsNumber	int	0
+S	before	beingMostInfectionsTime	long	0
+S	before	beingMostKills	GeneticCode	~
+S	before	beingMostKillsNumber	int	0
+S	before	beingMostKillsTime	long	0
+S	before	birthLastTime	int	0
+S	before	birthList	List	
+S	before	birthSum	long	0
+S	before	carbonDioxideList	List	
+S	before	createdOrganisms	int	0
+S	before	deathLastTime	int	0
+S	before	deathList	List	
+S	before	deathSum	long	0
+S	before	infectionsSum	long	0
+S	before	lastBornBeing	GeneticCode	~
+S	before	lastDeadBeing	GeneticCode	~
+S	before	lastInfectedBeing	GeneticCode	~
+S	before	massExtintionState	int	0
+S	before	massExtintions	int	0
+S	before	maxBirths	int	0
+S	before	maxCarbonDioxide	double	411e848000000000
+S	before	maxCarbonDioxideTime	long	0
+S	before	maxDeaths	int	0
+S	before	maxMethane	double	0000000000000000
+S	before	maxMethaneTime	long	0
+S	before	maxOxygen	double	0000000000000000
+S	before	maxOxygenTime	long	0
+S	before	maxPopulation	int	0
+S	before	maxPopulationTime	long	0
+S	before	methaneList	List	
+S	before	minCarbonDioxide	double	411e848000000000
+S	before	minCarbonDioxideTime	long	0
+S	before	minMethane	double	0000000000000000
+S	before	minMethaneTime	long	0
+S	before	minOxygen	double	0000000000000000
+S	before	minOxygenTime	long	0
+S	before	minPopulation	int	0
+S	before	minPopulationTime	long	0
+S	before	oxygenList	List	
+S	before	populationList	List	
+S	before	populationSum	long	0
+S	before	time	long	0
+T	before	getAliveBeingMostChildren	GeneticCode	~
+T	before	getAliveBeingMostChildrenNumber	int	0
+T	before	getAliveBeingMostInfections	GeneticCode	~
+T	before	getAliveBeingMostInfectionsNumber	int	0
+T	before	getAliveBeingMostKills	GeneticCode	~
+T	before	getAliveBeingMostKillsNumber	int	0
+T	before	getAverageBirths	double	0000000000000000
+T	before	getAverageDeaths	double	0000000000000000
+T	before	getAverageInfections	double	0000000000000000
+T	before	getAveragePopulation	double	0000000000000000
+T	before	getBeingMostChildren	GeneticCode	~
+T	before	getBeingMostChildrenNumber	int	0
+T	before	getBeingMostChildrenTime	long	0
+T	before	getBeingMostInfections	GeneticCode	~
+T	before	getBeingMostInfectionsNumber	int	0
+T	before	getBeingMostInfectionsTime	long	0
+T	before	getBeingMostKills	GeneticCode	~
+T	before	getBeingMostKillsNumber	int	0
+T	before	getBeingMostKillsTime	long	0
+T	before	getBirthList	List	
+T	before	getCarbonDioxideList	List	
+T	before	getCreatedOrganisms	int	0
+T	before	getDeathList	List	
+T	before	getLastBornBeing	GeneticCode	~
+T	before	getLastDeadBeing	GeneticCode	~
+T	before	getLastInfectedBeing	GeneticCode	~
+T	before	getMassExtintions	int	0
+T	before	getMaxBirth	int	0
+T	before	getMaxCarbonDioxide	double	411e848000000000
+T	before	getMaxCarbonDioxideTime	long	0
+T	before	getMaxDeaths	int	0
+T	before	getMaxMethane	double	0000000000000000
+T	before	getMaxMethaneTime	long	0
+T	before	getMaxOxygen	double	0000000000000000
+T	before	getMaxOxygenTime	long	0
+T	before	getMaxPopulation	int	0
+T	before	getMaxPopulationTime	long	0
+T	before	getMethaneList	List	
+T	before	getMinCarbonDioxide	double	411e848000000000
+T	before	getMinCarbonDioxideTime	long	0
+T	before	getMinMethane	double	0000000000000000
+T	before	getMinMethaneTime	long	0
+T	before	getMinOxygen	double	0000000000000000
+T	before	getMinOxygenTime	long	0
+T	before	getMinPopulation	int	0
+T	before	getMinPopulationTime	long	0
+T	before	getOxygenList	List	
+T	before	getPopulationList	List	
+T	before	getTime	long	0
+G	before	World.getTime	long	0
+R	before	-3981345829458826657	901	3fd54a08163de1b8
+K	time
+B	completed	false
+X	diagnostic_exception	java.lang.NullPointerException
+B	tree_replaced	true
+B	random_unchanged	true
+W	after	NEXT_ID	int	0
+W	after	_CH4	double	40080e5604189375
+W	after	_CO2	double	4023fc6a7ef9db23
+W	after	_O2	double	8000000000000000
+W	after	_corridorexists	boolean	false
+W	after	_height	int	7000
+W	after	_organisms	List	
+W	after	_population	int	0
+W	after	_visibleWorld	VisibleWorld	~
+W	after	_width	int	7000
+W	after	colDetTree	STRtree	present
+W	after	inCorridors	List	
+W	after	nFrames	int	1
+W	after	outCorridors	List	
+W	after	worldStatistics	WorldStatistics	s0
+S	after	aliveBeingMostChildren	GeneticCode	~
+S	after	aliveBeingMostChildrenNumber	int	0
+S	after	aliveBeingMostInfections	GeneticCode	~
+S	after	aliveBeingMostInfectionsNumber	int	0
+S	after	aliveBeingMostKills	GeneticCode	~
+S	after	aliveBeingMostKillsNumber	int	0
+S	after	beingMostChildren	GeneticCode	~
+S	after	beingMostChildrenNumber	int	0
+S	after	beingMostChildrenTime	long	0
+S	after	beingMostInfections	GeneticCode	~
+S	after	beingMostInfectionsNumber	int	0
+S	after	beingMostInfectionsTime	long	0
+S	after	beingMostKills	GeneticCode	~
+S	after	beingMostKillsNumber	int	0
+S	after	beingMostKillsTime	long	0
+S	after	birthLastTime	int	0
+S	after	birthList	List	
+S	after	birthSum	long	0
+S	after	carbonDioxideList	List	
+S	after	createdOrganisms	int	0
+S	after	deathLastTime	int	0
+S	after	deathList	List	
+S	after	deathSum	long	0
+S	after	infectionsSum	long	0
+S	after	lastBornBeing	GeneticCode	~
+S	after	lastDeadBeing	GeneticCode	~
+S	after	lastInfectedBeing	GeneticCode	~
+S	after	massExtintionState	int	0
+S	after	massExtintions	int	0
+S	after	maxBirths	int	0
+S	after	maxCarbonDioxide	double	411e848000000000
+S	after	maxCarbonDioxideTime	long	0
+S	after	maxDeaths	int	0
+S	after	maxMethane	double	0000000000000000
+S	after	maxMethaneTime	long	0
+S	after	maxOxygen	double	0000000000000000
+S	after	maxOxygenTime	long	0
+S	after	maxPopulation	int	0
+S	after	maxPopulationTime	long	0
+S	after	methaneList	List	
+S	after	minCarbonDioxide	double	411e848000000000
+S	after	minCarbonDioxideTime	long	0
+S	after	minMethane	double	0000000000000000
+S	after	minMethaneTime	long	0
+S	after	minOxygen	double	0000000000000000
+S	after	minOxygenTime	long	0
+S	after	minPopulation	int	0
+S	after	minPopulationTime	long	0
+S	after	oxygenList	List	
+S	after	populationList	List	
+S	after	populationSum	long	0
+S	after	time	long	0
+T	after	getAliveBeingMostChildren	GeneticCode	~
+T	after	getAliveBeingMostChildrenNumber	int	0
+T	after	getAliveBeingMostInfections	GeneticCode	~
+T	after	getAliveBeingMostInfectionsNumber	int	0
+T	after	getAliveBeingMostKills	GeneticCode	~
+T	after	getAliveBeingMostKillsNumber	int	0
+T	after	getAverageBirths	double	0000000000000000
+T	after	getAverageDeaths	double	0000000000000000
+T	after	getAverageInfections	double	0000000000000000
+T	after	getAveragePopulation	double	0000000000000000
+T	after	getBeingMostChildren	GeneticCode	~
+T	after	getBeingMostChildrenNumber	int	0
+T	after	getBeingMostChildrenTime	long	0
+T	after	getBeingMostInfections	GeneticCode	~
+T	after	getBeingMostInfectionsNumber	int	0
+T	after	getBeingMostInfectionsTime	long	0
+T	after	getBeingMostKills	GeneticCode	~
+T	after	getBeingMostKillsNumber	int	0
+T	after	getBeingMostKillsTime	long	0
+T	after	getBirthList	List	
+T	after	getCarbonDioxideList	List	
+T	after	getCreatedOrganisms	int	0
+T	after	getDeathList	List	
+T	after	getLastBornBeing	GeneticCode	~
+T	after	getLastDeadBeing	GeneticCode	~
+T	after	getLastInfectedBeing	GeneticCode	~
+T	after	getMassExtintions	int	0
+T	after	getMaxBirth	int	0
+T	after	getMaxCarbonDioxide	double	411e848000000000
+T	after	getMaxCarbonDioxideTime	long	0
+T	after	getMaxDeaths	int	0
+T	after	getMaxMethane	double	0000000000000000
+T	after	getMaxMethaneTime	long	0
+T	after	getMaxOxygen	double	0000000000000000
+T	after	getMaxOxygenTime	long	0
+T	after	getMaxPopulation	int	0
+T	after	getMaxPopulationTime	long	0
+T	after	getMethaneList	List	
+T	after	getMinCarbonDioxide	double	411e848000000000
+T	after	getMinCarbonDioxideTime	long	0
+T	after	getMinMethane	double	0000000000000000
+T	after	getMinMethaneTime	long	0
+T	after	getMinOxygen	double	0000000000000000
+T	after	getMinOxygenTime	long	0
+T	after	getMinPopulation	int	0
+T	after	getMinPopulationTime	long	0
+T	after	getOxygenList	List	
+T	after	getPopulationList	List	
+T	after	getTime	long	0
+G	after	World.getTime	long	0
+R	after	-3981345829458826657	901	3fd54a08163de1b8
+E
+C	ui-hook-zero-divisors-partial	ui-hook-diagnostic	827364
+U	INITIAL_ORGANISMS	int	0
+U	INITIAL_O2	double	0000000000000000
+U	INITIAL_CO2	double	411e848000000000
+U	INITIAL_CH4	double	0000000000000000
+U	WORLD_WIDTH	int	7000
+U	WORLD_HEIGHT	int	7000
+U	CO2_TO_CH4_DIVISOR	int	0
+U	CH4_TO_CO2_DIVISOR	int	0
+I	_CO2	double	0000000000000000
+I	_CH4	double	0000000000000000
+I	_O2	double	8000000000000000
+I	nFrames	int	0
+W	before	NEXT_ID	int	0
+W	before	_CH4	double	0000000000000000
+W	before	_CO2	double	0000000000000000
+W	before	_O2	double	8000000000000000
+W	before	_corridorexists	boolean	false
+W	before	_height	int	7000
+W	before	_organisms	List	
+W	before	_population	int	0
+W	before	_visibleWorld	VisibleWorld	~
+W	before	_width	int	7000
+W	before	colDetTree	STRtree	present
+W	before	inCorridors	List	
+W	before	nFrames	int	0
+W	before	outCorridors	List	
+W	before	worldStatistics	WorldStatistics	s0
+S	before	aliveBeingMostChildren	GeneticCode	~
+S	before	aliveBeingMostChildrenNumber	int	0
+S	before	aliveBeingMostInfections	GeneticCode	~
+S	before	aliveBeingMostInfectionsNumber	int	0
+S	before	aliveBeingMostKills	GeneticCode	~
+S	before	aliveBeingMostKillsNumber	int	0
+S	before	beingMostChildren	GeneticCode	~
+S	before	beingMostChildrenNumber	int	0
+S	before	beingMostChildrenTime	long	0
+S	before	beingMostInfections	GeneticCode	~
+S	before	beingMostInfectionsNumber	int	0
+S	before	beingMostInfectionsTime	long	0
+S	before	beingMostKills	GeneticCode	~
+S	before	beingMostKillsNumber	int	0
+S	before	beingMostKillsTime	long	0
+S	before	birthLastTime	int	0
+S	before	birthList	List	
+S	before	birthSum	long	0
+S	before	carbonDioxideList	List	
+S	before	createdOrganisms	int	0
+S	before	deathLastTime	int	0
+S	before	deathList	List	
+S	before	deathSum	long	0
+S	before	infectionsSum	long	0
+S	before	lastBornBeing	GeneticCode	~
+S	before	lastDeadBeing	GeneticCode	~
+S	before	lastInfectedBeing	GeneticCode	~
+S	before	massExtintionState	int	0
+S	before	massExtintions	int	0
+S	before	maxBirths	int	0
+S	before	maxCarbonDioxide	double	411e848000000000
+S	before	maxCarbonDioxideTime	long	0
+S	before	maxDeaths	int	0
+S	before	maxMethane	double	0000000000000000
+S	before	maxMethaneTime	long	0
+S	before	maxOxygen	double	0000000000000000
+S	before	maxOxygenTime	long	0
+S	before	maxPopulation	int	0
+S	before	maxPopulationTime	long	0
+S	before	methaneList	List	
+S	before	minCarbonDioxide	double	411e848000000000
+S	before	minCarbonDioxideTime	long	0
+S	before	minMethane	double	0000000000000000
+S	before	minMethaneTime	long	0
+S	before	minOxygen	double	0000000000000000
+S	before	minOxygenTime	long	0
+S	before	minPopulation	int	0
+S	before	minPopulationTime	long	0
+S	before	oxygenList	List	
+S	before	populationList	List	
+S	before	populationSum	long	0
+S	before	time	long	0
+T	before	getAliveBeingMostChildren	GeneticCode	~
+T	before	getAliveBeingMostChildrenNumber	int	0
+T	before	getAliveBeingMostInfections	GeneticCode	~
+T	before	getAliveBeingMostInfectionsNumber	int	0
+T	before	getAliveBeingMostKills	GeneticCode	~
+T	before	getAliveBeingMostKillsNumber	int	0
+T	before	getAverageBirths	double	0000000000000000
+T	before	getAverageDeaths	double	0000000000000000
+T	before	getAverageInfections	double	0000000000000000
+T	before	getAveragePopulation	double	0000000000000000
+T	before	getBeingMostChildren	GeneticCode	~
+T	before	getBeingMostChildrenNumber	int	0
+T	before	getBeingMostChildrenTime	long	0
+T	before	getBeingMostInfections	GeneticCode	~
+T	before	getBeingMostInfectionsNumber	int	0
+T	before	getBeingMostInfectionsTime	long	0
+T	before	getBeingMostKills	GeneticCode	~
+T	before	getBeingMostKillsNumber	int	0
+T	before	getBeingMostKillsTime	long	0
+T	before	getBirthList	List	
+T	before	getCarbonDioxideList	List	
+T	before	getCreatedOrganisms	int	0
+T	before	getDeathList	List	
+T	before	getLastBornBeing	GeneticCode	~
+T	before	getLastDeadBeing	GeneticCode	~
+T	before	getLastInfectedBeing	GeneticCode	~
+T	before	getMassExtintions	int	0
+T	before	getMaxBirth	int	0
+T	before	getMaxCarbonDioxide	double	411e848000000000
+T	before	getMaxCarbonDioxideTime	long	0
+T	before	getMaxDeaths	int	0
+T	before	getMaxMethane	double	0000000000000000
+T	before	getMaxMethaneTime	long	0
+T	before	getMaxOxygen	double	0000000000000000
+T	before	getMaxOxygenTime	long	0
+T	before	getMaxPopulation	int	0
+T	before	getMaxPopulationTime	long	0
+T	before	getMethaneList	List	
+T	before	getMinCarbonDioxide	double	411e848000000000
+T	before	getMinCarbonDioxideTime	long	0
+T	before	getMinMethane	double	0000000000000000
+T	before	getMinMethaneTime	long	0
+T	before	getMinOxygen	double	0000000000000000
+T	before	getMinOxygenTime	long	0
+T	before	getMinPopulation	int	0
+T	before	getMinPopulationTime	long	0
+T	before	getOxygenList	List	
+T	before	getPopulationList	List	
+T	before	getTime	long	0
+G	before	World.getTime	long	0
+R	before	-3981345829458826657	901	3fd54a08163de1b8
+K	time
+B	completed	false
+X	diagnostic_exception	java.lang.NullPointerException
+B	tree_replaced	true
+B	random_unchanged	true
+W	after	NEXT_ID	int	0
+W	after	_CH4	double	fff8000000000000
+W	after	_CO2	double	fff8000000000000
+W	after	_O2	double	8000000000000000
+W	after	_corridorexists	boolean	false
+W	after	_height	int	7000
+W	after	_organisms	List	
+W	after	_population	int	0
+W	after	_visibleWorld	VisibleWorld	~
+W	after	_width	int	7000
+W	after	colDetTree	STRtree	present
+W	after	inCorridors	List	
+W	after	nFrames	int	1
+W	after	outCorridors	List	
+W	after	worldStatistics	WorldStatistics	s0
+S	after	aliveBeingMostChildren	GeneticCode	~
+S	after	aliveBeingMostChildrenNumber	int	0
+S	after	aliveBeingMostInfections	GeneticCode	~
+S	after	aliveBeingMostInfectionsNumber	int	0
+S	after	aliveBeingMostKills	GeneticCode	~
+S	after	aliveBeingMostKillsNumber	int	0
+S	after	beingMostChildren	GeneticCode	~
+S	after	beingMostChildrenNumber	int	0
+S	after	beingMostChildrenTime	long	0
+S	after	beingMostInfections	GeneticCode	~
+S	after	beingMostInfectionsNumber	int	0
+S	after	beingMostInfectionsTime	long	0
+S	after	beingMostKills	GeneticCode	~
+S	after	beingMostKillsNumber	int	0
+S	after	beingMostKillsTime	long	0
+S	after	birthLastTime	int	0
+S	after	birthList	List	
+S	after	birthSum	long	0
+S	after	carbonDioxideList	List	
+S	after	createdOrganisms	int	0
+S	after	deathLastTime	int	0
+S	after	deathList	List	
+S	after	deathSum	long	0
+S	after	infectionsSum	long	0
+S	after	lastBornBeing	GeneticCode	~
+S	after	lastDeadBeing	GeneticCode	~
+S	after	lastInfectedBeing	GeneticCode	~
+S	after	massExtintionState	int	0
+S	after	massExtintions	int	0
+S	after	maxBirths	int	0
+S	after	maxCarbonDioxide	double	411e848000000000
+S	after	maxCarbonDioxideTime	long	0
+S	after	maxDeaths	int	0
+S	after	maxMethane	double	0000000000000000
+S	after	maxMethaneTime	long	0
+S	after	maxOxygen	double	0000000000000000
+S	after	maxOxygenTime	long	0
+S	after	maxPopulation	int	0
+S	after	maxPopulationTime	long	0
+S	after	methaneList	List	
+S	after	minCarbonDioxide	double	411e848000000000
+S	after	minCarbonDioxideTime	long	0
+S	after	minMethane	double	0000000000000000
+S	after	minMethaneTime	long	0
+S	after	minOxygen	double	0000000000000000
+S	after	minOxygenTime	long	0
+S	after	minPopulation	int	0
+S	after	minPopulationTime	long	0
+S	after	oxygenList	List	
+S	after	populationList	List	
+S	after	populationSum	long	0
+S	after	time	long	0
+T	after	getAliveBeingMostChildren	GeneticCode	~
+T	after	getAliveBeingMostChildrenNumber	int	0
+T	after	getAliveBeingMostInfections	GeneticCode	~
+T	after	getAliveBeingMostInfectionsNumber	int	0
+T	after	getAliveBeingMostKills	GeneticCode	~
+T	after	getAliveBeingMostKillsNumber	int	0
+T	after	getAverageBirths	double	0000000000000000
+T	after	getAverageDeaths	double	0000000000000000
+T	after	getAverageInfections	double	0000000000000000
+T	after	getAveragePopulation	double	0000000000000000
+T	after	getBeingMostChildren	GeneticCode	~
+T	after	getBeingMostChildrenNumber	int	0
+T	after	getBeingMostChildrenTime	long	0
+T	after	getBeingMostInfections	GeneticCode	~
+T	after	getBeingMostInfectionsNumber	int	0
+T	after	getBeingMostInfectionsTime	long	0
+T	after	getBeingMostKills	GeneticCode	~
+T	after	getBeingMostKillsNumber	int	0
+T	after	getBeingMostKillsTime	long	0
+T	after	getBirthList	List	
+T	after	getCarbonDioxideList	List	
+T	after	getCreatedOrganisms	int	0
+T	after	getDeathList	List	
+T	after	getLastBornBeing	GeneticCode	~
+T	after	getLastDeadBeing	GeneticCode	~
+T	after	getLastInfectedBeing	GeneticCode	~
+T	after	getMassExtintions	int	0
+T	after	getMaxBirth	int	0
+T	after	getMaxCarbonDioxide	double	411e848000000000
+T	after	getMaxCarbonDioxideTime	long	0
+T	after	getMaxDeaths	int	0
+T	after	getMaxMethane	double	0000000000000000
+T	after	getMaxMethaneTime	long	0
+T	after	getMaxOxygen	double	0000000000000000
+T	after	getMaxOxygenTime	long	0
+T	after	getMaxPopulation	int	0
+T	after	getMaxPopulationTime	long	0
+T	after	getMethaneList	List	
+T	after	getMinCarbonDioxide	double	411e848000000000
+T	after	getMinCarbonDioxideTime	long	0
+T	after	getMinMethane	double	0000000000000000
+T	after	getMinMethaneTime	long	0
+T	after	getMinOxygen	double	0000000000000000
+T	after	getMinOxygenTime	long	0
+T	after	getMinPopulation	int	0
+T	after	getMinPopulationTime	long	0
+T	after	getOxygenList	List	
+T	after	getPopulationList	List	
+T	after	getTime	long	0
+G	after	World.getTime	long	0
+R	after	-3981345829458826657	901	3fd54a08163de1b8
+E

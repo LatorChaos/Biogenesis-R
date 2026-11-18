@@ -1,0 +1,398 @@
+{
+  "schema": "biogenesis-paste-boundary-oracle-v1",
+  "generated_utc": "2026-10-25T21:30:32.861569+00:00",
+  "helper": {
+    "path": "tools/reference/PasteBoundaryOracle.java",
+    "sha256": "56bd587c83860bb715eb024ac69e1badf5d9b7f0625dc6a6b07631e27413bb8a",
+    "compiled_classes": {
+      "helpers-source/biogenesis/PasteBoundaryOracle.class": "61ae555a95a3bd54337e0d785f4e6e1a640c547557beb3d8148df44ee2dd8c9a",
+      "helpers-jar/biogenesis/PasteBoundaryOracle.class": "61ae555a95a3bd54337e0d785f4e6e1a640c547557beb3d8148df44ee2dd8c9a"
+    },
+    "source_jar_helper_classes_identical": true
+  },
+  "fixture": {
+    "path": "crates/core/tests/fixtures/paste_rejection.tsv",
+    "all_three_outputs_byte_identical": true,
+    "sha256": "73b1fa2480d2211e29cbbb24c4653c18d3a0786c5e0074f84e0c378b0b333db9",
+    "bytes": 1015,
+    "lines": 21,
+    "cases": 4
+  },
+  "reference": {
+    "original_files_checked": 74,
+    "original_manifest": "docs/evidence/reference-manifest.json",
+    "source_sha256": {
+      "Gene": "d070db688526a401c8b55904c06066b2169ca82c76837e3001b4c423bc80e720",
+      "GeneticCode": "f8bf3d0315cec8a2bf515a1626391fe5b646e47566234d398ef58bbdbc3a9004",
+      "Organism": "8650cb0983069dbae09e2ca704059fb82761fa6e0d87f35218c2342ffc60df46",
+      "Utils": "7b3306148684ba111629690a928dcb45abd4825104cfb90b530cd2d0dc6dd2b3",
+      "World": "a67543055a665a9a378e37c860671996e2ca0f510cb622375172a24333d7cae1"
+    },
+    "jar_sha256": "0baeae8d29f5fdbbb830c1a9e51c7f2b5314a33011b20ec7471eeaa27f0398e1",
+    "jts_sha256": "00102cde26c457b81fbb0248e4f8845884243caba0dc9b7fb42e0ea877383bc1",
+    "unchanged167case_fixture_sha256": "298e7a37eb2983252797a40e45ff721141ba22e6b8cfdaba91a1bfa079552f8b"
+  },
+  "execution": {
+    "versions": {
+      "java": "openjdk version \"21.0.12.1\" 2026-08-18\nOpenJDK Runtime Environment (build 21.0.12.1+1)\nOpenJDK 64-Bit Server VM (build 21.0.12.1+1, mixed mode, sharing)\n",
+      "javac": "javac 21.0.12.1\n"
+    },
+    "compile_commands": [
+      {
+        "argv": [
+          "javac",
+          "-encoding",
+          "UTF-8",
+          "-cp",
+          "<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "-d",
+          "<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9/helpers-source",
+          "<project-root>/tools/reference/PasteBoundaryOracle.java"
+        ],
+        "cwd": "<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9",
+        "pid": 4,
+        "process_group": 4,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.46866734200011706,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "javac",
+          "-encoding",
+          "UTF-8",
+          "-cp",
+          "<reference-root>/ColorMod_2_01/biogenesis.jar:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "-d",
+          "<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9/helpers-jar",
+          "<project-root>/tools/reference/PasteBoundaryOracle.java"
+        ],
+        "cwd": "<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9",
+        "pid": 31,
+        "process_group": 31,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.4420277789977263,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "positive_runs": [
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx384m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9/source-a/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9/source-a/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9/source-a/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9/source-a/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.PasteBoundaryOracle",
+          "<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9/source-a/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9/source-a",
+        "pid": 5,
+        "process_group": 5,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.07646629600276356,
+        "stdout": "PASTE_BOUNDARY_ORACLE PASS cases=4\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx384m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9/source-b/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9/source-b/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9/source-b/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9/source-b/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.PasteBoundaryOracle",
+          "<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9/source-b/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9/source-b",
+        "pid": 25,
+        "process_group": 25,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.07085547399765346,
+        "stdout": "PASTE_BOUNDARY_ORACLE PASS cases=4\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx384m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9/jar/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9/jar/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9/jar/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9/jar/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9/helpers-jar:<reference-root>/ColorMod_2_01/biogenesis.jar:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.PasteBoundaryOracle",
+          "<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9/jar/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9/jar",
+        "pid": 45,
+        "process_group": 45,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.07335959500051104,
+        "stdout": "PASTE_BOUNDARY_ORACLE PASS cases=4\n",
+        "stderr": ""
+      }
+    ],
+    "raw_receipts": ".workflow-local/paste-boundary-oracle-jwok2ab9/commands.json",
+    "headless": true,
+    "explicit_profile_properties": [
+      "user.home",
+      "java.io.tmpdir",
+      "java.util.prefs.userRoot",
+      "java.util.prefs.systemRoot"
+    ]
+  },
+  "observations": [
+    {
+      "name": "valid-control",
+      "seed": 827364,
+      "input": [
+        "7000",
+        "7000",
+        "3500",
+        "3500",
+        "0",
+        "false"
+      ],
+      "before": [
+        "411e848000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0",
+        "0",
+        "~"
+      ],
+      "after": [
+        "true",
+        "411e83e000000000",
+        "4044000000000000",
+        "0000000000000000",
+        "1",
+        "1",
+        "0",
+        "3500",
+        "3500",
+        "2",
+        "2"
+      ],
+      "following_rng": [
+        "-7401197134639783854",
+        "216",
+        "3fe71538038d6842"
+      ],
+      "observed_gas_deltas_co2_o2_ch4": [
+        -40.0,
+        40.0,
+        0.0
+      ],
+      "observed_next_id_delta": 1
+    },
+    {
+      "name": "first-branch-999",
+      "seed": 827364,
+      "input": [
+        "7000",
+        "7000",
+        "3500",
+        "3500",
+        "999",
+        "false"
+      ],
+      "before": [
+        "411e848000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0",
+        "0",
+        "~"
+      ],
+      "after": [
+        "false",
+        "411e848000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0",
+        "1",
+        "~",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "following_rng": [
+        "-7401197134639783854",
+        "216",
+        "3fe71538038d6842"
+      ],
+      "observed_gas_deltas_co2_o2_ch4": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "observed_next_id_delta": 0
+    },
+    {
+      "name": "outside-left",
+      "seed": 827364,
+      "input": [
+        "7000",
+        "7000",
+        "-100",
+        "3500",
+        "0",
+        "false"
+      ],
+      "before": [
+        "411e848000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0",
+        "0",
+        "~"
+      ],
+      "after": [
+        "false",
+        "411e848000000000",
+        "0000000000000000",
+        "0000000000000000",
+        "0",
+        "1",
+        "~",
+        "-100",
+        "3500",
+        "102",
+        "2"
+      ],
+      "following_rng": [
+        "-7401197134639783854",
+        "216",
+        "3fe71538038d6842"
+      ],
+      "observed_gas_deltas_co2_o2_ch4": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "observed_next_id_delta": 0
+    },
+    {
+      "name": "overlapping-placement",
+      "seed": 827364,
+      "input": [
+        "7000",
+        "7000",
+        "3500",
+        "3500",
+        "0",
+        "true"
+      ],
+      "before": [
+        "411e83e000000000",
+        "4044000000000000",
+        "0000000000000000",
+        "1",
+        "0",
+        "~"
+      ],
+      "after": [
+        "false",
+        "411e83e000000000",
+        "4044000000000000",
+        "0000000000000000",
+        "1",
+        "1",
+        "~",
+        "3500",
+        "3500",
+        "2",
+        "2"
+      ],
+      "following_rng": [
+        "7196219562972004375",
+        "2636",
+        "3fe20be2588edfe9"
+      ],
+      "observed_gas_deltas_co2_o2_ch4": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "observed_next_id_delta": 0
+    }
+  ],
+  "comparison_contract": {
+    "required": [
+      "success/rejection",
+      "valid placed-object fields",
+      "world gases and deltas",
+      "identification allocation",
+      "exact following RNG suffix"
+    ],
+    "discarded_candidate_metadata_and_bounds": "Recorded source observations remain; consumed Rust factory input/result does not expose them, so equality is not claimed.",
+    "all_compared_values": "exact, including raw double bits"
+  },
+  "negative_checks": [
+    {
+      "argv": [
+        "java",
+        "-Djava.awt.headless=true",
+        "-cp",
+        "<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+        "biogenesis.PasteBoundaryOracle",
+        "<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9/no-profile-flags/observations"
+      ],
+      "cwd": "<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9/no-profile-flags",
+      "exit_code": 1,
+      "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: user.home\n\tat biogenesis.PasteBoundaryOracle.require(PasteBoundaryOracle.java:17)\n\tat biogenesis.PasteBoundaryOracle.main(PasteBoundaryOracle.java:85)\n"
+    },
+    {
+      "argv": [
+        "java",
+        "-Djava.awt.headless=true",
+        "-Duser.home=<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9/source-a/home",
+        "-Djava.io.tmpdir=<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9/source-a/tmp",
+        "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9/source-a/prefs-user",
+        "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9/source-a/prefs-system",
+        "-cp",
+        "<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+        "biogenesis.PasteBoundaryOracle",
+        "<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9/source-a/observations"
+      ],
+      "cwd": "<project-root>/.workflow-local/paste-boundary-oracle-jwok2ab9/existing-output",
+      "exit_code": 1,
+      "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Output directory must not exist\n\tat biogenesis.PasteBoundaryOracle.require(PasteBoundaryOracle.java:17)\n\tat biogenesis.PasteBoundaryOracle.main(PasteBoundaryOracle.java:87)\n"
+    }
+  ],
+  "existing_output_preserved": true,
+  "limitations": [
+    "The zero-origin death special case is not exercised.",
+    "The blocker is real and successfully pasted; direct list registration avoids the UI-dependent addOrganism path.",
+    "Full frames, UI controls, birth inheritance and publication are outside this fixture.",
+    "This provenance reports oracle execution only; Rust before/after regression receipts are owned separately."
+  ]
+}

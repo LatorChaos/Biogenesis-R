@@ -1,0 +1,41 @@
+{
+  "status": "FROZEN_ACTUAL_SOURCE_OBSERVATIONS_BEFORE_RUST",
+  "raw_rows": 1877,
+  "tags": {
+    "C": 31,
+    "G": 218,
+    "R": 93,
+    "B": 58,
+    "T": 31,
+    "L": 1314,
+    "A": 31,
+    "W": 62,
+    "E": 31,
+    "X": 8
+  },
+  "cases": 31,
+  "supplied_genes": 218,
+  "preview_calls": 31,
+  "preview_success": 27,
+  "preview_index_exceptions": 4,
+  "actual_lines": 1314,
+  "transform_rows": 31,
+  "genotype_purity_true": 31,
+  "preview_RNG_purity_pairs": 31,
+  "paste_calls": 31,
+  "paste_true": 4,
+  "paste_false": 23,
+  "paste_index_exceptions": 4,
+  "partitions": {
+    "input_schema_rows_C_G_E": 280,
+    "preview_B_T_L_A_R_X_observation_rows": 1473,
+    "paste_B_W_R_X_observation_rows": 124
+  },
+  "source_paste_world": "Actual World(null) retains zero gases; setting INITIAL_* does not invoke genesis",
+  "runtime_Rust_comparisons": 0,
+  "limits": [
+    "No preview or paste Rust replay yet",
+    "Source exceptions remain observations, not a Rust panic requirement",
+    "No pixel or UI acceptance; actual drawLine arguments and Graphics2D transforms only"
+  ]
+}

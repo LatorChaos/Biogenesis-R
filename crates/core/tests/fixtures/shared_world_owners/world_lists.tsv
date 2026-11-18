@@ -1,0 +1,1170 @@
+C	member_history	authored_World_root_recipe	827364
+U	ACCEPT_CONNECTIONS	boolean	false
+U	AGE_DIVISOR	int	4
+U	AUBURN_ENERGY_CONSUMPTION	double	0000000000000000
+U	AUBURN_PROB	int	2
+U	AUTO_BACKUP	boolean	false
+U	BACKUP_DELAY	int	100
+U	BARK_ENERGY_CONSUMPTION	double	3fe6666666666666
+U	BARK_PROB	int	3
+U	BLOND_ENERGY_CONSUMPTION	double	3fa2f1a9fbe76c8b
+U	BLOND_PROB	int	2
+U	BLUE_ENERGY_CONSUMPTION	double	0000000000000000
+U	BLUE_PROB	int	2
+U	C4_ENERGY_CONSUMPTION	double	3fe199999999999a
+U	C4_PROB	int	3
+U	CH4_TO_CO2_DIVISOR	int	1000
+U	CLADE_COMPLEXITY	int	25
+U	CO2_TO_CH4_DIVISOR	int	999
+U	CONNECT_TO_SERVER	boolean	false
+U	CORAL_ENERGY_CONSUMPTION	double	3f847ae147ae147b
+U	CORAL_PROB	int	1
+U	CREAM_ENERGY_CONSUMPTION	double	0000000000000000
+U	CREAM_ORGANIC_SUBS_PRODUCED	double	3f8999999999999a
+U	CREAM_PROB	int	1
+U	CROWDEDFOREST_ENERGY_CONSUMPTION	double	3ff0000000000000
+U	CROWDEDLIME_ENERGY_CONSUMPTION	double	3fe0000000000000
+U	CYAN_ENERGY_CONSUMPTION	double	0000000000000000
+U	CYAN_PROB	int	8
+U	DARKGRAY_ENERGY_CONSUMPTION	double	4024000000000000
+U	DARKGRAY_PROB	int	5
+U	DARKJADE_DELAY	int	4
+U	DARK_ENERGY_CONSUMPTION	double	3f847ae147ae147b
+U	DARK_PROB	int	1
+U	DECAY_ENERGY	double	3fb999999999999a
+U	DELAY	int	2
+U	DODGE_ENERGY_CONSUMPTION	double	0000000000000000
+U	DRAIN_SUBS_DIVISOR	int	5000
+U	ELASTICITY	double	3fe999999999999a
+U	EXPERIENCE_ENERGY_CONSUMPTION	double	0000000000000000
+U	EYE_ENERGY_CONSUMPTION	double	0000000000000000
+U	EYE_PROB	int	4
+U	FALLOW_ENERGY_CONSUMPTION	double	0000000000000000
+U	FALLOW_PROB	int	1
+U	FIRE_ENERGY_CONSUMPTION	double	0000000000000000
+U	FIRE_PROB	int	1
+U	FLOWER_ENERGY_CONSUMPTION	double	3f847ae147ae147b
+U	FLOWER_PROB	int	2
+U	FOREST_ENERGY_CONSUMPTION	double	3ff0000000000000
+U	FOREST_PROB	int	3
+U	GOLD_DIVISOR	double	4000000000000000
+U	GOLD_PROB	int	2
+U	GRASS_ENERGY_CONSUMPTION	double	3ff0000000000000
+U	GRASS_PROB	int	3
+U	GRAY_ENERGY_CONSUMPTION	double	3fb999999999999a
+U	GRAY_PROB	int	1
+U	GREEN_ENERGY_CONSUMPTION	double	3ff199999999999a
+U	GREEN_OBTAINED_ENERGY_DIVISOR	int	1000
+U	GREEN_PROB	int	3
+U	HARDWARE_ACCELERATION	int	0
+U	HEALING	int	40000
+U	IMMUNE_SYSTEM	int	40000
+U	INDIGO_DIVISOR	double	4024000000000000
+U	INDIGO_ENERGY_CONSUMPTION	double	3ff0000000000000
+U	INDIGO_PROB	int	2
+U	INITIAL_CH4	double	408f400000000000
+U	INITIAL_CO2	double	411e848000000000
+U	INITIAL_COMPLEXITY	int	2
+U	INITIAL_ENERGY	int	40
+U	INITIAL_O2	double	408f400000000000
+U	INITIAL_ORGANISMS	int	0
+U	JADE_ENERGY_CONSUMPTION	double	3ff0000000000000
+U	JADE_PROB	int	3
+U	LAVENDER_ENERGY_CONSUMPTION	double	3ff0000000000000
+U	LAVENDER_PROB	int	2
+U	LAVENDER_SHIELD	int	10000
+U	LEAF_ENERGY_CONSUMPTION	double	3ff2666666666666
+U	LEAF_PROB	int	3
+U	LILAC_ENERGY_CONSUMPTION	double	0000000000000000
+U	LILAC_PROB	int	1
+U	LIME_ENERGY_CONSUMPTION	double	3ff4000000000000
+U	LIME_PROB	int	3
+U	LOCAL_PORT	int	8888
+U	MAGENTA_ENERGY_CONSUMPTION	double	3f847ae147ae147b
+U	MAGENTA_PROB	int	5
+U	MAROON_ENERGY_CONSUMPTION	double	0000000000000000
+U	MAROON_PROB	int	2
+U	MAX_AGE	int	6
+U	MAX_CONNECTIONS	int	1
+U	MAX_MUTATION_RATE	int	100
+U	MAX_ROT	double	3fc921fb54442d18
+U	MAX_VEL	double	4014000000000000
+U	META_MUTATION_RATE	int	1000
+U	MINT_ENERGY_CONSUMPTION	double	3fb3333333333333
+U	MINT_PROB	int	2
+U	MIN_MUTATION_RATE	int	0
+U	MOSQUITO_ENERGY_CONSUMPTION	double	0000000000000000
+U	OCHRE_ENERGY_CONSUMPTION	double	3fd999999999999a
+U	OCHRE_PROB	int	1
+U	OLIVE_ENERGY_CONSUMPTION	double	3fb999999999999a
+U	OLIVE_PROB	int	1
+U	ORANGE_ENERGY_CONSUMPTION	double	0000000000000000
+U	ORANGE_PROB	int	1
+U	ORGANIC_OBTAINED_ENERGY	double	4000000000000000
+U	ORGANIC_SUBS_PRODUCED	double	3fb999999999999a
+U	ORGANISMS_VECTOR_SIZE	int	50
+U	PINK_ENERGY_CONSUMPTION	double	0000000000000000
+U	PINK_PROB	int	2
+U	PLAGUE_ENERGY_CONSUMPTION	double	4024000000000000
+U	PLAGUE_PROB	int	1
+U	PURPLE_ENERGY_CONSUMPTION	double	4010000000000000
+U	PURPLE_PROB	int	3
+U	RED_ENERGY_CONSUMPTION	double	0000000000000000
+U	RED_PROB	int	1
+U	ROSE_ENERGY_CONSUMPTION	double	3f847ae147ae147b
+U	ROSE_PROB	int	2
+U	RUBBING	double	3fef5c28f5c28f5c
+U	SCOURGE_ENERGY_CONSUMPTION	double	3fb999999999999a
+U	SEGMENT_COST_DIVISOR	int	5000
+U	SERVER_PORT	int	0
+U	SILVER_ENERGY_CONSUMPTION	double	3fb999999999999a
+U	SILVER_PROB	int	1
+U	SKY_ENERGY_CONSUMPTION	double	3fa999999999999a
+U	SKY_PROB	int	1
+U	SPIKE_ENERGY_CONSUMPTION	double	0000000000000000
+U	SPIKE_PROB	int	1
+U	SPORE_ENERGY_CONSUMPTION	double	0000000000000000
+U	SPORE_PROB	int	2
+U	SPRING_ENERGY_CONSUMPTION	double	3ff0000000000000
+U	SPRING_PROB	int	3
+U	SUMMER_ENERGY_CONSUMPTION	double	3ffa666666666666
+U	SUMMER_PROB	int	3
+U	SYMBIONT_ENERGY_CONSUMPTION	double	3fe3333333333333
+U	TEAL_ENERGY_CONSUMPTION	double	0000000000000000
+U	TEAL_PROB	int	8
+U	VIOLET_ENERGY_CONSUMPTION	double	3fb999999999999a
+U	VIOLET_PROB	int	1
+U	VIRUS_ENERGY_CONSUMPTION	double	3f847ae147ae147b
+U	WHITE_ENERGY_CONSUMPTION	double	3fb999999999999a
+U	WHITE_PROB	int	4
+U	WINDOW_HEIGHT	int	480
+U	WINDOW_STATE	int	0
+U	WINDOW_WIDTH	int	640
+U	WINDOW_X	int	0
+U	WINDOW_Y	int	0
+U	WORLD_HEIGHT	int	800
+U	WORLD_WIDTH	int	1200
+U	YELLOW_ENERGY_CONSUMPTION	double	0000000000000000
+U	YELLOW_PROB	int	2
+I	empty_ArrayList_shared_membership_population_history
+P	authored	o0
+O	authored	o0	biogenesis.World
+F	authored	o0	biogenesis.World	NEXT_ID	int	false	0
+F	authored	o0	biogenesis.World	_CH4	double	false	408f400000000000
+F	authored	o0	biogenesis.World	_CO2	double	false	411e848000000000
+F	authored	o0	biogenesis.World	_O2	double	false	408f400000000000
+F	authored	o0	biogenesis.World	_corridorexists	boolean	false	false
+F	authored	o0	biogenesis.World	_height	int	false	800
+F	authored	o0	biogenesis.World	_organisms	java.util.List	false	o1
+F	authored	o0	biogenesis.World	_population	int	false	0
+F	authored	o0	biogenesis.World	_visibleWorld	biogenesis.VisibleWorld	true	o2
+F	authored	o0	biogenesis.World	_width	int	false	1200
+F	authored	o0	biogenesis.World	colDetTree	org.locationtech.jts.index.strtree.STRtree	false	o3
+F	authored	o0	biogenesis.World	inCorridors	java.util.List	true	o4
+F	authored	o0	biogenesis.World	nFrames	int	false	0
+F	authored	o0	biogenesis.World	outCorridors	java.util.List	true	o5
+F	authored	o0	biogenesis.World	worldStatistics	biogenesis.WorldStatistics	false	o6
+O	authored	o1	java.util.ArrayList
+L	authored	o1	0
+O	authored	o2	biogenesis.VisibleWorld
+O	authored	o3	org.locationtech.jts.index.strtree.STRtree
+F	authored	o3	org.locationtech.jts.index.strtree.AbstractSTRtree	built	boolean	false	false
+F	authored	o3	org.locationtech.jts.index.strtree.AbstractSTRtree	itemBoundables	java.util.ArrayList	false	o7
+F	authored	o3	org.locationtech.jts.index.strtree.AbstractSTRtree	nodeCapacity	int	false	10
+F	authored	o3	org.locationtech.jts.index.strtree.AbstractSTRtree	root	org.locationtech.jts.index.strtree.AbstractNode	false	~
+O	authored	o4	java.util.Collections$SynchronizedRandomAccessList
+L	authored	o4	0
+O	authored	o5	java.util.Collections$SynchronizedRandomAccessList
+L	authored	o5	0
+O	authored	o6	biogenesis.WorldStatistics
+F	authored	o6	biogenesis.WorldStatistics	aliveBeingMostChildren	biogenesis.GeneticCode	false	~
+F	authored	o6	biogenesis.WorldStatistics	aliveBeingMostChildrenNumber	int	false	0
+F	authored	o6	biogenesis.WorldStatistics	aliveBeingMostInfections	biogenesis.GeneticCode	false	~
+F	authored	o6	biogenesis.WorldStatistics	aliveBeingMostInfectionsNumber	int	false	0
+F	authored	o6	biogenesis.WorldStatistics	aliveBeingMostKills	biogenesis.GeneticCode	false	~
+F	authored	o6	biogenesis.WorldStatistics	aliveBeingMostKillsNumber	int	false	0
+F	authored	o6	biogenesis.WorldStatistics	beingMostChildren	biogenesis.GeneticCode	false	~
+F	authored	o6	biogenesis.WorldStatistics	beingMostChildrenNumber	int	false	0
+F	authored	o6	biogenesis.WorldStatistics	beingMostChildrenTime	long	false	0
+F	authored	o6	biogenesis.WorldStatistics	beingMostInfections	biogenesis.GeneticCode	false	~
+F	authored	o6	biogenesis.WorldStatistics	beingMostInfectionsNumber	int	false	0
+F	authored	o6	biogenesis.WorldStatistics	beingMostInfectionsTime	long	false	0
+F	authored	o6	biogenesis.WorldStatistics	beingMostKills	biogenesis.GeneticCode	false	~
+F	authored	o6	biogenesis.WorldStatistics	beingMostKillsNumber	int	false	0
+F	authored	o6	biogenesis.WorldStatistics	beingMostKillsTime	long	false	0
+F	authored	o6	biogenesis.WorldStatistics	birthLastTime	int	false	0
+F	authored	o6	biogenesis.WorldStatistics	birthList	java.util.List	false	o8
+F	authored	o6	biogenesis.WorldStatistics	birthSum	long	false	0
+F	authored	o6	biogenesis.WorldStatistics	carbonDioxideList	java.util.List	false	o9
+F	authored	o6	biogenesis.WorldStatistics	createdOrganisms	int	false	0
+F	authored	o6	biogenesis.WorldStatistics	deathLastTime	int	false	0
+F	authored	o6	biogenesis.WorldStatistics	deathList	java.util.List	false	o10
+F	authored	o6	biogenesis.WorldStatistics	deathSum	long	false	0
+F	authored	o6	biogenesis.WorldStatistics	infectionsSum	long	false	0
+F	authored	o6	biogenesis.WorldStatistics	lastBornBeing	biogenesis.GeneticCode	false	~
+F	authored	o6	biogenesis.WorldStatistics	lastDeadBeing	biogenesis.GeneticCode	false	~
+F	authored	o6	biogenesis.WorldStatistics	lastInfectedBeing	biogenesis.GeneticCode	false	~
+F	authored	o6	biogenesis.WorldStatistics	massExtintionState	int	false	0
+F	authored	o6	biogenesis.WorldStatistics	massExtintions	int	false	0
+F	authored	o6	biogenesis.WorldStatistics	maxBirths	int	false	0
+F	authored	o6	biogenesis.WorldStatistics	maxCarbonDioxide	double	false	411e848000000000
+F	authored	o6	biogenesis.WorldStatistics	maxCarbonDioxideTime	long	false	0
+F	authored	o6	biogenesis.WorldStatistics	maxDeaths	int	false	0
+F	authored	o6	biogenesis.WorldStatistics	maxMethane	double	false	408f400000000000
+F	authored	o6	biogenesis.WorldStatistics	maxMethaneTime	long	false	0
+F	authored	o6	biogenesis.WorldStatistics	maxOxygen	double	false	408f400000000000
+F	authored	o6	biogenesis.WorldStatistics	maxOxygenTime	long	false	0
+F	authored	o6	biogenesis.WorldStatistics	maxPopulation	int	false	0
+F	authored	o6	biogenesis.WorldStatistics	maxPopulationTime	long	false	0
+F	authored	o6	biogenesis.WorldStatistics	methaneList	java.util.List	false	o11
+F	authored	o6	biogenesis.WorldStatistics	minCarbonDioxide	double	false	411e848000000000
+F	authored	o6	biogenesis.WorldStatistics	minCarbonDioxideTime	long	false	0
+F	authored	o6	biogenesis.WorldStatistics	minMethane	double	false	408f400000000000
+F	authored	o6	biogenesis.WorldStatistics	minMethaneTime	long	false	0
+F	authored	o6	biogenesis.WorldStatistics	minOxygen	double	false	408f400000000000
+F	authored	o6	biogenesis.WorldStatistics	minOxygenTime	long	false	0
+F	authored	o6	biogenesis.WorldStatistics	minPopulation	int	false	0
+F	authored	o6	biogenesis.WorldStatistics	minPopulationTime	long	false	0
+F	authored	o6	biogenesis.WorldStatistics	oxygenList	java.util.List	false	o12
+F	authored	o6	biogenesis.WorldStatistics	populationList	java.util.List	false	o1
+F	authored	o6	biogenesis.WorldStatistics	populationSum	long	false	0
+F	authored	o6	biogenesis.WorldStatistics	time	long	false	0
+O	authored	o7	java.util.ArrayList
+L	authored	o7	0
+O	authored	o8	java.util.ArrayList
+L	authored	o8	0
+O	authored	o9	java.util.ArrayList
+L	authored	o9	0
+O	authored	o10	java.util.ArrayList
+L	authored	o10	0
+O	authored	o11	java.util.ArrayList
+L	authored	o11	0
+O	authored	o12	java.util.ArrayList
+L	authored	o12	0
+V	authored	null_or_void	~
+Z	authored	member_history-authored.ser	2072	a635d0de368fe9c5c7141bacab6e04cde9c4b5c6b7103f5d6d41e87bbdc1a35f
+R	authored	995cd818acf5c21f9af31df613bc16f128d8f11d01f91254511a0cc6157f241e	aced0005737200106a6176612e7574696c2e52616e646f6d363296344bf00a530300035a0014686176654e6578744e657874476175737369616e4400106e6578744e657874476175737369616e4a000473656564787000000000000000000000000005dee0798978
+RP	authored	-3981345829458826657	901	3fd54a08163de1b8
+K	call_0	read_input
+RB	call_0	995cd818acf5c21f9af31df613bc16f128d8f11d01f91254511a0cc6157f241e	aced0005737200106a6176612e7574696c2e52616e646f6d363296344bf00a530300035a0014686176654e6578744e657874476175737369616e4400106e6578744e657874476175737369616e4a000473656564787000000000000000000000000005dee0798978
+X	call_0	none
+T	call_0	false	false	false	false	0	0	true
+P	call_0	o0
+O	call_0	o0	biogenesis.World
+F	call_0	o0	biogenesis.World	NEXT_ID	int	false	0
+F	call_0	o0	biogenesis.World	_CH4	double	false	408f400000000000
+F	call_0	o0	biogenesis.World	_CO2	double	false	411e848000000000
+F	call_0	o0	biogenesis.World	_O2	double	false	408f400000000000
+F	call_0	o0	biogenesis.World	_corridorexists	boolean	false	false
+F	call_0	o0	biogenesis.World	_height	int	false	800
+F	call_0	o0	biogenesis.World	_organisms	java.util.List	false	o1
+F	call_0	o0	biogenesis.World	_population	int	false	0
+F	call_0	o0	biogenesis.World	_visibleWorld	biogenesis.VisibleWorld	true	~
+F	call_0	o0	biogenesis.World	_width	int	false	1200
+F	call_0	o0	biogenesis.World	colDetTree	org.locationtech.jts.index.strtree.STRtree	false	o2
+F	call_0	o0	biogenesis.World	inCorridors	java.util.List	true	o3
+F	call_0	o0	biogenesis.World	nFrames	int	false	0
+F	call_0	o0	biogenesis.World	outCorridors	java.util.List	true	o4
+F	call_0	o0	biogenesis.World	worldStatistics	biogenesis.WorldStatistics	false	o5
+O	call_0	o1	java.util.ArrayList
+L	call_0	o1	0
+O	call_0	o2	org.locationtech.jts.index.strtree.STRtree
+F	call_0	o2	org.locationtech.jts.index.strtree.AbstractSTRtree	built	boolean	false	false
+F	call_0	o2	org.locationtech.jts.index.strtree.AbstractSTRtree	itemBoundables	java.util.ArrayList	false	o6
+F	call_0	o2	org.locationtech.jts.index.strtree.AbstractSTRtree	nodeCapacity	int	false	10
+F	call_0	o2	org.locationtech.jts.index.strtree.AbstractSTRtree	root	org.locationtech.jts.index.strtree.AbstractNode	false	~
+O	call_0	o3	java.util.Collections$SynchronizedRandomAccessList
+L	call_0	o3	0
+O	call_0	o4	java.util.Collections$SynchronizedRandomAccessList
+L	call_0	o4	0
+O	call_0	o5	biogenesis.WorldStatistics
+F	call_0	o5	biogenesis.WorldStatistics	aliveBeingMostChildren	biogenesis.GeneticCode	false	~
+F	call_0	o5	biogenesis.WorldStatistics	aliveBeingMostChildrenNumber	int	false	0
+F	call_0	o5	biogenesis.WorldStatistics	aliveBeingMostInfections	biogenesis.GeneticCode	false	~
+F	call_0	o5	biogenesis.WorldStatistics	aliveBeingMostInfectionsNumber	int	false	0
+F	call_0	o5	biogenesis.WorldStatistics	aliveBeingMostKills	biogenesis.GeneticCode	false	~
+F	call_0	o5	biogenesis.WorldStatistics	aliveBeingMostKillsNumber	int	false	0
+F	call_0	o5	biogenesis.WorldStatistics	beingMostChildren	biogenesis.GeneticCode	false	~
+F	call_0	o5	biogenesis.WorldStatistics	beingMostChildrenNumber	int	false	0
+F	call_0	o5	biogenesis.WorldStatistics	beingMostChildrenTime	long	false	0
+F	call_0	o5	biogenesis.WorldStatistics	beingMostInfections	biogenesis.GeneticCode	false	~
+F	call_0	o5	biogenesis.WorldStatistics	beingMostInfectionsNumber	int	false	0
+F	call_0	o5	biogenesis.WorldStatistics	beingMostInfectionsTime	long	false	0
+F	call_0	o5	biogenesis.WorldStatistics	beingMostKills	biogenesis.GeneticCode	false	~
+F	call_0	o5	biogenesis.WorldStatistics	beingMostKillsNumber	int	false	0
+F	call_0	o5	biogenesis.WorldStatistics	beingMostKillsTime	long	false	0
+F	call_0	o5	biogenesis.WorldStatistics	birthLastTime	int	false	0
+F	call_0	o5	biogenesis.WorldStatistics	birthList	java.util.List	false	o7
+F	call_0	o5	biogenesis.WorldStatistics	birthSum	long	false	0
+F	call_0	o5	biogenesis.WorldStatistics	carbonDioxideList	java.util.List	false	o8
+F	call_0	o5	biogenesis.WorldStatistics	createdOrganisms	int	false	0
+F	call_0	o5	biogenesis.WorldStatistics	deathLastTime	int	false	0
+F	call_0	o5	biogenesis.WorldStatistics	deathList	java.util.List	false	o9
+F	call_0	o5	biogenesis.WorldStatistics	deathSum	long	false	0
+F	call_0	o5	biogenesis.WorldStatistics	infectionsSum	long	false	0
+F	call_0	o5	biogenesis.WorldStatistics	lastBornBeing	biogenesis.GeneticCode	false	~
+F	call_0	o5	biogenesis.WorldStatistics	lastDeadBeing	biogenesis.GeneticCode	false	~
+F	call_0	o5	biogenesis.WorldStatistics	lastInfectedBeing	biogenesis.GeneticCode	false	~
+F	call_0	o5	biogenesis.WorldStatistics	massExtintionState	int	false	0
+F	call_0	o5	biogenesis.WorldStatistics	massExtintions	int	false	0
+F	call_0	o5	biogenesis.WorldStatistics	maxBirths	int	false	0
+F	call_0	o5	biogenesis.WorldStatistics	maxCarbonDioxide	double	false	411e848000000000
+F	call_0	o5	biogenesis.WorldStatistics	maxCarbonDioxideTime	long	false	0
+F	call_0	o5	biogenesis.WorldStatistics	maxDeaths	int	false	0
+F	call_0	o5	biogenesis.WorldStatistics	maxMethane	double	false	408f400000000000
+F	call_0	o5	biogenesis.WorldStatistics	maxMethaneTime	long	false	0
+F	call_0	o5	biogenesis.WorldStatistics	maxOxygen	double	false	408f400000000000
+F	call_0	o5	biogenesis.WorldStatistics	maxOxygenTime	long	false	0
+F	call_0	o5	biogenesis.WorldStatistics	maxPopulation	int	false	0
+F	call_0	o5	biogenesis.WorldStatistics	maxPopulationTime	long	false	0
+F	call_0	o5	biogenesis.WorldStatistics	methaneList	java.util.List	false	o10
+F	call_0	o5	biogenesis.WorldStatistics	minCarbonDioxide	double	false	411e848000000000
+F	call_0	o5	biogenesis.WorldStatistics	minCarbonDioxideTime	long	false	0
+F	call_0	o5	biogenesis.WorldStatistics	minMethane	double	false	408f400000000000
+F	call_0	o5	biogenesis.WorldStatistics	minMethaneTime	long	false	0
+F	call_0	o5	biogenesis.WorldStatistics	minOxygen	double	false	408f400000000000
+F	call_0	o5	biogenesis.WorldStatistics	minOxygenTime	long	false	0
+F	call_0	o5	biogenesis.WorldStatistics	minPopulation	int	false	0
+F	call_0	o5	biogenesis.WorldStatistics	minPopulationTime	long	false	0
+F	call_0	o5	biogenesis.WorldStatistics	oxygenList	java.util.List	false	o11
+F	call_0	o5	biogenesis.WorldStatistics	populationList	java.util.List	false	o1
+F	call_0	o5	biogenesis.WorldStatistics	populationSum	long	false	0
+F	call_0	o5	biogenesis.WorldStatistics	time	long	false	0
+O	call_0	o6	java.util.ArrayList
+L	call_0	o6	0
+O	call_0	o7	java.util.ArrayList
+L	call_0	o7	0
+O	call_0	o8	java.util.ArrayList
+L	call_0	o8	0
+O	call_0	o9	java.util.ArrayList
+L	call_0	o9	0
+O	call_0	o10	java.util.ArrayList
+L	call_0	o10	0
+O	call_0	o11	java.util.ArrayList
+L	call_0	o11	0
+V	call_0	null_or_void	~
+Z	call_0	member_history-call_0.ser	2072	a635d0de368fe9c5c7141bacab6e04cde9c4b5c6b7103f5d6d41e87bbdc1a35f
+R	call_0	995cd818acf5c21f9af31df613bc16f128d8f11d01f91254511a0cc6157f241e	aced0005737200106a6176612e7574696c2e52616e646f6d363296344bf00a530300035a0014686176654e6578744e657874476175737369616e4400106e6578744e657874476175737369616e4a000473656564787000000000000000000000000005dee0798978
+RP	call_0	-3981345829458826657	901	3fd54a08163de1b8
+K	call_1	eventTime
+RB	call_1	995cd818acf5c21f9af31df613bc16f128d8f11d01f91254511a0cc6157f241e	aced0005737200106a6176612e7574696c2e52616e646f6d363296344bf00a530300035a0014686176654e6578744e657874476175737369616e4400106e6578744e657874476175737369616e4a000473656564787000000000000000000000000005dee0798978
+X	call_1	none
+P	call_1	o0
+O	call_1	o0	biogenesis.World
+F	call_1	o0	biogenesis.World	NEXT_ID	int	false	0
+F	call_1	o0	biogenesis.World	_CH4	double	false	408f400000000000
+F	call_1	o0	biogenesis.World	_CO2	double	false	411e848000000000
+F	call_1	o0	biogenesis.World	_O2	double	false	408f400000000000
+F	call_1	o0	biogenesis.World	_corridorexists	boolean	false	false
+F	call_1	o0	biogenesis.World	_height	int	false	800
+F	call_1	o0	biogenesis.World	_organisms	java.util.List	false	o1
+F	call_1	o0	biogenesis.World	_population	int	false	0
+F	call_1	o0	biogenesis.World	_visibleWorld	biogenesis.VisibleWorld	true	~
+F	call_1	o0	biogenesis.World	_width	int	false	1200
+F	call_1	o0	biogenesis.World	colDetTree	org.locationtech.jts.index.strtree.STRtree	false	o2
+F	call_1	o0	biogenesis.World	inCorridors	java.util.List	true	o3
+F	call_1	o0	biogenesis.World	nFrames	int	false	0
+F	call_1	o0	biogenesis.World	outCorridors	java.util.List	true	o4
+F	call_1	o0	biogenesis.World	worldStatistics	biogenesis.WorldStatistics	false	o5
+O	call_1	o1	java.util.ArrayList
+L	call_1	o1	1
+N	call_1	o1	0	o6
+O	call_1	o2	org.locationtech.jts.index.strtree.STRtree
+F	call_1	o2	org.locationtech.jts.index.strtree.AbstractSTRtree	built	boolean	false	false
+F	call_1	o2	org.locationtech.jts.index.strtree.AbstractSTRtree	itemBoundables	java.util.ArrayList	false	o7
+F	call_1	o2	org.locationtech.jts.index.strtree.AbstractSTRtree	nodeCapacity	int	false	10
+F	call_1	o2	org.locationtech.jts.index.strtree.AbstractSTRtree	root	org.locationtech.jts.index.strtree.AbstractNode	false	~
+O	call_1	o3	java.util.Collections$SynchronizedRandomAccessList
+L	call_1	o3	0
+O	call_1	o4	java.util.Collections$SynchronizedRandomAccessList
+L	call_1	o4	0
+O	call_1	o5	biogenesis.WorldStatistics
+F	call_1	o5	biogenesis.WorldStatistics	aliveBeingMostChildren	biogenesis.GeneticCode	false	~
+F	call_1	o5	biogenesis.WorldStatistics	aliveBeingMostChildrenNumber	int	false	0
+F	call_1	o5	biogenesis.WorldStatistics	aliveBeingMostInfections	biogenesis.GeneticCode	false	~
+F	call_1	o5	biogenesis.WorldStatistics	aliveBeingMostInfectionsNumber	int	false	0
+F	call_1	o5	biogenesis.WorldStatistics	aliveBeingMostKills	biogenesis.GeneticCode	false	~
+F	call_1	o5	biogenesis.WorldStatistics	aliveBeingMostKillsNumber	int	false	0
+F	call_1	o5	biogenesis.WorldStatistics	beingMostChildren	biogenesis.GeneticCode	false	~
+F	call_1	o5	biogenesis.WorldStatistics	beingMostChildrenNumber	int	false	0
+F	call_1	o5	biogenesis.WorldStatistics	beingMostChildrenTime	long	false	0
+F	call_1	o5	biogenesis.WorldStatistics	beingMostInfections	biogenesis.GeneticCode	false	~
+F	call_1	o5	biogenesis.WorldStatistics	beingMostInfectionsNumber	int	false	0
+F	call_1	o5	biogenesis.WorldStatistics	beingMostInfectionsTime	long	false	0
+F	call_1	o5	biogenesis.WorldStatistics	beingMostKills	biogenesis.GeneticCode	false	~
+F	call_1	o5	biogenesis.WorldStatistics	beingMostKillsNumber	int	false	0
+F	call_1	o5	biogenesis.WorldStatistics	beingMostKillsTime	long	false	0
+F	call_1	o5	biogenesis.WorldStatistics	birthLastTime	int	false	0
+F	call_1	o5	biogenesis.WorldStatistics	birthList	java.util.List	false	o8
+F	call_1	o5	biogenesis.WorldStatistics	birthSum	long	false	0
+F	call_1	o5	biogenesis.WorldStatistics	carbonDioxideList	java.util.List	false	o9
+F	call_1	o5	biogenesis.WorldStatistics	createdOrganisms	int	false	0
+F	call_1	o5	biogenesis.WorldStatistics	deathLastTime	int	false	0
+F	call_1	o5	biogenesis.WorldStatistics	deathList	java.util.List	false	o10
+F	call_1	o5	biogenesis.WorldStatistics	deathSum	long	false	0
+F	call_1	o5	biogenesis.WorldStatistics	infectionsSum	long	false	0
+F	call_1	o5	biogenesis.WorldStatistics	lastBornBeing	biogenesis.GeneticCode	false	~
+F	call_1	o5	biogenesis.WorldStatistics	lastDeadBeing	biogenesis.GeneticCode	false	~
+F	call_1	o5	biogenesis.WorldStatistics	lastInfectedBeing	biogenesis.GeneticCode	false	~
+F	call_1	o5	biogenesis.WorldStatistics	massExtintionState	int	false	0
+F	call_1	o5	biogenesis.WorldStatistics	massExtintions	int	false	0
+F	call_1	o5	biogenesis.WorldStatistics	maxBirths	int	false	0
+F	call_1	o5	biogenesis.WorldStatistics	maxCarbonDioxide	double	false	411e848000000000
+F	call_1	o5	biogenesis.WorldStatistics	maxCarbonDioxideTime	long	false	0
+F	call_1	o5	biogenesis.WorldStatistics	maxDeaths	int	false	0
+F	call_1	o5	biogenesis.WorldStatistics	maxMethane	double	false	408f400000000000
+F	call_1	o5	biogenesis.WorldStatistics	maxMethaneTime	long	false	0
+F	call_1	o5	biogenesis.WorldStatistics	maxOxygen	double	false	408f400000000000
+F	call_1	o5	biogenesis.WorldStatistics	maxOxygenTime	long	false	0
+F	call_1	o5	biogenesis.WorldStatistics	maxPopulation	int	false	0
+F	call_1	o5	biogenesis.WorldStatistics	maxPopulationTime	long	false	0
+F	call_1	o5	biogenesis.WorldStatistics	methaneList	java.util.List	false	o11
+F	call_1	o5	biogenesis.WorldStatistics	minCarbonDioxide	double	false	4033000000000000
+F	call_1	o5	biogenesis.WorldStatistics	minCarbonDioxideTime	long	false	1
+F	call_1	o5	biogenesis.WorldStatistics	minMethane	double	false	4037000000000000
+F	call_1	o5	biogenesis.WorldStatistics	minMethaneTime	long	false	1
+F	call_1	o5	biogenesis.WorldStatistics	minOxygen	double	false	4031000000000000
+F	call_1	o5	biogenesis.WorldStatistics	minOxygenTime	long	false	1
+F	call_1	o5	biogenesis.WorldStatistics	minPopulation	int	false	0
+F	call_1	o5	biogenesis.WorldStatistics	minPopulationTime	long	false	0
+F	call_1	o5	biogenesis.WorldStatistics	oxygenList	java.util.List	false	o12
+F	call_1	o5	biogenesis.WorldStatistics	populationList	java.util.List	false	o1
+F	call_1	o5	biogenesis.WorldStatistics	populationSum	long	false	7
+F	call_1	o5	biogenesis.WorldStatistics	time	long	false	1
+O	call_1	o6	java.lang.Double
+D	call_1	o6	java.lang.Double	401c000000000000
+O	call_1	o7	java.util.ArrayList
+L	call_1	o7	0
+O	call_1	o8	java.util.ArrayList
+L	call_1	o8	1
+N	call_1	o8	0	o13
+O	call_1	o9	java.util.ArrayList
+L	call_1	o9	1
+N	call_1	o9	0	o14
+O	call_1	o10	java.util.ArrayList
+L	call_1	o10	1
+N	call_1	o10	0	o15
+O	call_1	o11	java.util.ArrayList
+L	call_1	o11	1
+N	call_1	o11	0	o16
+O	call_1	o12	java.util.ArrayList
+L	call_1	o12	1
+N	call_1	o12	0	o17
+O	call_1	o13	java.lang.Double
+D	call_1	o13	java.lang.Double	0000000000000000
+O	call_1	o14	java.lang.Double
+D	call_1	o14	java.lang.Double	4033000000000000
+O	call_1	o15	java.lang.Double
+D	call_1	o15	java.lang.Double	0000000000000000
+O	call_1	o16	java.lang.Double
+D	call_1	o16	java.lang.Double	4037000000000000
+O	call_1	o17	java.lang.Double
+D	call_1	o17	java.lang.Double	4031000000000000
+V	call_1	null_or_void	~
+Z	call_1	member_history-call_1.ser	2222	ca23326a95dbff9f7e2321d1ba413fa0670aab0335462f7c98009f42a3a439a6
+R	call_1	995cd818acf5c21f9af31df613bc16f128d8f11d01f91254511a0cc6157f241e	aced0005737200106a6176612e7574696c2e52616e646f6d363296344bf00a530300035a0014686176654e6578744e657874476175737369616e4400106e6578744e657874476175737369616e4a000473656564787000000000000000000000000005dee0798978
+RP	call_1	-3981345829458826657	901	3fd54a08163de1b8
+K	call_2	find_100_100
+RB	call_2	995cd818acf5c21f9af31df613bc16f128d8f11d01f91254511a0cc6157f241e	aced0005737200106a6176612e7574696c2e52616e646f6d363296344bf00a530300035a0014686176654e6578744e657874476175737369616e4400106e6578744e657874476175737369616e4a000473656564787000000000000000000000000005dee0798978
+X	call_2	java.lang.ClassCastException	biogenesis.World	findOrganismFromPosition	149
+P	call_2	o0
+O	call_2	o0	biogenesis.World
+F	call_2	o0	biogenesis.World	NEXT_ID	int	false	0
+F	call_2	o0	biogenesis.World	_CH4	double	false	408f400000000000
+F	call_2	o0	biogenesis.World	_CO2	double	false	411e848000000000
+F	call_2	o0	biogenesis.World	_O2	double	false	408f400000000000
+F	call_2	o0	biogenesis.World	_corridorexists	boolean	false	false
+F	call_2	o0	biogenesis.World	_height	int	false	800
+F	call_2	o0	biogenesis.World	_organisms	java.util.List	false	o1
+F	call_2	o0	biogenesis.World	_population	int	false	0
+F	call_2	o0	biogenesis.World	_visibleWorld	biogenesis.VisibleWorld	true	~
+F	call_2	o0	biogenesis.World	_width	int	false	1200
+F	call_2	o0	biogenesis.World	colDetTree	org.locationtech.jts.index.strtree.STRtree	false	o2
+F	call_2	o0	biogenesis.World	inCorridors	java.util.List	true	o3
+F	call_2	o0	biogenesis.World	nFrames	int	false	0
+F	call_2	o0	biogenesis.World	outCorridors	java.util.List	true	o4
+F	call_2	o0	biogenesis.World	worldStatistics	biogenesis.WorldStatistics	false	o5
+O	call_2	o1	java.util.ArrayList
+L	call_2	o1	1
+N	call_2	o1	0	o6
+O	call_2	o2	org.locationtech.jts.index.strtree.STRtree
+F	call_2	o2	org.locationtech.jts.index.strtree.AbstractSTRtree	built	boolean	false	false
+F	call_2	o2	org.locationtech.jts.index.strtree.AbstractSTRtree	itemBoundables	java.util.ArrayList	false	o7
+F	call_2	o2	org.locationtech.jts.index.strtree.AbstractSTRtree	nodeCapacity	int	false	10
+F	call_2	o2	org.locationtech.jts.index.strtree.AbstractSTRtree	root	org.locationtech.jts.index.strtree.AbstractNode	false	~
+O	call_2	o3	java.util.Collections$SynchronizedRandomAccessList
+L	call_2	o3	0
+O	call_2	o4	java.util.Collections$SynchronizedRandomAccessList
+L	call_2	o4	0
+O	call_2	o5	biogenesis.WorldStatistics
+F	call_2	o5	biogenesis.WorldStatistics	aliveBeingMostChildren	biogenesis.GeneticCode	false	~
+F	call_2	o5	biogenesis.WorldStatistics	aliveBeingMostChildrenNumber	int	false	0
+F	call_2	o5	biogenesis.WorldStatistics	aliveBeingMostInfections	biogenesis.GeneticCode	false	~
+F	call_2	o5	biogenesis.WorldStatistics	aliveBeingMostInfectionsNumber	int	false	0
+F	call_2	o5	biogenesis.WorldStatistics	aliveBeingMostKills	biogenesis.GeneticCode	false	~
+F	call_2	o5	biogenesis.WorldStatistics	aliveBeingMostKillsNumber	int	false	0
+F	call_2	o5	biogenesis.WorldStatistics	beingMostChildren	biogenesis.GeneticCode	false	~
+F	call_2	o5	biogenesis.WorldStatistics	beingMostChildrenNumber	int	false	0
+F	call_2	o5	biogenesis.WorldStatistics	beingMostChildrenTime	long	false	0
+F	call_2	o5	biogenesis.WorldStatistics	beingMostInfections	biogenesis.GeneticCode	false	~
+F	call_2	o5	biogenesis.WorldStatistics	beingMostInfectionsNumber	int	false	0
+F	call_2	o5	biogenesis.WorldStatistics	beingMostInfectionsTime	long	false	0
+F	call_2	o5	biogenesis.WorldStatistics	beingMostKills	biogenesis.GeneticCode	false	~
+F	call_2	o5	biogenesis.WorldStatistics	beingMostKillsNumber	int	false	0
+F	call_2	o5	biogenesis.WorldStatistics	beingMostKillsTime	long	false	0
+F	call_2	o5	biogenesis.WorldStatistics	birthLastTime	int	false	0
+F	call_2	o5	biogenesis.WorldStatistics	birthList	java.util.List	false	o8
+F	call_2	o5	biogenesis.WorldStatistics	birthSum	long	false	0
+F	call_2	o5	biogenesis.WorldStatistics	carbonDioxideList	java.util.List	false	o9
+F	call_2	o5	biogenesis.WorldStatistics	createdOrganisms	int	false	0
+F	call_2	o5	biogenesis.WorldStatistics	deathLastTime	int	false	0
+F	call_2	o5	biogenesis.WorldStatistics	deathList	java.util.List	false	o10
+F	call_2	o5	biogenesis.WorldStatistics	deathSum	long	false	0
+F	call_2	o5	biogenesis.WorldStatistics	infectionsSum	long	false	0
+F	call_2	o5	biogenesis.WorldStatistics	lastBornBeing	biogenesis.GeneticCode	false	~
+F	call_2	o5	biogenesis.WorldStatistics	lastDeadBeing	biogenesis.GeneticCode	false	~
+F	call_2	o5	biogenesis.WorldStatistics	lastInfectedBeing	biogenesis.GeneticCode	false	~
+F	call_2	o5	biogenesis.WorldStatistics	massExtintionState	int	false	0
+F	call_2	o5	biogenesis.WorldStatistics	massExtintions	int	false	0
+F	call_2	o5	biogenesis.WorldStatistics	maxBirths	int	false	0
+F	call_2	o5	biogenesis.WorldStatistics	maxCarbonDioxide	double	false	411e848000000000
+F	call_2	o5	biogenesis.WorldStatistics	maxCarbonDioxideTime	long	false	0
+F	call_2	o5	biogenesis.WorldStatistics	maxDeaths	int	false	0
+F	call_2	o5	biogenesis.WorldStatistics	maxMethane	double	false	408f400000000000
+F	call_2	o5	biogenesis.WorldStatistics	maxMethaneTime	long	false	0
+F	call_2	o5	biogenesis.WorldStatistics	maxOxygen	double	false	408f400000000000
+F	call_2	o5	biogenesis.WorldStatistics	maxOxygenTime	long	false	0
+F	call_2	o5	biogenesis.WorldStatistics	maxPopulation	int	false	0
+F	call_2	o5	biogenesis.WorldStatistics	maxPopulationTime	long	false	0
+F	call_2	o5	biogenesis.WorldStatistics	methaneList	java.util.List	false	o11
+F	call_2	o5	biogenesis.WorldStatistics	minCarbonDioxide	double	false	4033000000000000
+F	call_2	o5	biogenesis.WorldStatistics	minCarbonDioxideTime	long	false	1
+F	call_2	o5	biogenesis.WorldStatistics	minMethane	double	false	4037000000000000
+F	call_2	o5	biogenesis.WorldStatistics	minMethaneTime	long	false	1
+F	call_2	o5	biogenesis.WorldStatistics	minOxygen	double	false	4031000000000000
+F	call_2	o5	biogenesis.WorldStatistics	minOxygenTime	long	false	1
+F	call_2	o5	biogenesis.WorldStatistics	minPopulation	int	false	0
+F	call_2	o5	biogenesis.WorldStatistics	minPopulationTime	long	false	0
+F	call_2	o5	biogenesis.WorldStatistics	oxygenList	java.util.List	false	o12
+F	call_2	o5	biogenesis.WorldStatistics	populationList	java.util.List	false	o1
+F	call_2	o5	biogenesis.WorldStatistics	populationSum	long	false	7
+F	call_2	o5	biogenesis.WorldStatistics	time	long	false	1
+O	call_2	o6	java.lang.Double
+D	call_2	o6	java.lang.Double	401c000000000000
+O	call_2	o7	java.util.ArrayList
+L	call_2	o7	0
+O	call_2	o8	java.util.ArrayList
+L	call_2	o8	1
+N	call_2	o8	0	o13
+O	call_2	o9	java.util.ArrayList
+L	call_2	o9	1
+N	call_2	o9	0	o14
+O	call_2	o10	java.util.ArrayList
+L	call_2	o10	1
+N	call_2	o10	0	o15
+O	call_2	o11	java.util.ArrayList
+L	call_2	o11	1
+N	call_2	o11	0	o16
+O	call_2	o12	java.util.ArrayList
+L	call_2	o12	1
+N	call_2	o12	0	o17
+O	call_2	o13	java.lang.Double
+D	call_2	o13	java.lang.Double	0000000000000000
+O	call_2	o14	java.lang.Double
+D	call_2	o14	java.lang.Double	4033000000000000
+O	call_2	o15	java.lang.Double
+D	call_2	o15	java.lang.Double	0000000000000000
+O	call_2	o16	java.lang.Double
+D	call_2	o16	java.lang.Double	4037000000000000
+O	call_2	o17	java.lang.Double
+D	call_2	o17	java.lang.Double	4031000000000000
+V	call_2	null_or_void	~
+Z	call_2	member_history-call_2.ser	2222	ca23326a95dbff9f7e2321d1ba413fa0670aab0335462f7c98009f42a3a439a6
+R	call_2	995cd818acf5c21f9af31df613bc16f128d8f11d01f91254511a0cc6157f241e	aced0005737200106a6176612e7574696c2e52616e646f6d363296344bf00a530300035a0014686176654e6578744e657874476175737369616e4400106e6578744e657874476175737369616e4a000473656564787000000000000000000000000005dee0798978
+RP	call_2	-3981345829458826657	901	3fd54a08163de1b8
+E	member_history
+C	tree_history	authored_World_root_recipe	827364
+U	ACCEPT_CONNECTIONS	boolean	false
+U	AGE_DIVISOR	int	4
+U	AUBURN_ENERGY_CONSUMPTION	double	0000000000000000
+U	AUBURN_PROB	int	2
+U	AUTO_BACKUP	boolean	false
+U	BACKUP_DELAY	int	100
+U	BARK_ENERGY_CONSUMPTION	double	3fe6666666666666
+U	BARK_PROB	int	3
+U	BLOND_ENERGY_CONSUMPTION	double	3fa2f1a9fbe76c8b
+U	BLOND_PROB	int	2
+U	BLUE_ENERGY_CONSUMPTION	double	0000000000000000
+U	BLUE_PROB	int	2
+U	C4_ENERGY_CONSUMPTION	double	3fe199999999999a
+U	C4_PROB	int	3
+U	CH4_TO_CO2_DIVISOR	int	1000
+U	CLADE_COMPLEXITY	int	25
+U	CO2_TO_CH4_DIVISOR	int	999
+U	CONNECT_TO_SERVER	boolean	false
+U	CORAL_ENERGY_CONSUMPTION	double	3f847ae147ae147b
+U	CORAL_PROB	int	1
+U	CREAM_ENERGY_CONSUMPTION	double	0000000000000000
+U	CREAM_ORGANIC_SUBS_PRODUCED	double	3f8999999999999a
+U	CREAM_PROB	int	1
+U	CROWDEDFOREST_ENERGY_CONSUMPTION	double	3ff0000000000000
+U	CROWDEDLIME_ENERGY_CONSUMPTION	double	3fe0000000000000
+U	CYAN_ENERGY_CONSUMPTION	double	0000000000000000
+U	CYAN_PROB	int	8
+U	DARKGRAY_ENERGY_CONSUMPTION	double	4024000000000000
+U	DARKGRAY_PROB	int	5
+U	DARKJADE_DELAY	int	4
+U	DARK_ENERGY_CONSUMPTION	double	3f847ae147ae147b
+U	DARK_PROB	int	1
+U	DECAY_ENERGY	double	3fb999999999999a
+U	DELAY	int	2
+U	DODGE_ENERGY_CONSUMPTION	double	0000000000000000
+U	DRAIN_SUBS_DIVISOR	int	5000
+U	ELASTICITY	double	3fe999999999999a
+U	EXPERIENCE_ENERGY_CONSUMPTION	double	0000000000000000
+U	EYE_ENERGY_CONSUMPTION	double	0000000000000000
+U	EYE_PROB	int	4
+U	FALLOW_ENERGY_CONSUMPTION	double	0000000000000000
+U	FALLOW_PROB	int	1
+U	FIRE_ENERGY_CONSUMPTION	double	0000000000000000
+U	FIRE_PROB	int	1
+U	FLOWER_ENERGY_CONSUMPTION	double	3f847ae147ae147b
+U	FLOWER_PROB	int	2
+U	FOREST_ENERGY_CONSUMPTION	double	3ff0000000000000
+U	FOREST_PROB	int	3
+U	GOLD_DIVISOR	double	4000000000000000
+U	GOLD_PROB	int	2
+U	GRASS_ENERGY_CONSUMPTION	double	3ff0000000000000
+U	GRASS_PROB	int	3
+U	GRAY_ENERGY_CONSUMPTION	double	3fb999999999999a
+U	GRAY_PROB	int	1
+U	GREEN_ENERGY_CONSUMPTION	double	3ff199999999999a
+U	GREEN_OBTAINED_ENERGY_DIVISOR	int	1000
+U	GREEN_PROB	int	3
+U	HARDWARE_ACCELERATION	int	0
+U	HEALING	int	40000
+U	IMMUNE_SYSTEM	int	40000
+U	INDIGO_DIVISOR	double	4024000000000000
+U	INDIGO_ENERGY_CONSUMPTION	double	3ff0000000000000
+U	INDIGO_PROB	int	2
+U	INITIAL_CH4	double	408f400000000000
+U	INITIAL_CO2	double	411e848000000000
+U	INITIAL_COMPLEXITY	int	2
+U	INITIAL_ENERGY	int	40
+U	INITIAL_O2	double	408f400000000000
+U	INITIAL_ORGANISMS	int	0
+U	JADE_ENERGY_CONSUMPTION	double	3ff0000000000000
+U	JADE_PROB	int	3
+U	LAVENDER_ENERGY_CONSUMPTION	double	3ff0000000000000
+U	LAVENDER_PROB	int	2
+U	LAVENDER_SHIELD	int	10000
+U	LEAF_ENERGY_CONSUMPTION	double	3ff2666666666666
+U	LEAF_PROB	int	3
+U	LILAC_ENERGY_CONSUMPTION	double	0000000000000000
+U	LILAC_PROB	int	1
+U	LIME_ENERGY_CONSUMPTION	double	3ff4000000000000
+U	LIME_PROB	int	3
+U	LOCAL_PORT	int	8888
+U	MAGENTA_ENERGY_CONSUMPTION	double	3f847ae147ae147b
+U	MAGENTA_PROB	int	5
+U	MAROON_ENERGY_CONSUMPTION	double	0000000000000000
+U	MAROON_PROB	int	2
+U	MAX_AGE	int	6
+U	MAX_CONNECTIONS	int	1
+U	MAX_MUTATION_RATE	int	100
+U	MAX_ROT	double	3fc921fb54442d18
+U	MAX_VEL	double	4014000000000000
+U	META_MUTATION_RATE	int	1000
+U	MINT_ENERGY_CONSUMPTION	double	3fb3333333333333
+U	MINT_PROB	int	2
+U	MIN_MUTATION_RATE	int	0
+U	MOSQUITO_ENERGY_CONSUMPTION	double	0000000000000000
+U	OCHRE_ENERGY_CONSUMPTION	double	3fd999999999999a
+U	OCHRE_PROB	int	1
+U	OLIVE_ENERGY_CONSUMPTION	double	3fb999999999999a
+U	OLIVE_PROB	int	1
+U	ORANGE_ENERGY_CONSUMPTION	double	0000000000000000
+U	ORANGE_PROB	int	1
+U	ORGANIC_OBTAINED_ENERGY	double	4000000000000000
+U	ORGANIC_SUBS_PRODUCED	double	3fb999999999999a
+U	ORGANISMS_VECTOR_SIZE	int	50
+U	PINK_ENERGY_CONSUMPTION	double	0000000000000000
+U	PINK_PROB	int	2
+U	PLAGUE_ENERGY_CONSUMPTION	double	4024000000000000
+U	PLAGUE_PROB	int	1
+U	PURPLE_ENERGY_CONSUMPTION	double	4010000000000000
+U	PURPLE_PROB	int	3
+U	RED_ENERGY_CONSUMPTION	double	0000000000000000
+U	RED_PROB	int	1
+U	ROSE_ENERGY_CONSUMPTION	double	3f847ae147ae147b
+U	ROSE_PROB	int	2
+U	RUBBING	double	3fef5c28f5c28f5c
+U	SCOURGE_ENERGY_CONSUMPTION	double	3fb999999999999a
+U	SEGMENT_COST_DIVISOR	int	5000
+U	SERVER_PORT	int	0
+U	SILVER_ENERGY_CONSUMPTION	double	3fb999999999999a
+U	SILVER_PROB	int	1
+U	SKY_ENERGY_CONSUMPTION	double	3fa999999999999a
+U	SKY_PROB	int	1
+U	SPIKE_ENERGY_CONSUMPTION	double	0000000000000000
+U	SPIKE_PROB	int	1
+U	SPORE_ENERGY_CONSUMPTION	double	0000000000000000
+U	SPORE_PROB	int	2
+U	SPRING_ENERGY_CONSUMPTION	double	3ff0000000000000
+U	SPRING_PROB	int	3
+U	SUMMER_ENERGY_CONSUMPTION	double	3ffa666666666666
+U	SUMMER_PROB	int	3
+U	SYMBIONT_ENERGY_CONSUMPTION	double	3fe3333333333333
+U	TEAL_ENERGY_CONSUMPTION	double	0000000000000000
+U	TEAL_PROB	int	8
+U	VIOLET_ENERGY_CONSUMPTION	double	3fb999999999999a
+U	VIOLET_PROB	int	1
+U	VIRUS_ENERGY_CONSUMPTION	double	3f847ae147ae147b
+U	WHITE_ENERGY_CONSUMPTION	double	3fb999999999999a
+U	WHITE_PROB	int	4
+U	WINDOW_HEIGHT	int	480
+U	WINDOW_STATE	int	0
+U	WINDOW_WIDTH	int	640
+U	WINDOW_X	int	0
+U	WINDOW_Y	int	0
+U	WORLD_HEIGHT	int	800
+U	WORLD_WIDTH	int	1200
+U	YELLOW_ENERGY_CONSUMPTION	double	0000000000000000
+U	YELLOW_PROB	int	2
+I	empty_ArrayList_shared_tree_itemBoundables_population_history
+P	authored	o0
+O	authored	o0	biogenesis.World
+F	authored	o0	biogenesis.World	NEXT_ID	int	false	0
+F	authored	o0	biogenesis.World	_CH4	double	false	408f400000000000
+F	authored	o0	biogenesis.World	_CO2	double	false	411e848000000000
+F	authored	o0	biogenesis.World	_O2	double	false	408f400000000000
+F	authored	o0	biogenesis.World	_corridorexists	boolean	false	false
+F	authored	o0	biogenesis.World	_height	int	false	800
+F	authored	o0	biogenesis.World	_organisms	java.util.List	false	o1
+F	authored	o0	biogenesis.World	_population	int	false	0
+F	authored	o0	biogenesis.World	_visibleWorld	biogenesis.VisibleWorld	true	o2
+F	authored	o0	biogenesis.World	_width	int	false	1200
+F	authored	o0	biogenesis.World	colDetTree	org.locationtech.jts.index.strtree.STRtree	false	o3
+F	authored	o0	biogenesis.World	inCorridors	java.util.List	true	o4
+F	authored	o0	biogenesis.World	nFrames	int	false	0
+F	authored	o0	biogenesis.World	outCorridors	java.util.List	true	o5
+F	authored	o0	biogenesis.World	worldStatistics	biogenesis.WorldStatistics	false	o6
+O	authored	o1	java.util.Collections$SynchronizedRandomAccessList
+L	authored	o1	0
+O	authored	o2	biogenesis.VisibleWorld
+O	authored	o3	org.locationtech.jts.index.strtree.STRtree
+F	authored	o3	org.locationtech.jts.index.strtree.AbstractSTRtree	built	boolean	false	false
+F	authored	o3	org.locationtech.jts.index.strtree.AbstractSTRtree	itemBoundables	java.util.ArrayList	false	o7
+F	authored	o3	org.locationtech.jts.index.strtree.AbstractSTRtree	nodeCapacity	int	false	10
+F	authored	o3	org.locationtech.jts.index.strtree.AbstractSTRtree	root	org.locationtech.jts.index.strtree.AbstractNode	false	~
+O	authored	o4	java.util.Collections$SynchronizedRandomAccessList
+L	authored	o4	0
+O	authored	o5	java.util.Collections$SynchronizedRandomAccessList
+L	authored	o5	0
+O	authored	o6	biogenesis.WorldStatistics
+F	authored	o6	biogenesis.WorldStatistics	aliveBeingMostChildren	biogenesis.GeneticCode	false	~
+F	authored	o6	biogenesis.WorldStatistics	aliveBeingMostChildrenNumber	int	false	0
+F	authored	o6	biogenesis.WorldStatistics	aliveBeingMostInfections	biogenesis.GeneticCode	false	~
+F	authored	o6	biogenesis.WorldStatistics	aliveBeingMostInfectionsNumber	int	false	0
+F	authored	o6	biogenesis.WorldStatistics	aliveBeingMostKills	biogenesis.GeneticCode	false	~
+F	authored	o6	biogenesis.WorldStatistics	aliveBeingMostKillsNumber	int	false	0
+F	authored	o6	biogenesis.WorldStatistics	beingMostChildren	biogenesis.GeneticCode	false	~
+F	authored	o6	biogenesis.WorldStatistics	beingMostChildrenNumber	int	false	0
+F	authored	o6	biogenesis.WorldStatistics	beingMostChildrenTime	long	false	0
+F	authored	o6	biogenesis.WorldStatistics	beingMostInfections	biogenesis.GeneticCode	false	~
+F	authored	o6	biogenesis.WorldStatistics	beingMostInfectionsNumber	int	false	0
+F	authored	o6	biogenesis.WorldStatistics	beingMostInfectionsTime	long	false	0
+F	authored	o6	biogenesis.WorldStatistics	beingMostKills	biogenesis.GeneticCode	false	~
+F	authored	o6	biogenesis.WorldStatistics	beingMostKillsNumber	int	false	0
+F	authored	o6	biogenesis.WorldStatistics	beingMostKillsTime	long	false	0
+F	authored	o6	biogenesis.WorldStatistics	birthLastTime	int	false	0
+F	authored	o6	biogenesis.WorldStatistics	birthList	java.util.List	false	o8
+F	authored	o6	biogenesis.WorldStatistics	birthSum	long	false	0
+F	authored	o6	biogenesis.WorldStatistics	carbonDioxideList	java.util.List	false	o9
+F	authored	o6	biogenesis.WorldStatistics	createdOrganisms	int	false	0
+F	authored	o6	biogenesis.WorldStatistics	deathLastTime	int	false	0
+F	authored	o6	biogenesis.WorldStatistics	deathList	java.util.List	false	o10
+F	authored	o6	biogenesis.WorldStatistics	deathSum	long	false	0
+F	authored	o6	biogenesis.WorldStatistics	infectionsSum	long	false	0
+F	authored	o6	biogenesis.WorldStatistics	lastBornBeing	biogenesis.GeneticCode	false	~
+F	authored	o6	biogenesis.WorldStatistics	lastDeadBeing	biogenesis.GeneticCode	false	~
+F	authored	o6	biogenesis.WorldStatistics	lastInfectedBeing	biogenesis.GeneticCode	false	~
+F	authored	o6	biogenesis.WorldStatistics	massExtintionState	int	false	0
+F	authored	o6	biogenesis.WorldStatistics	massExtintions	int	false	0
+F	authored	o6	biogenesis.WorldStatistics	maxBirths	int	false	0
+F	authored	o6	biogenesis.WorldStatistics	maxCarbonDioxide	double	false	411e848000000000
+F	authored	o6	biogenesis.WorldStatistics	maxCarbonDioxideTime	long	false	0
+F	authored	o6	biogenesis.WorldStatistics	maxDeaths	int	false	0
+F	authored	o6	biogenesis.WorldStatistics	maxMethane	double	false	408f400000000000
+F	authored	o6	biogenesis.WorldStatistics	maxMethaneTime	long	false	0
+F	authored	o6	biogenesis.WorldStatistics	maxOxygen	double	false	408f400000000000
+F	authored	o6	biogenesis.WorldStatistics	maxOxygenTime	long	false	0
+F	authored	o6	biogenesis.WorldStatistics	maxPopulation	int	false	0
+F	authored	o6	biogenesis.WorldStatistics	maxPopulationTime	long	false	0
+F	authored	o6	biogenesis.WorldStatistics	methaneList	java.util.List	false	o11
+F	authored	o6	biogenesis.WorldStatistics	minCarbonDioxide	double	false	411e848000000000
+F	authored	o6	biogenesis.WorldStatistics	minCarbonDioxideTime	long	false	0
+F	authored	o6	biogenesis.WorldStatistics	minMethane	double	false	408f400000000000
+F	authored	o6	biogenesis.WorldStatistics	minMethaneTime	long	false	0
+F	authored	o6	biogenesis.WorldStatistics	minOxygen	double	false	408f400000000000
+F	authored	o6	biogenesis.WorldStatistics	minOxygenTime	long	false	0
+F	authored	o6	biogenesis.WorldStatistics	minPopulation	int	false	0
+F	authored	o6	biogenesis.WorldStatistics	minPopulationTime	long	false	0
+F	authored	o6	biogenesis.WorldStatistics	oxygenList	java.util.List	false	o12
+F	authored	o6	biogenesis.WorldStatistics	populationList	java.util.List	false	o7
+F	authored	o6	biogenesis.WorldStatistics	populationSum	long	false	0
+F	authored	o6	biogenesis.WorldStatistics	time	long	false	0
+O	authored	o7	java.util.ArrayList
+L	authored	o7	0
+O	authored	o8	java.util.ArrayList
+L	authored	o8	0
+O	authored	o9	java.util.ArrayList
+L	authored	o9	0
+O	authored	o10	java.util.ArrayList
+L	authored	o10	0
+O	authored	o11	java.util.ArrayList
+L	authored	o11	0
+O	authored	o12	java.util.ArrayList
+L	authored	o12	0
+V	authored	null_or_void	~
+Z	authored	tree_history-authored.ser	2267	00b9649a308c1dccc696dca1567ef2151ffa7c3a343165fa5540a8803a93a22e
+R	authored	995cd818acf5c21f9af31df613bc16f128d8f11d01f91254511a0cc6157f241e	aced0005737200106a6176612e7574696c2e52616e646f6d363296344bf00a530300035a0014686176654e6578744e657874476175737369616e4400106e6578744e657874476175737369616e4a000473656564787000000000000000000000000005dee0798978
+RP	authored	-3981345829458826657	901	3fd54a08163de1b8
+K	call_0	read_input
+RB	call_0	995cd818acf5c21f9af31df613bc16f128d8f11d01f91254511a0cc6157f241e	aced0005737200106a6176612e7574696c2e52616e646f6d363296344bf00a530300035a0014686176654e6578744e657874476175737369616e4400106e6578744e657874476175737369616e4a000473656564787000000000000000000000000005dee0798978
+X	call_0	none
+T	call_0	false	false	false	false	0	0	true
+P	call_0	o0
+O	call_0	o0	biogenesis.World
+F	call_0	o0	biogenesis.World	NEXT_ID	int	false	0
+F	call_0	o0	biogenesis.World	_CH4	double	false	408f400000000000
+F	call_0	o0	biogenesis.World	_CO2	double	false	411e848000000000
+F	call_0	o0	biogenesis.World	_O2	double	false	408f400000000000
+F	call_0	o0	biogenesis.World	_corridorexists	boolean	false	false
+F	call_0	o0	biogenesis.World	_height	int	false	800
+F	call_0	o0	biogenesis.World	_organisms	java.util.List	false	o1
+F	call_0	o0	biogenesis.World	_population	int	false	0
+F	call_0	o0	biogenesis.World	_visibleWorld	biogenesis.VisibleWorld	true	~
+F	call_0	o0	biogenesis.World	_width	int	false	1200
+F	call_0	o0	biogenesis.World	colDetTree	org.locationtech.jts.index.strtree.STRtree	false	o2
+F	call_0	o0	biogenesis.World	inCorridors	java.util.List	true	o3
+F	call_0	o0	biogenesis.World	nFrames	int	false	0
+F	call_0	o0	biogenesis.World	outCorridors	java.util.List	true	o4
+F	call_0	o0	biogenesis.World	worldStatistics	biogenesis.WorldStatistics	false	o5
+O	call_0	o1	java.util.Collections$SynchronizedRandomAccessList
+L	call_0	o1	0
+O	call_0	o2	org.locationtech.jts.index.strtree.STRtree
+F	call_0	o2	org.locationtech.jts.index.strtree.AbstractSTRtree	built	boolean	false	false
+F	call_0	o2	org.locationtech.jts.index.strtree.AbstractSTRtree	itemBoundables	java.util.ArrayList	false	o6
+F	call_0	o2	org.locationtech.jts.index.strtree.AbstractSTRtree	nodeCapacity	int	false	10
+F	call_0	o2	org.locationtech.jts.index.strtree.AbstractSTRtree	root	org.locationtech.jts.index.strtree.AbstractNode	false	~
+O	call_0	o3	java.util.Collections$SynchronizedRandomAccessList
+L	call_0	o3	0
+O	call_0	o4	java.util.Collections$SynchronizedRandomAccessList
+L	call_0	o4	0
+O	call_0	o5	biogenesis.WorldStatistics
+F	call_0	o5	biogenesis.WorldStatistics	aliveBeingMostChildren	biogenesis.GeneticCode	false	~
+F	call_0	o5	biogenesis.WorldStatistics	aliveBeingMostChildrenNumber	int	false	0
+F	call_0	o5	biogenesis.WorldStatistics	aliveBeingMostInfections	biogenesis.GeneticCode	false	~
+F	call_0	o5	biogenesis.WorldStatistics	aliveBeingMostInfectionsNumber	int	false	0
+F	call_0	o5	biogenesis.WorldStatistics	aliveBeingMostKills	biogenesis.GeneticCode	false	~
+F	call_0	o5	biogenesis.WorldStatistics	aliveBeingMostKillsNumber	int	false	0
+F	call_0	o5	biogenesis.WorldStatistics	beingMostChildren	biogenesis.GeneticCode	false	~
+F	call_0	o5	biogenesis.WorldStatistics	beingMostChildrenNumber	int	false	0
+F	call_0	o5	biogenesis.WorldStatistics	beingMostChildrenTime	long	false	0
+F	call_0	o5	biogenesis.WorldStatistics	beingMostInfections	biogenesis.GeneticCode	false	~
+F	call_0	o5	biogenesis.WorldStatistics	beingMostInfectionsNumber	int	false	0
+F	call_0	o5	biogenesis.WorldStatistics	beingMostInfectionsTime	long	false	0
+F	call_0	o5	biogenesis.WorldStatistics	beingMostKills	biogenesis.GeneticCode	false	~
+F	call_0	o5	biogenesis.WorldStatistics	beingMostKillsNumber	int	false	0
+F	call_0	o5	biogenesis.WorldStatistics	beingMostKillsTime	long	false	0
+F	call_0	o5	biogenesis.WorldStatistics	birthLastTime	int	false	0
+F	call_0	o5	biogenesis.WorldStatistics	birthList	java.util.List	false	o7
+F	call_0	o5	biogenesis.WorldStatistics	birthSum	long	false	0
+F	call_0	o5	biogenesis.WorldStatistics	carbonDioxideList	java.util.List	false	o8
+F	call_0	o5	biogenesis.WorldStatistics	createdOrganisms	int	false	0
+F	call_0	o5	biogenesis.WorldStatistics	deathLastTime	int	false	0
+F	call_0	o5	biogenesis.WorldStatistics	deathList	java.util.List	false	o9
+F	call_0	o5	biogenesis.WorldStatistics	deathSum	long	false	0
+F	call_0	o5	biogenesis.WorldStatistics	infectionsSum	long	false	0
+F	call_0	o5	biogenesis.WorldStatistics	lastBornBeing	biogenesis.GeneticCode	false	~
+F	call_0	o5	biogenesis.WorldStatistics	lastDeadBeing	biogenesis.GeneticCode	false	~
+F	call_0	o5	biogenesis.WorldStatistics	lastInfectedBeing	biogenesis.GeneticCode	false	~
+F	call_0	o5	biogenesis.WorldStatistics	massExtintionState	int	false	0
+F	call_0	o5	biogenesis.WorldStatistics	massExtintions	int	false	0
+F	call_0	o5	biogenesis.WorldStatistics	maxBirths	int	false	0
+F	call_0	o5	biogenesis.WorldStatistics	maxCarbonDioxide	double	false	411e848000000000
+F	call_0	o5	biogenesis.WorldStatistics	maxCarbonDioxideTime	long	false	0
+F	call_0	o5	biogenesis.WorldStatistics	maxDeaths	int	false	0
+F	call_0	o5	biogenesis.WorldStatistics	maxMethane	double	false	408f400000000000
+F	call_0	o5	biogenesis.WorldStatistics	maxMethaneTime	long	false	0
+F	call_0	o5	biogenesis.WorldStatistics	maxOxygen	double	false	408f400000000000
+F	call_0	o5	biogenesis.WorldStatistics	maxOxygenTime	long	false	0
+F	call_0	o5	biogenesis.WorldStatistics	maxPopulation	int	false	0
+F	call_0	o5	biogenesis.WorldStatistics	maxPopulationTime	long	false	0
+F	call_0	o5	biogenesis.WorldStatistics	methaneList	java.util.List	false	o10
+F	call_0	o5	biogenesis.WorldStatistics	minCarbonDioxide	double	false	411e848000000000
+F	call_0	o5	biogenesis.WorldStatistics	minCarbonDioxideTime	long	false	0
+F	call_0	o5	biogenesis.WorldStatistics	minMethane	double	false	408f400000000000
+F	call_0	o5	biogenesis.WorldStatistics	minMethaneTime	long	false	0
+F	call_0	o5	biogenesis.WorldStatistics	minOxygen	double	false	408f400000000000
+F	call_0	o5	biogenesis.WorldStatistics	minOxygenTime	long	false	0
+F	call_0	o5	biogenesis.WorldStatistics	minPopulation	int	false	0
+F	call_0	o5	biogenesis.WorldStatistics	minPopulationTime	long	false	0
+F	call_0	o5	biogenesis.WorldStatistics	oxygenList	java.util.List	false	o11
+F	call_0	o5	biogenesis.WorldStatistics	populationList	java.util.List	false	o6
+F	call_0	o5	biogenesis.WorldStatistics	populationSum	long	false	0
+F	call_0	o5	biogenesis.WorldStatistics	time	long	false	0
+O	call_0	o6	java.util.ArrayList
+L	call_0	o6	0
+O	call_0	o7	java.util.ArrayList
+L	call_0	o7	0
+O	call_0	o8	java.util.ArrayList
+L	call_0	o8	0
+O	call_0	o9	java.util.ArrayList
+L	call_0	o9	0
+O	call_0	o10	java.util.ArrayList
+L	call_0	o10	0
+O	call_0	o11	java.util.ArrayList
+L	call_0	o11	0
+V	call_0	null_or_void	~
+Z	call_0	tree_history-call_0.ser	2267	00b9649a308c1dccc696dca1567ef2151ffa7c3a343165fa5540a8803a93a22e
+R	call_0	995cd818acf5c21f9af31df613bc16f128d8f11d01f91254511a0cc6157f241e	aced0005737200106a6176612e7574696c2e52616e646f6d363296344bf00a530300035a0014686176654e6578744e657874476175737369616e4400106e6578744e657874476175737369616e4a000473656564787000000000000000000000000005dee0798978
+RP	call_0	-3981345829458826657	901	3fd54a08163de1b8
+K	call_1	eventTime
+RB	call_1	995cd818acf5c21f9af31df613bc16f128d8f11d01f91254511a0cc6157f241e	aced0005737200106a6176612e7574696c2e52616e646f6d363296344bf00a530300035a0014686176654e6578744e657874476175737369616e4400106e6578744e657874476175737369616e4a000473656564787000000000000000000000000005dee0798978
+X	call_1	none
+P	call_1	o0
+O	call_1	o0	biogenesis.World
+F	call_1	o0	biogenesis.World	NEXT_ID	int	false	0
+F	call_1	o0	biogenesis.World	_CH4	double	false	408f400000000000
+F	call_1	o0	biogenesis.World	_CO2	double	false	411e848000000000
+F	call_1	o0	biogenesis.World	_O2	double	false	408f400000000000
+F	call_1	o0	biogenesis.World	_corridorexists	boolean	false	false
+F	call_1	o0	biogenesis.World	_height	int	false	800
+F	call_1	o0	biogenesis.World	_organisms	java.util.List	false	o1
+F	call_1	o0	biogenesis.World	_population	int	false	0
+F	call_1	o0	biogenesis.World	_visibleWorld	biogenesis.VisibleWorld	true	~
+F	call_1	o0	biogenesis.World	_width	int	false	1200
+F	call_1	o0	biogenesis.World	colDetTree	org.locationtech.jts.index.strtree.STRtree	false	o2
+F	call_1	o0	biogenesis.World	inCorridors	java.util.List	true	o3
+F	call_1	o0	biogenesis.World	nFrames	int	false	0
+F	call_1	o0	biogenesis.World	outCorridors	java.util.List	true	o4
+F	call_1	o0	biogenesis.World	worldStatistics	biogenesis.WorldStatistics	false	o5
+O	call_1	o1	java.util.Collections$SynchronizedRandomAccessList
+L	call_1	o1	0
+O	call_1	o2	org.locationtech.jts.index.strtree.STRtree
+F	call_1	o2	org.locationtech.jts.index.strtree.AbstractSTRtree	built	boolean	false	false
+F	call_1	o2	org.locationtech.jts.index.strtree.AbstractSTRtree	itemBoundables	java.util.ArrayList	false	o6
+F	call_1	o2	org.locationtech.jts.index.strtree.AbstractSTRtree	nodeCapacity	int	false	10
+F	call_1	o2	org.locationtech.jts.index.strtree.AbstractSTRtree	root	org.locationtech.jts.index.strtree.AbstractNode	false	~
+O	call_1	o3	java.util.Collections$SynchronizedRandomAccessList
+L	call_1	o3	0
+O	call_1	o4	java.util.Collections$SynchronizedRandomAccessList
+L	call_1	o4	0
+O	call_1	o5	biogenesis.WorldStatistics
+F	call_1	o5	biogenesis.WorldStatistics	aliveBeingMostChildren	biogenesis.GeneticCode	false	~
+F	call_1	o5	biogenesis.WorldStatistics	aliveBeingMostChildrenNumber	int	false	0
+F	call_1	o5	biogenesis.WorldStatistics	aliveBeingMostInfections	biogenesis.GeneticCode	false	~
+F	call_1	o5	biogenesis.WorldStatistics	aliveBeingMostInfectionsNumber	int	false	0
+F	call_1	o5	biogenesis.WorldStatistics	aliveBeingMostKills	biogenesis.GeneticCode	false	~
+F	call_1	o5	biogenesis.WorldStatistics	aliveBeingMostKillsNumber	int	false	0
+F	call_1	o5	biogenesis.WorldStatistics	beingMostChildren	biogenesis.GeneticCode	false	~
+F	call_1	o5	biogenesis.WorldStatistics	beingMostChildrenNumber	int	false	0
+F	call_1	o5	biogenesis.WorldStatistics	beingMostChildrenTime	long	false	0
+F	call_1	o5	biogenesis.WorldStatistics	beingMostInfections	biogenesis.GeneticCode	false	~
+F	call_1	o5	biogenesis.WorldStatistics	beingMostInfectionsNumber	int	false	0
+F	call_1	o5	biogenesis.WorldStatistics	beingMostInfectionsTime	long	false	0
+F	call_1	o5	biogenesis.WorldStatistics	beingMostKills	biogenesis.GeneticCode	false	~
+F	call_1	o5	biogenesis.WorldStatistics	beingMostKillsNumber	int	false	0
+F	call_1	o5	biogenesis.WorldStatistics	beingMostKillsTime	long	false	0
+F	call_1	o5	biogenesis.WorldStatistics	birthLastTime	int	false	0
+F	call_1	o5	biogenesis.WorldStatistics	birthList	java.util.List	false	o7
+F	call_1	o5	biogenesis.WorldStatistics	birthSum	long	false	0
+F	call_1	o5	biogenesis.WorldStatistics	carbonDioxideList	java.util.List	false	o8
+F	call_1	o5	biogenesis.WorldStatistics	createdOrganisms	int	false	0
+F	call_1	o5	biogenesis.WorldStatistics	deathLastTime	int	false	0
+F	call_1	o5	biogenesis.WorldStatistics	deathList	java.util.List	false	o9
+F	call_1	o5	biogenesis.WorldStatistics	deathSum	long	false	0
+F	call_1	o5	biogenesis.WorldStatistics	infectionsSum	long	false	0
+F	call_1	o5	biogenesis.WorldStatistics	lastBornBeing	biogenesis.GeneticCode	false	~
+F	call_1	o5	biogenesis.WorldStatistics	lastDeadBeing	biogenesis.GeneticCode	false	~
+F	call_1	o5	biogenesis.WorldStatistics	lastInfectedBeing	biogenesis.GeneticCode	false	~
+F	call_1	o5	biogenesis.WorldStatistics	massExtintionState	int	false	0
+F	call_1	o5	biogenesis.WorldStatistics	massExtintions	int	false	0
+F	call_1	o5	biogenesis.WorldStatistics	maxBirths	int	false	0
+F	call_1	o5	biogenesis.WorldStatistics	maxCarbonDioxide	double	false	411e848000000000
+F	call_1	o5	biogenesis.WorldStatistics	maxCarbonDioxideTime	long	false	0
+F	call_1	o5	biogenesis.WorldStatistics	maxDeaths	int	false	0
+F	call_1	o5	biogenesis.WorldStatistics	maxMethane	double	false	408f400000000000
+F	call_1	o5	biogenesis.WorldStatistics	maxMethaneTime	long	false	0
+F	call_1	o5	biogenesis.WorldStatistics	maxOxygen	double	false	408f400000000000
+F	call_1	o5	biogenesis.WorldStatistics	maxOxygenTime	long	false	0
+F	call_1	o5	biogenesis.WorldStatistics	maxPopulation	int	false	0
+F	call_1	o5	biogenesis.WorldStatistics	maxPopulationTime	long	false	0
+F	call_1	o5	biogenesis.WorldStatistics	methaneList	java.util.List	false	o10
+F	call_1	o5	biogenesis.WorldStatistics	minCarbonDioxide	double	false	4033000000000000
+F	call_1	o5	biogenesis.WorldStatistics	minCarbonDioxideTime	long	false	1
+F	call_1	o5	biogenesis.WorldStatistics	minMethane	double	false	4037000000000000
+F	call_1	o5	biogenesis.WorldStatistics	minMethaneTime	long	false	1
+F	call_1	o5	biogenesis.WorldStatistics	minOxygen	double	false	4031000000000000
+F	call_1	o5	biogenesis.WorldStatistics	minOxygenTime	long	false	1
+F	call_1	o5	biogenesis.WorldStatistics	minPopulation	int	false	0
+F	call_1	o5	biogenesis.WorldStatistics	minPopulationTime	long	false	0
+F	call_1	o5	biogenesis.WorldStatistics	oxygenList	java.util.List	false	o11
+F	call_1	o5	biogenesis.WorldStatistics	populationList	java.util.List	false	o6
+F	call_1	o5	biogenesis.WorldStatistics	populationSum	long	false	7
+F	call_1	o5	biogenesis.WorldStatistics	time	long	false	1
+O	call_1	o6	java.util.ArrayList
+L	call_1	o6	1
+N	call_1	o6	0	o12
+O	call_1	o7	java.util.ArrayList
+L	call_1	o7	1
+N	call_1	o7	0	o13
+O	call_1	o8	java.util.ArrayList
+L	call_1	o8	1
+N	call_1	o8	0	o14
+O	call_1	o9	java.util.ArrayList
+L	call_1	o9	1
+N	call_1	o9	0	o15
+O	call_1	o10	java.util.ArrayList
+L	call_1	o10	1
+N	call_1	o10	0	o16
+O	call_1	o11	java.util.ArrayList
+L	call_1	o11	1
+N	call_1	o11	0	o17
+O	call_1	o12	java.lang.Double
+D	call_1	o12	java.lang.Double	401c000000000000
+O	call_1	o13	java.lang.Double
+D	call_1	o13	java.lang.Double	0000000000000000
+O	call_1	o14	java.lang.Double
+D	call_1	o14	java.lang.Double	4033000000000000
+O	call_1	o15	java.lang.Double
+D	call_1	o15	java.lang.Double	0000000000000000
+O	call_1	o16	java.lang.Double
+D	call_1	o16	java.lang.Double	4037000000000000
+O	call_1	o17	java.lang.Double
+D	call_1	o17	java.lang.Double	4031000000000000
+V	call_1	null_or_void	~
+Z	call_1	tree_history-call_1.ser	2417	1a13efa4c60eaa157dd63b2bff43cf5659c2ed5b6dfeed4b897cdc0a51ebed1e
+R	call_1	995cd818acf5c21f9af31df613bc16f128d8f11d01f91254511a0cc6157f241e	aced0005737200106a6176612e7574696c2e52616e646f6d363296344bf00a530300035a0014686176654e6578744e657874476175737369616e4400106e6578744e657874476175737369616e4a000473656564787000000000000000000000000005dee0798978
+RP	call_1	-3981345829458826657	901	3fd54a08163de1b8
+K	call_2	tree_query
+RB	call_2	995cd818acf5c21f9af31df613bc16f128d8f11d01f91254511a0cc6157f241e	aced0005737200106a6176612e7574696c2e52616e646f6d363296344bf00a530300035a0014686176654e6578744e657874476175737369616e4400106e6578744e657874476175737369616e4a000473656564787000000000000000000000000005dee0798978
+X	call_2	java.lang.ClassCastException	org.locationtech.jts.index.strtree.STRtree	verticalSlices	154
+P	call_2	o0
+O	call_2	o0	biogenesis.World
+F	call_2	o0	biogenesis.World	NEXT_ID	int	false	0
+F	call_2	o0	biogenesis.World	_CH4	double	false	408f400000000000
+F	call_2	o0	biogenesis.World	_CO2	double	false	411e848000000000
+F	call_2	o0	biogenesis.World	_O2	double	false	408f400000000000
+F	call_2	o0	biogenesis.World	_corridorexists	boolean	false	false
+F	call_2	o0	biogenesis.World	_height	int	false	800
+F	call_2	o0	biogenesis.World	_organisms	java.util.List	false	o1
+F	call_2	o0	biogenesis.World	_population	int	false	0
+F	call_2	o0	biogenesis.World	_visibleWorld	biogenesis.VisibleWorld	true	~
+F	call_2	o0	biogenesis.World	_width	int	false	1200
+F	call_2	o0	biogenesis.World	colDetTree	org.locationtech.jts.index.strtree.STRtree	false	o2
+F	call_2	o0	biogenesis.World	inCorridors	java.util.List	true	o3
+F	call_2	o0	biogenesis.World	nFrames	int	false	0
+F	call_2	o0	biogenesis.World	outCorridors	java.util.List	true	o4
+F	call_2	o0	biogenesis.World	worldStatistics	biogenesis.WorldStatistics	false	o5
+O	call_2	o1	java.util.Collections$SynchronizedRandomAccessList
+L	call_2	o1	0
+O	call_2	o2	org.locationtech.jts.index.strtree.STRtree
+F	call_2	o2	org.locationtech.jts.index.strtree.AbstractSTRtree	built	boolean	false	false
+F	call_2	o2	org.locationtech.jts.index.strtree.AbstractSTRtree	itemBoundables	java.util.ArrayList	false	o6
+F	call_2	o2	org.locationtech.jts.index.strtree.AbstractSTRtree	nodeCapacity	int	false	10
+F	call_2	o2	org.locationtech.jts.index.strtree.AbstractSTRtree	root	org.locationtech.jts.index.strtree.AbstractNode	false	~
+O	call_2	o3	java.util.Collections$SynchronizedRandomAccessList
+L	call_2	o3	0
+O	call_2	o4	java.util.Collections$SynchronizedRandomAccessList
+L	call_2	o4	0
+O	call_2	o5	biogenesis.WorldStatistics
+F	call_2	o5	biogenesis.WorldStatistics	aliveBeingMostChildren	biogenesis.GeneticCode	false	~
+F	call_2	o5	biogenesis.WorldStatistics	aliveBeingMostChildrenNumber	int	false	0
+F	call_2	o5	biogenesis.WorldStatistics	aliveBeingMostInfections	biogenesis.GeneticCode	false	~
+F	call_2	o5	biogenesis.WorldStatistics	aliveBeingMostInfectionsNumber	int	false	0
+F	call_2	o5	biogenesis.WorldStatistics	aliveBeingMostKills	biogenesis.GeneticCode	false	~
+F	call_2	o5	biogenesis.WorldStatistics	aliveBeingMostKillsNumber	int	false	0
+F	call_2	o5	biogenesis.WorldStatistics	beingMostChildren	biogenesis.GeneticCode	false	~
+F	call_2	o5	biogenesis.WorldStatistics	beingMostChildrenNumber	int	false	0
+F	call_2	o5	biogenesis.WorldStatistics	beingMostChildrenTime	long	false	0
+F	call_2	o5	biogenesis.WorldStatistics	beingMostInfections	biogenesis.GeneticCode	false	~
+F	call_2	o5	biogenesis.WorldStatistics	beingMostInfectionsNumber	int	false	0
+F	call_2	o5	biogenesis.WorldStatistics	beingMostInfectionsTime	long	false	0
+F	call_2	o5	biogenesis.WorldStatistics	beingMostKills	biogenesis.GeneticCode	false	~
+F	call_2	o5	biogenesis.WorldStatistics	beingMostKillsNumber	int	false	0
+F	call_2	o5	biogenesis.WorldStatistics	beingMostKillsTime	long	false	0
+F	call_2	o5	biogenesis.WorldStatistics	birthLastTime	int	false	0
+F	call_2	o5	biogenesis.WorldStatistics	birthList	java.util.List	false	o7
+F	call_2	o5	biogenesis.WorldStatistics	birthSum	long	false	0
+F	call_2	o5	biogenesis.WorldStatistics	carbonDioxideList	java.util.List	false	o8
+F	call_2	o5	biogenesis.WorldStatistics	createdOrganisms	int	false	0
+F	call_2	o5	biogenesis.WorldStatistics	deathLastTime	int	false	0
+F	call_2	o5	biogenesis.WorldStatistics	deathList	java.util.List	false	o9
+F	call_2	o5	biogenesis.WorldStatistics	deathSum	long	false	0
+F	call_2	o5	biogenesis.WorldStatistics	infectionsSum	long	false	0
+F	call_2	o5	biogenesis.WorldStatistics	lastBornBeing	biogenesis.GeneticCode	false	~
+F	call_2	o5	biogenesis.WorldStatistics	lastDeadBeing	biogenesis.GeneticCode	false	~
+F	call_2	o5	biogenesis.WorldStatistics	lastInfectedBeing	biogenesis.GeneticCode	false	~
+F	call_2	o5	biogenesis.WorldStatistics	massExtintionState	int	false	0
+F	call_2	o5	biogenesis.WorldStatistics	massExtintions	int	false	0
+F	call_2	o5	biogenesis.WorldStatistics	maxBirths	int	false	0
+F	call_2	o5	biogenesis.WorldStatistics	maxCarbonDioxide	double	false	411e848000000000
+F	call_2	o5	biogenesis.WorldStatistics	maxCarbonDioxideTime	long	false	0
+F	call_2	o5	biogenesis.WorldStatistics	maxDeaths	int	false	0
+F	call_2	o5	biogenesis.WorldStatistics	maxMethane	double	false	408f400000000000
+F	call_2	o5	biogenesis.WorldStatistics	maxMethaneTime	long	false	0
+F	call_2	o5	biogenesis.WorldStatistics	maxOxygen	double	false	408f400000000000
+F	call_2	o5	biogenesis.WorldStatistics	maxOxygenTime	long	false	0
+F	call_2	o5	biogenesis.WorldStatistics	maxPopulation	int	false	0
+F	call_2	o5	biogenesis.WorldStatistics	maxPopulationTime	long	false	0
+F	call_2	o5	biogenesis.WorldStatistics	methaneList	java.util.List	false	o10
+F	call_2	o5	biogenesis.WorldStatistics	minCarbonDioxide	double	false	4033000000000000
+F	call_2	o5	biogenesis.WorldStatistics	minCarbonDioxideTime	long	false	1
+F	call_2	o5	biogenesis.WorldStatistics	minMethane	double	false	4037000000000000
+F	call_2	o5	biogenesis.WorldStatistics	minMethaneTime	long	false	1
+F	call_2	o5	biogenesis.WorldStatistics	minOxygen	double	false	4031000000000000
+F	call_2	o5	biogenesis.WorldStatistics	minOxygenTime	long	false	1
+F	call_2	o5	biogenesis.WorldStatistics	minPopulation	int	false	0
+F	call_2	o5	biogenesis.WorldStatistics	minPopulationTime	long	false	0
+F	call_2	o5	biogenesis.WorldStatistics	oxygenList	java.util.List	false	o11
+F	call_2	o5	biogenesis.WorldStatistics	populationList	java.util.List	false	o6
+F	call_2	o5	biogenesis.WorldStatistics	populationSum	long	false	7
+F	call_2	o5	biogenesis.WorldStatistics	time	long	false	1
+O	call_2	o6	java.util.ArrayList
+L	call_2	o6	1
+N	call_2	o6	0	o12
+O	call_2	o7	java.util.ArrayList
+L	call_2	o7	1
+N	call_2	o7	0	o13
+O	call_2	o8	java.util.ArrayList
+L	call_2	o8	1
+N	call_2	o8	0	o14
+O	call_2	o9	java.util.ArrayList
+L	call_2	o9	1
+N	call_2	o9	0	o15
+O	call_2	o10	java.util.ArrayList
+L	call_2	o10	1
+N	call_2	o10	0	o16
+O	call_2	o11	java.util.ArrayList
+L	call_2	o11	1
+N	call_2	o11	0	o17
+O	call_2	o12	java.lang.Double
+D	call_2	o12	java.lang.Double	401c000000000000
+O	call_2	o13	java.lang.Double
+D	call_2	o13	java.lang.Double	0000000000000000
+O	call_2	o14	java.lang.Double
+D	call_2	o14	java.lang.Double	4033000000000000
+O	call_2	o15	java.lang.Double
+D	call_2	o15	java.lang.Double	0000000000000000
+O	call_2	o16	java.lang.Double
+D	call_2	o16	java.lang.Double	4037000000000000
+O	call_2	o17	java.lang.Double
+D	call_2	o17	java.lang.Double	4031000000000000
+V	call_2	null_or_void	~
+Z	call_2	tree_history-call_2.ser	2417	1a13efa4c60eaa157dd63b2bff43cf5659c2ed5b6dfeed4b897cdc0a51ebed1e
+R	call_2	995cd818acf5c21f9af31df613bc16f128d8f11d01f91254511a0cc6157f241e	aced0005737200106a6176612e7574696c2e52616e646f6d363296344bf00a530300035a0014686176654e6578744e657874476175737369616e4400106e6578744e657874476175737369616e4a000473656564787000000000000000000000000005dee0798978
+RP	call_2	-3981345829458826657	901	3fd54a08163de1b8
+E	tree_history

@@ -1,0 +1,1017 @@
+{
+  "schema": "biogenesis-cream-lilac-oracle-v1",
+  "generated_utc": "2026-10-26T05:16:34.263373+00:00",
+  "helper": {
+    "path": "tools/reference/CreamLilacOracle.java",
+    "sha256": "a7f3e52635e45896eb4defbbcf5902e5427277e801e87d0026694bcdad9f5429",
+    "compiled_classes": {
+      "source": {
+        "CreamLilacOracle$Action.class": "6b10318c7cd541a583856c7b4f72f85312e55fff1fd1090e2f9852f45b223562",
+        "CreamLilacOracle$Spec.class": "5b1dc6321ad983c304138eee95bd080b708a29564ea1683fec376c0fd6699587",
+        "CreamLilacOracle$Capture.class": "007620ab6ac19e95ee63f70c5f8b435ad05261ece6471d01de8946a78d97a43b",
+        "CreamLilacOracle.class": "a7afe26e75a0ad9f04a3e595ab538a35d317244bd0c55f82e2ac1827c22a7fb8"
+      },
+      "jar": {
+        "CreamLilacOracle$Action.class": "6b10318c7cd541a583856c7b4f72f85312e55fff1fd1090e2f9852f45b223562",
+        "CreamLilacOracle$Spec.class": "5b1dc6321ad983c304138eee95bd080b708a29564ea1683fec376c0fd6699587",
+        "CreamLilacOracle$Capture.class": "007620ab6ac19e95ee63f70c5f8b435ad05261ece6471d01de8946a78d97a43b",
+        "CreamLilacOracle.class": "a7afe26e75a0ad9f04a3e595ab538a35d317244bd0c55f82e2ac1827c22a7fb8"
+      }
+    },
+    "source_jar_helper_classes_identical": true,
+    "copied_observer_authority": "Existing ContactSupportOracle capture grammar; scenarios invoke the original Java touchEffects1 dispatcher."
+  },
+  "fixture": {
+    "path": "crates/core/tests/fixtures/cream_lilac.tsv",
+    "sha256": "6769fde1a5ab440fe00ff7e005f71e3a054c8f33d3f022ed2fe35690f54cc0b1",
+    "bytes": 24477772,
+    "rows": 688600,
+    "cases": 265,
+    "snapshots": 585,
+    "actor_views": 1755,
+    "calls": 320,
+    "operations": {
+      "touchEffects1.CREAM": 200,
+      "touchEffects1.LILAC": 120
+    },
+    "row_types": {
+      "C": 265,
+      "U": 38955,
+      "I": 16400,
+      "G": 119000,
+      "N": 170960,
+      "A": 795,
+      "P": 585,
+      "O": 270270,
+      "H": 5265,
+      "W": 5850,
+      "S": 30420,
+      "T": 28665,
+      "R": 585,
+      "K": 320,
+      "E": 265
+    },
+    "ledger": {
+      "input_and_command_rows": 57320,
+      "input_genotype_rows": 90420,
+      "selection_metadata_rows": 265,
+      "compared_rows": 537085,
+      "collaborator_rows": 3510
+    },
+    "peer_palette_colors_per_branch": 66,
+    "all_call_actor_ARGB_checks_passed": true,
+    "unique_observed_RNG_suffixes": 1,
+    "source_schema_checks_passed": true,
+    "selected_branch_outcomes_checked": true,
+    "initial_253_cases_byte_identical": true,
+    "organism_fields_per_actor": 154,
+    "reference_holders_per_actor": 3,
+    "world_getter_values_per_snapshot": 10,
+    "statistics_fields_per_snapshot": 52,
+    "statistics_getters_per_snapshot": 49,
+    "mutable_primitive_utils_per_case": 147,
+    "genome_fields_including_synthetic": 28,
+    "gene_fields": 40,
+    "source_source_jar_outputs_identical": true
+  },
+  "reference": {
+    "manifest": "docs/evidence/reference-manifest.json",
+    "original_hash_size_mode_checks": 74,
+    "source_compile_receipt": ".workflow-local/reference-build/compile.json",
+    "source_compile_receipt_sha256": "4fc1785c218238508d72b89ba883d94bc8a1fa24631e990463dd71502a78e184",
+    "source_sha256": {
+      "Gene": "d070db688526a401c8b55904c06066b2169ca82c76837e3001b4c423bc80e720",
+      "GeneticCode": "f8bf3d0315cec8a2bf515a1626391fe5b646e47566234d398ef58bbdbc3a9004",
+      "Organism": "8650cb0983069dbae09e2ca704059fb82761fa6e0d87f35218c2342ffc60df46",
+      "Utils": "7b3306148684ba111629690a928dcb45abd4825104cfb90b530cd2d0dc6dd2b3",
+      "World": "a67543055a665a9a378e37c860671996e2ca0f510cb622375172a24333d7cae1",
+      "WorldStatistics": "407bcd4bec5e947f26ccfb02a1a590bec6eb9f22f675ad88d9bb974f686ebe15",
+      "VisibleWorld": "b14b41135de13d935f24e42b2f82a72457a015831d1b62f30a26bd5be7faedc5"
+    },
+    "backend_class_sha256": {
+      "Gene": {
+        "compiled_source": "29fe7b153555ded4383072debd0452bed5f92692afd0488a88c297d5f04f6ea8",
+        "bundled_jar": "b307c29cbd73a98cdcbf7d5da9a3ed771fd4d419f6426fbfd41510934c0a7988"
+      },
+      "GeneticCode": {
+        "compiled_source": "4bbf99eaf9006840ecbba0958496372a220ed44c4e57c8341c4de3dc29f3fb30",
+        "bundled_jar": "2aba7f494115279c26bb918dc8156c7ff67af047c2bcb32e35db113f2b87c51e"
+      },
+      "Organism": {
+        "compiled_source": "e8facb409642f0288411785985cbfd96440f644226795f14de24705554a46e22",
+        "bundled_jar": "561d53132aa1765ba766c7d251a98090617c7e9884ae8ed1f9543237e32257f0"
+      },
+      "Utils": {
+        "compiled_source": "67adba4432972ffa3922b6f622d2cc12bf0e703a7dfbf97ae94f3f95387b1884",
+        "bundled_jar": "8f258ba2cb30beea85f44a60ecb4189faf7493f39102712bc9ff1114456e1060"
+      },
+      "World": {
+        "compiled_source": "9091d4e5cae555493971a37a9c8fc77e2250e68db073a120a3a08b57b03e131e",
+        "bundled_jar": "be8067767dc18b46fbd7fd798c5e67e8a58ff6922b78d65eee28ab033360bd33"
+      },
+      "WorldStatistics": {
+        "compiled_source": "ab04358e54edf5120d703f0d980c72a136ab74165e5bbec4b55719ab097c7863",
+        "bundled_jar": "cc5e6f8d4adfb96a41269b4dc7a3ab27224513d8076d68ee42be2ab518e0c236"
+      },
+      "VisibleWorld": {
+        "compiled_source": "f9f559ac40de41b7d84cb6d624b5bcad538ac016d566779bc6c45512c5d68168",
+        "bundled_jar": "b1a0dced3a53afcef5f80132f122ac1ba0baf41f02d3e6e48cb99e4236c1385c"
+      }
+    },
+    "jar_sha256": "0baeae8d29f5fdbbb830c1a9e51c7f2b5314a33011b20ec7471eeaa27f0398e1",
+    "jts_sha256": "00102cde26c457b81fbb0248e4f8845884243caba0dc9b7fb42e0ea877383bc1",
+    "prior_tsv_sha256": {
+      "construction.tsv": "cf9b83da280e3e7aa812ae7cf2caee7293ce805c8109aebaa2891a69227b3336",
+      "geometry.tsv": "364c17c289c7d3f85b4ae3bdf7ce8ddcaac773547b1bb3c14360cae58e766a96",
+      "genetics.tsv": "1fc3f745a83427c499d84884dfdb6864fdc222861feb30488d7083a4a0126b71",
+      "geometry-rebuild.tsv": "a484994dbc4f69d8deb45c0622c127eb5dc5dd95eba1b61a412e015cf8b2a3d8",
+      "organism_state.tsv": "298e7a37eb2983252797a40e45ff721141ba22e6b8cfdaba91a1bfa079552f8b",
+      "paste_rejection.tsv": "73b1fa2480d2211e29cbbb24c4653c18d3a0786c5e0074f84e0c378b0b333db9",
+      "genotype_identity.tsv": "b6a85cb8b2b628a8a8b25c3de2db1445a61433b06c7b66647670c07a1ea0b9ac",
+      "spatial.tsv": "a2cf3205b94144694f6484c81aaa9916f42824766a521c2cb05d2f14f344225a",
+      "birth.tsv": "8b9bcee0ed1232b1d90050587e52cb19548a14f833da63749dcd6c96ccae8a22",
+      "birth_variants.tsv": "ababf3bdecebcfda1c56b99cf08343157b6091e2b95f9ab63010de1c13e04b96",
+      "physics.tsv": "50151aaaeb0de8502bb1e22d0256ce77273e83851713a0b43337b66835de72ff",
+      "gases.tsv": "0ea73389506dce4286389f75388ef55475541bd5062cddd149f619b12cd3b6c8",
+      "movement.tsv": "ca8c5078821d339f6aaabb47e593de0da62e44c59df69bf5d4ee8ee01dc84207",
+      "statistics.tsv": "bcc5c8b489b5591f318486176b2647e816d899ec05af854a077e26fe771bcf8a",
+      "statistics_null_genome.tsv": "049301b93bd1062bc6be3cfdac6b58caff10ccb53d1d58a67ece583676c345c1",
+      "death.tsv": "198a17283df6d96826fef2c6464acf6ad222f1e5234c884ec781b05080941720",
+      "death_invalid.tsv": "5bddabd10826003e147df8c688c3db9d3d99b7c64212685a9ade474b92bcbb62",
+      "infection.tsv": "6155d428aca3a6ef337fec20921db969382f47ff72db00388b1985665424b704",
+      "infection_callback.tsv": "02749c101e2f597c4fc42e24f32f6c0e76f5cc1ae320a826dd7dabfc88e982e3",
+      "maintenance.tsv": "266e604b25a4f1e238e3c07131e5d1e42d1a1e73192adb52723e144bc43e8bb9",
+      "reproduction.tsv": "3067af9973d1539781dd72ade76e33e9dda0303dd9aa69f467b7aa13e6277441",
+      "transformation.tsv": "92c7be8b067132fa8fc22fe57416c0d11004028c26189c00195a04eb937797db",
+      "thresholds.tsv": "07a1fa146dd5ed0724447a773ba7267f3b43dd2f93a25a942af88328320f0cad",
+      "contact_state.tsv": "30297653120fdc9817a361992dbedd835e00268584fc4f4f68eed544f7fe47c4",
+      "contact_support.tsv": "931b7133bea398aef9a84947a0332f6d813aea3eff0197066e140c7cf95e195a",
+      "reactions.tsv": "6aa930bec22711537fda10da041a6971640b7acadc23b4777b57305b7a6bc2cd",
+      "frame_effects.tsv": "c10f443f099194aa94f957a771490087674eecf8f4cdc74f79e95a759da4a00d",
+      "coral.tsv": "b7588817c0c488880bbc19b7dfb7fb41bb44c05e56c0fcb8cfe03d8c3d5f2124"
+    }
+  },
+  "execution": {
+    "raw_receipts": ".workflow-local/cream-lilac-oracle-jntk6f92/commands.json",
+    "raw_receipts_sha256": "4cc0d1b54dd51588ee9547c880787321c606b00bf026f6e50c7680e788c4e844",
+    "versions": {
+      "java": "openjdk version \"21.0.12.1\" 2026-08-18\nOpenJDK Runtime Environment (build 21.0.12.1+1)\nOpenJDK 64-Bit Server VM (build 21.0.12.1+1, mixed mode, sharing)\n",
+      "javac": "javac 21.0.12.1\n"
+    },
+    "compile_commands": [
+      {
+        "argv": [
+          "javac",
+          "-encoding",
+          "UTF-8",
+          "-cp",
+          "<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "-d",
+          "<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/helpers-source",
+          "<project-root>/tools/reference/CreamLilacOracle.java"
+        ],
+        "cwd": "<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92",
+        "pid": 4,
+        "process_group": 4,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.7532724189950386,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "javac",
+          "-encoding",
+          "UTF-8",
+          "-cp",
+          "<reference-root>/ColorMod_2_01/biogenesis.jar:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "-d",
+          "<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/helpers-jar",
+          "<project-root>/tools/reference/CreamLilacOracle.java"
+        ],
+        "cwd": "<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92",
+        "pid": 32,
+        "process_group": 32,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.6119704279990401,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "positive_runs": [
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/source-a/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/source-a/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/source-a/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/source-a/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.CreamLilacOracle",
+          "<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/source-a/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/source-a",
+        "pid": 61,
+        "process_group": 61,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 1.2208089850028045,
+        "stdout": "CREAM_LILAC_ORACLE PASS cases=265 snapshots=585 calls=320\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/source-b/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/source-b/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/source-b/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/source-b/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.CreamLilacOracle",
+          "<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/source-b/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/source-b",
+        "pid": 98,
+        "process_group": 98,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 1.3411551489989506,
+        "stdout": "CREAM_LILAC_ORACLE PASS cases=265 snapshots=585 calls=320\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/jar/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/jar/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/jar/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/jar/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/helpers-jar:<reference-root>/ColorMod_2_01/biogenesis.jar:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.CreamLilacOracle",
+          "<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/jar/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/jar",
+        "pid": 134,
+        "process_group": 134,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 1.3378365149983438,
+        "stdout": "CREAM_LILAC_ORACLE PASS cases=265 snapshots=585 calls=320\n",
+        "stderr": ""
+      }
+    ],
+    "negative_guard_commands": [
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/omit-user.home/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/omit-user.home/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/omit-user.home/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.CreamLilacOracle",
+          "<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/omit-user.home/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/omit-user.home",
+        "pid": 5,
+        "process_group": 5,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.030743249000806827,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: user.home\n\tat biogenesis.CreamLilacOracle.require(CreamLilacOracle.java:165)\n\tat biogenesis.CreamLilacOracle.main(CreamLilacOracle.java:286)\n"
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/omit-java.io.tmpdir/home",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/omit-java.io.tmpdir/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/omit-java.io.tmpdir/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.CreamLilacOracle",
+          "<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/omit-java.io.tmpdir/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/omit-java.io.tmpdir",
+        "pid": 23,
+        "process_group": 23,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.03812833099800628,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: java.io.tmpdir\n\tat biogenesis.CreamLilacOracle.require(CreamLilacOracle.java:165)\n\tat biogenesis.CreamLilacOracle.main(CreamLilacOracle.java:286)\n"
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/omit-java.util.prefs.userRoot/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/omit-java.util.prefs.userRoot/tmp",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/omit-java.util.prefs.userRoot/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.CreamLilacOracle",
+          "<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/omit-java.util.prefs.userRoot/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/omit-java.util.prefs.userRoot",
+        "pid": 41,
+        "process_group": 41,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.0336833069959539,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: java.util.prefs.userRoot\n\tat biogenesis.CreamLilacOracle.require(CreamLilacOracle.java:165)\n\tat biogenesis.CreamLilacOracle.main(CreamLilacOracle.java:286)\n"
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/omit-java.util.prefs.systemRoot/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/omit-java.util.prefs.systemRoot/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/omit-java.util.prefs.systemRoot/prefs-user",
+          "-cp",
+          "<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.CreamLilacOracle",
+          "<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/omit-java.util.prefs.systemRoot/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/omit-java.util.prefs.systemRoot",
+        "pid": 59,
+        "process_group": 59,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.041660116003185976,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: java.util.prefs.systemRoot\n\tat biogenesis.CreamLilacOracle.require(CreamLilacOracle.java:165)\n\tat biogenesis.CreamLilacOracle.main(CreamLilacOracle.java:286)\n"
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/existing-output/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/existing-output/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/existing-output/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/existing-output/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.CreamLilacOracle",
+          "<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/existing-output/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/existing-output",
+        "pid": 77,
+        "process_group": 77,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.03591429399966728,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Output directory must not exist\n\tat biogenesis.CreamLilacOracle.require(CreamLilacOracle.java:165)\n\tat biogenesis.CreamLilacOracle.main(CreamLilacOracle.java:288)\n"
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/escaped-profile/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/escaped-profile/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/escaped-profile/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/escaped-profile/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.CreamLilacOracle",
+          "<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/escaped-profile/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/cream-lilac-oracle-jntk6f92/escaped-profile",
+        "pid": 95,
+        "process_group": 95,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.034789488003298175,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: java.util.prefs.userRoot\n\tat biogenesis.CreamLilacOracle.require(CreamLilacOracle.java:165)\n\tat biogenesis.CreamLilacOracle.main(CreamLilacOracle.java:286)\n"
+      }
+    ],
+    "negative_guard_results": [
+      {
+        "condition": "omit-user.home",
+        "exit_code": 1,
+        "expected_error": "Explicit isolated profile required: user.home",
+        "output_preserved": true
+      },
+      {
+        "condition": "omit-java.io.tmpdir",
+        "exit_code": 1,
+        "expected_error": "Explicit isolated profile required: java.io.tmpdir",
+        "output_preserved": true
+      },
+      {
+        "condition": "omit-java.util.prefs.userRoot",
+        "exit_code": 1,
+        "expected_error": "Explicit isolated profile required: java.util.prefs.userRoot",
+        "output_preserved": true
+      },
+      {
+        "condition": "omit-java.util.prefs.systemRoot",
+        "exit_code": 1,
+        "expected_error": "Explicit isolated profile required: java.util.prefs.systemRoot",
+        "output_preserved": true
+      },
+      {
+        "condition": "existing-output",
+        "exit_code": 1,
+        "expected_error": "Output directory must not exist",
+        "output_preserved": true
+      },
+      {
+        "condition": "escaped-profile",
+        "exit_code": 1,
+        "expected_error": "Explicit isolated profile required: java.util.prefs.userRoot",
+        "output_preserved": true
+      }
+    ],
+    "positive_timeout_seconds": 120,
+    "negative_timeout_seconds": 30,
+    "process_group_runner": "tools/run_reference_oracles.py:32-77",
+    "cleared_environment_variables": [
+      "JAVA_TOOL_OPTIONS",
+      "_JAVA_OPTIONS",
+      "JDK_JAVA_OPTIONS"
+    ],
+    "original_preservation_checks_passed": true,
+    "prior_fixture_checks_passed": true,
+    "prior_fixture_count": 28,
+    "frozen_production_sha256": {
+      "crates/core/src/cream_lilac_contacts.rs": "2274d02290c550e530c07ae16c363c15005c438835bd734a57e2963bfd9148dd"
+    },
+    "production_modified": false
+  },
+  "comparison_contract": {
+    "declared_before_Rust_comparison": true,
+    "exact": "All non-geometric organism scalar/effect/photo/velocity fields, world gases, statistics, integer endpoints/bounds, ARGB, reactions, identity/order, and RNG bits.",
+    "geometry_only_O_fields": [
+      "_m",
+      "_m1",
+      "_m2",
+      "_mass",
+      "_I"
+    ],
+    "geometry_finite_tolerance": "1e-10 * max(1, abs(expected))",
+    "geometry_nonfinite": "Explicit NaN classification and signed infinity checks only for the five geometry fields.",
+    "expectation_authority": "Actual unchanged Java touchEffects1 on real pasted/added actors, reflection, original getters, and actual atmospheric payments. No copied biological formulas generate expected observations.",
+    "constructor_authority": "Only input G/N and explicit/clone construction recipes construct the original objects; later observations never supply constructor inputs.",
+    "original_genome_identities": [
+      "g0",
+      "g1",
+      "g2",
+      "g3",
+      "g4"
+    ],
+    "gene_identity_limit": "Values and Genome holder identity are recorded; separate genetics fixtures cover mutable Gene-object alias topology.",
+    "rust_results_claimed": false
+  },
+  "explicit_exclusions": {
+    "O": {
+      "fields": [
+        "_world",
+        "_visibleWorld"
+      ],
+      "rows": 3510
+    },
+    "I": {
+      "target": "visible:selected",
+      "rows": 265
+    },
+    "other_unsupported_or_diagnostic_rows": 0,
+    "V_Q_J_rows": 0
+  },
+  "coverage": {
+    "source_obligations": [
+      {
+        "file": "biogenesis/Organism.java",
+        "kind": "case",
+        "name": "",
+        "class": "Organism",
+        "method": "touchEffects1(Organism,int,int)",
+        "expression": "CREAM",
+        "start_line": 10527,
+        "end_line": 11005,
+        "source_sha256": "44edb715fe5b9188be1f6ed2af623eba436f33d0aff22549250a5f6d52f41b18",
+        "id": "JAVA-Organism-CASE-10527-1",
+        "owners": [
+          "TASK-8"
+        ],
+        "oracle_id": "colors"
+      },
+      {
+        "file": "biogenesis/Organism.java",
+        "kind": "case",
+        "name": "",
+        "class": "Organism",
+        "method": "touchEffects1(Organism,int,int)",
+        "expression": "LILAC",
+        "start_line": 11006,
+        "end_line": 11280,
+        "source_sha256": "fe206c5dbc615079e97802109667f108b76b8d46f24f311b57179c2af90a752a",
+        "id": "JAVA-Organism-CASE-11006-1",
+        "owners": [
+          "TASK-8"
+        ],
+        "oracle_id": "colors"
+      },
+      {
+        "file": "biogenesis/Organism.java",
+        "kind": "if",
+        "name": "",
+        "class": "Organism",
+        "method": "touchEffects1(Organism,int,int)",
+        "expression": "(org.isAlive() && org._energy < Utils.tol)",
+        "start_line": 13106,
+        "end_line": 13108,
+        "source_sha256": "99e4e1cbf859ea45713e631aa306c34a765d6df44c647dc5d068c831ceebbadf",
+        "id": "JAVA-Organism-IF-13106-1",
+        "owners": [
+          "TASK-8"
+        ],
+        "oracle_id": "colors"
+      }
+    ],
+    "original_actor_order": [
+      "peer",
+      "victim",
+      "killer"
+    ],
+    "initial_ids": [
+      0,
+      1,
+      2
+    ],
+    "target": "victim",
+    "call_labels": [
+      "touchEffects1.CREAM",
+      "touchEffects1.LILAC"
+    ],
+    "actual_method": "touchEffects1",
+    "actor_ARGB_preconditions": {
+      "CREAM": "ffd0c08c",
+      "LILAC": "ffc080ff"
+    },
+    "precondition_checks": 320,
+    "actor_arguments": [
+      "killer,0,0",
+      "killer,1,1"
+    ],
+    "base_peer_colors_per_branch": 46,
+    "internal_peer_colors_per_branch": 18,
+    "additional_peer_ARGB": [
+      "12345678",
+      "12ff00ff"
+    ],
+    "nonfinite_state_inputs_labelled": true,
+    "physical_cache_inputs_labelled": true,
+    "raw_null_or_uninitialized_actors": false,
+    "newborns_or_rejected_candidates": 0,
+    "full_world_frames_executed": 0,
+    "observed_lavender_wrap_values": [
+      -2147483499,
+      -2147482699
+    ],
+    "observed_blue_double_death_population": 1,
+    "observed_blue_final_death_genotype": "g1",
+    "unique_RNG_suffixes": 1,
+    "state_and_rng_expectations_from_Rust": false
+  },
+  "input_target_types": [
+    [
+      "actor:killer:_altruist",
+      "boolean"
+    ],
+    [
+      "actor:killer:_color",
+      "Color"
+    ],
+    [
+      "actor:killer:_createlavender",
+      "int"
+    ],
+    [
+      "actor:killer:_dodge",
+      "boolean"
+    ],
+    [
+      "actor:killer:_energy",
+      "double"
+    ],
+    [
+      "actor:killer:_fallowversion",
+      "int"
+    ],
+    [
+      "actor:killer:_framesColor",
+      "int"
+    ],
+    [
+      "actor:killer:_hasdodged",
+      "boolean"
+    ],
+    [
+      "actor:killer:_isaconsumer",
+      "boolean"
+    ],
+    [
+      "actor:killer:_isafungus",
+      "boolean"
+    ],
+    [
+      "actor:killer:_isaplant",
+      "boolean"
+    ],
+    [
+      "actor:killer:_isauburn",
+      "boolean"
+    ],
+    [
+      "actor:killer:_iscoral",
+      "boolean"
+    ],
+    [
+      "actor:killer:_isenhanced",
+      "boolean"
+    ],
+    [
+      "actor:killer:_isinfectious",
+      "boolean"
+    ],
+    [
+      "actor:killer:_isinjured",
+      "boolean"
+    ],
+    [
+      "actor:killer:_lavender",
+      "int"
+    ],
+    [
+      "actor:killer:_mphoto",
+      "double[]"
+    ],
+    [
+      "actor:killer:_nTotalKills",
+      "int"
+    ],
+    [
+      "actor:killer:_photosynthesis",
+      "double"
+    ],
+    [
+      "actor:killer:_plagueversion",
+      "int"
+    ],
+    [
+      "actor:killer:_segColor",
+      "Color[]"
+    ],
+    [
+      "actor:killer:_skyversion",
+      "int"
+    ],
+    [
+      "actor:killer:_sporeversion",
+      "int"
+    ],
+    [
+      "actor:killer:_updateEffects",
+      "int"
+    ],
+    [
+      "actor:killer:_useextraeffects",
+      "boolean"
+    ],
+    [
+      "actor:killer:active",
+      "boolean"
+    ],
+    [
+      "actor:killer:alive",
+      "boolean"
+    ],
+    [
+      "actor:victim:_altruist",
+      "boolean"
+    ],
+    [
+      "actor:victim:_color",
+      "Color"
+    ],
+    [
+      "actor:victim:_createlavender",
+      "int"
+    ],
+    [
+      "actor:victim:_dodge",
+      "boolean"
+    ],
+    [
+      "actor:victim:_energy",
+      "double"
+    ],
+    [
+      "actor:victim:_fallowversion",
+      "int"
+    ],
+    [
+      "actor:victim:_framesColor",
+      "int"
+    ],
+    [
+      "actor:victim:_hasdodged",
+      "boolean"
+    ],
+    [
+      "actor:victim:_healing",
+      "int"
+    ],
+    [
+      "actor:victim:_infectedGeneticCode",
+      "GeneticCode"
+    ],
+    [
+      "actor:victim:_isaconsumer",
+      "boolean"
+    ],
+    [
+      "actor:victim:_isafungus",
+      "boolean"
+    ],
+    [
+      "actor:victim:_isaplant",
+      "boolean"
+    ],
+    [
+      "actor:victim:_isauburn",
+      "boolean"
+    ],
+    [
+      "actor:victim:_iscoral",
+      "boolean"
+    ],
+    [
+      "actor:victim:_isenhanced",
+      "boolean"
+    ],
+    [
+      "actor:victim:_isinfectious",
+      "boolean"
+    ],
+    [
+      "actor:victim:_isinjured",
+      "boolean"
+    ],
+    [
+      "actor:victim:_lavender",
+      "int"
+    ],
+    [
+      "actor:victim:_m",
+      "double[]"
+    ],
+    [
+      "actor:victim:_photosynthesis",
+      "double"
+    ],
+    [
+      "actor:victim:_plagueversion",
+      "int"
+    ],
+    [
+      "actor:victim:_savedGeneticCode",
+      "GeneticCode"
+    ],
+    [
+      "actor:victim:_segColor",
+      "Color[]"
+    ],
+    [
+      "actor:victim:_skyversion",
+      "int"
+    ],
+    [
+      "actor:victim:_sporeversion",
+      "int"
+    ],
+    [
+      "actor:victim:_updateEffects",
+      "int"
+    ],
+    [
+      "actor:victim:_useextraeffects",
+      "boolean"
+    ],
+    [
+      "actor:victim:active",
+      "boolean"
+    ],
+    [
+      "genome:g0:_modifiescream",
+      "int"
+    ],
+    [
+      "genome:g0:_modifieslilac",
+      "boolean"
+    ],
+    [
+      "genome:g0:construction",
+      "String"
+    ],
+    [
+      "genome:g1:_modifiescream",
+      "int"
+    ],
+    [
+      "genome:g1:construction",
+      "String"
+    ],
+    [
+      "genome:g2:construction",
+      "String"
+    ],
+    [
+      "genome:g3:construction",
+      "String"
+    ],
+    [
+      "genome:g4:construction",
+      "String"
+    ],
+    [
+      "visible:selected",
+      "String"
+    ],
+    [
+      "world:_O2",
+      "double"
+    ],
+    [
+      "world:_population",
+      "int"
+    ]
+  ],
+  "initial_coverage": {
+    "path": ".workflow-local/cream-lilac-oracle-n4xb_txx",
+    "helper_backup": ".workflow-local/cream-lilac-oracle-n4xb_txx/first-coverage-CreamLilacOracle.java",
+    "helper_backup_sha256": "25babfd184cba80e72982d8e597d442c6a6a5b75987cc3e031d8fdc106c4d2d3",
+    "raw_receipts_sha256": "f214f1e2316495aff1baace66ab32f9951100bae2b54db5986b2b0aa136b4482",
+    "positive_runs": [
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/cream-lilac-oracle-n4xb_txx/source-a/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/cream-lilac-oracle-n4xb_txx/source-a/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/cream-lilac-oracle-n4xb_txx/source-a/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/cream-lilac-oracle-n4xb_txx/source-a/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/cream-lilac-oracle-n4xb_txx/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.CreamLilacOracle",
+          "<project-root>/.workflow-local/cream-lilac-oracle-n4xb_txx/source-a/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/cream-lilac-oracle-n4xb_txx/source-a",
+        "pid": 63,
+        "process_group": 63,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 1.3307485350014758,
+        "stdout": "CREAM_LILAC_ORACLE PASS cases=253 snapshots=559 calls=306\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/cream-lilac-oracle-n4xb_txx/source-b/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/cream-lilac-oracle-n4xb_txx/source-b/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/cream-lilac-oracle-n4xb_txx/source-b/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/cream-lilac-oracle-n4xb_txx/source-b/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/cream-lilac-oracle-n4xb_txx/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.CreamLilacOracle",
+          "<project-root>/.workflow-local/cream-lilac-oracle-n4xb_txx/source-b/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/cream-lilac-oracle-n4xb_txx/source-b",
+        "pid": 99,
+        "process_group": 99,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 1.477491732002818,
+        "stdout": "CREAM_LILAC_ORACLE PASS cases=253 snapshots=559 calls=306\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/cream-lilac-oracle-n4xb_txx/jar/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/cream-lilac-oracle-n4xb_txx/jar/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/cream-lilac-oracle-n4xb_txx/jar/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/cream-lilac-oracle-n4xb_txx/jar/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/cream-lilac-oracle-n4xb_txx/helpers-jar:<reference-root>/ColorMod_2_01/biogenesis.jar:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.CreamLilacOracle",
+          "<project-root>/.workflow-local/cream-lilac-oracle-n4xb_txx/jar/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/cream-lilac-oracle-n4xb_txx/jar",
+        "pid": 135,
+        "process_group": 135,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 1.4469620499949087,
+        "stdout": "CREAM_LILAC_ORACLE PASS cases=253 snapshots=559 calls=306\n",
+        "stderr": ""
+      }
+    ],
+    "fixture_sha256": "7f7177e98754abbc48030d6f0107d3d41faa8b5fb17e54d004807c65d1188abd",
+    "source_source_jar_outputs_identical": true,
+    "cases": 253,
+    "snapshots": 559,
+    "calls": 306,
+    "final_prefix_bytes_identical": true,
+    "fixture_adopted": false,
+    "disposition": "Appended twelve targeted positive-cost, eligibility, Spike, insufficient-energy, and repeated-dodge cases before fixture freeze and Rust replay; all original observations remain identical."
+  },
+  "validation": {
+    "script": ".workflow-local/cream-lilac-oracle-jntk6f92/validate.py",
+    "script_sha256": "4d2928d0da0b571a8f8734e2de4f1c9835aecfe287d2c91653524897491b3ff5",
+    "schema_and_selected_branch_checks_passed": true,
+    "all_input_types": true,
+    "all_branch_ARGB_checks": true,
+    "source_reference_pins": 74,
+    "prior_TSV_pins": 28
+  },
+  "limits": [
+    "No physical contact eligibility, complete contact-matrix integration, World.time ordering, or full ecology acceptance.",
+    "No UI, networking, persistence migration, performance, or distributable acceptance.",
+    "Controlled physical caches include boundaries not claimed to arise during normal construction.",
+    "No exhaustive Cartesian combinations of unrelated flags or malformed settings.",
+    "Per-Gene mutable-object alias topology is not independently repeated here.",
+    "Java observation provenance does not claim Rust replay results."
+  ],
+  "readme": {
+    "path": "crates/core/tests/fixtures/cream_lilac.README.md",
+    "sha256": "b11d5f43b92a6cb04e1a4cfbc7847824f60a00d8c60a5c46309ecabd52360f8b"
+  }
+}

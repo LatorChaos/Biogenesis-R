@@ -1,0 +1,97 @@
+{
+  "Root_readback_sha256": "f14ac04e15ed73f9952f809156e5fa8aad380d19f7f9e65da24104ef2669e731",
+  "calls": 8,
+  "cases": 6,
+  "files": {
+    "rect_after_set_prefix-initial.ser": {
+      "bytes": 10794,
+      "mode": 420,
+      "sha256": "b990fa8be6cb9ee83961574c487af581a6e72ea7a3b1be4801c5fb772dda5b1b"
+    },
+    "rect_after_set_prefix-step_0.ser": {
+      "bytes": 10794,
+      "mode": 420,
+      "sha256": "f76d3aca4dd4da65bed4526823d156f83eccf5c86750558d16a3077736c5fef4"
+    },
+    "rect_last_null-initial.ser": {
+      "bytes": 10815,
+      "mode": 420,
+      "sha256": "b9e6731243ea00b2c724181edcd22d59727464fb6806e4326d027f1e6d522f48"
+    },
+    "rect_last_null-step_0.ser": {
+      "bytes": 10815,
+      "mode": 420,
+      "sha256": "b9e6731243ea00b2c724181edcd22d59727464fb6806e4326d027f1e6d522f48"
+    },
+    "rect_peer-initial.ser": {
+      "bytes": 10814,
+      "mode": 420,
+      "sha256": "2b4a54ea14d5a3332b7ded2fea8c33642b9a266aa3827f4c5d8e841ff0794d05"
+    },
+    "rect_peer-step_0.ser": {
+      "bytes": 10814,
+      "mode": 420,
+      "sha256": "a682daf40bc69a1e5221ddb86550806dbd7f751eee25d3c6f1828e9bb591a07b"
+    },
+    "rect_self-initial.ser": {
+      "bytes": 10802,
+      "mode": 420,
+      "sha256": "0af3cf009dbed16420bddb6ceb656d2c50a31d9f4c86710eb0f0821e683e03c8"
+    },
+    "rect_self-step_0.ser": {
+      "bytes": 10802,
+      "mode": 420,
+      "sha256": "9770d0750fbda5281ee15d6153d3b55b8170fbf4d90043eebd27ad64faa8716d"
+    },
+    "rect_self-step_1.ser": {
+      "bytes": 10802,
+      "mode": 420,
+      "sha256": "3fff5062c7f8fcf893c5c2f0a74e3f03325d55ccedcfbc703b3bfcc32d8abfd5"
+    },
+    "rect_shared-initial.ser": {
+      "bytes": 10802,
+      "mode": 420,
+      "sha256": "0d30b0844cff799b5054e37e1fbb0d10bfc15303c18a45ecf5318ea1c3c53a32"
+    },
+    "rect_shared-step_0.ser": {
+      "bytes": 10802,
+      "mode": 420,
+      "sha256": "35bc97d20601f6850658b1ef83cb37df5ac29a1cc96374d66a01ac49e39edc81"
+    },
+    "rect_shared-step_1.ser": {
+      "bytes": 10802,
+      "mode": 420,
+      "sha256": "8021417e71f264a724137618f6dff51f8f81e67357c5b358c1e3573bb5e47e7c"
+    },
+    "rect_size_null-initial.ser": {
+      "bytes": 10815,
+      "mode": 420,
+      "sha256": "b3ffc2f6106d90265c3f9435dc22edd21002e37a42cd28e8fe2e9c166b762caf"
+    },
+    "rect_size_null-step_0.ser": {
+      "bytes": 10815,
+      "mode": 420,
+      "sha256": "3e755c9d1b6bd631d1b8c5af8e0998b50ceab401554151ee2c0d568c80db8c89"
+    },
+    "rectangle_ownership.tsv": {
+      "bytes": 321199,
+      "mode": 420,
+      "sha256": "30cc162c51d03483d64c20a35990765674697947127ac8c88c99ac76bde9bf91"
+    }
+  },
+  "helper_sha256": "149c990ab8c90bc0efd4220e25449f1ab3cbb2e33de765208bd62809f8e97964",
+  "independent_actual_sha256": "a4a6f136ccb7a7d7712694aad5a4e2fa7b0a41bd6851d3da37a23373eb695745",
+  "input_tags": [
+    "C",
+    "U",
+    "GI",
+    "A",
+    "IR",
+    "I",
+    "IW",
+    "K"
+  ],
+  "no_model_inputs_from_observations": true,
+  "snapshots": 14,
+  "status": "ACTUAL_ORIGINAL_SOURCE_JAR_WITNESSES"
+}

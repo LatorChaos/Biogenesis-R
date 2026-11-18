@@ -1,0 +1,300 @@
+{
+  "description": "Original and redacted SHA-256 for fixture metadata. Fixture payloads were not changed.",
+  "files": [
+    {
+      "path": "crates/core/tests/fixtures/genetics.provenance.json",
+      "before": "379168ada95da93823ab99654275c624bda761b2ddd2b4a59b7f7e61d468ae6f",
+      "after": "96750a80f16799787d7e53f04b3832d714fce45e70c50d0ff56c90ba9ef427cd"
+    },
+    {
+      "path": "crates/core/tests/fixtures/organism_state.provenance.json",
+      "before": "2968e15e6167d2d4502b5626b3c05505b9e47fccaadd82986483406f1e100d27",
+      "after": "2f8485ff68513daf4a69728481df014c23b183bd4aabdff8436b2142aed2c308"
+    },
+    {
+      "path": "crates/core/tests/fixtures/paste_rejection.provenance.json",
+      "before": "8d05ce9f7231d08fce74c7b6b4073b489958e9655f0997684388bb058ad5916c",
+      "after": "c3bf52de73142d57f7b6ea5ed1ab8bc2ef4a6f85e74f3d310df0e03d0dea7133"
+    },
+    {
+      "path": "crates/core/tests/fixtures/genotype_identity.provenance.json",
+      "before": "18fedd688e1a90116a4c400abaef8dd5e7cd4c8c34b3b4e7b82bd280c9cf1ca4",
+      "after": "a62331e5066f4d0d883e1417f3f6fae42b8463deded6016e16f21513c3c8c667"
+    },
+    {
+      "path": "crates/core/tests/fixtures/spatial.provenance.json",
+      "before": "73a15700ebab92463b05ea8d41f0a63740ae3a3fe5116266395bbae738dc4f47",
+      "after": "674c891c57eb3ade3000d67bb96bf8a742ef8495d22cad3811619ff71e87b197"
+    },
+    {
+      "path": "crates/core/tests/fixtures/birth.provenance.json",
+      "before": "24a9a114b019c32507e422af2633867f6a2f8febda9a5a52e0526760b1308242",
+      "after": "6a6215376adc3ed838ee6f44f0992057fa05be0cede087ac262c3721cc662eb0"
+    },
+    {
+      "path": "crates/core/tests/fixtures/birth_variants.provenance.json",
+      "before": "026a2c24d66ee4cc2acc51b9216da9f80922d86f42002a50e8748fc685d0fc3c",
+      "after": "bbf413cdbe8eb8a421c465c247e9fb1f230cfe0de216e79172955c7a41a1130c"
+    },
+    {
+      "path": "crates/core/tests/fixtures/physics.provenance.json",
+      "before": "b7305964b05a21337556cb209a290211809c0dd16c3039414e14f0e7322e09fd",
+      "after": "f1ef0d640aa373f9fe67a6ff4cd750ed19517af6bae1edf34b6df38ae460dd65"
+    },
+    {
+      "path": "crates/core/tests/fixtures/movement.provenance.json",
+      "before": "67af2d4bccb3334ba3cb9ba382af4e8ef9b6f7d5c458023524a9ee8aaaa311f6",
+      "after": "f34e65d20cf519ab09553eefa62a43fca886bfd0509e94f9b09cbf1e0bfd357e"
+    },
+    {
+      "path": "crates/core/tests/fixtures/statistics.provenance.json",
+      "before": "aa3989cff655e3a1cf491d0a24c037f1fe17c1f5a25315f6134457515618398e",
+      "after": "ed0d1002b8f6cccd6e9a40494bdfd4b9ff15ecf09e647d875abb4afb941ddd77"
+    },
+    {
+      "path": "crates/core/tests/fixtures/statistics_null_genome.provenance.json",
+      "before": "96adb5b231da76fb39997fd52113d59ea4f05f9ad28f908da9a0807936676f9e",
+      "after": "4a8257c5f9e3d30471b828577b23eb6533754a892a313a60ebb744dba5cc9f85"
+    },
+    {
+      "path": "crates/core/tests/fixtures/death.provenance.json",
+      "before": "d8e3a63ff2aae1f8c4b20e9de081d5dee4288ff066d90e25bd7442ae7396e735",
+      "after": "6423b11c8af4f9659b5ae2f1024539d18d1b80182d596d6ab72fcdee6924f80a"
+    },
+    {
+      "path": "crates/core/tests/fixtures/death_invalid.provenance.json",
+      "before": "96ebd0e55e89c591c203c55dc2c072fe08ec9c584a072041318763401dfce5e2",
+      "after": "a057d649fde0e1821d02b5ab19e8a3f98b1b0d856a233bd847cdf7c6015a046e"
+    },
+    {
+      "path": "crates/core/tests/fixtures/maintenance.provenance.json",
+      "before": "e9030c03fb577be5839b366c8393e8373be16d5e696401a8b0dc138c2b8a3b5c",
+      "after": "8b2c652f473d51e70bd8d75c9a3ae455b39c0b688e242374e8ef4ff8bbbccd12"
+    },
+    {
+      "path": "crates/core/tests/fixtures/infection.provenance.json",
+      "before": "a430d5368225021a3c48636c03c7650fb79bed2345c0ab5ca4e9263e0f0c6e7c",
+      "after": "9e13edecc0e18e2ea5a0728b79f238cae0ade5eeec033d8473c62d49a88a1f04"
+    },
+    {
+      "path": "crates/core/tests/fixtures/infection_callback.provenance.json",
+      "before": "953c6e21acb085f0cbdab91990829f7f1504f9734b03c628c0faf473eb00f8a8",
+      "after": "03ebe52bb14b82d8b3f3e33d0bd6d30fcff59ea32f0567d045cf9c366d3078d0"
+    },
+    {
+      "path": "crates/core/tests/fixtures/reproduction.provenance.json",
+      "before": "545cf87a41be909e262a2cfae2108180d09f1e79fd2b35b978e3f272fb0a1ec2",
+      "after": "c7fb2bbf79aaffc287c428ed46a8328f09d888bc1cf566faeb22ac5d46011b42"
+    },
+    {
+      "path": "crates/core/tests/fixtures/transformation.provenance.json",
+      "before": "63af1c8b0ad3e5f16eeff106ae4bffc831b61e4d0530897623a010b4f4094d07",
+      "after": "8e0f2fbe7844b5cbe13cb54085f9fb3df88437f7c4502e4387e2aa1f95a76201"
+    },
+    {
+      "path": "crates/core/tests/fixtures/contact_state.provenance.json",
+      "before": "8729e72db026c83704da61cd510ae0daf69710d9eed46ff9b33529b30f08199f",
+      "after": "c7c07a4c01795724a7a05f13de0faca272b63dc32e4d4bf53e758b4005cd1d52"
+    },
+    {
+      "path": "crates/core/tests/fixtures/contact_support.provenance.json",
+      "before": "c42ad05ac664e1c8e5a8aa4e7137ef3539e1fb5d8a336e55b572bce0c3072b6b",
+      "after": "4458a40737e0c048e8837b60ab15c6f9c3a95374db6f24041905bb8a2ba736a8"
+    },
+    {
+      "path": "crates/core/tests/fixtures/reactions.provenance.json",
+      "before": "acfff19541e7419250dadc66bdbe220ed807a5e11274c0082e944df5e24e2ec6",
+      "after": "84f2c4e865f64047a530bc306e14fdbfe8fbca4d4afb3582464a590e349631c0"
+    },
+    {
+      "path": "crates/core/tests/fixtures/frame_effects.provenance.json",
+      "before": "0fcdd95b1d870456308ba48325b97a4cdea6ed31ed0dc6f27774fcdcf144cf2d",
+      "after": "19488d9b65f517c67418e1d7f99a418692150f37eaad11577cefba682e3bfa4c"
+    },
+    {
+      "path": "crates/core/tests/fixtures/coral.provenance.json",
+      "before": "5c1a0e28507ace501f58032cae0d44c2dbe2402fafff0715441a8c2eb7bf0383",
+      "after": "5e7da5e449890c24b435ddae59de26fa58c746780aa39c96fe488ae3515b4ec9"
+    },
+    {
+      "path": "crates/core/tests/fixtures/cream_lilac.provenance.json",
+      "before": "8c77a00defefcd92b8a42ac424f52c8f0a5398c3861db2c6de0875e68be43a4d",
+      "after": "157762efeef74732c864e7156aa79f091272affb4dbc07f815ffcce3ffd2509f"
+    },
+    {
+      "path": "crates/core/tests/fixtures/draining.provenance.json",
+      "before": "906d4a821f581c74474fba2c7b7c056f3995a706f18c3e337dbfc7412d7d0f1a",
+      "after": "67b93bb54268197adba60bb27ed7b9664de5a6341b7bc4c8d2b1599cc9bee3fc"
+    },
+    {
+      "path": "crates/core/tests/fixtures/cooperative.provenance.json",
+      "before": "fa33e25d82445077a20290dfc788fc9b699c6a58d883634e3251d7d077fe34cf",
+      "after": "d3b636bb406000da56a797793648fb435886e2446f9e5fc8c26a9ef791f32344"
+    },
+    {
+      "path": "crates/core/tests/fixtures/special_contacts.provenance.json",
+      "before": "fc94b35ebead65fdf45ef8bc7aa523ad8912c6f7f8a4c556fedf29adde86671d",
+      "after": "955ccfe7b19cefff58099e69bc26f126c9db2ec504549eb84a8e08529501f720"
+    },
+    {
+      "path": "crates/core/tests/fixtures/white_fruit.provenance.json",
+      "before": "b29dc150c657dfa8bd9750e85871226d1e47ac1f1d69f8f80003ab53d3c9f927",
+      "after": "95ad722a833404cd944dfc9f6356745a865c781da641c30bee4c0f84f4809b12"
+    },
+    {
+      "path": "crates/core/tests/fixtures/disabling.provenance.json",
+      "before": "9b3ec4b9901c8baf84824c1951cfd383891807a2bf7dc6ea89fce7a797c8a621",
+      "after": "98db63e5d00e4944e6ac741c975025c70e90b6d8f46ea9d81c00d8c3acdc56c1"
+    },
+    {
+      "path": "crates/core/tests/fixtures/plague_fallow.provenance.json",
+      "before": "3e9df711195e5d20877efe31546ab0ad055bd63b6000e95fb568b045e683b92d",
+      "after": "77903dce22737f9992276485f9ab30a5f069e46ffb7aa36b37b1604f4f9fbfa6"
+    },
+    {
+      "path": "crates/core/tests/fixtures/contact.provenance.json",
+      "before": "c32ad3fdc76fcb14246db5953f5178799b61fae296fd7118073a09c231d31fe8",
+      "after": "d9aa3422131336f56cba0693b6a4c55ca663435ccd7ab2d7e8b025bd8db8d1a9"
+    },
+    {
+      "path": "crates/core/tests/fixtures/frame.provenance.json",
+      "before": "9b58fb4b30db86f502aaaf98456c5353c3b3e01ad8cab286b830896b01c52b13",
+      "after": "344cca209f5ce02dfe4663a9aef3d5d2d57859150dd860d3a1e59b3206ce51c1"
+    },
+    {
+      "path": "crates/core/tests/fixtures/draw.provenance.json",
+      "before": "abedaabcf849659fcbb1bf9eb6b5879e3b3b96ef8903078bfcd6c9649476fa65",
+      "after": "51b7742b37ec48b8924891123b3fb55c07e087731442e74d5ef25b475df9d4ef"
+    },
+    {
+      "path": "crates/core/tests/fixtures/xml.provenance.json",
+      "before": "58ff200949d3bd8161699a6b8fde24348bb0cf4904a29a19df0ea6881c9f3605",
+      "after": "05e8d75d0ce47d198b962ccba1e065cb147f759681c8a75f0b30b75d9959f706"
+    },
+    {
+      "path": "crates/core/tests/fixtures/workload_endpoints.provenance.json",
+      "before": "f262425bfacdd45e45d8bb7ebe10179fd773aa689fbe7acfe9e017f07f74a8f9",
+      "after": "d15f6afa7a6db4254490f0f976ad391963f3ba4990f84023b521f55ac70d012e"
+    },
+    {
+      "path": "crates/core/tests/fixtures/atmosphere_frame.provenance.json",
+      "before": "a3044a73fecd1ed317fd9f3c57556004992de464b649ee395436d397556ad67d",
+      "after": "36b95d4892d856f49eb59bc81e6ce5aa5371cc137ce3327208db369ac8b980d2"
+    },
+    {
+      "path": "crates/core/tests/fixtures/workload_trajectory.provenance.json",
+      "before": "71ba8401e78f71c1f296db45ebc77bb50fe97d6b2a8f71b21ea3a5edf9a2061e",
+      "after": "2f4b7ef01b7bc6114c5bfd00ce969e42d86879f1e5598050207b714ace86747f"
+    },
+    {
+      "path": "crates/core/tests/fixtures/incoming.provenance.json",
+      "before": "6b5f6cf79b879d28a7d9038415f31dee6223a8e16e76f33196456f65750fbbd8",
+      "after": "305f5e448224e0e751ab60a813449f50b23cd973880209e9a9a692c5ea35dcec"
+    },
+    {
+      "path": "crates/core/tests/fixtures/incoming_empty.provenance.json",
+      "before": "8b88934ceb018da1142d847036b0b2d97030aa7dfc94d8be309b60029544fad5",
+      "after": "56e0f7fc3084ee172447f04c7ceab7b9bf8a7b8b3bc405124e00d8773b6541b6"
+    },
+    {
+      "path": "crates/core/tests/fixtures/outgoing.provenance.json",
+      "before": "4e9ead9bc5999abfeb354ac1ed7a0945e3a06264d725cffbf2fd4846c01fecf1",
+      "after": "28277bea9c613321b37714fae6fe2639b4258977f307e8a145e32e5cc73b20d8"
+    },
+    {
+      "path": "crates/core/tests/fixtures/matrix-green.provenance.json",
+      "before": "ce4be250c3d6b3ced1c1a9fa44b4b2528dc553c3ea5081a75df5f8263a66b335",
+      "after": "2dddf05a1788cc4de3e4265c8f31d0f01909a72cad80665723b862edc021537d"
+    },
+    {
+      "path": "crates/core/tests/fixtures/player-actions.provenance.json",
+      "before": "65d2f100cdcc8d6583af36c62de9e7bc46242e2ecd7d0c2020a9ddd2b5c6d1ee",
+      "after": "85f8beb7338a8556b4ea08bb8907ab73417abfed0a869ec7a5fb442fa8fb27ac"
+    },
+    {
+      "path": "crates/core/tests/fixtures/world_rules.provenance.json",
+      "before": "1cfbfc7da8dc57eba87357bd3b1f8dde41d504337e592a787edfc11b1efe097e",
+      "after": "80b928ccb1c50e70e74e19de548b06dc19db181942c6169b3dcc37c4bf283373"
+    },
+    {
+      "path": "crates/core/tests/fixtures/workload_trajectory_512_ticks.provenance.json",
+      "before": "14b4ec5e949e5d20ebdb443d5a45dadc8142cd9b5f617665333b1dbc05b1a797",
+      "after": "e4a731d520e6bfbb270baf506f4106786837f043a700b6fbbc3547a337fa8bd1"
+    },
+    {
+      "path": "crates/core/tests/fixtures/workload_dense256.provenance.json",
+      "before": "ecbec2184001f6c04b4ca14c8ac42083a677d52fe8b81f887b9764f501e86fb7",
+      "after": "58eb15717aa72b156eaab362ae1d5805595ca135a1d1387df2c7b625960b4ed8"
+    },
+    {
+      "path": "crates/core/tests/fixtures/organism-array/provenance.json",
+      "before": "4695bf87da17f806c0da1a69ccbc31fcf8026e86e77caf5195d65264c93947c4",
+      "after": "37b577467212b3a2d263e41d3fdd69f4f91ee226d9ef205208ceaed2f3138301"
+    },
+    {
+      "path": "crates/core/tests/fixtures/shared_world_owners/provenance.json",
+      "before": "ce8384dc99d515c5eb6ca2b5a4444164a97b728a02885271810f61b3829503cb",
+      "after": "4b6fb17e58aa7ac518d4bd3f6a23dffb8309e207a10c478217f057e2f75cc397"
+    },
+    {
+      "path": "crates/core/tests/fixtures/xml_iso_8859_9/provenance.json",
+      "before": "bcf481c4918a22e62b2671ea6fb3ebc8ff4d720ec5d85969c3a666497cfb5979",
+      "after": "74967436459619e4c5273050593bc6db8257d60dc381b435abc9908533872598"
+    },
+    {
+      "path": "crates/core/tests/fixtures/xml_internal_dtd_sequences/input-provenance.json",
+      "before": "56772b76a908f0a09ccec65a342d68c258d6d2c9c0bdb4d93d6115f4d89b9042",
+      "after": "0f42aab68669118c24fe5ed59cab8a473ab6badd765d92684597edecb1768134"
+    },
+    {
+      "path": "crates/core/tests/fixtures/xml_internal_dtd_sequences/provenance.json",
+      "before": "a7e0554936a56c20a23f46c5a97c62e5851670f1a2c7471bab79544626cae15d",
+      "after": "b2201f1f799a04cc7bf255e142d6a4dfabd1866e26214185054482ea8b5c5409"
+    },
+    {
+      "path": "crates/core/tests/fixtures/world_owner_roles/manifest.json",
+      "before": "494d8cfb3116ea1fd585d48390ce5b3e87dfa335969c0013c36972f76a60c9b9",
+      "after": "cc3bf67d5159040f0e09e38b622480bf1fb46bd72f3b684be8700ea898a15183"
+    },
+    {
+      "path": "crates/core/tests/fixtures/world_owner_roles/provenance.json",
+      "before": "bdf1be060c31e35f6c832a1169e8b8190e1c4ecc1604ef3da3e95a7a6387aabc",
+      "after": "546d75dd6aac44c207c7f66d3ba02d48793a6ed7e307c98a045865d03ab49a5e"
+    },
+    {
+      "path": "crates/core/tests/fixtures/xml_charset_catalog/provenance.json",
+      "before": "bb1c5dca79e4d7f35eb22f4518ac847a60fef441c6bd354a4430a99c4f084f08",
+      "after": "43bd5c2ad49c5ff631334e2f573338fcef3a78cce2f78f016b37cfae144837a8"
+    },
+    {
+      "path": "crates/core/tests/fixtures/xml11_contexts/provenance.json",
+      "before": "2bda5474a5d578200d249c1fd401459879a1ad0eae5c9707817e6d42a918941e",
+      "after": "6c3faf62791e1ea7ce0bf4afb9bc83126e55caaee059fc4bb249b511639cc332"
+    },
+    {
+      "path": "crates/core/tests/fixtures/xml11_declaration_handoff/provenance.json",
+      "before": "72e799e0532496f82f1e699fb091dee98c3b262efcaffa8878c7175dccd20f58",
+      "after": "0c68987323c84c3792a2cec64a90415db240fca2c6dbc105aff935f8baca6a25"
+    },
+    {
+      "path": "crates/core/tests/fixtures/xml11_reader/provenance.json",
+      "before": "4b34ad2735c37c7529ae7871661a676cec0ad084a6ca1ddea8a90cd87885964e",
+      "after": "3fd523c299d5264d36dde359650b9b1808b502f42077214aa1a984e7be2230f3"
+    },
+    {
+      "path": "crates/core/tests/fixtures/java/xml_parameter_entities/manifest.json",
+      "before": "148a6ddfc958a946ca3a160f4fadfcb901618c9aaccaa1239c36e6955685829c",
+      "after": "5d809e54d4f66eaaed7686c807d490b7ee7ee8377090baf1d7c79c44e546e053"
+    },
+    {
+      "path": "ui/help_about_expected.json",
+      "before": "e8e587a87c24388c98abbb82b3b6d01e1a2ec8d2407a9a62bc104bbd73c141f3",
+      "after": "ce1d335f9bb40cf84e73d96defe6536a141c65fea82fb9d55586651f6425e826"
+    },
+    {
+      "path": "ui/main_modal_expected.json",
+      "before": "f06424fda1fa82643ea5ffd57df8148aad90350b52741cce3bc14d9628e5a497",
+      "after": "deea80103b561483d48e7455dc751b0581b54d20163936ab4cab33c01093dcc2"
+    }
+  ]
+}

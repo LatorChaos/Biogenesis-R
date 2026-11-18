@@ -1,0 +1,159 @@
+{
+  "scope": "Root-authorized exact finite retained streams and source observation rows",
+  "files": [
+    {
+      "file": "member_history-authored.ser",
+      "source": "<project-root>/.workflow-local/world-publication-witness-preparation-a/runs/first-attempt/source/observations/member_history-authored.ser",
+      "jar": "<project-root>/.workflow-local/world-publication-witness-preparation-a/runs/first-attempt/jar/observations/member_history-authored.ser",
+      "sha256": "a635d0de368fe9c5c7141bacab6e04cde9c4b5c6b7103f5d6d41e87bbdc1a35f",
+      "bytes": 2072,
+      "mode": 384
+    },
+    {
+      "file": "member_history-call_1.ser",
+      "source": "<project-root>/.workflow-local/world-publication-witness-preparation-a/runs/first-attempt/source/observations/member_history-call_1.ser",
+      "jar": "<project-root>/.workflow-local/world-publication-witness-preparation-a/runs/first-attempt/jar/observations/member_history-call_1.ser",
+      "sha256": "ca23326a95dbff9f7e2321d1ba413fa0670aab0335462f7c98009f42a3a439a6",
+      "bytes": 2222,
+      "mode": 384
+    },
+    {
+      "file": "tree_history-authored.ser",
+      "source": "<project-root>/.workflow-local/world-publication-witness-preparation-a/runs/first-attempt/source/observations/tree_history-authored.ser",
+      "jar": "<project-root>/.workflow-local/world-publication-witness-preparation-a/runs/first-attempt/jar/observations/tree_history-authored.ser",
+      "sha256": "00b9649a308c1dccc696dca1567ef2151ffa7c3a343165fa5540a8803a93a22e",
+      "bytes": 2267,
+      "mode": 384
+    },
+    {
+      "file": "tree_history-call_1.ser",
+      "source": "<project-root>/.workflow-local/world-publication-witness-preparation-a/runs/first-attempt/source/observations/tree_history-call_1.ser",
+      "jar": "<project-root>/.workflow-local/world-publication-witness-preparation-a/runs/first-attempt/jar/observations/tree_history-call_1.ser",
+      "sha256": "1a13efa4c60eaa157dd63b2bff43cf5659c2ed5b6dfeed4b897cdc0a51ebed1e",
+      "bytes": 2417,
+      "mode": 384
+    },
+    {
+      "file": "member_wrapper_backing-authored.ser",
+      "source": "<project-root>/.workflow-local/collection-spatial-witness-preparation-a/runs/first-attempt/source/observations/member_wrapper_backing-authored.ser",
+      "jar": "<project-root>/.workflow-local/collection-spatial-witness-preparation-a/runs/first-attempt/jar/observations/member_wrapper_backing-authored.ser",
+      "sha256": "94ac715858cd5d7eafeb5a1af13c5e3949458e426f2b83708effedc5d88807fe",
+      "bytes": 7961,
+      "mode": 384
+    },
+    {
+      "file": "member_wrapper_backing-call_0.ser",
+      "source": "<project-root>/.workflow-local/collection-spatial-witness-preparation-a/runs/first-attempt/source/observations/member_wrapper_backing-call_0.ser",
+      "jar": "<project-root>/.workflow-local/collection-spatial-witness-preparation-a/runs/first-attempt/jar/observations/member_wrapper_backing-call_0.ser",
+      "sha256": "a6100d9f90e45c17703d71c94e73bb2b3d9b3330e830b3f91ee39a1da8035504",
+      "bytes": 8111,
+      "mode": 384
+    },
+    {
+      "file": "pending_history_build-authored.ser",
+      "source": "<project-root>/.workflow-local/collection-spatial-witness-preparation-a/runs/first-attempt/source/observations/pending_history_build-authored.ser",
+      "jar": "<project-root>/.workflow-local/collection-spatial-witness-preparation-a/runs/first-attempt/jar/observations/pending_history_build-authored.ser",
+      "sha256": "167b7630a74a1c13514ee5ac021bc56a8f8258e11af89fa27ab13d1cada686ca",
+      "bytes": 12404,
+      "mode": 384
+    },
+    {
+      "file": "pending_history_build-call_0.ser",
+      "source": "<project-root>/.workflow-local/collection-spatial-witness-preparation-a/runs/first-attempt/source/observations/pending_history_build-call_0.ser",
+      "jar": "<project-root>/.workflow-local/collection-spatial-witness-preparation-a/runs/first-attempt/jar/observations/pending_history_build-call_0.ser",
+      "sha256": "65e258983b6e2750ba5713ccfda343587a2c6cc585e5864b71d9ef7e87b8f8bf",
+      "bytes": 12749,
+      "mode": 384
+    },
+    {
+      "file": "pending_history_build-call_1.ser",
+      "source": "<project-root>/.workflow-local/collection-spatial-witness-preparation-a/runs/first-attempt/source/observations/pending_history_build-call_1.ser",
+      "jar": "<project-root>/.workflow-local/collection-spatial-witness-preparation-a/runs/first-attempt/jar/observations/pending_history_build-call_1.ser",
+      "sha256": "a3da7cd1b3e540b3eb749fe5da641e031b519e275f70e34b57e5dc81a4167477",
+      "bytes": 12786,
+      "mode": 384
+    },
+    {
+      "file": "pending_history_build-call_2.ser",
+      "source": "<project-root>/.workflow-local/collection-spatial-witness-preparation-a/runs/first-attempt/source/observations/pending_history_build-call_2.ser",
+      "jar": "<project-root>/.workflow-local/collection-spatial-witness-preparation-a/runs/first-attempt/jar/observations/pending_history_build-call_2.ser",
+      "sha256": "fe64bf0915220bdc8b0f7a85a883c6895143497e0544dbf3c176371602c3ba18",
+      "bytes": 12936,
+      "mode": 384
+    },
+    {
+      "file": "pending_history_build-call_3.ser",
+      "source": "<project-root>/.workflow-local/collection-spatial-witness-preparation-a/runs/first-attempt/source/observations/pending_history_build-call_3.ser",
+      "jar": "<project-root>/.workflow-local/collection-spatial-witness-preparation-a/runs/first-attempt/jar/observations/pending_history_build-call_3.ser",
+      "sha256": "211e5fdcd0b27e89628b930622dde4f42b05ec005c0aeb12caa10105d8f22fae",
+      "bytes": 12554,
+      "mode": 384
+    },
+    {
+      "file": "child_history_cache-authored.ser",
+      "source": "<project-root>/.workflow-local/collection-spatial-witness-preparation-a/runs/first-attempt/source/observations/child_history_cache-authored.ser",
+      "jar": "<project-root>/.workflow-local/collection-spatial-witness-preparation-a/runs/first-attempt/jar/observations/child_history_cache-authored.ser",
+      "sha256": "8962f0fac444f39778c1ba511085067e7cb66ae36ee5db6332d1b6a8b8e0ca44",
+      "bytes": 12416,
+      "mode": 384
+    },
+    {
+      "file": "child_history_cache-call_0.ser",
+      "source": "<project-root>/.workflow-local/collection-spatial-witness-preparation-a/runs/first-attempt/source/observations/child_history_cache-call_0.ser",
+      "jar": "<project-root>/.workflow-local/collection-spatial-witness-preparation-a/runs/first-attempt/jar/observations/child_history_cache-call_0.ser",
+      "sha256": "7c71c902a3c2e9726df75544933900a022a671a40af5b34c536323e32a5c8b65",
+      "bytes": 12729,
+      "mode": 384
+    },
+    {
+      "file": "child_history_cache-call_1.ser",
+      "source": "<project-root>/.workflow-local/collection-spatial-witness-preparation-a/runs/first-attempt/source/observations/child_history_cache-call_1.ser",
+      "jar": "<project-root>/.workflow-local/collection-spatial-witness-preparation-a/runs/first-attempt/jar/observations/child_history_cache-call_1.ser",
+      "sha256": "5ec7b96f766b73d0f5c68ed05d504d790d2c5467c1847599dce9f0641c70a2e1",
+      "bytes": 12867,
+      "mode": 384
+    },
+    {
+      "file": "world_lists.tsv",
+      "source": "<project-root>/.workflow-local/world-publication-witness-preparation-a/runs/first-attempt/source/observations/world_publication.tsv",
+      "jar": "<project-root>/.workflow-local/world-publication-witness-preparation-a/runs/first-attempt/jar/observations/world_publication.tsv",
+      "origin_sha256": "db49778cf157f45861d9c25ba2112986e72f43b6877db69da46ecfcf929888d9",
+      "selection": "Exact C..E rows for named cases; bytes and row order unchanged",
+      "cases": [
+        "member_history",
+        "tree_history"
+      ],
+      "sha256": "fae63b490917df442c4364acf367ae76a1080f40f6b55f58d19769d63c5e9e11",
+      "bytes": 65819,
+      "rows": 1170,
+      "mode": 384
+    },
+    {
+      "file": "collection_spatial.tsv",
+      "source": "<project-root>/.workflow-local/collection-spatial-witness-preparation-a/runs/first-attempt/source/observations/collection_spatial.tsv",
+      "jar": "<project-root>/.workflow-local/collection-spatial-witness-preparation-a/runs/first-attempt/jar/observations/collection_spatial.tsv",
+      "origin_sha256": "999656824b0b85018deecbdd8d31ab074385a00851b71034a75188e0427101b8",
+      "selection": "Exact C..E rows for named cases; bytes and row order unchanged",
+      "cases": [
+        "child_history_cache",
+        "member_wrapper_backing",
+        "pending_history_build"
+      ],
+      "sha256": "999656824b0b85018deecbdd8d31ab074385a00851b71034a75188e0427101b8",
+      "bytes": 984680,
+      "rows": 20715,
+      "mode": 384
+    }
+  ],
+  "reference_receipts": [
+    {
+      "path": "<project-root>/.workflow-local/world-publication-witness-preparation-a/root-four-phase-actual-readback.json",
+      "sha256": "72bbaef43df46f79e5e194667f90fb68e1780337b4570e4424db17c41235ff59"
+    },
+    {
+      "path": "<project-root>/.workflow-local/collection-spatial-witness-preparation-a/root-four-phase-actual-readback.json",
+      "sha256": "f798a9aa22a8d016a784b0e56029350f9d069d020192d3b89e8e3c33038f58fc"
+    }
+  ],
+  "caveat": "Collection supplement records Source/JAR operations and equal serialized outputs; it did not execute OIS reads of every output. World authored witness read_input calls executed. No streams or expected values were regenerated."
+}

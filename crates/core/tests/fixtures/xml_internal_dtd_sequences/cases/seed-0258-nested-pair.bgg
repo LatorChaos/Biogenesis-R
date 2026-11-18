@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE genetic_code [
+<!ELEMENT genetic_code ((gene,gene))>
+<!ATTLIST genetic_code symmetry (1|2|3|4|5|6|7|8) "1">
+<!ATTLIST genetic_code mutationrate CDATA "17">
+<!ATTLIST genetic_code activity (0|1|2) "0">
+<!ATTLIST genetic_code modifiescream (1|2|3) "1">
+<!ATTLIST genetic_code modifiesfallow (1|2|3|4) "1">
+<!ATTLIST genetic_code modifiesspore (1|2|3|4|5|6|7|8|9|10|11|12) "1">
+<!ATTLIST genetic_code adaptspore (1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23|24|25|26|27|28|29|30|31|32|33|34|35|36|37|38|39|40|41|42|43|44|45|46|47|48|49|50|51|52|53|54|55|56|57|58|59|60|61|62|63|64|65|66|67|68|69|70) "1">
+<!ATTLIST genetic_code plague (yes|no) "no">
+<!ATTLIST genetic_code mirror (yes|no) "no">
+<!ATTLIST genetic_code disperse (yes|no) "no">
+<!ATTLIST genetic_code generation (yes|no) "no">
+<!ATTLIST genetic_code sibling (yes|no) "no">
+<!ATTLIST genetic_code altruist (yes|no) "no">
+<!ATTLIST genetic_code familial (yes|no) "no">
+<!ATTLIST genetic_code social (yes|no) "no">
+<!ATTLIST genetic_code peaceful (yes|no) "no">
+<!ATTLIST genetic_code passive (yes|no) "no">
+<!ATTLIST genetic_code clockwise (yes|no) "no">
+<!ATTLIST genetic_code mimicall (yes|no) "no">
+<!ATTLIST genetic_code modifiespink (yes|no) "no">
+<!ATTLIST genetic_code modifieslilac (yes|no) "no">
+<!ATTLIST genetic_code modifiessky (yes|no) "no">
+<!ATTLIST genetic_code selfish (yes|no) "no">
+<!ELEMENT gene EMPTY>
+<!ATTLIST gene length CDATA "12.5">
+<!ATTLIST gene theta CDATA "-0.25">
+<!ATTLIST gene color (green|forest|spring|summer|lime|leaf|c4|jade|grass|bark|purple|red|fire|orange|maroon|pink|cream|silver|spike|lilac|gray|violet|olive|sky|blue|ochre|fallow|spore|white|plague|coral|mint|lavender|magenta|rose|cyan|teal|yellow|auburn|indigo|blond|flower|darkgray|gold|dark|eye) "green">
+<!ATTLIST gene branch CDATA "-1">
+<!ATTLIST gene redreaction CDATA "20">
+<!ATTLIST gene greenreaction CDATA "6">
+<!ATTLIST gene bluereaction CDATA "-6">
+<!ATTLIST gene plaguereaction CDATA "18">
+<!ATTLIST gene scourgereaction CDATA "21">
+<!ATTLIST gene whitereaction CDATA "28">
+<!ATTLIST gene grayreaction CDATA "4">
+<!ATTLIST gene silverreaction CDATA "23">
+<!ATTLIST gene defaultreaction CDATA "0">
+<!ATTLIST gene consumerreaction CDATA "-3">
+<!ATTLIST gene plantreaction CDATA "19">
+<!ATTLIST gene magentareaction CDATA "11">
+<!ATTLIST gene pinkreaction CDATA "17">
+<!ATTLIST gene coralreaction CDATA "-2">
+<!ATTLIST gene orangereaction CDATA "16">
+<!ATTLIST gene barkreaction CDATA "-7">
+<!ATTLIST gene violetreaction CDATA "26">
+<!ATTLIST gene virusreaction CDATA "27">
+<!ATTLIST gene maroonreaction CDATA "12">
+<!ATTLIST gene olivereaction CDATA "15">
+<!ATTLIST gene mintreaction CDATA "13">
+<!ATTLIST gene creamreaction CDATA "-1">
+<!ATTLIST gene spikereaction CDATA "25">
+<!ATTLIST gene fallowreaction CDATA "1">
+<!ATTLIST gene lightbluereaction CDATA "8">
+<!ATTLIST gene ochrereaction CDATA "14">
+<!ATTLIST gene skyreaction CDATA "24">
+<!ATTLIST gene lilacreaction CDATA "10">
+<!ATTLIST gene firereaction CDATA "2">
+<!ATTLIST gene lightbrownreaction CDATA "9">
+<!ATTLIST gene greenbrownreaction CDATA "5">
+<!ATTLIST gene brownreaction CDATA "-4">
+<!ATTLIST gene icereaction CDATA "7">
+<!ATTLIST gene brokenreaction CDATA "-5">
+<!ATTLIST gene sickreaction CDATA "22">
+<!ATTLIST gene friendreaction CDATA "3">
+]>
+<genetic_code>
+	<gene />
+	<gene length="13.5" theta="-0.125" color="red" branch="0" redreaction="21" />
+</genetic_code>

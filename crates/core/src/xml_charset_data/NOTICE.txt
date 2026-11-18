@@ -1,0 +1,15 @@
+OpenJDK-derived XML codec data and adapted algorithm portions
+
+The project is licensed GPL-2.0-only. No exception is granted over unrelated game code.
+Upstream OpenJDK source portions retain their original notices and file-specific licensing terms.
+UPSTREAM_HEADERS.txt preserves the exact source headers used for the reviewed algorithm references.
+LICENSE-OPENJDK.txt preserves the installed module GPLv2 and its conditional Classpath exception text.
+That exception is not asserted for newly authored game code.
+
+Raw direct-JDK acquisition outputs remain private observations with version, module, provider, input and output hashes.
+Generated shipped tables must have separate normalization, deduplication, provenance and checksums.
+These files do not claim that runtime observations are upstream source copies or that NIO proves XML parser admission.
+
+Official reference commit: eac07229cf6cacc8a22eb79f4929e7fed61338b7
+Installed package: CachyOS jdk21-openjdk21.0.12.1.u1-2, x86_64_v3
+Keep exact generator source, fixed domain descriptors and adopted data provenance with the source distribution.

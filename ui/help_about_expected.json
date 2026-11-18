@@ -1,0 +1,226 @@
+{
+  "locales": {
+    "en": {
+      "T_HELP": "Help",
+      "T_USER_MANUAL": "User Manual",
+      "T_ABOUT": "About Biogenesis",
+      "T_HELP_MNEMONIC": "H",
+      "T_USER_MANUAL_MNEMONIC": "M",
+      "T_ABOUT_MNEMONIC": "A",
+      "T_PROGRAM_NAME": "Biogenesis\n",
+      "T_VERSION_B": "Biogenesis version:",
+      "T_VERSION_CM": "Color Mod version:",
+      "T_VERSION_BB": "Backup Button version:",
+      "T_COPYRIGHT": "\nCopyright (c) Joan Queralt Molina  2006-2010\nColor Mod by MarcoDBAA 2012-2022\nBackup Button by Tyler Coleman 2013\nSTRtrees (by Vivid Solutions) implemented by Richard David Williams 2017\n",
+      "T_ARTWORK_BY": "Artwork by"
+    },
+    "es": {
+      "T_HELP": "Ayuda",
+      "T_USER_MANUAL": "Manual de usuario",
+      "T_ABOUT": "Acerca de Biog\u00e9nesis",
+      "T_HELP_MNEMONIC": "A",
+      "T_USER_MANUAL_MNEMONIC": "M",
+      "T_ABOUT_MNEMONIC": "S",
+      "T_PROGRAM_NAME": "Biogenesis\n",
+      "T_VERSION_B": "Biogenesis versi\u00f3n:",
+      "T_VERSION_CM": "Color Mod versi\u00f3n:",
+      "T_VERSION_BB": "Backup Button versi\u00f3n:",
+      "T_COPYRIGHT": "\nCopyright (c) Joan Queralt Molina  2006-2010\nColor Mod por MarcoDBAA 2012-2022\nBackup Button por Tyler Coleman 2013\nSTRtrees (por Vivid Solutions) implementado por Richard David Williams 2017\n",
+      "T_ARTWORK_BY": "Gr\u00e1ficos por"
+    },
+    "ca": {
+      "T_HELP": "Ajuda",
+      "T_USER_MANUAL": "Manual de l'usuari",
+      "T_ABOUT": "Quant a Biog\u00e8nesi",
+      "T_HELP_MNEMONIC": "A",
+      "T_USER_MANUAL_MNEMONIC": "M",
+      "T_ABOUT_MNEMONIC": "Q",
+      "T_PROGRAM_NAME": "Biogenesis\n",
+      "T_VERSION_B": "Biogenesis versi\u00f3:",
+      "T_VERSION_CM": "Color Mod versi\u00f3:",
+      "T_VERSION_BB": "Backup Button versi\u00f3:",
+      "T_COPYRIGHT": "\nCopyright (c) Joan Queralt Molina  2006-2010\nColor Mod per MarcoDBAA 2012-2022\nBackup Button per Tyler Coleman 2013\nSTRtrees (per Vivid Solutions) implementat per Richard David Williams 2017\n",
+      "T_ARTWORK_BY": "Gr\u00e0fics per"
+    },
+    "de": {
+      "T_HELP": "Hilfe",
+      "T_USER_MANUAL": "Benutzerhandbuch",
+      "T_ABOUT": "\u00dcber Biogenesis",
+      "T_HELP_MNEMONIC": "H",
+      "T_USER_MANUAL_MNEMONIC": "U",
+      "T_ABOUT_MNEMONIC": "B",
+      "T_PROGRAM_NAME": "Biogenesis\n",
+      "T_VERSION_B": "Biogenesis Version:",
+      "T_VERSION_CM": "Color Mod Version:",
+      "T_VERSION_BB": "Backup Button Version:",
+      "T_COPYRIGHT": "\nCopyright (c) Joan Queralt Molina  2006-2010\nColor Mod von MarcoDBAA 2012-2022\nBackup Button von Tyler Coleman 2013\nSTRtrees (von Vivid Solutions) implementiert von Richard David Williams 2017\n",
+      "T_ARTWORK_BY": "Artwork by"
+    },
+    "pt": {
+      "T_HELP": "Ajuda",
+      "T_USER_MANUAL": "Manual do Utilizador",
+      "T_ABOUT": "Sobre Biogenesis",
+      "T_HELP_MNEMONIC": "H",
+      "T_USER_MANUAL_MNEMONIC": "M",
+      "T_ABOUT_MNEMONIC": "A",
+      "T_PROGRAM_NAME": "Biogenesis\n",
+      "T_VERSION_B": "Vers\u00e3o do Biogenesis:",
+      "T_VERSION_CM": "Vers\u00e3o de Color Mod:",
+      "T_VERSION_BB": "Vers\u00e3o de Backup Button:",
+      "T_COPYRIGHT": "\nDireitos de Autor (c) Joan Queralt Molina  2006-2010\nColor Mod de MarcoDBAA 2012-2022\nBackup Button de Tyler Coleman 2013\nSTRtrees (de Vivid Solutions) implementado por Richard David Williams 2017\n",
+      "T_ARTWORK_BY": "Trabalho art\u00edstico"
+    },
+    "ru": {
+      "T_HELP": "\u041f\u043e\u043c\u043e\u0449\u044c",
+      "T_USER_MANUAL": "\u0420\u0443\u043a\u043e\u0432\u043e\u0434\u0441\u0442\u0432\u043e \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044f",
+      "T_ABOUT": "\u041e \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0435 Biogenesis",
+      "T_HELP_MNEMONIC": "H",
+      "T_USER_MANUAL_MNEMONIC": "M",
+      "T_ABOUT_MNEMONIC": "A",
+      "T_PROGRAM_NAME": "Biogenesis\n",
+      "T_VERSION_B": "Biogenesis \u0432\u0435\u0440\u0441\u0438\u044f:",
+      "T_VERSION_CM": "Color Mod \u0432\u0435\u0440\u0441\u0438\u044f:",
+      "T_VERSION_BB": "Backup Button \u0432\u0435\u0440\u0441\u0438\u044f:",
+      "T_COPYRIGHT": "\nCopyright (c) Joan Queralt Molina  2006-2010\nColor Mod \u043e\u0442 MarcoDBAA 2012-2022\nBackup Button \u043e\u0442 Tyler Coleman 2013\nSTRtrees (\u043e\u0442 Vivid Solutions) \u0440\u0435\u0430\u043b\u0438\u0437\u043e\u0432\u0430\u043d\u0430 Richard David Williams 2017\n",
+      "T_ARTWORK_BY": "\u0414\u0438\u0437\u0430\u0439\u043d"
+    }
+  },
+  "source_properties": {
+    "en": {
+      "path": "<reference-root>/src/biogenesis/messages/messages_en.properties",
+      "sha256": "885b873a998f96ec3fd29002fea8f58f2fb0f9a65b779680bccba152778fb605",
+      "encoding": "UTF-8",
+      "lines": {
+        "T_HELP_MNEMONIC": 30,
+        "T_USER_MANUAL_MNEMONIC": 31,
+        "T_ABOUT_MNEMONIC": 33,
+        "T_HELP": 85,
+        "T_USER_MANUAL": 86,
+        "T_ABOUT": 88,
+        "T_PROGRAM_NAME": 94,
+        "T_VERSION_B": 95,
+        "T_VERSION_CM": 96,
+        "T_VERSION_BB": 97,
+        "T_COPYRIGHT": 98,
+        "T_ARTWORK_BY": 100
+      },
+      "fallback_keys": []
+    },
+    "es": {
+      "path": "<reference-root>/src/biogenesis/messages/messages_es.properties",
+      "sha256": "fe8192100d2b5599a2685326c8ee7be06a3e595d836614eb19aa3f42b917202b",
+      "encoding": "ISO-8859-1",
+      "lines": {
+        "T_HELP_MNEMONIC": 30,
+        "T_USER_MANUAL_MNEMONIC": 31,
+        "T_ABOUT_MNEMONIC": 33,
+        "T_HELP": 85,
+        "T_USER_MANUAL": 86,
+        "T_ABOUT": 88,
+        "T_PROGRAM_NAME": 94,
+        "T_VERSION_B": 95,
+        "T_VERSION_CM": 96,
+        "T_VERSION_BB": 97,
+        "T_COPYRIGHT": 98,
+        "T_ARTWORK_BY": 100
+      },
+      "fallback_keys": []
+    },
+    "ca": {
+      "path": "<reference-root>/src/biogenesis/messages/messages_ca.properties",
+      "sha256": "e5bfbdac1d3670c2f9e5a4fb181e57a08db2aa5937dc029d9380af5e95940dcf",
+      "encoding": "ISO-8859-1",
+      "lines": {
+        "T_HELP_MNEMONIC": 30,
+        "T_USER_MANUAL_MNEMONIC": 31,
+        "T_ABOUT_MNEMONIC": 33,
+        "T_HELP": 85,
+        "T_USER_MANUAL": 86,
+        "T_ABOUT": 88,
+        "T_PROGRAM_NAME": 94,
+        "T_VERSION_B": 95,
+        "T_VERSION_CM": 96,
+        "T_VERSION_BB": 97,
+        "T_COPYRIGHT": 98,
+        "T_ARTWORK_BY": 100
+      },
+      "fallback_keys": []
+    },
+    "de": {
+      "path": "<reference-root>/src/biogenesis/messages/messages_de.properties",
+      "sha256": "91d7c0ca2056203ac1c9177589a260ac1a883e35d02683fe92d6846fddb340f8",
+      "encoding": "ISO-8859-1",
+      "lines": {
+        "T_HELP_MNEMONIC": 30,
+        "T_USER_MANUAL_MNEMONIC": 31,
+        "T_ABOUT_MNEMONIC": 33,
+        "T_HELP": 85,
+        "T_USER_MANUAL": 86,
+        "T_ABOUT": 88,
+        "T_PROGRAM_NAME": 94,
+        "T_VERSION_B": 95,
+        "T_VERSION_CM": 96,
+        "T_VERSION_BB": 97,
+        "T_COPYRIGHT": 98,
+        "T_ARTWORK_BY": 100
+      },
+      "fallback_keys": []
+    },
+    "pt": {
+      "path": "<reference-root>/src/biogenesis/messages/messages_pt.properties",
+      "sha256": "3e8d4869f5919b247a9b2e1dee03f0ab76958a51ccd6132e3fd9a10ea410dcda",
+      "encoding": "ISO-8859-1",
+      "lines": {
+        "T_HELP_MNEMONIC": 30,
+        "T_USER_MANUAL_MNEMONIC": 31,
+        "T_ABOUT_MNEMONIC": 33,
+        "T_HELP": 85,
+        "T_USER_MANUAL": 86,
+        "T_ABOUT": 88,
+        "T_PROGRAM_NAME": 94,
+        "T_VERSION_B": 95,
+        "T_VERSION_CM": 96,
+        "T_VERSION_BB": 97,
+        "T_COPYRIGHT": 98,
+        "T_ARTWORK_BY": 100
+      },
+      "fallback_keys": []
+    },
+    "ru": {
+      "path": "<reference-root>/src/biogenesis/messages/messages_ru.properties",
+      "sha256": "d93ddcefd7eca43b223c01d859c9ee219b1b3d9872633fd8c2d98f272fab87f2",
+      "encoding": "UTF-8",
+      "lines": {
+        "T_HELP_MNEMONIC": 30,
+        "T_USER_MANUAL_MNEMONIC": 31,
+        "T_ABOUT_MNEMONIC": 33,
+        "T_HELP": 85,
+        "T_USER_MANUAL": 86,
+        "T_ABOUT": 88,
+        "T_PROGRAM_NAME": 94,
+        "T_VERSION_B": 95,
+        "T_VERSION_CM": 96,
+        "T_VERSION_BB": 97,
+        "T_COPYRIGHT": 98,
+        "T_ARTWORK_BY": 100
+      },
+      "fallback_keys": []
+    }
+  },
+  "about": {
+    "en": "Biogenesis-R\n\nBiogenesis\nhttp://biogenesis.sourceforge.net/\nBiogenesis version: 0.9\nColor Mod version: 2.01\nBackup Button version: 1\n\nCopyright (c) Joan Queralt Molina  2006-2010\nColor Mod by MarcoDBAA 2012-2022\nBackup Button by Tyler Coleman 2013\nSTRtrees (by Vivid Solutions) implemented by Richard David Williams 2017\njoanq@users.sourceforge.net\nArtwork by Ananda Daydream, Florian Haag (http://toolbaricons.sourceforge.net/)",
+    "es": "Biogenesis-R\n\nBiogenesis\nhttp://biogenesis.sourceforge.net/\nBiogenesis versi\u00f3n: 0.9\nColor Mod versi\u00f3n: 2.01\nBackup Button versi\u00f3n: 1\n\nCopyright (c) Joan Queralt Molina  2006-2010\nColor Mod por MarcoDBAA 2012-2022\nBackup Button por Tyler Coleman 2013\nSTRtrees (por Vivid Solutions) implementado por Richard David Williams 2017\njoanq@users.sourceforge.net\nGr\u00e1ficos por Ananda Daydream, Florian Haag (http://toolbaricons.sourceforge.net/)",
+    "ca": "Biogenesis-R\n\nBiogenesis\nhttp://biogenesis.sourceforge.net/\nBiogenesis versi\u00f3: 0.9\nColor Mod versi\u00f3: 2.01\nBackup Button versi\u00f3: 1\n\nCopyright (c) Joan Queralt Molina  2006-2010\nColor Mod per MarcoDBAA 2012-2022\nBackup Button per Tyler Coleman 2013\nSTRtrees (per Vivid Solutions) implementat per Richard David Williams 2017\njoanq@users.sourceforge.net\nGr\u00e0fics per Ananda Daydream, Florian Haag (http://toolbaricons.sourceforge.net/)",
+    "de": "Biogenesis-R\n\nBiogenesis\nhttp://biogenesis.sourceforge.net/\nBiogenesis Version: 0.9\nColor Mod Version: 2.01\nBackup Button Version: 1\n\nCopyright (c) Joan Queralt Molina  2006-2010\nColor Mod von MarcoDBAA 2012-2022\nBackup Button von Tyler Coleman 2013\nSTRtrees (von Vivid Solutions) implementiert von Richard David Williams 2017\njoanq@users.sourceforge.net\nArtwork by Ananda Daydream, Florian Haag (http://toolbaricons.sourceforge.net/)",
+    "pt": "Biogenesis-R\n\nBiogenesis\nhttp://biogenesis.sourceforge.net/\nVers\u00e3o do Biogenesis: 0.9\nVers\u00e3o de Color Mod: 2.01\nVers\u00e3o de Backup Button: 1\n\nDireitos de Autor (c) Joan Queralt Molina  2006-2010\nColor Mod de MarcoDBAA 2012-2022\nBackup Button de Tyler Coleman 2013\nSTRtrees (de Vivid Solutions) implementado por Richard David Williams 2017\njoanq@users.sourceforge.net\nTrabalho art\u00edstico Ananda Daydream, Florian Haag (http://toolbaricons.sourceforge.net/)",
+    "ru": "Biogenesis-R\n\nBiogenesis\nhttp://biogenesis.sourceforge.net/\nBiogenesis \u0432\u0435\u0440\u0441\u0438\u044f: 0.9\nColor Mod \u0432\u0435\u0440\u0441\u0438\u044f: 2.01\nBackup Button \u0432\u0435\u0440\u0441\u0438\u044f: 1\n\nCopyright (c) Joan Queralt Molina  2006-2010\nColor Mod \u043e\u0442 MarcoDBAA 2012-2022\nBackup Button \u043e\u0442 Tyler Coleman 2013\nSTRtrees (\u043e\u0442 Vivid Solutions) \u0440\u0435\u0430\u043b\u0438\u0437\u043e\u0432\u0430\u043d\u0430 Richard David Williams 2017\njoanq@users.sourceforge.net\n\u0414\u0438\u0437\u0430\u0439\u043d Ananda Daydream, Florian Haag (http://toolbaricons.sourceforge.net/)"
+  },
+  "manual_urls": {
+    "en": "http://biogenesis.sourceforge.net/manual.en.php",
+    "es": "http://biogenesis.sourceforge.net/manual.es.php",
+    "ca": "http://biogenesis.sourceforge.net/manual.ca.php",
+    "de": "http://biogenesis.sourceforge.net/manual.en.php",
+    "pt": "http://biogenesis.sourceforge.net/manual.en.php",
+    "ru": "http://biogenesis.sourceforge.net/manual.en.php"
+  }
+}

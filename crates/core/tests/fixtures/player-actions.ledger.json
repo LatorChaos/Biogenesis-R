@@ -1,0 +1,482 @@
+{
+  "status": "SOURCE_PROTOCOL_FROZEN_BEFORE_RUST",
+  "mode": "canonical",
+  "fixture_sha256": "5812be3c8284c2fb8a2279286bdd714ebc597e6f5af4fc1483f28d4e0ac8be65",
+  "fixture_bytes": 7509195,
+  "rows": 194538,
+  "tags": {
+    "C": 34,
+    "U": 4998,
+    "I": 705,
+    "G": 30688,
+    "N": 47440,
+    "A": 100,
+    "P": 184,
+    "O": 83776,
+    "H": 1632,
+    "W": 1840,
+    "V": 2760,
+    "Q": 544,
+    "S": 9568,
+    "T": 9016,
+    "Y": 926,
+    "R": 184,
+    "K": 75,
+    "E": 34,
+    "J": 24,
+    "D": 2,
+    "B": 8
+  },
+  "cases": 34,
+  "snapshots": 184,
+  "operations": {
+    "feed": 9,
+    "weaken": 7,
+    "kill": 21,
+    "revive": 9,
+    "disperse": 8,
+    "reproduce": 5,
+    "rejuvenate": 3,
+    "build_tree": 3,
+    "time": 2,
+    "pick": 8
+  },
+  "discoveries": 2,
+  "actor_views": 544,
+  "dispositions": {
+    "metadata_and_commands": 7056,
+    "supplied_input_GN": 12160,
+    "runtime_observations": 173682,
+    "organism_collaborators": 1088,
+    "world_collaborators": 552
+  },
+  "logical_owner_projection_rows": 184,
+  "logical_owner_projection": "V.worldStatistics",
+  "typed_targets": [
+    {
+      "target": "actor:killer:_ID",
+      "type": "int",
+      "count": 1
+    },
+    {
+      "target": "actor:killer:bounds",
+      "type": "Rectangle",
+      "count": 4
+    },
+    {
+      "target": "actor:selector:_ID",
+      "type": "int",
+      "count": 1
+    },
+    {
+      "target": "actor:selector:bounds",
+      "type": "Rectangle",
+      "count": 2
+    },
+    {
+      "target": "actor:victim:_ID",
+      "type": "int",
+      "count": 1
+    },
+    {
+      "target": "actor:victim:_age",
+      "type": "int",
+      "count": 6
+    },
+    {
+      "target": "actor:victim:_allfrozen",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_altruist",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_candodge",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_canmove",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_canreact",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_clockwise",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_colonyPhotosynthesis",
+      "type": "double",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_color",
+      "type": "Color",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_crowded",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_dodge",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_earlyReproduceEnergy",
+      "type": "int",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_energy",
+      "type": "double",
+      "count": 25
+    },
+    {
+      "target": "actor:victim:_fallowversion",
+      "type": "int",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_forestphoto",
+      "type": "double",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_framesColor",
+      "type": "int",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_generationbattle",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_hasdodged",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_haseyes",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_hasgoodvision",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_infectedGeneticCode",
+      "type": "GeneticCode",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_infectedReproduceEnergy",
+      "type": "int",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_isaconsumer",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_isafungus",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_isakiller",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_isaplant",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_isauburn",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_isblond",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_iscoral",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_isenhanced",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_isfrozen",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_isgray",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_isinfectious",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_isinjured",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_islime",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_isonlyc4",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_isreproductive",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_issilver",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_isspike",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_jadefactor",
+      "type": "int",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_leafphoto",
+      "type": "double",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_lengthfriend",
+      "type": "int",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_maintenance",
+      "type": "double",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_methanotrophy",
+      "type": "double",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_mphoto",
+      "type": "double[]",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_nTotalChildren",
+      "type": "int",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_nTotalInfected",
+      "type": "int",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_nTotalKills",
+      "type": "int",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_photosynthesis",
+      "type": "double",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_plagueversion",
+      "type": "int",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_reproducelate",
+      "type": "int",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_savedGeneticCode",
+      "type": "GeneticCode",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_segmentpretoucheffects",
+      "type": "int",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_siblingbattle",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_skyversion",
+      "type": "int",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_thetafriend",
+      "type": "int",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_timeToReproduce",
+      "type": "int",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_transfersenergy",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_updateEffects",
+      "type": "int",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_useextraeffects",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_useframemovement",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_usefriendeffects",
+      "type": "int",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:_usepretoucheffects",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:active",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:bounds",
+      "type": "Rectangle",
+      "count": 2
+    },
+    {
+      "target": "actor:victim:dtheta",
+      "type": "double",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:dx",
+      "type": "double",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:dy",
+      "type": "double",
+      "count": 5
+    },
+    {
+      "target": "actor:victim:hasMoved",
+      "type": "boolean",
+      "count": 5
+    },
+    {
+      "target": "genome:g0:construction",
+      "type": "String",
+      "count": 34
+    },
+    {
+      "target": "genome:g1:construction",
+      "type": "String",
+      "count": 34
+    },
+    {
+      "target": "genome:g2:construction",
+      "type": "String",
+      "count": 34
+    },
+    {
+      "target": "genome:g3:construction",
+      "type": "String",
+      "count": 34
+    },
+    {
+      "target": "genome:g4:construction",
+      "type": "String",
+      "count": 34
+    },
+    {
+      "target": "visible:selected",
+      "type": "String",
+      "count": 37
+    },
+    {
+      "target": "world:_CH4",
+      "type": "double",
+      "count": 34
+    },
+    {
+      "target": "world:_CO2",
+      "type": "double",
+      "count": 41
+    },
+    {
+      "target": "world:_O2",
+      "type": "double",
+      "count": 51
+    }
+  ],
+  "pick_outcomes": {
+    "selector": 2,
+    "victim": 1,
+    "killer": 2,
+    "~": 3
+  },
+  "genotype_scopes": {
+    "observable": 926
+  },
+  "rust_replay": "Not executed"
+}

@@ -1,0 +1,1916 @@
+{
+  "en": {
+    "R_SETUP_SEED": "Seed",
+    "R_SETUP_WIDTH": "World width",
+    "R_SETUP_HEIGHT": "World height",
+    "R_SETUP_ATTEMPTS": "Initial attempts",
+    "R_DISCLOSURE": "Observe evolving life. Pause, inspect organisms, and experiment in the laboratory.",
+    "R_INITIALIZING": "INITIALIZING",
+    "R_INITIALIZATION_ERROR": "INITIALIZATION ERROR",
+    "R_STOPPED_ERROR": "STOPPED: ERROR",
+    "R_WAITING": "Waiting for Rust simulation",
+    "R_CREATE_SETUP_HINT": "Unchanged seed: New Game continues the random stream. Changed seed: start an explicit seeded world. The new world starts paused.",
+    "R_SEED_HINT": "Applied seed: %s. Create continues this stream unless you change the seed. Reset replays the applied seed.",
+    "R_WIDTH_HINT": "Applied world width: %d. Edit this field before Create.",
+    "R_HEIGHT_HINT": "Applied world height: %d. Edit this field before Create.",
+    "R_ATTEMPTS_HINT": "Applied initial attempts: %d. The population can differ after placement or births.",
+    "R_TIMING": "Requested delay: %d ms   Last batch: %s ms   Pending wall-clock ticks: %d",
+    "R_SAFETY_DELAY": "Minimum safety delay: 1 ms; stored value retained",
+    "R_BEHIND_SPEED": "Behind requested speed; simulation transitions are retained",
+    "R_ZOOM": "Zoom %s%%",
+    "R_PLACE_RANDOM": "Click the world to create a random organism. Press Escape to cancel.",
+    "R_PLACE_PASTE": "Click the world to paste the copied genotype. Press Escape to cancel.",
+    "R_PLACE_IMPORT": "Click the world to import a genotype. Press Escape to cancel.",
+    "R_ERROR": "Error: %s",
+    "R_SETTINGS_RETAINED": "Settings applied. %d invalid inputs retained their previous values. Details are below.",
+    "R_PASTE_REQUIRED": "Copy or create a genotype before pasting.",
+    "R_PLACE_FAILED": "The organism cannot be placed at this position.",
+    "R_IMPORT_PLACE_FAILED": "The imported organism cannot be placed at this position.",
+    "R_TICK": "Tick: ",
+    "R_TARGET_TICKS": "Requested target ticks/s: %s",
+    "T_FPS": "FPS: ",
+    "T_TIME": "Time: ",
+    "T_CURRENT_POPULATION": "Current population: ",
+    "T_O2": "O2: ",
+    "T_CO2": "CO2:",
+    "T_CH4": "CH4: ",
+    "number_samples": [
+      {
+        "name": "source_integer_zoom_1",
+        "bits": "4045000000000000",
+        "precision": 1,
+        "text": "42.0",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_integer_gas_batch_2",
+        "bits": "4045000000000000",
+        "precision": 2,
+        "text": "42.00",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_fraction_zoom_1",
+        "bits": "400c000000000000",
+        "precision": 1,
+        "text": "3.5",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_fraction_gas_batch_2",
+        "bits": "400c000000000000",
+        "precision": 2,
+        "text": "3.50",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_1_25_zoom_1",
+        "bits": "3ff4000000000000",
+        "precision": 1,
+        "text": "1.2",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_1_25_gas_batch_2",
+        "bits": "3ff4000000000000",
+        "precision": 2,
+        "text": "1.25",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_1_25_zoom_1",
+        "bits": "bff4000000000000",
+        "precision": 1,
+        "text": "-1.2",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_1_25_gas_batch_2",
+        "bits": "bff4000000000000",
+        "precision": 2,
+        "text": "-1.25",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_1_15_zoom_1",
+        "bits": "3ff2666666666666",
+        "precision": 1,
+        "text": "1.1",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_1_15_gas_batch_2",
+        "bits": "3ff2666666666666",
+        "precision": 2,
+        "text": "1.15",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_2_65_zoom_1",
+        "bits": "4005333333333333",
+        "precision": 1,
+        "text": "2.6",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_2_65_gas_batch_2",
+        "bits": "4005333333333333",
+        "precision": 2,
+        "text": "2.65",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_zero_zoom_1",
+        "bits": "0000000000000000",
+        "precision": 1,
+        "text": "0.0",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_zero_gas_batch_2",
+        "bits": "0000000000000000",
+        "precision": 2,
+        "text": "0.00",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_zero_zoom_1",
+        "bits": "8000000000000000",
+        "precision": 1,
+        "text": "-0.0",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_zero_gas_batch_2",
+        "bits": "8000000000000000",
+        "precision": 2,
+        "text": "-0.00",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_large_finite_zoom_1",
+        "bits": "441ac53a7e04bcb0",
+        "precision": 1,
+        "text": "123,456,789,012,344,995,840.0",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_large_finite_gas_batch_2",
+        "bits": "441ac53a7e04bcb0",
+        "precision": 2,
+        "text": "123,456,789,012,344,995,840.00",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_small_finite_zoom_1",
+        "bits": "3de0f782bf7cc83f",
+        "precision": 1,
+        "text": "0.0",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_small_finite_gas_batch_2",
+        "bits": "3de0f782bf7cc83f",
+        "precision": 2,
+        "text": "0.00",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_nan_zoom_1",
+        "bits": "7ff8000000000000",
+        "precision": 1,
+        "text": "NaN",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_nan_gas_batch_2",
+        "bits": "7ff8000000000000",
+        "precision": 2,
+        "text": "NaN",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_infinity_zoom_1",
+        "bits": "7ff0000000000000",
+        "precision": 1,
+        "text": "∞",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_infinity_gas_batch_2",
+        "bits": "7ff0000000000000",
+        "precision": 2,
+        "text": "∞",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_infinity_zoom_1",
+        "bits": "fff0000000000000",
+        "precision": 1,
+        "text": "-∞",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_infinity_gas_batch_2",
+        "bits": "fff0000000000000",
+        "precision": 2,
+        "text": "-∞",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "ui_0_zoom_1",
+        "bits": "0000000000000000",
+        "precision": 1,
+        "text": "0.0",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_0_gas_batch_2",
+        "bits": "0000000000000000",
+        "precision": 2,
+        "text": "0.00",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_12_5_zoom_1",
+        "bits": "4029000000000000",
+        "precision": 1,
+        "text": "12.5",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_12_5_gas_batch_2",
+        "bits": "4029000000000000",
+        "precision": 2,
+        "text": "12.50",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_125_zoom_1",
+        "bits": "405f400000000000",
+        "precision": 1,
+        "text": "125.0",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_125_gas_batch_2",
+        "bits": "405f400000000000",
+        "precision": 2,
+        "text": "125.00",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_500_zoom_1",
+        "bits": "407f400000000000",
+        "precision": 1,
+        "text": "500.0",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_500_gas_batch_2",
+        "bits": "407f400000000000",
+        "precision": 2,
+        "text": "500.00",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_1000_zoom_1",
+        "bits": "408f400000000000",
+        "precision": 1,
+        "text": "1,000.0",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_1000_gas_batch_2",
+        "bits": "408f400000000000",
+        "precision": 2,
+        "text": "1,000.00",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_500000_zoom_1",
+        "bits": "411e848000000000",
+        "precision": 1,
+        "text": "500,000.0",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_500000_gas_batch_2",
+        "bits": "411e848000000000",
+        "precision": 2,
+        "text": "500,000.00",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_499500_zoom_1",
+        "bits": "411e7cb000000000",
+        "precision": 1,
+        "text": "499,500.0",
+        "origin": "independent_formatting_vector"
+      },
+      {
+        "name": "ui_499500_gas_batch_2",
+        "bits": "411e7cb000000000",
+        "precision": 2,
+        "text": "499,500.00",
+        "origin": "independent_formatting_vector"
+      }
+    ],
+    "R_ADAPTIVE_TIMING": "Adaptive delay: %d ms; effective target: %s ticks/s"
+  },
+  "es": {
+    "R_SETUP_SEED": "Semilla",
+    "R_SETUP_WIDTH": "Anchura del mundo",
+    "R_SETUP_HEIGHT": "Altura del mundo",
+    "R_SETUP_ATTEMPTS": "Intentos iniciales",
+    "R_DISCLOSURE": "Observa la vida en evolución. Pausa, inspecciona organismos y experimenta en el laboratorio.",
+    "R_INITIALIZING": "INICIALIZANDO",
+    "R_INITIALIZATION_ERROR": "ERROR DE INICIALIZACIÓN",
+    "R_STOPPED_ERROR": "DETENIDO: ERROR",
+    "R_WAITING": "Esperando la simulación de Rust",
+    "R_CREATE_SETUP_HINT": "Sin cambiar la semilla: Nuevo juego continúa la secuencia aleatoria. Con otra semilla: inicia un mundo con esa semilla explícita. El nuevo mundo comienza pausado.",
+    "R_SEED_HINT": "Semilla aplicada: %s. Crear continúa esta secuencia si no cambia la semilla. Reiniciar repite la semilla aplicada.",
+    "R_WIDTH_HINT": "Anchura aplicada del mundo: %d. Edite este campo antes de Crear.",
+    "R_HEIGHT_HINT": "Altura aplicada del mundo: %d. Edite este campo antes de Crear.",
+    "R_ATTEMPTS_HINT": "Intentos iniciales aplicados: %d. La población puede variar tras la colocación o los nacimientos.",
+    "R_TIMING": "Retardo solicitado: %d ms   Último lote: %s ms   Ticks de reloj pendientes: %d",
+    "R_SAFETY_DELAY": "Retardo mínimo de seguridad: 1 ms; se conserva el valor guardado",
+    "R_BEHIND_SPEED": "Por debajo de la velocidad solicitada; se conservan las transiciones de simulación",
+    "R_ZOOM": "Zoom %s%%",
+    "R_PLACE_RANDOM": "Haga clic en el mundo para crear un organismo aleatorio. Pulse Escape para cancelar.",
+    "R_PLACE_PASTE": "Haga clic en el mundo para pegar el genotipo copiado. Pulse Escape para cancelar.",
+    "R_PLACE_IMPORT": "Haga clic en el mundo para importar un genotipo. Pulse Escape para cancelar.",
+    "R_ERROR": "Error: %s",
+    "R_SETTINGS_RETAINED": "Configuración aplicada. %d entradas no válidas conservaron sus valores anteriores. Los detalles aparecen abajo.",
+    "R_PASTE_REQUIRED": "Copie o cree un genotipo antes de pegarlo.",
+    "R_PLACE_FAILED": "El organismo no se puede colocar en esta posición.",
+    "R_IMPORT_PLACE_FAILED": "El organismo importado no se puede colocar en esta posición.",
+    "R_TICK": "Tick: ",
+    "R_TARGET_TICKS": "Objetivo solicitado (ticks/s): %s",
+    "T_FPS": "FPS:",
+    "T_TIME": "Tiempo:",
+    "T_CURRENT_POPULATION": "Población actual:",
+    "T_O2": "O2:",
+    "T_CO2": "CO2:",
+    "T_CH4": "CH4:",
+    "number_samples": [
+      {
+        "name": "source_integer_zoom_1",
+        "bits": "4045000000000000",
+        "precision": 1,
+        "text": "42,0",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_integer_gas_batch_2",
+        "bits": "4045000000000000",
+        "precision": 2,
+        "text": "42,00",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_fraction_zoom_1",
+        "bits": "400c000000000000",
+        "precision": 1,
+        "text": "3,5",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_fraction_gas_batch_2",
+        "bits": "400c000000000000",
+        "precision": 2,
+        "text": "3,50",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_1_25_zoom_1",
+        "bits": "3ff4000000000000",
+        "precision": 1,
+        "text": "1,2",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_1_25_gas_batch_2",
+        "bits": "3ff4000000000000",
+        "precision": 2,
+        "text": "1,25",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_1_25_zoom_1",
+        "bits": "bff4000000000000",
+        "precision": 1,
+        "text": "-1,2",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_1_25_gas_batch_2",
+        "bits": "bff4000000000000",
+        "precision": 2,
+        "text": "-1,25",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_1_15_zoom_1",
+        "bits": "3ff2666666666666",
+        "precision": 1,
+        "text": "1,1",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_1_15_gas_batch_2",
+        "bits": "3ff2666666666666",
+        "precision": 2,
+        "text": "1,15",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_2_65_zoom_1",
+        "bits": "4005333333333333",
+        "precision": 1,
+        "text": "2,6",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_2_65_gas_batch_2",
+        "bits": "4005333333333333",
+        "precision": 2,
+        "text": "2,65",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_zero_zoom_1",
+        "bits": "0000000000000000",
+        "precision": 1,
+        "text": "0,0",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_zero_gas_batch_2",
+        "bits": "0000000000000000",
+        "precision": 2,
+        "text": "0,00",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_zero_zoom_1",
+        "bits": "8000000000000000",
+        "precision": 1,
+        "text": "-0,0",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_zero_gas_batch_2",
+        "bits": "8000000000000000",
+        "precision": 2,
+        "text": "-0,00",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_large_finite_zoom_1",
+        "bits": "441ac53a7e04bcb0",
+        "precision": 1,
+        "text": "123.456.789.012.344.995.840,0",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_large_finite_gas_batch_2",
+        "bits": "441ac53a7e04bcb0",
+        "precision": 2,
+        "text": "123.456.789.012.344.995.840,00",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_small_finite_zoom_1",
+        "bits": "3de0f782bf7cc83f",
+        "precision": 1,
+        "text": "0,0",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_small_finite_gas_batch_2",
+        "bits": "3de0f782bf7cc83f",
+        "precision": 2,
+        "text": "0,00",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_nan_zoom_1",
+        "bits": "7ff8000000000000",
+        "precision": 1,
+        "text": "NaN",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_nan_gas_batch_2",
+        "bits": "7ff8000000000000",
+        "precision": 2,
+        "text": "NaN",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_infinity_zoom_1",
+        "bits": "7ff0000000000000",
+        "precision": 1,
+        "text": "∞",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_infinity_gas_batch_2",
+        "bits": "7ff0000000000000",
+        "precision": 2,
+        "text": "∞",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_infinity_zoom_1",
+        "bits": "fff0000000000000",
+        "precision": 1,
+        "text": "-∞",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_infinity_gas_batch_2",
+        "bits": "fff0000000000000",
+        "precision": 2,
+        "text": "-∞",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "ui_0_zoom_1",
+        "bits": "0000000000000000",
+        "precision": 1,
+        "text": "0,0",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_0_gas_batch_2",
+        "bits": "0000000000000000",
+        "precision": 2,
+        "text": "0,00",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_12_5_zoom_1",
+        "bits": "4029000000000000",
+        "precision": 1,
+        "text": "12,5",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_12_5_gas_batch_2",
+        "bits": "4029000000000000",
+        "precision": 2,
+        "text": "12,50",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_125_zoom_1",
+        "bits": "405f400000000000",
+        "precision": 1,
+        "text": "125,0",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_125_gas_batch_2",
+        "bits": "405f400000000000",
+        "precision": 2,
+        "text": "125,00",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_500_zoom_1",
+        "bits": "407f400000000000",
+        "precision": 1,
+        "text": "500,0",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_500_gas_batch_2",
+        "bits": "407f400000000000",
+        "precision": 2,
+        "text": "500,00",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_1000_zoom_1",
+        "bits": "408f400000000000",
+        "precision": 1,
+        "text": "1.000,0",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_1000_gas_batch_2",
+        "bits": "408f400000000000",
+        "precision": 2,
+        "text": "1.000,00",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_500000_zoom_1",
+        "bits": "411e848000000000",
+        "precision": 1,
+        "text": "500.000,0",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_500000_gas_batch_2",
+        "bits": "411e848000000000",
+        "precision": 2,
+        "text": "500.000,00",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_499500_zoom_1",
+        "bits": "411e7cb000000000",
+        "precision": 1,
+        "text": "499.500,0",
+        "origin": "independent_formatting_vector"
+      },
+      {
+        "name": "ui_499500_gas_batch_2",
+        "bits": "411e7cb000000000",
+        "precision": 2,
+        "text": "499.500,00",
+        "origin": "independent_formatting_vector"
+      }
+    ],
+    "R_ADAPTIVE_TIMING": "Retardo adaptativo: %d ms; objetivo efectivo: %s ciclos/s"
+  },
+  "ca": {
+    "R_SETUP_SEED": "Llavor",
+    "R_SETUP_WIDTH": "Amplada del món",
+    "R_SETUP_HEIGHT": "Alçada del món",
+    "R_SETUP_ATTEMPTS": "Intents inicials",
+    "R_DISCLOSURE": "Observa la vida en evolució. Pausa, inspecciona organismes i experimenta al laboratori.",
+    "R_INITIALIZING": "INICIALITZANT",
+    "R_INITIALIZATION_ERROR": "ERROR D'INICIALITZACIÓ",
+    "R_STOPPED_ERROR": "ATURAT: ERROR",
+    "R_WAITING": "S'espera la simulació de Rust",
+    "R_CREATE_SETUP_HINT": "Sense canviar la llavor: Nou joc continua la seqüència aleatòria. Amb una altra llavor: inicia un món amb aquesta llavor explícita. El món nou comença pausat.",
+    "R_SEED_HINT": "Llavor aplicada: %s. Crear continua aquesta seqüència si no canvieu la llavor. Reiniciar repeteix la llavor aplicada.",
+    "R_WIDTH_HINT": "Amplada aplicada del món: %d. Editeu aquest camp abans de Crear.",
+    "R_HEIGHT_HINT": "Alçada aplicada del món: %d. Editeu aquest camp abans de Crear.",
+    "R_ATTEMPTS_HINT": "Intents inicials aplicats: %d. La població pot variar després de la col·locació o dels naixements.",
+    "R_TIMING": "Retard sol·licitat: %d ms   Últim lot: %s ms   Ticks de rellotge pendents: %d",
+    "R_SAFETY_DELAY": "Retard mínim de seguretat: 1 ms; es conserva el valor desat",
+    "R_BEHIND_SPEED": "Per sota de la velocitat sol·licitada; es conserven les transicions de simulació",
+    "R_ZOOM": "Zoom %s%%",
+    "R_PLACE_RANDOM": "Feu clic al món per crear un organisme aleatori. Premeu Escape per cancel·lar.",
+    "R_PLACE_PASTE": "Feu clic al món per enganxar el genotip copiat. Premeu Escape per cancel·lar.",
+    "R_PLACE_IMPORT": "Feu clic al món per importar un genotip. Premeu Escape per cancel·lar.",
+    "R_ERROR": "Error: %s",
+    "R_SETTINGS_RETAINED": "S'ha aplicat la configuració. %d entrades no vàlides han conservat els valors anteriors. Els detalls apareixen a sota.",
+    "R_PASTE_REQUIRED": "Copieu o creeu un genotip abans d'enganxar-lo.",
+    "R_PLACE_FAILED": "L'organisme no es pot col·locar en aquesta posició.",
+    "R_IMPORT_PLACE_FAILED": "L'organisme importat no es pot col·locar en aquesta posició.",
+    "R_TICK": "Tick: ",
+    "R_TARGET_TICKS": "Objectiu sol·licitat (ticks/s): %s",
+    "T_FPS": "FPS:",
+    "T_TIME": "Temps:",
+    "T_CURRENT_POPULATION": "Població actual:",
+    "T_O2": "O2:",
+    "T_CO2": "CO2:",
+    "T_CH4": "CH4:",
+    "number_samples": [
+      {
+        "name": "source_integer_zoom_1",
+        "bits": "4045000000000000",
+        "precision": 1,
+        "text": "42,0",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_integer_gas_batch_2",
+        "bits": "4045000000000000",
+        "precision": 2,
+        "text": "42,00",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_fraction_zoom_1",
+        "bits": "400c000000000000",
+        "precision": 1,
+        "text": "3,5",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_fraction_gas_batch_2",
+        "bits": "400c000000000000",
+        "precision": 2,
+        "text": "3,50",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_1_25_zoom_1",
+        "bits": "3ff4000000000000",
+        "precision": 1,
+        "text": "1,2",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_1_25_gas_batch_2",
+        "bits": "3ff4000000000000",
+        "precision": 2,
+        "text": "1,25",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_1_25_zoom_1",
+        "bits": "bff4000000000000",
+        "precision": 1,
+        "text": "-1,2",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_1_25_gas_batch_2",
+        "bits": "bff4000000000000",
+        "precision": 2,
+        "text": "-1,25",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_1_15_zoom_1",
+        "bits": "3ff2666666666666",
+        "precision": 1,
+        "text": "1,1",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_1_15_gas_batch_2",
+        "bits": "3ff2666666666666",
+        "precision": 2,
+        "text": "1,15",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_2_65_zoom_1",
+        "bits": "4005333333333333",
+        "precision": 1,
+        "text": "2,6",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_2_65_gas_batch_2",
+        "bits": "4005333333333333",
+        "precision": 2,
+        "text": "2,65",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_zero_zoom_1",
+        "bits": "0000000000000000",
+        "precision": 1,
+        "text": "0,0",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_zero_gas_batch_2",
+        "bits": "0000000000000000",
+        "precision": 2,
+        "text": "0,00",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_zero_zoom_1",
+        "bits": "8000000000000000",
+        "precision": 1,
+        "text": "-0,0",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_zero_gas_batch_2",
+        "bits": "8000000000000000",
+        "precision": 2,
+        "text": "-0,00",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_large_finite_zoom_1",
+        "bits": "441ac53a7e04bcb0",
+        "precision": 1,
+        "text": "123.456.789.012.344.995.840,0",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_large_finite_gas_batch_2",
+        "bits": "441ac53a7e04bcb0",
+        "precision": 2,
+        "text": "123.456.789.012.344.995.840,00",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_small_finite_zoom_1",
+        "bits": "3de0f782bf7cc83f",
+        "precision": 1,
+        "text": "0,0",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_small_finite_gas_batch_2",
+        "bits": "3de0f782bf7cc83f",
+        "precision": 2,
+        "text": "0,00",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_nan_zoom_1",
+        "bits": "7ff8000000000000",
+        "precision": 1,
+        "text": "NaN",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_nan_gas_batch_2",
+        "bits": "7ff8000000000000",
+        "precision": 2,
+        "text": "NaN",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_infinity_zoom_1",
+        "bits": "7ff0000000000000",
+        "precision": 1,
+        "text": "∞",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_infinity_gas_batch_2",
+        "bits": "7ff0000000000000",
+        "precision": 2,
+        "text": "∞",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_infinity_zoom_1",
+        "bits": "fff0000000000000",
+        "precision": 1,
+        "text": "-∞",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_infinity_gas_batch_2",
+        "bits": "fff0000000000000",
+        "precision": 2,
+        "text": "-∞",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "ui_0_zoom_1",
+        "bits": "0000000000000000",
+        "precision": 1,
+        "text": "0,0",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_0_gas_batch_2",
+        "bits": "0000000000000000",
+        "precision": 2,
+        "text": "0,00",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_12_5_zoom_1",
+        "bits": "4029000000000000",
+        "precision": 1,
+        "text": "12,5",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_12_5_gas_batch_2",
+        "bits": "4029000000000000",
+        "precision": 2,
+        "text": "12,50",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_125_zoom_1",
+        "bits": "405f400000000000",
+        "precision": 1,
+        "text": "125,0",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_125_gas_batch_2",
+        "bits": "405f400000000000",
+        "precision": 2,
+        "text": "125,00",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_500_zoom_1",
+        "bits": "407f400000000000",
+        "precision": 1,
+        "text": "500,0",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_500_gas_batch_2",
+        "bits": "407f400000000000",
+        "precision": 2,
+        "text": "500,00",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_1000_zoom_1",
+        "bits": "408f400000000000",
+        "precision": 1,
+        "text": "1.000,0",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_1000_gas_batch_2",
+        "bits": "408f400000000000",
+        "precision": 2,
+        "text": "1.000,00",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_500000_zoom_1",
+        "bits": "411e848000000000",
+        "precision": 1,
+        "text": "500.000,0",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_500000_gas_batch_2",
+        "bits": "411e848000000000",
+        "precision": 2,
+        "text": "500.000,00",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_499500_zoom_1",
+        "bits": "411e7cb000000000",
+        "precision": 1,
+        "text": "499.500,0",
+        "origin": "independent_formatting_vector"
+      },
+      {
+        "name": "ui_499500_gas_batch_2",
+        "bits": "411e7cb000000000",
+        "precision": 2,
+        "text": "499.500,00",
+        "origin": "independent_formatting_vector"
+      }
+    ],
+    "R_ADAPTIVE_TIMING": "Retard adaptatiu: %d ms; objectiu efectiu: %s passos/s"
+  },
+  "de": {
+    "R_SETUP_SEED": "Startwert",
+    "R_SETUP_WIDTH": "Weltbreite",
+    "R_SETUP_HEIGHT": "Welthöhe",
+    "R_SETUP_ATTEMPTS": "Startversuche",
+    "R_DISCLOSURE": "Beobachte das sich entwickelnde Leben. Pausiere, untersuche Organismen und experimentiere im Labor.",
+    "R_INITIALIZING": "INITIALISIERUNG",
+    "R_INITIALIZATION_ERROR": "INITIALISIERUNGSFEHLER",
+    "R_STOPPED_ERROR": "ANGEHALTEN: FEHLER",
+    "R_WAITING": "Warten auf die Rust-Simulation",
+    "R_CREATE_SETUP_HINT": "Unveränderter Startwert: Neues Spiel setzt die Zufallsfolge fort. Geänderter Startwert: startet eine Welt mit diesem expliziten Startwert. Die neue Welt beginnt pausiert.",
+    "R_SEED_HINT": "Angewendeter Startwert: %s. Erstellen setzt diese Folge fort, solange Sie den Startwert nicht ändern. Zurücksetzen wiederholt den angewendeten Startwert.",
+    "R_WIDTH_HINT": "Angewendete Weltbreite: %d. Bearbeiten Sie dieses Feld vor dem Erstellen.",
+    "R_HEIGHT_HINT": "Angewendete Welthöhe: %d. Bearbeiten Sie dieses Feld vor dem Erstellen.",
+    "R_ATTEMPTS_HINT": "Angewendete Startversuche: %d. Die Population kann nach Platzierungen oder Geburten abweichen.",
+    "R_TIMING": "Angeforderte Verzögerung: %d ms   Letzter Stapel: %s ms   Ausstehende Echtzeit-Ticks: %d",
+    "R_SAFETY_DELAY": "Mindestens 1 ms Sicherheitsverzögerung; gespeicherter Wert bleibt erhalten",
+    "R_BEHIND_SPEED": "Unter der angeforderten Geschwindigkeit; Simulationsübergänge bleiben erhalten",
+    "R_ZOOM": "Zoom %s%%",
+    "R_PLACE_RANDOM": "Klicken Sie auf die Welt, um einen zufälligen Organismus zu erstellen. Escape bricht ab.",
+    "R_PLACE_PASTE": "Klicken Sie auf die Welt, um den kopierten Genotyp einzufügen. Escape bricht ab.",
+    "R_PLACE_IMPORT": "Klicken Sie auf die Welt, um einen Genotyp zu importieren. Escape bricht ab.",
+    "R_ERROR": "Fehler: %s",
+    "R_SETTINGS_RETAINED": "Einstellungen angewendet. %d ungültige Eingaben behalten ihre bisherigen Werte. Details stehen unten.",
+    "R_PASTE_REQUIRED": "Kopieren oder erstellen Sie vor dem Einfügen einen Genotyp.",
+    "R_PLACE_FAILED": "Der Organismus kann an dieser Position nicht platziert werden.",
+    "R_IMPORT_PLACE_FAILED": "Der importierte Organismus kann an dieser Position nicht platziert werden.",
+    "R_TICK": "Tick: ",
+    "R_TARGET_TICKS": "Angefordertes Ziel (Ticks/s): %s",
+    "T_FPS": "FPS:",
+    "T_TIME": "Zeit:",
+    "T_CURRENT_POPULATION": "Aktuelle Population:",
+    "T_O2": "O2:",
+    "T_CO2": "CO2:",
+    "T_CH4": "CH4:",
+    "number_samples": [
+      {
+        "name": "source_integer_zoom_1",
+        "bits": "4045000000000000",
+        "precision": 1,
+        "text": "42,0",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_integer_gas_batch_2",
+        "bits": "4045000000000000",
+        "precision": 2,
+        "text": "42,00",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_fraction_zoom_1",
+        "bits": "400c000000000000",
+        "precision": 1,
+        "text": "3,5",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_fraction_gas_batch_2",
+        "bits": "400c000000000000",
+        "precision": 2,
+        "text": "3,50",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_1_25_zoom_1",
+        "bits": "3ff4000000000000",
+        "precision": 1,
+        "text": "1,2",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_1_25_gas_batch_2",
+        "bits": "3ff4000000000000",
+        "precision": 2,
+        "text": "1,25",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_1_25_zoom_1",
+        "bits": "bff4000000000000",
+        "precision": 1,
+        "text": "-1,2",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_1_25_gas_batch_2",
+        "bits": "bff4000000000000",
+        "precision": 2,
+        "text": "-1,25",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_1_15_zoom_1",
+        "bits": "3ff2666666666666",
+        "precision": 1,
+        "text": "1,1",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_1_15_gas_batch_2",
+        "bits": "3ff2666666666666",
+        "precision": 2,
+        "text": "1,15",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_2_65_zoom_1",
+        "bits": "4005333333333333",
+        "precision": 1,
+        "text": "2,6",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_2_65_gas_batch_2",
+        "bits": "4005333333333333",
+        "precision": 2,
+        "text": "2,65",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_zero_zoom_1",
+        "bits": "0000000000000000",
+        "precision": 1,
+        "text": "0,0",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_zero_gas_batch_2",
+        "bits": "0000000000000000",
+        "precision": 2,
+        "text": "0,00",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_zero_zoom_1",
+        "bits": "8000000000000000",
+        "precision": 1,
+        "text": "-0,0",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_zero_gas_batch_2",
+        "bits": "8000000000000000",
+        "precision": 2,
+        "text": "-0,00",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_large_finite_zoom_1",
+        "bits": "441ac53a7e04bcb0",
+        "precision": 1,
+        "text": "123.456.789.012.344.995.840,0",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_large_finite_gas_batch_2",
+        "bits": "441ac53a7e04bcb0",
+        "precision": 2,
+        "text": "123.456.789.012.344.995.840,00",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_small_finite_zoom_1",
+        "bits": "3de0f782bf7cc83f",
+        "precision": 1,
+        "text": "0,0",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_small_finite_gas_batch_2",
+        "bits": "3de0f782bf7cc83f",
+        "precision": 2,
+        "text": "0,00",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_nan_zoom_1",
+        "bits": "7ff8000000000000",
+        "precision": 1,
+        "text": "NaN",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_nan_gas_batch_2",
+        "bits": "7ff8000000000000",
+        "precision": 2,
+        "text": "NaN",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_infinity_zoom_1",
+        "bits": "7ff0000000000000",
+        "precision": 1,
+        "text": "∞",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_infinity_gas_batch_2",
+        "bits": "7ff0000000000000",
+        "precision": 2,
+        "text": "∞",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_infinity_zoom_1",
+        "bits": "fff0000000000000",
+        "precision": 1,
+        "text": "-∞",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_infinity_gas_batch_2",
+        "bits": "fff0000000000000",
+        "precision": 2,
+        "text": "-∞",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "ui_0_zoom_1",
+        "bits": "0000000000000000",
+        "precision": 1,
+        "text": "0,0",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_0_gas_batch_2",
+        "bits": "0000000000000000",
+        "precision": 2,
+        "text": "0,00",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_12_5_zoom_1",
+        "bits": "4029000000000000",
+        "precision": 1,
+        "text": "12,5",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_12_5_gas_batch_2",
+        "bits": "4029000000000000",
+        "precision": 2,
+        "text": "12,50",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_125_zoom_1",
+        "bits": "405f400000000000",
+        "precision": 1,
+        "text": "125,0",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_125_gas_batch_2",
+        "bits": "405f400000000000",
+        "precision": 2,
+        "text": "125,00",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_500_zoom_1",
+        "bits": "407f400000000000",
+        "precision": 1,
+        "text": "500,0",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_500_gas_batch_2",
+        "bits": "407f400000000000",
+        "precision": 2,
+        "text": "500,00",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_1000_zoom_1",
+        "bits": "408f400000000000",
+        "precision": 1,
+        "text": "1.000,0",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_1000_gas_batch_2",
+        "bits": "408f400000000000",
+        "precision": 2,
+        "text": "1.000,00",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_500000_zoom_1",
+        "bits": "411e848000000000",
+        "precision": 1,
+        "text": "500.000,0",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_500000_gas_batch_2",
+        "bits": "411e848000000000",
+        "precision": 2,
+        "text": "500.000,00",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_499500_zoom_1",
+        "bits": "411e7cb000000000",
+        "precision": 1,
+        "text": "499.500,0",
+        "origin": "independent_formatting_vector"
+      },
+      {
+        "name": "ui_499500_gas_batch_2",
+        "bits": "411e7cb000000000",
+        "precision": 2,
+        "text": "499.500,00",
+        "origin": "independent_formatting_vector"
+      }
+    ],
+    "R_ADAPTIVE_TIMING": "Angepasste Verzögerung: %d ms; wirksames Ziel: %s Schritte/s"
+  },
+  "pt": {
+    "R_SETUP_SEED": "Semente",
+    "R_SETUP_WIDTH": "Largura do mundo",
+    "R_SETUP_HEIGHT": "Altura do mundo",
+    "R_SETUP_ATTEMPTS": "Tentativas iniciais",
+    "R_DISCLOSURE": "Observe a vida em evolução. Pause, inspecione organismos e experimente no laboratório.",
+    "R_INITIALIZING": "A INICIALIZAR",
+    "R_INITIALIZATION_ERROR": "ERRO DE INICIALIZAÇÃO",
+    "R_STOPPED_ERROR": "PARADO: ERRO",
+    "R_WAITING": "A aguardar a simulação em Rust",
+    "R_CREATE_SETUP_HINT": "Sem alterar a semente: Novo jogo continua a sequência aleatória. Com outra semente: inicia um mundo com essa semente explícita. O novo mundo começa pausado.",
+    "R_SEED_HINT": "Semente aplicada: %s. Criar continua esta sequência se não alterar a semente. Repor repete a semente aplicada.",
+    "R_WIDTH_HINT": "Largura aplicada do mundo: %d. Edite este campo antes de Criar.",
+    "R_HEIGHT_HINT": "Altura aplicada do mundo: %d. Edite este campo antes de Criar.",
+    "R_ATTEMPTS_HINT": "Tentativas iniciais aplicadas: %d. A população pode variar após a colocação ou os nascimentos.",
+    "R_TIMING": "Atraso pedido: %d ms   Último lote: %s ms   Ticks de relógio pendentes: %d",
+    "R_SAFETY_DELAY": "Atraso mínimo de segurança: 1 ms; mantém-se o valor guardado",
+    "R_BEHIND_SPEED": "Abaixo da velocidade pedida; mantêm-se as transições da simulação",
+    "R_ZOOM": "Zoom %s%%",
+    "R_PLACE_RANDOM": "Clique no mundo para criar um organismo aleatório. Prima Escape para cancelar.",
+    "R_PLACE_PASTE": "Clique no mundo para colar o genótipo copiado. Prima Escape para cancelar.",
+    "R_PLACE_IMPORT": "Clique no mundo para importar um genótipo. Prima Escape para cancelar.",
+    "R_ERROR": "Erro: %s",
+    "R_SETTINGS_RETAINED": "Definições aplicadas. %d entradas inválidas mantiveram os valores anteriores. Os detalhes aparecem abaixo.",
+    "R_PASTE_REQUIRED": "Copie ou crie um genótipo antes de o colar.",
+    "R_PLACE_FAILED": "O organismo não pode ser colocado nesta posição.",
+    "R_IMPORT_PLACE_FAILED": "O organismo importado não pode ser colocado nesta posição.",
+    "R_TICK": "Tick: ",
+    "R_TARGET_TICKS": "Meta pedida (ticks/s): %s",
+    "T_FPS": "FPS:",
+    "T_TIME": "Época:",
+    "T_CURRENT_POPULATION": "População atual:",
+    "T_O2": "O²:",
+    "T_CO2": "CO²:",
+    "T_CH4": "CH4:",
+    "number_samples": [
+      {
+        "name": "source_integer_zoom_1",
+        "bits": "4045000000000000",
+        "precision": 1,
+        "text": "42,0",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_integer_gas_batch_2",
+        "bits": "4045000000000000",
+        "precision": 2,
+        "text": "42,00",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_fraction_zoom_1",
+        "bits": "400c000000000000",
+        "precision": 1,
+        "text": "3,5",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_fraction_gas_batch_2",
+        "bits": "400c000000000000",
+        "precision": 2,
+        "text": "3,50",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_1_25_zoom_1",
+        "bits": "3ff4000000000000",
+        "precision": 1,
+        "text": "1,2",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_1_25_gas_batch_2",
+        "bits": "3ff4000000000000",
+        "precision": 2,
+        "text": "1,25",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_1_25_zoom_1",
+        "bits": "bff4000000000000",
+        "precision": 1,
+        "text": "-1,2",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_1_25_gas_batch_2",
+        "bits": "bff4000000000000",
+        "precision": 2,
+        "text": "-1,25",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_1_15_zoom_1",
+        "bits": "3ff2666666666666",
+        "precision": 1,
+        "text": "1,1",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_1_15_gas_batch_2",
+        "bits": "3ff2666666666666",
+        "precision": 2,
+        "text": "1,15",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_2_65_zoom_1",
+        "bits": "4005333333333333",
+        "precision": 1,
+        "text": "2,6",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_2_65_gas_batch_2",
+        "bits": "4005333333333333",
+        "precision": 2,
+        "text": "2,65",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_zero_zoom_1",
+        "bits": "0000000000000000",
+        "precision": 1,
+        "text": "0,0",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_zero_gas_batch_2",
+        "bits": "0000000000000000",
+        "precision": 2,
+        "text": "0,00",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_zero_zoom_1",
+        "bits": "8000000000000000",
+        "precision": 1,
+        "text": "-0,0",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_zero_gas_batch_2",
+        "bits": "8000000000000000",
+        "precision": 2,
+        "text": "-0,00",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_large_finite_zoom_1",
+        "bits": "441ac53a7e04bcb0",
+        "precision": 1,
+        "text": "123.456.789.012.344.995.840,0",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_large_finite_gas_batch_2",
+        "bits": "441ac53a7e04bcb0",
+        "precision": 2,
+        "text": "123.456.789.012.344.995.840,00",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_small_finite_zoom_1",
+        "bits": "3de0f782bf7cc83f",
+        "precision": 1,
+        "text": "0,0",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_small_finite_gas_batch_2",
+        "bits": "3de0f782bf7cc83f",
+        "precision": 2,
+        "text": "0,00",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_nan_zoom_1",
+        "bits": "7ff8000000000000",
+        "precision": 1,
+        "text": "NaN",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_nan_gas_batch_2",
+        "bits": "7ff8000000000000",
+        "precision": 2,
+        "text": "NaN",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_infinity_zoom_1",
+        "bits": "7ff0000000000000",
+        "precision": 1,
+        "text": "∞",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_infinity_gas_batch_2",
+        "bits": "7ff0000000000000",
+        "precision": 2,
+        "text": "∞",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_infinity_zoom_1",
+        "bits": "fff0000000000000",
+        "precision": 1,
+        "text": "-∞",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_infinity_gas_batch_2",
+        "bits": "fff0000000000000",
+        "precision": 2,
+        "text": "-∞",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "ui_0_zoom_1",
+        "bits": "0000000000000000",
+        "precision": 1,
+        "text": "0,0",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_0_gas_batch_2",
+        "bits": "0000000000000000",
+        "precision": 2,
+        "text": "0,00",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_12_5_zoom_1",
+        "bits": "4029000000000000",
+        "precision": 1,
+        "text": "12,5",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_12_5_gas_batch_2",
+        "bits": "4029000000000000",
+        "precision": 2,
+        "text": "12,50",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_125_zoom_1",
+        "bits": "405f400000000000",
+        "precision": 1,
+        "text": "125,0",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_125_gas_batch_2",
+        "bits": "405f400000000000",
+        "precision": 2,
+        "text": "125,00",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_500_zoom_1",
+        "bits": "407f400000000000",
+        "precision": 1,
+        "text": "500,0",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_500_gas_batch_2",
+        "bits": "407f400000000000",
+        "precision": 2,
+        "text": "500,00",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_1000_zoom_1",
+        "bits": "408f400000000000",
+        "precision": 1,
+        "text": "1.000,0",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_1000_gas_batch_2",
+        "bits": "408f400000000000",
+        "precision": 2,
+        "text": "1.000,00",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_500000_zoom_1",
+        "bits": "411e848000000000",
+        "precision": 1,
+        "text": "500.000,0",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_500000_gas_batch_2",
+        "bits": "411e848000000000",
+        "precision": 2,
+        "text": "500.000,00",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_499500_zoom_1",
+        "bits": "411e7cb000000000",
+        "precision": 1,
+        "text": "499.500,0",
+        "origin": "independent_formatting_vector"
+      },
+      {
+        "name": "ui_499500_gas_batch_2",
+        "bits": "411e7cb000000000",
+        "precision": 2,
+        "text": "499.500,00",
+        "origin": "independent_formatting_vector"
+      }
+    ],
+    "R_ADAPTIVE_TIMING": "Atraso adaptativo: %d ms; objetivo efetivo: %s passos/s"
+  },
+  "ru": {
+    "R_SETUP_SEED": "Зерно",
+    "R_SETUP_WIDTH": "Ширина мира",
+    "R_SETUP_HEIGHT": "Высота мира",
+    "R_SETUP_ATTEMPTS": "Начальные попытки",
+    "R_DISCLOSURE": "Наблюдайте за эволюцией жизни. Приостанавливайте симуляцию, изучайте организмы и экспериментируйте в лаборатории.",
+    "R_INITIALIZING": "ИНИЦИАЛИЗАЦИЯ",
+    "R_INITIALIZATION_ERROR": "ОШИБКА ИНИЦИАЛИЗАЦИИ",
+    "R_STOPPED_ERROR": "ОСТАНОВЛЕНО: ОШИБКА",
+    "R_WAITING": "Ожидание симуляции Rust",
+    "R_CREATE_SETUP_HINT": "Без изменения зерна новая игра продолжает случайную последовательность. Другое зерно явно задаёт новый мир. Новый мир создаётся на паузе.",
+    "R_SEED_HINT": "Применённое зерно: %s. Создание продолжает эту последовательность, если зерно не изменено. Сброс повторяет применённое зерно.",
+    "R_WIDTH_HINT": "Применённая ширина мира: %d. Измените это поле перед созданием.",
+    "R_HEIGHT_HINT": "Применённая высота мира: %d. Измените это поле перед созданием.",
+    "R_ATTEMPTS_HINT": "Применённое число начальных попыток: %d. Численность может измениться после размещения или рождения.",
+    "R_TIMING": "Заданная задержка: %d мс   Последний пакет: %s мс   Ожидающие такты реального времени: %d",
+    "R_SAFETY_DELAY": "Минимальная безопасная задержка: 1 мс; сохранённое значение не изменено",
+    "R_BEHIND_SPEED": "Скорость ниже заданной; переходы симуляции сохраняются",
+    "R_ZOOM": "Масштаб %s%%",
+    "R_PLACE_RANDOM": "Щёлкните по миру, чтобы создать случайный организм. Escape отменяет действие.",
+    "R_PLACE_PASTE": "Щёлкните по миру, чтобы вставить скопированный генотип. Escape отменяет действие.",
+    "R_PLACE_IMPORT": "Щёлкните по миру, чтобы импортировать генотип. Escape отменяет действие.",
+    "R_ERROR": "Ошибка: %s",
+    "R_SETTINGS_RETAINED": "Настройки применены. Для %d неверных значений сохранены прежние значения. Подробности приведены ниже.",
+    "R_PASTE_REQUIRED": "Скопируйте или создайте генотип перед вставкой.",
+    "R_PLACE_FAILED": "Организм нельзя разместить в этой позиции.",
+    "R_IMPORT_PLACE_FAILED": "Импортированный организм нельзя разместить в этой позиции.",
+    "R_TICK": "Тик: ",
+    "R_TARGET_TICKS": "Заданная частота (такты/с): %s",
+    "T_FPS": "FPS:",
+    "T_TIME": "Время:",
+    "T_CURRENT_POPULATION": "Текущая популяция:",
+    "T_O2": "O2:",
+    "T_CO2": "CO2:",
+    "T_CH4": "CH4:",
+    "number_samples": [
+      {
+        "name": "source_integer_zoom_1",
+        "bits": "4045000000000000",
+        "precision": 1,
+        "text": "42,0",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_integer_gas_batch_2",
+        "bits": "4045000000000000",
+        "precision": 2,
+        "text": "42,00",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_fraction_zoom_1",
+        "bits": "400c000000000000",
+        "precision": 1,
+        "text": "3,5",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_fraction_gas_batch_2",
+        "bits": "400c000000000000",
+        "precision": 2,
+        "text": "3,50",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_1_25_zoom_1",
+        "bits": "3ff4000000000000",
+        "precision": 1,
+        "text": "1,2",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_1_25_gas_batch_2",
+        "bits": "3ff4000000000000",
+        "precision": 2,
+        "text": "1,25",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_1_25_zoom_1",
+        "bits": "bff4000000000000",
+        "precision": 1,
+        "text": "-1,2",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_1_25_gas_batch_2",
+        "bits": "bff4000000000000",
+        "precision": 2,
+        "text": "-1,25",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_1_15_zoom_1",
+        "bits": "3ff2666666666666",
+        "precision": 1,
+        "text": "1,1",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_1_15_gas_batch_2",
+        "bits": "3ff2666666666666",
+        "precision": 2,
+        "text": "1,15",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_2_65_zoom_1",
+        "bits": "4005333333333333",
+        "precision": 1,
+        "text": "2,6",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_2_65_gas_batch_2",
+        "bits": "4005333333333333",
+        "precision": 2,
+        "text": "2,65",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_zero_zoom_1",
+        "bits": "0000000000000000",
+        "precision": 1,
+        "text": "0,0",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_zero_gas_batch_2",
+        "bits": "0000000000000000",
+        "precision": 2,
+        "text": "0,00",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_zero_zoom_1",
+        "bits": "8000000000000000",
+        "precision": 1,
+        "text": "-0,0",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_zero_gas_batch_2",
+        "bits": "8000000000000000",
+        "precision": 2,
+        "text": "-0,00",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_large_finite_zoom_1",
+        "bits": "441ac53a7e04bcb0",
+        "precision": 1,
+        "text": "123 456 789 012 344 995 840,0",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_large_finite_gas_batch_2",
+        "bits": "441ac53a7e04bcb0",
+        "precision": 2,
+        "text": "123 456 789 012 344 995 840,00",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_small_finite_zoom_1",
+        "bits": "3de0f782bf7cc83f",
+        "precision": 1,
+        "text": "0,0",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_small_finite_gas_batch_2",
+        "bits": "3de0f782bf7cc83f",
+        "precision": 2,
+        "text": "0,00",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_nan_zoom_1",
+        "bits": "7ff8000000000000",
+        "precision": 1,
+        "text": "не число",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_nan_gas_batch_2",
+        "bits": "7ff8000000000000",
+        "precision": 2,
+        "text": "не число",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_infinity_zoom_1",
+        "bits": "7ff0000000000000",
+        "precision": 1,
+        "text": "∞",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_positive_infinity_gas_batch_2",
+        "bits": "7ff0000000000000",
+        "precision": 2,
+        "text": "∞",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_infinity_zoom_1",
+        "bits": "fff0000000000000",
+        "precision": 1,
+        "text": "-∞",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "source_negative_infinity_gas_batch_2",
+        "bits": "fff0000000000000",
+        "precision": 2,
+        "text": "-∞",
+        "origin": "captured_source_vector"
+      },
+      {
+        "name": "ui_0_zoom_1",
+        "bits": "0000000000000000",
+        "precision": 1,
+        "text": "0,0",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_0_gas_batch_2",
+        "bits": "0000000000000000",
+        "precision": 2,
+        "text": "0,00",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_12_5_zoom_1",
+        "bits": "4029000000000000",
+        "precision": 1,
+        "text": "12,5",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_12_5_gas_batch_2",
+        "bits": "4029000000000000",
+        "precision": 2,
+        "text": "12,50",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_125_zoom_1",
+        "bits": "405f400000000000",
+        "precision": 1,
+        "text": "125,0",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_125_gas_batch_2",
+        "bits": "405f400000000000",
+        "precision": 2,
+        "text": "125,00",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_500_zoom_1",
+        "bits": "407f400000000000",
+        "precision": 1,
+        "text": "500,0",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_500_gas_batch_2",
+        "bits": "407f400000000000",
+        "precision": 2,
+        "text": "500,00",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_1000_zoom_1",
+        "bits": "408f400000000000",
+        "precision": 1,
+        "text": "1 000,0",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_1000_gas_batch_2",
+        "bits": "408f400000000000",
+        "precision": 2,
+        "text": "1 000,00",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_500000_zoom_1",
+        "bits": "411e848000000000",
+        "precision": 1,
+        "text": "500 000,0",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_500000_gas_batch_2",
+        "bits": "411e848000000000",
+        "precision": 2,
+        "text": "500 000,00",
+        "origin": "python_exact_binary64_golden"
+      },
+      {
+        "name": "ui_499500_zoom_1",
+        "bits": "411e7cb000000000",
+        "precision": 1,
+        "text": "499 500,0",
+        "origin": "independent_formatting_vector"
+      },
+      {
+        "name": "ui_499500_gas_batch_2",
+        "bits": "411e7cb000000000",
+        "precision": 2,
+        "text": "499 500,00",
+        "origin": "independent_formatting_vector"
+      }
+    ],
+    "R_ADAPTIVE_TIMING": "Адаптивная задержка: %d мс; текущая цель: %s тактов/с"
+  }
+}

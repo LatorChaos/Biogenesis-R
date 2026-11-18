@@ -1,0 +1,301 @@
+{
+  "incoming.tsv": {
+    "fixture": "incoming.tsv",
+    "sha256": "4df56421af874ab5e17b599bddfca643fddf805a3485d3b5d6ba1e498cdb4480",
+    "bytes": 1647653,
+    "diagnostic_only": false,
+    "row_count": 46662,
+    "row_tags": {
+      "C": 9,
+      "U": 1323,
+      "I": 101,
+      "G": 8820,
+      "N": 13640,
+      "A": 10,
+      "P": 54,
+      "O": 14784,
+      "H": 288,
+      "W": 540,
+      "V": 810,
+      "Q": 96,
+      "S": 2808,
+      "T": 2646,
+      "Y": 270,
+      "R": 54,
+      "K": 45,
+      "B": 1,
+      "E": 9,
+      "F": 336,
+      "D": 10,
+      "J": 8
+    },
+    "cases": [
+      "constructor-orientation-precedes-explicit-paste",
+      "empty-incoming-frame-consumes-no-candidate-draw",
+      "null-queue-entry-defers-the-next-code-until-later-frame",
+      "blocked-eye-candidate-retains-vision-and-fifo-shared-clade",
+      "outside-border-retains-candidate-and-negates-signedzero-each-retry",
+      "origin-death-persists-through-retry-and-later-success",
+      "two-incoming-corridors-see-live-first-arrival-before-tree-indexing",
+      "successful-arrival-is-indexed-and-moved-during-the-same-frame",
+      "forward-first-branch-is-rechecked-with-the-same-candidate"
+    ],
+    "case_count": 9,
+    "snapshots": 54,
+    "calls": {
+      "construct": 1,
+      "paste": 1,
+      "corridor.new": 9,
+      "corridor.frame": 20,
+      "corridor.receive": 11,
+      "time": 3
+    },
+    "actual_call_count": 45,
+    "actor_views": 96,
+    "corridor_views": 48,
+    "actual_identity_discoveries": 10,
+    "schema_eligible_observation_rows": 41295,
+    "supplied_genome_input_rows": 3140,
+    "explicit_collaborator_rows": 396,
+    "other_input_schema_command_metadata_rows": 1831,
+    "exclusions": {
+      "O": {
+        "_visibleWorld": 96,
+        "_world": 96
+      },
+      "V": {
+        "_visibleWorld": 54,
+        "outCorridors": 54
+      },
+      "F": {
+        "connection": 48,
+        "travellingOrganism": 48
+      }
+    },
+    "typed_input_targets": [
+      {
+        "target": "actor:arrival0:bounds",
+        "type": "Rectangle",
+        "uses": 2
+      },
+      {
+        "target": "actor:arrival1:bounds",
+        "type": "Rectangle",
+        "uses": 1
+      },
+      {
+        "target": "actor:blocker:bounds",
+        "type": "Rectangle",
+        "uses": 2
+      },
+      {
+        "target": "corridor:c0:bounds",
+        "type": "Rectangle",
+        "uses": 9
+      },
+      {
+        "target": "corridor:c1:bounds",
+        "type": "Rectangle",
+        "uses": 1
+      },
+      {
+        "target": "genome:g0:construction",
+        "type": "String",
+        "uses": 9
+      },
+      {
+        "target": "genome:g0:gene0._branch",
+        "type": "int",
+        "uses": 1
+      },
+      {
+        "target": "genome:g1:construction",
+        "type": "String",
+        "uses": 9
+      },
+      {
+        "target": "genome:g2:construction",
+        "type": "String",
+        "uses": 9
+      },
+      {
+        "target": "genome:g3:construction",
+        "type": "String",
+        "uses": 9
+      },
+      {
+        "target": "genome:g4:construction",
+        "type": "String",
+        "uses": 9
+      },
+      {
+        "target": "visible:selected",
+        "type": "String",
+        "uses": 9
+      },
+      {
+        "target": "world:_CH4",
+        "type": "double",
+        "uses": 9
+      },
+      {
+        "target": "world:_CO2",
+        "type": "double",
+        "uses": 9
+      },
+      {
+        "target": "world:_O2",
+        "type": "double",
+        "uses": 9
+      },
+      {
+        "target": "world:_corridorexists",
+        "type": "boolean",
+        "uses": 2
+      },
+      {
+        "target": "world:inCorridors",
+        "type": "List",
+        "uses": 2
+      }
+    ],
+    "F_schema": {
+      "_reference": "String",
+      "bounds": "Rectangle",
+      "pendingOrganisms": "Queue",
+      "nextOrganism": "Organism",
+      "world": "World",
+      "travellingOrganism": "Organism",
+      "connection": "Connection"
+    },
+    "logical_owner_projections": [
+      "F.world names the owning World",
+      "V.worldStatistics names its owned statistics object"
+    ],
+    "input_output_separation": "Only G/N input blocks define initial genomes; later G/N/O/F/V rows are observations",
+    "comparison_contract": "Only _m/_m1/_m2/_mass/_I retain prior geometry allowance; all other values/order/identities stay exact",
+    "diagnostic_disposition": "No Rust comparison has occurred"
+  },
+  "incoming_diagnostic.tsv": {
+    "fixture": "incoming_diagnostic.tsv",
+    "sha256": "25a2dfdfe7819594327a556cdb4f7642239645ba506bc928af1662d1407ca1ee",
+    "bytes": 129624,
+    "diagnostic_only": true,
+    "row_count": 3833,
+    "row_tags": {
+      "C": 2,
+      "U": 294,
+      "I": 14,
+      "G": 980,
+      "N": 1080,
+      "A": 1,
+      "P": 5,
+      "O": 770,
+      "H": 15,
+      "W": 50,
+      "V": 75,
+      "Q": 5,
+      "S": 260,
+      "T": 245,
+      "Y": 25,
+      "R": 5,
+      "K": 3,
+      "B": 1,
+      "E": 2,
+      "X": 1
+    },
+    "cases": [
+      "empty-genome-constructor-and-nonorigin-paste",
+      "zero-span-corridor-constructor-rejects-before-candidate-creation"
+    ],
+    "case_count": 2,
+    "snapshots": 5,
+    "calls": {
+      "construct": 1,
+      "paste": 1,
+      "corridor.new": 1
+    },
+    "actual_call_count": 3,
+    "actor_views": 5,
+    "corridor_views": 0,
+    "actual_identity_discoveries": 0,
+    "schema_eligible_observation_rows": 2866,
+    "supplied_genome_input_rows": 600,
+    "explicit_collaborator_rows": 20,
+    "other_input_schema_command_metadata_rows": 347,
+    "exclusions": {
+      "O": {
+        "_visibleWorld": 5,
+        "_world": 5
+      },
+      "V": {
+        "_visibleWorld": 5,
+        "outCorridors": 5
+      },
+      "F": {}
+    },
+    "typed_input_targets": [
+      {
+        "target": "genome:g0:construction",
+        "type": "String",
+        "uses": 2
+      },
+      {
+        "target": "genome:g1:construction",
+        "type": "String",
+        "uses": 2
+      },
+      {
+        "target": "genome:g2:construction",
+        "type": "String",
+        "uses": 2
+      },
+      {
+        "target": "genome:g3:construction",
+        "type": "String",
+        "uses": 2
+      },
+      {
+        "target": "genome:g4:construction",
+        "type": "String",
+        "uses": 2
+      },
+      {
+        "target": "visible:selected",
+        "type": "String",
+        "uses": 1
+      },
+      {
+        "target": "world:_CH4",
+        "type": "double",
+        "uses": 1
+      },
+      {
+        "target": "world:_CO2",
+        "type": "double",
+        "uses": 1
+      },
+      {
+        "target": "world:_O2",
+        "type": "double",
+        "uses": 1
+      }
+    ],
+    "F_schema": {
+      "_reference": "String",
+      "bounds": "Rectangle",
+      "pendingOrganisms": "Queue",
+      "nextOrganism": "Organism",
+      "world": "World",
+      "travellingOrganism": "Organism",
+      "connection": "Connection"
+    },
+    "logical_owner_projections": [
+      "F.world names the owning World",
+      "V.worldStatistics names its owned statistics object"
+    ],
+    "input_output_separation": "Only G/N input blocks define initial genomes; later G/N/O/F/V rows are observations",
+    "comparison_contract": "Only _m/_m1/_m2/_mass/_I retain prior geometry allowance; all other values/order/identities stay exact",
+    "diagnostic_disposition": "Preserve all actual source outcomes as compatibility obligations; no Rust pass or approved rejection"
+  }
+}

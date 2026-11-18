@@ -1,0 +1,287 @@
+{
+  "authority": "Original BioXMLParser.parseGeneticCode with readonly DOM and complete primitive/state observers",
+  "scope": "32 frozen calls; two fresh Original Source processes and one JAR process; no Rust-generated expectations",
+  "Original_actual_peer": {
+    "path": "<project-root>/.workflow-local/xml-parameter-entities-a/reviews/parameter-entities32-original-actual-independent.json",
+    "sha256": "eb833c4fc5e86da8b56266d00e8f990f05d4eb2b8771330b5b3d9d7bfa2df4b1"
+  },
+  "Root_actual": {
+    "path": "<project-root>/.workflow-local/xml-parameter-entities-a/root-original-capture-readback.json",
+    "sha256": "1f4158a07dda2ea97647a9b82b851a5b670cef5f4d00c5b05a39cfa539ff84df"
+  },
+  "observations": {
+    "path": "observations.tsv",
+    "sha256": "b3f23aed0ebd1b1b7f0b35b38857184db5c52c219ff9642eb05b0fe17202a2ff",
+    "bytes": 202302,
+    "rows": 6333,
+    "origin": "<project-root>/.workflow-local/xml-parameter-entities-a/capture-a/execution-a/source-a/capture/observations.tsv"
+  },
+  "calls": 32,
+  "successes": 16,
+  "errors": 16,
+  "stored_Genome_values": 432,
+  "Gene_values": 680,
+  "DOM_present": 17,
+  "DOM_elements": 35,
+  "carrier_rows": 245,
+  "copied_Source_rng_rows": 64,
+  "settings_rows": 4704,
+  "cases": [
+    {
+      "id": 0,
+      "name": "seed-0000",
+      "path": "cases/seed-0000.bgg",
+      "sha256": "1d2957133d3670022f65602ca986e44edd1fa46163ac8a7f0fb49371fe797f42",
+      "bytes": 4794,
+      "origin": "<project-root>/.workflow-local/xml-parameter-entities-a/source-preparation-a/inputs/seed-0000.bgg"
+    },
+    {
+      "id": 1,
+      "name": "internal-entity-attribute",
+      "path": "cases/internal-entity-attribute.bgg",
+      "sha256": "685b38ec10adaf40c7535a428fd72e47fc95f715ac5d5ac2cf018ca5f3d3953f",
+      "bytes": 4822,
+      "origin": "<project-root>/.workflow-local/xml-parameter-entities-a/source-preparation-a/inputs/internal-entity-attribute.bgg"
+    },
+    {
+      "id": 2,
+      "name": "single-empty-gene",
+      "path": "cases/single-empty-gene.bgg",
+      "sha256": "3a01fa8f9a314c32d4b68412d32dfc36cca5e16ca029e5b21b6071f11caefd88",
+      "bytes": 4816,
+      "origin": "<project-root>/.workflow-local/xml-parameter-entities-a/source-preparation-a/inputs/single-empty-gene.bgg"
+    },
+    {
+      "id": 3,
+      "name": "root-entity-literal-lt",
+      "path": "cases/root-entity-literal-lt.bgg",
+      "sha256": "5bbf635ff61ea6053b449947452047cf394d8c29160d3f3557c9da75469a095b",
+      "bytes": 4842,
+      "origin": "<project-root>/.workflow-local/xml-parameter-entities-a/source-preparation-a/inputs/root-entity-literal-lt.bgg"
+    },
+    {
+      "id": 4,
+      "name": "late-entity-syntax-only",
+      "path": "cases/late-entity-syntax-only.bgg",
+      "sha256": "c98258b6a9ac1cfdcb0d49accee71040fb5d52e5642baece460da66043f3bc7e",
+      "bytes": 4839,
+      "origin": "<project-root>/.workflow-local/xml-parameter-entities-a/source-preparation-a/inputs/late-entity-syntax-only.bgg"
+    },
+    {
+      "id": 5,
+      "name": "pe-unused-text",
+      "path": "cases/pe-unused-text.bgg",
+      "sha256": "88e820d93e96003e9ae17d82612e1b0221d5162683d86d3b602f910d7d974611",
+      "bytes": 4831,
+      "origin": "<project-root>/.workflow-local/xml-parameter-entities-a/source-preparation-a/inputs/pe-unused-text.bgg"
+    },
+    {
+      "id": 6,
+      "name": "pe-whole-element",
+      "path": "cases/pe-whole-element.bgg",
+      "sha256": "cf74a251e2be19e92e1a9908c59e1edf1fe083a2a7cf2c982a42d85619e91243",
+      "bytes": 4830,
+      "origin": "<project-root>/.workflow-local/xml-parameter-entities-a/source-preparation-a/inputs/pe-whole-element.bgg"
+    },
+    {
+      "id": 7,
+      "name": "pe-whole-attlist-default",
+      "path": "cases/pe-whole-attlist-default.bgg",
+      "sha256": "1003f8704489814675301496ecfd55199e491545c4d50567be756de3a69f68ed",
+      "bytes": 4877,
+      "origin": "<project-root>/.workflow-local/xml-parameter-entities-a/source-preparation-a/inputs/pe-whole-attlist-default.bgg"
+    },
+    {
+      "id": 8,
+      "name": "pe-general-entity-declaration",
+      "path": "cases/pe-general-entity-declaration.bgg",
+      "sha256": "06494a1848ae4c8975aba3680bb004ee5a9a01a4874fb918015d8716d1e6495f",
+      "bytes": 4852,
+      "origin": "<project-root>/.workflow-local/xml-parameter-entities-a/source-preparation-a/inputs/pe-general-entity-declaration.bgg"
+    },
+    {
+      "id": 9,
+      "name": "pe-repeated-comment-pi",
+      "path": "cases/pe-repeated-comment-pi.bgg",
+      "sha256": "f7fa6af4d0913b97307a0336c75c29cd578fe6daa557c2a422eed72c25f4c73f",
+      "bytes": 4853,
+      "origin": "<project-root>/.workflow-local/xml-parameter-entities-a/source-preparation-a/inputs/pe-repeated-comment-pi.bgg"
+    },
+    {
+      "id": 10,
+      "name": "ordinary-dtd-comment-pi",
+      "path": "cases/ordinary-dtd-comment-pi.bgg",
+      "sha256": "d8b3f0938e308884fc296a07282168680e18df80ed4a939abf9a6b78dbebe230",
+      "bytes": 4853,
+      "origin": "<project-root>/.workflow-local/xml-parameter-entities-a/source-preparation-a/inputs/ordinary-dtd-comment-pi.bgg"
+    },
+    {
+      "id": 11,
+      "name": "pe-nested-encoded-percent",
+      "path": "cases/pe-nested-encoded-percent.bgg",
+      "sha256": "ad24cf66167b5b44bd9896e8b697fb20af53c19edff27b904a7e336cb2dee7df",
+      "bytes": 4909,
+      "origin": "<project-root>/.workflow-local/xml-parameter-entities-a/source-preparation-a/inputs/pe-nested-encoded-percent.bgg"
+    },
+    {
+      "id": 12,
+      "name": "pe-nested-literal-percent",
+      "path": "cases/pe-nested-literal-percent.bgg",
+      "sha256": "b1fcb1f88526b74778cb9f359b3ec901a0de1ced715ac4c6dfcafe2ed5f865c4",
+      "bytes": 4905,
+      "origin": "<project-root>/.workflow-local/xml-parameter-entities-a/source-preparation-a/inputs/pe-nested-literal-percent.bgg"
+    },
+    {
+      "id": 13,
+      "name": "pe-unused-nested-encoded-percent",
+      "path": "cases/pe-unused-nested-encoded-percent.bgg",
+      "sha256": "79e08fa34ee7020a2d9f6e4a58baf0855c62c4ca9a2e2a634f0d493bd3ae8959",
+      "bytes": 4901,
+      "origin": "<project-root>/.workflow-local/xml-parameter-entities-a/source-preparation-a/inputs/pe-unused-nested-encoded-percent.bgg"
+    },
+    {
+      "id": 14,
+      "name": "pe-unused-nested-literal-percent",
+      "path": "cases/pe-unused-nested-literal-percent.bgg",
+      "sha256": "b08e18c6792fffa674899a036dba444f0b9fab7b5dc277eff61989a893a2fe9f",
+      "bytes": 4897,
+      "origin": "<project-root>/.workflow-local/xml-parameter-entities-a/source-preparation-a/inputs/pe-unused-nested-literal-percent.bgg"
+    },
+    {
+      "id": 15,
+      "name": "pe-first-binding-a-b",
+      "path": "cases/pe-first-binding-a-b.bgg",
+      "sha256": "a883b5b709ec38d0fe12a30b3c124dae708bdbf338deea670466af18c76d7072",
+      "bytes": 4935,
+      "origin": "<project-root>/.workflow-local/xml-parameter-entities-a/source-preparation-a/inputs/pe-first-binding-a-b.bgg"
+    },
+    {
+      "id": 16,
+      "name": "pe-forward-before-declaration",
+      "path": "cases/pe-forward-before-declaration.bgg",
+      "sha256": "ba5e68e02a096aebdded31f67990989d9e68beee0641e909da22181b8e3009f2",
+      "bytes": 4823,
+      "origin": "<project-root>/.workflow-local/xml-parameter-entities-a/source-preparation-a/inputs/pe-forward-before-declaration.bgg"
+    },
+    {
+      "id": 17,
+      "name": "pe-recursive-direct",
+      "path": "cases/pe-recursive-direct.bgg",
+      "sha256": "24a8a7d8a1eea528d91115e2883e4f88fee6d9cd80ecf1567aa8003d41adebf7",
+      "bytes": 4831,
+      "origin": "<project-root>/.workflow-local/xml-parameter-entities-a/source-preparation-a/inputs/pe-recursive-direct.bgg"
+    },
+    {
+      "id": 18,
+      "name": "pe-recursive-indirect",
+      "path": "cases/pe-recursive-indirect.bgg",
+      "sha256": "0fabb2220056fce47c911fab6e7107ae54179befe0778874a28a6a643dff29a8",
+      "bytes": 4863,
+      "origin": "<project-root>/.workflow-local/xml-parameter-entities-a/source-preparation-a/inputs/pe-recursive-indirect.bgg"
+    },
+    {
+      "id": 19,
+      "name": "pe-undeclared-reference",
+      "path": "cases/pe-undeclared-reference.bgg",
+      "sha256": "6641294db51b3121f3408a8b3600142bace8d5b1e5cc4272fb73d9b3de52264b",
+      "bytes": 4802,
+      "origin": "<project-root>/.workflow-local/xml-parameter-entities-a/source-preparation-a/inputs/pe-undeclared-reference.bgg"
+    },
+    {
+      "id": 20,
+      "name": "pe-inside-element-declaration",
+      "path": "cases/pe-inside-element-declaration.bgg",
+      "sha256": "614af72cf084970ef1a8aee4c8693b6e57c4212be718960580b0a2f67ce6d2e9",
+      "bytes": 4822,
+      "origin": "<project-root>/.workflow-local/xml-parameter-entities-a/source-preparation-a/inputs/pe-inside-element-declaration.bgg"
+    },
+    {
+      "id": 21,
+      "name": "pe-split-element-declaration",
+      "path": "cases/pe-split-element-declaration.bgg",
+      "sha256": "a3cd6b63339c080f5d4c2f7f728fccb2de963e43af3f3341c848ae09d03025dd",
+      "bytes": 4820,
+      "origin": "<project-root>/.workflow-local/xml-parameter-entities-a/source-preparation-a/inputs/pe-split-element-declaration.bgg"
+    },
+    {
+      "id": 22,
+      "name": "pe-unused-incomplete-declaration",
+      "path": "cases/pe-unused-incomplete-declaration.bgg",
+      "sha256": "2232c4e137ec23abaa716840bb58d5ebcc50252122a3aeb492413e7233dd6d95",
+      "bytes": 4827,
+      "origin": "<project-root>/.workflow-local/xml-parameter-entities-a/source-preparation-a/inputs/pe-unused-incomplete-declaration.bgg"
+    },
+    {
+      "id": 23,
+      "name": "pe-reference-missing-semicolon",
+      "path": "cases/pe-reference-missing-semicolon.bgg",
+      "sha256": "43110f8feee2b6a5060349d1f8f988c2c639dfe40633a6cc9257430a2a0554e4",
+      "bytes": 4818,
+      "origin": "<project-root>/.workflow-local/xml-parameter-entities-a/source-preparation-a/inputs/pe-reference-missing-semicolon.bgg"
+    },
+    {
+      "id": 24,
+      "name": "pe-external-system-unused",
+      "path": "cases/pe-external-system-unused.bgg",
+      "sha256": "be731a4a4aa2534b9b90a009ebad74402e87d9de76017587c3b940bd19b2e764",
+      "bytes": 4861,
+      "origin": "<project-root>/.workflow-local/xml-parameter-entities-a/source-preparation-a/inputs/pe-external-system-unused.bgg"
+    },
+    {
+      "id": 25,
+      "name": "pe-external-system-used",
+      "path": "cases/pe-external-system-used.bgg",
+      "sha256": "528db157e83c9cca316d08fbdb41d7601b5b8fc2582ccfa857a0c3000aece127",
+      "bytes": 4870,
+      "origin": "<project-root>/.workflow-local/xml-parameter-entities-a/source-preparation-a/inputs/pe-external-system-used.bgg"
+    },
+    {
+      "id": 26,
+      "name": "pe-external-public-used",
+      "path": "cases/pe-external-public-used.bgg",
+      "sha256": "9fefe2233e39bf033d4624ec89d7da7e99c9f48998772fe80271172da986cea7",
+      "bytes": 4915,
+      "origin": "<project-root>/.workflow-local/xml-parameter-entities-a/source-preparation-a/inputs/pe-external-public-used.bgg"
+    },
+    {
+      "id": 27,
+      "name": "pe-general-same-name",
+      "path": "cases/pe-general-same-name.bgg",
+      "sha256": "f4e9f6bcb46d4c171ca2cdbdbe1dc074c82edf13e80863bbb1940c63f62ab0d9",
+      "bytes": 4891,
+      "origin": "<project-root>/.workflow-local/xml-parameter-entities-a/source-preparation-a/inputs/pe-general-same-name.bgg"
+    },
+    {
+      "id": 28,
+      "name": "pe-numeric-only",
+      "path": "cases/pe-numeric-only.bgg",
+      "sha256": "d1bebd658e9344b83e7032e8303992884d8c59930ab06945e90da2e93b3c0ee2",
+      "bytes": 4840,
+      "origin": "<project-root>/.workflow-local/xml-parameter-entities-a/source-preparation-a/inputs/pe-numeric-only.bgg"
+    },
+    {
+      "id": 29,
+      "name": "pe-late-declaration-only",
+      "path": "cases/pe-late-declaration-only.bgg",
+      "sha256": "c7cdf5dc17567f74dde01adb60cb7384244920e52722d2ffb34c995ce1315318",
+      "bytes": 4892,
+      "origin": "<project-root>/.workflow-local/xml-parameter-entities-a/source-preparation-a/inputs/pe-late-declaration-only.bgg"
+    },
+    {
+      "id": 30,
+      "name": "pe-late-declaration-and-numeric",
+      "path": "cases/pe-late-declaration-and-numeric.bgg",
+      "sha256": "0aff81228de1801394802c9ddbb2f35178a5a661b083b8a0e5234b57344b0adb",
+      "bytes": 4902,
+      "origin": "<project-root>/.workflow-local/xml-parameter-entities-a/source-preparation-a/inputs/pe-late-declaration-and-numeric.bgg"
+    },
+    {
+      "id": 31,
+      "name": "ordered-pair",
+      "path": "cases/ordered-pair.bgg",
+      "sha256": "3ea62e6b5a866736f59b8cf50c13230a5a0f87b3eb11308b4fec096ea7f05489",
+      "bytes": 5570,
+      "origin": "<project-root>/.workflow-local/xml-parameter-entities-a/source-preparation-a/inputs/ordered-pair.bgg"
+    }
+  ]
+}

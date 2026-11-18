@@ -1,0 +1,142 @@
+{
+  "incoming_empty.tsv": {
+    "fixture": "incoming_empty.tsv",
+    "sha256": "7e8181ff0bef66984b4004b53bb58951948c92063d7ba2f372ff45492de0fb22",
+    "bytes": 389431,
+    "diagnostic_only": false,
+    "row_count": 10720,
+    "row_tags": {
+      "C": 1,
+      "U": 147,
+      "I": 12,
+      "G": 2240,
+      "N": 1920,
+      "A": 1,
+      "P": 15,
+      "O": 4158,
+      "H": 81,
+      "W": 150,
+      "V": 225,
+      "Q": 27,
+      "S": 780,
+      "T": 735,
+      "Y": 75,
+      "R": 15,
+      "K": 14,
+      "F": 98,
+      "D": 1,
+      "J": 24,
+      "E": 1
+    },
+    "cases": [
+      "empty-genome-arrival-retains-zero-mass-state-over-twelve-real-frames"
+    ],
+    "case_count": 1,
+    "snapshots": 15,
+    "calls": {
+      "corridor.new": 1,
+      "corridor.receive": 1,
+      "time": 12
+    },
+    "actual_call_count": 14,
+    "actor_views": 27,
+    "corridor_views": 14,
+    "actual_identity_discoveries": 1,
+    "schema_eligible_observation_rows": 10081,
+    "supplied_genome_input_rows": 260,
+    "explicit_collaborator_rows": 112,
+    "other_input_schema_command_metadata_rows": 267,
+    "exclusions": {
+      "O": {
+        "_visibleWorld": 27,
+        "_world": 27
+      },
+      "V": {
+        "_visibleWorld": 15,
+        "outCorridors": 15
+      },
+      "F": {
+        "connection": 14,
+        "travellingOrganism": 14
+      }
+    },
+    "typed_input_targets": [
+      {
+        "target": "corridor:c0:bounds",
+        "type": "Rectangle",
+        "uses": 1
+      },
+      {
+        "target": "genome:g0:construction",
+        "type": "String",
+        "uses": 1
+      },
+      {
+        "target": "genome:g1:construction",
+        "type": "String",
+        "uses": 1
+      },
+      {
+        "target": "genome:g2:construction",
+        "type": "String",
+        "uses": 1
+      },
+      {
+        "target": "genome:g3:construction",
+        "type": "String",
+        "uses": 1
+      },
+      {
+        "target": "genome:g4:construction",
+        "type": "String",
+        "uses": 1
+      },
+      {
+        "target": "visible:selected",
+        "type": "String",
+        "uses": 1
+      },
+      {
+        "target": "world:_CH4",
+        "type": "double",
+        "uses": 1
+      },
+      {
+        "target": "world:_CO2",
+        "type": "double",
+        "uses": 1
+      },
+      {
+        "target": "world:_O2",
+        "type": "double",
+        "uses": 1
+      },
+      {
+        "target": "world:_corridorexists",
+        "type": "boolean",
+        "uses": 1
+      },
+      {
+        "target": "world:inCorridors",
+        "type": "List",
+        "uses": 1
+      }
+    ],
+    "F_schema": {
+      "_reference": "String",
+      "bounds": "Rectangle",
+      "pendingOrganisms": "Queue",
+      "nextOrganism": "Organism",
+      "world": "World",
+      "travellingOrganism": "Organism",
+      "connection": "Connection"
+    },
+    "logical_owner_projections": [
+      "F.world names the owning World",
+      "V.worldStatistics names its owned statistics object"
+    ],
+    "input_output_separation": "Only G/N input blocks define initial genomes; later G/N/O/F/V rows are observations",
+    "comparison_contract": "Only _m/_m1/_m2/_mass/_I retain prior geometry allowance; all other values/order/identities stay exact",
+    "diagnostic_disposition": "No Rust comparison has occurred"
+  }
+}

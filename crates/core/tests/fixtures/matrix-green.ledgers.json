@@ -1,0 +1,192 @@
+{
+  "status": "FROZEN_SOURCE_PILOT_BEFORE_RUST_REPLAY",
+  "helper_sha256": "bbf0277f122090e08ac80265ea66151f48ec06170cf38a1389f3ce3b31486508",
+  "protocol_sha256": "e4e201514027d8ad7a20f1b8c8fd4f3cd2377b6acbd3b0638294ae120bcdbe80",
+  "fixture_sha256": "cf7e091fa0b016580fd0a473e3a6a0846e04660640427ac36ffb991575b2cce1",
+  "fixture_bytes": 14322404,
+  "rows": 394082,
+  "tags": {
+    "C": 46,
+    "U": 6762,
+    "I": 1196,
+    "G": 60536,
+    "N": 86480,
+    "A": 138,
+    "P": 368,
+    "O": 184184,
+    "H": 3588,
+    "W": 3680,
+    "V": 5520,
+    "Q": 1196,
+    "S": 19136,
+    "T": 18032,
+    "Y": 1932,
+    "R": 368,
+    "K": 322,
+    "J": 414,
+    "B": 46,
+    "D": 92,
+    "E": 46
+  },
+  "cases": 46,
+  "snapshots": 368,
+  "operations": {
+    "symmetric": 92,
+    "bounds": 92,
+    "build_tree": 46,
+    "checkHit": 46,
+    "time": 46
+  },
+  "actual_K": 322,
+  "actor_views": 1196,
+  "discoveries": 92,
+  "eligible_observations": 364136,
+  "logical_owner_projection_rows": 368,
+  "logical_owner_projections": [
+    "V.worldStatistics"
+  ],
+  "runtime_rows_without_owner_projections": 363768,
+  "input_GN": 15640,
+  "collaborators": 3496,
+  "metadata": 10810,
+  "typed_targets": [
+    {
+      "target": "actor:killer:_age",
+      "type": "int",
+      "count": 46
+    },
+    {
+      "target": "actor:killer:_centerX",
+      "type": "int",
+      "count": 46
+    },
+    {
+      "target": "actor:killer:_centerY",
+      "type": "int",
+      "count": 46
+    },
+    {
+      "target": "actor:killer:_dCenterX",
+      "type": "double",
+      "count": 46
+    },
+    {
+      "target": "actor:killer:_dCenterY",
+      "type": "double",
+      "count": 46
+    },
+    {
+      "target": "actor:killer:_energy",
+      "type": "double",
+      "count": 46
+    },
+    {
+      "target": "actor:killer:_growthRatio",
+      "type": "int",
+      "count": 46
+    },
+    {
+      "target": "actor:killer:_theta",
+      "type": "double",
+      "count": 46
+    },
+    {
+      "target": "actor:victim:_age",
+      "type": "int",
+      "count": 46
+    },
+    {
+      "target": "actor:victim:_centerX",
+      "type": "int",
+      "count": 46
+    },
+    {
+      "target": "actor:victim:_centerY",
+      "type": "int",
+      "count": 46
+    },
+    {
+      "target": "actor:victim:_dCenterX",
+      "type": "double",
+      "count": 46
+    },
+    {
+      "target": "actor:victim:_dCenterY",
+      "type": "double",
+      "count": 46
+    },
+    {
+      "target": "actor:victim:_energy",
+      "type": "double",
+      "count": 46
+    },
+    {
+      "target": "actor:victim:_growthRatio",
+      "type": "int",
+      "count": 46
+    },
+    {
+      "target": "actor:victim:_theta",
+      "type": "double",
+      "count": 46
+    },
+    {
+      "target": "actor:victim:dx",
+      "type": "double",
+      "count": 46
+    },
+    {
+      "target": "genome:g0:construction",
+      "type": "String",
+      "count": 46
+    },
+    {
+      "target": "genome:g1:construction",
+      "type": "String",
+      "count": 46
+    },
+    {
+      "target": "genome:g2:construction",
+      "type": "String",
+      "count": 46
+    },
+    {
+      "target": "genome:g3:construction",
+      "type": "String",
+      "count": 46
+    },
+    {
+      "target": "genome:g4:construction",
+      "type": "String",
+      "count": 46
+    },
+    {
+      "target": "visible:selected",
+      "type": "String",
+      "count": 46
+    },
+    {
+      "target": "world:_CH4",
+      "type": "double",
+      "count": 46
+    },
+    {
+      "target": "world:_CO2",
+      "type": "double",
+      "count": 46
+    },
+    {
+      "target": "world:_O2",
+      "type": "double",
+      "count": 46
+    }
+  ],
+  "scope": "Adult geometry with retained pasted physiology and pending update; actual checkHit followed by actual time",
+  "outcomes": {
+    "victim": 45,
+    "~": 1
+  },
+  "identity": "Actual whole-genome/actor/tree identity; existing40field N values, no new per-Gene alias claim",
+  "comparison_contract": "Only O _m/_m1/_m2/_mass/_I retain the existing geometry allowance; every other value/order/identity/RNG exact",
+  "rust_replay": "Not executed"
+}

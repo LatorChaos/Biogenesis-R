@@ -1,0 +1,1781 @@
+{
+  "schema": "biogenesis-r.draining-oracle.v1",
+  "generated_utc": "2026-10-26T05:21:05.004014+00:00",
+  "helper": {
+    "path": "tools/reference/DrainOracle.java",
+    "sha256": "1699649d02602ca2aaede043493dea6561867085dba790f3bd033e41aa665bcc",
+    "compiled_classes": {
+      "source": {
+        "DrainOracle$Action.class": "fbea800b7ec8344df48fcc6b3fab5309ed982b2c1dfb4a0035871fb178c089dc",
+        "DrainOracle$Spec.class": "5ab994037018187351466bc92671d137fec9daace212b40c4e5054c52d07c707",
+        "DrainOracle$Capture.class": "d5624eb2f2a996efda8b109c0165d1b0ecc9409c994c2ba5e4666bfbf65fe74d",
+        "DrainOracle.class": "404910030a34d00ee4fce5179cb19f851e58a9ea8ed5d919c941bb935e8a6b5c"
+      },
+      "jar": {
+        "DrainOracle$Action.class": "fbea800b7ec8344df48fcc6b3fab5309ed982b2c1dfb4a0035871fb178c089dc",
+        "DrainOracle$Spec.class": "5ab994037018187351466bc92671d137fec9daace212b40c4e5054c52d07c707",
+        "DrainOracle$Capture.class": "d5624eb2f2a996efda8b109c0165d1b0ecc9409c994c2ba5e4666bfbf65fe74d",
+        "DrainOracle.class": "404910030a34d00ee4fce5179cb19f851e58a9ea8ed5d919c941bb935e8a6b5c"
+      }
+    },
+    "source_jar_helper_classes_identical": true
+  },
+  "fixture": {
+    "path": "crates/core/tests/fixtures/draining.tsv",
+    "sha256": "feeaf88817ada9b905a2a22efbf3c3f99a5904f750a4782112ede4943c0458c0",
+    "bytes": 43802494,
+    "rows": 1246556,
+    "cases": 449,
+    "snapshots": 901,
+    "actor_views": 2703,
+    "calls": 452,
+    "calls_by_operation": {
+      "touchEffects1.ORANGE": 136,
+      "touchEffects1.FIRE": 108,
+      "touchEffects1.RED": 50,
+      "touchEffects1.PINK": 81,
+      "touchEffects1.MAROON": 77
+    },
+    "row_counts": {
+      "C": 449,
+      "U": 66003,
+      "I": 30552,
+      "G": 189000,
+      "N": 432120,
+      "A": 1347,
+      "P": 901,
+      "O": 416262,
+      "H": 8109,
+      "W": 9010,
+      "S": 46852,
+      "T": 44149,
+      "R": 901,
+      "K": 452,
+      "E": 449
+    },
+    "ledger": {
+      "derived_comparison_observations": 934417,
+      "input_G_N_constructor_checks": 206580,
+      "O_collaborator_exclusions": 5406,
+      "selection_metadata_exclusions": 449,
+      "other_input_schema_command_rows": 99704
+    },
+    "organism_fields_per_actor": 154,
+    "reference_holders_per_actor": 3,
+    "world_values_per_snapshot": 10,
+    "statistics_fields_per_snapshot": 52,
+    "statistics_getters_per_snapshot": 49,
+    "utils_per_case": 147,
+    "genome_fields_including_synthetic": 28,
+    "gene_fields": 40,
+    "source_source_jar_outputs_identical": true,
+    "all_case_rng_suffixes_unchanged": true
+  },
+  "reference": {
+    "manifest": "docs/evidence/reference-manifest.json",
+    "original_hash_size_mode_checks": 74,
+    "source_compile_receipt": ".workflow-local/reference-build/compile.json",
+    "source_compile_receipt_sha256": "4fc1785c218238508d72b89ba883d94bc8a1fa24631e990463dd71502a78e184",
+    "source_sha256": {
+      "Gene": "d070db688526a401c8b55904c06066b2169ca82c76837e3001b4c423bc80e720",
+      "GeneticCode": "f8bf3d0315cec8a2bf515a1626391fe5b646e47566234d398ef58bbdbc3a9004",
+      "Organism": "8650cb0983069dbae09e2ca704059fb82761fa6e0d87f35218c2342ffc60df46",
+      "Utils": "7b3306148684ba111629690a928dcb45abd4825104cfb90b530cd2d0dc6dd2b3",
+      "World": "a67543055a665a9a378e37c860671996e2ca0f510cb622375172a24333d7cae1",
+      "WorldStatistics": "407bcd4bec5e947f26ccfb02a1a590bec6eb9f22f675ad88d9bb974f686ebe15",
+      "VisibleWorld": "b14b41135de13d935f24e42b2f82a72457a015831d1b62f30a26bd5be7faedc5"
+    },
+    "backend_class_sha256": {
+      "Gene": {
+        "compiled_source": "29fe7b153555ded4383072debd0452bed5f92692afd0488a88c297d5f04f6ea8",
+        "bundled_jar": "b307c29cbd73a98cdcbf7d5da9a3ed771fd4d419f6426fbfd41510934c0a7988"
+      },
+      "GeneticCode": {
+        "compiled_source": "4bbf99eaf9006840ecbba0958496372a220ed44c4e57c8341c4de3dc29f3fb30",
+        "bundled_jar": "2aba7f494115279c26bb918dc8156c7ff67af047c2bcb32e35db113f2b87c51e"
+      },
+      "Organism": {
+        "compiled_source": "e8facb409642f0288411785985cbfd96440f644226795f14de24705554a46e22",
+        "bundled_jar": "561d53132aa1765ba766c7d251a98090617c7e9884ae8ed1f9543237e32257f0"
+      },
+      "Utils": {
+        "compiled_source": "67adba4432972ffa3922b6f622d2cc12bf0e703a7dfbf97ae94f3f95387b1884",
+        "bundled_jar": "8f258ba2cb30beea85f44a60ecb4189faf7493f39102712bc9ff1114456e1060"
+      },
+      "World": {
+        "compiled_source": "9091d4e5cae555493971a37a9c8fc77e2250e68db073a120a3a08b57b03e131e",
+        "bundled_jar": "be8067767dc18b46fbd7fd798c5e67e8a58ff6922b78d65eee28ab033360bd33"
+      },
+      "WorldStatistics": {
+        "compiled_source": "ab04358e54edf5120d703f0d980c72a136ab74165e5bbec4b55719ab097c7863",
+        "bundled_jar": "cc5e6f8d4adfb96a41269b4dc7a3ab27224513d8076d68ee42be2ab518e0c236"
+      },
+      "VisibleWorld": {
+        "compiled_source": "f9f559ac40de41b7d84cb6d624b5bcad538ac016d566779bc6c45512c5d68168",
+        "bundled_jar": "b1a0dced3a53afcef5f80132f122ac1ba0baf41f02d3e6e48cb99e4236c1385c"
+      }
+    },
+    "jar_sha256": "0baeae8d29f5fdbbb830c1a9e51c7f2b5314a33011b20ec7471eeaa27f0398e1",
+    "jts_sha256": "00102cde26c457b81fbb0248e4f8845884243caba0dc9b7fb42e0ea877383bc1",
+    "prior_tsv_sha256": {
+      "construction.tsv": "cf9b83da280e3e7aa812ae7cf2caee7293ce805c8109aebaa2891a69227b3336",
+      "geometry.tsv": "364c17c289c7d3f85b4ae3bdf7ce8ddcaac773547b1bb3c14360cae58e766a96",
+      "genetics.tsv": "1fc3f745a83427c499d84884dfdb6864fdc222861feb30488d7083a4a0126b71",
+      "geometry-rebuild.tsv": "a484994dbc4f69d8deb45c0622c127eb5dc5dd95eba1b61a412e015cf8b2a3d8",
+      "organism_state.tsv": "298e7a37eb2983252797a40e45ff721141ba22e6b8cfdaba91a1bfa079552f8b",
+      "paste_rejection.tsv": "73b1fa2480d2211e29cbbb24c4653c18d3a0786c5e0074f84e0c378b0b333db9",
+      "genotype_identity.tsv": "b6a85cb8b2b628a8a8b25c3de2db1445a61433b06c7b66647670c07a1ea0b9ac",
+      "spatial.tsv": "a2cf3205b94144694f6484c81aaa9916f42824766a521c2cb05d2f14f344225a",
+      "birth.tsv": "8b9bcee0ed1232b1d90050587e52cb19548a14f833da63749dcd6c96ccae8a22",
+      "birth_variants.tsv": "ababf3bdecebcfda1c56b99cf08343157b6091e2b95f9ab63010de1c13e04b96",
+      "physics.tsv": "50151aaaeb0de8502bb1e22d0256ce77273e83851713a0b43337b66835de72ff",
+      "gases.tsv": "0ea73389506dce4286389f75388ef55475541bd5062cddd149f619b12cd3b6c8",
+      "movement.tsv": "ca8c5078821d339f6aaabb47e593de0da62e44c59df69bf5d4ee8ee01dc84207",
+      "statistics.tsv": "bcc5c8b489b5591f318486176b2647e816d899ec05af854a077e26fe771bcf8a",
+      "statistics_null_genome.tsv": "049301b93bd1062bc6be3cfdac6b58caff10ccb53d1d58a67ece583676c345c1",
+      "death.tsv": "198a17283df6d96826fef2c6464acf6ad222f1e5234c884ec781b05080941720",
+      "death_invalid.tsv": "5bddabd10826003e147df8c688c3db9d3d99b7c64212685a9ade474b92bcbb62",
+      "infection.tsv": "6155d428aca3a6ef337fec20921db969382f47ff72db00388b1985665424b704",
+      "infection_callback.tsv": "02749c101e2f597c4fc42e24f32f6c0e76f5cc1ae320a826dd7dabfc88e982e3",
+      "maintenance.tsv": "266e604b25a4f1e238e3c07131e5d1e42d1a1e73192adb52723e144bc43e8bb9",
+      "reproduction.tsv": "3067af9973d1539781dd72ade76e33e9dda0303dd9aa69f467b7aa13e6277441",
+      "transformation.tsv": "92c7be8b067132fa8fc22fe57416c0d11004028c26189c00195a04eb937797db",
+      "thresholds.tsv": "07a1fa146dd5ed0724447a773ba7267f3b43dd2f93a25a942af88328320f0cad",
+      "contact_state.tsv": "30297653120fdc9817a361992dbedd835e00268584fc4f4f68eed544f7fe47c4",
+      "contact_support.tsv": "931b7133bea398aef9a84947a0332f6d813aea3eff0197066e140c7cf95e195a",
+      "reactions.tsv": "6aa930bec22711537fda10da041a6971640b7acadc23b4777b57305b7a6bc2cd",
+      "frame_effects.tsv": "c10f443f099194aa94f957a771490087674eecf8f4cdc74f79e95a759da4a00d",
+      "coral.tsv": "b7588817c0c488880bbc19b7dfb7fb41bb44c05e56c0fcb8cfe03d8c3d5f2124"
+    }
+  },
+  "execution": {
+    "raw_receipts": ".workflow-local/drain-oracle-ouhcozr9/commands.json",
+    "raw_receipts_sha256": "6dceb6c6ead0855a6ff37039ed87a87a11be2db4f362bd28ce48272f1baa10b2",
+    "versions": {
+      "java": "openjdk version \"21.0.12.1\" 2026-08-18\nOpenJDK Runtime Environment (build 21.0.12.1+1)\nOpenJDK 64-Bit Server VM (build 21.0.12.1+1, mixed mode, sharing)\n",
+      "javac": "javac 21.0.12.1\n"
+    },
+    "compile_commands": [
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/javac",
+          "-encoding",
+          "UTF-8",
+          "-cp",
+          "<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "-d",
+          "<project-root>/.workflow-local/drain-oracle-ouhcozr9/helpers-source",
+          "<project-root>/tools/reference/DrainOracle.java"
+        ],
+        "cwd": "<project-root>/.workflow-local/drain-oracle-ouhcozr9",
+        "pid": 52,
+        "process_group": 52,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.6028333680005744,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/javac",
+          "-encoding",
+          "UTF-8",
+          "-cp",
+          "<reference-root>/ColorMod_2_01/biogenesis.jar:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "-d",
+          "<project-root>/.workflow-local/drain-oracle-ouhcozr9/helpers-jar",
+          "<project-root>/tools/reference/DrainOracle.java"
+        ],
+        "cwd": "<project-root>/.workflow-local/drain-oracle-ouhcozr9",
+        "pid": 81,
+        "process_group": 81,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.6190017170010833,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "positive_runs": [
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/drain-oracle-ouhcozr9/source-a/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/drain-oracle-ouhcozr9/source-a/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/drain-oracle-ouhcozr9/source-a/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/drain-oracle-ouhcozr9/source-a/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/drain-oracle-ouhcozr9/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.DrainOracle",
+          "<project-root>/.workflow-local/drain-oracle-ouhcozr9/source-a/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/drain-oracle-ouhcozr9/source-a",
+        "pid": 110,
+        "process_group": 110,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 1.4126667360033025,
+        "stdout": "DRAIN_ORACLE PASS cases=449 snapshots=901 calls=452\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/drain-oracle-ouhcozr9/source-b/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/drain-oracle-ouhcozr9/source-b/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/drain-oracle-ouhcozr9/source-b/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/drain-oracle-ouhcozr9/source-b/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/drain-oracle-ouhcozr9/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.DrainOracle",
+          "<project-root>/.workflow-local/drain-oracle-ouhcozr9/source-b/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/drain-oracle-ouhcozr9/source-b",
+        "pid": 147,
+        "process_group": 147,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 1.443902202998288,
+        "stdout": "DRAIN_ORACLE PASS cases=449 snapshots=901 calls=452\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/drain-oracle-ouhcozr9/jar/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/drain-oracle-ouhcozr9/jar/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/drain-oracle-ouhcozr9/jar/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/drain-oracle-ouhcozr9/jar/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/drain-oracle-ouhcozr9/helpers-jar:<reference-root>/ColorMod_2_01/biogenesis.jar:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.DrainOracle",
+          "<project-root>/.workflow-local/drain-oracle-ouhcozr9/jar/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/drain-oracle-ouhcozr9/jar",
+        "pid": 185,
+        "process_group": 185,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 1.5934690680005588,
+        "stdout": "DRAIN_ORACLE PASS cases=449 snapshots=901 calls=452\n",
+        "stderr": ""
+      }
+    ],
+    "negative_guard_commands": [
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/drain-oracle-ouhcozr9/omit-user.home/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/drain-oracle-ouhcozr9/omit-user.home/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/drain-oracle-ouhcozr9/omit-user.home/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/drain-oracle-ouhcozr9/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.DrainOracle",
+          "<project-root>/.workflow-local/drain-oracle-ouhcozr9/omit-user.home/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/drain-oracle-ouhcozr9/omit-user.home",
+        "pid": 224,
+        "process_group": 224,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.033876590998261236,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: user.home\n\tat biogenesis.DrainOracle.require(DrainOracle.java:168)\n\tat biogenesis.DrainOracle.main(DrainOracle.java:376)\n"
+      },
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/drain-oracle-ouhcozr9/omit-java.io.tmpdir/home",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/drain-oracle-ouhcozr9/omit-java.io.tmpdir/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/drain-oracle-ouhcozr9/omit-java.io.tmpdir/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/drain-oracle-ouhcozr9/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.DrainOracle",
+          "<project-root>/.workflow-local/drain-oracle-ouhcozr9/omit-java.io.tmpdir/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/drain-oracle-ouhcozr9/omit-java.io.tmpdir",
+        "pid": 242,
+        "process_group": 242,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.02851542700227583,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: java.io.tmpdir\n\tat biogenesis.DrainOracle.require(DrainOracle.java:168)\n\tat biogenesis.DrainOracle.main(DrainOracle.java:376)\n"
+      },
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/drain-oracle-ouhcozr9/omit-java.util.prefs.userRoot/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/drain-oracle-ouhcozr9/omit-java.util.prefs.userRoot/tmp",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/drain-oracle-ouhcozr9/omit-java.util.prefs.userRoot/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/drain-oracle-ouhcozr9/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.DrainOracle",
+          "<project-root>/.workflow-local/drain-oracle-ouhcozr9/omit-java.util.prefs.userRoot/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/drain-oracle-ouhcozr9/omit-java.util.prefs.userRoot",
+        "pid": 260,
+        "process_group": 260,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.028704688003927004,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: java.util.prefs.userRoot\n\tat biogenesis.DrainOracle.require(DrainOracle.java:168)\n\tat biogenesis.DrainOracle.main(DrainOracle.java:376)\n"
+      },
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/drain-oracle-ouhcozr9/omit-java.util.prefs.systemRoot/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/drain-oracle-ouhcozr9/omit-java.util.prefs.systemRoot/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/drain-oracle-ouhcozr9/omit-java.util.prefs.systemRoot/prefs-user",
+          "-cp",
+          "<project-root>/.workflow-local/drain-oracle-ouhcozr9/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.DrainOracle",
+          "<project-root>/.workflow-local/drain-oracle-ouhcozr9/omit-java.util.prefs.systemRoot/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/drain-oracle-ouhcozr9/omit-java.util.prefs.systemRoot",
+        "pid": 278,
+        "process_group": 278,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.02648671499628108,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: java.util.prefs.systemRoot\n\tat biogenesis.DrainOracle.require(DrainOracle.java:168)\n\tat biogenesis.DrainOracle.main(DrainOracle.java:376)\n"
+      },
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/drain-oracle-ouhcozr9/escaped-profile/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/drain-oracle-ouhcozr9/escaped-profile/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/drain-oracle-ouhcozr9/escaped-profile/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/drain-oracle-ouhcozr9/escaped-profile/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/drain-oracle-ouhcozr9/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.DrainOracle",
+          "<project-root>/.workflow-local/drain-oracle-ouhcozr9/escaped-profile/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/drain-oracle-ouhcozr9/escaped-profile",
+        "pid": 296,
+        "process_group": 296,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.028346692000923213,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: java.util.prefs.userRoot\n\tat biogenesis.DrainOracle.require(DrainOracle.java:168)\n\tat biogenesis.DrainOracle.main(DrainOracle.java:376)\n"
+      },
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/drain-oracle-ouhcozr9/source-a/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/drain-oracle-ouhcozr9/source-a/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/drain-oracle-ouhcozr9/source-a/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/drain-oracle-ouhcozr9/source-a/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/drain-oracle-ouhcozr9/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.DrainOracle",
+          "<project-root>/.workflow-local/drain-oracle-ouhcozr9/source-a/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/drain-oracle-ouhcozr9/source-a",
+        "pid": 314,
+        "process_group": 314,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.03655947899824241,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Output directory must not exist\n\tat biogenesis.DrainOracle.require(DrainOracle.java:168)\n\tat biogenesis.DrainOracle.main(DrainOracle.java:378)\n"
+      }
+    ],
+    "negative_guard_results": [
+      {
+        "condition": "omit-user.home",
+        "exit_code": 1,
+        "output_preserved": true
+      },
+      {
+        "condition": "omit-java.io.tmpdir",
+        "exit_code": 1,
+        "output_preserved": true
+      },
+      {
+        "condition": "omit-java.util.prefs.userRoot",
+        "exit_code": 1,
+        "output_preserved": true
+      },
+      {
+        "condition": "omit-java.util.prefs.systemRoot",
+        "exit_code": 1,
+        "output_preserved": true
+      },
+      {
+        "condition": "escaped-profile",
+        "exit_code": 1,
+        "output_preserved": true
+      },
+      {
+        "condition": "existing-output",
+        "exit_code": 1,
+        "output_preserved": true
+      }
+    ],
+    "positive_timeout_seconds": 120,
+    "negative_timeout_seconds": 30,
+    "process_group_runner": "tools/run_reference_oracles.py:run_command",
+    "allowlisted_environment": [
+      "PATH",
+      "LANG",
+      "HOME",
+      "TMPDIR"
+    ],
+    "original_preservation_checks_passed": true,
+    "prior_fixture_checks_passed": true,
+    "prior_fixture_count": 28,
+    "original_java_modified": false
+  },
+  "comparison_contract": {
+    "declared_before_Rust_comparison": true,
+    "exact": "All nongeometry scalars, velocities, effects, gases, statistics, endpoints, bounds, ARGB, reactions, identity, order, and RNG.",
+    "geometry_only_O_fields": [
+      "_m",
+      "_m1",
+      "_m2",
+      "_mass",
+      "_I"
+    ],
+    "geometry_finite_tolerance": "1e-10 * max(1, abs(expected))",
+    "geometry_nonfinite": "Explicit NaN classification and signed infinity for those five fields only.",
+    "expectation_authority": "Original pinned touchEffects1 calls, reflection, actual world/statistics getters, and cloned Random observations.",
+    "constructor_authority": "Only initial input G/N recipes and explicit I/A controls construct the original model.",
+    "dispatch_guard": "Before each call, the selected actor segment must equal the labelled exact ARGB.",
+    "static_genome_identity_pool": [
+      "g0",
+      "g1",
+      "g2",
+      "g3",
+      "g4"
+    ],
+    "new_identity_policy": "Fail on unknown genotype references or unexpected world membership changes.",
+    "gene_identity_limit": "Per-Gene mutable-object identity remains covered by the separate genetics oracle.",
+    "Rust_replay_claimed": false
+  },
+  "explicit_exclusions": {
+    "O": {
+      "fields": [
+        "_world",
+        "_visibleWorld"
+      ],
+      "rows": 5406
+    },
+    "I": {
+      "target": "visible:selected",
+      "rows": 449
+    },
+    "other_unsupported_or_diagnostic_rows": 0,
+    "V_Q_J_rows": 0
+  },
+  "coverage": {
+    "baseline_cases": 134,
+    "focused_cases": 315,
+    "numeric_payment_family_cases": 120,
+    "orange_palette_cases": 66,
+    "other_baseline_peer_groups": {
+      "FIRE": 28,
+      "RED": 11,
+      "PINK": 13,
+      "MAROON": 16
+    },
+    "selected_actor_branches": [
+      "ORANGE",
+      "FIRE",
+      "RED",
+      "PINK",
+      "MAROON"
+    ],
+    "three_real_actors": true,
+    "no_new_genotype_or_member": true,
+    "all_gene_values_unchanged": true,
+    "ordered_second_calls": [
+      "pink-oldbark-prime-then-drain",
+      "maroon-oldbark-prime-then-drain",
+      "red-death-statistics-retains-live-code"
+    ],
+    "input_identity_recipes": [
+      "g0/g1/g2 explicit",
+      "g3 ordinarily clone:g0",
+      "g4 clone:g0",
+      "labelled g3 clone:g1",
+      "labelled killer A shares g0"
+    ],
+    "baseline_costs": {
+      "ORANGE_ENERGY_CONSUMPTION": 0.125,
+      "FIRE_ENERGY_CONSUMPTION": 0.25,
+      "RED_ENERGY_CONSUMPTION": 0.5,
+      "PINK_ENERGY_CONSUMPTION": 1.0,
+      "MAROON_ENERGY_CONSUMPTION": 2.0,
+      "BLUE_ENERGY_CONSUMPTION": 0.375,
+      "DODGE_ENERGY_CONSUMPTION": 0.625,
+      "SKY_ENERGY_CONSUMPTION": 0.75
+    },
+    "source_methods": {
+      "touchEffects1": "Organism.java:8690",
+      "ORANGE": "Organism.java:8692-9102",
+      "FIRE": "Organism.java:9103-9738",
+      "RED": "Organism.java:9739-9880",
+      "PINK": "Organism.java:9881-10199",
+      "MAROON": "Organism.java:10200-10526",
+      "common_peer_guard": "Organism.java:13105-13108"
+    },
+    "case_names": [
+      "palette-ORANGE-RED",
+      "palette-ORANGE-GREEN",
+      "palette-ORANGE-BLUE",
+      "palette-ORANGE-CYAN",
+      "palette-ORANGE-WHITE",
+      "palette-ORANGE-GRAY",
+      "palette-ORANGE-MAGENTA",
+      "palette-ORANGE-PINK",
+      "palette-ORANGE-CORAL",
+      "palette-ORANGE-ORANGE",
+      "palette-ORANGE-FOREST",
+      "palette-ORANGE-SPRING",
+      "palette-ORANGE-LEAF",
+      "palette-ORANGE-SUMMER",
+      "palette-ORANGE-LIME",
+      "palette-ORANGE-BARK",
+      "palette-ORANGE-VIOLET",
+      "palette-ORANGE-TEAL",
+      "palette-ORANGE-EYE",
+      "palette-ORANGE-MAROON",
+      "palette-ORANGE-OLIVE",
+      "palette-ORANGE-MINT",
+      "palette-ORANGE-CREAM",
+      "palette-ORANGE-ROSE",
+      "palette-ORANGE-DARK",
+      "palette-ORANGE-OCHRE",
+      "palette-ORANGE-SKY",
+      "palette-ORANGE-LILAC",
+      "palette-ORANGE-SILVER",
+      "palette-ORANGE-FIRE",
+      "palette-ORANGE-DARKGRAY",
+      "palette-ORANGE-GOLD",
+      "palette-ORANGE-BLOND",
+      "palette-ORANGE-FLOWER",
+      "palette-ORANGE-AUBURN",
+      "palette-ORANGE-PLAGUE",
+      "palette-ORANGE-SPIKE",
+      "palette-ORANGE-INDIGO",
+      "palette-ORANGE-LAVENDER",
+      "palette-ORANGE-FALLOW",
+      "palette-ORANGE-SPORE",
+      "palette-ORANGE-JADE",
+      "palette-ORANGE-C4",
+      "palette-ORANGE-GRASS",
+      "palette-ORANGE-PURPLE",
+      "palette-ORANGE-YELLOW",
+      "palette-ORANGE-WINTER",
+      "palette-ORANGE-OLDBARK",
+      "palette-ORANGE-DARKJADE",
+      "palette-ORANGE-DARKGREEN",
+      "palette-ORANGE-DARKFIRE",
+      "palette-ORANGE-DARKLILAC",
+      "palette-ORANGE-DEEPSKY",
+      "palette-ORANGE-DARKOLIVE",
+      "palette-ORANGE-SPIKEPOINT",
+      "palette-ORANGE-FRUIT",
+      "palette-ORANGE-VISION",
+      "palette-ORANGE-ICE",
+      "palette-ORANGE-LIGHT_BLUE",
+      "palette-ORANGE-LIGHTBROWN",
+      "palette-ORANGE-GREENBROWN",
+      "palette-ORANGE-BROKEN",
+      "palette-ORANGE-DEADBARK",
+      "palette-ORANGE-BROWN",
+      "palette-ORANGE-UNKNOWN",
+      "palette-ORANGE-TRANSLUCENT_MAGENTA",
+      "baseline-FIRE-WHITE",
+      "baseline-FIRE-GRASS",
+      "baseline-FIRE-GREEN",
+      "baseline-FIRE-YELLOW",
+      "baseline-FIRE-RED",
+      "baseline-FIRE-FIRE",
+      "baseline-FIRE-ORANGE",
+      "baseline-FIRE-SPIKE",
+      "baseline-FIRE-SILVER",
+      "baseline-FIRE-PINK",
+      "baseline-FIRE-MAROON",
+      "baseline-FIRE-CREAM",
+      "baseline-FIRE-FALLOW",
+      "baseline-FIRE-PLAGUE",
+      "baseline-FIRE-BLUE",
+      "baseline-FIRE-LIGHT_BLUE",
+      "baseline-FIRE-SKY",
+      "baseline-FIRE-DEEPSKY",
+      "baseline-FIRE-VIOLET",
+      "baseline-FIRE-FRUIT",
+      "baseline-FIRE-ICE",
+      "baseline-FIRE-BARK",
+      "baseline-FIRE-OLDBARK",
+      "baseline-FIRE-LIGHTBROWN",
+      "baseline-FIRE-BROWN",
+      "baseline-FIRE-GREENBROWN",
+      "baseline-FIRE-MINT",
+      "baseline-FIRE-UNKNOWN",
+      "baseline-RED-RED",
+      "baseline-RED-FIRE",
+      "baseline-RED-ORANGE",
+      "baseline-RED-SILVER",
+      "baseline-RED-SPIKE",
+      "baseline-RED-SPIKEPOINT",
+      "baseline-RED-GRAY",
+      "baseline-RED-CREAM",
+      "baseline-RED-LILAC",
+      "baseline-RED-BARK",
+      "baseline-RED-UNKNOWN",
+      "baseline-PINK-PINK",
+      "baseline-PINK-WHITE",
+      "baseline-PINK-FRUIT",
+      "baseline-PINK-CREAM",
+      "baseline-PINK-GREENBROWN",
+      "baseline-PINK-DEADBARK",
+      "baseline-PINK-DARKFIRE",
+      "baseline-PINK-CORAL",
+      "baseline-PINK-BROWN",
+      "baseline-PINK-PLAGUE",
+      "baseline-PINK-OLDBARK",
+      "baseline-PINK-BARK",
+      "baseline-PINK-UNKNOWN",
+      "baseline-MAROON-WHITE",
+      "baseline-MAROON-GRASS",
+      "baseline-MAROON-GREEN",
+      "baseline-MAROON-BLUE",
+      "baseline-MAROON-PLAGUE",
+      "baseline-MAROON-FRUIT",
+      "baseline-MAROON-BROKEN",
+      "baseline-MAROON-OLDBARK",
+      "baseline-MAROON-BARK",
+      "baseline-MAROON-CYAN",
+      "baseline-MAROON-SILVER",
+      "baseline-MAROON-SPIKEPOINT",
+      "baseline-MAROON-MINT",
+      "baseline-MAROON-SKY",
+      "baseline-MAROON-GREENBROWN",
+      "baseline-MAROON-UNKNOWN",
+      "orange-white-_isaplant",
+      "orange-white-_isaconsumer",
+      "orange-white-_isafungus",
+      "orange-white-_isauburn",
+      "orange-white-plague--1",
+      "orange-white-plague-1",
+      "orange-violet-classified",
+      "orange-yellow-_isaconsumer",
+      "orange-yellow-_isafungus",
+      "orange-yellow-_isaplant",
+      "orange-yellow-_transfersenergy",
+      "silver-enhanced-ORANGE",
+      "silver-positive-kill-ORANGE-_isaconsumer",
+      "silver-positive-kill-ORANGE-_isafungus",
+      "silver-negative-kill-ORANGE",
+      "silver-enhanced-FIRE",
+      "silver-positive-kill-FIRE-_isaconsumer",
+      "silver-positive-kill-FIRE-_isafungus",
+      "silver-negative-kill-FIRE",
+      "silver-enhanced-RED",
+      "silver-positive-kill-RED-_isaconsumer",
+      "silver-positive-kill-RED-_isafungus",
+      "silver-negative-kill-RED",
+      "orange-coral-consumer",
+      "orange-plague-infectious",
+      "orange-spike-_isaplant",
+      "orange-spike-_isenhanced",
+      "orange-fallow-ordinary-enhanced-2",
+      "orange-fallow-ordinary-enhanced-3",
+      "orange-fallow-plant-weak",
+      "orange-fallow-plant-enhanced",
+      "orange-fallow-infectious-3",
+      "orange-fallow-infectious-4",
+      "blue-enhanced-retaliation-ORANGE",
+      "blue-failed-shield-energy-ORANGE",
+      "blue-failed-shield-oxygen-ORANGE",
+      "blue-both-deaths-wrap-ORANGE",
+      "dodge-success-ORANGE-GREEN",
+      "dodge-success-ORANGE-GRASS",
+      "dodge-partial-before-attack-ORANGE",
+      "dodge-already-marked-ORANGE",
+      "healer-altruist-ORANGE",
+      "fruit-infection-ORANGE",
+      "fruit-shared-infection-ORANGE",
+      "blue-enhanced-retaliation-FIRE",
+      "blue-failed-shield-energy-FIRE",
+      "blue-failed-shield-oxygen-FIRE",
+      "blue-both-deaths-wrap-FIRE",
+      "dodge-success-FIRE-GREEN",
+      "dodge-success-FIRE-GRASS",
+      "dodge-partial-before-attack-FIRE",
+      "dodge-already-marked-FIRE",
+      "healer-altruist-FIRE",
+      "fruit-infection-FIRE",
+      "fruit-shared-infection-FIRE",
+      "blue-enhanced-retaliation-MAROON",
+      "blue-failed-shield-energy-MAROON",
+      "blue-failed-shield-oxygen-MAROON",
+      "blue-both-deaths-wrap-MAROON",
+      "dodge-success-MAROON-GREEN",
+      "dodge-success-MAROON-GRASS",
+      "dodge-partial-before-attack-MAROON",
+      "dodge-already-marked-MAROON",
+      "healer-altruist-MAROON",
+      "fruit-infection-MAROON",
+      "fruit-shared-infection-MAROON",
+      "lightblue-failed-shield-ORANGE",
+      "sky-partial-shield-ORANGE",
+      "bark-inactive-ORANGE",
+      "lightblue-failed-shield-FIRE",
+      "sky-partial-shield-FIRE",
+      "bark-inactive-FIRE",
+      "orange-fruit-enhanced",
+      "orange-fruit-value-equal-distinct-code",
+      "orange-fruit-shared-primary-code",
+      "orange-ice-own-sky",
+      "orange-ice-own-enhanced",
+      "fire-consumer-full-WHITE",
+      "fire-consumer-full-GRASS",
+      "fire-consumer-full-GREEN",
+      "fire-consumer-full-YELLOW",
+      "fire-consumer-full-SILVER",
+      "fire-consumer-full-VIOLET",
+      "fire-consumer-full-GREENBROWN",
+      "fire-consumer-full-MINT",
+      "fire-consumer-full-UNKNOWN",
+      "fire-own-sky-frozen-plant",
+      "fire-yellow-transfer",
+      "fire-spike-weak-plant",
+      "fire-spike-full-enhanced-consumer",
+      "fire-pink-modified-gray",
+      "fire-pink-modified-without-gray",
+      "fire-cream-modified-enhanced",
+      "fire-fallow-infectious-four-false",
+      "fire-fallow-infectious-four-true",
+      "fire-fallow-plant-weak",
+      "fire-plague-infectious-false",
+      "fire-plague-infectious-true",
+      "fire-enhanced-sky-gate-SKY-1",
+      "fire-enhanced-sky-gate-SKY-2",
+      "fire-enhanced-sky-gate-DEEPSKY-1",
+      "fire-enhanced-sky-gate-DEEPSKY-2",
+      "fire-violet-fungus",
+      "fire-violet-plant",
+      "fire-violet-enhanced-peer-blocks",
+      "fire-violet-infectious-peer-bypasses",
+      "fire-violet-enhanced-actor-blocks",
+      "fire-ice-plant",
+      "fire-ice-ordinary",
+      "fire-ice-enhanced-without-sky",
+      "fire-brown-false-false",
+      "fire-brown-false-true",
+      "fire-brown-true-false",
+      "fire-brown-true-true",
+      "fire-greenbrown-enhanced-weak",
+      "maroon-enhanced-blue-actor-skips-retaliation",
+      "red-spike-enhanced-peer",
+      "red-spikepoint-both-enhanced",
+      "red-spikepoint-peer-only",
+      "red-gray-consumer-false",
+      "red-gray-consumer-true",
+      "red-cream-enhanced-ordinary",
+      "red-cream-enhanced-modified",
+      "red-lilac-enhanced-fungus",
+      "pink-modifier-pair-false-true",
+      "pink-modifier-pair-true-false",
+      "pink-modifier-pair-true-true",
+      "pink-fruit-weak",
+      "pink-fruit-indigo-blocks",
+      "pink-fruit-negative-indigo-blocks",
+      "pink-fruit-modified-overrides-indigo",
+      "pink-fruit-blond-overrides-indigo",
+      "pink-fruit-already-infected",
+      "pink-cream-enhanced-modified",
+      "pink-cream-inactive-modified",
+      "pink-cream-active-modified",
+      "pink-injury-modified",
+      "pink-injury-blond-plant",
+      "pink-injury-blond-nonplant",
+      "pink-injury-frozen",
+      "pink-injury-inactive",
+      "pink-deadbark-blond",
+      "pink-deadbark-frozen-own-sky",
+      "pink-deadbark-frozen-without-sky",
+      "pink-darkfire-classified-_isaplant",
+      "pink-darkfire-classified-_isaconsumer",
+      "pink-darkfire-classified-_isafungus",
+      "pink-darkfire-modified-classified",
+      "pink-darkfire-inactive-classified",
+      "pink-coral-modified-false",
+      "pink-coral-modified-true",
+      "pink-brown-gray-protection",
+      "pink-brown-gray-modified",
+      "pink-brown-enhanced-peer",
+      "pink-brown-inactive-live-peer",
+      "pink-old-corpse-shift-boundary-1023",
+      "pink-old-corpse-shift-boundary-1024",
+      "pink-old-corpse-wrapped-max-age",
+      "pink-old-corpse-without-fallow",
+      "pink-plague-infectious",
+      "pink-oldbark-prime-then-drain",
+      "pink-oldbark-active-enhanced-positive-timer-false",
+      "pink-oldbark-active-enhanced-positive-timer-true",
+      "pink-oldbark-active-enhanced-blond",
+      "pink-oldbark-ordinary-peer",
+      "pink-oldbark-modified-ordinary-peer",
+      "pink-oldbark-inactive-enhanced-peer",
+      "maroon-plant-white",
+      "maroon-plant-plague-false",
+      "maroon-plant-plague-true",
+      "maroon-inactive-broken",
+      "maroon-plant-broken",
+      "maroon-oldbark-prime-then-drain",
+      "maroon-oldbark-positive-timer",
+      "maroon-oldbark-inactive-false",
+      "maroon-oldbark-inactive-true",
+      "maroon-bark-inactive-false",
+      "maroon-bark-inactive-true",
+      "maroon-enhanced-plant-CYAN",
+      "maroon-enhanced-plant-MINT",
+      "maroon-enhanced-plant-SKY",
+      "maroon-enhanced-plant-GREENBROWN",
+      "maroon-enhanced-plant-dodges",
+      "maroon-enhanced-plant-sky-fails",
+      "maroon-plant-without-enhancement",
+      "maroon-enhanced-without-plant",
+      "maroon-enhanced-plant-silver",
+      "maroon-enhanced-plant-silver-enhanced-peer",
+      "maroon-enhanced-plant-silver-killer",
+      "maroon-enhanced-plant-spikepoint",
+      "maroon-enhanced-plant-spikepoint-enhanced-peer",
+      "zero-cost-and-byproduct-ORANGE",
+      "full-byproduct-ORANGE",
+      "zero-organic-yield-ORANGE",
+      "payment-partial-oxygen-ORANGE",
+      "payment-exact-oxygen-ORANGE",
+      "payment-empty-oxygen-ORANGE",
+      "payment-negative-oxygen-ORANGE",
+      "payment-nan-oxygen-ORANGE",
+      "payment-infinite-oxygen-ORANGE",
+      "payment-insufficient-energy-ORANGE",
+      "payment-exact-energy-ORANGE",
+      "payment-negative-energy-ORANGE",
+      "payment-nan-energy-ORANGE",
+      "payment-infinite-energy-ORANGE",
+      "target-nan-energy-ORANGE",
+      "target-infinite-energy-ORANGE",
+      "target-negative-energy-ORANGE",
+      "ignored-target-death-boundary-ORANGE-3e7ad7f29abcaf47",
+      "ignored-target-death-boundary-ORANGE-3e7ad7f29abcaf48",
+      "controlled-length-ORANGE-bff0000000000000",
+      "controlled-length-ORANGE-8000000000000000",
+      "controlled-length-ORANGE-7ff0000000000000",
+      "controlled-length-ORANGE-fff8000000000042",
+      "constructed-zero-length-ORANGE",
+      "zero-cost-and-byproduct-FIRE",
+      "full-byproduct-FIRE",
+      "zero-organic-yield-FIRE",
+      "payment-partial-oxygen-FIRE",
+      "payment-exact-oxygen-FIRE",
+      "payment-empty-oxygen-FIRE",
+      "payment-negative-oxygen-FIRE",
+      "payment-nan-oxygen-FIRE",
+      "payment-infinite-oxygen-FIRE",
+      "payment-insufficient-energy-FIRE",
+      "payment-exact-energy-FIRE",
+      "payment-negative-energy-FIRE",
+      "payment-nan-energy-FIRE",
+      "payment-infinite-energy-FIRE",
+      "target-nan-energy-FIRE",
+      "target-infinite-energy-FIRE",
+      "target-negative-energy-FIRE",
+      "ignored-target-death-boundary-FIRE-3e7ad7f29abcaf47",
+      "ignored-target-death-boundary-FIRE-3e7ad7f29abcaf48",
+      "controlled-length-FIRE-bff0000000000000",
+      "controlled-length-FIRE-8000000000000000",
+      "controlled-length-FIRE-7ff0000000000000",
+      "controlled-length-FIRE-fff8000000000042",
+      "constructed-zero-length-FIRE",
+      "zero-cost-and-byproduct-RED",
+      "full-byproduct-RED",
+      "zero-organic-yield-RED",
+      "payment-partial-oxygen-RED",
+      "payment-exact-oxygen-RED",
+      "payment-empty-oxygen-RED",
+      "payment-negative-oxygen-RED",
+      "payment-nan-oxygen-RED",
+      "payment-infinite-oxygen-RED",
+      "payment-insufficient-energy-RED",
+      "payment-exact-energy-RED",
+      "payment-negative-energy-RED",
+      "payment-nan-energy-RED",
+      "payment-infinite-energy-RED",
+      "target-nan-energy-RED",
+      "target-infinite-energy-RED",
+      "target-negative-energy-RED",
+      "ignored-target-death-boundary-RED-3e7ad7f29abcaf47",
+      "ignored-target-death-boundary-RED-3e7ad7f29abcaf48",
+      "controlled-length-RED-bff0000000000000",
+      "controlled-length-RED-8000000000000000",
+      "controlled-length-RED-7ff0000000000000",
+      "controlled-length-RED-fff8000000000042",
+      "constructed-zero-length-RED",
+      "zero-cost-and-byproduct-PINK",
+      "full-byproduct-PINK",
+      "zero-organic-yield-PINK",
+      "payment-partial-oxygen-PINK",
+      "payment-exact-oxygen-PINK",
+      "payment-empty-oxygen-PINK",
+      "payment-negative-oxygen-PINK",
+      "payment-nan-oxygen-PINK",
+      "payment-infinite-oxygen-PINK",
+      "payment-insufficient-energy-PINK",
+      "payment-exact-energy-PINK",
+      "payment-negative-energy-PINK",
+      "payment-nan-energy-PINK",
+      "payment-infinite-energy-PINK",
+      "target-nan-energy-PINK",
+      "target-infinite-energy-PINK",
+      "target-negative-energy-PINK",
+      "ignored-target-death-boundary-PINK-3e7ad7f29abcaf47",
+      "ignored-target-death-boundary-PINK-3e7ad7f29abcaf48",
+      "controlled-length-PINK-bff0000000000000",
+      "controlled-length-PINK-8000000000000000",
+      "controlled-length-PINK-7ff0000000000000",
+      "controlled-length-PINK-fff8000000000042",
+      "constructed-zero-length-PINK",
+      "zero-cost-and-byproduct-MAROON",
+      "full-byproduct-MAROON",
+      "zero-organic-yield-MAROON",
+      "payment-partial-oxygen-MAROON",
+      "payment-exact-oxygen-MAROON",
+      "payment-empty-oxygen-MAROON",
+      "payment-negative-oxygen-MAROON",
+      "payment-nan-oxygen-MAROON",
+      "payment-infinite-oxygen-MAROON",
+      "payment-insufficient-energy-MAROON",
+      "payment-exact-energy-MAROON",
+      "payment-negative-energy-MAROON",
+      "payment-nan-energy-MAROON",
+      "payment-infinite-energy-MAROON",
+      "target-nan-energy-MAROON",
+      "target-infinite-energy-MAROON",
+      "target-negative-energy-MAROON",
+      "ignored-target-death-boundary-MAROON-3e7ad7f29abcaf47",
+      "ignored-target-death-boundary-MAROON-3e7ad7f29abcaf48",
+      "controlled-length-MAROON-bff0000000000000",
+      "controlled-length-MAROON-8000000000000000",
+      "controlled-length-MAROON-7ff0000000000000",
+      "controlled-length-MAROON-fff8000000000042",
+      "constructed-zero-length-MAROON",
+      "orange-selected-segment-zero",
+      "orange-peer-shield-segment-one",
+      "red-bark-photo-segment-one",
+      "red-death-statistics-retains-live-code"
+    ]
+  },
+  "source_mapping": {
+    "path": "<local-temp>/source-obligations.json",
+    "sha256": "69c56c75df2750fbe9487f47ddd2e8df3e3d1299bbbf27da41fa5283b3c83330",
+    "parser": "Java keyword/punctuation lexer; peer switch brace depth, independent of indentation.",
+    "peer_case_groups": {
+      "ORANGE": [
+        [
+          "WHITE"
+        ],
+        [
+          "VIOLET"
+        ],
+        [
+          "GRASS"
+        ],
+        [
+          "GREEN",
+          "FOREST",
+          "SPRING",
+          "SUMMER",
+          "WINTER",
+          "LIME",
+          "LEAF",
+          "C4",
+          "JADE",
+          "DARKJADE",
+          "DARKGREEN",
+          "PURPLE",
+          "TEAL",
+          "CYAN",
+          "AUBURN",
+          "INDIGO",
+          "BLOND",
+          "FLOWER",
+          "DARKGRAY",
+          "GOLD",
+          "SPORE"
+        ],
+        [
+          "YELLOW"
+        ],
+        [
+          "ORANGE"
+        ],
+        [
+          "FIRE"
+        ],
+        [
+          "SILVER"
+        ],
+        [
+          "CORAL"
+        ],
+        [
+          "PLAGUE"
+        ],
+        [
+          "SPIKE"
+        ],
+        [
+          "FALLOW"
+        ],
+        [
+          "BLUE"
+        ],
+        [
+          "LIGHT_BLUE"
+        ],
+        [
+          "SKY"
+        ],
+        [
+          "DEEPSKY"
+        ],
+        [
+          "MINT",
+          "LAVENDER",
+          "MAGENTA",
+          "ROSE"
+        ],
+        [
+          "FRUIT"
+        ],
+        [
+          "ICE",
+          "DEADBARK"
+        ],
+        [
+          "BARK"
+        ],
+        [
+          "OLDBARK",
+          "RED",
+          "MAROON",
+          "CREAM",
+          "OCHRE",
+          "OLIVE",
+          "DARKOLIVE",
+          "SPIKEPOINT",
+          "BROWN"
+        ],
+        [
+          "default"
+        ]
+      ],
+      "FIRE": [
+        [
+          "WHITE"
+        ],
+        [
+          "GRASS"
+        ],
+        [
+          "GREEN",
+          "FOREST",
+          "SPRING",
+          "SUMMER",
+          "WINTER",
+          "LIME",
+          "LEAF",
+          "C4",
+          "JADE",
+          "DARKJADE",
+          "DARKGREEN",
+          "PURPLE",
+          "TEAL",
+          "CYAN",
+          "AUBURN",
+          "INDIGO",
+          "BLOND",
+          "FLOWER",
+          "DARKGRAY",
+          "GOLD",
+          "SPORE"
+        ],
+        [
+          "YELLOW"
+        ],
+        [
+          "RED"
+        ],
+        [
+          "FIRE"
+        ],
+        [
+          "ORANGE"
+        ],
+        [
+          "SPIKE"
+        ],
+        [
+          "SILVER"
+        ],
+        [
+          "PINK"
+        ],
+        [
+          "MAROON"
+        ],
+        [
+          "CREAM"
+        ],
+        [
+          "FALLOW"
+        ],
+        [
+          "PLAGUE"
+        ],
+        [
+          "BLUE"
+        ],
+        [
+          "LIGHT_BLUE"
+        ],
+        [
+          "SKY"
+        ],
+        [
+          "DEEPSKY"
+        ],
+        [
+          "VIOLET"
+        ],
+        [
+          "FRUIT"
+        ],
+        [
+          "ICE",
+          "DEADBARK"
+        ],
+        [
+          "BARK"
+        ],
+        [
+          "OLDBARK",
+          "OCHRE",
+          "OLIVE",
+          "DARKOLIVE",
+          "SPIKEPOINT"
+        ],
+        [
+          "LIGHTBROWN"
+        ],
+        [
+          "BROWN"
+        ],
+        [
+          "GREENBROWN"
+        ],
+        [
+          "MINT",
+          "LAVENDER",
+          "MAGENTA",
+          "ROSE"
+        ],
+        [
+          "default"
+        ]
+      ],
+      "RED": [
+        [
+          "RED"
+        ],
+        [
+          "FIRE"
+        ],
+        [
+          "ORANGE",
+          "MAROON",
+          "PINK"
+        ],
+        [
+          "SILVER"
+        ],
+        [
+          "SPIKE"
+        ],
+        [
+          "SPIKEPOINT"
+        ],
+        [
+          "GRAY"
+        ],
+        [
+          "CREAM"
+        ],
+        [
+          "LILAC",
+          "DARKLILAC"
+        ],
+        [
+          "BARK"
+        ],
+        [
+          "default"
+        ]
+      ],
+      "PINK": [
+        [
+          "PINK"
+        ],
+        [
+          "WHITE",
+          "LIGHTBROWN",
+          "ICE"
+        ],
+        [
+          "FRUIT"
+        ],
+        [
+          "CREAM"
+        ],
+        [
+          "GREENBROWN",
+          "BROKEN",
+          "LIGHT_BLUE",
+          "DARKOLIVE",
+          "DEEPSKY"
+        ],
+        [
+          "DEADBARK"
+        ],
+        [
+          "DARKFIRE"
+        ],
+        [
+          "CORAL"
+        ],
+        [
+          "BROWN"
+        ],
+        [
+          "PLAGUE"
+        ],
+        [
+          "OLDBARK"
+        ],
+        [
+          "BARK"
+        ],
+        [
+          "default"
+        ]
+      ],
+      "MAROON": [
+        [
+          "WHITE",
+          "FALLOW",
+          "OCHRE",
+          "DEEPSKY",
+          "DARKOLIVE",
+          "SPIKE",
+          "ICE"
+        ],
+        [
+          "GRASS"
+        ],
+        [
+          "GREEN",
+          "FOREST",
+          "SPRING",
+          "SUMMER",
+          "WINTER",
+          "LIME",
+          "LEAF",
+          "C4",
+          "JADE",
+          "DARKJADE",
+          "DARKGREEN",
+          "PURPLE"
+        ],
+        [
+          "BLUE"
+        ],
+        [
+          "PLAGUE"
+        ],
+        [
+          "FRUIT"
+        ],
+        [
+          "BROKEN",
+          "LIGHT_BLUE",
+          "DEADBARK"
+        ],
+        [
+          "OLDBARK"
+        ],
+        [
+          "BARK"
+        ],
+        [
+          "CYAN",
+          "TEAL",
+          "YELLOW",
+          "AUBURN",
+          "INDIGO",
+          "BLOND",
+          "FLOWER",
+          "DARKGRAY",
+          "GOLD",
+          "SPORE"
+        ],
+        [
+          "SILVER"
+        ],
+        [
+          "SPIKEPOINT"
+        ],
+        [
+          "MINT",
+          "LAVENDER",
+          "MAGENTA",
+          "ROSE"
+        ],
+        [
+          "SKY"
+        ],
+        [
+          "GREENBROWN",
+          "VISION"
+        ],
+        [
+          "default"
+        ]
+      ]
+    },
+    "superseded_inventory": {
+      "path": "<local-temp>/source-obligations-before-case-scan.json",
+      "sha256": "664fcdc16da4d8220354ff36160979416aebe6b4f00c2ce8bec066e0528687b7",
+      "reason": "Indentation-sensitive extraction omitted valid labels; production remained unchanged."
+    },
+    "scope": "The corrected inventory describes case labels/groups; direct source review covers conditions and ordering."
+  },
+  "input_target_types": [
+    {
+      "target": "actor:killer:_age",
+      "java_type": "int"
+    },
+    {
+      "target": "actor:killer:_altruist",
+      "java_type": "boolean"
+    },
+    {
+      "target": "actor:killer:_candodge",
+      "java_type": "boolean"
+    },
+    {
+      "target": "actor:killer:_color",
+      "java_type": "Color"
+    },
+    {
+      "target": "actor:killer:_dodge",
+      "java_type": "boolean"
+    },
+    {
+      "target": "actor:killer:_energy",
+      "java_type": "double"
+    },
+    {
+      "target": "actor:killer:_fallowversion",
+      "java_type": "int"
+    },
+    {
+      "target": "actor:killer:_framesColor",
+      "java_type": "int"
+    },
+    {
+      "target": "actor:killer:_hasdodged",
+      "java_type": "boolean"
+    },
+    {
+      "target": "actor:killer:_indigo",
+      "java_type": "int"
+    },
+    {
+      "target": "actor:killer:_isaconsumer",
+      "java_type": "boolean"
+    },
+    {
+      "target": "actor:killer:_isafungus",
+      "java_type": "boolean"
+    },
+    {
+      "target": "actor:killer:_isaplant",
+      "java_type": "boolean"
+    },
+    {
+      "target": "actor:killer:_isauburn",
+      "java_type": "boolean"
+    },
+    {
+      "target": "actor:killer:_isblond",
+      "java_type": "boolean"
+    },
+    {
+      "target": "actor:killer:_isenhanced",
+      "java_type": "boolean"
+    },
+    {
+      "target": "actor:killer:_isfrozen",
+      "java_type": "boolean"
+    },
+    {
+      "target": "actor:killer:_isgray",
+      "java_type": "boolean"
+    },
+    {
+      "target": "actor:killer:_isinfectious",
+      "java_type": "boolean"
+    },
+    {
+      "target": "actor:killer:_isinjured",
+      "java_type": "boolean"
+    },
+    {
+      "target": "actor:killer:_m",
+      "java_type": "double[]"
+    },
+    {
+      "target": "actor:killer:_max_age",
+      "java_type": "int"
+    },
+    {
+      "target": "actor:killer:_mphoto",
+      "java_type": "double[]"
+    },
+    {
+      "target": "actor:killer:_nTotalInfected",
+      "java_type": "int"
+    },
+    {
+      "target": "actor:killer:_nTotalKills",
+      "java_type": "int"
+    },
+    {
+      "target": "actor:killer:_photosynthesis",
+      "java_type": "double"
+    },
+    {
+      "target": "actor:killer:_plagueversion",
+      "java_type": "int"
+    },
+    {
+      "target": "actor:killer:_segColor",
+      "java_type": "Color[]"
+    },
+    {
+      "target": "actor:killer:_skyversion",
+      "java_type": "int"
+    },
+    {
+      "target": "actor:killer:_sporeversion",
+      "java_type": "int"
+    },
+    {
+      "target": "actor:killer:_transfersenergy",
+      "java_type": "boolean"
+    },
+    {
+      "target": "actor:killer:active",
+      "java_type": "boolean"
+    },
+    {
+      "target": "actor:killer:alive",
+      "java_type": "boolean"
+    },
+    {
+      "target": "actor:victim:_altruist",
+      "java_type": "boolean"
+    },
+    {
+      "target": "actor:victim:_candodge",
+      "java_type": "boolean"
+    },
+    {
+      "target": "actor:victim:_color",
+      "java_type": "Color"
+    },
+    {
+      "target": "actor:victim:_dodge",
+      "java_type": "boolean"
+    },
+    {
+      "target": "actor:victim:_energy",
+      "java_type": "double"
+    },
+    {
+      "target": "actor:victim:_fallowversion",
+      "java_type": "int"
+    },
+    {
+      "target": "actor:victim:_framesColor",
+      "java_type": "int"
+    },
+    {
+      "target": "actor:victim:_hasdodged",
+      "java_type": "boolean"
+    },
+    {
+      "target": "actor:victim:_indigo",
+      "java_type": "int"
+    },
+    {
+      "target": "actor:victim:_infectedGeneticCode",
+      "java_type": "GeneticCode"
+    },
+    {
+      "target": "actor:victim:_isaconsumer",
+      "java_type": "boolean"
+    },
+    {
+      "target": "actor:victim:_isafungus",
+      "java_type": "boolean"
+    },
+    {
+      "target": "actor:victim:_isaplant",
+      "java_type": "boolean"
+    },
+    {
+      "target": "actor:victim:_isauburn",
+      "java_type": "boolean"
+    },
+    {
+      "target": "actor:victim:_isblond",
+      "java_type": "boolean"
+    },
+    {
+      "target": "actor:victim:_isenhanced",
+      "java_type": "boolean"
+    },
+    {
+      "target": "actor:victim:_isfrozen",
+      "java_type": "boolean"
+    },
+    {
+      "target": "actor:victim:_isgray",
+      "java_type": "boolean"
+    },
+    {
+      "target": "actor:victim:_isinfectious",
+      "java_type": "boolean"
+    },
+    {
+      "target": "actor:victim:_isinjured",
+      "java_type": "boolean"
+    },
+    {
+      "target": "actor:victim:_m",
+      "java_type": "double[]"
+    },
+    {
+      "target": "actor:victim:_mphoto",
+      "java_type": "double[]"
+    },
+    {
+      "target": "actor:victim:_nTotalInfected",
+      "java_type": "int"
+    },
+    {
+      "target": "actor:victim:_nTotalKills",
+      "java_type": "int"
+    },
+    {
+      "target": "actor:victim:_photosynthesis",
+      "java_type": "double"
+    },
+    {
+      "target": "actor:victim:_plagueversion",
+      "java_type": "int"
+    },
+    {
+      "target": "actor:victim:_savedGeneticCode",
+      "java_type": "GeneticCode"
+    },
+    {
+      "target": "actor:victim:_skyversion",
+      "java_type": "int"
+    },
+    {
+      "target": "actor:victim:_sporeversion",
+      "java_type": "int"
+    },
+    {
+      "target": "actor:victim:_transfersenergy",
+      "java_type": "boolean"
+    },
+    {
+      "target": "actor:victim:active",
+      "java_type": "boolean"
+    },
+    {
+      "target": "actor:victim:alive",
+      "java_type": "boolean"
+    },
+    {
+      "target": "genome:g0:_modifiespink",
+      "java_type": "boolean"
+    },
+    {
+      "target": "genome:g0:construction",
+      "java_type": "String"
+    },
+    {
+      "target": "genome:g1:_cladeID",
+      "java_type": "String"
+    },
+    {
+      "target": "genome:g1:_modifiescream",
+      "java_type": "int"
+    },
+    {
+      "target": "genome:g1:_modifiespink",
+      "java_type": "boolean"
+    },
+    {
+      "target": "genome:g1:construction",
+      "java_type": "String"
+    },
+    {
+      "target": "genome:g2:construction",
+      "java_type": "String"
+    },
+    {
+      "target": "genome:g3:construction",
+      "java_type": "String"
+    },
+    {
+      "target": "genome:g4:construction",
+      "java_type": "String"
+    },
+    {
+      "target": "visible:selected",
+      "java_type": "String"
+    },
+    {
+      "target": "world:_O2",
+      "java_type": "double"
+    }
+  ],
+  "local_readback": {
+    "schema_checks": ".workflow-local/drain-oracle-ouhcozr9/schema-checks.json",
+    "schema_checks_sha256": "ea8431e789b2836c0fbbda459f6a43443f36d1fad4ae3aa977e3dc0146cb810b",
+    "result": {
+      "result": "PASS",
+      "cases": 449,
+      "complete_O154_H_W10_S52_T49_GN_R_schemas": true,
+      "fixed_five_genome_identity_pool": true,
+      "all_gene_values_unchanged": true,
+      "all_case_rng_suffixes_unchanged": true,
+      "orange_palette_count": 66,
+      "complete_other_peer_case_groups": {
+        "FIRE": 28,
+        "RED": 11,
+        "PINK": 13,
+        "MAROON": 16
+      },
+      "known_shared_primary_and_clone_peer_inputs": true,
+      "fixture_sha256": "feeaf88817ada9b905a2a22efbf3c3f99a5904f750a4782112ede4943c0458c0"
+    },
+    "fixed_ledger": ".workflow-local/drain-oracle-ouhcozr9/fixed-ledger.json",
+    "fixed_ledger_sha256": "e40674f2319a4455216abde9219c365380277a58355bda6aa34e149eb4442a82",
+    "selected_diagnostics": ".workflow-local/drain-oracle-ouhcozr9/selected-diagnostics.json",
+    "selected_diagnostics_sha256": "78efc26f556e4816be3b675305c819dc28b7eb82e03acf87b8f6cf0adda7b71c"
+  },
+  "production_context": {
+    "reviewed_and_privately_tested_sha256": "50d009b211fc081974040641921b570364bd5d6c2785aaedf03c7bc87640714a",
+    "private_test_receipt": "<local-temp>/commands.json",
+    "private_test_receipt_sha256": "9943db073122def7e67e9c9a1bfdadb13a01d7714dfaafe6b130306b4911e2a0",
+    "current_sha256": "d6c2a1f9d4109253089865b5dc1a670ec7ef0765648fcd641e00e21551017129",
+    "root_visibility_delta": "Only age_bark changes from private to pub(super) for another contact module.",
+    "reversing_visibility_reproduces_reviewed_hash": true,
+    "private_tests_transferred_to_current_hash": false,
+    "fixture_uses_Rust_outputs": false
+  },
+  "limits": [
+    "No contact detection, eligibility, full frames, UI, networking, save migration, or distributable acceptance.",
+    "Controlled raw scalar/body states do not claim player UI acceptance.",
+    "No exhaustive Cartesian combinations of unrelated flags.",
+    "Java provenance does not claim Rust replay."
+  ],
+  "readme": {
+    "path": "crates/core/tests/fixtures/draining.README.md",
+    "sha256": "de382c84b8bca35fa5f413c73cd2e65af5d3d6237296a352c5754028de67799e"
+  }
+}

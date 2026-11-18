@@ -1,0 +1,6 @@
+.workflow-local/
+.codegraph/
+__pycache__/
+.godot/
+bin/
+target/

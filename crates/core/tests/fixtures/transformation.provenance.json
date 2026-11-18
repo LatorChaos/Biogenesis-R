@@ -1,0 +1,561 @@
+{
+  "schema": "biogenesis-transformation-oracle-v1",
+  "generated_utc": "2026-10-26T02:27:54.407780+00:00",
+  "helper": {
+    "path": "tools/reference/ReproductionOracle.java",
+    "sha256": "d52971b150853974158d0e4e77b2279036b98beb88f7cbfceb42b654a028f1ad",
+    "mode": "transformation",
+    "compiled_classes": {
+      "source": {
+        "ReproductionOracle$Code.class": "489b1fde339077f4183b6230b2bf007bd6f76926d50835ac8faf824c4293123d",
+        "ReproductionOracle$Action.class": "91d3774e2658159a8bce83dc219064052e195019f012a4e75630249d829e1c03",
+        "ReproductionOracle$Spec.class": "c70416d94fd381f78aab1a04dbcecc4f85231e2273e603b7101c40c938523755",
+        "ReproductionOracle$Capture.class": "cd5c4d08e29b16699d48ec490ab6fc2f1b4a65e8e6524a3dd4278b40bd7a1a4c",
+        "ReproductionOracle.class": "62e0235a8e8cff58ff588f3aaf0788808e655be5c38c5b38d4c156d842f3f55f"
+      },
+      "jar": {
+        "ReproductionOracle$Code.class": "489b1fde339077f4183b6230b2bf007bd6f76926d50835ac8faf824c4293123d",
+        "ReproductionOracle$Action.class": "91d3774e2658159a8bce83dc219064052e195019f012a4e75630249d829e1c03",
+        "ReproductionOracle$Spec.class": "c70416d94fd381f78aab1a04dbcecc4f85231e2273e603b7101c40c938523755",
+        "ReproductionOracle$Capture.class": "cd5c4d08e29b16699d48ec490ab6fc2f1b4a65e8e6524a3dd4278b40bd7a1a4c",
+        "ReproductionOracle.class": "62e0235a8e8cff58ff588f3aaf0788808e655be5c38c5b38d4c156d842f3f55f"
+      }
+    },
+    "source_jar_helper_classes_identical": true
+  },
+  "fixture": {
+    "path": "crates/core/tests/fixtures/transformation.tsv",
+    "mode": "transformation",
+    "sha256": "92c7be8b067132fa8fc22fe57416c0d11004028c26189c00195a04eb937797db",
+    "bytes": 7905805,
+    "rows": 221788,
+    "cases": 48,
+    "snapshots": 149,
+    "calls": 101,
+    "row_counts": {
+      "C": 48,
+      "U": 7056,
+      "I": 672,
+      "G": 29008,
+      "N": 85920,
+      "A": 144,
+      "P": 149,
+      "O": 76692,
+      "H": 1494,
+      "W": 1490,
+      "V": 2235,
+      "Q": 498,
+      "S": 7748,
+      "T": 7301,
+      "Y": 796,
+      "R": 149,
+      "K": 101,
+      "J": 144,
+      "D": 3,
+      "E": 48,
+      "B": 46,
+      "Z": 46
+    },
+    "calls_by_operation": {
+      "build_tree": 48,
+      "transform": 4,
+      "inheritTransformation": 46,
+      "grow": 1,
+      "offset_velocity": 1,
+      "bounds": 1
+    },
+    "ledger": {
+      "input_schema_commands": 8170,
+      "supplied_genotype_checks": 26560,
+      "selection_metadata_exclusion": 48,
+      "compared_observations": 183284,
+      "O_collaborator_exclusions": 986,
+      "V_collaborator_exclusions": 596,
+      "scope_metadata": 842,
+      "rejected_candidate_observations": 790,
+      "rejected_only_genotype_observations": 512
+    },
+    "schema_correction_only_changed_Q_and_V_membership": true,
+    "case_names": [
+      "wrapper-center-success",
+      "direct-center-success",
+      "direct-first-false",
+      "direct-all-positions-blocked",
+      "wrapper-all-positions-blocked",
+      "default-zero-parent-exemption",
+      "equal-id-is-not-object-identity",
+      "wrapped-parent-id-exemption",
+      "fallback-direction--1--1",
+      "fallback-direction--1-0",
+      "fallback-direction--1-1",
+      "fallback-direction-0--1",
+      "fallback-direction-0-1",
+      "fallback-direction-1--1",
+      "fallback-direction-1-0",
+      "fallback-direction-1-1",
+      "allocated-id-wrapping",
+      "transformation-spore-1",
+      "transformation-spore-2",
+      "transformation-spore-3",
+      "transformation-spore-4",
+      "transformation-spore-5",
+      "transformation-spore-6",
+      "transformation-spore-7",
+      "transformation-spore-8",
+      "transformation-spore-9",
+      "transformation-spore-10",
+      "transformation-spore-11",
+      "transformation-spore-12",
+      "adaptation-20-true",
+      "adaptation-30-true",
+      "adaptation-30-false",
+      "adaptation-40-true",
+      "adaptation-40-false",
+      "adaptation-50-true",
+      "adaptation-50-false",
+      "adaptation-60-true",
+      "adaptation-60-false",
+      "adaptation-70-false",
+      "lineage-increase-genes",
+      "lineage-marker-limit-0",
+      "lineage-marker-limit-1",
+      "lineage-marker-limit-2",
+      "lineage-decrease-genes",
+      "lineage-increase-symmetry",
+      "lineage-decrease-symmetry",
+      "lineage-equal-structure-redraw",
+      "generated-nan-failed-candidate-world-event"
+    ],
+    "source_source_jar_outputs_identical": true,
+    "organism_fields_per_actor": 154,
+    "reference_holders_per_actor": 3,
+    "World_instance_fields": 15,
+    "world_getter_observations": 10,
+    "statistics_instance_fields": 52,
+    "statistics_getters": 49,
+    "primitive_settings_per_case": 147,
+    "genome_fields_including_synthetic": 28,
+    "gene_fields": 40
+  },
+  "reference": {
+    "manifest": "docs/evidence/reference-manifest.json",
+    "original_hash_size_mode_checks": 74,
+    "source_compile_receipt": ".workflow-local/reference-build/compile.json",
+    "source_compile_receipt_sha256": "4fc1785c218238508d72b89ba883d94bc8a1fa24631e990463dd71502a78e184",
+    "source_sha256": {
+      "Gene": "d070db688526a401c8b55904c06066b2169ca82c76837e3001b4c423bc80e720",
+      "GeneticCode": "f8bf3d0315cec8a2bf515a1626391fe5b646e47566234d398ef58bbdbc3a9004",
+      "Organism": "8650cb0983069dbae09e2ca704059fb82761fa6e0d87f35218c2342ffc60df46",
+      "Utils": "7b3306148684ba111629690a928dcb45abd4825104cfb90b530cd2d0dc6dd2b3",
+      "World": "a67543055a665a9a378e37c860671996e2ca0f510cb622375172a24333d7cae1",
+      "WorldStatistics": "407bcd4bec5e947f26ccfb02a1a590bec6eb9f22f675ad88d9bb974f686ebe15",
+      "VisibleWorld": "b14b41135de13d935f24e42b2f82a72457a015831d1b62f30a26bd5be7faedc5"
+    },
+    "backend_class_sha256": {
+      "Gene": {
+        "compiled_source": "29fe7b153555ded4383072debd0452bed5f92692afd0488a88c297d5f04f6ea8",
+        "bundled_jar": "b307c29cbd73a98cdcbf7d5da9a3ed771fd4d419f6426fbfd41510934c0a7988"
+      },
+      "GeneticCode": {
+        "compiled_source": "4bbf99eaf9006840ecbba0958496372a220ed44c4e57c8341c4de3dc29f3fb30",
+        "bundled_jar": "2aba7f494115279c26bb918dc8156c7ff67af047c2bcb32e35db113f2b87c51e"
+      },
+      "Organism": {
+        "compiled_source": "e8facb409642f0288411785985cbfd96440f644226795f14de24705554a46e22",
+        "bundled_jar": "561d53132aa1765ba766c7d251a98090617c7e9884ae8ed1f9543237e32257f0"
+      },
+      "Utils": {
+        "compiled_source": "67adba4432972ffa3922b6f622d2cc12bf0e703a7dfbf97ae94f3f95387b1884",
+        "bundled_jar": "8f258ba2cb30beea85f44a60ecb4189faf7493f39102712bc9ff1114456e1060"
+      },
+      "World": {
+        "compiled_source": "9091d4e5cae555493971a37a9c8fc77e2250e68db073a120a3a08b57b03e131e",
+        "bundled_jar": "be8067767dc18b46fbd7fd798c5e67e8a58ff6922b78d65eee28ab033360bd33"
+      },
+      "WorldStatistics": {
+        "compiled_source": "ab04358e54edf5120d703f0d980c72a136ab74165e5bbec4b55719ab097c7863",
+        "bundled_jar": "cc5e6f8d4adfb96a41269b4dc7a3ab27224513d8076d68ee42be2ab518e0c236"
+      },
+      "VisibleWorld": {
+        "compiled_source": "f9f559ac40de41b7d84cb6d624b5bcad538ac016d566779bc6c45512c5d68168",
+        "bundled_jar": "b1a0dced3a53afcef5f80132f122ac1ba0baf41f02d3e6e48cb99e4236c1385c"
+      }
+    },
+    "jar_sha256": "0baeae8d29f5fdbbb830c1a9e51c7f2b5314a33011b20ec7471eeaa27f0398e1",
+    "jts_sha256": "00102cde26c457b81fbb0248e4f8845884243caba0dc9b7fb42e0ea877383bc1",
+    "prior_tsv_baseline_sha256": {
+      "construction.tsv": "cf9b83da280e3e7aa812ae7cf2caee7293ce805c8109aebaa2891a69227b3336",
+      "geometry.tsv": "364c17c289c7d3f85b4ae3bdf7ce8ddcaac773547b1bb3c14360cae58e766a96",
+      "genetics.tsv": "1fc3f745a83427c499d84884dfdb6864fdc222861feb30488d7083a4a0126b71",
+      "geometry-rebuild.tsv": "a484994dbc4f69d8deb45c0622c127eb5dc5dd95eba1b61a412e015cf8b2a3d8",
+      "organism_state.tsv": "298e7a37eb2983252797a40e45ff721141ba22e6b8cfdaba91a1bfa079552f8b",
+      "paste_rejection.tsv": "73b1fa2480d2211e29cbbb24c4653c18d3a0786c5e0074f84e0c378b0b333db9",
+      "genotype_identity.tsv": "b6a85cb8b2b628a8a8b25c3de2db1445a61433b06c7b66647670c07a1ea0b9ac",
+      "spatial.tsv": "a2cf3205b94144694f6484c81aaa9916f42824766a521c2cb05d2f14f344225a",
+      "birth.tsv": "8b9bcee0ed1232b1d90050587e52cb19548a14f833da63749dcd6c96ccae8a22",
+      "birth_variants.tsv": "ababf3bdecebcfda1c56b99cf08343157b6091e2b95f9ab63010de1c13e04b96",
+      "physics.tsv": "50151aaaeb0de8502bb1e22d0256ce77273e83851713a0b43337b66835de72ff",
+      "gases.tsv": "0ea73389506dce4286389f75388ef55475541bd5062cddd149f619b12cd3b6c8",
+      "movement.tsv": "ca8c5078821d339f6aaabb47e593de0da62e44c59df69bf5d4ee8ee01dc84207",
+      "statistics.tsv": "bcc5c8b489b5591f318486176b2647e816d899ec05af854a077e26fe771bcf8a",
+      "statistics_null_genome.tsv": "049301b93bd1062bc6be3cfdac6b58caff10ccb53d1d58a67ece583676c345c1",
+      "death.tsv": "198a17283df6d96826fef2c6464acf6ad222f1e5234c884ec781b05080941720",
+      "death_invalid.tsv": "5bddabd10826003e147df8c688c3db9d3d99b7c64212685a9ade474b92bcbb62",
+      "maintenance.tsv": "85f1845a8150eeb049bd560ae649bc3335463b78414ff8d03813d171858991ee"
+    },
+    "prior_tsv_current_sha256": {
+      "construction.tsv": "cf9b83da280e3e7aa812ae7cf2caee7293ce805c8109aebaa2891a69227b3336",
+      "geometry.tsv": "364c17c289c7d3f85b4ae3bdf7ce8ddcaac773547b1bb3c14360cae58e766a96",
+      "genetics.tsv": "1fc3f745a83427c499d84884dfdb6864fdc222861feb30488d7083a4a0126b71",
+      "geometry-rebuild.tsv": "a484994dbc4f69d8deb45c0622c127eb5dc5dd95eba1b61a412e015cf8b2a3d8",
+      "organism_state.tsv": "298e7a37eb2983252797a40e45ff721141ba22e6b8cfdaba91a1bfa079552f8b",
+      "paste_rejection.tsv": "73b1fa2480d2211e29cbbb24c4653c18d3a0786c5e0074f84e0c378b0b333db9",
+      "genotype_identity.tsv": "b6a85cb8b2b628a8a8b25c3de2db1445a61433b06c7b66647670c07a1ea0b9ac",
+      "spatial.tsv": "a2cf3205b94144694f6484c81aaa9916f42824766a521c2cb05d2f14f344225a",
+      "birth.tsv": "8b9bcee0ed1232b1d90050587e52cb19548a14f833da63749dcd6c96ccae8a22",
+      "birth_variants.tsv": "ababf3bdecebcfda1c56b99cf08343157b6091e2b95f9ab63010de1c13e04b96",
+      "physics.tsv": "50151aaaeb0de8502bb1e22d0256ce77273e83851713a0b43337b66835de72ff",
+      "gases.tsv": "0ea73389506dce4286389f75388ef55475541bd5062cddd149f619b12cd3b6c8",
+      "movement.tsv": "ca8c5078821d339f6aaabb47e593de0da62e44c59df69bf5d4ee8ee01dc84207",
+      "statistics.tsv": "bcc5c8b489b5591f318486176b2647e816d899ec05af854a077e26fe771bcf8a",
+      "statistics_null_genome.tsv": "049301b93bd1062bc6be3cfdac6b58caff10ccb53d1d58a67ece583676c345c1",
+      "death.tsv": "198a17283df6d96826fef2c6464acf6ad222f1e5234c884ec781b05080941720",
+      "death_invalid.tsv": "5bddabd10826003e147df8c688c3db9d3d99b7c64212685a9ade474b92bcbb62",
+      "maintenance.tsv": "266e604b25a4f1e238e3c07131e5d1e42d1a1e73192adb52723e144bc43e8bb9"
+    },
+    "unchanged_prior_tsv_count": 17,
+    "authorized_prior_supersessions": {
+      "maintenance.tsv": {
+        "baseline_sha256": "85f1845a8150eeb049bd560ae649bc3335463b78414ff8d03813d171858991ee",
+        "current_sha256": "266e604b25a4f1e238e3c07131e5d1e42d1a1e73192adb52723e144bc43e8bb9",
+        "preserved_baseline": ".workflow-local/maintenance-oracle-dtmji2aa/before-scalar-dispatch-repair/maintenance.tsv",
+        "authorized_owner": "workflow_audit",
+        "reason": "Concurrent root-authorized Rectangle/Organism serializer repair",
+        "correction_evidence": ".workflow-local/maintenance-oracle-ehfwqf56/scalar-repair-diff.json",
+        "correction_evidence_sha256": "35d8d01da05b4187d7289520339a8e4809bc43220109289dbc7d120593dd48e7",
+        "canonical_provenance": "crates/core/tests/fixtures/maintenance.provenance.json"
+      }
+    }
+  },
+  "execution": {
+    "raw_receipts": ".workflow-local/reproduction-oracle-4dw3jgws/commands.json",
+    "raw_receipts_sha256": "ee9c6eaf5f24dcf1d77d203ab7dcf4deed5342b382e0c1e7038823b34a87a078",
+    "versions": {
+      "java": "openjdk version \"21.0.12.1\" 2026-08-18\nOpenJDK Runtime Environment (build 21.0.12.1+1)\nOpenJDK 64-Bit Server VM (build 21.0.12.1+1, mixed mode, sharing)\n",
+      "javac": "javac 21.0.12.1\n"
+    },
+    "compile_commands": [
+      {
+        "argv": [
+          "javac",
+          "-encoding",
+          "UTF-8",
+          "-cp",
+          "<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "-d",
+          "<project-root>/.workflow-local/reproduction-oracle-4dw3jgws/final2-helpers-source",
+          "<project-root>/tools/reference/ReproductionOracle.java"
+        ],
+        "cwd": "<project-root>/.workflow-local/reproduction-oracle-4dw3jgws",
+        "pid": 14,
+        "process_group": 14,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.6196101230016211,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "javac",
+          "-encoding",
+          "UTF-8",
+          "-cp",
+          "<reference-root>/ColorMod_2_01/biogenesis.jar:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "-d",
+          "<project-root>/.workflow-local/reproduction-oracle-4dw3jgws/final2-helpers-jar",
+          "<project-root>/tools/reference/ReproductionOracle.java"
+        ],
+        "cwd": "<project-root>/.workflow-local/reproduction-oracle-4dw3jgws",
+        "pid": 43,
+        "process_group": 43,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.6222406460001366,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "positive_runs": [
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/reproduction-oracle-4dw3jgws/final2-transformation-source-a/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/reproduction-oracle-4dw3jgws/final2-transformation-source-a/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/reproduction-oracle-4dw3jgws/final2-transformation-source-a/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/reproduction-oracle-4dw3jgws/final2-transformation-source-a/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/reproduction-oracle-4dw3jgws/final2-helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.ReproductionOracle",
+          "<project-root>/.workflow-local/reproduction-oracle-4dw3jgws/final2-transformation-source-a/observations",
+          "transformation"
+        ],
+        "cwd": "<project-root>/.workflow-local/reproduction-oracle-4dw3jgws/final2-transformation-source-a",
+        "pid": 171,
+        "process_group": 171,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.922807412003749,
+        "stdout": "REPRODUCTION_ORACLE PASS mode=transformation cases=48 snapshots=149 calls=101 bounded_search_attempts=236\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/reproduction-oracle-4dw3jgws/final2-transformation-source-b/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/reproduction-oracle-4dw3jgws/final2-transformation-source-b/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/reproduction-oracle-4dw3jgws/final2-transformation-source-b/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/reproduction-oracle-4dw3jgws/final2-transformation-source-b/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/reproduction-oracle-4dw3jgws/final2-helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.ReproductionOracle",
+          "<project-root>/.workflow-local/reproduction-oracle-4dw3jgws/final2-transformation-source-b/observations",
+          "transformation"
+        ],
+        "cwd": "<project-root>/.workflow-local/reproduction-oracle-4dw3jgws/final2-transformation-source-b",
+        "pid": 206,
+        "process_group": 206,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.934224049000477,
+        "stdout": "REPRODUCTION_ORACLE PASS mode=transformation cases=48 snapshots=149 calls=101 bounded_search_attempts=236\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/reproduction-oracle-4dw3jgws/final2-transformation-jar/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/reproduction-oracle-4dw3jgws/final2-transformation-jar/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/reproduction-oracle-4dw3jgws/final2-transformation-jar/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/reproduction-oracle-4dw3jgws/final2-transformation-jar/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/reproduction-oracle-4dw3jgws/final2-helpers-jar:<reference-root>/ColorMod_2_01/biogenesis.jar:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.ReproductionOracle",
+          "<project-root>/.workflow-local/reproduction-oracle-4dw3jgws/final2-transformation-jar/observations",
+          "transformation"
+        ],
+        "cwd": "<project-root>/.workflow-local/reproduction-oracle-4dw3jgws/final2-transformation-jar",
+        "pid": 241,
+        "process_group": 241,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.9639171070011798,
+        "stdout": "REPRODUCTION_ORACLE PASS mode=transformation cases=48 snapshots=149 calls=101 bounded_search_attempts=236\n",
+        "stderr": ""
+      }
+    ],
+    "negative_guard_commands": [
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-cp",
+          "<project-root>/.workflow-local/reproduction-oracle-4dw3jgws/final2-helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.ReproductionOracle",
+          "<project-root>/.workflow-local/reproduction-oracle-4dw3jgws/guard-transformation-missing-profile/observations",
+          "transformation"
+        ],
+        "cwd": "<project-root>/.workflow-local/reproduction-oracle-4dw3jgws/guard-transformation-missing-profile",
+        "pid": 49,
+        "process_group": 49,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.0296218920047977,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: user.home\n\tat biogenesis.ReproductionOracle.require(ReproductionOracle.java:208)\n\tat biogenesis.ReproductionOracle.main(ReproductionOracle.java:365)\n"
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/reproduction-oracle-4dw3jgws/guard-transformation-existing-output/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/reproduction-oracle-4dw3jgws/guard-transformation-existing-output/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/reproduction-oracle-4dw3jgws/guard-transformation-existing-output/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/reproduction-oracle-4dw3jgws/guard-transformation-existing-output/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/reproduction-oracle-4dw3jgws/final2-helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.ReproductionOracle",
+          "<project-root>/.workflow-local/reproduction-oracle-4dw3jgws/guard-transformation-existing-output/observations",
+          "transformation"
+        ],
+        "cwd": "<project-root>/.workflow-local/reproduction-oracle-4dw3jgws/guard-transformation-existing-output",
+        "pid": 67,
+        "process_group": 67,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.02722844199888641,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Output directory must not exist\n\tat biogenesis.ReproductionOracle.require(ReproductionOracle.java:208)\n\tat biogenesis.ReproductionOracle.main(ReproductionOracle.java:367)\n"
+      }
+    ],
+    "negative_guard_results": [
+      {
+        "mode": "transformation",
+        "condition": "missing-profile",
+        "receipt_index": 30,
+        "exit_code": 1,
+        "expected_error": "Explicit isolated profile required:",
+        "output_preserved": true
+      },
+      {
+        "mode": "transformation",
+        "condition": "existing-output",
+        "receipt_index": 31,
+        "exit_code": 1,
+        "expected_error": "Output directory must not exist",
+        "output_preserved": true
+      }
+    ],
+    "positive_timeout_seconds": 120,
+    "guard_timeout_seconds": 30,
+    "process_group_runner": "tools/run_reference_oracles.py:32-77",
+    "cleared_environment_variables": [
+      "JAVA_TOOL_OPTIONS",
+      "_JAVA_OPTIONS",
+      "JDK_JAVA_OPTIONS"
+    ],
+    "profiles": [
+      "user.home",
+      "java.io.tmpdir",
+      "java.util.prefs.userRoot",
+      "java.util.prefs.systemRoot"
+    ],
+    "final_phase": "final2",
+    "bounded_search_limit_per_predicate": 1024,
+    "actual_search_attempts": 236
+  },
+  "comparison_contract": {
+    "declared_before_rust_comparison": true,
+    "exact": "All available non-geometric organism fields, world values, statistics, effects/photo/gases, mutable genotype identities, integer endpoints, colors, reactions, query ordering and RNG bits.",
+    "geometry_only_fields": [
+      "_m",
+      "_m1",
+      "_m2",
+      "_mass",
+      "_I"
+    ],
+    "geometry_finite_tolerance": "1e-10 * max(1, abs(expected))",
+    "geometry_nonfinite": "Explicit NaN classification and signed infinity checks, without extending tolerance to other fields.",
+    "constructor_authority": "Only input G/N with setup g0..g4 explicit/clone recipes supply original genomes. Newborn, candidate and later G/N observations are never constructor inputs.",
+    "expectation_authority": "Actual unchanged source/JAR methods, constructors, field reflection, getters and original world/statistics routing. No copied biological formulas generate expectations.",
+    "rust_results_claimed": false
+  },
+  "explicit_exclusions": {
+    "O_fields": [
+      "_world",
+      "_visibleWorld"
+    ],
+    "V_fields": [
+      "_visibleWorld",
+      "inCorridors",
+      "outCorridors",
+      "_corridorexists"
+    ],
+    "I_targets": [
+      "visible:selected"
+    ],
+    "scope_metadata_tags": [
+      "Y",
+      "Z"
+    ],
+    "rejected_candidate_fields": [
+      "O",
+      "H",
+      "Q"
+    ],
+    "rejected_genotype_fields": [
+      "G",
+      "N"
+    ],
+    "Y_observable_rule": "Setup genomes, available actor holders, actual world members or actual statistics genotype records retain observability. Candidate rejection alone never excludes a statistics-root genotype.",
+    "no_dummy_candidate_substitution": true
+  },
+  "schema_correction": {
+    "utc": "2026-10-26T02:14:26.128956+00:00",
+    "old_helper_sha256": "2ab49839e41a815fac40b2a2a9b74a8fef222398485bd36d26734bd17dbb0bbe",
+    "new_helper_sha256": "d52971b150853974158d0e4e77b2279036b98beb88f7cbfceb42b654a028f1ad",
+    "old_helper_backup": ".workflow-local/reproduction-oracle-4dw3jgws/pre-identity-fix-ReproductionOracle.java",
+    "reason": "Schema correction: Organism extends Rectangle; serialize object identity before Rectangle data. Explicit STRtree.build aligns observed and search setup. No biological formulas or scenarios changed.",
+    "superseded_phases": [
+      "pilot1",
+      "pilot2",
+      "pilot3",
+      "final"
+    ],
+    "first_rust_replay_before_correction": false,
+    "new_outputs": {
+      "reproduction": {
+        "old_sha256": "f162683b5748f9f297bf5cedac40287eb24e37cf46061ba8d0a6648112f43010",
+        "new_sha256": "3067af9973d1539781dd72ade76e33e9dda0303dd9aa69f467b7aa13e6277441",
+        "changed_rows": {
+          "V:_organisms": 222,
+          "Q": 467
+        },
+        "all_other_rows_identical": true
+      },
+      "transformation": {
+        "old_sha256": "d09387080aa37434e3cf3f4c77913927f02af8fd7928922ff1c143c9063c74ed",
+        "new_sha256": "92c7be8b067132fa8fc22fe57416c0d11004028c26189c00195a04eb937797db",
+        "changed_rows": {
+          "V:_organisms": 149,
+          "Q": 340
+        },
+        "all_other_rows_identical": true
+      }
+    },
+    "row_diff_receipt": ".workflow-local/reproduction-oracle-4dw3jgws/identity-row-diff.json",
+    "row_diff_receipt_sha256": "ec70327cc0c40cddbd84dec03bf7466731565366db0a47c93a2b0ba99c26cb53",
+    "old_helper_backup_sha256": "2ab49839e41a815fac40b2a2a9b74a8fef222398485bd36d26734bd17dbb0bbe"
+  },
+  "source_search_limit_disposition": {
+    "impossible_combined_gene_and_symmetry_mutation": {
+      "receipt_index": 3,
+      "exit_code": 1,
+      "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Actual-source bounded search exhausted: lineage-combined-expansion\n\tat biogenesis.ReproductionOracle.search(ReproductionOracle.java:234)\n\tat biogenesis.ReproductionOracle.transformation(ReproductionOracle.java:343)\n\tat biogenesis.ReproductionOracle.main(ReproductionOracle.java:366)\n",
+      "source_explanation": "GeneticCode.java:760-793 makes symmetry mutation and gene-count mutation mutually exclusive.",
+      "disposition": "Preserve the failed bounded search; cover both actual branches separately and do not expand the search limit."
+    }
+  },
+  "limits": [
+    "No complete World.time frame, biological contact, UI callback or ecological scheduler execution.",
+    "No save-format or serialized-World compatibility acceptance.",
+    "Opaque caller intermediates are not instrumented; source ordering is inspected and surrounding actual observables are recorded.",
+    "Rejected direct candidate internals remain preserved without a Rust pass claim.",
+    "False corridor state is excluded rather than claimed as implemented transport.",
+    "Rust replay and integration results remain separate from Java provenance."
+  ],
+  "readme": {
+    "path": "crates/core/tests/fixtures/transformation.README.md",
+    "sha256": "2543eb1c5007d5111bbd50595823898931547bade2f35f4db763b87247eb4a53"
+  }
+}

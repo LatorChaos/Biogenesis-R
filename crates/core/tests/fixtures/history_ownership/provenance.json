@@ -1,0 +1,74 @@
+{
+  "status": "ACTUAL_SOURCE_JAR_ACCEPTED_INPUT_FIXTURE_COPY",
+  "helper": "Biogenesis-R/.workflow-local/history-ownership-preparation-a/witness-preparation-a/phase-grant-correction-a/HistoryOwnershipOracle.java",
+  "helper_sha256": "fff943fb1a5f16b6a43588b9692dd1c6aa8ac94ec362e87f925dcd34e722c1d6",
+  "Root_readback": "Biogenesis-R/.workflow-local/history-ownership-preparation-a/witness-preparation-a/phase-grant-correction-a/root-four-phase-history-readback.json",
+  "Root_readback_sha256": "d43921560a54bab377a27289474f5381fc5f9d7260bd46c5ddfcf7ad065dc92a",
+  "independent_review": "Biogenesis-R/.workflow-local/reviews/history-witness-four-phase-execution-independent-2026-10-29.json",
+  "independent_review_sha256": "346e072b80f2cd12b262343fc539078bfb4c1b0b5821419c0cdd3fe4c3365d86",
+  "capture_plan_sha256": "dde5e62f8c383778385eb2e59029bea0623c50eef522e78f2931bab7bfbe0cfe",
+  "case_call_snapshot_counts": [
+    4,
+    8,
+    10
+  ],
+  "rows": 1183,
+  "S_H_L_D_rows": [
+    520,
+    60,
+    32,
+    227
+  ],
+  "source_JAR_files_exact": true,
+  "files": {
+    "compatibility_integer-first.ser": {
+      "sha256": "bb1cf62a5071a6993db8680a66d0d495ff61a3a85c23a14e7355d6c550b20dc0",
+      "bytes": 1526
+    },
+    "compatibility_integer-modified.ser": {
+      "sha256": "129d39c6f1550c162566925f59434b552629244fb8925ab1994cd0f5166eaa1f",
+      "bytes": 1526
+    },
+    "compatibility_integer-original.ser": {
+      "sha256": "bb1cf62a5071a6993db8680a66d0d495ff61a3a85c23a14e7355d6c550b20dc0",
+      "bytes": 1526
+    },
+    "compatibility_integer-second.ser": {
+      "sha256": "bb1cf62a5071a6993db8680a66d0d495ff61a3a85c23a14e7355d6c550b20dc0",
+      "bytes": 1526
+    },
+    "history_ownership.tsv": {
+      "sha256": "13ee8ce3dd1915e5e2d997f53ed7a77190bb67f806f42fdb120f6963122ff937",
+      "bytes": 49901
+    },
+    "late_methane_null-after_event.ser": {
+      "sha256": "43f66dae1885927d580183a732ff20fbf05f55bbce6a880e4656dbe6222c5566",
+      "bytes": 1691
+    },
+    "late_methane_null-after_getter.ser": {
+      "sha256": "e91dac76e0378cc37dcf27d9971326436da492bd51a3624cbe6c025acad8c0a4",
+      "bytes": 1621
+    },
+    "late_methane_null-initial.ser": {
+      "sha256": "e91dac76e0378cc37dcf27d9971326436da492bd51a3624cbe6c025acad8c0a4",
+      "bytes": 1621
+    },
+    "null_box_graph-after_graph.ser": {
+      "sha256": "65a148c1da99921334c61dded915cf5e163f2467c00616b6ea6e187597535e2b",
+      "bytes": 1502
+    },
+    "null_box_graph-initial.ser": {
+      "sha256": "65a148c1da99921334c61dded915cf5e163f2467c00616b6ea6e187597535e2b",
+      "bytes": 1502
+    },
+    "shared_99_history-after_event.ser": {
+      "sha256": "2c98243bf0cae8d9883a6ba890e2ff7a5e93de84704f7807987a52196696db24",
+      "bytes": 2894
+    },
+    "shared_99_history-initial.ser": {
+      "sha256": "c106b512a3eea43d1fa0265b0b3ca17cccd55c075ebfbcd4a83c01503a89c86d",
+      "bytes": 2871
+    }
+  },
+  "scope": "Input-only constructor/callback replay and separate history graph staging/export; no full World restore or new whole-null GraphInfo capture"
+}

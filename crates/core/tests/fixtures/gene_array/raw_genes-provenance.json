@@ -1,0 +1,32 @@
+{
+  "source_tsv_sha256": "db49778cf157f45861d9c25ba2112986e72f43b6877db69da46ecfcf929888d9",
+  "actual_peer": "d558178c6c7ae69ae08f38b23548ee01a78bb73d685109c76cbfd87960a92ef4",
+  "scope": "Original raw Gene topology and create prefix. Full World read callbacks remain outside the live model replay.",
+  "files": {
+    "raw_genes.tsv": {
+      "sha256": "2e210fbdeb35724c4f6e96c84f534cb1745e8ba6d8218d0775a1a14ad4df0fe7",
+      "bytes": 210913,
+      "selection": "Exact C raw_genes through its E from accepted World TSV"
+    },
+    "raw_genes-authored.ser": {
+      "sha256": "72e56b463d6c71c98cde366db540115ac3c6e468ff205c6d15a2d5f63845d4c7",
+      "bytes": 8969
+    },
+    "raw_genes-call_0.ser": {
+      "sha256": "72e56b463d6c71c98cde366db540115ac3c6e468ff205c6d15a2d5f63845d4c7",
+      "bytes": 8969
+    },
+    "raw_genes-call_1.ser": {
+      "sha256": "72e56b463d6c71c98cde366db540115ac3c6e468ff205c6d15a2d5f63845d4c7",
+      "bytes": 8969
+    },
+    "raw_genes-call_2.ser": {
+      "sha256": "72e56b463d6c71c98cde366db540115ac3c6e468ff205c6d15a2d5f63845d4c7",
+      "bytes": 8969
+    },
+    "raw_genes-call_3.ser": {
+      "sha256": "6da25bd3f26585c7b1737ddcb2e576135c3315403b28b2f23e804f8069a72553",
+      "bytes": 9263
+    }
+  }
+}

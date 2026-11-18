@@ -1,0 +1,57 @@
+{
+  "generated": "2026-10-25",
+  "helper": "crates/core/tests/java/GeometryOracle.java",
+  "helper_sha256": "a359a1f1a65390286649b8f21eb2503e3c3ae2cc0f46e7497f03b0e1a9572766",
+  "fixture_sha256": "364c17c289c7d3f85b4ae3bdf7ce8ddcaac773547b1bb3c14360cae58e766a96",
+  "fixture_bytes": 7458473,
+  "record_counts": {
+    "A": 3169,
+    "Q": 10,
+    "V": 9,
+    "U": 9,
+    "C": 912,
+    "G": 7680,
+    "F": 912,
+    "B": 912,
+    "W": 912,
+    "T": 912,
+    "S": 34560,
+    "E": 912
+  },
+  "source_and_jar_identical": true,
+  "source_class_tree_sha256": "a2efafcc37d4e64af7e109df06fc628f9e81526b4e7a5762e83c0f3653101436",
+  "jar_sha256": "0baeae8d29f5fdbbb830c1a9e51c7f2b5314a33011b20ec7471eeaa27f0398e1",
+  "command_receipts": ".workflow-local/geometry-reaction-rebuild-nmo4fso8/commands.json",
+  "reference_manifest": "docs/evidence/reference-manifest.json",
+  "declared_tolerances": "crates/core/tests/fixtures/geometry-README.md",
+  "tolerance_file_mtime_ns": 1792960614155955635,
+  "source_capture_mtime_ns": 1792962361786811051,
+  "scope": "Direct production construction, phenotype, geometry, polar vectors, rotation and preview drawing; no organism frames",
+  "numeric_helper_sources": [
+    "https://netlib.org/fdlibm/s_atan.c",
+    "https://netlib.org/fdlibm/e_atan2.c"
+  ],
+  "numeric_helper_license": "Sun1993 permission notice preserved; no OpenJDK implementation retained",
+  "generation_history": [
+    {
+      "helper_sha256": "40d1796f92235df6cd23d912c1958e77a6d8a4ddd2be5b4ae7dfe187bcf5ea92",
+      "command_receipts": ".workflow-local/geometry-accepted-6m2l2sms/commands.json",
+      "source_capture_mtime_ns": 1792961701424536954,
+      "helper_snapshot": ".workflow-local/geometry-accepted-6m2l2sms/GeometryOracle.java"
+    }
+  ],
+  "reaction_rebuild": {
+    "fixture": "crates/core/tests/fixtures/geometry-rebuild.tsv",
+    "fixture_sha256": "a484994dbc4f69d8deb45c0622c127eb5dc5dd95eba1b61a412e015cf8b2a3d8",
+    "fixture_bytes": 7354,
+    "record_counts": {
+      "C": 1,
+      "G": 5,
+      "P": 15,
+      "B": 1,
+      "S": 15
+    },
+    "source_and_jar_identical": true,
+    "scope": "Production symmetric() after controlled mutation of current colors and all36distinct reaction-channel values per segment; no contacts or organism frames"
+  }
+}

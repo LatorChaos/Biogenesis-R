@@ -1,0 +1,700 @@
+{
+  "provenance": {
+    "proposal_decisions_sha256": "735597c96787b53369aaf65fea6b03db7872bd5de2c32103c162266f1abfdc55",
+    "proposal_main_sha256": "a659949cc1991327288d093c127dadeb36be31ddb3e40323a7f01416a1868aa3",
+    "proposal_labels_sha256": "9d65886e2e9ee1a487a6e0102ca8cb1624abc1d3b8a7e585eb107dc4acd3a463",
+    "source_actions_expected_sha256": "54e860b209a2029b06676aa7f6e15784cf4c06755f071b3c2243ce27e250a6ef",
+    "source_status_expected_sha256": "347df337ddbb573744c5c4122854fb6d984914775d3f0912f91cfbbd237a04ca",
+    "source_properties": {
+      "en": {
+        "path": "<reference-root>/src/biogenesis/messages/messages_en.properties",
+        "sha256": "885b873a998f96ec3fd29002fea8f58f2fb0f9a65b779680bccba152778fb605",
+        "rows": {
+          "T_FILE_EXISTS": {
+            "line": 102,
+            "raw_iso8859_1": "This file already exists",
+            "decoded": "This file already exists"
+          },
+          "T_CONFIRM_FILE_OVERRIDE": {
+            "line": 101,
+            "raw_iso8859_1": "Are you sure that you want to overwrite this file?",
+            "decoded": "Are you sure that you want to overwrite this file?"
+          }
+        }
+      },
+      "es": {
+        "path": "<reference-root>/src/biogenesis/messages/messages_es.properties",
+        "sha256": "fe8192100d2b5599a2685326c8ee7be06a3e595d836614eb19aa3f42b917202b",
+        "rows": {
+          "T_FILE_EXISTS": {
+            "line": 102,
+            "raw_iso8859_1": "El fichero ya existe",
+            "decoded": "El fichero ya existe"
+          },
+          "T_CONFIRM_FILE_OVERRIDE": {
+            "line": 101,
+            "raw_iso8859_1": "¿Está seguro que quiere sobreescribir el fichero?",
+            "decoded": "¿Está seguro que quiere sobreescribir el fichero?"
+          }
+        }
+      },
+      "ca": {
+        "path": "<reference-root>/src/biogenesis/messages/messages_ca.properties",
+        "sha256": "e5bfbdac1d3670c2f9e5a4fb181e57a08db2aa5937dc029d9380af5e95940dcf",
+        "rows": {
+          "T_FILE_EXISTS": {
+            "line": 102,
+            "raw_iso8859_1": "El fitxer ja existeix",
+            "decoded": "El fitxer ja existeix"
+          },
+          "T_CONFIRM_FILE_OVERRIDE": {
+            "line": 101,
+            "raw_iso8859_1": "Esteu segurs que voleu sobreescriure el fitxer?",
+            "decoded": "Esteu segurs que voleu sobreescriure el fitxer?"
+          }
+        }
+      },
+      "de": {
+        "path": "<reference-root>/src/biogenesis/messages/messages_de.properties",
+        "sha256": "91d7c0ca2056203ac1c9177589a260ac1a883e35d02683fe92d6846fddb340f8",
+        "rows": {
+          "T_FILE_EXISTS": {
+            "line": 102,
+            "raw_iso8859_1": "Diese Datei existiert bereits",
+            "decoded": "Diese Datei existiert bereits"
+          },
+          "T_CONFIRM_FILE_OVERRIDE": {
+            "line": 101,
+            "raw_iso8859_1": "Sind sie sicher dass sie diese Datei überschreiben wollen?",
+            "decoded": "Sind sie sicher dass sie diese Datei überschreiben wollen?"
+          }
+        }
+      },
+      "pt": {
+        "path": "<reference-root>/src/biogenesis/messages/messages_pt.properties",
+        "sha256": "3e8d4869f5919b247a9b2e1dee03f0ab76958a51ccd6132e3fd9a10ea410dcda",
+        "rows": {
+          "T_FILE_EXISTS": {
+            "line": 102,
+            "raw_iso8859_1": "Este ficheiro já existe",
+            "decoded": "Este ficheiro já existe"
+          },
+          "T_CONFIRM_FILE_OVERRIDE": {
+            "line": 101,
+            "raw_iso8859_1": "Tem a certeza que quer substituir este ficheiro?",
+            "decoded": "Tem a certeza que quer substituir este ficheiro?"
+          }
+        }
+      },
+      "ru": {
+        "path": "<reference-root>/src/biogenesis/messages/messages_ru.properties",
+        "sha256": "d93ddcefd7eca43b223c01d859c9ee219b1b3d9872633fd8c2d98f272fab87f2",
+        "rows": {
+          "T_FILE_EXISTS": {
+            "line": 102,
+            "raw_iso8859_1": "\\u042d\\u0442\\u043e\\u0442 \\u0444\\u0430\\u0439\\u043b \\u0443\\u0436\\u0435 \\u0441\\u0443\\u0449\\u0435\\u0441\\u0442\\u0432\\u0443\\u0435\\u0442",
+            "decoded": "Этот файл уже существует"
+          },
+          "T_CONFIRM_FILE_OVERRIDE": {
+            "line": 101,
+            "raw_iso8859_1": "\\u0412\\u044b \\u0443\\u0432\\u0435\\u0440\\u0435\\u043d\\u044b, \\u0447\\u0442\\u043e \\u0445\\u043e\\u0442\\u0438\\u0442\\u0435 \\u043f\\u0435\\u0440\\u0435\\u0437\\u0430\\u043f\\u0438\\u0441\\u0430\\u0442\\u044c \\u044d\\u0442\\u043e\\u0442 \\u0444\\u0430\\u0439\\u043b?",
+            "decoded": "Вы уверены, что хотите перезаписать этот файл?"
+          }
+        }
+      }
+    },
+    "review_notes": [
+      "All six proposed translations were checked against their English key meanings before copying into this separate static catalog.",
+      "Adjacent-backup copy now says backups sit beside the world file and receive no automatic cleanup.",
+      "Russian save-failure copy now states that the world remains unchanged.",
+      "The two Source overwrite rows retain exact decoded Source text, including Source German grammar.",
+      "Existing Source captions come from independent captured Source action and status catalogs.",
+      "Expected status strings retain exact branch order, int64 decimal text, raw diagnostics, recovery warning paths, and variable directory path.",
+      "The test reads this independent JSON and never loads MainLabels."
+    ]
+  },
+  "locales": {
+    "en": {
+      "decision": {
+        "quit": {
+          "title": "Save world",
+          "body": "Do you want to save this world before quitting?",
+          "confirm": "Discard and close",
+          "cancel": "Cancel",
+          "save": "Save world"
+        },
+        "create": {
+          "title": "Replace current world?",
+          "body": "Replace this world? Save world only saves; it does not replace the world.",
+          "confirm": "Create a new world",
+          "cancel": "Cancel",
+          "save": "Save world"
+        },
+        "reset": {
+          "title": "Replace current world?",
+          "body": "Replace this world? Save world only saves; it does not replace the world.",
+          "confirm": "Reset",
+          "cancel": "Cancel",
+          "save": "Save world"
+        }
+      },
+      "overwrite": {
+        "title": "This file already exists",
+        "body": "Are you sure that you want to overwrite this file?",
+        "confirm": "Yes",
+        "cancel": "Cancel"
+      },
+      "preference_failure": {
+        "title": "Preferences could not be saved",
+        "retry": "Retry save",
+        "cancel": "Cancel",
+        "continue": "Continue without saving",
+        "help": "Accepted settings remain in memory. Continue without saving leaves the preference file as reported.",
+        "error": "Error: %s"
+      },
+      "world_save_unavailable": "World saving is not available yet. The current world was retained.",
+      "automatic": {
+        "managed": {
+          "text": "Managed recovery: 1 GiB, up to 8 snapshots.",
+          "tooltip": "Managed recovery: 1 GiB, up to 8 snapshots.\nRecovery directory: {recovery_directory}",
+          "visible": true
+        },
+        "adjacent": {
+          "text": "Automatic backups beside the world file; no automatic cleanup.",
+          "tooltip": "Automatic backups beside the world file; no automatic cleanup.\nRecovery directory: {recovery_directory}",
+          "visible": true
+        },
+        "disabled": {
+          "text": "Automatic backups are off. Recover latest remains available.",
+          "tooltip": "Automatic backups are off. Recover latest remains available.\nRecovery directory: {recovery_directory}",
+          "visible": false
+        },
+        "last_save": {
+          "text": "Managed recovery: 1 GiB, up to 8 snapshots. Last saved game time: 9223372036854775806.",
+          "tooltip": "Managed recovery: 1 GiB, up to 8 snapshots. Last saved game time: 9223372036854775806.\nRecovery directory: {recovery_directory}",
+          "visible": true
+        },
+        "source_pending": {
+          "text": "Managed recovery: 1 GiB, up to 8 snapshots. Save As is required before simulation can continue.",
+          "tooltip": "Managed recovery: 1 GiB, up to 8 snapshots. Save As is required before simulation can continue.\nRecovery directory: {recovery_directory}",
+          "visible": true
+        },
+        "raw_error": {
+          "text": "Managed recovery: 1 GiB, up to 8 snapshots. raw diagnostic: errno 17; literal %s, 100%",
+          "tooltip": "Managed recovery: 1 GiB, up to 8 snapshots. raw diagnostic: errno 17; literal %s, 100%\nRecovery directory: {recovery_directory}",
+          "visible": true
+        },
+        "disabled_error": {
+          "text": "Automatic backups are off. Recover latest remains available. raw diagnostic: errno 17; literal %s, 100%",
+          "tooltip": "Automatic backups are off. Recover latest remains available. raw diagnostic: errno 17; literal %s, 100%\nRecovery directory: {recovery_directory}",
+          "visible": true
+        },
+        "committed": {
+          "text": "Managed recovery: 1 GiB, up to 8 snapshots. Replacement committed; final durability was not confirmed.",
+          "tooltip": "Managed recovery: 1 GiB, up to 8 snapshots. Replacement committed; final durability was not confirmed.\nRecovery directory: {recovery_directory}",
+          "visible": true
+        },
+        "recovery_warning": {
+          "text": "Managed recovery: 1 GiB, up to 8 snapshots. Last recovery warning: raw recovery detail: {recovery_directory}/recover 100%.bgw",
+          "tooltip": "Managed recovery: 1 GiB, up to 8 snapshots. Last recovery warning: raw recovery detail: {recovery_directory}/recover 100%.bgw\nRecovery directory: {recovery_directory}",
+          "visible": true
+        },
+        "timestamp_warning": {
+          "text": "Automatic backups beside the world file; no automatic cleanup. Warning: this opened backup can overwrite later adjacent backups. Use Save As with another base filename.",
+          "tooltip": "Automatic backups beside the world file; no automatic cleanup. Warning: this opened backup can overwrite later adjacent backups. Use Save As with another base filename.\nRecovery directory: {recovery_directory}",
+          "visible": true
+        },
+        "combined": {
+          "text": "Automatic backups beside the world file; no automatic cleanup. Last saved game time: 9223372036854775806. Save As is required before simulation can continue. raw diagnostic: errno 17; literal %s, 100% Replacement committed; final durability was not confirmed. Last recovery warning: raw recovery detail: {recovery_directory}/recover 100%.bgw Warning: this opened backup can overwrite later adjacent backups. Use Save As with another base filename.",
+          "tooltip": "Automatic backups beside the world file; no automatic cleanup. Last saved game time: 9223372036854775806. Save As is required before simulation can continue. raw diagnostic: errno 17; literal %s, 100% Replacement committed; final durability was not confirmed. Last recovery warning: raw recovery detail: {recovery_directory}/recover 100%.bgw Warning: this opened backup can overwrite later adjacent backups. Use Save As with another base filename.\nRecovery directory: {recovery_directory}",
+          "visible": true
+        }
+      }
+    },
+    "es": {
+      "decision": {
+        "quit": {
+          "title": "Guardar mundo",
+          "body": "¿Quiere guardar este mundo antes de salir?",
+          "confirm": "Descartar y cerrar",
+          "cancel": "Cancelar",
+          "save": "Guardar mundo"
+        },
+        "create": {
+          "title": "¿Reemplazar el mundo actual?",
+          "body": "¿Reemplazar este mundo? Guardar mundo solo guarda; no reemplaza el mundo.",
+          "confirm": "Crear un mundo nuevo",
+          "cancel": "Cancelar",
+          "save": "Guardar mundo"
+        },
+        "reset": {
+          "title": "¿Reemplazar el mundo actual?",
+          "body": "¿Reemplazar este mundo? Guardar mundo solo guarda; no reemplaza el mundo.",
+          "confirm": "Reiniciar",
+          "cancel": "Cancelar",
+          "save": "Guardar mundo"
+        }
+      },
+      "overwrite": {
+        "title": "El fichero ya existe",
+        "body": "¿Está seguro que quiere sobreescribir el fichero?",
+        "confirm": "Sí",
+        "cancel": "Cancelar"
+      },
+      "preference_failure": {
+        "title": "No se pudieron guardar las preferencias",
+        "retry": "Reintentar guardado",
+        "cancel": "Cancelar",
+        "continue": "Continuar sin guardar",
+        "help": "La configuración aceptada permanece en memoria. Continuar sin guardar deja el archivo de preferencias en el estado indicado.",
+        "error": "Error: %s"
+      },
+      "world_save_unavailable": "Guardar mundos aún no está disponible. Se conservó el mundo actual.",
+      "automatic": {
+        "managed": {
+          "text": "Recuperación gestionada: 1 GiB, hasta 8 instantáneas.",
+          "tooltip": "Recuperación gestionada: 1 GiB, hasta 8 instantáneas.\nDirectorio de recuperación: {recovery_directory}",
+          "visible": true
+        },
+        "adjacent": {
+          "text": "Copias automáticas junto al archivo del mundo; sin limpieza automática.",
+          "tooltip": "Copias automáticas junto al archivo del mundo; sin limpieza automática.\nDirectorio de recuperación: {recovery_directory}",
+          "visible": true
+        },
+        "disabled": {
+          "text": "Las copias automáticas están desactivadas. Recuperar la última sigue disponible.",
+          "tooltip": "Las copias automáticas están desactivadas. Recuperar la última sigue disponible.\nDirectorio de recuperación: {recovery_directory}",
+          "visible": false
+        },
+        "last_save": {
+          "text": "Recuperación gestionada: 1 GiB, hasta 8 instantáneas. Último tiempo de juego guardado: 9223372036854775806.",
+          "tooltip": "Recuperación gestionada: 1 GiB, hasta 8 instantáneas. Último tiempo de juego guardado: 9223372036854775806.\nDirectorio de recuperación: {recovery_directory}",
+          "visible": true
+        },
+        "source_pending": {
+          "text": "Recuperación gestionada: 1 GiB, hasta 8 instantáneas. Se requiere Guardar como para continuar la simulación.",
+          "tooltip": "Recuperación gestionada: 1 GiB, hasta 8 instantáneas. Se requiere Guardar como para continuar la simulación.\nDirectorio de recuperación: {recovery_directory}",
+          "visible": true
+        },
+        "raw_error": {
+          "text": "Recuperación gestionada: 1 GiB, hasta 8 instantáneas. raw diagnostic: errno 17; literal %s, 100%",
+          "tooltip": "Recuperación gestionada: 1 GiB, hasta 8 instantáneas. raw diagnostic: errno 17; literal %s, 100%\nDirectorio de recuperación: {recovery_directory}",
+          "visible": true
+        },
+        "disabled_error": {
+          "text": "Las copias automáticas están desactivadas. Recuperar la última sigue disponible. raw diagnostic: errno 17; literal %s, 100%",
+          "tooltip": "Las copias automáticas están desactivadas. Recuperar la última sigue disponible. raw diagnostic: errno 17; literal %s, 100%\nDirectorio de recuperación: {recovery_directory}",
+          "visible": true
+        },
+        "committed": {
+          "text": "Recuperación gestionada: 1 GiB, hasta 8 instantáneas. El reemplazo se confirmó; no se confirmó la persistencia final en disco.",
+          "tooltip": "Recuperación gestionada: 1 GiB, hasta 8 instantáneas. El reemplazo se confirmó; no se confirmó la persistencia final en disco.\nDirectorio de recuperación: {recovery_directory}",
+          "visible": true
+        },
+        "recovery_warning": {
+          "text": "Recuperación gestionada: 1 GiB, hasta 8 instantáneas. Último aviso de recuperación: raw recovery detail: {recovery_directory}/recover 100%.bgw",
+          "tooltip": "Recuperación gestionada: 1 GiB, hasta 8 instantáneas. Último aviso de recuperación: raw recovery detail: {recovery_directory}/recover 100%.bgw\nDirectorio de recuperación: {recovery_directory}",
+          "visible": true
+        },
+        "timestamp_warning": {
+          "text": "Copias automáticas junto al archivo del mundo; sin limpieza automática. Aviso: esta copia abierta puede sobrescribir copias adyacentes posteriores. Use Guardar como con otro nombre base.",
+          "tooltip": "Copias automáticas junto al archivo del mundo; sin limpieza automática. Aviso: esta copia abierta puede sobrescribir copias adyacentes posteriores. Use Guardar como con otro nombre base.\nDirectorio de recuperación: {recovery_directory}",
+          "visible": true
+        },
+        "combined": {
+          "text": "Copias automáticas junto al archivo del mundo; sin limpieza automática. Último tiempo de juego guardado: 9223372036854775806. Se requiere Guardar como para continuar la simulación. raw diagnostic: errno 17; literal %s, 100% El reemplazo se confirmó; no se confirmó la persistencia final en disco. Último aviso de recuperación: raw recovery detail: {recovery_directory}/recover 100%.bgw Aviso: esta copia abierta puede sobrescribir copias adyacentes posteriores. Use Guardar como con otro nombre base.",
+          "tooltip": "Copias automáticas junto al archivo del mundo; sin limpieza automática. Último tiempo de juego guardado: 9223372036854775806. Se requiere Guardar como para continuar la simulación. raw diagnostic: errno 17; literal %s, 100% El reemplazo se confirmó; no se confirmó la persistencia final en disco. Último aviso de recuperación: raw recovery detail: {recovery_directory}/recover 100%.bgw Aviso: esta copia abierta puede sobrescribir copias adyacentes posteriores. Use Guardar como con otro nombre base.\nDirectorio de recuperación: {recovery_directory}",
+          "visible": true
+        }
+      }
+    },
+    "ca": {
+      "decision": {
+        "quit": {
+          "title": "Desa el món",
+          "body": "Voleu desar aquest món abans de sortir?",
+          "confirm": "Descarta i tanca",
+          "cancel": "Cancel·la",
+          "save": "Desa el món"
+        },
+        "create": {
+          "title": "Voleu substituir el món actual?",
+          "body": "Voleu substituir aquest món? Desar el món només el desa; no el substitueix.",
+          "confirm": "Crear un nou món",
+          "cancel": "Cancel·la",
+          "save": "Desa el món"
+        },
+        "reset": {
+          "title": "Voleu substituir el món actual?",
+          "body": "Voleu substituir aquest món? Desar el món només el desa; no el substitueix.",
+          "confirm": "Reinicia",
+          "cancel": "Cancel·la",
+          "save": "Desa el món"
+        }
+      },
+      "overwrite": {
+        "title": "El fitxer ja existeix",
+        "body": "Esteu segurs que voleu sobreescriure el fitxer?",
+        "confirm": "Sí",
+        "cancel": "Cancel·la"
+      },
+      "preference_failure": {
+        "title": "No s'han pogut desar les preferències",
+        "retry": "Torna a intentar desar",
+        "cancel": "Cancel·la",
+        "continue": "Continua sense desar",
+        "help": "La configuració acceptada es manté en memòria. Continuar sense desar deixa el fitxer de preferències en l'estat indicat.",
+        "error": "Error: %s"
+      },
+      "world_save_unavailable": "Encara no es poden desar mons. S'ha conservat el món actual.",
+      "automatic": {
+        "managed": {
+          "text": "Recuperació gestionada: 1 GiB, fins a 8 instantànies.",
+          "tooltip": "Recuperació gestionada: 1 GiB, fins a 8 instantànies.\nDirectori de recuperació: {recovery_directory}",
+          "visible": true
+        },
+        "adjacent": {
+          "text": "Còpies automàtiques al costat del fitxer del món; sense neteja automàtica.",
+          "tooltip": "Còpies automàtiques al costat del fitxer del món; sense neteja automàtica.\nDirectori de recuperació: {recovery_directory}",
+          "visible": true
+        },
+        "disabled": {
+          "text": "Les còpies automàtiques estan desactivades. Recuperar l'última continua disponible.",
+          "tooltip": "Les còpies automàtiques estan desactivades. Recuperar l'última continua disponible.\nDirectori de recuperació: {recovery_directory}",
+          "visible": false
+        },
+        "last_save": {
+          "text": "Recuperació gestionada: 1 GiB, fins a 8 instantànies. Últim temps de joc desat: 9223372036854775806.",
+          "tooltip": "Recuperació gestionada: 1 GiB, fins a 8 instantànies. Últim temps de joc desat: 9223372036854775806.\nDirectori de recuperació: {recovery_directory}",
+          "visible": true
+        },
+        "source_pending": {
+          "text": "Recuperació gestionada: 1 GiB, fins a 8 instantànies. Cal Desar com per continuar la simulació.",
+          "tooltip": "Recuperació gestionada: 1 GiB, fins a 8 instantànies. Cal Desar com per continuar la simulació.\nDirectori de recuperació: {recovery_directory}",
+          "visible": true
+        },
+        "raw_error": {
+          "text": "Recuperació gestionada: 1 GiB, fins a 8 instantànies. raw diagnostic: errno 17; literal %s, 100%",
+          "tooltip": "Recuperació gestionada: 1 GiB, fins a 8 instantànies. raw diagnostic: errno 17; literal %s, 100%\nDirectori de recuperació: {recovery_directory}",
+          "visible": true
+        },
+        "disabled_error": {
+          "text": "Les còpies automàtiques estan desactivades. Recuperar l'última continua disponible. raw diagnostic: errno 17; literal %s, 100%",
+          "tooltip": "Les còpies automàtiques estan desactivades. Recuperar l'última continua disponible. raw diagnostic: errno 17; literal %s, 100%\nDirectori de recuperació: {recovery_directory}",
+          "visible": true
+        },
+        "committed": {
+          "text": "Recuperació gestionada: 1 GiB, fins a 8 instantànies. S'ha confirmat la substitució; no s'ha confirmat la persistència final al disc.",
+          "tooltip": "Recuperació gestionada: 1 GiB, fins a 8 instantànies. S'ha confirmat la substitució; no s'ha confirmat la persistència final al disc.\nDirectori de recuperació: {recovery_directory}",
+          "visible": true
+        },
+        "recovery_warning": {
+          "text": "Recuperació gestionada: 1 GiB, fins a 8 instantànies. Últim avís de recuperació: raw recovery detail: {recovery_directory}/recover 100%.bgw",
+          "tooltip": "Recuperació gestionada: 1 GiB, fins a 8 instantànies. Últim avís de recuperació: raw recovery detail: {recovery_directory}/recover 100%.bgw\nDirectori de recuperació: {recovery_directory}",
+          "visible": true
+        },
+        "timestamp_warning": {
+          "text": "Còpies automàtiques al costat del fitxer del món; sense neteja automàtica. Avís: aquesta còpia oberta pot sobreescriure còpies adjacents posteriors. Feu servir Desar com amb un altre nom base.",
+          "tooltip": "Còpies automàtiques al costat del fitxer del món; sense neteja automàtica. Avís: aquesta còpia oberta pot sobreescriure còpies adjacents posteriors. Feu servir Desar com amb un altre nom base.\nDirectori de recuperació: {recovery_directory}",
+          "visible": true
+        },
+        "combined": {
+          "text": "Còpies automàtiques al costat del fitxer del món; sense neteja automàtica. Últim temps de joc desat: 9223372036854775806. Cal Desar com per continuar la simulació. raw diagnostic: errno 17; literal %s, 100% S'ha confirmat la substitució; no s'ha confirmat la persistència final al disc. Últim avís de recuperació: raw recovery detail: {recovery_directory}/recover 100%.bgw Avís: aquesta còpia oberta pot sobreescriure còpies adjacents posteriors. Feu servir Desar com amb un altre nom base.",
+          "tooltip": "Còpies automàtiques al costat del fitxer del món; sense neteja automàtica. Últim temps de joc desat: 9223372036854775806. Cal Desar com per continuar la simulació. raw diagnostic: errno 17; literal %s, 100% S'ha confirmat la substitució; no s'ha confirmat la persistència final al disc. Últim avís de recuperació: raw recovery detail: {recovery_directory}/recover 100%.bgw Avís: aquesta còpia oberta pot sobreescriure còpies adjacents posteriors. Feu servir Desar com amb un altre nom base.\nDirectori de recuperació: {recovery_directory}",
+          "visible": true
+        }
+      }
+    },
+    "de": {
+      "decision": {
+        "quit": {
+          "title": "Welt speichern",
+          "body": "Wollen sie diese Welt speichern bevor sie beenden?",
+          "confirm": "Verwerfen und schließen",
+          "cancel": "Abbrechen",
+          "save": "Welt speichern"
+        },
+        "create": {
+          "title": "Aktuelle Welt ersetzen?",
+          "body": "Diese Welt ersetzen? Welt speichern speichert nur; die Welt wird dadurch nicht ersetzt.",
+          "confirm": "Erschaffe eine neue Welt",
+          "cancel": "Abbrechen",
+          "save": "Welt speichern"
+        },
+        "reset": {
+          "title": "Aktuelle Welt ersetzen?",
+          "body": "Diese Welt ersetzen? Welt speichern speichert nur; die Welt wird dadurch nicht ersetzt.",
+          "confirm": "Zurücksetzen",
+          "cancel": "Abbrechen",
+          "save": "Welt speichern"
+        }
+      },
+      "overwrite": {
+        "title": "Diese Datei existiert bereits",
+        "body": "Sind sie sicher dass sie diese Datei überschreiben wollen?",
+        "confirm": "Ja",
+        "cancel": "Abbrechen"
+      },
+      "preference_failure": {
+        "title": "Einstellungen konnten nicht gespeichert werden",
+        "retry": "Speichern erneut versuchen",
+        "cancel": "Abbrechen",
+        "continue": "Ohne Speichern fortfahren",
+        "help": "Übernommene Einstellungen bleiben im Speicher. Ohne Speichern fortfahren belässt die Einstellungsdatei im gemeldeten Zustand.",
+        "error": "Fehler: %s"
+      },
+      "world_save_unavailable": "Das Speichern von Welten ist noch nicht verfügbar. Die aktuelle Welt wurde beibehalten.",
+      "automatic": {
+        "managed": {
+          "text": "Verwaltete Wiederherstellung: 1 GiB, bis zu 8 Schnappschüsse.",
+          "tooltip": "Verwaltete Wiederherstellung: 1 GiB, bis zu 8 Schnappschüsse.\nWiederherstellungsverzeichnis: {recovery_directory}",
+          "visible": true
+        },
+        "adjacent": {
+          "text": "Automatische Sicherungen neben der Weltdatei; keine automatische Bereinigung.",
+          "tooltip": "Automatische Sicherungen neben der Weltdatei; keine automatische Bereinigung.\nWiederherstellungsverzeichnis: {recovery_directory}",
+          "visible": true
+        },
+        "disabled": {
+          "text": "Automatische Sicherungen sind ausgeschaltet. Die Wiederherstellung des letzten Schnappschusses bleibt verfügbar.",
+          "tooltip": "Automatische Sicherungen sind ausgeschaltet. Die Wiederherstellung des letzten Schnappschusses bleibt verfügbar.\nWiederherstellungsverzeichnis: {recovery_directory}",
+          "visible": false
+        },
+        "last_save": {
+          "text": "Verwaltete Wiederherstellung: 1 GiB, bis zu 8 Schnappschüsse. Zuletzt gespeicherte Spielzeit: 9223372036854775806.",
+          "tooltip": "Verwaltete Wiederherstellung: 1 GiB, bis zu 8 Schnappschüsse. Zuletzt gespeicherte Spielzeit: 9223372036854775806.\nWiederherstellungsverzeichnis: {recovery_directory}",
+          "visible": true
+        },
+        "source_pending": {
+          "text": "Verwaltete Wiederherstellung: 1 GiB, bis zu 8 Schnappschüsse. Speichern unter ist erforderlich, bevor die Simulation fortgesetzt werden kann.",
+          "tooltip": "Verwaltete Wiederherstellung: 1 GiB, bis zu 8 Schnappschüsse. Speichern unter ist erforderlich, bevor die Simulation fortgesetzt werden kann.\nWiederherstellungsverzeichnis: {recovery_directory}",
+          "visible": true
+        },
+        "raw_error": {
+          "text": "Verwaltete Wiederherstellung: 1 GiB, bis zu 8 Schnappschüsse. raw diagnostic: errno 17; literal %s, 100%",
+          "tooltip": "Verwaltete Wiederherstellung: 1 GiB, bis zu 8 Schnappschüsse. raw diagnostic: errno 17; literal %s, 100%\nWiederherstellungsverzeichnis: {recovery_directory}",
+          "visible": true
+        },
+        "disabled_error": {
+          "text": "Automatische Sicherungen sind ausgeschaltet. Die Wiederherstellung des letzten Schnappschusses bleibt verfügbar. raw diagnostic: errno 17; literal %s, 100%",
+          "tooltip": "Automatische Sicherungen sind ausgeschaltet. Die Wiederherstellung des letzten Schnappschusses bleibt verfügbar. raw diagnostic: errno 17; literal %s, 100%\nWiederherstellungsverzeichnis: {recovery_directory}",
+          "visible": true
+        },
+        "committed": {
+          "text": "Verwaltete Wiederherstellung: 1 GiB, bis zu 8 Schnappschüsse. Ersetzung übernommen; die abschließende dauerhafte Speicherung wurde nicht bestätigt.",
+          "tooltip": "Verwaltete Wiederherstellung: 1 GiB, bis zu 8 Schnappschüsse. Ersetzung übernommen; die abschließende dauerhafte Speicherung wurde nicht bestätigt.\nWiederherstellungsverzeichnis: {recovery_directory}",
+          "visible": true
+        },
+        "recovery_warning": {
+          "text": "Verwaltete Wiederherstellung: 1 GiB, bis zu 8 Schnappschüsse. Letzte Wiederherstellungswarnung: raw recovery detail: {recovery_directory}/recover 100%.bgw",
+          "tooltip": "Verwaltete Wiederherstellung: 1 GiB, bis zu 8 Schnappschüsse. Letzte Wiederherstellungswarnung: raw recovery detail: {recovery_directory}/recover 100%.bgw\nWiederherstellungsverzeichnis: {recovery_directory}",
+          "visible": true
+        },
+        "timestamp_warning": {
+          "text": "Automatische Sicherungen neben der Weltdatei; keine automatische Bereinigung. Warnung: Diese geöffnete Sicherung kann spätere benachbarte Sicherungen überschreiben. Verwenden Sie Speichern unter mit einem anderen Basisdateinamen.",
+          "tooltip": "Automatische Sicherungen neben der Weltdatei; keine automatische Bereinigung. Warnung: Diese geöffnete Sicherung kann spätere benachbarte Sicherungen überschreiben. Verwenden Sie Speichern unter mit einem anderen Basisdateinamen.\nWiederherstellungsverzeichnis: {recovery_directory}",
+          "visible": true
+        },
+        "combined": {
+          "text": "Automatische Sicherungen neben der Weltdatei; keine automatische Bereinigung. Zuletzt gespeicherte Spielzeit: 9223372036854775806. Speichern unter ist erforderlich, bevor die Simulation fortgesetzt werden kann. raw diagnostic: errno 17; literal %s, 100% Ersetzung übernommen; die abschließende dauerhafte Speicherung wurde nicht bestätigt. Letzte Wiederherstellungswarnung: raw recovery detail: {recovery_directory}/recover 100%.bgw Warnung: Diese geöffnete Sicherung kann spätere benachbarte Sicherungen überschreiben. Verwenden Sie Speichern unter mit einem anderen Basisdateinamen.",
+          "tooltip": "Automatische Sicherungen neben der Weltdatei; keine automatische Bereinigung. Zuletzt gespeicherte Spielzeit: 9223372036854775806. Speichern unter ist erforderlich, bevor die Simulation fortgesetzt werden kann. raw diagnostic: errno 17; literal %s, 100% Ersetzung übernommen; die abschließende dauerhafte Speicherung wurde nicht bestätigt. Letzte Wiederherstellungswarnung: raw recovery detail: {recovery_directory}/recover 100%.bgw Warnung: Diese geöffnete Sicherung kann spätere benachbarte Sicherungen überschreiben. Verwenden Sie Speichern unter mit einem anderen Basisdateinamen.\nWiederherstellungsverzeichnis: {recovery_directory}",
+          "visible": true
+        }
+      }
+    },
+    "pt": {
+      "decision": {
+        "quit": {
+          "title": "Guardar ecossistema",
+          "body": "Quer guardar este ecossistema antes de sair?",
+          "confirm": "Descartar e fechar",
+          "cancel": "Cancelar",
+          "save": "Guardar ecossistema"
+        },
+        "create": {
+          "title": "Substituir o mundo atual?",
+          "body": "Substituir este mundo? Guardar mundo apenas guarda; não substitui o mundo.",
+          "confirm": "Criar um novo ecossistema",
+          "cancel": "Cancelar",
+          "save": "Guardar ecossistema"
+        },
+        "reset": {
+          "title": "Substituir o mundo atual?",
+          "body": "Substituir este mundo? Guardar mundo apenas guarda; não substitui o mundo.",
+          "confirm": "Repor",
+          "cancel": "Cancelar",
+          "save": "Guardar ecossistema"
+        }
+      },
+      "overwrite": {
+        "title": "Este ficheiro já existe",
+        "body": "Tem a certeza que quer substituir este ficheiro?",
+        "confirm": "Sim",
+        "cancel": "Cancelar"
+      },
+      "preference_failure": {
+        "title": "Não foi possível guardar as preferências",
+        "retry": "Tentar guardar novamente",
+        "cancel": "Cancelar",
+        "continue": "Continuar sem guardar",
+        "help": "As definições aceites permanecem na memória. Continuar sem guardar deixa o ficheiro de preferências no estado indicado.",
+        "error": "Erro: %s"
+      },
+      "world_save_unavailable": "Guardar mundos ainda não está disponível. O mundo atual foi mantido.",
+      "automatic": {
+        "managed": {
+          "text": "Recuperação gerida: 1 GiB, até 8 instantâneos.",
+          "tooltip": "Recuperação gerida: 1 GiB, até 8 instantâneos.\nDiretório de recuperação: {recovery_directory}",
+          "visible": true
+        },
+        "adjacent": {
+          "text": "Cópias automáticas junto do ficheiro do mundo; sem limpeza automática.",
+          "tooltip": "Cópias automáticas junto do ficheiro do mundo; sem limpeza automática.\nDiretório de recuperação: {recovery_directory}",
+          "visible": true
+        },
+        "disabled": {
+          "text": "As cópias automáticas estão desativadas. Recuperar a última continua disponível.",
+          "tooltip": "As cópias automáticas estão desativadas. Recuperar a última continua disponível.\nDiretório de recuperação: {recovery_directory}",
+          "visible": false
+        },
+        "last_save": {
+          "text": "Recuperação gerida: 1 GiB, até 8 instantâneos. Último tempo de jogo guardado: 9223372036854775806.",
+          "tooltip": "Recuperação gerida: 1 GiB, até 8 instantâneos. Último tempo de jogo guardado: 9223372036854775806.\nDiretório de recuperação: {recovery_directory}",
+          "visible": true
+        },
+        "source_pending": {
+          "text": "Recuperação gerida: 1 GiB, até 8 instantâneos. É necessário Guardar como para continuar a simulação.",
+          "tooltip": "Recuperação gerida: 1 GiB, até 8 instantâneos. É necessário Guardar como para continuar a simulação.\nDiretório de recuperação: {recovery_directory}",
+          "visible": true
+        },
+        "raw_error": {
+          "text": "Recuperação gerida: 1 GiB, até 8 instantâneos. raw diagnostic: errno 17; literal %s, 100%",
+          "tooltip": "Recuperação gerida: 1 GiB, até 8 instantâneos. raw diagnostic: errno 17; literal %s, 100%\nDiretório de recuperação: {recovery_directory}",
+          "visible": true
+        },
+        "disabled_error": {
+          "text": "As cópias automáticas estão desativadas. Recuperar a última continua disponível. raw diagnostic: errno 17; literal %s, 100%",
+          "tooltip": "As cópias automáticas estão desativadas. Recuperar a última continua disponível. raw diagnostic: errno 17; literal %s, 100%\nDiretório de recuperação: {recovery_directory}",
+          "visible": true
+        },
+        "committed": {
+          "text": "Recuperação gerida: 1 GiB, até 8 instantâneos. Substituição confirmada; a persistência final no disco não foi confirmada.",
+          "tooltip": "Recuperação gerida: 1 GiB, até 8 instantâneos. Substituição confirmada; a persistência final no disco não foi confirmada.\nDiretório de recuperação: {recovery_directory}",
+          "visible": true
+        },
+        "recovery_warning": {
+          "text": "Recuperação gerida: 1 GiB, até 8 instantâneos. Último aviso de recuperação: raw recovery detail: {recovery_directory}/recover 100%.bgw",
+          "tooltip": "Recuperação gerida: 1 GiB, até 8 instantâneos. Último aviso de recuperação: raw recovery detail: {recovery_directory}/recover 100%.bgw\nDiretório de recuperação: {recovery_directory}",
+          "visible": true
+        },
+        "timestamp_warning": {
+          "text": "Cópias automáticas junto do ficheiro do mundo; sem limpeza automática. Aviso: esta cópia aberta pode substituir cópias adjacentes posteriores. Use Guardar como com outro nome base.",
+          "tooltip": "Cópias automáticas junto do ficheiro do mundo; sem limpeza automática. Aviso: esta cópia aberta pode substituir cópias adjacentes posteriores. Use Guardar como com outro nome base.\nDiretório de recuperação: {recovery_directory}",
+          "visible": true
+        },
+        "combined": {
+          "text": "Cópias automáticas junto do ficheiro do mundo; sem limpeza automática. Último tempo de jogo guardado: 9223372036854775806. É necessário Guardar como para continuar a simulação. raw diagnostic: errno 17; literal %s, 100% Substituição confirmada; a persistência final no disco não foi confirmada. Último aviso de recuperação: raw recovery detail: {recovery_directory}/recover 100%.bgw Aviso: esta cópia aberta pode substituir cópias adjacentes posteriores. Use Guardar como com outro nome base.",
+          "tooltip": "Cópias automáticas junto do ficheiro do mundo; sem limpeza automática. Último tempo de jogo guardado: 9223372036854775806. É necessário Guardar como para continuar a simulação. raw diagnostic: errno 17; literal %s, 100% Substituição confirmada; a persistência final no disco não foi confirmada. Último aviso de recuperação: raw recovery detail: {recovery_directory}/recover 100%.bgw Aviso: esta cópia aberta pode substituir cópias adjacentes posteriores. Use Guardar como com outro nome base.\nDiretório de recuperação: {recovery_directory}",
+          "visible": true
+        }
+      }
+    },
+    "ru": {
+      "decision": {
+        "quit": {
+          "title": "Сохранить мир",
+          "body": "Вы хотите сохранить этот мир перед выходом?",
+          "confirm": "Отбросить и закрыть",
+          "cancel": "Отмена",
+          "save": "Сохранить мир"
+        },
+        "create": {
+          "title": "Заменить текущий мир?",
+          "body": "Заменить этот мир? Сохранение мира только сохраняет его, но не заменяет.",
+          "confirm": "Создать новый мир",
+          "cancel": "Отмена",
+          "save": "Сохранить мир"
+        },
+        "reset": {
+          "title": "Заменить текущий мир?",
+          "body": "Заменить этот мир? Сохранение мира только сохраняет его, но не заменяет.",
+          "confirm": "Сбросить",
+          "cancel": "Отмена",
+          "save": "Сохранить мир"
+        }
+      },
+      "overwrite": {
+        "title": "Этот файл уже существует",
+        "body": "Вы уверены, что хотите перезаписать этот файл?",
+        "confirm": "Да",
+        "cancel": "Отмена"
+      },
+      "preference_failure": {
+        "title": "Не удалось сохранить настройки",
+        "retry": "Повторить сохранение",
+        "cancel": "Отмена",
+        "continue": "Продолжить без сохранения",
+        "help": "Принятые настройки остаются в памяти. Продолжение без сохранения оставляет файл настроек в указанном состоянии.",
+        "error": "Ошибка: %s"
+      },
+      "world_save_unavailable": "Сохранение миров пока недоступно. Текущий мир оставлен без изменений.",
+      "automatic": {
+        "managed": {
+          "text": "Управляемое восстановление: 1 ГиБ, до 8 снимков.",
+          "tooltip": "Управляемое восстановление: 1 ГиБ, до 8 снимков.\nКаталог восстановления: {recovery_directory}",
+          "visible": true
+        },
+        "adjacent": {
+          "text": "Автоматические копии рядом с файлом мира; без автоматической очистки.",
+          "tooltip": "Автоматические копии рядом с файлом мира; без автоматической очистки.\nКаталог восстановления: {recovery_directory}",
+          "visible": true
+        },
+        "disabled": {
+          "text": "Автоматическое резервирование выключено. Восстановление последней копии остаётся доступным.",
+          "tooltip": "Автоматическое резервирование выключено. Восстановление последней копии остаётся доступным.\nКаталог восстановления: {recovery_directory}",
+          "visible": false
+        },
+        "last_save": {
+          "text": "Управляемое восстановление: 1 ГиБ, до 8 снимков. Последнее сохранённое игровое время: 9223372036854775806.",
+          "tooltip": "Управляемое восстановление: 1 ГиБ, до 8 снимков. Последнее сохранённое игровое время: 9223372036854775806.\nКаталог восстановления: {recovery_directory}",
+          "visible": true
+        },
+        "source_pending": {
+          "text": "Управляемое восстановление: 1 ГиБ, до 8 снимков. Для продолжения симуляции требуется Сохранить как.",
+          "tooltip": "Управляемое восстановление: 1 ГиБ, до 8 снимков. Для продолжения симуляции требуется Сохранить как.\nКаталог восстановления: {recovery_directory}",
+          "visible": true
+        },
+        "raw_error": {
+          "text": "Управляемое восстановление: 1 ГиБ, до 8 снимков. raw diagnostic: errno 17; literal %s, 100%",
+          "tooltip": "Управляемое восстановление: 1 ГиБ, до 8 снимков. raw diagnostic: errno 17; literal %s, 100%\nКаталог восстановления: {recovery_directory}",
+          "visible": true
+        },
+        "disabled_error": {
+          "text": "Автоматическое резервирование выключено. Восстановление последней копии остаётся доступным. raw diagnostic: errno 17; literal %s, 100%",
+          "tooltip": "Автоматическое резервирование выключено. Восстановление последней копии остаётся доступным. raw diagnostic: errno 17; literal %s, 100%\nКаталог восстановления: {recovery_directory}",
+          "visible": true
+        },
+        "committed": {
+          "text": "Управляемое восстановление: 1 ГиБ, до 8 снимков. Замена выполнена; окончательная долговременная запись не подтверждена.",
+          "tooltip": "Управляемое восстановление: 1 ГиБ, до 8 снимков. Замена выполнена; окончательная долговременная запись не подтверждена.\nКаталог восстановления: {recovery_directory}",
+          "visible": true
+        },
+        "recovery_warning": {
+          "text": "Управляемое восстановление: 1 ГиБ, до 8 снимков. Последнее предупреждение восстановления: raw recovery detail: {recovery_directory}/recover 100%.bgw",
+          "tooltip": "Управляемое восстановление: 1 ГиБ, до 8 снимков. Последнее предупреждение восстановления: raw recovery detail: {recovery_directory}/recover 100%.bgw\nКаталог восстановления: {recovery_directory}",
+          "visible": true
+        },
+        "timestamp_warning": {
+          "text": "Автоматические копии рядом с файлом мира; без автоматической очистки. Предупреждение: открытая копия может перезаписать более поздние соседние копии. Используйте Сохранить как с другим базовым именем файла.",
+          "tooltip": "Автоматические копии рядом с файлом мира; без автоматической очистки. Предупреждение: открытая копия может перезаписать более поздние соседние копии. Используйте Сохранить как с другим базовым именем файла.\nКаталог восстановления: {recovery_directory}",
+          "visible": true
+        },
+        "combined": {
+          "text": "Автоматические копии рядом с файлом мира; без автоматической очистки. Последнее сохранённое игровое время: 9223372036854775806. Для продолжения симуляции требуется Сохранить как. raw diagnostic: errno 17; literal %s, 100% Замена выполнена; окончательная долговременная запись не подтверждена. Последнее предупреждение восстановления: raw recovery detail: {recovery_directory}/recover 100%.bgw Предупреждение: открытая копия может перезаписать более поздние соседние копии. Используйте Сохранить как с другим базовым именем файла.",
+          "tooltip": "Автоматические копии рядом с файлом мира; без автоматической очистки. Последнее сохранённое игровое время: 9223372036854775806. Для продолжения симуляции требуется Сохранить как. raw diagnostic: errno 17; literal %s, 100% Замена выполнена; окончательная долговременная запись не подтверждена. Последнее предупреждение восстановления: raw recovery detail: {recovery_directory}/recover 100%.bgw Предупреждение: открытая копия может перезаписать более поздние соседние копии. Используйте Сохранить как с другим базовым именем файла.\nКаталог восстановления: {recovery_directory}",
+          "visible": true
+        }
+      }
+    }
+  }
+}

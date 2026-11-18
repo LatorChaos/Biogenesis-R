@@ -1,0 +1,366 @@
+C	shared-genotype	506172
+I	setup	visible._selectedOrganism	b
+I	setup	a._reproduceEnergy	123
+I	setup	c._reproduceEnergy	-41
+I	setup	b._infectedReproduceEnergy	-17
+B	constructed	a_genotype_is_b_genotype	true
+B	constructed	a_genotype_is_c_genotype	false
+B	constructed	a_genotype_values_equal_c	true
+B	constructed	a_gene_array_is_b_gene_array	true
+B	constructed	a_gene_array_is_c_gene_array	false
+B	constructed	a_gene0_is_b_gene0	true
+B	constructed	a_gene0_is_c_gene0	false
+B	constructed	a_color0_is_c_color0	true
+B	constructed	b_infected_is_a_genotype	false
+B	constructed	b_infected_is_b_genotype	false
+B	constructed	b_infected_is_c_genotype	false
+B	constructed	b_saved_is_null	true
+B	constructed	c_saved_is_a_genotype	false
+B	constructed	statistics_last_infected_is_b_genotype	false
+B	constructed	statistics_most_infections_is_a_genotype	false
+S	constructed	a._nTotalInfected	0
+S	constructed	c._nTotalInfected	0
+S	constructed	b._infectedReproduceEnergy	-17
+S	constructed	statistics.beingMostInfectionsNumber	0
+S	constructed	statistics.infectionsSum	0
+V	constructed	a.genotype	present	true
+V	constructed	a.genotype	_generation	7
+V	constructed	a.genotype	_cladeID	root
+V	constructed	a.genotype	_updateClade	true
+V	constructed	a.genotype	gene0._length	4028000000000000
+V	constructed	a.genotype	gene0._redreaction	0
+V	constructed	b.genotype	present	true
+V	constructed	b.genotype	_generation	7
+V	constructed	b.genotype	_cladeID	root
+V	constructed	b.genotype	_updateClade	true
+V	constructed	b.genotype	gene0._length	4028000000000000
+V	constructed	b.genotype	gene0._redreaction	0
+V	constructed	c.genotype	present	true
+V	constructed	c.genotype	_generation	7
+V	constructed	c.genotype	_cladeID	root
+V	constructed	c.genotype	_updateClade	true
+V	constructed	c.genotype	gene0._length	4028000000000000
+V	constructed	c.genotype	gene0._redreaction	0
+V	constructed	b.infected	present	false
+V	constructed	c.saved	present	false
+V	constructed	statistics.lastInfected	present	false
+V	constructed	statistics.mostInfections	present	false
+I	infection-organism-shared	b._savedGeneticCode	c.genotype
+B	infection-organism-shared	a_genotype_is_b_genotype	true
+B	infection-organism-shared	a_genotype_is_c_genotype	false
+B	infection-organism-shared	a_genotype_values_equal_c	true
+B	infection-organism-shared	a_gene_array_is_b_gene_array	true
+B	infection-organism-shared	a_gene_array_is_c_gene_array	false
+B	infection-organism-shared	a_gene0_is_b_gene0	true
+B	infection-organism-shared	a_gene0_is_c_gene0	false
+B	infection-organism-shared	a_color0_is_c_color0	true
+B	infection-organism-shared	b_infected_is_a_genotype	true
+B	infection-organism-shared	b_infected_is_b_genotype	true
+B	infection-organism-shared	b_infected_is_c_genotype	false
+B	infection-organism-shared	b_saved_is_null	true
+B	infection-organism-shared	c_saved_is_a_genotype	false
+B	infection-organism-shared	statistics_last_infected_is_b_genotype	true
+B	infection-organism-shared	statistics_most_infections_is_a_genotype	true
+S	infection-organism-shared	a._nTotalInfected	1
+S	infection-organism-shared	c._nTotalInfected	0
+S	infection-organism-shared	b._infectedReproduceEnergy	123
+S	infection-organism-shared	statistics.beingMostInfectionsNumber	1
+S	infection-organism-shared	statistics.infectionsSum	1
+V	infection-organism-shared	a.genotype	present	true
+V	infection-organism-shared	a.genotype	_generation	7
+V	infection-organism-shared	a.genotype	_cladeID	root
+V	infection-organism-shared	a.genotype	_updateClade	true
+V	infection-organism-shared	a.genotype	gene0._length	4028000000000000
+V	infection-organism-shared	a.genotype	gene0._redreaction	0
+V	infection-organism-shared	b.genotype	present	true
+V	infection-organism-shared	b.genotype	_generation	7
+V	infection-organism-shared	b.genotype	_cladeID	root
+V	infection-organism-shared	b.genotype	_updateClade	true
+V	infection-organism-shared	b.genotype	gene0._length	4028000000000000
+V	infection-organism-shared	b.genotype	gene0._redreaction	0
+V	infection-organism-shared	c.genotype	present	true
+V	infection-organism-shared	c.genotype	_generation	7
+V	infection-organism-shared	c.genotype	_cladeID	root
+V	infection-organism-shared	c.genotype	_updateClade	true
+V	infection-organism-shared	c.genotype	gene0._length	4028000000000000
+V	infection-organism-shared	c.genotype	gene0._redreaction	0
+V	infection-organism-shared	b.infected	present	true
+V	infection-organism-shared	b.infected	_generation	7
+V	infection-organism-shared	b.infected	_cladeID	root
+V	infection-organism-shared	b.infected	_updateClade	true
+V	infection-organism-shared	b.infected	gene0._length	4028000000000000
+V	infection-organism-shared	b.infected	gene0._redreaction	0
+V	infection-organism-shared	c.saved	present	false
+V	infection-organism-shared	statistics.lastInfected	present	true
+V	infection-organism-shared	statistics.lastInfected	_generation	7
+V	infection-organism-shared	statistics.lastInfected	_cladeID	root
+V	infection-organism-shared	statistics.lastInfected	_updateClade	true
+V	infection-organism-shared	statistics.lastInfected	gene0._length	4028000000000000
+V	infection-organism-shared	statistics.lastInfected	gene0._redreaction	0
+V	infection-organism-shared	statistics.mostInfections	present	true
+V	infection-organism-shared	statistics.mostInfections	_generation	7
+V	infection-organism-shared	statistics.mostInfections	_cladeID	root
+V	infection-organism-shared	statistics.mostInfections	_updateClade	true
+V	infection-organism-shared	statistics.mostInfections	gene0._length	4028000000000000
+V	infection-organism-shared	statistics.mostInfections	gene0._redreaction	0
+I	shared-edit	a.genotype._cladeID	fixture:root
+I	shared-edit	a.genotype._generation	42
+I	shared-edit	a.genotype._updateClade	false
+I	shared-edit	a.genotype.gene0._length	4039800000000000
+I	shared-edit	a.genotype.gene0._redreaction	-7
+I	shared-edit	c._savedGeneticCode	a.genotype
+B	shared-edit	a_genotype_is_b_genotype	true
+B	shared-edit	a_genotype_is_c_genotype	false
+B	shared-edit	a_genotype_values_equal_c	false
+B	shared-edit	a_gene_array_is_b_gene_array	true
+B	shared-edit	a_gene_array_is_c_gene_array	false
+B	shared-edit	a_gene0_is_b_gene0	true
+B	shared-edit	a_gene0_is_c_gene0	false
+B	shared-edit	a_color0_is_c_color0	true
+B	shared-edit	b_infected_is_a_genotype	true
+B	shared-edit	b_infected_is_b_genotype	true
+B	shared-edit	b_infected_is_c_genotype	false
+B	shared-edit	b_saved_is_null	true
+B	shared-edit	c_saved_is_a_genotype	true
+B	shared-edit	statistics_last_infected_is_b_genotype	true
+B	shared-edit	statistics_most_infections_is_a_genotype	true
+S	shared-edit	a._nTotalInfected	1
+S	shared-edit	c._nTotalInfected	0
+S	shared-edit	b._infectedReproduceEnergy	123
+S	shared-edit	statistics.beingMostInfectionsNumber	1
+S	shared-edit	statistics.infectionsSum	1
+V	shared-edit	a.genotype	present	true
+V	shared-edit	a.genotype	_generation	42
+V	shared-edit	a.genotype	_cladeID	fixture:root
+V	shared-edit	a.genotype	_updateClade	false
+V	shared-edit	a.genotype	gene0._length	4039800000000000
+V	shared-edit	a.genotype	gene0._redreaction	-7
+V	shared-edit	b.genotype	present	true
+V	shared-edit	b.genotype	_generation	42
+V	shared-edit	b.genotype	_cladeID	fixture:root
+V	shared-edit	b.genotype	_updateClade	false
+V	shared-edit	b.genotype	gene0._length	4039800000000000
+V	shared-edit	b.genotype	gene0._redreaction	-7
+V	shared-edit	c.genotype	present	true
+V	shared-edit	c.genotype	_generation	7
+V	shared-edit	c.genotype	_cladeID	root
+V	shared-edit	c.genotype	_updateClade	true
+V	shared-edit	c.genotype	gene0._length	4028000000000000
+V	shared-edit	c.genotype	gene0._redreaction	0
+V	shared-edit	b.infected	present	true
+V	shared-edit	b.infected	_generation	42
+V	shared-edit	b.infected	_cladeID	fixture:root
+V	shared-edit	b.infected	_updateClade	false
+V	shared-edit	b.infected	gene0._length	4039800000000000
+V	shared-edit	b.infected	gene0._redreaction	-7
+V	shared-edit	c.saved	present	true
+V	shared-edit	c.saved	_generation	42
+V	shared-edit	c.saved	_cladeID	fixture:root
+V	shared-edit	c.saved	_updateClade	false
+V	shared-edit	c.saved	gene0._length	4039800000000000
+V	shared-edit	c.saved	gene0._redreaction	-7
+V	shared-edit	statistics.lastInfected	present	true
+V	shared-edit	statistics.lastInfected	_generation	42
+V	shared-edit	statistics.lastInfected	_cladeID	fixture:root
+V	shared-edit	statistics.lastInfected	_updateClade	false
+V	shared-edit	statistics.lastInfected	gene0._length	4039800000000000
+V	shared-edit	statistics.lastInfected	gene0._redreaction	-7
+V	shared-edit	statistics.mostInfections	present	true
+V	shared-edit	statistics.mostInfections	_generation	42
+V	shared-edit	statistics.mostInfections	_cladeID	fixture:root
+V	shared-edit	statistics.mostInfections	_updateClade	false
+V	shared-edit	statistics.mostInfections	gene0._length	4039800000000000
+V	shared-edit	statistics.mostInfections	gene0._redreaction	-7
+I	infection-organism-clone	b._savedGeneticCode	a.genotype
+B	infection-organism-clone	a_genotype_is_b_genotype	true
+B	infection-organism-clone	a_genotype_is_c_genotype	false
+B	infection-organism-clone	a_genotype_values_equal_c	false
+B	infection-organism-clone	a_gene_array_is_b_gene_array	true
+B	infection-organism-clone	a_gene_array_is_c_gene_array	false
+B	infection-organism-clone	a_gene0_is_b_gene0	true
+B	infection-organism-clone	a_gene0_is_c_gene0	false
+B	infection-organism-clone	a_color0_is_c_color0	true
+B	infection-organism-clone	b_infected_is_a_genotype	false
+B	infection-organism-clone	b_infected_is_b_genotype	false
+B	infection-organism-clone	b_infected_is_c_genotype	true
+B	infection-organism-clone	b_saved_is_null	true
+B	infection-organism-clone	c_saved_is_a_genotype	true
+B	infection-organism-clone	statistics_last_infected_is_b_genotype	true
+B	infection-organism-clone	statistics_most_infections_is_a_genotype	true
+S	infection-organism-clone	a._nTotalInfected	1
+S	infection-organism-clone	c._nTotalInfected	1
+S	infection-organism-clone	b._infectedReproduceEnergy	-41
+S	infection-organism-clone	statistics.beingMostInfectionsNumber	1
+S	infection-organism-clone	statistics.infectionsSum	2
+V	infection-organism-clone	a.genotype	present	true
+V	infection-organism-clone	a.genotype	_generation	42
+V	infection-organism-clone	a.genotype	_cladeID	fixture:root
+V	infection-organism-clone	a.genotype	_updateClade	false
+V	infection-organism-clone	a.genotype	gene0._length	4039800000000000
+V	infection-organism-clone	a.genotype	gene0._redreaction	-7
+V	infection-organism-clone	b.genotype	present	true
+V	infection-organism-clone	b.genotype	_generation	42
+V	infection-organism-clone	b.genotype	_cladeID	fixture:root
+V	infection-organism-clone	b.genotype	_updateClade	false
+V	infection-organism-clone	b.genotype	gene0._length	4039800000000000
+V	infection-organism-clone	b.genotype	gene0._redreaction	-7
+V	infection-organism-clone	c.genotype	present	true
+V	infection-organism-clone	c.genotype	_generation	7
+V	infection-organism-clone	c.genotype	_cladeID	root
+V	infection-organism-clone	c.genotype	_updateClade	true
+V	infection-organism-clone	c.genotype	gene0._length	4028000000000000
+V	infection-organism-clone	c.genotype	gene0._redreaction	0
+V	infection-organism-clone	b.infected	present	true
+V	infection-organism-clone	b.infected	_generation	7
+V	infection-organism-clone	b.infected	_cladeID	root
+V	infection-organism-clone	b.infected	_updateClade	true
+V	infection-organism-clone	b.infected	gene0._length	4028000000000000
+V	infection-organism-clone	b.infected	gene0._redreaction	0
+V	infection-organism-clone	c.saved	present	true
+V	infection-organism-clone	c.saved	_generation	42
+V	infection-organism-clone	c.saved	_cladeID	fixture:root
+V	infection-organism-clone	c.saved	_updateClade	false
+V	infection-organism-clone	c.saved	gene0._length	4039800000000000
+V	infection-organism-clone	c.saved	gene0._redreaction	-7
+V	infection-organism-clone	statistics.lastInfected	present	true
+V	infection-organism-clone	statistics.lastInfected	_generation	42
+V	infection-organism-clone	statistics.lastInfected	_cladeID	fixture:root
+V	infection-organism-clone	statistics.lastInfected	_updateClade	false
+V	infection-organism-clone	statistics.lastInfected	gene0._length	4039800000000000
+V	infection-organism-clone	statistics.lastInfected	gene0._redreaction	-7
+V	infection-organism-clone	statistics.mostInfections	present	true
+V	infection-organism-clone	statistics.mostInfections	_generation	42
+V	infection-organism-clone	statistics.mostInfections	_cladeID	fixture:root
+V	infection-organism-clone	statistics.mostInfections	_updateClade	false
+V	infection-organism-clone	statistics.mostInfections	gene0._length	4039800000000000
+V	infection-organism-clone	statistics.mostInfections	gene0._redreaction	-7
+I	infection-code-shared	b._savedGeneticCode	c.genotype
+B	infection-code-shared	a_genotype_is_b_genotype	true
+B	infection-code-shared	a_genotype_is_c_genotype	false
+B	infection-code-shared	a_genotype_values_equal_c	false
+B	infection-code-shared	a_gene_array_is_b_gene_array	true
+B	infection-code-shared	a_gene_array_is_c_gene_array	false
+B	infection-code-shared	a_gene0_is_b_gene0	true
+B	infection-code-shared	a_gene0_is_c_gene0	false
+B	infection-code-shared	a_color0_is_c_color0	true
+B	infection-code-shared	b_infected_is_a_genotype	true
+B	infection-code-shared	b_infected_is_b_genotype	true
+B	infection-code-shared	b_infected_is_c_genotype	false
+B	infection-code-shared	b_saved_is_null	true
+B	infection-code-shared	c_saved_is_a_genotype	true
+B	infection-code-shared	statistics_last_infected_is_b_genotype	true
+B	infection-code-shared	statistics_most_infections_is_a_genotype	true
+S	infection-code-shared	a._nTotalInfected	1
+S	infection-code-shared	c._nTotalInfected	1
+S	infection-code-shared	b._infectedReproduceEnergy	-41
+S	infection-code-shared	statistics.beingMostInfectionsNumber	1
+S	infection-code-shared	statistics.infectionsSum	3
+V	infection-code-shared	a.genotype	present	true
+V	infection-code-shared	a.genotype	_generation	42
+V	infection-code-shared	a.genotype	_cladeID	fixture:root
+V	infection-code-shared	a.genotype	_updateClade	false
+V	infection-code-shared	a.genotype	gene0._length	4039800000000000
+V	infection-code-shared	a.genotype	gene0._redreaction	-7
+V	infection-code-shared	b.genotype	present	true
+V	infection-code-shared	b.genotype	_generation	42
+V	infection-code-shared	b.genotype	_cladeID	fixture:root
+V	infection-code-shared	b.genotype	_updateClade	false
+V	infection-code-shared	b.genotype	gene0._length	4039800000000000
+V	infection-code-shared	b.genotype	gene0._redreaction	-7
+V	infection-code-shared	c.genotype	present	true
+V	infection-code-shared	c.genotype	_generation	7
+V	infection-code-shared	c.genotype	_cladeID	root
+V	infection-code-shared	c.genotype	_updateClade	true
+V	infection-code-shared	c.genotype	gene0._length	4028000000000000
+V	infection-code-shared	c.genotype	gene0._redreaction	0
+V	infection-code-shared	b.infected	present	true
+V	infection-code-shared	b.infected	_generation	42
+V	infection-code-shared	b.infected	_cladeID	fixture:root
+V	infection-code-shared	b.infected	_updateClade	false
+V	infection-code-shared	b.infected	gene0._length	4039800000000000
+V	infection-code-shared	b.infected	gene0._redreaction	-7
+V	infection-code-shared	c.saved	present	true
+V	infection-code-shared	c.saved	_generation	42
+V	infection-code-shared	c.saved	_cladeID	fixture:root
+V	infection-code-shared	c.saved	_updateClade	false
+V	infection-code-shared	c.saved	gene0._length	4039800000000000
+V	infection-code-shared	c.saved	gene0._redreaction	-7
+V	infection-code-shared	statistics.lastInfected	present	true
+V	infection-code-shared	statistics.lastInfected	_generation	42
+V	infection-code-shared	statistics.lastInfected	_cladeID	fixture:root
+V	infection-code-shared	statistics.lastInfected	_updateClade	false
+V	infection-code-shared	statistics.lastInfected	gene0._length	4039800000000000
+V	infection-code-shared	statistics.lastInfected	gene0._redreaction	-7
+V	infection-code-shared	statistics.mostInfections	present	true
+V	infection-code-shared	statistics.mostInfections	_generation	42
+V	infection-code-shared	statistics.mostInfections	_cladeID	fixture:root
+V	infection-code-shared	statistics.mostInfections	_updateClade	false
+V	infection-code-shared	statistics.mostInfections	gene0._length	4039800000000000
+V	infection-code-shared	statistics.mostInfections	gene0._redreaction	-7
+I	shared-second-edit	a.genotype._cladeID	fixture:root.2
+I	shared-second-edit	a.genotype._generation	-5
+I	shared-second-edit	a.genotype._updateClade	true
+B	shared-second-edit	a_genotype_is_b_genotype	true
+B	shared-second-edit	a_genotype_is_c_genotype	false
+B	shared-second-edit	a_genotype_values_equal_c	false
+B	shared-second-edit	a_gene_array_is_b_gene_array	true
+B	shared-second-edit	a_gene_array_is_c_gene_array	false
+B	shared-second-edit	a_gene0_is_b_gene0	true
+B	shared-second-edit	a_gene0_is_c_gene0	false
+B	shared-second-edit	a_color0_is_c_color0	true
+B	shared-second-edit	b_infected_is_a_genotype	true
+B	shared-second-edit	b_infected_is_b_genotype	true
+B	shared-second-edit	b_infected_is_c_genotype	false
+B	shared-second-edit	b_saved_is_null	true
+B	shared-second-edit	c_saved_is_a_genotype	true
+B	shared-second-edit	statistics_last_infected_is_b_genotype	true
+B	shared-second-edit	statistics_most_infections_is_a_genotype	true
+S	shared-second-edit	a._nTotalInfected	1
+S	shared-second-edit	c._nTotalInfected	1
+S	shared-second-edit	b._infectedReproduceEnergy	-41
+S	shared-second-edit	statistics.beingMostInfectionsNumber	1
+S	shared-second-edit	statistics.infectionsSum	3
+V	shared-second-edit	a.genotype	present	true
+V	shared-second-edit	a.genotype	_generation	-5
+V	shared-second-edit	a.genotype	_cladeID	fixture:root.2
+V	shared-second-edit	a.genotype	_updateClade	true
+V	shared-second-edit	a.genotype	gene0._length	4039800000000000
+V	shared-second-edit	a.genotype	gene0._redreaction	-7
+V	shared-second-edit	b.genotype	present	true
+V	shared-second-edit	b.genotype	_generation	-5
+V	shared-second-edit	b.genotype	_cladeID	fixture:root.2
+V	shared-second-edit	b.genotype	_updateClade	true
+V	shared-second-edit	b.genotype	gene0._length	4039800000000000
+V	shared-second-edit	b.genotype	gene0._redreaction	-7
+V	shared-second-edit	c.genotype	present	true
+V	shared-second-edit	c.genotype	_generation	7
+V	shared-second-edit	c.genotype	_cladeID	root
+V	shared-second-edit	c.genotype	_updateClade	true
+V	shared-second-edit	c.genotype	gene0._length	4028000000000000
+V	shared-second-edit	c.genotype	gene0._redreaction	0
+V	shared-second-edit	b.infected	present	true
+V	shared-second-edit	b.infected	_generation	-5
+V	shared-second-edit	b.infected	_cladeID	fixture:root.2
+V	shared-second-edit	b.infected	_updateClade	true
+V	shared-second-edit	b.infected	gene0._length	4039800000000000
+V	shared-second-edit	b.infected	gene0._redreaction	-7
+V	shared-second-edit	c.saved	present	true
+V	shared-second-edit	c.saved	_generation	-5
+V	shared-second-edit	c.saved	_cladeID	fixture:root.2
+V	shared-second-edit	c.saved	_updateClade	true
+V	shared-second-edit	c.saved	gene0._length	4039800000000000
+V	shared-second-edit	c.saved	gene0._redreaction	-7
+V	shared-second-edit	statistics.lastInfected	present	true
+V	shared-second-edit	statistics.lastInfected	_generation	-5
+V	shared-second-edit	statistics.lastInfected	_cladeID	fixture:root.2
+V	shared-second-edit	statistics.lastInfected	_updateClade	true
+V	shared-second-edit	statistics.lastInfected	gene0._length	4039800000000000
+V	shared-second-edit	statistics.lastInfected	gene0._redreaction	-7
+V	shared-second-edit	statistics.mostInfections	present	true
+V	shared-second-edit	statistics.mostInfections	_generation	-5
+V	shared-second-edit	statistics.mostInfections	_cladeID	fixture:root.2
+V	shared-second-edit	statistics.mostInfections	_updateClade	true
+V	shared-second-edit	statistics.mostInfections	gene0._length	4039800000000000
+V	shared-second-edit	statistics.mostInfections	gene0._redreaction	-7
+R	-8171647845708839206	4391	3fe01778c535c9f0
+E

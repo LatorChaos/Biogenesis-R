@@ -1,0 +1,805 @@
+{
+  "schema": "biogenesis-contact-state-oracle-v1",
+  "generated_utc": "2026-10-26T03:58:07.466746+00:00",
+  "helper": {
+    "path": "tools/reference/ContactStateOracle.java",
+    "sha256": "d5cce0f958a5827cca16cb9a13d49364fb9605703bb893195bdc6b1e8deec31f",
+    "compiled_classes": {
+      "source": {
+        "ContactStateOracle$Action.class": "cbdedd729877cdb2fe261b0c4395486d966fef8f8e8dff2429b7909bed8bc94f",
+        "ContactStateOracle$Spec.class": "95f286e3f0d3c650d26acc427562703fbe1c413f44aac800783e5a374b1c5063",
+        "ContactStateOracle$Capture.class": "96484937bf9510852ab477f91d5b63558fcc157a7e54a61087b54aa99fc3e9d8",
+        "ContactStateOracle.class": "d72d2e41418a4c5f94ebcd7df765d5f6a8121bd35869cae4285deee5d3b85a37"
+      },
+      "jar": {
+        "ContactStateOracle$Action.class": "cbdedd729877cdb2fe261b0c4395486d966fef8f8e8dff2429b7909bed8bc94f",
+        "ContactStateOracle$Spec.class": "95f286e3f0d3c650d26acc427562703fbe1c413f44aac800783e5a374b1c5063",
+        "ContactStateOracle$Capture.class": "96484937bf9510852ab477f91d5b63558fcc157a7e54a61087b54aa99fc3e9d8",
+        "ContactStateOracle.class": "d72d2e41418a4c5f94ebcd7df765d5f6a8121bd35869cae4285deee5d3b85a37"
+      }
+    },
+    "source_jar_helper_classes_identical": true,
+    "mode": "canonical"
+  },
+  "fixture": {
+    "path": "crates/core/tests/fixtures/contact_state.tsv",
+    "sha256": "30297653120fdc9817a361992dbedd835e00268584fc4f4f68eed544f7fe47c4",
+    "bytes": 14780818,
+    "rows": 426867,
+    "cases": 94,
+    "snapshots": 218,
+    "actor_views": 654,
+    "calls": 124,
+    "calls_by_operation": {
+      "survive": 4,
+      "inhibited": 10,
+      "frozen": 32,
+      "paralyzed": 7,
+      "neutralized": 23,
+      "segmentsRestoreEffects": 48
+    },
+    "row_counts": {
+      "C": 94,
+      "U": 13818,
+      "I": 3863,
+      "G": 43680,
+      "N": 237600,
+      "A": 282,
+      "P": 218,
+      "O": 100716,
+      "H": 1962,
+      "W": 2180,
+      "S": 11336,
+      "T": 10682,
+      "R": 218,
+      "K": 124,
+      "E": 94
+    },
+    "ledger": {
+      "derived_comparison_observations": 317626,
+      "input_G_N_constructor_checks": 89440,
+      "O_collaborator_exclusions": 1308,
+      "selection_metadata_exclusions": 94,
+      "other_input_schema_command_rows": 18399
+    },
+    "unchanged_first91_cases": true,
+    "RNG_suffix_unique": 1,
+    "organism_fields_per_actor": 154,
+    "reference_holders_per_actor": 3,
+    "world_getter_values_per_snapshot": 10,
+    "statistics_fields_per_snapshot": 52,
+    "statistics_getters_per_snapshot": 49,
+    "mutable_primitive_utils_per_case": 147,
+    "genome_fields_including_synthetic": 28,
+    "gene_fields": 40,
+    "source_source_jar_outputs_identical": true
+  },
+  "reference": {
+    "manifest": "docs/evidence/reference-manifest.json",
+    "original_hash_size_mode_checks": 74,
+    "source_compile_receipt": ".workflow-local/reference-build/compile.json",
+    "source_compile_receipt_sha256": "4fc1785c218238508d72b89ba883d94bc8a1fa24631e990463dd71502a78e184",
+    "source_sha256": {
+      "Gene": "d070db688526a401c8b55904c06066b2169ca82c76837e3001b4c423bc80e720",
+      "GeneticCode": "f8bf3d0315cec8a2bf515a1626391fe5b646e47566234d398ef58bbdbc3a9004",
+      "Organism": "8650cb0983069dbae09e2ca704059fb82761fa6e0d87f35218c2342ffc60df46",
+      "Utils": "7b3306148684ba111629690a928dcb45abd4825104cfb90b530cd2d0dc6dd2b3",
+      "World": "a67543055a665a9a378e37c860671996e2ca0f510cb622375172a24333d7cae1",
+      "WorldStatistics": "407bcd4bec5e947f26ccfb02a1a590bec6eb9f22f675ad88d9bb974f686ebe15",
+      "VisibleWorld": "b14b41135de13d935f24e42b2f82a72457a015831d1b62f30a26bd5be7faedc5"
+    },
+    "backend_class_sha256": {
+      "Gene": {
+        "compiled_source": "29fe7b153555ded4383072debd0452bed5f92692afd0488a88c297d5f04f6ea8",
+        "bundled_jar": "b307c29cbd73a98cdcbf7d5da9a3ed771fd4d419f6426fbfd41510934c0a7988"
+      },
+      "GeneticCode": {
+        "compiled_source": "4bbf99eaf9006840ecbba0958496372a220ed44c4e57c8341c4de3dc29f3fb30",
+        "bundled_jar": "2aba7f494115279c26bb918dc8156c7ff67af047c2bcb32e35db113f2b87c51e"
+      },
+      "Organism": {
+        "compiled_source": "e8facb409642f0288411785985cbfd96440f644226795f14de24705554a46e22",
+        "bundled_jar": "561d53132aa1765ba766c7d251a98090617c7e9884ae8ed1f9543237e32257f0"
+      },
+      "Utils": {
+        "compiled_source": "67adba4432972ffa3922b6f622d2cc12bf0e703a7dfbf97ae94f3f95387b1884",
+        "bundled_jar": "8f258ba2cb30beea85f44a60ecb4189faf7493f39102712bc9ff1114456e1060"
+      },
+      "World": {
+        "compiled_source": "9091d4e5cae555493971a37a9c8fc77e2250e68db073a120a3a08b57b03e131e",
+        "bundled_jar": "be8067767dc18b46fbd7fd798c5e67e8a58ff6922b78d65eee28ab033360bd33"
+      },
+      "WorldStatistics": {
+        "compiled_source": "ab04358e54edf5120d703f0d980c72a136ab74165e5bbec4b55719ab097c7863",
+        "bundled_jar": "cc5e6f8d4adfb96a41269b4dc7a3ab27224513d8076d68ee42be2ab518e0c236"
+      },
+      "VisibleWorld": {
+        "compiled_source": "f9f559ac40de41b7d84cb6d624b5bcad538ac016d566779bc6c45512c5d68168",
+        "bundled_jar": "b1a0dced3a53afcef5f80132f122ac1ba0baf41f02d3e6e48cb99e4236c1385c"
+      }
+    },
+    "jar_sha256": "0baeae8d29f5fdbbb830c1a9e51c7f2b5314a33011b20ec7471eeaa27f0398e1",
+    "jts_sha256": "00102cde26c457b81fbb0248e4f8845884243caba0dc9b7fb42e0ea877383bc1",
+    "prior_tsv_sha256": {
+      "construction.tsv": "cf9b83da280e3e7aa812ae7cf2caee7293ce805c8109aebaa2891a69227b3336",
+      "geometry.tsv": "364c17c289c7d3f85b4ae3bdf7ce8ddcaac773547b1bb3c14360cae58e766a96",
+      "genetics.tsv": "1fc3f745a83427c499d84884dfdb6864fdc222861feb30488d7083a4a0126b71",
+      "geometry-rebuild.tsv": "a484994dbc4f69d8deb45c0622c127eb5dc5dd95eba1b61a412e015cf8b2a3d8",
+      "organism_state.tsv": "298e7a37eb2983252797a40e45ff721141ba22e6b8cfdaba91a1bfa079552f8b",
+      "paste_rejection.tsv": "73b1fa2480d2211e29cbbb24c4653c18d3a0786c5e0074f84e0c378b0b333db9",
+      "genotype_identity.tsv": "b6a85cb8b2b628a8a8b25c3de2db1445a61433b06c7b66647670c07a1ea0b9ac",
+      "spatial.tsv": "a2cf3205b94144694f6484c81aaa9916f42824766a521c2cb05d2f14f344225a",
+      "birth.tsv": "8b9bcee0ed1232b1d90050587e52cb19548a14f833da63749dcd6c96ccae8a22",
+      "birth_variants.tsv": "ababf3bdecebcfda1c56b99cf08343157b6091e2b95f9ab63010de1c13e04b96",
+      "physics.tsv": "50151aaaeb0de8502bb1e22d0256ce77273e83851713a0b43337b66835de72ff",
+      "gases.tsv": "0ea73389506dce4286389f75388ef55475541bd5062cddd149f619b12cd3b6c8",
+      "movement.tsv": "ca8c5078821d339f6aaabb47e593de0da62e44c59df69bf5d4ee8ee01dc84207",
+      "statistics.tsv": "bcc5c8b489b5591f318486176b2647e816d899ec05af854a077e26fe771bcf8a",
+      "statistics_null_genome.tsv": "049301b93bd1062bc6be3cfdac6b58caff10ccb53d1d58a67ece583676c345c1",
+      "death.tsv": "198a17283df6d96826fef2c6464acf6ad222f1e5234c884ec781b05080941720",
+      "death_invalid.tsv": "5bddabd10826003e147df8c688c3db9d3d99b7c64212685a9ade474b92bcbb62",
+      "infection.tsv": "6155d428aca3a6ef337fec20921db969382f47ff72db00388b1985665424b704",
+      "infection_callback.tsv": "02749c101e2f597c4fc42e24f32f6c0e76f5cc1ae320a826dd7dabfc88e982e3",
+      "maintenance.tsv": "266e604b25a4f1e238e3c07131e5d1e42d1a1e73192adb52723e144bc43e8bb9",
+      "reproduction.tsv": "3067af9973d1539781dd72ade76e33e9dda0303dd9aa69f467b7aa13e6277441",
+      "transformation.tsv": "92c7be8b067132fa8fc22fe57416c0d11004028c26189c00195a04eb937797db",
+      "thresholds.tsv": "07a1fa146dd5ed0724447a773ba7267f3b43dd2f93a25a942af88328320f0cad"
+    }
+  },
+  "execution": {
+    "raw_receipts": ".workflow-local/contact-state-oracle-7cg94rlj/commands.json",
+    "raw_receipts_sha256": "04962a65d044f5139795b36bd0942da5932216dcc7bb9fc9f38957e57d13b79c",
+    "versions": {
+      "java": "openjdk version \"21.0.12.1\" 2026-08-18\nOpenJDK Runtime Environment (build 21.0.12.1+1)\nOpenJDK 64-Bit Server VM (build 21.0.12.1+1, mixed mode, sharing)\n",
+      "javac": "javac 21.0.12.1\n"
+    },
+    "compile_commands": [
+      {
+        "argv": [
+          "javac",
+          "-encoding",
+          "UTF-8",
+          "-cp",
+          "<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "-d",
+          "<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/helpers-source",
+          "<project-root>/tools/reference/ContactStateOracle.java"
+        ],
+        "cwd": "<project-root>/.workflow-local/contact-state-oracle-7cg94rlj",
+        "pid": 4,
+        "process_group": 4,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.6267284220011788,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "javac",
+          "-encoding",
+          "UTF-8",
+          "-cp",
+          "<reference-root>/ColorMod_2_01/biogenesis.jar:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "-d",
+          "<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/helpers-jar",
+          "<project-root>/tools/reference/ContactStateOracle.java"
+        ],
+        "cwd": "<project-root>/.workflow-local/contact-state-oracle-7cg94rlj",
+        "pid": 33,
+        "process_group": 33,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.5994480419976753,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "positive_runs": [
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/source-a/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/source-a/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/source-a/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/source-a/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.ContactStateOracle",
+          "<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/source-a/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/source-a",
+        "pid": 61,
+        "process_group": 61,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.691986393998377,
+        "stdout": "CONTACT_STATE_ORACLE PASS cases=94 snapshots=218 calls=124\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/source-b/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/source-b/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/source-b/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/source-b/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.ContactStateOracle",
+          "<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/source-b/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/source-b",
+        "pid": 92,
+        "process_group": 92,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.7255807920009829,
+        "stdout": "CONTACT_STATE_ORACLE PASS cases=94 snapshots=218 calls=124\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/jar/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/jar/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/jar/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/jar/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/helpers-jar:<reference-root>/ColorMod_2_01/biogenesis.jar:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.ContactStateOracle",
+          "<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/jar/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/jar",
+        "pid": 123,
+        "process_group": 123,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.8534299839957384,
+        "stdout": "CONTACT_STATE_ORACLE PASS cases=94 snapshots=218 calls=124\n",
+        "stderr": ""
+      }
+    ],
+    "negative_guard_commands": [
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/omit-user.home/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/omit-user.home/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/omit-user.home/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.ContactStateOracle",
+          "<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/omit-user.home/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/omit-user.home",
+        "pid": 4,
+        "process_group": 4,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.026697013003285974,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: user.home\n\tat biogenesis.ContactStateOracle.require(ContactStateOracle.java:167)\n\tat biogenesis.ContactStateOracle.main(ContactStateOracle.java:323)\n"
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/omit-java.io.tmpdir/home",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/omit-java.io.tmpdir/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/omit-java.io.tmpdir/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.ContactStateOracle",
+          "<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/omit-java.io.tmpdir/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/omit-java.io.tmpdir",
+        "pid": 22,
+        "process_group": 22,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.02914499100006651,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: java.io.tmpdir\n\tat biogenesis.ContactStateOracle.require(ContactStateOracle.java:167)\n\tat biogenesis.ContactStateOracle.main(ContactStateOracle.java:323)\n"
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/omit-java.util.prefs.userRoot/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/omit-java.util.prefs.userRoot/tmp",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/omit-java.util.prefs.userRoot/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.ContactStateOracle",
+          "<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/omit-java.util.prefs.userRoot/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/omit-java.util.prefs.userRoot",
+        "pid": 40,
+        "process_group": 40,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.026450277997355442,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: java.util.prefs.userRoot\n\tat biogenesis.ContactStateOracle.require(ContactStateOracle.java:167)\n\tat biogenesis.ContactStateOracle.main(ContactStateOracle.java:323)\n"
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/omit-java.util.prefs.systemRoot/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/omit-java.util.prefs.systemRoot/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/omit-java.util.prefs.systemRoot/prefs-user",
+          "-cp",
+          "<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.ContactStateOracle",
+          "<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/omit-java.util.prefs.systemRoot/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/omit-java.util.prefs.systemRoot",
+        "pid": 58,
+        "process_group": 58,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.03453739399992628,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: java.util.prefs.systemRoot\n\tat biogenesis.ContactStateOracle.require(ContactStateOracle.java:167)\n\tat biogenesis.ContactStateOracle.main(ContactStateOracle.java:323)\n"
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/existing-output/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/existing-output/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/existing-output/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/existing-output/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.ContactStateOracle",
+          "<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/existing-output/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/existing-output",
+        "pid": 76,
+        "process_group": 76,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.02678003600158263,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Output directory must not exist\n\tat biogenesis.ContactStateOracle.require(ContactStateOracle.java:167)\n\tat biogenesis.ContactStateOracle.main(ContactStateOracle.java:325)\n"
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/escaped-profile/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/escaped-profile/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/escaped-profile/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/escaped-profile/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.ContactStateOracle",
+          "<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/escaped-profile/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/contact-state-oracle-7cg94rlj/escaped-profile",
+        "pid": 94,
+        "process_group": 94,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.02736593599547632,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: java.util.prefs.userRoot\n\tat biogenesis.ContactStateOracle.require(ContactStateOracle.java:167)\n\tat biogenesis.ContactStateOracle.main(ContactStateOracle.java:323)\n"
+      }
+    ],
+    "negative_guard_results": [
+      {
+        "condition": "omit-user.home",
+        "exit_code": 1,
+        "expected_error": "Explicit isolated profile required: user.home",
+        "output_preserved": true
+      },
+      {
+        "condition": "omit-java.io.tmpdir",
+        "exit_code": 1,
+        "expected_error": "Explicit isolated profile required: java.io.tmpdir",
+        "output_preserved": true
+      },
+      {
+        "condition": "omit-java.util.prefs.userRoot",
+        "exit_code": 1,
+        "expected_error": "Explicit isolated profile required: java.util.prefs.userRoot",
+        "output_preserved": true
+      },
+      {
+        "condition": "omit-java.util.prefs.systemRoot",
+        "exit_code": 1,
+        "expected_error": "Explicit isolated profile required: java.util.prefs.systemRoot",
+        "output_preserved": true
+      },
+      {
+        "condition": "existing-output",
+        "exit_code": 1,
+        "expected_error": "Output directory must not exist",
+        "output_preserved": true
+      },
+      {
+        "condition": "escaped-profile",
+        "exit_code": 1,
+        "expected_error": "Explicit isolated profile required: java.util.prefs.userRoot",
+        "output_preserved": true
+      }
+    ],
+    "positive_timeout_seconds": 120,
+    "negative_timeout_seconds": 30,
+    "process_group_runner": "tools/run_reference_oracles.py:32-77",
+    "cleared_environment_variables": [
+      "JAVA_TOOL_OPTIONS",
+      "_JAVA_OPTIONS",
+      "JDK_JAVA_OPTIONS"
+    ],
+    "original_preservation_checks_passed": true,
+    "prior_fixture_checks_passed": true,
+    "prior_fixture_count": 23,
+    "frozen_production_sha256": {
+      "crates/core/src/contact_state.rs": "3cb4b409fa463e8c377278720de815cb567f952f16fb407369a9fbfaef7ac268"
+    },
+    "production_modified": false
+  },
+  "comparison_contract": {
+    "declared_before_Rust_comparison": true,
+    "exact": "All non-geometric organism scalar/effect/photo/velocity fields, world gases, statistics, integer endpoints/bounds, ARGB, reactions, identity/order, and RNG bits.",
+    "geometry_only_O_fields": [
+      "_m",
+      "_m1",
+      "_m2",
+      "_mass",
+      "_I"
+    ],
+    "geometry_finite_tolerance": "1e-10 * max(1, abs(expected))",
+    "geometry_nonfinite": "Explicit NaN classification and signed infinity checks only for the five geometry fields.",
+    "expectation_authority": "Actual unchanged source/JAR helper methods on real pasted/added actors, reflection, original getters, and actual atmospheric payments. No copied biological formulas generate expectations.",
+    "constructor_authority": "Only input G/N and setup explicit/clone recipes construct original genomes. First snapshots follow the recorded scalar/phenotype inputs. Later observations never supply constructor inputs.",
+    "original_genome_identities": [
+      "g0",
+      "g1",
+      "g2",
+      "g3",
+      "g4"
+    ],
+    "gene_identity_limit": "All gene values are recorded; separate genetics fixtures cover per-Gene mutable-object alias topology.",
+    "rust_results_claimed": false
+  },
+  "explicit_exclusions": {
+    "O": {
+      "fields": [
+        "_world",
+        "_visibleWorld"
+      ],
+      "rows": 1308
+    },
+    "I": {
+      "target": "visible:selected",
+      "rows": 94
+    },
+    "other_unsupported_or_diagnostic_rows": 0,
+    "V_Q_J_rows": 0
+  },
+  "coverage": {
+    "original_actor_order": [
+      "peer",
+      "victim",
+      "killer"
+    ],
+    "initial_ids": [
+      0,
+      1,
+      2
+    ],
+    "initial_seed": 827364,
+    "target": "victim",
+    "actor_arguments": [
+      "killer",
+      "self"
+    ],
+    "restoration_actor_argument": "~",
+    "palette_cases": 6,
+    "palette_base_colors": 46,
+    "palette_internal_colors": 18,
+    "additional_palette_ARGB": [
+      "12345678",
+      "12ff00ff"
+    ],
+    "real_large_world_dimensions": [
+      1000000000,
+      1000000000
+    ],
+    "real_large_victim_center": [
+      500000000,
+      500000000
+    ],
+    "observed_large_BLOND_early_energy": 1932735279,
+    "observed_large_FLOWER_late": 214748352,
+    "observed_infectious_FLOWER_late": 16777220,
+    "observed_infectious_FLOWER_reproduction_energy": 3019942,
+    "observed_GOLD_max_age_after_long_to_int_narrowing": -474,
+    "observed_reverse_FLOWER_late": 1,
+    "nonfinite_state_inputs_labelled": true,
+    "raw_null_or_uninitialized_actors": false,
+    "newborns_or_rejected_candidates": 0,
+    "full_world_frames_executed": 0
+  },
+  "input_target_types": {
+    "genome:g0:construction": [
+      "String"
+    ],
+    "genome:g1:construction": [
+      "String"
+    ],
+    "genome:g2:construction": [
+      "String"
+    ],
+    "genome:g3:construction": [
+      "String"
+    ],
+    "genome:g4:construction": [
+      "String"
+    ],
+    "visible:selected": [
+      "String"
+    ],
+    "actor:victim:_infectedGeneticCode": [
+      "GeneticCode"
+    ],
+    "actor:victim:_savedGeneticCode": [
+      "GeneticCode"
+    ],
+    "actor:victim:_energy": [
+      "double"
+    ],
+    "actor:killer:_energy": [
+      "double"
+    ],
+    "actor:victim:_healing": [
+      "int"
+    ],
+    "actor:victim:_antiviral": [
+      "int"
+    ],
+    "actor:victim:_gold": [
+      "int"
+    ],
+    "actor:victim:_sporeversion": [
+      "int"
+    ],
+    "actor:victim:_isaplant": [
+      "boolean"
+    ],
+    "actor:victim:_isaconsumer": [
+      "boolean"
+    ],
+    "actor:victim:_isafungus": [
+      "boolean"
+    ],
+    "actor:victim:_iscoral": [
+      "boolean"
+    ],
+    "actor:victim:_isinjured": [
+      "boolean"
+    ],
+    "actor:victim:_isfrozen": [
+      "boolean"
+    ],
+    "actor:victim:_allfrozen": [
+      "boolean"
+    ],
+    "actor:victim:_useextraeffects": [
+      "boolean"
+    ],
+    "actor:victim:_isonlyc4": [
+      "boolean"
+    ],
+    "actor:victim:_canmove": [
+      "boolean"
+    ],
+    "actor:victim:_canreact": [
+      "boolean"
+    ],
+    "actor:victim:_useframemovement": [
+      "boolean"
+    ],
+    "actor:victim:_candodge": [
+      "boolean"
+    ],
+    "actor:victim:_dodge": [
+      "boolean"
+    ],
+    "actor:killer:_isaplant": [
+      "boolean"
+    ],
+    "actor:killer:_isaconsumer": [
+      "boolean"
+    ],
+    "actor:killer:_isafungus": [
+      "boolean"
+    ],
+    "actor:killer:_iscoral": [
+      "boolean"
+    ],
+    "actor:victim:_updateEffects": [
+      "int"
+    ],
+    "actor:victim:_color": [
+      "Color"
+    ],
+    "actor:victim:_framesColor": [
+      "int"
+    ],
+    "actor:killer:_color": [
+      "Color"
+    ],
+    "actor:killer:_framesColor": [
+      "int"
+    ],
+    "actor:victim:_mphoto": [
+      "double[]"
+    ],
+    "actor:victim:_segColor": [
+      "Color[]"
+    ],
+    "world:_O2": [
+      "double"
+    ],
+    "actor:victim:_skyversion": [
+      "int"
+    ],
+    "actor:victim:_jadefactor": [
+      "int"
+    ],
+    "genome:g0:gene0._color": [
+      "Color"
+    ],
+    "actor:victim:_spin": [
+      "int"
+    ],
+    "actor:victim:_plagueversion": [
+      "int"
+    ],
+    "actor:victim:_createlavender": [
+      "int"
+    ],
+    "actor:victim:_yellowCounter": [
+      "int"
+    ],
+    "actor:victim:_indigo": [
+      "int"
+    ],
+    "actor:victim:_earlyReproduceEnergy": [
+      "int"
+    ],
+    "actor:victim:_reproducelate": [
+      "int"
+    ],
+    "actor:victim:_reproduceEnergy": [
+      "int"
+    ],
+    "actor:victim:_max_age": [
+      "int"
+    ],
+    "actor:victim:_sporetime": [
+      "int"
+    ],
+    "actor:victim:_photosynthesis": [
+      "double"
+    ],
+    "actor:victim:_methanotrophy": [
+      "double"
+    ],
+    "actor:victim:_colonyPhotosynthesis": [
+      "double"
+    ],
+    "actor:victim:_forestphoto": [
+      "double"
+    ],
+    "actor:victim:_leafphoto": [
+      "double"
+    ],
+    "actor:victim:_maintenance": [
+      "double"
+    ],
+    "actor:victim:_lavender": [
+      "int"
+    ],
+    "actor:victim:_isauburn": [
+      "boolean"
+    ],
+    "actor:victim:_isinfectious": [
+      "boolean"
+    ],
+    "actor:victim:_isakiller": [
+      "boolean"
+    ],
+    "actor:victim:_transfersenergy": [
+      "boolean"
+    ],
+    "actor:victim:_isblond": [
+      "boolean"
+    ],
+    "actor:victim:_usefriendeffects": [
+      "int"
+    ],
+    "actor:victim:_isgray": [
+      "boolean"
+    ],
+    "actor:victim:_isspike": [
+      "boolean"
+    ],
+    "actor:victim:_isenhanced": [
+      "boolean"
+    ],
+    "actor:victim:_usepretoucheffects": [
+      "boolean"
+    ]
+  },
+  "prior_coverage_run": {
+    "path": ".workflow-local/contact-state-oracle-8yk3phmu",
+    "raw_receipts_sha256": "36cd6ab8808bf58096a8cc0c5f9fa89521ba40ba29e4f0b34b43500fee997e71",
+    "source_source_jar_identical": true,
+    "helper_backup": ".workflow-local/contact-state-oracle-8yk3phmu/first-coverage-ContactStateOracle.java",
+    "helper_backup_sha256": "4b01abb03489dbe3b55d3e87f07aa03f899d708247e467df1a117389ad4455f0",
+    "fixture_sha256": "8fae0eb9f78bd4c5e64567ae60c999a4b6b0433c1d4f0fe53d992cbc909e0b3a",
+    "cases": 91,
+    "snapshots": 211,
+    "calls": 120,
+    "final_prefix_bytes_identical": true,
+    "disposition": "Added three cache-outcome cases before fixture adoption or Rust replay; original 91 cases remain byte-identical."
+  },
+  "limits": [
+    "No physical contact eligibility, full color-matrix integration, World.time frame, or ecological scheduling acceptance.",
+    "No UI, networking, persistence migration, or distributable acceptance.",
+    "No exhaustive Cartesian combinations of unrelated cached flags.",
+    "Raw scalar state controls do not claim player UI acceptance of every supplied value.",
+    "Per-Gene object alias topology is not independently repeated here.",
+    "Java observation provenance does not claim Rust replay results."
+  ],
+  "readme": {
+    "path": "crates/core/tests/fixtures/contact_state.README.md",
+    "sha256": "a67d01a1a7a7a76a5e7950a82672e04e1d5586bac2f93fe7be022af1f0a76ffc"
+  }
+}

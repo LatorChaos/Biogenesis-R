@@ -1,0 +1,4270 @@
+{
+  "schema": "biogenesis-movement-oracle-v1",
+  "generated_utc": "2026-10-25T23:35:52.635351+00:00",
+  "helper": {
+    "path": "tools/reference/MovementOracle.java",
+    "sha256": "70c5a48f703744af3cf7924409e730f406818e5b7983f254e66073c3a77622db",
+    "compiled_classes": {
+      "helpers-source/biogenesis/MovementOracle$Action.class": "b10981b826eaa0d386620b996c5847cd8babef6a3b6c00ff028ead95b2359ebe",
+      "helpers-source/biogenesis/MovementOracle$Spec.class": "439ba74faed6da2e849c8b6d0cb58d53a93e26f61bce7e1441ac509af868193e",
+      "helpers-source/biogenesis/MovementOracle$Capture.class": "a00162d6099d81ea3cf452651074d4e234d44f70ae653691712e3d272839faea",
+      "helpers-source/biogenesis/MovementOracle.class": "954837442392625ef1823933d1d45ce25d2a97d483430cefcee22215e1ca78ff",
+      "helpers-jar/biogenesis/MovementOracle$Action.class": "b10981b826eaa0d386620b996c5847cd8babef6a3b6c00ff028ead95b2359ebe",
+      "helpers-jar/biogenesis/MovementOracle$Spec.class": "439ba74faed6da2e849c8b6d0cb58d53a93e26f61bce7e1441ac509af868193e",
+      "helpers-jar/biogenesis/MovementOracle$Capture.class": "a00162d6099d81ea3cf452651074d4e234d44f70ae653691712e3d272839faea",
+      "helpers-jar/biogenesis/MovementOracle.class": "954837442392625ef1823933d1d45ce25d2a97d483430cefcee22215e1ca78ff"
+    },
+    "source_jar_helper_classes_identical": true
+  },
+  "fixture": {
+    "path": "crates/core/tests/fixtures/movement.tsv",
+    "sha256": "ca8c5078821d339f6aaabb47e593de0da62e44c59df69bf5d4ee8ee01dc84207",
+    "bytes": 5910626,
+    "rows": 157137,
+    "cases": 97,
+    "setups": {
+      "pasted": 91,
+      "spore_birth": 6
+    },
+    "organism_snapshots": 423,
+    "fields_per_snapshot": 154,
+    "primitive_calls": 326,
+    "calls_by_method": {
+      "symmetric": 68,
+      "bounds": 166,
+      "grow": 68,
+      "offset": 8,
+      "rubbing": 14,
+      "offset_velocity": 2
+    },
+    "row_counts": {
+      "C": 97,
+      "U": 14259,
+      "G": 15433,
+      "N": 60600,
+      "O": 65142,
+      "R": 423,
+      "I": 748,
+      "K": 326,
+      "E": 97,
+      "F": 12
+    },
+    "source_source_jar_outputs_identical": true
+  },
+  "reference": {
+    "manifest": "docs/evidence/reference-manifest.json",
+    "original_hash_size_mode_checks": 74,
+    "source_compile_receipt": ".workflow-local/reference-build/compile.json",
+    "source_compile_receipt_sha256": "4fc1785c218238508d72b89ba883d94bc8a1fa24631e990463dd71502a78e184",
+    "source_sha256": {
+      "Gene": "d070db688526a401c8b55904c06066b2169ca82c76837e3001b4c423bc80e720",
+      "GeneticCode": "f8bf3d0315cec8a2bf515a1626391fe5b646e47566234d398ef58bbdbc3a9004",
+      "Organism": "8650cb0983069dbae09e2ca704059fb82761fa6e0d87f35218c2342ffc60df46",
+      "Utils": "7b3306148684ba111629690a928dcb45abd4825104cfb90b530cd2d0dc6dd2b3",
+      "World": "a67543055a665a9a378e37c860671996e2ca0f510cb622375172a24333d7cae1"
+    },
+    "backend_class_sha256": {
+      "Gene": {
+        "compiled_source": "29fe7b153555ded4383072debd0452bed5f92692afd0488a88c297d5f04f6ea8",
+        "bundled_jar": "b307c29cbd73a98cdcbf7d5da9a3ed771fd4d419f6426fbfd41510934c0a7988"
+      },
+      "GeneticCode": {
+        "compiled_source": "4bbf99eaf9006840ecbba0958496372a220ed44c4e57c8341c4de3dc29f3fb30",
+        "bundled_jar": "2aba7f494115279c26bb918dc8156c7ff67af047c2bcb32e35db113f2b87c51e"
+      },
+      "Organism": {
+        "compiled_source": "e8facb409642f0288411785985cbfd96440f644226795f14de24705554a46e22",
+        "bundled_jar": "561d53132aa1765ba766c7d251a98090617c7e9884ae8ed1f9543237e32257f0"
+      },
+      "Utils": {
+        "compiled_source": "67adba4432972ffa3922b6f622d2cc12bf0e703a7dfbf97ae94f3f95387b1884",
+        "bundled_jar": "8f258ba2cb30beea85f44a60ecb4189faf7493f39102712bc9ff1114456e1060"
+      },
+      "World": {
+        "compiled_source": "9091d4e5cae555493971a37a9c8fc77e2250e68db073a120a3a08b57b03e131e",
+        "bundled_jar": "be8067767dc18b46fbd7fd798c5e67e8a58ff6922b78d65eee28ab033360bd33"
+      }
+    },
+    "jar_sha256": "0baeae8d29f5fdbbb830c1a9e51c7f2b5314a33011b20ec7471eeaa27f0398e1",
+    "jts_sha256": "00102cde26c457b81fbb0248e4f8845884243caba0dc9b7fb42e0ea877383bc1",
+    "seven_prior_tsv_sha256": {
+      "genetics.tsv": "1fc3f745a83427c499d84884dfdb6864fdc222861feb30488d7083a4a0126b71",
+      "organism_state.tsv": "298e7a37eb2983252797a40e45ff721141ba22e6b8cfdaba91a1bfa079552f8b",
+      "paste_rejection.tsv": "73b1fa2480d2211e29cbbb24c4653c18d3a0786c5e0074f84e0c378b0b333db9",
+      "genotype_identity.tsv": "b6a85cb8b2b628a8a8b25c3de2db1445a61433b06c7b66647670c07a1ea0b9ac",
+      "birth.tsv": "8b9bcee0ed1232b1d90050587e52cb19548a14f833da63749dcd6c96ccae8a22",
+      "birth_variants.tsv": "ababf3bdecebcfda1c56b99cf08343157b6091e2b95f9ab63010de1c13e04b96",
+      "physics.tsv": "50151aaaeb0de8502bb1e22d0256ce77273e83851713a0b43337b66835de72ff"
+    }
+  },
+  "execution": {
+    "raw_receipts": ".workflow-local/movement-oracle-ph3zp42m/commands.json",
+    "versions": {
+      "java": "openjdk version \"21.0.12.1\" 2026-08-18\nOpenJDK Runtime Environment (build 21.0.12.1+1)\nOpenJDK 64-Bit Server VM (build 21.0.12.1+1, mixed mode, sharing)\n",
+      "javac": "javac 21.0.12.1\n"
+    },
+    "compile_commands": [
+      {
+        "argv": [
+          "javac",
+          "-encoding",
+          "UTF-8",
+          "-cp",
+          "<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "-d",
+          "<project-root>/.workflow-local/movement-oracle-ph3zp42m/helpers-source",
+          "<project-root>/tools/reference/MovementOracle.java"
+        ],
+        "cwd": "<project-root>/.workflow-local/movement-oracle-ph3zp42m",
+        "pid": 4,
+        "process_group": 4,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.5695148480008356,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "javac",
+          "-encoding",
+          "UTF-8",
+          "-cp",
+          "<reference-root>/ColorMod_2_01/biogenesis.jar:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "-d",
+          "<project-root>/.workflow-local/movement-oracle-ph3zp42m/helpers-jar",
+          "<project-root>/tools/reference/MovementOracle.java"
+        ],
+        "cwd": "<project-root>/.workflow-local/movement-oracle-ph3zp42m",
+        "pid": 32,
+        "process_group": 32,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.5700254369985487,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "positive_runs": [
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/movement-oracle-ph3zp42m/source-a/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/movement-oracle-ph3zp42m/source-a/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/movement-oracle-ph3zp42m/source-a/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/movement-oracle-ph3zp42m/source-a/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/movement-oracle-ph3zp42m/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.MovementOracle",
+          "<project-root>/.workflow-local/movement-oracle-ph3zp42m/source-a/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/movement-oracle-ph3zp42m/source-a",
+        "pid": 61,
+        "process_group": 61,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.516450809998787,
+        "stdout": "MOVEMENT_ORACLE PASS cases=97\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/movement-oracle-ph3zp42m/source-b/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/movement-oracle-ph3zp42m/source-b/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/movement-oracle-ph3zp42m/source-b/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/movement-oracle-ph3zp42m/source-b/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/movement-oracle-ph3zp42m/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.MovementOracle",
+          "<project-root>/.workflow-local/movement-oracle-ph3zp42m/source-b/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/movement-oracle-ph3zp42m/source-b",
+        "pid": 4,
+        "process_group": 4,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.5354135359993961,
+        "stdout": "MOVEMENT_ORACLE PASS cases=97\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/movement-oracle-ph3zp42m/jar/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/movement-oracle-ph3zp42m/jar/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/movement-oracle-ph3zp42m/jar/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/movement-oracle-ph3zp42m/jar/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/movement-oracle-ph3zp42m/helpers-jar:<reference-root>/ColorMod_2_01/biogenesis.jar:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.MovementOracle",
+          "<project-root>/.workflow-local/movement-oracle-ph3zp42m/jar/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/movement-oracle-ph3zp42m/jar",
+        "pid": 34,
+        "process_group": 34,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.621704362998571,
+        "stdout": "MOVEMENT_ORACLE PASS cases=97\n",
+        "stderr": ""
+      }
+    ],
+    "negative_guards": [
+      {
+        "argv": [
+          "java",
+          "-Djava.awt.headless=true",
+          "-cp",
+          "<project-root>/.workflow-local/movement-oracle-ph3zp42m/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.MovementOracle",
+          "<project-root>/.workflow-local/movement-oracle-ph3zp42m/negative/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/movement-oracle-ph3zp42m/negative",
+        "pid": 41,
+        "process_group": 41,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.029038680000667227,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: user.home\n\tat biogenesis.MovementOracle.require(MovementOracle.java:125)\n\tat biogenesis.MovementOracle.main(MovementOracle.java:240)\n"
+      },
+      {
+        "argv": [
+          "java",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/movement-oracle-ph3zp42m/source-a/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/movement-oracle-ph3zp42m/source-a/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/movement-oracle-ph3zp42m/source-a/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/movement-oracle-ph3zp42m/source-a/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/movement-oracle-ph3zp42m/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.MovementOracle",
+          "<project-root>/.workflow-local/movement-oracle-ph3zp42m/source-a/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/movement-oracle-ph3zp42m/negative",
+        "pid": 59,
+        "process_group": 59,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.02974577300119563,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Output directory must not exist\n\tat biogenesis.MovementOracle.require(MovementOracle.java:125)\n\tat biogenesis.MovementOracle.main(MovementOracle.java:242)\n"
+      }
+    ],
+    "headless": true,
+    "explicit_profile_properties": [
+      "user.home",
+      "java.io.tmpdir",
+      "java.util.prefs.userRoot",
+      "java.util.prefs.systemRoot"
+    ]
+  },
+  "comparison_contract": {
+    "declared_before_rust_comparison": true,
+    "allowed_geometry_fields": [
+      "_m",
+      "_m1",
+      "_m2",
+      "_mass",
+      "_I"
+    ],
+    "finite_geometry": "Require finite actual and abs(actual-expected)<=1e-10*max(1,abs(expected)).",
+    "nonfinite_geometry": "Expected NaN requires actual NaN. Expected infinity requires same signed infinity. Array lengths/order remain exact.",
+    "other_floats": "Exact rawbits for velocities, angles, energy, effect/photo coefficients and RNG, including NaN signs and payloads.",
+    "discrete": "Exact endpoints, centers, bounds, reactions, ARGB, metadata, references, lengths and ordering.",
+    "branch_results": "The geometry allowance cannot change growth decisions, cache selection, integer casts or source branches.",
+    "rust_status": "This Java provenance does not claim Rust or complete frame parity."
+  },
+  "input_contract": {
+    "construction": "Real World gas methods, real Organism constructor and actual successful paste.",
+    "genotypes": "Input G/N records supply constructor data. Later observations remain expected outputs.",
+    "controls": "I records typed original-field inputs before the named K action. Clone/shared modes use actual source references.",
+    "energy_boundaries": "Literal I energy inputs derive from actual getMass()/10 or12 and nextDown/nextUp. No expected growth math is copied.",
+    "cache_controls": "Explicit cached endpoint arrays and distinct floating/integer centers are labelled raw state inputs.",
+    "reset_sentinel": "hasGrown7 is an explicit reset input, not a claim about normal source frames.",
+    "nonfinite_flow": "Actual grow results feed rubbing, offset_velocity and bounds; no generated NaN is replaced by a fixture constant.",
+    "rng_peeks": "Serialized ordinary Random copies preserve the live stream."
+  },
+  "spore_birth_crosscheck": {
+    "actual_inherit_setup_count": 6,
+    "modifiers": [
+      1,
+      2,
+      3,
+      6,
+      7,
+      10
+    ],
+    "prior_fixture": "crates/core/tests/fixtures/birth_variants.tsv",
+    "prior_fixture_sha256": "ababf3bdecebcfda1c56b99cf08343157b6091e2b95f9ab63010de1c13e04b96",
+    "initial_154field_values_exactly_equal_corresponding_eye_cases": true,
+    "parent_tree": "Actual JTS insertion of real parent envelope; F records bounds and birth seed reset."
+  },
+  "observed_diagnostics": {
+    "all97primitive_sequences_preserve_rng_suffix": true,
+    "real_spore_birth_cache_cases": [
+      {
+        "case": "real-spore-birth-cache-1",
+        "false_retains_cached": true,
+        "force_changes": [
+          "x1",
+          "y1",
+          "x2",
+          "y2",
+          "bounds"
+        ]
+      },
+      {
+        "case": "real-spore-birth-cache-2",
+        "false_retains_cached": true,
+        "force_changes": [
+          "x1",
+          "y1",
+          "x2",
+          "y2",
+          "bounds"
+        ]
+      },
+      {
+        "case": "real-spore-birth-cache-3",
+        "false_retains_cached": true,
+        "force_changes": [
+          "x1",
+          "y1",
+          "x2",
+          "y2",
+          "bounds"
+        ]
+      },
+      {
+        "case": "real-spore-birth-cache-6",
+        "false_retains_cached": true,
+        "force_changes": [
+          "x1",
+          "y1",
+          "x2",
+          "y2",
+          "bounds"
+        ]
+      },
+      {
+        "case": "real-spore-birth-cache-7",
+        "false_retains_cached": true,
+        "force_changes": [
+          "x1",
+          "y1",
+          "x2",
+          "y2",
+          "bounds"
+        ]
+      },
+      {
+        "case": "real-spore-birth-cache-10",
+        "false_retains_cached": true,
+        "force_changes": [
+          "x1",
+          "y1",
+          "x2",
+          "y2",
+          "bounds"
+        ]
+      }
+    ],
+    "selected_observations": {
+      "cache-signed-zero-false": {
+        "initial": {
+          "_centerX": "3500",
+          "_centerY": "3500",
+          "_energy": "4044000000000000",
+          "_growthRatio": "16",
+          "_theta": "4013b5573b5281b4",
+          "dtheta": "0000000000000000",
+          "dx": "0000000000000000",
+          "dy": "0000000000000000",
+          "hasGrown": "0",
+          "bounds": "3500,3500,2,2"
+        },
+        "step-1": {
+          "_centerX": "123",
+          "_centerY": "-456",
+          "_energy": "4044000000000000",
+          "_growthRatio": "16",
+          "_theta": "0000000000000000",
+          "dtheta": "0000000000000000",
+          "dx": "0000000000000000",
+          "dy": "0000000000000000",
+          "hasGrown": "0",
+          "bounds": "-1,0,4,2"
+        }
+      },
+      "cache-signed-zero-true": {
+        "initial": {
+          "_centerX": "3500",
+          "_centerY": "3500",
+          "_energy": "4044000000000000",
+          "_growthRatio": "16",
+          "_theta": "4013b5573b5281b4",
+          "dtheta": "0000000000000000",
+          "dx": "0000000000000000",
+          "dy": "0000000000000000",
+          "hasGrown": "0",
+          "bounds": "3500,3500,2,2"
+        },
+        "step-1": {
+          "_centerX": "123",
+          "_centerY": "-456",
+          "_energy": "4044000000000000",
+          "_growthRatio": "16",
+          "_theta": "8000000000000000",
+          "dtheta": "0000000000000000",
+          "dx": "0000000000000000",
+          "dy": "0000000000000000",
+          "hasGrown": "0",
+          "bounds": "-1,0,4,2"
+        }
+      },
+      "energy-10-below": {
+        "initial": {
+          "_centerX": "3500",
+          "_centerY": "3500",
+          "_energy": "4044000000000000",
+          "_growthRatio": "16",
+          "_theta": "4013b5573b5281b4",
+          "dtheta": "0000000000000000",
+          "dx": "0000000000000000",
+          "dy": "0000000000000000",
+          "hasGrown": "0",
+          "bounds": "3496,3497,11,10"
+        },
+        "step-2": {
+          "_centerX": "3500",
+          "_centerY": "3500",
+          "_energy": "4016ae147ae147ad",
+          "_growthRatio": "8",
+          "_theta": "4013b5573b5281b4",
+          "dtheta": "3fc0000000000000",
+          "dx": "3ff4000000000000",
+          "dy": "bfe8000000000000",
+          "hasGrown": "0",
+          "bounds": "3489,3490,28,28"
+        }
+      },
+      "energy-10-equal": {
+        "initial": {
+          "_centerX": "3500",
+          "_centerY": "3500",
+          "_energy": "4044000000000000",
+          "_growthRatio": "16",
+          "_theta": "4013b5573b5281b4",
+          "dtheta": "0000000000000000",
+          "dx": "0000000000000000",
+          "dy": "0000000000000000",
+          "hasGrown": "0",
+          "bounds": "3496,3497,11,10"
+        },
+        "step-2": {
+          "_centerX": "3500",
+          "_centerY": "3500",
+          "_energy": "4016ae147ae147ae",
+          "_growthRatio": "7",
+          "_theta": "4013b5573b5281b4",
+          "dtheta": "3fba702be9250433",
+          "dx": "3ff2f9422c23c47e",
+          "dy": "bfe6c4b5ce915230",
+          "hasGrown": "1",
+          "bounds": "3489,3490,28,28"
+        }
+      },
+      "energy-12-below": {
+        "initial": {
+          "_centerX": "3500",
+          "_centerY": "3500",
+          "_energy": "4044000000000000",
+          "_growthRatio": "16",
+          "_theta": "4013b5573b5281b4",
+          "dtheta": "0000000000000000",
+          "dx": "0000000000000000",
+          "dy": "0000000000000000",
+          "hasGrown": "0",
+          "bounds": "3496,3497,11,10"
+        },
+        "step-2": {
+          "_centerX": "3500",
+          "_centerY": "3500",
+          "_energy": "4012e66666666666",
+          "_growthRatio": "9",
+          "_theta": "4013b5573b5281b4",
+          "dtheta": "3fc2769920c23395",
+          "dx": "3ff536948017480f",
+          "dy": "bfe974b2334f2346",
+          "hasGrown": "-1",
+          "bounds": "3489,3490,28,28"
+        }
+      },
+      "energy-12-equal": {
+        "initial": {
+          "_centerX": "3500",
+          "_centerY": "3500",
+          "_energy": "4044000000000000",
+          "_growthRatio": "16",
+          "_theta": "4013b5573b5281b4",
+          "dtheta": "0000000000000000",
+          "dx": "0000000000000000",
+          "dy": "0000000000000000",
+          "hasGrown": "0",
+          "bounds": "3496,3497,11,10"
+        },
+        "step-2": {
+          "_centerX": "3500",
+          "_centerY": "3500",
+          "_energy": "4012e66666666667",
+          "_growthRatio": "8",
+          "_theta": "4013b5573b5281b4",
+          "dtheta": "3fc0000000000000",
+          "dx": "3ff4000000000000",
+          "dy": "bfe8000000000000",
+          "hasGrown": "0",
+          "bounds": "3489,3490,28,28"
+        }
+      },
+      "zero-mass-growth": {
+        "initial": {
+          "_centerX": "3500",
+          "_centerY": "3500",
+          "_energy": "4044000000000000",
+          "_growthRatio": "16",
+          "_theta": "4013b5573b5281b4",
+          "dtheta": "0000000000000000",
+          "dx": "0000000000000000",
+          "dy": "0000000000000000",
+          "hasGrown": "0",
+          "bounds": "3500,3500,2,2"
+        },
+        "step-5": {
+          "_centerX": "0",
+          "_centerY": "0",
+          "_energy": "0000000000000000",
+          "_growthRatio": "15",
+          "_theta": "fff8000000000000",
+          "dtheta": "fff8000000000000",
+          "dx": "fff8000000000000",
+          "dy": "fff8000000000000",
+          "hasGrown": "1",
+          "bounds": "0,0,1,1"
+        }
+      },
+      "zero-mass-shrink": {
+        "initial": {
+          "_centerX": "3500",
+          "_centerY": "3500",
+          "_energy": "4044000000000000",
+          "_growthRatio": "16",
+          "_theta": "4013b5573b5281b4",
+          "dtheta": "0000000000000000",
+          "dx": "0000000000000000",
+          "dy": "0000000000000000",
+          "hasGrown": "0",
+          "bounds": "3500,3500,2,2"
+        },
+        "step-5": {
+          "_centerX": "0",
+          "_centerY": "0",
+          "_energy": "bff0000000000000",
+          "_growthRatio": "15",
+          "_theta": "fff8000000000000",
+          "dtheta": "fff8000000000000",
+          "dx": "fff8000000000000",
+          "dy": "fff8000000000000",
+          "hasGrown": "-1",
+          "bounds": "0,0,1,1"
+        }
+      },
+      "offset-7": {
+        "initial": {
+          "_centerX": "3500",
+          "_centerY": "3500",
+          "_energy": "4044000000000000",
+          "_growthRatio": "16",
+          "_theta": "4013b5573b5281b4",
+          "dtheta": "0000000000000000",
+          "dx": "0000000000000000",
+          "dy": "0000000000000000",
+          "hasGrown": "0",
+          "bounds": "3496,3497,11,10"
+        },
+        "step-1": {
+          "_centerX": "0",
+          "_centerY": "2147483647",
+          "_energy": "4044000000000000",
+          "_growthRatio": "16",
+          "_theta": "fff0000000000000",
+          "dtheta": "0000000000000000",
+          "dx": "0000000000000000",
+          "dy": "0000000000000000",
+          "hasGrown": "0",
+          "bounds": "0,2147483647,1,-2147483648"
+        }
+      }
+    }
+  },
+  "observed_cases": [
+    {
+      "name": "growth-ratio-1",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "408f400000000000",
+        "_growthRatio": "1",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "3fc0000000000000",
+        "dx": "3ff4000000000000",
+        "dy": "bfe8000000000000",
+        "hasGrown": "0",
+        "bounds": "3473,3475,63,64"
+      }
+    },
+    {
+      "name": "growth-ratio-2",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "408f400000000000",
+        "_growthRatio": "1",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "3fbbbfdacb3380c2",
+        "dx": "3ff2f9422c23c47e",
+        "dy": "bfe6c4b5ce915230",
+        "hasGrown": "1",
+        "bounds": "3473,3475,63,64"
+      }
+    },
+    {
+      "name": "growth-ratio-3",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "408f400000000000",
+        "_growthRatio": "2",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "3fbae0b130008458",
+        "dx": "3ff2db2eaabf5c80",
+        "dy": "bfe6a09e667f3bcc",
+        "hasGrown": "1",
+        "bounds": "3476,3478,57,57"
+      }
+    },
+    {
+      "name": "growth-ratio-4",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "408f400000000000",
+        "_growthRatio": "3",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "3fbadf44ec6e651f",
+        "dx": "3ff2d768da651c62",
+        "dy": "bfe69c176c795543",
+        "hasGrown": "1",
+        "bounds": "3478,3480,52,52"
+      }
+    },
+    {
+      "name": "growth-ratio-5",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "408f400000000000",
+        "_growthRatio": "4",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "3fbad0488c90ad0a",
+        "dx": "3ff2d6ee5f3e0a0f",
+        "dy": "bfe69b84724a7278",
+        "hasGrown": "1",
+        "bounds": "3481,3482,45,46"
+      }
+    },
+    {
+      "name": "growth-ratio-6",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "408f400000000000",
+        "_growthRatio": "5",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "3fbabce8b93640de",
+        "dx": "3ff2db2eaabf5c80",
+        "dy": "bfe6a09e667f3bcc",
+        "hasGrown": "1",
+        "bounds": "3483,3485,40,40"
+      }
+    },
+    {
+      "name": "growth-ratio-7",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "408f400000000000",
+        "_growthRatio": "6",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "3fbb98014ffef3d2",
+        "dx": "3ff2e5f1fc3339ac",
+        "dy": "bfe6ad88c83d7868",
+        "hasGrown": "1",
+        "bounds": "3485,3486,36,36"
+      }
+    },
+    {
+      "name": "growth-ratio-8",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "408f400000000000",
+        "_growthRatio": "7",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "3fba702be9250433",
+        "dx": "3ff2f9422c23c47e",
+        "dy": "bfe6c4b5ce915230",
+        "hasGrown": "1",
+        "bounds": "3487,3488,33,32"
+      }
+    },
+    {
+      "name": "growth-ratio-9",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "408f400000000000",
+        "_growthRatio": "8",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "3fbbbb10e1b1386d",
+        "dx": "3ff2db2eaabf5c80",
+        "dy": "bfe6a09e667f3bcc",
+        "hasGrown": "1",
+        "bounds": "3489,3490,28,28"
+      }
+    },
+    {
+      "name": "growth-ratio-10",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "408f400000000000",
+        "_growthRatio": "9",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "3fbaf420beb2407a",
+        "dx": "3ff2f9422c23c47e",
+        "dy": "bfe6c4b5ce915230",
+        "hasGrown": "1",
+        "bounds": "3490,3490,26,27"
+      }
+    },
+    {
+      "name": "growth-ratio-11",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "408f400000000000",
+        "_growthRatio": "10",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "3fbb0639dd9c754e",
+        "dx": "3ff2db2eaabf5c80",
+        "dy": "bfe6a09e667f3bcc",
+        "hasGrown": "1",
+        "bounds": "3491,3492,24,23"
+      }
+    },
+    {
+      "name": "growth-ratio-12",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "408f400000000000",
+        "_growthRatio": "11",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "3fbac873722a5b3f",
+        "dx": "3ff2b5524ae1278e",
+        "dy": "bfe6732f8d0e2f77",
+        "hasGrown": "1",
+        "bounds": "3492,3493,20,20"
+      }
+    },
+    {
+      "name": "growth-ratio-13",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "408f400000000000",
+        "_growthRatio": "12",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "3fbaf79b867fee6d",
+        "dx": "3ff2e5f1fc3339ac",
+        "dy": "bfe6ad88c83d7868",
+        "hasGrown": "1",
+        "bounds": "3493,3493,18,19"
+      }
+    },
+    {
+      "name": "growth-ratio-14",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "408f400000000000",
+        "_growthRatio": "13",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "3fbcdaed59972ea0",
+        "dx": "3ff2c2fc595456a7",
+        "dy": "bfe6839537fece62",
+        "hasGrown": "1",
+        "bounds": "3493,3494,17,17"
+      }
+    },
+    {
+      "name": "growth-ratio-15",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "408f400000000000",
+        "_growthRatio": "14",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "3fb95ab2704e75d2",
+        "dx": "3ff311ba7c2762d2",
+        "dy": "bfe6e212fb627695",
+        "hasGrown": "1",
+        "bounds": "3495,3494,14,17"
+      }
+    },
+    {
+      "name": "growth-ratio-16",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "408f400000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "3fb9513649666a10",
+        "dx": "3ff2f9422c23c47e",
+        "dy": "bfe6c4b5ce915230",
+        "hasGrown": "1",
+        "bounds": "3495,3496,14,13"
+      }
+    },
+    {
+      "name": "energy-10-below",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "4016ae147ae147ad",
+        "_growthRatio": "8",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "3fc0000000000000",
+        "dx": "3ff4000000000000",
+        "dy": "bfe8000000000000",
+        "hasGrown": "0",
+        "bounds": "3489,3490,28,28"
+      }
+    },
+    {
+      "name": "energy-10-equal",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "4016ae147ae147ae",
+        "_growthRatio": "7",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "3fba702be9250433",
+        "dx": "3ff2f9422c23c47e",
+        "dy": "bfe6c4b5ce915230",
+        "hasGrown": "1",
+        "bounds": "3489,3490,28,28"
+      }
+    },
+    {
+      "name": "energy-10-above",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "4016ae147ae147af",
+        "_growthRatio": "7",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "3fba702be9250433",
+        "dx": "3ff2f9422c23c47e",
+        "dy": "bfe6c4b5ce915230",
+        "hasGrown": "1",
+        "bounds": "3489,3490,28,28"
+      }
+    },
+    {
+      "name": "energy-12-below",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "4012e66666666666",
+        "_growthRatio": "9",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "3fc2769920c23395",
+        "dx": "3ff536948017480f",
+        "dy": "bfe974b2334f2346",
+        "hasGrown": "-1",
+        "bounds": "3489,3490,28,28"
+      }
+    },
+    {
+      "name": "energy-12-equal",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "4012e66666666667",
+        "_growthRatio": "8",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "3fc0000000000000",
+        "dx": "3ff4000000000000",
+        "dy": "bfe8000000000000",
+        "hasGrown": "0",
+        "bounds": "3489,3490,28,28"
+      }
+    },
+    {
+      "name": "energy-12-above",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "4012e66666666668",
+        "_growthRatio": "8",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "3fc0000000000000",
+        "dx": "3ff4000000000000",
+        "dy": "bfe8000000000000",
+        "hasGrown": "0",
+        "bounds": "3489,3490,28,28"
+      }
+    },
+    {
+      "name": "growth-age-8",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "408f400000000000",
+        "_growthRatio": "8",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "3fc0000000000000",
+        "dx": "3ff4000000000000",
+        "dy": "bfe8000000000000",
+        "hasGrown": "0",
+        "bounds": "3489,3490,28,28"
+      }
+    },
+    {
+      "name": "growth-age-15",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "408f400000000000",
+        "_growthRatio": "7",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "3fba702be9250433",
+        "dx": "3ff2f9422c23c47e",
+        "dy": "bfe6c4b5ce915230",
+        "hasGrown": "1",
+        "bounds": "3489,3490,28,28"
+      }
+    },
+    {
+      "name": "inactive-newborn-ratio-15",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "408f400000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "false",
+        "dtheta": "3fc0000000000000",
+        "dx": "3ff4000000000000",
+        "dy": "bfe8000000000000",
+        "hasGrown": "0",
+        "bounds": "3495,3496,14,13"
+      }
+    },
+    {
+      "name": "inactive-newborn-ratio-16",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "408f400000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "false",
+        "dtheta": "3fb9513649666a10",
+        "dx": "3ff2f9422c23c47e",
+        "dy": "bfe6c4b5ce915230",
+        "hasGrown": "1",
+        "bounds": "3496,3497,11,10"
+      }
+    },
+    {
+      "name": "shrink-ratio-1",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "2",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "3fc27369757e254a",
+        "dx": "3ff514f4310b4c1a",
+        "dy": "bfe94c583ada5b53",
+        "hasGrown": "-1",
+        "bounds": "3476,3478,57,57"
+      }
+    },
+    {
+      "name": "shrink-ratio-14",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "3fc4319e84375079",
+        "dx": "3ff4f9e6bbc4ecb4",
+        "dy": "bfe92be1ae1f8271",
+        "hasGrown": "-1",
+        "bounds": "3495,3496,14,13"
+      }
+    },
+    {
+      "name": "shrink-ratio-15",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "3fc0000000000000",
+        "dx": "3ff4000000000000",
+        "dy": "bfe8000000000000",
+        "hasGrown": "0",
+        "bounds": "3495,3496,14,13"
+      }
+    },
+    {
+      "name": "shrink-ratio-16",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "16",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "3fc0000000000000",
+        "dx": "3ff4000000000000",
+        "dy": "bfe8000000000000",
+        "hasGrown": "0",
+        "bounds": "3496,3497,11,10"
+      }
+    },
+    {
+      "name": "inactive-shrink",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "false",
+        "dtheta": "3fc4319e84375079",
+        "dx": "3ff4f9e6bbc4ecb4",
+        "dy": "bfe92be1ae1f8271",
+        "hasGrown": "-1",
+        "bounds": "3495,3494,14,17"
+      }
+    },
+    {
+      "name": "growth-spore-version--1",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "408f400000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-1",
+        "_theta": "4013b5573b5281b4",
+        "active": "false",
+        "dtheta": "3fb9513649666a10",
+        "dx": "3ff2f9422c23c47e",
+        "dy": "bfe6c4b5ce915230",
+        "hasGrown": "1",
+        "bounds": "3496,3497,11,10"
+      }
+    },
+    {
+      "name": "growth-spore-version--2",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "408f400000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-1",
+        "_theta": "4013b5573b5281b4",
+        "active": "false",
+        "dtheta": "3fb9513649666a10",
+        "dx": "3ff2f9422c23c47e",
+        "dy": "bfe6c4b5ce915230",
+        "hasGrown": "1",
+        "bounds": "3496,3497,11,10"
+      }
+    },
+    {
+      "name": "growth-spore-version--3",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "408f400000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-1",
+        "_theta": "4013b5573b5281b4",
+        "active": "false",
+        "dtheta": "3fb9513649666a10",
+        "dx": "3ff2f9422c23c47e",
+        "dy": "bfe6c4b5ce915230",
+        "hasGrown": "1",
+        "bounds": "3496,3497,11,10"
+      }
+    },
+    {
+      "name": "sporify-7-frames-0-flags-0",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-4",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-2",
+        "_theta": "4013b5573b5281b4",
+        "active": "false",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3498,3498,6,6"
+      }
+    },
+    {
+      "name": "sporify-7-frames-0-flags-1",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-4",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-2",
+        "_theta": "4013b5573b5281b4",
+        "active": "false",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3498,3498,6,6"
+      }
+    },
+    {
+      "name": "sporify-7-frames-0-flags-2",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-4",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-2",
+        "_theta": "4013b5573b5281b4",
+        "active": "false",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3498,3498,6,6"
+      }
+    },
+    {
+      "name": "sporify-7-frames-0-flags-3",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-4",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-2",
+        "_theta": "4013b5573b5281b4",
+        "active": "false",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3498,3498,6,6"
+      }
+    },
+    {
+      "name": "sporify-7-frames-9-flags-0",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-4",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-2",
+        "_theta": "4013b5573b5281b4",
+        "active": "false",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3498,3498,6,6"
+      }
+    },
+    {
+      "name": "sporify-7-frames-9-flags-1",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-4",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-1",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3498,3497,7,7"
+      }
+    },
+    {
+      "name": "sporify-7-frames-9-flags-2",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-4",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-1",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3498,3497,7,7"
+      }
+    },
+    {
+      "name": "sporify-7-frames-9-flags-3",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-4",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-1",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3498,3497,7,7"
+      }
+    },
+    {
+      "name": "sporify-7-frames-10-flags-0",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-4",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-1",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3498,3497,7,7"
+      }
+    },
+    {
+      "name": "sporify-7-frames-10-flags-1",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-4",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-1",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3498,3497,7,7"
+      }
+    },
+    {
+      "name": "sporify-7-frames-10-flags-2",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-4",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-1",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3498,3497,7,7"
+      }
+    },
+    {
+      "name": "sporify-7-frames-10-flags-3",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-4",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-1",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3498,3497,7,7"
+      }
+    },
+    {
+      "name": "sporify-10-frames-0-flags-0",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-4",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-3",
+        "_theta": "4013b5573b5281b4",
+        "active": "false",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3498,3498,6,6"
+      }
+    },
+    {
+      "name": "sporify-10-frames-0-flags-1",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-4",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-3",
+        "_theta": "4013b5573b5281b4",
+        "active": "false",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3498,3498,6,6"
+      }
+    },
+    {
+      "name": "sporify-10-frames-0-flags-2",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-4",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-3",
+        "_theta": "4013b5573b5281b4",
+        "active": "false",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3498,3498,6,6"
+      }
+    },
+    {
+      "name": "sporify-10-frames-0-flags-3",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-4",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-3",
+        "_theta": "4013b5573b5281b4",
+        "active": "false",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3498,3498,6,6"
+      }
+    },
+    {
+      "name": "sporify-10-frames-9-flags-0",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-4",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-3",
+        "_theta": "4013b5573b5281b4",
+        "active": "false",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3498,3498,6,6"
+      }
+    },
+    {
+      "name": "sporify-10-frames-9-flags-1",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-4",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-1",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3498,3497,7,7"
+      }
+    },
+    {
+      "name": "sporify-10-frames-9-flags-2",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-4",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-1",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3498,3497,7,7"
+      }
+    },
+    {
+      "name": "sporify-10-frames-9-flags-3",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-4",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-1",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3498,3497,7,7"
+      }
+    },
+    {
+      "name": "sporify-10-frames-10-flags-0",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-4",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-1",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3498,3497,7,7"
+      }
+    },
+    {
+      "name": "sporify-10-frames-10-flags-1",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-4",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-1",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3498,3497,7,7"
+      }
+    },
+    {
+      "name": "sporify-10-frames-10-flags-2",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-4",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-1",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3498,3497,7,7"
+      }
+    },
+    {
+      "name": "sporify-10-frames-10-flags-3",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-4",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-1",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3498,3497,7,7"
+      }
+    },
+    {
+      "name": "sporify-inactive",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-1",
+        "_theta": "4013b5573b5281b4",
+        "active": "false",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3498,3497,7,7"
+      }
+    },
+    {
+      "name": "sporify-wrong-version--2",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-2",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3498,3497,7,7"
+      }
+    },
+    {
+      "name": "sporify-wrong-version--3",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-3",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3498,3497,7,7"
+      }
+    },
+    {
+      "name": "sporify-saved-without-infection",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-2",
+        "_theta": "4013b5573b5281b4",
+        "active": "false",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3498,3497,7,7"
+      }
+    },
+    {
+      "name": "sporify-clears-infected-and-saved",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-3",
+        "_theta": "4013b5573b5281b4",
+        "active": "false",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3498,3497,7,7"
+      }
+    },
+    {
+      "name": "sporify-clears-shared-references",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-2",
+        "_theta": "4013b5573b5281b4",
+        "active": "false",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3498,3497,7,7"
+      }
+    },
+    {
+      "name": "shrink-then-sporify",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "grow"
+        ],
+        [
+          "step-4",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-5",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-3",
+        "_theta": "4013b5573b5281b4",
+        "active": "false",
+        "dtheta": "3fc5321af9c1b7f3",
+        "dx": "3ff4f9e6bbc4ecb4",
+        "dy": "bfe92be1ae1f8271",
+        "hasGrown": "0",
+        "bounds": "3498,3498,6,6"
+      }
+    },
+    {
+      "name": "cache-after-gene-change",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-2",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "4044000000000000",
+        "_growthRatio": "16",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3495,3494,14,17"
+      }
+    },
+    {
+      "name": "cache-signed-zero-false",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "123",
+        "_centerY": "-456",
+        "_energy": "4044000000000000",
+        "_growthRatio": "16",
+        "_lastTheta": "0000000000000000",
+        "_sporeversion": "0",
+        "_theta": "0000000000000000",
+        "active": "true",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "-1,0,4,2"
+      }
+    },
+    {
+      "name": "cache-signed-zero-true",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "123",
+        "_centerY": "-456",
+        "_energy": "4044000000000000",
+        "_growthRatio": "16",
+        "_lastTheta": "8000000000000000",
+        "_sporeversion": "0",
+        "_theta": "8000000000000000",
+        "active": "true",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "-1,0,4,2"
+      }
+    },
+    {
+      "name": "bounds-nan-angle",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "bounds",
+          "false"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "4044000000000000",
+        "_growthRatio": "16",
+        "_lastTheta": "7ff8000000000000",
+        "_sporeversion": "0",
+        "_theta": "7ff8000000000000",
+        "active": "true",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3500,3500,2,2"
+      }
+    },
+    {
+      "name": "offset-0",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "offset",
+          "3fd0000000000000",
+          "bfe8000000000000",
+          "0000000000000000"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "false"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3499",
+        "_energy": "4044000000000000",
+        "_growthRatio": "16",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3496,3496,11,10"
+      }
+    },
+    {
+      "name": "offset-1",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "offset",
+          "c0ab598000000000",
+          "c0ab588000000000",
+          "0000000000000000"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "false"
+        ]
+      ],
+      "final": {
+        "_centerX": "0",
+        "_centerY": "0",
+        "_energy": "4044000000000000",
+        "_growthRatio": "16",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "-4,-3,11,10"
+      }
+    },
+    {
+      "name": "offset-2",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "offset",
+          "c0ab5a8000000000",
+          "c0ab578000000000",
+          "bfd8000000000000"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "false"
+        ]
+      ],
+      "final": {
+        "_centerX": "-1",
+        "_centerY": "0",
+        "_energy": "4044000000000000",
+        "_growthRatio": "16",
+        "_lastTheta": "401235573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "401235573b5281b4",
+        "active": "true",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "-6,-4,12,11"
+      }
+    },
+    {
+      "name": "offset-3",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "offset",
+          "0000000000000000",
+          "0000000000000000",
+          "0000000000000000"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "false"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "4044000000000000",
+        "_growthRatio": "16",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3496,3497,11,10"
+      }
+    },
+    {
+      "name": "offset-4",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "offset",
+          "8000000000000000",
+          "8000000000000000",
+          "8000000000000000"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "false"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "4044000000000000",
+        "_growthRatio": "16",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3496,3497,11,10"
+      }
+    },
+    {
+      "name": "offset-5",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "offset",
+          "0000000000000000",
+          "0000000000000000",
+          "3ff921fb54442d18"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "false"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "4044000000000000",
+        "_growthRatio": "16",
+        "_lastTheta": "4019fdd610638cfa",
+        "_sporeversion": "0",
+        "_theta": "4019fdd610638cfa",
+        "active": "true",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3495,3496,10,11"
+      }
+    },
+    {
+      "name": "offset-6",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "offset",
+          "54b249ad2594c37d",
+          "d4b249ad2594c37d",
+          "0000000000000000"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "false"
+        ]
+      ],
+      "final": {
+        "_centerX": "2147483647",
+        "_centerY": "-2147483648",
+        "_energy": "4044000000000000",
+        "_growthRatio": "16",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "2147483647,-2147483648,2,-2147483648"
+      }
+    },
+    {
+      "name": "offset-7",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "offset",
+          "7ff8000000000000",
+          "7ff0000000000000",
+          "fff0000000000000"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "false"
+        ]
+      ],
+      "final": {
+        "_centerX": "0",
+        "_centerY": "2147483647",
+        "_energy": "4044000000000000",
+        "_growthRatio": "16",
+        "_lastTheta": "fff0000000000000",
+        "_sporeversion": "0",
+        "_theta": "fff0000000000000",
+        "active": "true",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "0,2147483647,1,-2147483648"
+      }
+    },
+    {
+      "name": "friction-boundary-8000000000000000",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "rubbing"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "4044000000000000",
+        "_growthRatio": "16",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3496,3497,11,10"
+      }
+    },
+    {
+      "name": "friction-boundary-0000000000000000",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "rubbing"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "4044000000000000",
+        "_growthRatio": "16",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3496,3497,11,10"
+      }
+    },
+    {
+      "name": "friction-boundary-3e7ad7f29abcaf47",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "rubbing"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "4044000000000000",
+        "_growthRatio": "16",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3496,3497,11,10"
+      }
+    },
+    {
+      "name": "friction-boundary-3e7ad7f29abcaf48",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "rubbing"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "4044000000000000",
+        "_growthRatio": "16",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "3e7ad7f29abcaf48",
+        "dx": "3e7ad7f29abcaf48",
+        "dy": "3e7ad7f29abcaf48",
+        "hasGrown": "0",
+        "bounds": "3496,3497,11,10"
+      }
+    },
+    {
+      "name": "friction-boundary-3e7ad7f29abcaf49",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "rubbing"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "4044000000000000",
+        "_growthRatio": "16",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "3e7ad7f29abcaf49",
+        "dx": "3e7ad7f29abcaf49",
+        "dy": "3e7ad7f29abcaf49",
+        "hasGrown": "0",
+        "bounds": "3496,3497,11,10"
+      }
+    },
+    {
+      "name": "friction-boundary-be7ad7f29abcaf47",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "rubbing"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "4044000000000000",
+        "_growthRatio": "16",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3496,3497,11,10"
+      }
+    },
+    {
+      "name": "friction-boundary-be7ad7f29abcaf48",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "rubbing"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "4044000000000000",
+        "_growthRatio": "16",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "be7ad7f29abcaf48",
+        "dx": "be7ad7f29abcaf48",
+        "dy": "be7ad7f29abcaf48",
+        "hasGrown": "0",
+        "bounds": "3496,3497,11,10"
+      }
+    },
+    {
+      "name": "friction-boundary-be7ad7f29abcaf49",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "rubbing"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "4044000000000000",
+        "_growthRatio": "16",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "be7ad7f29abcaf49",
+        "dx": "be7ad7f29abcaf49",
+        "dy": "be7ad7f29abcaf49",
+        "hasGrown": "0",
+        "bounds": "3496,3497,11,10"
+      }
+    },
+    {
+      "name": "friction-boundary-0000000000000001",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "rubbing"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "4044000000000000",
+        "_growthRatio": "16",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "0000000000000000",
+        "dx": "0000000000000000",
+        "dy": "0000000000000000",
+        "hasGrown": "0",
+        "bounds": "3496,3497,11,10"
+      }
+    },
+    {
+      "name": "friction-default",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "rubbing"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "4044000000000000",
+        "_growthRatio": "16",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "3fbf5c28f5c28f5c",
+        "dx": "3ff399999999999a",
+        "dy": "bfe7851eb851eb85",
+        "hasGrown": "0",
+        "bounds": "3496,3497,11,10"
+      }
+    },
+    {
+      "name": "friction-nonfinite",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "rubbing"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "4044000000000000",
+        "_growthRatio": "16",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "fff0000000000000",
+        "dx": "7ff8000000000000",
+        "dy": "7ff0000000000000",
+        "hasGrown": "0",
+        "bounds": "3496,3497,11,10"
+      }
+    },
+    {
+      "name": "friction-zero-nonfinite",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "rubbing"
+        ]
+      ],
+      "final": {
+        "_centerX": "3500",
+        "_centerY": "3500",
+        "_energy": "4044000000000000",
+        "_growthRatio": "16",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "0",
+        "_theta": "4013b5573b5281b4",
+        "active": "true",
+        "dtheta": "7ff8000000000000",
+        "dx": "fff8000000000000",
+        "dy": "fff8000000000000",
+        "hasGrown": "0",
+        "bounds": "3496,3497,11,10"
+      }
+    },
+    {
+      "name": "zero-mass-growth",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "rubbing"
+        ],
+        [
+          "step-4",
+          "offset_velocity"
+        ],
+        [
+          "step-5",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "0",
+        "_centerY": "0",
+        "_energy": "0000000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "fff8000000000000",
+        "_sporeversion": "0",
+        "_theta": "fff8000000000000",
+        "active": "true",
+        "dtheta": "fff8000000000000",
+        "dx": "fff8000000000000",
+        "dy": "fff8000000000000",
+        "hasGrown": "1",
+        "bounds": "0,0,1,1"
+      }
+    },
+    {
+      "name": "zero-mass-shrink",
+      "setup": "pasted",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "symmetric"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ],
+        [
+          "step-2",
+          "grow"
+        ],
+        [
+          "step-3",
+          "rubbing"
+        ],
+        [
+          "step-4",
+          "offset_velocity"
+        ],
+        [
+          "step-5",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "0",
+        "_centerY": "0",
+        "_energy": "bff0000000000000",
+        "_growthRatio": "15",
+        "_lastTheta": "fff8000000000000",
+        "_sporeversion": "0",
+        "_theta": "fff8000000000000",
+        "active": "true",
+        "dtheta": "fff8000000000000",
+        "dx": "fff8000000000000",
+        "dy": "fff8000000000000",
+        "hasGrown": "-1",
+        "bounds": "0,0,1,1"
+      }
+    },
+    {
+      "name": "real-spore-birth-cache-1",
+      "setup": "spore_birth",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3493",
+        "_centerY": "3493",
+        "_energy": "403e000000000000",
+        "_growthRatio": "16",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "1",
+        "_theta": "4013b5573b5281b4",
+        "active": "false",
+        "dtheta": "0000000000000000",
+        "dx": "3ff4000000000000",
+        "dy": "bfe0000000000000",
+        "hasGrown": "0",
+        "bounds": "3491,3491,6,5"
+      }
+    },
+    {
+      "name": "real-spore-birth-cache-2",
+      "setup": "spore_birth",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3493",
+        "_centerY": "3493",
+        "_energy": "403e000000000000",
+        "_growthRatio": "16",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "2",
+        "_theta": "4013b5573b5281b4",
+        "active": "false",
+        "dtheta": "0000000000000000",
+        "dx": "3ff4000000000000",
+        "dy": "bfe0000000000000",
+        "hasGrown": "0",
+        "bounds": "3491,3491,6,5"
+      }
+    },
+    {
+      "name": "real-spore-birth-cache-3",
+      "setup": "spore_birth",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3507",
+        "_centerY": "3507",
+        "_energy": "403e000000000000",
+        "_growthRatio": "16",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "3",
+        "_theta": "4013b5573b5281b4",
+        "active": "false",
+        "dtheta": "0000000000000000",
+        "dx": "3ff4000000000000",
+        "dy": "bfe0000000000000",
+        "hasGrown": "0",
+        "bounds": "3505,3505,6,5"
+      }
+    },
+    {
+      "name": "real-spore-birth-cache-6",
+      "setup": "spore_birth",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3507",
+        "_centerY": "3507",
+        "_energy": "4052f00000000001",
+        "_growthRatio": "16",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "6",
+        "_theta": "4013b5573b5281b4",
+        "active": "false",
+        "dtheta": "0000000000000000",
+        "dx": "3ff4000000000000",
+        "dy": "bfe0000000000000",
+        "hasGrown": "0",
+        "bounds": "3505,3505,6,5"
+      }
+    },
+    {
+      "name": "real-spore-birth-cache-7",
+      "setup": "spore_birth",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3507",
+        "_centerY": "3507",
+        "_energy": "4049400000000000",
+        "_growthRatio": "16",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-2",
+        "_theta": "4013b5573b5281b4",
+        "active": "false",
+        "dtheta": "0000000000000000",
+        "dx": "3ff4000000000000",
+        "dy": "bfe0000000000000",
+        "hasGrown": "0",
+        "bounds": "3505,3505,6,5"
+      }
+    },
+    {
+      "name": "real-spore-birth-cache-10",
+      "setup": "spore_birth",
+      "seed": 827364,
+      "actions": [
+        [
+          "step-0",
+          "bounds",
+          "false"
+        ],
+        [
+          "step-1",
+          "bounds",
+          "true"
+        ]
+      ],
+      "final": {
+        "_centerX": "3507",
+        "_centerY": "3507",
+        "_energy": "4049400000000000",
+        "_growthRatio": "16",
+        "_lastTheta": "4013b5573b5281b4",
+        "_sporeversion": "-3",
+        "_theta": "4013b5573b5281b4",
+        "active": "false",
+        "dtheta": "0000000000000000",
+        "dx": "3ff4000000000000",
+        "dy": "bfe0000000000000",
+        "hasGrown": "0",
+        "bounds": "3505,3505,6,5"
+      }
+    }
+  ],
+  "preservation": {
+    "original_hash_size_mode_unchanged": 74,
+    "prior_tsv_fixtures_unchanged": 7,
+    "existing_output_preserved": true,
+    "omitted_profiles_failed_before_output_creation": true
+  },
+  "limitations": [
+    "No complete frames, activation, contacts, corridors, border/death handling, respiration, UI or persistence is executed.",
+    "Deliberate raw cache and nonfinite controls do not claim normal live-body construction.",
+    "Private primitive calls do not establish caller scheduling or World integration.",
+    "This is not exhaustive coverage of all phenotype or source-branch combinations.",
+    "Rust comparison evidence remains separately tracked."
+  ]
+}

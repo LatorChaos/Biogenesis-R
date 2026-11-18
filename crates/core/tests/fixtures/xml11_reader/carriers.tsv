@@ -1,0 +1,684 @@
+1	0	genetic_code	probe	true	cHxx	00000070,0000007c,00000071
+1	0	genetic_code	id	false		
+1	0	genetic_code	ref	false		
+1	0	genetic_code	refs	false		
+1	0	genetic_code	other	false		
+1	0	genetic_code	symmetry	true	MQ==	00000031
+1	0	genetic_code	branch	false		
+1	0	genetic_code	length	false		
+1	0	genetic_code	theta	false		
+1	1	gene	probe	false		
+1	1	gene	id	false		
+1	1	gene	ref	false		
+1	1	gene	refs	false		
+1	1	gene	other	false		
+1	1	gene	symmetry	false		
+1	1	gene	branch	true	LTE=	0000002d,00000031
+1	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+1	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+2	0	genetic_code	probe	true	cHxx	00000070,0000007c,00000071
+2	0	genetic_code	id	false		
+2	0	genetic_code	ref	false		
+2	0	genetic_code	refs	false		
+2	0	genetic_code	other	false		
+2	0	genetic_code	symmetry	true	MQ==	00000031
+2	0	genetic_code	branch	false		
+2	0	genetic_code	length	false		
+2	0	genetic_code	theta	false		
+2	1	gene	probe	false		
+2	1	gene	id	false		
+2	1	gene	ref	false		
+2	1	gene	refs	false		
+2	1	gene	other	false		
+2	1	gene	symmetry	false		
+2	1	gene	branch	true	LTE=	0000002d,00000031
+2	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+2	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+3	0	genetic_code	probe	true	cCBhIGIgY8KFZOKAqGUgwoVx	00000070,00000020,00000061,00000020,00000062,00000020,00000063,00000085,00000064,00002028,00000065,00000020,00000085,00000071
+3	0	genetic_code	id	false		
+3	0	genetic_code	ref	false		
+3	0	genetic_code	refs	false		
+3	0	genetic_code	other	false		
+3	0	genetic_code	symmetry	true	MQ==	00000031
+3	0	genetic_code	branch	false		
+3	0	genetic_code	length	false		
+3	0	genetic_code	theta	false		
+3	1	gene	probe	false		
+3	1	gene	id	false		
+3	1	gene	ref	false		
+3	1	gene	refs	false		
+3	1	gene	other	false		
+3	1	gene	symmetry	false		
+3	1	gene	branch	true	LTE=	0000002d,00000031
+3	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+3	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+4	0	genetic_code	probe	true	cCBhIGIgYyBkIGUgcQ==	00000070,00000020,00000061,00000020,00000062,00000020,00000063,00000020,00000064,00000020,00000065,00000020,00000071
+4	0	genetic_code	id	false		
+4	0	genetic_code	ref	false		
+4	0	genetic_code	refs	false		
+4	0	genetic_code	other	false		
+4	0	genetic_code	symmetry	true	MQ==	00000031
+4	0	genetic_code	branch	false		
+4	0	genetic_code	length	false		
+4	0	genetic_code	theta	false		
+4	1	gene	probe	false		
+4	1	gene	id	false		
+4	1	gene	ref	false		
+4	1	gene	refs	false		
+4	1	gene	other	false		
+4	1	gene	symmetry	false		
+4	1	gene	branch	true	LTE=	0000002d,00000031
+4	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+4	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+5	0	genetic_code	probe	true	cHxx	00000070,0000007c,00000071
+5	0	genetic_code	id	false		
+5	0	genetic_code	ref	false		
+5	0	genetic_code	refs	false		
+5	0	genetic_code	other	false		
+5	0	genetic_code	symmetry	true	MQ==	00000031
+5	0	genetic_code	branch	false		
+5	0	genetic_code	length	false		
+5	0	genetic_code	theta	false		
+5	1	gene	probe	false		
+5	1	gene	id	false		
+5	1	gene	ref	false		
+5	1	gene	refs	false		
+5	1	gene	other	false		
+5	1	gene	symmetry	false		
+5	1	gene	branch	true	LTE=	0000002d,00000031
+5	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+5	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+6	0	genetic_code	probe	true	cHxx	00000070,0000007c,00000071
+6	0	genetic_code	id	false		
+6	0	genetic_code	ref	false		
+6	0	genetic_code	refs	false		
+6	0	genetic_code	other	false		
+6	0	genetic_code	symmetry	true	MQ==	00000031
+6	0	genetic_code	branch	false		
+6	0	genetic_code	length	false		
+6	0	genetic_code	theta	false		
+6	1	gene	probe	false		
+6	1	gene	id	false		
+6	1	gene	ref	false		
+6	1	gene	refs	false		
+6	1	gene	other	false		
+6	1	gene	symmetry	false		
+6	1	gene	branch	true	LTE=	0000002d,00000031
+6	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+6	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+7	0	genetic_code	probe	true	cCBhIGIgY8KFZOKAqGUgwoVx	00000070,00000020,00000061,00000020,00000062,00000020,00000063,00000085,00000064,00002028,00000065,00000020,00000085,00000071
+7	0	genetic_code	id	false		
+7	0	genetic_code	ref	false		
+7	0	genetic_code	refs	false		
+7	0	genetic_code	other	false		
+7	0	genetic_code	symmetry	true	MQ==	00000031
+7	0	genetic_code	branch	false		
+7	0	genetic_code	length	false		
+7	0	genetic_code	theta	false		
+7	1	gene	probe	false		
+7	1	gene	id	false		
+7	1	gene	ref	false		
+7	1	gene	refs	false		
+7	1	gene	other	false		
+7	1	gene	symmetry	false		
+7	1	gene	branch	true	LTE=	0000002d,00000031
+7	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+7	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+8	0	genetic_code	probe	true	cCBhIGIgYyBkIGUgcQ==	00000070,00000020,00000061,00000020,00000062,00000020,00000063,00000020,00000064,00000020,00000065,00000020,00000071
+8	0	genetic_code	id	false		
+8	0	genetic_code	ref	false		
+8	0	genetic_code	refs	false		
+8	0	genetic_code	other	false		
+8	0	genetic_code	symmetry	true	MQ==	00000031
+8	0	genetic_code	branch	false		
+8	0	genetic_code	length	false		
+8	0	genetic_code	theta	false		
+8	1	gene	probe	false		
+8	1	gene	id	false		
+8	1	gene	ref	false		
+8	1	gene	refs	false		
+8	1	gene	other	false		
+8	1	gene	symmetry	false		
+8	1	gene	branch	true	LTE=	0000002d,00000031
+8	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+8	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+16	0	genetic_code	probe	true	cAFx	00000070,00000001,00000071
+16	0	genetic_code	id	false		
+16	0	genetic_code	ref	false		
+16	0	genetic_code	refs	false		
+16	0	genetic_code	other	false		
+16	0	genetic_code	symmetry	true	MQ==	00000031
+16	0	genetic_code	branch	false		
+16	0	genetic_code	length	false		
+16	0	genetic_code	theta	false		
+16	1	gene	probe	false		
+16	1	gene	id	false		
+16	1	gene	ref	false		
+16	1	gene	refs	false		
+16	1	gene	other	false		
+16	1	gene	symmetry	false		
+16	1	gene	branch	true	LTE=	0000002d,00000031
+16	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+16	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+20	0	genetic_code	probe	true	cAhx	00000070,00000008,00000071
+20	0	genetic_code	id	false		
+20	0	genetic_code	ref	false		
+20	0	genetic_code	refs	false		
+20	0	genetic_code	other	false		
+20	0	genetic_code	symmetry	true	MQ==	00000031
+20	0	genetic_code	branch	false		
+20	0	genetic_code	length	false		
+20	0	genetic_code	theta	false		
+20	1	gene	probe	false		
+20	1	gene	id	false		
+20	1	gene	ref	false		
+20	1	gene	refs	false		
+20	1	gene	other	false		
+20	1	gene	symmetry	false		
+20	1	gene	branch	true	LTE=	0000002d,00000031
+20	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+20	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+24	0	genetic_code	probe	true	cAtx	00000070,0000000b,00000071
+24	0	genetic_code	id	false		
+24	0	genetic_code	ref	false		
+24	0	genetic_code	refs	false		
+24	0	genetic_code	other	false		
+24	0	genetic_code	symmetry	true	MQ==	00000031
+24	0	genetic_code	branch	false		
+24	0	genetic_code	length	false		
+24	0	genetic_code	theta	false		
+24	1	gene	probe	false		
+24	1	gene	id	false		
+24	1	gene	ref	false		
+24	1	gene	refs	false		
+24	1	gene	other	false		
+24	1	gene	symmetry	false		
+24	1	gene	branch	true	LTE=	0000002d,00000031
+24	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+24	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+28	0	genetic_code	probe	true	cAxx	00000070,0000000c,00000071
+28	0	genetic_code	id	false		
+28	0	genetic_code	ref	false		
+28	0	genetic_code	refs	false		
+28	0	genetic_code	other	false		
+28	0	genetic_code	symmetry	true	MQ==	00000031
+28	0	genetic_code	branch	false		
+28	0	genetic_code	length	false		
+28	0	genetic_code	theta	false		
+28	1	gene	probe	false		
+28	1	gene	id	false		
+28	1	gene	ref	false		
+28	1	gene	refs	false		
+28	1	gene	other	false		
+28	1	gene	symmetry	false		
+28	1	gene	branch	true	LTE=	0000002d,00000031
+28	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+28	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+32	0	genetic_code	probe	true	cB9x	00000070,0000001f,00000071
+32	0	genetic_code	id	false		
+32	0	genetic_code	ref	false		
+32	0	genetic_code	refs	false		
+32	0	genetic_code	other	false		
+32	0	genetic_code	symmetry	true	MQ==	00000031
+32	0	genetic_code	branch	false		
+32	0	genetic_code	length	false		
+32	0	genetic_code	theta	false		
+32	1	gene	probe	false		
+32	1	gene	id	false		
+32	1	gene	ref	false		
+32	1	gene	refs	false		
+32	1	gene	other	false		
+32	1	gene	symmetry	false		
+32	1	gene	branch	true	LTE=	0000002d,00000031
+32	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+32	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+33	0	genetic_code	probe	true	cH9x	00000070,0000007f,00000071
+33	0	genetic_code	id	false		
+33	0	genetic_code	ref	false		
+33	0	genetic_code	refs	false		
+33	0	genetic_code	other	false		
+33	0	genetic_code	symmetry	true	MQ==	00000031
+33	0	genetic_code	branch	false		
+33	0	genetic_code	length	false		
+33	0	genetic_code	theta	false		
+33	1	gene	probe	false		
+33	1	gene	id	false		
+33	1	gene	ref	false		
+33	1	gene	refs	false		
+33	1	gene	other	false		
+33	1	gene	symmetry	false		
+33	1	gene	branch	true	LTE=	0000002d,00000031
+33	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+33	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+35	0	genetic_code	probe	true	cH9x	00000070,0000007f,00000071
+35	0	genetic_code	id	false		
+35	0	genetic_code	ref	false		
+35	0	genetic_code	refs	false		
+35	0	genetic_code	other	false		
+35	0	genetic_code	symmetry	true	MQ==	00000031
+35	0	genetic_code	branch	false		
+35	0	genetic_code	length	false		
+35	0	genetic_code	theta	false		
+35	1	gene	probe	false		
+35	1	gene	id	false		
+35	1	gene	ref	false		
+35	1	gene	refs	false		
+35	1	gene	other	false		
+35	1	gene	symmetry	false		
+35	1	gene	branch	true	LTE=	0000002d,00000031
+35	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+35	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+36	0	genetic_code	probe	true	cH9x	00000070,0000007f,00000071
+36	0	genetic_code	id	false		
+36	0	genetic_code	ref	false		
+36	0	genetic_code	refs	false		
+36	0	genetic_code	other	false		
+36	0	genetic_code	symmetry	true	MQ==	00000031
+36	0	genetic_code	branch	false		
+36	0	genetic_code	length	false		
+36	0	genetic_code	theta	false		
+36	1	gene	probe	false		
+36	1	gene	id	false		
+36	1	gene	ref	false		
+36	1	gene	refs	false		
+36	1	gene	other	false		
+36	1	gene	symmetry	false		
+36	1	gene	branch	true	LTE=	0000002d,00000031
+36	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+36	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+37	0	genetic_code	probe	true	cMKFcQ==	00000070,00000085,00000071
+37	0	genetic_code	id	false		
+37	0	genetic_code	ref	false		
+37	0	genetic_code	refs	false		
+37	0	genetic_code	other	false		
+37	0	genetic_code	symmetry	true	MQ==	00000031
+37	0	genetic_code	branch	false		
+37	0	genetic_code	length	false		
+37	0	genetic_code	theta	false		
+37	1	gene	probe	false		
+37	1	gene	id	false		
+37	1	gene	ref	false		
+37	1	gene	refs	false		
+37	1	gene	other	false		
+37	1	gene	symmetry	false		
+37	1	gene	branch	true	LTE=	0000002d,00000031
+37	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+37	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+38	0	genetic_code	probe	true	cCBx	00000070,00000020,00000071
+38	0	genetic_code	id	false		
+38	0	genetic_code	ref	false		
+38	0	genetic_code	refs	false		
+38	0	genetic_code	other	false		
+38	0	genetic_code	symmetry	true	MQ==	00000031
+38	0	genetic_code	branch	false		
+38	0	genetic_code	length	false		
+38	0	genetic_code	theta	false		
+38	1	gene	probe	false		
+38	1	gene	id	false		
+38	1	gene	ref	false		
+38	1	gene	refs	false		
+38	1	gene	other	false		
+38	1	gene	symmetry	false		
+38	1	gene	branch	true	LTE=	0000002d,00000031
+38	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+38	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+39	0	genetic_code	probe	true	cMKFcQ==	00000070,00000085,00000071
+39	0	genetic_code	id	false		
+39	0	genetic_code	ref	false		
+39	0	genetic_code	refs	false		
+39	0	genetic_code	other	false		
+39	0	genetic_code	symmetry	true	MQ==	00000031
+39	0	genetic_code	branch	false		
+39	0	genetic_code	length	false		
+39	0	genetic_code	theta	false		
+39	1	gene	probe	false		
+39	1	gene	id	false		
+39	1	gene	ref	false		
+39	1	gene	refs	false		
+39	1	gene	other	false		
+39	1	gene	symmetry	false		
+39	1	gene	branch	true	LTE=	0000002d,00000031
+39	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+39	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+40	0	genetic_code	probe	true	cMKFcQ==	00000070,00000085,00000071
+40	0	genetic_code	id	false		
+40	0	genetic_code	ref	false		
+40	0	genetic_code	refs	false		
+40	0	genetic_code	other	false		
+40	0	genetic_code	symmetry	true	MQ==	00000031
+40	0	genetic_code	branch	false		
+40	0	genetic_code	length	false		
+40	0	genetic_code	theta	false		
+40	1	gene	probe	false		
+40	1	gene	id	false		
+40	1	gene	ref	false		
+40	1	gene	refs	false		
+40	1	gene	other	false		
+40	1	gene	symmetry	false		
+40	1	gene	branch	true	LTE=	0000002d,00000031
+40	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+40	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+41	0	genetic_code	probe	true	cMKGcQ==	00000070,00000086,00000071
+41	0	genetic_code	id	false		
+41	0	genetic_code	ref	false		
+41	0	genetic_code	refs	false		
+41	0	genetic_code	other	false		
+41	0	genetic_code	symmetry	true	MQ==	00000031
+41	0	genetic_code	branch	false		
+41	0	genetic_code	length	false		
+41	0	genetic_code	theta	false		
+41	1	gene	probe	false		
+41	1	gene	id	false		
+41	1	gene	ref	false		
+41	1	gene	refs	false		
+41	1	gene	other	false		
+41	1	gene	symmetry	false		
+41	1	gene	branch	true	LTE=	0000002d,00000031
+41	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+41	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+43	0	genetic_code	probe	true	cMKGcQ==	00000070,00000086,00000071
+43	0	genetic_code	id	false		
+43	0	genetic_code	ref	false		
+43	0	genetic_code	refs	false		
+43	0	genetic_code	other	false		
+43	0	genetic_code	symmetry	true	MQ==	00000031
+43	0	genetic_code	branch	false		
+43	0	genetic_code	length	false		
+43	0	genetic_code	theta	false		
+43	1	gene	probe	false		
+43	1	gene	id	false		
+43	1	gene	ref	false		
+43	1	gene	refs	false		
+43	1	gene	other	false		
+43	1	gene	symmetry	false		
+43	1	gene	branch	true	LTE=	0000002d,00000031
+43	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+43	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+44	0	genetic_code	probe	true	cMKGcQ==	00000070,00000086,00000071
+44	0	genetic_code	id	false		
+44	0	genetic_code	ref	false		
+44	0	genetic_code	refs	false		
+44	0	genetic_code	other	false		
+44	0	genetic_code	symmetry	true	MQ==	00000031
+44	0	genetic_code	branch	false		
+44	0	genetic_code	length	false		
+44	0	genetic_code	theta	false		
+44	1	gene	probe	false		
+44	1	gene	id	false		
+44	1	gene	ref	false		
+44	1	gene	refs	false		
+44	1	gene	other	false		
+44	1	gene	symmetry	false		
+44	1	gene	branch	true	LTE=	0000002d,00000031
+44	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+44	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+45	0	genetic_code	probe	true	cMKfcQ==	00000070,0000009f,00000071
+45	0	genetic_code	id	false		
+45	0	genetic_code	ref	false		
+45	0	genetic_code	refs	false		
+45	0	genetic_code	other	false		
+45	0	genetic_code	symmetry	true	MQ==	00000031
+45	0	genetic_code	branch	false		
+45	0	genetic_code	length	false		
+45	0	genetic_code	theta	false		
+45	1	gene	probe	false		
+45	1	gene	id	false		
+45	1	gene	ref	false		
+45	1	gene	refs	false		
+45	1	gene	other	false		
+45	1	gene	symmetry	false		
+45	1	gene	branch	true	LTE=	0000002d,00000031
+45	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+45	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+47	0	genetic_code	probe	true	cMKfcQ==	00000070,0000009f,00000071
+47	0	genetic_code	id	false		
+47	0	genetic_code	ref	false		
+47	0	genetic_code	refs	false		
+47	0	genetic_code	other	false		
+47	0	genetic_code	symmetry	true	MQ==	00000031
+47	0	genetic_code	branch	false		
+47	0	genetic_code	length	false		
+47	0	genetic_code	theta	false		
+47	1	gene	probe	false		
+47	1	gene	id	false		
+47	1	gene	ref	false		
+47	1	gene	refs	false		
+47	1	gene	other	false		
+47	1	gene	symmetry	false		
+47	1	gene	branch	true	LTE=	0000002d,00000031
+47	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+47	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+48	0	genetic_code	probe	true	cMKfcQ==	00000070,0000009f,00000071
+48	0	genetic_code	id	false		
+48	0	genetic_code	ref	false		
+48	0	genetic_code	refs	false		
+48	0	genetic_code	other	false		
+48	0	genetic_code	symmetry	true	MQ==	00000031
+48	0	genetic_code	branch	false		
+48	0	genetic_code	length	false		
+48	0	genetic_code	theta	false		
+48	1	gene	probe	false		
+48	1	gene	id	false		
+48	1	gene	ref	false		
+48	1	gene	refs	false		
+48	1	gene	other	false		
+48	1	gene	symmetry	false		
+48	1	gene	branch	true	LTE=	0000002d,00000031
+48	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+48	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+49	0	genetic_code	probe	true	cHxx	00000070,0000007c,00000071
+49	0	genetic_code	id	false		
+49	0	genetic_code	ref	false		
+49	0	genetic_code	refs	false		
+49	0	genetic_code	other	false		
+49	0	genetic_code	symmetry	true	MQ==	00000031
+49	0	genetic_code	branch	false		
+49	0	genetic_code	length	false		
+49	0	genetic_code	theta	false		
+49	1	gene	probe	false		
+49	1	gene	id	false		
+49	1	gene	ref	false		
+49	1	gene	refs	false		
+49	1	gene	other	false		
+49	1	gene	symmetry	false		
+49	1	gene	branch	true	LTE=	0000002d,00000031
+49	1	gene	length	true	woUxMi41woU=	00000085,00000031,00000032,0000002e,00000035,00000085
+49	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+50	0	genetic_code	probe	true	cHxx	00000070,0000007c,00000071
+50	0	genetic_code	id	false		
+50	0	genetic_code	ref	false		
+50	0	genetic_code	refs	false		
+50	0	genetic_code	other	false		
+50	0	genetic_code	symmetry	true	MQ==	00000031
+50	0	genetic_code	branch	false		
+50	0	genetic_code	length	false		
+50	0	genetic_code	theta	false		
+50	1	gene	probe	false		
+50	1	gene	id	false		
+50	1	gene	ref	false		
+50	1	gene	refs	false		
+50	1	gene	other	false		
+50	1	gene	symmetry	false		
+50	1	gene	branch	true	LTE=	0000002d,00000031
+50	1	gene	length	true	IDEyLjUg	00000020,00000031,00000032,0000002e,00000035,00000020
+50	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+51	0	genetic_code	probe	true	cHxx	00000070,0000007c,00000071
+51	0	genetic_code	id	false		
+51	0	genetic_code	ref	false		
+51	0	genetic_code	refs	false		
+51	0	genetic_code	other	false		
+51	0	genetic_code	symmetry	true	MQ==	00000031
+51	0	genetic_code	branch	false		
+51	0	genetic_code	length	false		
+51	0	genetic_code	theta	false		
+51	1	gene	probe	false		
+51	1	gene	id	false		
+51	1	gene	ref	false		
+51	1	gene	refs	false		
+51	1	gene	other	false		
+51	1	gene	symmetry	false		
+51	1	gene	branch	true	LTE=	0000002d,00000031
+51	1	gene	length	true	4oCoMTIuNeKAqA==	00002028,00000031,00000032,0000002e,00000035,00002028
+51	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+52	0	genetic_code	probe	true	cHxx	00000070,0000007c,00000071
+52	0	genetic_code	id	false		
+52	0	genetic_code	ref	false		
+52	0	genetic_code	refs	false		
+52	0	genetic_code	other	false		
+52	0	genetic_code	symmetry	true	MQ==	00000031
+52	0	genetic_code	branch	false		
+52	0	genetic_code	length	false		
+52	0	genetic_code	theta	false		
+52	1	gene	probe	false		
+52	1	gene	id	false		
+52	1	gene	ref	false		
+52	1	gene	refs	false		
+52	1	gene	other	false		
+52	1	gene	symmetry	false		
+52	1	gene	branch	true	LTE=	0000002d,00000031
+52	1	gene	length	true	IDEyLjUg	00000020,00000031,00000032,0000002e,00000035,00000020
+52	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+53	0	genetic_code	probe	true	cHxx	00000070,0000007c,00000071
+53	0	genetic_code	id	false		
+53	0	genetic_code	ref	false		
+53	0	genetic_code	refs	false		
+53	0	genetic_code	other	false		
+53	0	genetic_code	symmetry	true	MQ==	00000031
+53	0	genetic_code	branch	false		
+53	0	genetic_code	length	false		
+53	0	genetic_code	theta	false		
+53	1	gene	probe	false		
+53	1	gene	id	false		
+53	1	gene	ref	false		
+53	1	gene	refs	false		
+53	1	gene	other	false		
+53	1	gene	symmetry	false		
+53	1	gene	branch	true	woUtMcKF	00000085,0000002d,00000031,00000085
+53	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+53	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+54	0	genetic_code	probe	true	cHxx	00000070,0000007c,00000071
+54	0	genetic_code	id	false		
+54	0	genetic_code	ref	false		
+54	0	genetic_code	refs	false		
+54	0	genetic_code	other	false		
+54	0	genetic_code	symmetry	true	MQ==	00000031
+54	0	genetic_code	branch	false		
+54	0	genetic_code	length	false		
+54	0	genetic_code	theta	false		
+54	1	gene	probe	false		
+54	1	gene	id	false		
+54	1	gene	ref	false		
+54	1	gene	refs	false		
+54	1	gene	other	false		
+54	1	gene	symmetry	false		
+54	1	gene	branch	true	IC0xIA==	00000020,0000002d,00000031,00000020
+54	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+54	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+55	0	genetic_code	probe	true	cHxx	00000070,0000007c,00000071
+55	0	genetic_code	id	false		
+55	0	genetic_code	ref	false		
+55	0	genetic_code	refs	false		
+55	0	genetic_code	other	false		
+55	0	genetic_code	symmetry	true	MQ==	00000031
+55	0	genetic_code	branch	false		
+55	0	genetic_code	length	false		
+55	0	genetic_code	theta	false		
+55	1	gene	probe	false		
+55	1	gene	id	false		
+55	1	gene	ref	false		
+55	1	gene	refs	false		
+55	1	gene	other	false		
+55	1	gene	symmetry	false		
+55	1	gene	branch	true	4oCoLTHigKg=	00002028,0000002d,00000031,00002028
+55	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+55	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+56	0	genetic_code	probe	true	cHxx	00000070,0000007c,00000071
+56	0	genetic_code	id	false		
+56	0	genetic_code	ref	false		
+56	0	genetic_code	refs	false		
+56	0	genetic_code	other	false		
+56	0	genetic_code	symmetry	true	MQ==	00000031
+56	0	genetic_code	branch	false		
+56	0	genetic_code	length	false		
+56	0	genetic_code	theta	false		
+56	1	gene	probe	false		
+56	1	gene	id	false		
+56	1	gene	ref	false		
+56	1	gene	refs	false		
+56	1	gene	other	false		
+56	1	gene	symmetry	false		
+56	1	gene	branch	true	IC0xIA==	00000020,0000002d,00000031,00000020
+56	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+56	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+58	0	genetic_code	probe	true	AQ==	00000001
+58	0	genetic_code	id	false		
+58	0	genetic_code	ref	false		
+58	0	genetic_code	refs	false		
+58	0	genetic_code	other	false		
+58	0	genetic_code	symmetry	true	MQ==	00000031
+58	0	genetic_code	branch	false		
+58	0	genetic_code	length	false		
+58	0	genetic_code	theta	false		
+58	1	gene	probe	false		
+58	1	gene	id	false		
+58	1	gene	ref	false		
+58	1	gene	refs	false		
+58	1	gene	other	false		
+58	1	gene	symmetry	false		
+58	1	gene	branch	true	LTE=	0000002d,00000031
+58	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+58	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+59	0	genetic_code	probe	true	cMKFcQ==	00000070,00000085,00000071
+59	0	genetic_code	id	false		
+59	0	genetic_code	ref	false		
+59	0	genetic_code	refs	false		
+59	0	genetic_code	other	false		
+59	0	genetic_code	symmetry	true	MQ==	00000031
+59	0	genetic_code	branch	false		
+59	0	genetic_code	length	false		
+59	0	genetic_code	theta	false		
+59	1	gene	probe	false		
+59	1	gene	id	false		
+59	1	gene	ref	false		
+59	1	gene	refs	false		
+59	1	gene	other	false		
+59	1	gene	symmetry	false		
+59	1	gene	branch	true	LTE=	0000002d,00000031
+59	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+59	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+60	0	genetic_code	probe	true	cCBx	00000070,00000020,00000071
+60	0	genetic_code	id	false		
+60	0	genetic_code	ref	false		
+60	0	genetic_code	refs	false		
+60	0	genetic_code	other	false		
+60	0	genetic_code	symmetry	true	MQ==	00000031
+60	0	genetic_code	branch	false		
+60	0	genetic_code	length	false		
+60	0	genetic_code	theta	false		
+60	1	gene	probe	false		
+60	1	gene	id	false		
+60	1	gene	ref	false		
+60	1	gene	refs	false		
+60	1	gene	other	false		
+60	1	gene	symmetry	false		
+60	1	gene	branch	true	LTE=	0000002d,00000031
+60	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+60	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035
+63	0	genetic_code	probe	false		
+63	0	genetic_code	id	false		
+63	0	genetic_code	ref	false		
+63	0	genetic_code	refs	false		
+63	0	genetic_code	other	false		
+63	0	genetic_code	symmetry	true	MQ==	00000031
+63	0	genetic_code	branch	false		
+63	0	genetic_code	length	false		
+63	0	genetic_code	theta	false		
+63	1	gene	probe	false		
+63	1	gene	id	false		
+63	1	gene	ref	false		
+63	1	gene	refs	false		
+63	1	gene	other	false		
+63	1	gene	symmetry	false		
+63	1	gene	branch	true	LTE=	0000002d,00000031
+63	1	gene	length	true	MTIuNQ==	00000031,00000032,0000002e,00000035
+63	1	gene	theta	true	LTAuMjU=	0000002d,00000030,0000002e,00000032,00000035

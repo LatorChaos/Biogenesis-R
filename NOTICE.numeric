@@ -1,0 +1,44 @@
+Biogenesis-R fixed-exponent numeric compatibility
+
+crates/core/src/java_math/pow3.rs and tables.rs contain an Intel LIBM translation.
+Their retained headers identify Intel Corporation (2016, 2021) and Tencent (2021).
+Those files use GPL-2.0-only. The license text remains in COPYING.
+The workspace package metadata selects GPL-2.0-only for the combined package.
+Other source files retain their individual notices and available license choices.
+
+Source:
+https://raw.githubusercontent.com/openjdk/jdk21u/master/src/hotspot/cpu/x86/stubGenerator_x86_64_pow.cpp
+
+The verified source reconstruction has 1810 lines and SHA256:
+58dbcd292374d3fc90f977f679b567741dba3da5785ea9c0a3e97a9cfcca1e37
+
+The reconstruction uses approved web-reader output with checked overlapping lines.
+Raw HTTP download byte identity is not claimed.
+Both complete primary tables match the installed reference JVM's bytes uniquely.
+The candidate preserves fixed-exponent argument reduction and ordered rounding.
+On x86_64, the implementation uses the baseline SSE reciprocal instruction.
+Other targets use captured reference quantization.
+Further CPU, floating-point environment, JVM, and platform acceptance requires separate evidence.
+
+Historical evaluation records are maintained separately from this source distribution.
+
+Inspector and statistics number formatting
+
+crates/godot/src/number_format.rs preserves OpenJDK FloatingDecimal behavior
+for large integers. Oracle copyright and GPLv2 with Classpath exception notices
+remain in that file. Existing LICENSES/OpenJDK-raster/jdk21-LICENSE contains
+the GPLv2 and Classpath exception text.
+
+crates/godot/src/number_profiles.rs contains captured OpenJDK21.0.12.1+1
+NumberFormat profiles and OpenJDK Linux locale aliases. The Oracle source
+header remains in that file. The CLDR v43 data license remains verbatim in
+LICENSES/OpenJDK-number/CLDR.md.
+
+Sources, fixed tag jdk-21.0.12-ga:
+https://github.com/openjdk/jdk21u/blob/jdk-21.0.12-ga/src/java.base/share/classes/jdk/internal/math/FloatingDecimal.java
+https://github.com/openjdk/jdk21u/blob/jdk-21.0.12-ga/src/java.base/unix/native/libjava/locale_str.h
+https://github.com/openjdk/jdk21u/blob/jdk-21.0.12-ga/src/java.base/unix/native/libjava/java_props_md.c
+
+The runtime uses Rust and GNU libc. It needs no JVM or new runtime dependency.
+GNU/Linux process FORMAT locale selection follows LC_CTYPE. Other platforms
+require separate qualification before locale compatibility can be claimed.

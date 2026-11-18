@@ -1,0 +1,541 @@
+{
+  "outgoing.tsv": {
+    "fixture": "outgoing.tsv",
+    "sha256": "097021a5d18bad7117466eb368da242f2a337a51fb33e36328be17c9821ab2cb",
+    "bytes": 6786337,
+    "row_count": 185514,
+    "row_tags": {
+      "C": 32,
+      "U": 4704,
+      "I": 437,
+      "G": 28980,
+      "N": 43640,
+      "A": 96,
+      "P": 175,
+      "O": 80850,
+      "H": 1575,
+      "W": 1750,
+      "V": 2625,
+      "Q": 525,
+      "S": 9100,
+      "T": 8575,
+      "Y": 875,
+      "R": 175,
+      "K": 129,
+      "CC": 450,
+      "F": 696,
+      "B": 43,
+      "E": 32,
+      "X": 2,
+      "L": 48
+    },
+    "case_count": 32,
+    "cases": [
+      "real-corridor-constructor-and-empty-capacity",
+      "send-retains-primary-genotype-and-later-mutations",
+      "existing-colon-clade-is-not-prefixed",
+      "empty-clade-receives-explicit-user-prefix",
+      "null-clade-fails-before-send-and-slot-assignment",
+      "disconnected-empty-slot-reports-capacity-but-rejects-send",
+      "not-initialized-connection-rejects-send",
+      "full-traveller-prevents-second-send",
+      "recording-send-throws-after-clade-prefix-before-other-effects",
+      "scarce-oxygen-leaves-dead-traveller-energy",
+      "empty-oxygen-still-sends-and-decrements-population",
+      "already-dead-actor-is-sent-with-another-population-decrement",
+      "zero-energy-still-transfers",
+      "population-decrement-wraps-after-send",
+      "paint15-reaches16-before-next-paint-releases-capacity",
+      "paint16-releases-without-drawing-or-rotation",
+      "paint-ratio-above16-releases-without-rebuild",
+      "paused-repeated-paints-progress-without-simulation-ticks",
+      "positive-tint-and-unknown-translucent-argb-survive-send",
+      "null-tint-inherits-corridor-color-before-eye-and-eye-color-afterward",
+      "dead-eyes-exempt-only-exact-eye-from-temporary-tint",
+      "dead-no-eyes-zero-and-negative-timer-draw-brown",
+      "world-draw-processes-duplicate-corridor-reference-in-list-order",
+      "stationary-no-eye-motion-gate-skips-transfer",
+      "ordinary-motion-sends-before-frame-effects-and-breath",
+      "eye-canmove-gate-sends-with-zero-velocity",
+      "inactive-moving-actor-skips-outgoing-transfer",
+      "first-containing-full-corridor-shadows-later-connected-corridor",
+      "first-containing-disconnected-corridor-shadows-later-connected-corridor",
+      "border-response-precedes-successful-send-and-skips-rollback",
+      "contains-lower-upper-empty-and-wrapped-integer-edges",
+      "dead-active-moving-actor-still-transfers"
+    ],
+    "snapshots": 175,
+    "actor_views": 525,
+    "corridor_views": 116,
+    "recording_boundary_views": 150,
+    "calls": {
+      "connection.new": 34,
+      "corridor.new": 34,
+      "canSend": 5,
+      "send": 27,
+      "die": 2,
+      "draw": 13,
+      "world.draw": 1,
+      "move": 8,
+      "checkHitCorridor": 5
+    },
+    "actual_call_count": 129,
+    "original_method_operations": 95,
+    "recording_boundary_allocations": 34,
+    "discoveries": 0,
+    "schema_eligible_observation_rows": 166432,
+    "supplied_genome_input_rows": 11200,
+    "explicit_collaborator_rows": 1400,
+    "other_input_schema_command_metadata_rows": 6482,
+    "exclusions": {
+      "O._visibleWorld": 525,
+      "O._world": 525,
+      "V._visibleWorld": 175,
+      "V.inCorridors": 175
+    },
+    "typed_input_targets": [
+      {
+        "target": "actor:victim:_age",
+        "type": "int",
+        "uses": 8
+      },
+      {
+        "target": "actor:victim:_canmove",
+        "type": "boolean",
+        "uses": 1
+      },
+      {
+        "target": "actor:victim:_centerX",
+        "type": "int",
+        "uses": 5
+      },
+      {
+        "target": "actor:victim:_color",
+        "type": "Color",
+        "uses": 3
+      },
+      {
+        "target": "actor:victim:_dCenterX",
+        "type": "double",
+        "uses": 1
+      },
+      {
+        "target": "actor:victim:_energy",
+        "type": "double",
+        "uses": 3
+      },
+      {
+        "target": "actor:victim:_framesColor",
+        "type": "int",
+        "uses": 5
+      },
+      {
+        "target": "actor:victim:_growthRatio",
+        "type": "int",
+        "uses": 9
+      },
+      {
+        "target": "actor:victim:_haseyes",
+        "type": "boolean",
+        "uses": 6
+      },
+      {
+        "target": "actor:victim:_segColor",
+        "type": "Color[]",
+        "uses": 2
+      },
+      {
+        "target": "actor:victim:active",
+        "type": "boolean",
+        "uses": 1
+      },
+      {
+        "target": "actor:victim:dtheta",
+        "type": "double",
+        "uses": 8
+      },
+      {
+        "target": "actor:victim:dx",
+        "type": "double",
+        "uses": 9
+      },
+      {
+        "target": "actor:victim:dy",
+        "type": "double",
+        "uses": 8
+      },
+      {
+        "target": "connection:n0:failOnSend",
+        "type": "boolean",
+        "uses": 2
+      },
+      {
+        "target": "connection:n0:state",
+        "type": "int",
+        "uses": 4
+      },
+      {
+        "target": "corridor:c0:bounds",
+        "type": "Rectangle",
+        "uses": 11
+      },
+      {
+        "target": "corridor:c1:bounds",
+        "type": "Rectangle",
+        "uses": 2
+      },
+      {
+        "target": "genome:g0:_cladeID",
+        "type": "String",
+        "uses": 4
+      },
+      {
+        "target": "genome:g0:_generation",
+        "type": "int",
+        "uses": 1
+      },
+      {
+        "target": "genome:g0:construction",
+        "type": "String",
+        "uses": 32
+      },
+      {
+        "target": "genome:g0:gene0._length",
+        "type": "double",
+        "uses": 1
+      },
+      {
+        "target": "genome:g1:construction",
+        "type": "String",
+        "uses": 32
+      },
+      {
+        "target": "genome:g2:construction",
+        "type": "String",
+        "uses": 32
+      },
+      {
+        "target": "genome:g3:construction",
+        "type": "String",
+        "uses": 32
+      },
+      {
+        "target": "genome:g4:construction",
+        "type": "String",
+        "uses": 32
+      },
+      {
+        "target": "utils:USER_NAME",
+        "type": "String",
+        "uses": 32
+      },
+      {
+        "target": "visible:selected",
+        "type": "String",
+        "uses": 32
+      },
+      {
+        "target": "world:_CH4",
+        "type": "double",
+        "uses": 32
+      },
+      {
+        "target": "world:_CO2",
+        "type": "double",
+        "uses": 32
+      },
+      {
+        "target": "world:_O2",
+        "type": "double",
+        "uses": 34
+      },
+      {
+        "target": "world:_corridorexists",
+        "type": "boolean",
+        "uses": 10
+      },
+      {
+        "target": "world:_population",
+        "type": "int",
+        "uses": 1
+      },
+      {
+        "target": "world:outCorridors",
+        "type": "List",
+        "uses": 10
+      }
+    ],
+    "F_schema": {
+      "_reference": "String",
+      "bounds": "Rectangle",
+      "connection": "Connection",
+      "travellingOrganism": "Organism",
+      "world": "World",
+      "canSendOrganism": "boolean"
+    },
+    "CC_schema": {
+      "_reference": "String",
+      "state": "int",
+      "recordedGenotypes": "List"
+    },
+    "L_schema": [
+      "L",
+      "stage",
+      "ordinal",
+      "operation",
+      "x",
+      "y",
+      "x2_or_width",
+      "y2_or_height",
+      "signed_argb"
+    ],
+    "logical_owner_projections": [
+      "F.world",
+      "F.connection",
+      "F._reference",
+      "CC._reference",
+      "V.worldStatistics"
+    ],
+    "boundary_only_observations": [
+      "CC.recordedGenotypes is attempted exact call arguments, including the throwing callback; it is not delivered or serialized payload"
+    ],
+    "input_authority": "Only supplied G/N input, A, U, I and K rows define inputs; no later observation constructs expected actors",
+    "comparison_contract": "Only O _m/_m1/_m2/_mass/_I may use the existing geometry allowance; all other scalar bits, state, order and aliases stay exact",
+    "rust_status": "No Rust comparison has occurred"
+  },
+  "outgoing_frames.tsv": {
+    "fixture": "outgoing_frames.tsv",
+    "sha256": "41af2404c8463f18b60362352dbb84c07e0e9758e0eaa8d2cfe1f0806f32bd78",
+    "bytes": 1028142,
+    "row_count": 27438,
+    "row_tags": {
+      "C": 3,
+      "U": 441,
+      "I": 67,
+      "G": 4200,
+      "N": 6000,
+      "A": 9,
+      "P": 27,
+      "O": 12474,
+      "H": 243,
+      "W": 270,
+      "V": 405,
+      "Q": 81,
+      "S": 1404,
+      "T": 1323,
+      "Y": 135,
+      "R": 27,
+      "K": 19,
+      "CC": 96,
+      "F": 168,
+      "J": 23,
+      "L": 20,
+      "E": 3
+    },
+    "case_count": 3,
+    "cases": [
+      "frame-removal-retains-traveller-and-current-frozen-tree-identity",
+      "two-frame-transfers-and-paused-world-paints-release-both-slots",
+      "later-member-queries-removed-traveller-in-the-same-frozen-tree"
+    ],
+    "snapshots": 27,
+    "actor_views": 81,
+    "corridor_views": 28,
+    "recording_boundary_views": 32,
+    "calls": {
+      "connection.new": 4,
+      "corridor.new": 4,
+      "time": 6,
+      "draw": 3,
+      "world.draw": 2
+    },
+    "actual_call_count": 19,
+    "original_method_operations": 15,
+    "recording_boundary_allocations": 4,
+    "discoveries": 0,
+    "schema_eligible_observation_rows": 25498,
+    "supplied_genome_input_rows": 1020,
+    "explicit_collaborator_rows": 216,
+    "other_input_schema_command_metadata_rows": 704,
+    "exclusions": {
+      "O._visibleWorld": 81,
+      "O._world": 81,
+      "V._visibleWorld": 27,
+      "V.inCorridors": 27
+    },
+    "typed_input_targets": [
+      {
+        "target": "actor:killer:_age",
+        "type": "int",
+        "uses": 2
+      },
+      {
+        "target": "actor:killer:_centerX",
+        "type": "int",
+        "uses": 1
+      },
+      {
+        "target": "actor:killer:_centerY",
+        "type": "int",
+        "uses": 1
+      },
+      {
+        "target": "actor:killer:_dCenterX",
+        "type": "double",
+        "uses": 1
+      },
+      {
+        "target": "actor:killer:_dCenterY",
+        "type": "double",
+        "uses": 1
+      },
+      {
+        "target": "actor:killer:_growthRatio",
+        "type": "int",
+        "uses": 1
+      },
+      {
+        "target": "actor:killer:dtheta",
+        "type": "double",
+        "uses": 1
+      },
+      {
+        "target": "actor:killer:dx",
+        "type": "double",
+        "uses": 2
+      },
+      {
+        "target": "actor:victim:_age",
+        "type": "int",
+        "uses": 3
+      },
+      {
+        "target": "actor:victim:_growthRatio",
+        "type": "int",
+        "uses": 3
+      },
+      {
+        "target": "actor:victim:dtheta",
+        "type": "double",
+        "uses": 4
+      },
+      {
+        "target": "actor:victim:dx",
+        "type": "double",
+        "uses": 4
+      },
+      {
+        "target": "actor:victim:dy",
+        "type": "double",
+        "uses": 3
+      },
+      {
+        "target": "corridor:c0:bounds",
+        "type": "Rectangle",
+        "uses": 3
+      },
+      {
+        "target": "corridor:c1:bounds",
+        "type": "Rectangle",
+        "uses": 1
+      },
+      {
+        "target": "genome:g0:construction",
+        "type": "String",
+        "uses": 3
+      },
+      {
+        "target": "genome:g1:construction",
+        "type": "String",
+        "uses": 3
+      },
+      {
+        "target": "genome:g2:construction",
+        "type": "String",
+        "uses": 3
+      },
+      {
+        "target": "genome:g3:construction",
+        "type": "String",
+        "uses": 3
+      },
+      {
+        "target": "genome:g4:construction",
+        "type": "String",
+        "uses": 3
+      },
+      {
+        "target": "utils:USER_NAME",
+        "type": "String",
+        "uses": 3
+      },
+      {
+        "target": "visible:selected",
+        "type": "String",
+        "uses": 3
+      },
+      {
+        "target": "world:_CH4",
+        "type": "double",
+        "uses": 3
+      },
+      {
+        "target": "world:_CO2",
+        "type": "double",
+        "uses": 3
+      },
+      {
+        "target": "world:_O2",
+        "type": "double",
+        "uses": 3
+      },
+      {
+        "target": "world:_corridorexists",
+        "type": "boolean",
+        "uses": 3
+      },
+      {
+        "target": "world:outCorridors",
+        "type": "List",
+        "uses": 3
+      }
+    ],
+    "F_schema": {
+      "_reference": "String",
+      "bounds": "Rectangle",
+      "connection": "Connection",
+      "travellingOrganism": "Organism",
+      "world": "World",
+      "canSendOrganism": "boolean"
+    },
+    "CC_schema": {
+      "_reference": "String",
+      "state": "int",
+      "recordedGenotypes": "List"
+    },
+    "L_schema": [
+      "L",
+      "stage",
+      "ordinal",
+      "operation",
+      "x",
+      "y",
+      "x2_or_width",
+      "y2_or_height",
+      "signed_argb"
+    ],
+    "logical_owner_projections": [
+      "F.world",
+      "F.connection",
+      "F._reference",
+      "CC._reference",
+      "V.worldStatistics"
+    ],
+    "boundary_only_observations": [
+      "CC.recordedGenotypes is attempted exact call arguments, including the throwing callback; it is not delivered or serialized payload"
+    ],
+    "input_authority": "Only supplied G/N input, A, U, I and K rows define inputs; no later observation constructs expected actors",
+    "comparison_contract": "Only O _m/_m1/_m2/_mass/_I may use the existing geometry allowance; all other scalar bits, state, order and aliases stay exact",
+    "rust_status": "No Rust comparison has occurred"
+  }
+}

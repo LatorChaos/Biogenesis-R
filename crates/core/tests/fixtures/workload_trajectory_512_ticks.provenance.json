@@ -1,0 +1,2094 @@
+{
+  "actual_capture_helper": {
+    "compiled_classes": {
+      "jar": {
+        "biogenesis/WorkloadTrajectoryOracle$DigestOutput.class": "6f0251fd80a6e946daf75ba3651bcbdbc77bdd0163c3e872329b669938a2ab54",
+        "biogenesis/WorkloadTrajectoryOracle$RandomInput.class": "faf28a07c7c7d74ccd59b843ea49b563ada974054ae545d0ba98d83f6444b478",
+        "biogenesis/WorkloadTrajectoryOracle.class": "91d9ba77fc0a52ac4c026269207301c3f85fe4c89877e5a94f843219d3f95c75"
+      },
+      "source": {
+        "biogenesis/WorkloadTrajectoryOracle$DigestOutput.class": "6f0251fd80a6e946daf75ba3651bcbdbc77bdd0163c3e872329b669938a2ab54",
+        "biogenesis/WorkloadTrajectoryOracle$RandomInput.class": "faf28a07c7c7d74ccd59b843ea49b563ada974054ae545d0ba98d83f6444b478",
+        "biogenesis/WorkloadTrajectoryOracle.class": "91d9ba77fc0a52ac4c026269207301c3f85fe4c89877e5a94f843219d3f95c75"
+      }
+    },
+    "path": ".workflow-local/evolving-world-512-a/helper/WorkloadTrajectoryOracle.java",
+    "sha256": "b4141761e5ec9313fd7259a65fe87b794e8d550b9b967cef55cb2aa81c628cc7",
+    "source_and_jar_class_bytes_identical": true
+  },
+  "canonical_helper_compatibility": {
+    "all_commands_graceful": true,
+    "all_exit_zero": true,
+    "command_count": 6,
+    "commands": {
+      "path": ".workflow-local/evolving-world-512-a/source-controls/canonical-helper-compat-a/commands.json",
+      "sha256": "7dd4276d67ac344c31ba012436c70b9fafa4142234bbfb55ef77059e18c91c95"
+    },
+    "compiled_classes": {
+      "jar": {
+        "biogenesis/WorkloadTrajectoryOracle$DigestOutput.class": "6f0251fd80a6e946daf75ba3651bcbdbc77bdd0163c3e872329b669938a2ab54",
+        "biogenesis/WorkloadTrajectoryOracle$RandomInput.class": "faf28a07c7c7d74ccd59b843ea49b563ada974054ae545d0ba98d83f6444b478",
+        "biogenesis/WorkloadTrajectoryOracle.class": "6bf94c5178b5d2735f14d01bde3a083398fcb5aee410ef40cc6f8f13a5319427"
+      },
+      "source": {
+        "biogenesis/WorkloadTrajectoryOracle$DigestOutput.class": "6f0251fd80a6e946daf75ba3651bcbdbc77bdd0163c3e872329b669938a2ab54",
+        "biogenesis/WorkloadTrajectoryOracle$RandomInput.class": "faf28a07c7c7d74ccd59b843ea49b563ada974054ae545d0ba98d83f6444b478",
+        "biogenesis/WorkloadTrajectoryOracle.class": "6bf94c5178b5d2735f14d01bde3a083398fcb5aee410ef40cc6f8f13a5319427"
+      }
+    },
+    "default80_source": {
+      "bootstrap": {
+        "endpoint80_bytes": 1528570,
+        "endpoint80_sha256": "ee9e144c5ad61e81ee9b8e43eea2e6484f80cbe6607ec36ed561549f845e597f",
+        "info_toolbar": "biogenesis.InfoToolbar",
+        "main_window": "biogenesis.MainWindow",
+        "owned_display": ":410",
+        "paused": true,
+        "seed_cache_extraction": "actualRandom.readFields-on-clone; no module overrides",
+        "timer_cancelled": true
+      },
+      "bytes": 150451,
+      "sha256": "4f1f11270406c1ba2aaebf3ab8cfb5db666363ae0f52d1996a6e8549d13dae5e"
+    },
+    "diagnostic": {
+      "message": "Exception in thread \"Timer-1\" java.lang.IllegalStateException: Timer already cancelled.",
+      "scope": "Retained original Source background-timer diagnostic after deliberate presentation-timer cancellation. Exact trajectory/bootstrap checks passed. No clean-stderr, UI-health or background-thread-health claim.",
+      "source_b_command_index": 3
+    },
+    "inputs": {
+      "path": ".workflow-local/evolving-world-512-a/source-controls/canonical-helper-compat-a/inputs.json",
+      "sha256": "b0a464b443a0c4b7f0eaaefbc04c854d1b503ea526e42616ce9eb65abace2f54"
+    },
+    "new_mode_outputs": {
+      "jar": {
+        "bootstrap": {
+          "endpoint512_bytes": 2918512,
+          "endpoint512_sha256": "066c660ffd335cac7bdccfe8d05d9f14f907b6aa1ffae69f5e6ca8e35e7d35ba",
+          "endpoint80_bytes": 1528570,
+          "endpoint80_sha256": "ee9e144c5ad61e81ee9b8e43eea2e6484f80cbe6607ec36ed561549f845e597f",
+          "final_frame": 0,
+          "final_time": 2,
+          "info_toolbar": "biogenesis.InfoToolbar",
+          "main_window": "biogenesis.MainWindow",
+          "owned_display": ":410",
+          "paused": true,
+          "seed_cache_extraction": "actualRandom.readFields-on-clone; no module overrides",
+          "snapshots": 513,
+          "ticks": 512,
+          "timer_cancelled": true,
+          "witness_scalar_random_pure": true
+        },
+        "bytes": 952239,
+        "sha256": "b90255c9a2ff9ad25736b7f34d6b168042de6ea9243b477bca62414e9e7dd84c"
+      },
+      "source-a": {
+        "bootstrap": {
+          "endpoint512_bytes": 2918512,
+          "endpoint512_sha256": "066c660ffd335cac7bdccfe8d05d9f14f907b6aa1ffae69f5e6ca8e35e7d35ba",
+          "endpoint80_bytes": 1528570,
+          "endpoint80_sha256": "ee9e144c5ad61e81ee9b8e43eea2e6484f80cbe6607ec36ed561549f845e597f",
+          "final_frame": 0,
+          "final_time": 2,
+          "info_toolbar": "biogenesis.InfoToolbar",
+          "main_window": "biogenesis.MainWindow",
+          "owned_display": ":410",
+          "paused": true,
+          "seed_cache_extraction": "actualRandom.readFields-on-clone; no module overrides",
+          "snapshots": 513,
+          "ticks": 512,
+          "timer_cancelled": true,
+          "witness_scalar_random_pure": true
+        },
+        "bytes": 952239,
+        "sha256": "b90255c9a2ff9ad25736b7f34d6b168042de6ea9243b477bca62414e9e7dd84c"
+      },
+      "source-b": {
+        "bootstrap": {
+          "endpoint512_bytes": 2918512,
+          "endpoint512_sha256": "066c660ffd335cac7bdccfe8d05d9f14f907b6aa1ffae69f5e6ca8e35e7d35ba",
+          "endpoint80_bytes": 1528570,
+          "endpoint80_sha256": "ee9e144c5ad61e81ee9b8e43eea2e6484f80cbe6607ec36ed561549f845e597f",
+          "final_frame": 0,
+          "final_time": 2,
+          "info_toolbar": "biogenesis.InfoToolbar",
+          "main_window": "biogenesis.MainWindow",
+          "owned_display": ":410",
+          "paused": true,
+          "seed_cache_extraction": "actualRandom.readFields-on-clone; no module overrides",
+          "snapshots": 513,
+          "ticks": 512,
+          "timer_cancelled": true,
+          "witness_scalar_random_pure": true
+        },
+        "bytes": 952239,
+        "sha256": "b90255c9a2ff9ad25736b7f34d6b168042de6ea9243b477bca62414e9e7dd84c"
+      }
+    },
+    "owned_groups": [
+      {
+        "absent": true,
+        "pgid": 827352
+      },
+      {
+        "absent": true,
+        "pgid": 827371
+      },
+      {
+        "absent": true,
+        "pgid": 827391
+      },
+      {
+        "absent": true,
+        "pgid": 827684
+      },
+      {
+        "absent": true,
+        "pgid": 827783
+      },
+      {
+        "absent": true,
+        "pgid": 827874
+      }
+    ],
+    "performance_acceptance": false,
+    "resources_restored": true,
+    "result": {
+      "path": ".workflow-local/evolving-world-512-a/source-controls/canonical-helper-compat-a/result.json",
+      "sha256": "c3152c13a7a967f87bdc1d064e798e20fe400d797d61cc2938961056ea219967"
+    },
+    "source_and_JAR_classes_identical": true,
+    "status": "PASS_SCOPED_CANONICAL_HELPER_COMPATIBILITY",
+    "subreaper_restored": true
+  },
+  "canonical_reproduction_helper": {
+    "compatibility_execution": "PASS_SCOPED_CANONICAL_HELPER_COMPATIBILITY; see canonical_helper_compatibility actual result and commands",
+    "fixed_mode": "The optional literal permits only512attempts and512ticks; two-argument defaults retain original80frame observations/bootstrap",
+    "interface": "ATTEMPTS NEW_OUTPUT_DIRECTORY [--evolving-512]",
+    "path": "tools/reference/WorkloadTrajectoryOracle.java",
+    "sha256": "7e6fd745004b28949ff75c32e2a99c8cb22d59915a615fc5c01f64a13ff9f3e5"
+  },
+  "controls": {
+    "absolute_snapshot_ticks": [
+      0,
+      512
+    ],
+    "bootstrap": "Actual MainWindow.main with original ten preferences, paused/offline real UI collaborators and natural genesis",
+    "call_groups": [
+      16,
+      496
+    ],
+    "final_statistics_time": 2,
+    "final_world_frame": 0,
+    "frame_modulus": 256,
+    "height": 7000,
+    "initial_attempts": 512,
+    "seed": 827364,
+    "timing_groups": false,
+    "width": 7000
+  },
+  "execution": {
+    "actual_MemAvailable_before_after": [
+      {
+        "MemAvailable_after": 71663382528,
+        "MemAvailable_before": 72293089280,
+        "command": 0
+      },
+      {
+        "MemAvailable_after": 71639461888,
+        "MemAvailable_before": 71663382528,
+        "command": 1
+      },
+      {
+        "MemAvailable_after": 71493017600,
+        "MemAvailable_before": 71639461888,
+        "command": 2
+      },
+      {
+        "MemAvailable_after": 71460528128,
+        "MemAvailable_before": 71483432960,
+        "command": 3
+      },
+      {
+        "MemAvailable_after": 71610798080,
+        "MemAvailable_before": 71460528128,
+        "command": 4
+      }
+    ],
+    "actual_commands": [
+      {
+        "argv": [
+          "/usr/bin/python3",
+          "-B",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/command_entry.py",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/command-priority-0.json",
+          "/usr/lib/jvm/java-21-openjdk/bin/javac",
+          "-J-Xmx512m",
+          "-encoding",
+          "UTF-8",
+          "-cp",
+          "<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "-d",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/helpers-source",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/WorkloadTrajectoryOracle.java"
+        ],
+        "cleanup_error": null,
+        "cwd": "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b",
+        "elapsed_seconds": 1.7205019749817438,
+        "exit_code": 0,
+        "interrupted": false,
+        "kill_required": false,
+        "owned_group_absent": true,
+        "pid": 814171,
+        "process_group": 814171,
+        "reaped_owned": [],
+        "state": "complete",
+        "stderr": "",
+        "stdout": "",
+        "timed_out": false
+      },
+      {
+        "argv": [
+          "/usr/bin/python3",
+          "-B",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/command_entry.py",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/command-priority-1.json",
+          "/usr/lib/jvm/java-21-openjdk/bin/javac",
+          "-J-Xmx512m",
+          "-encoding",
+          "UTF-8",
+          "-cp",
+          "<reference-root>/ColorMod_2_01/biogenesis.jar:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "-d",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/helpers-jar",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/WorkloadTrajectoryOracle.java"
+        ],
+        "cleanup_error": null,
+        "cwd": "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b",
+        "elapsed_seconds": 1.6271518599824049,
+        "exit_code": 0,
+        "interrupted": false,
+        "kill_required": false,
+        "owned_group_absent": true,
+        "pid": 814231,
+        "process_group": 814231,
+        "reaped_owned": [],
+        "state": "complete",
+        "stderr": "",
+        "stdout": "",
+        "timed_out": false
+      },
+      {
+        "argv": [
+          "/usr/bin/python3",
+          "-B",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/command_entry.py",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/command-priority-2.json",
+          "/usr/bin/xvfb-run",
+          "-n",
+          "410",
+          "-a",
+          "-e",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/source-a-512/xvfb.log",
+          "-s",
+          "-screen 0 1280x960x24 -nolisten tcp",
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=false",
+          "-Duser.home=<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/source-a-512/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/source-a-512/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/source-a-512/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/source-a-512/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.WorkloadTrajectoryOracle",
+          "512",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/source-a-512/observations"
+        ],
+        "cleanup_error": null,
+        "cwd": "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/source-a-512",
+        "elapsed_seconds": 6.718422919977456,
+        "exit_code": 0,
+        "interrupted": false,
+        "kill_required": false,
+        "owned_group_absent": true,
+        "pid": 814262,
+        "process_group": 814262,
+        "reaped_owned": [
+          [
+            814273,
+            0
+          ]
+        ],
+        "state": "complete",
+        "stderr": "Nov 08, 2026 10:05:32 PM java.util.prefs.FileSystemPreferences$1 run\nINFO: Created user preferences directory.\nException in thread \"Timer-1\" java.lang.IllegalStateException: Timer already cancelled.\n\tat java.base/java.util.Timer.sched(Timer.java:409)\n\tat java.base/java.util.Timer.schedule(Timer.java:260)\n\tat biogenesis.MainWindow.startLifeProcess(MainWindow.java:1087)\n\tat biogenesis.MainWindow$3.run(MainWindow.java:1052)\n\tat java.base/java.util.TimerThread.mainLoop(Timer.java:566)\n\tat java.base/java.util.TimerThread.run(Timer.java:516)\n",
+        "stdout": "WORKLOAD_TRAJECTORY PASS attempts=512 snapshots=513 calls=512 endpoint512=066c660ffd335cac7bdccfe8d05d9f14f907b6aa1ffae69f5e6ca8e35e7d35ba\n",
+        "timed_out": false
+      },
+      {
+        "argv": [
+          "/usr/bin/python3",
+          "-B",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/command_entry.py",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/command-priority-3.json",
+          "/usr/bin/xvfb-run",
+          "-n",
+          "410",
+          "-a",
+          "-e",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/source-b-512/xvfb.log",
+          "-s",
+          "-screen 0 1280x960x24 -nolisten tcp",
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=false",
+          "-Duser.home=<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/source-b-512/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/source-b-512/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/source-b-512/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/source-b-512/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.WorkloadTrajectoryOracle",
+          "512",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/source-b-512/observations"
+        ],
+        "cleanup_error": null,
+        "cwd": "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/source-b-512",
+        "elapsed_seconds": 6.578716737043578,
+        "exit_code": 0,
+        "interrupted": false,
+        "kill_required": false,
+        "owned_group_absent": true,
+        "pid": 814394,
+        "process_group": 814394,
+        "reaped_owned": [
+          [
+            814405,
+            0
+          ]
+        ],
+        "state": "complete",
+        "stderr": "Nov 08, 2026 10:05:39 PM java.util.prefs.FileSystemPreferences$1 run\nINFO: Created user preferences directory.\n",
+        "stdout": "WORKLOAD_TRAJECTORY PASS attempts=512 snapshots=513 calls=512 endpoint512=066c660ffd335cac7bdccfe8d05d9f14f907b6aa1ffae69f5e6ca8e35e7d35ba\n",
+        "timed_out": false
+      },
+      {
+        "argv": [
+          "/usr/bin/python3",
+          "-B",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/command_entry.py",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/command-priority-4.json",
+          "/usr/bin/xvfb-run",
+          "-n",
+          "410",
+          "-a",
+          "-e",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/jar-512/xvfb.log",
+          "-s",
+          "-screen 0 1280x960x24 -nolisten tcp",
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=false",
+          "-Duser.home=<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/jar-512/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/jar-512/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/jar-512/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/jar-512/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/helpers-jar:<reference-root>/ColorMod_2_01/biogenesis.jar:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.WorkloadTrajectoryOracle",
+          "512",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/jar-512/observations"
+        ],
+        "cleanup_error": null,
+        "cwd": "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/jar-512",
+        "elapsed_seconds": 6.619548836024478,
+        "exit_code": 0,
+        "interrupted": false,
+        "kill_required": false,
+        "owned_group_absent": true,
+        "pid": 814525,
+        "process_group": 814525,
+        "reaped_owned": [
+          [
+            814536,
+            0
+          ]
+        ],
+        "state": "complete",
+        "stderr": "Nov 08, 2026 10:05:45 PM java.util.prefs.FileSystemPreferences$1 run\nINFO: Created user preferences directory.\n",
+        "stdout": "WORKLOAD_TRAJECTORY PASS attempts=512 snapshots=513 calls=512 endpoint512=066c660ffd335cac7bdccfe8d05d9f14f907b6aa1ffae69f5e6ca8e35e7d35ba\n",
+        "timed_out": false
+      }
+    ],
+    "actual_priority_receipts": {
+      "command-priority-0.json": {
+        "CPU": [
+          0
+        ],
+        "IO": "idle",
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/javac",
+          "-J-Xmx512m",
+          "-encoding",
+          "UTF-8",
+          "-cp",
+          "<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "-d",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/helpers-source",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/WorkloadTrajectoryOracle.java"
+        ],
+        "limits": {
+          "AS": [
+            8589934592,
+            8589934592
+          ],
+          "CORE": [
+            0,
+            0
+          ],
+          "FSIZE": [
+            1073741824,
+            1073741824
+          ]
+        },
+        "nice": 19,
+        "pid": 814171,
+        "pid_namespace": "pid:[4026531836]",
+        "ppid": 814169,
+        "process_group": 814171,
+        "scheduler": "SCHED_IDLE"
+      },
+      "command-priority-1.json": {
+        "CPU": [
+          0
+        ],
+        "IO": "idle",
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/javac",
+          "-J-Xmx512m",
+          "-encoding",
+          "UTF-8",
+          "-cp",
+          "<reference-root>/ColorMod_2_01/biogenesis.jar:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "-d",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/helpers-jar",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/WorkloadTrajectoryOracle.java"
+        ],
+        "limits": {
+          "AS": [
+            8589934592,
+            8589934592
+          ],
+          "CORE": [
+            0,
+            0
+          ],
+          "FSIZE": [
+            1073741824,
+            1073741824
+          ]
+        },
+        "nice": 19,
+        "pid": 814231,
+        "pid_namespace": "pid:[4026531836]",
+        "ppid": 814169,
+        "process_group": 814231,
+        "scheduler": "SCHED_IDLE"
+      },
+      "command-priority-2.json": {
+        "CPU": [
+          0
+        ],
+        "IO": "idle",
+        "argv": [
+          "/usr/bin/xvfb-run",
+          "-n",
+          "410",
+          "-a",
+          "-e",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/source-a-512/xvfb.log",
+          "-s",
+          "-screen 0 1280x960x24 -nolisten tcp",
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=false",
+          "-Duser.home=<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/source-a-512/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/source-a-512/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/source-a-512/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/source-a-512/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.WorkloadTrajectoryOracle",
+          "512",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/source-a-512/observations"
+        ],
+        "limits": {
+          "AS": [
+            8589934592,
+            8589934592
+          ],
+          "CORE": [
+            0,
+            0
+          ],
+          "FSIZE": [
+            1073741824,
+            1073741824
+          ]
+        },
+        "nice": 19,
+        "pid": 814262,
+        "pid_namespace": "pid:[4026531836]",
+        "ppid": 814169,
+        "process_group": 814262,
+        "scheduler": "SCHED_IDLE"
+      },
+      "command-priority-3.json": {
+        "CPU": [
+          0
+        ],
+        "IO": "idle",
+        "argv": [
+          "/usr/bin/xvfb-run",
+          "-n",
+          "410",
+          "-a",
+          "-e",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/source-b-512/xvfb.log",
+          "-s",
+          "-screen 0 1280x960x24 -nolisten tcp",
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=false",
+          "-Duser.home=<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/source-b-512/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/source-b-512/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/source-b-512/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/source-b-512/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.WorkloadTrajectoryOracle",
+          "512",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/source-b-512/observations"
+        ],
+        "limits": {
+          "AS": [
+            8589934592,
+            8589934592
+          ],
+          "CORE": [
+            0,
+            0
+          ],
+          "FSIZE": [
+            1073741824,
+            1073741824
+          ]
+        },
+        "nice": 19,
+        "pid": 814394,
+        "pid_namespace": "pid:[4026531836]",
+        "ppid": 814169,
+        "process_group": 814394,
+        "scheduler": "SCHED_IDLE"
+      },
+      "command-priority-4.json": {
+        "CPU": [
+          0
+        ],
+        "IO": "idle",
+        "argv": [
+          "/usr/bin/xvfb-run",
+          "-n",
+          "410",
+          "-a",
+          "-e",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/jar-512/xvfb.log",
+          "-s",
+          "-screen 0 1280x960x24 -nolisten tcp",
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=false",
+          "-Duser.home=<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/jar-512/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/jar-512/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/jar-512/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/jar-512/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/helpers-jar:<reference-root>/ColorMod_2_01/biogenesis.jar:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.WorkloadTrajectoryOracle",
+          "512",
+          "<project-root>/.workflow-local/evolving-world-512-a/source-controls/run-b/jar-512/observations"
+        ],
+        "limits": {
+          "AS": [
+            8589934592,
+            8589934592
+          ],
+          "CORE": [
+            0,
+            0
+          ],
+          "FSIZE": [
+            1073741824,
+            1073741824
+          ]
+        },
+        "nice": 19,
+        "pid": 814525,
+        "pid_namespace": "pid:[4026531836]",
+        "ppid": 814169,
+        "process_group": 814525,
+        "scheduler": "SCHED_IDLE"
+      }
+    },
+    "all_commands_graceful": true,
+    "cleanup": "Owned groups receive TERM and bounded reap grace before conditional KILL. No KILL was required in run-b. Process-control elapsed values are not simulation timings.",
+    "cleanup_errors": [],
+    "command_entry_sha256": "6448c886e6d7e014731f3bcde551f092c95c9d0f81c20e940e255dc845835a35",
+    "commands_sha256": "36d022be5b52e52ad0a1fc911206a54fd134172284920023b495fcea13fa30c1",
+    "controller": {
+      "path": ".workflow-local/evolving-world-512-a/source-controls/capture-run-b.py",
+      "sha256": "42eabdbe74a257314c27cc725d1220fcb81abe967dd0e076c58d241a48bdf2f7"
+    },
+    "groups": [
+      {
+        "absent": true,
+        "process_group": 814171
+      },
+      {
+        "absent": true,
+        "process_group": 814231
+      },
+      {
+        "absent": true,
+        "process_group": 814262
+      },
+      {
+        "absent": true,
+        "process_group": 814394
+      },
+      {
+        "absent": true,
+        "process_group": 814525
+      }
+    ],
+    "inputs": {
+      "path": ".workflow-local/evolving-world-512-a/source-controls/inputs.json",
+      "sha256": "cd8894c7ba2e5af240d1c7c943a34c7ff14ec6f1e6d52237ea97e2d8f701947d"
+    },
+    "resources": {
+      "CORE_bytes": 0,
+      "CPU": [
+        0
+      ],
+      "IO": "idle",
+      "JVM_heap_bytes": 536870912,
+      "compile_timeout_seconds": 60,
+      "javac_heap_bytes": 536870912,
+      "maximum_AS_bytes": 8589934592,
+      "maximum_FSIZE_bytes": 1073741824,
+      "minimum_MemAvailable_bytes": 17179869184,
+      "nice": 19,
+      "quiet_host_gate": false,
+      "scheduler": "SCHED_IDLE",
+      "source_timeout_seconds": 90,
+      "text_bytes": 2097152
+    },
+    "result_sha256": "e05ee8003fa3cf4493c09890eaac115d1e16c1c468cf45e29a21934624c679fd",
+    "root_release_sha256": "980b434e4fe128cc23db1daa2e31d4c44eb4898aa2270b7ba98fae6a2487984f",
+    "source_freeze": {
+      "path": ".workflow-local/evolving-world-512-a/source-freeze.json",
+      "sha256": "eb9f753a3a7df497acb09ca3a4e095056b57b65b13b8de469020ba203e18a38f"
+    },
+    "source_summary_sha256": "24ba08a9baa53491fef42b0dd924c3e06dcdeb486a9cedf2099fa29e404ba872",
+    "subreaper_restored": true,
+    "validator_sha256": "8415cfaa91df3908774a79b79aad80a04c78ecd9e4b2f5bd962dbc66fb5aea8a"
+  },
+  "fixture": {
+    "actual_World_time_calls": 512,
+    "bytes": 952239,
+    "cohorts": 1,
+    "obligations": 31293,
+    "path": "crates/core/tests/fixtures/workload_trajectory_512_ticks.tsv",
+    "row_counts": {
+      "C": 1,
+      "E": 1,
+      "K": 512,
+      "P": 10,
+      "Q": 513,
+      "R": 513,
+      "S": 18981,
+      "U": 147,
+      "V": 4617,
+      "W": 4617,
+      "X": 2
+    },
+    "rows": 29914,
+    "runtime_values": 30267,
+    "sha256": "b90255c9a2ff9ad25736b7f34d6b168042de6ea9243b477bca62414e9e7dd84c",
+    "snapshots": 513,
+    "source_Gaussian_invariants": 1026
+  },
+  "frozen_utc": "2026-11-09T03:06:37.857958+00:00",
+  "independent_source_actuals_review": {
+    "path": ".workflow-local/evolving-world-512-a/review-source-actuals.json",
+    "sha256": "942fa1036eb47f6a37d2f86fe156a9d437fed928b17bc4dcf8989ae8c0e2caee"
+  },
+  "limits": [
+    "Compact scalar/RNG fidelity only; no complete world trajectory or actor identity/order/geometry proof",
+    "History rollover is observed through primitive statistics; nonprimitive history contents remain omitted",
+    "No performance, steady-state, ARM/Pi, renderer,24hour,endurance or full product acceptance",
+    "Historical source capture preceded canonical helper compatibility and Rust replay. Later validation has separate scoped receipts."
+  ],
+  "observer_contract": {
+    "Gaussian": "false/positive-zero are two labeled original-source invariants, not Rust cache observations",
+    "RNG": "Actual Random serialized without drawing; bounded actual Random.readObject clone yields48-bit seed and copied nextLong,nextInt10000,nextDouble suffix",
+    "no_observed_state_or_RNG_as_constructor_inputs": true,
+    "nonprimitive_omissions": "Unchanged explicit X rows; actor/tree/order/identity trajectories and nonprimitive histories remain outside scope",
+    "purity": "Original RNG reference/serialized bytes and World/statistics scalar state remain unchanged by each observation",
+    "scalar_widths_and_raw_double_bits": "Unchanged existing V/S/W protocol",
+    "witness": "After tick80 snapshot, serialized original World matches old pinned graph; additional scalar/RNG purity check precedes continuation"
+  },
+  "original_default_helper": {
+    "original_fixture_sha256": "5b20e691297757491a07aaf2b723db1e38559b08444209d403b852d166dfc60c",
+    "original_provenance_sha256": "71ba8401e78f71c1f296db45ebc77bb50fe97d6b2a8f71b21ea3a5edf9a2061e",
+    "retained_path": ".workflow-local/workload-trajectory-83fiq7s4/WorkloadTrajectoryOracle.java",
+    "sha256": "874c79535731d68ef20205da34577eee7fd64b1c576fd697240278237e283757"
+  },
+  "readme": "crates/core/tests/fixtures/workload_trajectory_512_ticks.README.md",
+  "retained_failed_run_a": {
+    "commands_sha256": "0bae556c8095e7ba7fdc8e7b4a7ac832a298392d012ed17caa7a3c50927aac7c",
+    "groups_sha256": "1d331fae1dea1af7b55a0daba3f02e82a7325e2c24af1d738268ebadf34cd2bd",
+    "preserved": true,
+    "reason": "Installed xvfb-run evaluated-a before-n410 overwrote its selection; retained log reports display410 active. Retry orders-n410-a and permits graceful owned Xvfb termination. No failed data was promoted.",
+    "result_sha256": "748121739d340443a46a6f819132a6f05334ee5821f3765583b5288839ad2b1f",
+    "status": "FAILED_SOURCE_B_X11_STARTUP_NOT_FROZEN",
+    "xvfb_log_sha256": "8a270f789213450f2789ea0672b576efaf727e2eb558e3cf35f1d2a83b3b3edc"
+  },
+  "schema": "biogenesis-compact-evolving-workload-512-v1",
+  "schemas": {
+    "S": {
+      "aliveBeingMostChildrenNumber": "int",
+      "aliveBeingMostInfectionsNumber": "int",
+      "aliveBeingMostKillsNumber": "int",
+      "beingMostChildrenNumber": "int",
+      "beingMostChildrenTime": "long",
+      "beingMostInfectionsNumber": "int",
+      "beingMostInfectionsTime": "long",
+      "beingMostKillsNumber": "int",
+      "beingMostKillsTime": "long",
+      "birthLastTime": "int",
+      "birthSum": "long",
+      "createdOrganisms": "int",
+      "deathLastTime": "int",
+      "deathSum": "long",
+      "infectionsSum": "long",
+      "massExtintionState": "int",
+      "massExtintions": "int",
+      "maxBirths": "int",
+      "maxCarbonDioxide": "double",
+      "maxCarbonDioxideTime": "long",
+      "maxDeaths": "int",
+      "maxMethane": "double",
+      "maxMethaneTime": "long",
+      "maxOxygen": "double",
+      "maxOxygenTime": "long",
+      "maxPopulation": "int",
+      "maxPopulationTime": "long",
+      "minCarbonDioxide": "double",
+      "minCarbonDioxideTime": "long",
+      "minMethane": "double",
+      "minMethaneTime": "long",
+      "minOxygen": "double",
+      "minOxygenTime": "long",
+      "minPopulation": "int",
+      "minPopulationTime": "long",
+      "populationSum": "long",
+      "time": "long"
+    },
+    "V": {
+      "NEXT_ID": "int",
+      "_CH4": "double",
+      "_CO2": "double",
+      "_O2": "double",
+      "_corridorexists": "boolean",
+      "_height": "int",
+      "_population": "int",
+      "_width": "int",
+      "nFrames": "int"
+    },
+    "W": {
+      "NEXT_ID": "int",
+      "_CH4": "double",
+      "_CO2": "double",
+      "_O2": "double",
+      "_population": "int",
+      "corpses": "int",
+      "nFrames": "long",
+      "organism_count": "int",
+      "time": "long"
+    }
+  },
+  "source_authority": {
+    "JTS": {
+      "bytes": 797736,
+      "mode": 420,
+      "sha256": "00102cde26c457b81fbb0248e4f8845884243caba0dc9b7fb42e0ea877383bc1"
+    },
+    "World_time": "Colormod/src/biogenesis/World.java538-588",
+    "original_compiled_classes": {
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/BareBonesBrowserLaunch.class": {
+        "bytes": 2412,
+        "mode": 420,
+        "sha256": "de6a3c33d499cba9a18987f0151beb62997a90942c64bcb08ae70a8e849d5938"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/BioFileFilter.class": {
+        "bytes": 1556,
+        "mode": 420,
+        "sha256": "3bbe1ae051fc5d9bd36dec981d6d4f00974dce05f1a5b8dc27228c1144059358"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/BioXMLParser.class": {
+        "bytes": 25288,
+        "mode": 420,
+        "sha256": "a82f988d377288239dcf42e96d91f3e663aeac00528083c7cab928e098c17236"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/BranchSpinner.class": {
+        "bytes": 1108,
+        "mode": 420,
+        "sha256": "f66a30d35542b51ee7ae275097247e680f68823596fde01e15d13c7df0386dec"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/CheckVersionThread.class": {
+        "bytes": 2970,
+        "mode": 420,
+        "sha256": "689dccecb0f7bc35f1add0fdbf6afa195a39204e7a8ecfa4575fde7084a78970"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/Cleaner.class": {
+        "bytes": 1404,
+        "mode": 420,
+        "sha256": "7d416ec0c19c49aa36ac1aa443c0f598eda2d2bfd57ee1ea6abf595ae71546c4"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ColorComboBox.class": {
+        "bytes": 5651,
+        "mode": 420,
+        "sha256": "66e7fbc21e6364508e0cc54222bd614178c2b9db30eec39f640a5328143191e9"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ColorPanel.class": {
+        "bytes": 1389,
+        "mode": 420,
+        "sha256": "1e659031ce991ea72b333c045eac2d7460aff81914d1b1b2c63f1fb1f42078f7"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/Connection$1.class": {
+        "bytes": 533,
+        "mode": 420,
+        "sha256": "c4cf69c50a131bd597acbaf121d3c919123e3f1cf6c5e5fb736be343310ade03"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/Connection.class": {
+        "bytes": 3432,
+        "mode": 420,
+        "sha256": "8bfe5cabaaa71184077eafbf718b832fe39627484cd55ebf327756ca83142d98"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/Corridor.class": {
+        "bytes": 990,
+        "mode": 420,
+        "sha256": "2ebb6de46db5a270cfc4c1999ab58728a4e7e565f4a49c3b2bbf88c6aa0c2187"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ExLine2DDouble.class": {
+        "bytes": 947,
+        "mode": 420,
+        "sha256": "788aa80e61709606d478d81899eabc35cc6bddfb6d78c36c4d3c13ab8bdf785f"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/Gene.class": {
+        "bytes": 16312,
+        "mode": 420,
+        "sha256": "29fe7b153555ded4383072debd0452bed5f92692afd0488a88c297d5f04f6ea8"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/GeneticCode.class": {
+        "bytes": 18242,
+        "mode": 420,
+        "sha256": "4bbf99eaf9006840ecbba0958496372a220ed44c4e57c8341c4de3dc29f3fb30"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/GeneticCodePanel$1.class": {
+        "bytes": 853,
+        "mode": 420,
+        "sha256": "2049e54f98f18444effb9c05af958799900be7ed05a76dd2534bd726fc25bc1d"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/GeneticCodePanel$2.class": {
+        "bytes": 1052,
+        "mode": 420,
+        "sha256": "db40b4b23aedc15274c29e1803e56d8d45df803f4bf57df14cda537d0cfed5fd"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/GeneticCodePanel.class": {
+        "bytes": 1913,
+        "mode": 420,
+        "sha256": "805e2a39aec5cd63506ae5e9dfc829b88378ce3f4b5748c435be353ebc2dee52"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/GraphInfo.class": {
+        "bytes": 1489,
+        "mode": 420,
+        "sha256": "db528ea610768355b37be18c77d39950f37f1b7c9f07f0dac5acd76d56444ee5"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/GraphPanel.class": {
+        "bytes": 2556,
+        "mode": 420,
+        "sha256": "60efd26459a7ce4f76b2692325e18e187e1b30f2515ed3c19e042d58f5c6c2d1"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/InCorridor.class": {
+        "bytes": 1885,
+        "mode": 420,
+        "sha256": "aa75adf5793aa4be938bede64d5af32cd7812041a59f99d83c44ee1d5baf5585"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/InfoAndColor.class": {
+        "bytes": 704,
+        "mode": 420,
+        "sha256": "74b0a729b0e1355a952537eb826b56e21242c52eaed5e0ebec9af5b99b75c08d"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/InfoToolbar$1.class": {
+        "bytes": 915,
+        "mode": 420,
+        "sha256": "1c7f240baa540b32e9db1668e1a4a36cd1c150b9ebfeaaf661b7709ee3de2e59"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/InfoToolbar.class": {
+        "bytes": 8117,
+        "mode": 420,
+        "sha256": "6e58a23936050ecadcedd71cf683ea55139c7629800a2fdbd92efc6771438001"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/LabWindow$1.class": {
+        "bytes": 648,
+        "mode": 420,
+        "sha256": "de2a3853d97fb162338bc9eace2426621a28e7ee7f37caecc18e164f15ba2af8"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/LabWindow$10.class": {
+        "bytes": 943,
+        "mode": 420,
+        "sha256": "79dd8f88517322c84bf1e92040f4d582c6581b3545df4415d801d3c4d9db06b3"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/LabWindow$11.class": {
+        "bytes": 864,
+        "mode": 420,
+        "sha256": "cf3fc8c0f795b39d1ac43f7f66bb37476cfa21baf85f71b5f0bf7bc78c61f6cb"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/LabWindow$12.class": {
+        "bytes": 858,
+        "mode": 420,
+        "sha256": "bed0d12a7063e3a0ae498e9caadd42184bb4329a3fbbf54a431b0461ed9432fe"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/LabWindow$13.class": {
+        "bytes": 850,
+        "mode": 420,
+        "sha256": "5cd5e45c525ff737ea42cc096d623d4b703ea3be27426bd90f54d125690f4daa"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/LabWindow$14.class": {
+        "bytes": 854,
+        "mode": 420,
+        "sha256": "7b480bd66ed0a6e59c83bbcf5999005bbc4a68cbe4d876c138753f7ade05a6df"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/LabWindow$15.class": {
+        "bytes": 953,
+        "mode": 420,
+        "sha256": "be40af0ed77d80cb087fa11a7cb9ee98f1a8982599a491dad0b9b999198ca385"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/LabWindow$16.class": {
+        "bytes": 953,
+        "mode": 420,
+        "sha256": "4cb94473682734a6dbb0850f119e494c01afa3f7204c92816f69b2bd9c6d5769"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/LabWindow$17.class": {
+        "bytes": 862,
+        "mode": 420,
+        "sha256": "32f61cb952c11d9bb989532bebda128f02bfc5548f6c7eea62fa030c825e1731"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/LabWindow$18.class": {
+        "bytes": 864,
+        "mode": 420,
+        "sha256": "d3c9703c258d9ee13f0c1bc039435f86d15947e89303de3f5aac3f90d26df075"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/LabWindow$19.class": {
+        "bytes": 850,
+        "mode": 420,
+        "sha256": "4640ba4f8d77cf1a93368c461a46bad69df1f8ce4f04da163f6dbce805ab5324"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/LabWindow$2.class": {
+        "bytes": 1819,
+        "mode": 420,
+        "sha256": "3e5355c563df7699cdaa26f92e846826dec32a0de57a34d2bc6bc6b726d9de78"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/LabWindow$20.class": {
+        "bytes": 860,
+        "mode": 420,
+        "sha256": "56249a4741d5a3a89a01f176d06921abc7a7261ed7664aff2f3cd12ca934e669"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/LabWindow$21.class": {
+        "bytes": 955,
+        "mode": 420,
+        "sha256": "d3ec56531db0ab53807c61a114d2e3d85e95804f4fa789bd2f717cd4d182812d"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/LabWindow$22.class": {
+        "bytes": 947,
+        "mode": 420,
+        "sha256": "5600541e45728a6d3f7f49ca4e02d9945e5961c226060a5c2f8739c0e307bc25"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/LabWindow$23.class": {
+        "bytes": 854,
+        "mode": 420,
+        "sha256": "e4e9fc3af8e4b4f8df4facb6b1be98e38f4ca919806d2deab9ea513b375318f0"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/LabWindow$24.class": {
+        "bytes": 852,
+        "mode": 420,
+        "sha256": "23ffcb3f44220f936efaf5d98ab0176654a60c09ebd172939026154374bdb9e1"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/LabWindow$25.class": {
+        "bytes": 856,
+        "mode": 420,
+        "sha256": "803efb61b4ebe2f6db970e91964598b79826fde1ae643ff08eadddc06f0069e2"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/LabWindow$26.class": {
+        "bytes": 641,
+        "mode": 420,
+        "sha256": "ed753628860e5dd7d56aa2aaff27c6bd3b31a6f0d0e15ea2e18c1a655e11c245"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/LabWindow$27.class": {
+        "bytes": 710,
+        "mode": 420,
+        "sha256": "1305c748585a624d33393ad0820c9a5a9250d6d60531f389953344cd7d8f3881"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/LabWindow$28.class": {
+        "bytes": 2280,
+        "mode": 420,
+        "sha256": "8d2e3eaa4863d468ad5604ba4f82cf2d4f001f31aaef6b3127903ff557580255"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/LabWindow$3.class": {
+        "bytes": 1016,
+        "mode": 420,
+        "sha256": "1f1a2578604e284b7ac80a6367867321542b561c371e28888cdeb3be572cc258"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/LabWindow$4.class": {
+        "bytes": 1595,
+        "mode": 420,
+        "sha256": "6617c010e94ce4905079ab3dfc7c8b5f584bc6ba42b3ca64ed3008bc21e9512c"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/LabWindow$5.class": {
+        "bytes": 923,
+        "mode": 420,
+        "sha256": "8c4689a97bfe3b2265a2bc911868456b1f9483c17c121d202f1a4fb72d329736"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/LabWindow$6.class": {
+        "bytes": 861,
+        "mode": 420,
+        "sha256": "f3508a7b08244e669dd43e93d887e196d0d146d330ff78222e4b237323a43e83"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/LabWindow$7.class": {
+        "bytes": 851,
+        "mode": 420,
+        "sha256": "73a099e085547296cd43ef095ce59ca28710ff7de19e0c65a1f3ed96f3999d77"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/LabWindow$8.class": {
+        "bytes": 853,
+        "mode": 420,
+        "sha256": "d828769a9c07191141d362d27be40ce1706c2dbf5cd3e78207882f3cb1084eef"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/LabWindow$9.class": {
+        "bytes": 853,
+        "mode": 420,
+        "sha256": "d43834d057d50883f5b1f5d9e405fdbbf62d309a5a264fcbaf6796896b7d004d"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/LabWindow.class": {
+        "bytes": 27623,
+        "mode": 420,
+        "sha256": "adabb0a1971cd41d7d8124f9cbe0f5dc5625394762e737497f86483b793e19f4"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/LengthSpinner.class": {
+        "bytes": 1144,
+        "mode": 420,
+        "sha256": "52e914761c2024adffa5e0f07049f2224b132563588f1994c68530d060318c6f"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/MainApplet$1.class": {
+        "bytes": 911,
+        "mode": 420,
+        "sha256": "3e4e3130da332ec1269e59598ba0d3d653183b722c3b5624f301b9a4e06411c0"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/MainApplet.class": {
+        "bytes": 1683,
+        "mode": 420,
+        "sha256": "b5f45fbcfb1bbb16feb60ff5f314f06ce089357bb64649f57e9067543042922a"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/MainWindow$1.class": {
+        "bytes": 578,
+        "mode": 420,
+        "sha256": "f6092482b661cf95d521194b5348d1a743ff0125d3a92ef0a615c345a6a29a5a"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/MainWindow$2.class": {
+        "bytes": 1684,
+        "mode": 420,
+        "sha256": "645c1dcd112d9a47fefbd65f86f659aeacf39c260cea224d11cba7f3f8e90cc8"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/MainWindow$3.class": {
+        "bytes": 1895,
+        "mode": 420,
+        "sha256": "f3c4b42a2bc712c02fcb35ff1c9aab1ab6ff56ebf4b06bf9c1aeb7d7debd5c57"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/MainWindow$AbortTrackingAction.class": {
+        "bytes": 802,
+        "mode": 420,
+        "sha256": "c8c040d1734ada937726d5e0a207100dbceb06f25545b42af8c5bc7f73835d9a"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/MainWindow$AboutAction.class": {
+        "bytes": 751,
+        "mode": 420,
+        "sha256": "896ea42b346b427d96a3e535f1b5b700c3e1ce76ba24fcb32cb0941f31726ebd"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/MainWindow$BackupGameAction.class": {
+        "bytes": 2389,
+        "mode": 420,
+        "sha256": "850281dffa1f172e66c6f8f0c8254821fa47fbf3e9461cdc07b28e5e29aae868"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/MainWindow$CheckLastVersionAction.class": {
+        "bytes": 784,
+        "mode": 420,
+        "sha256": "8eb10d6622e4c8ffe760396b74c658b75d3b049b1a3aef7becd73f8ad235ef2c"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/MainWindow$DecreaseCH4Action.class": {
+        "bytes": 847,
+        "mode": 420,
+        "sha256": "3a7e80f9df87118ef24b0da0833aedc6cb64894c1cccdedcbed4894ac602a890"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/MainWindow$DecreaseCO2Action.class": {
+        "bytes": 847,
+        "mode": 420,
+        "sha256": "bcbe7efad94288804dfd823f505d9e2d3234a1c5be039173c91171919d636893"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/MainWindow$DisperseAllAction.class": {
+        "bytes": 834,
+        "mode": 420,
+        "sha256": "8511d07b2287f2118012e1556ab4600f701de679daa9281f9713db0e61c224c4"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/MainWindow$IncreaseCH4Action.class": {
+        "bytes": 842,
+        "mode": 420,
+        "sha256": "1e8aa09e7b51225f65e3241ef03d530b2ea635edc51d560b426a1da3d969b178"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/MainWindow$IncreaseCO2Action.class": {
+        "bytes": 842,
+        "mode": 420,
+        "sha256": "0a09358aefbc241f5d6377dbaba936ca0d93cfbc575cf4f5cb3b9b87fc2f3708"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/MainWindow$KillAllAction.class": {
+        "bytes": 822,
+        "mode": 420,
+        "sha256": "b0ee7f5c03e3a1fbab0e9887dd3a668a9aabb4bb34ef3145fedd4c61e8d19129"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/MainWindow$LabAction.class": {
+        "bytes": 793,
+        "mode": 420,
+        "sha256": "7b9b8ee87e155769d02188657e67e2355e88afaaa64615f64ee8e635c4ecfa7d"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/MainWindow$ManageConnectionsAction.class": {
+        "bytes": 790,
+        "mode": 420,
+        "sha256": "76442e4f8553a5c53713354332f8f8c08e215d8b3b716f5743ce17913d21c483"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/MainWindow$ManualAction.class": {
+        "bytes": 1904,
+        "mode": 420,
+        "sha256": "c5a8a7bdcea7b14287c5cac305e635e1475476a1970c23a57066579baaf5814b"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/MainWindow$NetConfigAction.class": {
+        "bytes": 763,
+        "mode": 420,
+        "sha256": "7007053ad1fa346111df0b9a68d4e386c1b0425f423efd76f926b8e8014778cb"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/MainWindow$NewGameAction.class": {
+        "bytes": 2677,
+        "mode": 420,
+        "sha256": "71c69a7d9cba642ee7ab6789eb0a3de22de03180fb741c467ceb93176b62fb01"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/MainWindow$OpenGameAction.class": {
+        "bytes": 3988,
+        "mode": 420,
+        "sha256": "8655c8e03f57f89daf24caecabc0c9fdd555874fe1a06ea45f835110caeee1d3"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/MainWindow$ParametersAction.class": {
+        "bytes": 767,
+        "mode": 420,
+        "sha256": "629123a4751c54d489cb6a4f09398c2e2563423c9afac611ed7969bb6747ac3b"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/MainWindow$QuitAction.class": {
+        "bytes": 748,
+        "mode": 420,
+        "sha256": "cb2f9fc2d31831fbc5be1c6560c9a59a7d65439bd62d6c8991d960df55812735"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/MainWindow$SaveGameAction.class": {
+        "bytes": 1416,
+        "mode": 420,
+        "sha256": "089df41ecc8e9b4db2f1c106cd6b8a3383b0ae38e56dfae0621b30fa956d8e98"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/MainWindow$SaveGameAsAction.class": {
+        "bytes": 780,
+        "mode": 420,
+        "sha256": "d8be34fd09f9065ad8a8cb17b6e3a52647cf0a2b6c9875cbbff24e3cf7745b09"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/MainWindow$StartStopAction.class": {
+        "bytes": 2512,
+        "mode": 420,
+        "sha256": "0986e8202dc5b70d2b6006bfaf86c8185adc45a164dfa96527031f4dae528cc1"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/MainWindow$StatisticsAction.class": {
+        "bytes": 1052,
+        "mode": 420,
+        "sha256": "bd16fdf085eb2ed40ded7434124f9fdede423f0cd5ea21adba22a655ac61a7d5"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/MainWindow.class": {
+        "bytes": 22222,
+        "mode": 420,
+        "sha256": "2aa43a389cf414ff06e2ecc8b9aec03ef4aa744694a7ad2e0b3909aef5fa7468"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/Messages.class": {
+        "bytes": 3362,
+        "mode": 420,
+        "sha256": "bee6d14919d2f23cfecac08945a8cb0d01bf8535b3a37703f9714b31e428f593"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/NetConfigWindow$1.class": {
+        "bytes": 647,
+        "mode": 420,
+        "sha256": "e6fb2cb460bb53f670276fb208fab4a3f69bfbef5a6b2431e3260d4232b93d9f"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/NetConfigWindow$2.class": {
+        "bytes": 1056,
+        "mode": 420,
+        "sha256": "f0dd6eb53af8a9898a1ba5cf5234187775e9191229b07816006579721809d1d0"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/NetConfigWindow$3.class": {
+        "bytes": 766,
+        "mode": 420,
+        "sha256": "06eca44518fcd99f09e2c0d20306091add7f103a04fe9a4cbaf0cec57b51ce47"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/NetConfigWindow.class": {
+        "bytes": 3666,
+        "mode": 420,
+        "sha256": "2744a8d36f257c2f3ad4f72ef08e88502ecb873cabc9f132f25634e42c34c79e"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/NetConnectionsWindow$1.class": {
+        "bytes": 2329,
+        "mode": 420,
+        "sha256": "c36456e4a8c98b279973645d5b3e023c50308679072223920a870f9130673bd3"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/NetConnectionsWindow$disconnectAction.class": {
+        "bytes": 886,
+        "mode": 420,
+        "sha256": "9675a442b2e69c9d09311c54a4cf736e6a37465e8f00014013ca3aa6fac6c0dc"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/NetConnectionsWindow.class": {
+        "bytes": 3899,
+        "mode": 420,
+        "sha256": "e844c12b71a964756782386e33e4134c1d24b8993cd17284947296af3f517483"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/NetSend.class": {
+        "bytes": 5275,
+        "mode": 420,
+        "sha256": "4aee0f9aafea5fadcbf0793c86173654fdc36b081ff852ca08f5b6de6941c5f2"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/NetServerThread.class": {
+        "bytes": 8653,
+        "mode": 420,
+        "sha256": "38bc4c02180a729df55011ac4890c3dee2311f5b4b90f05afcdc3cb320ffb3e5"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/Organism.class": {
+        "bytes": 244359,
+        "mode": 420,
+        "sha256": "e8facb409642f0288411785985cbfd96440f644226795f14de24705554a46e22"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/OutCorridor.class": {
+        "bytes": 2594,
+        "mode": 420,
+        "sha256": "167fc3129e6671b5273532d4684dc468e5bab9db6988033b32b6796ad7e1ca3a"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ParamDialog$1.class": {
+        "bytes": 719,
+        "mode": 420,
+        "sha256": "48a952c3c52dffd1335f3fdd91dd49daad9516452e4e8347e5ed14dbf009c5a9"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ParamDialog$2.class": {
+        "bytes": 627,
+        "mode": 420,
+        "sha256": "106b2767d5544d71845eef43562d76cb6d87f310ddfe6b938a1a5c87c361dc8c"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ParamDialog$3.class": {
+        "bytes": 638,
+        "mode": 420,
+        "sha256": "204bf694dd24b43519d9967155c2e15467073f811079d28eb829c0b4c28ba666"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ParamDialog$4.class": {
+        "bytes": 911,
+        "mode": 420,
+        "sha256": "b1527edbfccfcb559c953965f860bc39c5ff3cfcf82566ec4030bbfa1242c176"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ParamDialog$5.class": {
+        "bytes": 922,
+        "mode": 420,
+        "sha256": "736cd1ecb11e3d4381c5ce0d671314f884362277784565109630721f8bb2c5c4"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ParamDialog.class": {
+        "bytes": 37525,
+        "mode": 420,
+        "sha256": "c725573fde3214ce43af7c327849ef0386abaf8e8423ce635b2319c02a0b1bb8"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner1.class": {
+        "bytes": 1116,
+        "mode": 420,
+        "sha256": "e54d0df9fc626903f080a49ea6ce15a02bbb51a7f4c7a75a9206c5d0d24c1a90"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner10.class": {
+        "bytes": 1117,
+        "mode": 420,
+        "sha256": "dc74bbc293c03b4195bddcdb7a1668fd2366524b72b8793e0846a73cf3e02b7a"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner11.class": {
+        "bytes": 1117,
+        "mode": 420,
+        "sha256": "6a2c7a44d34600c52bcc84ea0f64e095b579da56e7cd5d8584d5d01ab50d6134"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner12.class": {
+        "bytes": 1116,
+        "mode": 420,
+        "sha256": "4d72257c16e3b48bfc1df6394b37f77c4175164e46b8aa3c0a5a5b56f12f99ec"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner13.class": {
+        "bytes": 1118,
+        "mode": 420,
+        "sha256": "fab06b10ad92d0f228dc55835bbf8e2f0378c74498dd78f20ee373eb46502778"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner14.class": {
+        "bytes": 1117,
+        "mode": 420,
+        "sha256": "9c167f340ed96529b4ca893c9e16306d507dfc844663b9d98ae27563fde2d88a"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner15.class": {
+        "bytes": 1115,
+        "mode": 420,
+        "sha256": "79bc6b5c940e9a167a1df1f6fc9009f978784e3a76bd2081d8472f365ae2d007"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner16.class": {
+        "bytes": 1116,
+        "mode": 420,
+        "sha256": "badf1036d66e4135befd63a3c3bd3f16b997537c2418e7c92c0096773b5b549c"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner17.class": {
+        "bytes": 1117,
+        "mode": 420,
+        "sha256": "3946761591de23795efa08cc51e41d4972b05fd89366e828508342612661840b"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner18.class": {
+        "bytes": 1118,
+        "mode": 420,
+        "sha256": "5106f5fd7e263da4c1ec7c76fb1bbc9f06c493cc881ef6b8bad9d81992bd17d3"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner19.class": {
+        "bytes": 1117,
+        "mode": 420,
+        "sha256": "b0affd1de63cc5a1d270d9b2c1c8dfb19ed9e06559879827c852ed64b4ef317f"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner2.class": {
+        "bytes": 1115,
+        "mode": 420,
+        "sha256": "1b8129f358f5f2fc6ef7619c63ba85d4b92d79712bbaa74b7f3d780862db1653"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner20.class": {
+        "bytes": 1117,
+        "mode": 420,
+        "sha256": "2a4728b76ec0756318276d481c37f058ceb6482d05da805f184a7574c866dd9d"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner21.class": {
+        "bytes": 1118,
+        "mode": 420,
+        "sha256": "80b12e26e7476571834bcada214b7a5c81878d5a23c17867665d04eca436a520"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner22.class": {
+        "bytes": 1119,
+        "mode": 420,
+        "sha256": "bb88dc821172eef872b8233268b1dbaaafcd9bd44518ba2d8497d284628ac5a1"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner23.class": {
+        "bytes": 1117,
+        "mode": 420,
+        "sha256": "1a63a7983ce46318edeecbb5824f156383df91f84ff0df29df1366139b98b747"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner24.class": {
+        "bytes": 1116,
+        "mode": 420,
+        "sha256": "84074ee8a6f025140fcddd66f395217e76bcfbad04a9bc1665e2fb778457971d"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner25.class": {
+        "bytes": 1119,
+        "mode": 420,
+        "sha256": "829424105df7330acfae69c212645a1edab5e44e2a50de4a2e2b9e2157b358b2"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner26.class": {
+        "bytes": 1119,
+        "mode": 420,
+        "sha256": "b295317fd4df6e5a100c1f8578939f98d624e241fe935b3f20d75e34445a04ab"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner27.class": {
+        "bytes": 1120,
+        "mode": 420,
+        "sha256": "8cbaa5885813eccb91aca41797923b67eb18946eedeaa91b951949969c6e50b2"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner28.class": {
+        "bytes": 1117,
+        "mode": 420,
+        "sha256": "93311a18b38b399963fc02d65496e989410c4c99f579f89c58ddd4f27d548096"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner29.class": {
+        "bytes": 1115,
+        "mode": 420,
+        "sha256": "1a9b2b19254c4f26cd12b9f2d13121d53bcf89e2dfa76e6d84f1661efa380560"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner3.class": {
+        "bytes": 1114,
+        "mode": 420,
+        "sha256": "baae5229cb8f59c79ab159c8edf1a55314cc620ae0b14c2b2bef978dda358c21"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner30.class": {
+        "bytes": 1121,
+        "mode": 420,
+        "sha256": "4b23bc2e170ecdec673a75f3191c48ffe0bab8ef9e63d1d9a125f081393b47bf"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner31.class": {
+        "bytes": 1122,
+        "mode": 420,
+        "sha256": "f0a3bdf813e586950daa07f79552787b6ac0152a0554d7913ee85b60ea76521e"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner32.class": {
+        "bytes": 1122,
+        "mode": 420,
+        "sha256": "37b640c383ec3ae9e7f61247d870d5cfb3b52532411de99970ec3a9bd6ce8fb2"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner33.class": {
+        "bytes": 1118,
+        "mode": 420,
+        "sha256": "281663b78c2ad6f93d73e62ddbf099b796f35b561fe588e406d3298f11e930a9"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner34.class": {
+        "bytes": 1117,
+        "mode": 420,
+        "sha256": "20a6946904f9329933d3c2fc132bdb8868d5b2c6ebd72ca2e74f264c377b8f69"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner35.class": {
+        "bytes": 1116,
+        "mode": 420,
+        "sha256": "3ba17689d1b35f6fe289bcdccb371d72f2392820a304999248c52a8ab276b88c"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner36.class": {
+        "bytes": 1118,
+        "mode": 420,
+        "sha256": "a09882b2f50894180161e6e2e6dff24c4911ee2b855c45f8ba302467da48570f"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner4.class": {
+        "bytes": 1115,
+        "mode": 420,
+        "sha256": "214bc4273ef2f790f34621f7720720e59af5e6287d52e07eefeee781d551464a"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner5.class": {
+        "bytes": 1117,
+        "mode": 420,
+        "sha256": "10c874329fdae699b47f63c23ce2c411ebb8f0dab4ba2db6c232ea358ee16861"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner6.class": {
+        "bytes": 1117,
+        "mode": 420,
+        "sha256": "d3dfcddabad5ab916605449712665e48eafa5ab17d48d0c45e2361355601eebc"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner7.class": {
+        "bytes": 1115,
+        "mode": 420,
+        "sha256": "03b7b019e70ba2cc0ca051c0de170a62ab7c283dcc4eff1a2c7e86db236b5c6b"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner8.class": {
+        "bytes": 1116,
+        "mode": 420,
+        "sha256": "9b486d9291066ebcb84ea827baac337a61a3af9bdb4077e8a6d0540eee32ca4d"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ReactionSpinner9.class": {
+        "bytes": 1117,
+        "mode": 420,
+        "sha256": "fdf71a4d3fb8cdad0d547d4e8451d0fd3018dc1aa81d567fdea294edc58b3956"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/StatisticsWindow.class": {
+        "bytes": 13461,
+        "mode": 420,
+        "sha256": "062846c374a6530ffc1666c979d3158a4521df20856bf9598ddae608463e8cbd"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/StdAction.class": {
+        "bytes": 1310,
+        "mode": 420,
+        "sha256": "6b30d30166122837269decf2a9bbec40676ffae7e202029fe0f239c68638cceb"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ThetaSpinner.class": {
+        "bytes": 1310,
+        "mode": 420,
+        "sha256": "54b32e8c72711713a2769fe1c9ab4d745778e82d8425a85e8658fac8658c7074"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/ThetaSpinnerModel.class": {
+        "bytes": 756,
+        "mode": 420,
+        "sha256": "caba9178066a3f32e52e0afe45fdbb62fa4dca9e39b7d2e8467ec214194c684f"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/Utils.class": {
+        "bytes": 27552,
+        "mode": 420,
+        "sha256": "67adba4432972ffa3922b6f622d2cc12bf0e703a7dfbf97ae94f3f95387b1884"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/Vector2D.class": {
+        "bytes": 990,
+        "mode": 420,
+        "sha256": "c2190ad3c4675ccc4de558dd3e692241854e8cb4fd75335053b6928d90cde958"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/VisibleWorld$1.class": {
+        "bytes": 1015,
+        "mode": 420,
+        "sha256": "552264c70b6f3a9c36916a6acbd03e695e38a206458eefeb2cbd4a87f6e7dc76"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/VisibleWorld$CopyAction.class": {
+        "bytes": 1019,
+        "mode": 420,
+        "sha256": "da5b33a40a6a559ae23debd2035eaf302e07e5c1bf3b756da293a2c749636811"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/VisibleWorld$DisperseAction.class": {
+        "bytes": 968,
+        "mode": 420,
+        "sha256": "ec733a6cad5a3868369c74ba533c919f94a2dbeb00c50dd00573077803b47c31"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/VisibleWorld$ExportAction.class": {
+        "bytes": 1108,
+        "mode": 420,
+        "sha256": "d70c641cb0cc48c6383f0b48a347ef4633b6e5808a12c08b45644e0598f0684a"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/VisibleWorld$FeedAction.class": {
+        "bytes": 1253,
+        "mode": 420,
+        "sha256": "b40f87a068b517c2acd494ab6fd465c3b63601f397b7645bd98ed7790d32d145"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/VisibleWorld$ImportAction.class": {
+        "bytes": 2510,
+        "mode": 420,
+        "sha256": "bda0d8a7ac8457a014348a68a5c2970308f293c8f87c08218b977cb0181b7a39"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/VisibleWorld$KillAction.class": {
+        "bytes": 942,
+        "mode": 420,
+        "sha256": "10f982268dc75d3225646747a31da4e51d6288ba4974f5725d848fcea9b73b61"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/VisibleWorld$PasteAction.class": {
+        "bytes": 959,
+        "mode": 420,
+        "sha256": "cc87e0fd6acb085956978e8d68a5a1559f3394a5227af2e95f917370fe188dc3"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/VisibleWorld$RandomCreateAction.class": {
+        "bytes": 1270,
+        "mode": 420,
+        "sha256": "3b4350a477e48227ba2782e0d05f041a69dca7cd79c96939fb99995f8502a116"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/VisibleWorld$RejuvenateAction.class": {
+        "bytes": 932,
+        "mode": 420,
+        "sha256": "923bb66ae5f77c2dfe32be1796f061353013bc9fd21a1c0a1a637049f48b3ca9"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/VisibleWorld$ReproduceAction.class": {
+        "bytes": 936,
+        "mode": 420,
+        "sha256": "c659702c0b0ead96bc332c4faf234e086b4c48b88e1a2c9c012045d81125d2a3"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/VisibleWorld$ReviveAction.class": {
+        "bytes": 2638,
+        "mode": 420,
+        "sha256": "9a5c104448d3a01d2c142a78ad8f7ad1b7b04cca6d5c12bea382e03c51dc0c19"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/VisibleWorld$SaveImageAction.class": {
+        "bytes": 2586,
+        "mode": 420,
+        "sha256": "0c112ef1d9aecfe9b46d978e544b92a84cfa0002f1abdf246a360deae9588325"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/VisibleWorld$TrackAction.class": {
+        "bytes": 1792,
+        "mode": 420,
+        "sha256": "c0b995b679556bcb7134fbd371c391fa7ffba0b1b19749963f15b6e876da11e8"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/VisibleWorld$WeakenAction.class": {
+        "bytes": 977,
+        "mode": 420,
+        "sha256": "69fa9fea5901984b34edde1d6cafe5ab6bd123a927af7c304243f08c042cd6f4"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/VisibleWorld.class": {
+        "bytes": 8299,
+        "mode": 420,
+        "sha256": "f9f559ac40de41b7d84cb6d624b5bcad538ac016d566779bc6c45512c5d68168"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/World.class": {
+        "bytes": 10740,
+        "mode": 420,
+        "sha256": "9091d4e5cae555493971a37a9c8fc77e2250e68db073a120a3a08b57b03e131e"
+      },
+      "<project-root>/.workflow-local/reference-build/source-classes/biogenesis/WorldStatistics.class": {
+        "bytes": 9156,
+        "mode": 420,
+        "sha256": "ab04358e54edf5120d703f0d980c72a136ab74165e5bbec4b55719ab097c7863"
+      }
+    },
+    "original_files": {
+      "<reference-root>/Biogenesis_Color_Mod_README.txt": {
+        "bytes": 70269,
+        "mode": 420,
+        "sha256": "18e8117e0b947760097c379d6b5b0cd42f3a5c61d2a3f58cbeb9000f7a0acab4"
+      },
+      "<reference-root>/ColorMod_2_01/Biogenesis_Color_Mod_README.txt": {
+        "bytes": 70269,
+        "mode": 420,
+        "sha256": "18e8117e0b947760097c379d6b5b0cd42f3a5c61d2a3f58cbeb9000f7a0acab4"
+      },
+      "<reference-root>/ColorMod_2_01/DEFAULT_YOUR_PARAMETER_SETTINGS.txt": {
+        "bytes": 235,
+        "mode": 420,
+        "sha256": "1173413aed48cb6626b90a360d0c70255ff567c26759ca8e7a90758baf514327"
+      },
+      "<reference-root>/ColorMod_2_01/Visual guide for the colors.png": {
+        "bytes": 50528,
+        "mode": 420,
+        "sha256": "e5b0ed2029359abebe1d89be4791754c48d5a6acfee2861f66ce79f92435c025"
+      },
+      "<reference-root>/ColorMod_2_01/biogenesis.jar": {
+        "bytes": 1526315,
+        "mode": 420,
+        "sha256": "0baeae8d29f5fdbbb830c1a9e51c7f2b5314a33011b20ec7471eeaa27f0398e1"
+      },
+      "<reference-root>/ColorMod_2_01/copyright": {
+        "bytes": 791,
+        "mode": 420,
+        "sha256": "75629b66d44564724fc8a1d988010b9cf4e3b4d94178ec259cb8b1473483ff39"
+      },
+      "<reference-root>/ColorMod_2_01/gpl.txt": {
+        "bytes": 17991,
+        "mode": 420,
+        "sha256": "1f3b11628a7eab2c77b2ff4456b5af57ff9659a71344533ffdef59a3efd0b250"
+      },
+      "<reference-root>/src/biogenesis.1": {
+        "bytes": 4838,
+        "mode": 420,
+        "sha256": "013d757da9cae78064aee5578b32eecd3d6d5af5592c3a8cf9c379c314ab1a81"
+      },
+      "<reference-root>/src/biogenesis.desktop": {
+        "bytes": 3358,
+        "mode": 420,
+        "sha256": "bd0f673486b5a31a4321d5cddd9f42cdfb5e087ba7988ca6a617aec98dad96c5"
+      },
+      "<reference-root>/src/biogenesis.mf": {
+        "bytes": 57,
+        "mode": 420,
+        "sha256": "0044c30bb798086228e4500f9ebb9df9a10be01036d9094ccdc2002a25d5e5ce"
+      },
+      "<reference-root>/src/biogenesis.png": {
+        "bytes": 2860,
+        "mode": 420,
+        "sha256": "4cdeacb5f0fc75add12872948a6ceea39cc41af4af720957d02980e7c1b8198d"
+      },
+      "<reference-root>/src/biogenesis/BareBonesBrowserLaunch.java": {
+        "bytes": 2149,
+        "mode": 420,
+        "sha256": "77ca57fa6966fa66d7a77ad272f5a83a690efb259e2c782076c1147b22513e9e"
+      },
+      "<reference-root>/src/biogenesis/BioFileFilter.java": {
+        "bytes": 2299,
+        "mode": 420,
+        "sha256": "0f080cec49d5368d5a57f025e68883b2e223fb9fbfdb9be3c72148bd8ea5e1d9"
+      },
+      "<reference-root>/src/biogenesis/BioXMLParser.java": {
+        "bytes": 33617,
+        "mode": 420,
+        "sha256": "91987b587610662d171c9357ad38b22f0decfcdede602c74b035f560179a9dd3"
+      },
+      "<reference-root>/src/biogenesis/CheckVersionThread.java": {
+        "bytes": 2933,
+        "mode": 420,
+        "sha256": "4a5047485c5b8fb6d7ad393ce3512367645b9a8307555c68ac16c8074c13c6f9"
+      },
+      "<reference-root>/src/biogenesis/Cleaner.java": {
+        "bytes": 2061,
+        "mode": 420,
+        "sha256": "2826a5872c2e999acee8d85331dddde953b8f83f8ebf9525e39014e2b1489046"
+      },
+      "<reference-root>/src/biogenesis/ColorComboBox.java": {
+        "bytes": 8287,
+        "mode": 420,
+        "sha256": "164f6c698b20917e9e8875e35dbc473823ee648959c1224dfaad9fde18d7f6f6"
+      },
+      "<reference-root>/src/biogenesis/Connection.java": {
+        "bytes": 7696,
+        "mode": 420,
+        "sha256": "40172836544af9e9e9284304b16c98cd5a793c2f929fa51e4e7ad04417b27026"
+      },
+      "<reference-root>/src/biogenesis/Corridor.java": {
+        "bytes": 1433,
+        "mode": 420,
+        "sha256": "92b4661949c85fce60c07f71902bbac12bcc099dd04db6f33e77831916a80026"
+      },
+      "<reference-root>/src/biogenesis/ExLine2DDouble.java": {
+        "bytes": 1785,
+        "mode": 420,
+        "sha256": "4288df36ce666591650b8f66b54a837046983101c7a42c569c0d438bc6d48460"
+      },
+      "<reference-root>/src/biogenesis/Gene.java": {
+        "bytes": 22574,
+        "mode": 420,
+        "sha256": "d070db688526a401c8b55904c06066b2169ca82c76837e3001b4c423bc80e720"
+      },
+      "<reference-root>/src/biogenesis/GeneticCode.java": {
+        "bytes": 42767,
+        "mode": 420,
+        "sha256": "f8bf3d0315cec8a2bf515a1626391fe5b646e47566234d398ef58bbdbc3a9004"
+      },
+      "<reference-root>/src/biogenesis/GeneticCodePanel.java": {
+        "bytes": 2465,
+        "mode": 420,
+        "sha256": "c9093cebc5e93eceffef37602b47713fcead5f64afe143454ff0b511dd87bc9d"
+      },
+      "<reference-root>/src/biogenesis/InCorridor.java": {
+        "bytes": 1907,
+        "mode": 420,
+        "sha256": "379c7ec391443f386592f4a0718b64666e18dde383fcf7706d130b283a5c3c36"
+      },
+      "<reference-root>/src/biogenesis/InfoToolbar.java": {
+        "bytes": 11933,
+        "mode": 420,
+        "sha256": "54721300eac5cb1381824ae4274adccb5f57c1d974d5c1a63733da48bb2d3f3a"
+      },
+      "<reference-root>/src/biogenesis/LabWindow.java": {
+        "bytes": 72569,
+        "mode": 420,
+        "sha256": "f3ec43c79bcbd6586d4e521cf8e73c60f09a1e588317cc7a5bd4196d428b09fe"
+      },
+      "<reference-root>/src/biogenesis/MainApplet.java": {
+        "bytes": 2189,
+        "mode": 420,
+        "sha256": "eae65662de530b7382f7caad7714031d6af486b8fc9283e8fc089f1946324292"
+      },
+      "<reference-root>/src/biogenesis/MainWindow.java": {
+        "bytes": 42381,
+        "mode": 420,
+        "sha256": "598a9d2cca12b716a2222b98e2f5a6e96215f8a40f42d9d8c25ce4b55a0a2a6e"
+      },
+      "<reference-root>/src/biogenesis/Messages.java": {
+        "bytes": 7388,
+        "mode": 420,
+        "sha256": "da85d12e001150ca8ac6e190b887b0d234b34b37135a299b0d12e5f683f036b8"
+      },
+      "<reference-root>/src/biogenesis/NetConfigWindow.java": {
+        "bytes": 6870,
+        "mode": 420,
+        "sha256": "55b4656a754edd8f0f6f52d8d1c1100f446434d3c8d110bc23891e8b421fe845"
+      },
+      "<reference-root>/src/biogenesis/NetConnectionsWindow.java": {
+        "bytes": 5358,
+        "mode": 420,
+        "sha256": "209a64d3a5d2a988c35bb2d67fdddc550db81fd1ec1b3bcf0eaf9d1a19074104"
+      },
+      "<reference-root>/src/biogenesis/NetSend.java": {
+        "bytes": 6041,
+        "mode": 420,
+        "sha256": "4a0244fbeb3ab5e820f7f80e4049a22609ce80315bcc3c6e8af0a378b01139cc"
+      },
+      "<reference-root>/src/biogenesis/NetServerThread.java": {
+        "bytes": 10894,
+        "mode": 420,
+        "sha256": "d60f004619170ee29a0ba0d041c41b80ca0102546681bae3619d14450db6b33d"
+      },
+      "<reference-root>/src/biogenesis/Organism.java": {
+        "bytes": 742392,
+        "mode": 420,
+        "sha256": "8650cb0983069dbae09e2ca704059fb82761fa6e0d87f35218c2342ffc60df46"
+      },
+      "<reference-root>/src/biogenesis/OutCorridor.java": {
+        "bytes": 2329,
+        "mode": 420,
+        "sha256": "6eb25835ef3cb70038793901b91268faaf57d348603efca60f1de9c2a7ef6f17"
+      },
+      "<reference-root>/src/biogenesis/ParamDialog.java": {
+        "bytes": 77590,
+        "mode": 420,
+        "sha256": "097f4d6c2b513912318cbfd298650423d40fec7c8b06acbe6571a1303c38cd5e"
+      },
+      "<reference-root>/src/biogenesis/StatisticsWindow.java": {
+        "bytes": 22589,
+        "mode": 420,
+        "sha256": "5574e4b0e1bb614b30277a54766fb72cbd03c2cb1603c267381a023fb079d8f6"
+      },
+      "<reference-root>/src/biogenesis/StdAction.java": {
+        "bytes": 1777,
+        "mode": 420,
+        "sha256": "478efb002458b5d6f3d9957bb640d60c6515c8ab1f89d95a6a9aff273c330fd2"
+      },
+      "<reference-root>/src/biogenesis/Utils.java": {
+        "bytes": 84196,
+        "mode": 420,
+        "sha256": "7b3306148684ba111629690a928dcb45abd4825104cfb90b530cd2d0dc6dd2b3"
+      },
+      "<reference-root>/src/biogenesis/Vector2D.java": {
+        "bytes": 1544,
+        "mode": 420,
+        "sha256": "fa2686940b662cc3db018b5cd24972e6f190a8f15da4500aaf7ce97085224d12"
+      },
+      "<reference-root>/src/biogenesis/VisibleWorld.java": {
+        "bytes": 24796,
+        "mode": 420,
+        "sha256": "b14b41135de13d935f24e42b2f82a72457a015831d1b62f30a26bd5be7faedc5"
+      },
+      "<reference-root>/src/biogenesis/World.java": {
+        "bytes": 24018,
+        "mode": 420,
+        "sha256": "a67543055a665a9a378e37c860671996e2ca0f510cb622375172a24333d7cae1"
+      },
+      "<reference-root>/src/biogenesis/WorldStatistics.java": {
+        "bytes": 12087,
+        "mode": 420,
+        "sha256": "407bcd4bec5e947f26ccfb02a1a590bec6eb9f22f675ad88d9bb974f686ebe15"
+      },
+      "<reference-root>/src/biogenesis/images/bullet.jpg": {
+        "bytes": 2555,
+        "mode": 420,
+        "sha256": "d4fd46c79d8fac97d8a41ccf9806add5ddbf9fe6269449c383b0bcef5b7cd164"
+      },
+      "<reference-root>/src/biogenesis/images/menu_backup.png": {
+        "bytes": 3358,
+        "mode": 420,
+        "sha256": "be809d0b5b84d6f9041f88edca5f8c5d86549d93faaba986a21018c7eb73c8ba"
+      },
+      "<reference-root>/src/biogenesis/images/menu_copy.png": {
+        "bytes": 15648,
+        "mode": 420,
+        "sha256": "0a9774135a92e87eff7b99a738b790e703aea153c99b627167f646d84af87923"
+      },
+      "<reference-root>/src/biogenesis/images/menu_decrease_co2.png": {
+        "bytes": 8565,
+        "mode": 420,
+        "sha256": "23ee1d0423cd5c4bedd52c3c41bff5ed26714e0f6d286cbdb854023e7f558202"
+      },
+      "<reference-root>/src/biogenesis/images/menu_disperse.png": {
+        "bytes": 8759,
+        "mode": 420,
+        "sha256": "ce16874e926d4ae806d4a5722750258f408a1f773a63dce718d0b4d95ed20f7c"
+      },
+      "<reference-root>/src/biogenesis/images/menu_feed.png": {
+        "bytes": 8888,
+        "mode": 420,
+        "sha256": "2b5b734ee69b533230d785010df4b59f83624315fe280ecef32da20d0548ee2b"
+      },
+      "<reference-root>/src/biogenesis/images/menu_increase_co2.png": {
+        "bytes": 8768,
+        "mode": 420,
+        "sha256": "20cd462b4e3edfcf07c0a0fa0a47216fdc62db9617f306d383a604a7187fa0b5"
+      },
+      "<reference-root>/src/biogenesis/images/menu_kill.png": {
+        "bytes": 16853,
+        "mode": 420,
+        "sha256": "f0d98a75751f0efebc31d494a87d77e6d87906bfe02c8e6e070484dbd95aa7fd"
+      },
+      "<reference-root>/src/biogenesis/images/menu_manage_connections.png": {
+        "bytes": 8970,
+        "mode": 420,
+        "sha256": "6819ee209553c0aa0c8d979e7cf24429ffff51745ee0fc95744ffb38f5386cdd"
+      },
+      "<reference-root>/src/biogenesis/images/menu_new.png": {
+        "bytes": 12927,
+        "mode": 420,
+        "sha256": "77829b150bd1984d3dd0c1e8b8b9b6401b20ced806305bc5e9d6190f1076ad72"
+      },
+      "<reference-root>/src/biogenesis/images/menu_revive.png": {
+        "bytes": 5479,
+        "mode": 420,
+        "sha256": "554194ee52be42f418fc7d185a391463dd1578fff80518578444cd3e1ff7f549"
+      },
+      "<reference-root>/src/biogenesis/images/menu_save.png": {
+        "bytes": 9637,
+        "mode": 420,
+        "sha256": "b72d1d655c0dbb647ed45b52e9f9a04bb56f74e41472ee5bc96797d4e69e2a9c"
+      },
+      "<reference-root>/src/biogenesis/images/menu_save_image.png": {
+        "bytes": 9596,
+        "mode": 420,
+        "sha256": "562dc85f67419a99b04b55b41cfe49e8f4dcfd98e9810fb642b0f805b3f142e1"
+      },
+      "<reference-root>/src/biogenesis/images/menu_start.png": {
+        "bytes": 13849,
+        "mode": 420,
+        "sha256": "69596df1b0d3fdf9e94b7e80e97931a24259c8ab9b9a22c4e5f8cfeec979f1bb"
+      },
+      "<reference-root>/src/biogenesis/images/menu_stop.png": {
+        "bytes": 13037,
+        "mode": 420,
+        "sha256": "fe4deb8e3c5598f7e9b4dbba85ff63665c2dfe71ece388cde6933fc3d67d62cc"
+      },
+      "<reference-root>/src/biogenesis/images/menu_stop_tracking.png": {
+        "bytes": 11089,
+        "mode": 420,
+        "sha256": "6b3f80b7aae093593ad509a32c6713346139c8be45e1bacd79ed8653a24e0ee1"
+      },
+      "<reference-root>/src/biogenesis/images/menu_track.png": {
+        "bytes": 10818,
+        "mode": 420,
+        "sha256": "c10eb48fe7cc95fbbb2695a87e4acff35a28ae806c15de4c8818e8c90ab2062f"
+      },
+      "<reference-root>/src/biogenesis/images/menu_weaken.png": {
+        "bytes": 8558,
+        "mode": 420,
+        "sha256": "2ab970cab06f21e94cbdaf4510b068025241473f40851877074b09c55e16598f"
+      },
+      "<reference-root>/src/biogenesis/messages/messages.properties": {
+        "bytes": 12772,
+        "mode": 420,
+        "sha256": "8a4a24ed0da9d508370a3b03e5e7160ddfa2d112acba329443fa10a04bf55acd"
+      },
+      "<reference-root>/src/biogenesis/messages/messages_ca.properties": {
+        "bytes": 13180,
+        "mode": 420,
+        "sha256": "e5bfbdac1d3670c2f9e5a4fb181e57a08db2aa5937dc029d9380af5e95940dcf"
+      },
+      "<reference-root>/src/biogenesis/messages/messages_de.properties": {
+        "bytes": 13528,
+        "mode": 420,
+        "sha256": "91d7c0ca2056203ac1c9177589a260ac1a883e35d02683fe92d6846fddb340f8"
+      },
+      "<reference-root>/src/biogenesis/messages/messages_en.properties": {
+        "bytes": 12799,
+        "mode": 420,
+        "sha256": "885b873a998f96ec3fd29002fea8f58f2fb0f9a65b779680bccba152778fb605"
+      },
+      "<reference-root>/src/biogenesis/messages/messages_es.properties": {
+        "bytes": 13373,
+        "mode": 420,
+        "sha256": "fe8192100d2b5599a2685326c8ee7be06a3e595d836614eb19aa3f42b917202b"
+      },
+      "<reference-root>/src/biogenesis/messages/messages_pt.properties": {
+        "bytes": 13630,
+        "mode": 420,
+        "sha256": "3e8d4869f5919b247a9b2e1dee03f0ab76958a51ccd6132e3fd9a10ea410dcda"
+      },
+      "<reference-root>/src/biogenesis/messages/messages_ru.properties": {
+        "bytes": 38236,
+        "mode": 420,
+        "sha256": "d93ddcefd7eca43b223c01d859c9ee219b1b3d9872633fd8c2d98f272fab87f2"
+      },
+      "<reference-root>/src/build.xml": {
+        "bytes": 1727,
+        "mode": 420,
+        "sha256": "8e59fe665930750b8d1c37c7c6ba9c48652957056d248098f6823d6797f76a46"
+      },
+      "<reference-root>/src/changelog vanilla": {
+        "bytes": 7253,
+        "mode": 420,
+        "sha256": "db1f8f9992173f88e08c7b9570f2a7f6b02ea0fdbf60df37ce3eca960d80a024"
+      },
+      "<reference-root>/src/copyright": {
+        "bytes": 762,
+        "mode": 420,
+        "sha256": "732194aff9b451a49ac3b685d985b9564bbccc919f8e5ff73ce6e90d97b37d5d"
+      },
+      "<reference-root>/src/gpl.txt": {
+        "bytes": 17991,
+        "mode": 420,
+        "sha256": "1f3b11628a7eab2c77b2ff4456b5af57ff9659a71344533ffdef59a3efd0b250"
+      },
+      "<reference-root>/src/launch_biogenesis": {
+        "bytes": 114,
+        "mode": 420,
+        "sha256": "8714583550e5bc36f0b9875c2b1bffa54f24b750bd9670013393a85b203fd7f3"
+      },
+      "<reference-root>/src/uninstall.mf": {
+        "bytes": 54,
+        "mode": 420,
+        "sha256": "84c44dff84bbb834dc9ffb1d995763bf5a388bb7c48c3d83fc1aa044e80c0eb2"
+      }
+    },
+    "scalar_schemas": "Existing workload_trajectory.provenance.json",
+    "statistics_rollover": "Colormod/src/biogenesis/WorldStatistics.java400-401"
+  },
+  "source_triplicate": {
+    "bootstrap": {
+      "jar": {
+        "endpoint512_bytes": 2918512,
+        "endpoint512_sha256": "066c660ffd335cac7bdccfe8d05d9f14f907b6aa1ffae69f5e6ca8e35e7d35ba",
+        "endpoint80_bytes": 1528570,
+        "endpoint80_sha256": "ee9e144c5ad61e81ee9b8e43eea2e6484f80cbe6607ec36ed561549f845e597f",
+        "final_frame": 0,
+        "final_time": 2,
+        "info_toolbar": "biogenesis.InfoToolbar",
+        "main_window": "biogenesis.MainWindow",
+        "owned_display": ":410",
+        "paused": true,
+        "seed_cache_extraction": "actualRandom.readFields-on-clone; no module overrides",
+        "snapshots": 513,
+        "ticks": 512,
+        "timer_cancelled": true,
+        "witness_scalar_random_pure": true
+      },
+      "source-a": {
+        "endpoint512_bytes": 2918512,
+        "endpoint512_sha256": "066c660ffd335cac7bdccfe8d05d9f14f907b6aa1ffae69f5e6ca8e35e7d35ba",
+        "endpoint80_bytes": 1528570,
+        "endpoint80_sha256": "ee9e144c5ad61e81ee9b8e43eea2e6484f80cbe6607ec36ed561549f845e597f",
+        "final_frame": 0,
+        "final_time": 2,
+        "info_toolbar": "biogenesis.InfoToolbar",
+        "main_window": "biogenesis.MainWindow",
+        "owned_display": ":410",
+        "paused": true,
+        "seed_cache_extraction": "actualRandom.readFields-on-clone; no module overrides",
+        "snapshots": 513,
+        "ticks": 512,
+        "timer_cancelled": true,
+        "witness_scalar_random_pure": true
+      },
+      "source-b": {
+        "endpoint512_bytes": 2918512,
+        "endpoint512_sha256": "066c660ffd335cac7bdccfe8d05d9f14f907b6aa1ffae69f5e6ca8e35e7d35ba",
+        "endpoint80_bytes": 1528570,
+        "endpoint80_sha256": "ee9e144c5ad61e81ee9b8e43eea2e6484f80cbe6607ec36ed561549f845e597f",
+        "final_frame": 0,
+        "final_time": 2,
+        "info_toolbar": "biogenesis.InfoToolbar",
+        "main_window": "biogenesis.MainWindow",
+        "owned_display": ":410",
+        "paused": true,
+        "seed_cache_extraction": "actualRandom.readFields-on-clone; no module overrides",
+        "snapshots": 513,
+        "ticks": 512,
+        "timer_cancelled": true,
+        "witness_scalar_random_pure": true
+      }
+    },
+    "endpoint512_sha256": "066c660ffd335cac7bdccfe8d05d9f14f907b6aa1ffae69f5e6ca8e35e7d35ba",
+    "endpoint80_sha256": "ee9e144c5ad61e81ee9b8e43eea2e6484f80cbe6607ec36ed561549f845e597f",
+    "endpoint_hashes": "Source-only custody witnesses; no observed graph/scalar/RNG initializes Rust",
+    "old512_prefix_exact": true,
+    "outputs": {
+      "jar": {
+        "bytes": 952239,
+        "receipt": 4,
+        "sha256": "b90255c9a2ff9ad25736b7f34d6b168042de6ea9243b477bca62414e9e7dd84c"
+      },
+      "source-a": {
+        "bytes": 952239,
+        "receipt": 2,
+        "sha256": "b90255c9a2ff9ad25736b7f34d6b168042de6ea9243b477bca62414e9e7dd84c"
+      },
+      "source-b": {
+        "bytes": 952239,
+        "receipt": 3,
+        "sha256": "b90255c9a2ff9ad25736b7f34d6b168042de6ea9243b477bca62414e9e7dd84c"
+      }
+    },
+    "prefix_includes": "P/U and K/V/S/W/R/Q snapshots0..80; original X omissions unchanged",
+    "source_source_JAR_TSV_bytes_identical": true
+  },
+  "status": "SOURCE_EXPECTATIONS_FROZEN_BEFORE_RUST_COMPARISON"
+}

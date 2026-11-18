@@ -1,0 +1,62 @@
+{
+  "en": {
+    "R_VERSION_START_ERROR": "The version request could not start (engine status %d): %s",
+    "R_VERSION_TRANSPORT_ERROR": "The version request failed (transport status %d).",
+    "R_VERSION_TIMEOUT": "The version request timed out after %d seconds.",
+    "R_VERSION_BODY_LIMIT": "The version response exceeds %d bytes.",
+    "R_VERSION_REDIRECT_LIMIT": "The version request exceeded %d redirects.",
+    "R_VERSION_HTTP_ERROR": "The version server returned HTTP %d.",
+    "R_VERSION_EMPTY": "The version server returned an empty response.",
+    "R_VERSION_UTF8": "The version server returned malformed UTF-8 text."
+  },
+  "es": {
+    "R_VERSION_START_ERROR": "No se pudo iniciar la consulta de versión (código del motor %d): %s",
+    "R_VERSION_TRANSPORT_ERROR": "La consulta de versión falló (código de transporte %d).",
+    "R_VERSION_TIMEOUT": "La consulta de versión agotó el tiempo de espera de %d segundos.",
+    "R_VERSION_BODY_LIMIT": "La respuesta de versión supera %d bytes.",
+    "R_VERSION_REDIRECT_LIMIT": "La consulta de versión superó el límite de %d redirecciones.",
+    "R_VERSION_HTTP_ERROR": "El servidor de versiones devolvió HTTP %d.",
+    "R_VERSION_EMPTY": "El servidor de versiones devolvió una respuesta vacía.",
+    "R_VERSION_UTF8": "El servidor de versiones devolvió texto UTF-8 incorrecto."
+  },
+  "ca": {
+    "R_VERSION_START_ERROR": "La petició de versió no s'ha pogut iniciar (codi del motor %d): %s",
+    "R_VERSION_TRANSPORT_ERROR": "La petició de versió ha fallat (codi de transport %d).",
+    "R_VERSION_TIMEOUT": "La petició de versió ha superat el límit de %d segons.",
+    "R_VERSION_BODY_LIMIT": "La resposta de versió supera %d bytes.",
+    "R_VERSION_REDIRECT_LIMIT": "La petició de versió ha superat el límit de %d redireccions.",
+    "R_VERSION_HTTP_ERROR": "El servidor de versions ha retornat HTTP %d.",
+    "R_VERSION_EMPTY": "El servidor de versions ha retornat una resposta buida.",
+    "R_VERSION_UTF8": "El servidor de versions ha retornat text UTF-8 mal format."
+  },
+  "de": {
+    "R_VERSION_START_ERROR": "Die Versionsanfrage konnte nicht gestartet werden (Engine-Status %d): %s",
+    "R_VERSION_TRANSPORT_ERROR": "Die Versionsanfrage ist fehlgeschlagen (Transportstatus %d).",
+    "R_VERSION_TIMEOUT": "Die Versionsanfrage hat das Zeitlimit von %d Sekunden überschritten.",
+    "R_VERSION_BODY_LIMIT": "Die Versionsantwort überschreitet %d Bytes.",
+    "R_VERSION_REDIRECT_LIMIT": "Die Versionsanfrage hat mehr als %d Weiterleitungen ausgelöst.",
+    "R_VERSION_HTTP_ERROR": "Der Versionsserver hat HTTP %d zurückgegeben.",
+    "R_VERSION_EMPTY": "Der Versionsserver hat eine leere Antwort zurückgegeben.",
+    "R_VERSION_UTF8": "Der Versionsserver hat ungültigen UTF-8-Text zurückgegeben."
+  },
+  "pt": {
+    "R_VERSION_START_ERROR": "Não foi possível iniciar a consulta de versão (código do motor %d): %s",
+    "R_VERSION_TRANSPORT_ERROR": "A consulta de versão falhou (código de transporte %d).",
+    "R_VERSION_TIMEOUT": "A consulta de versão excedeu o limite de %d segundos.",
+    "R_VERSION_BODY_LIMIT": "A resposta de versão excede %d bytes.",
+    "R_VERSION_REDIRECT_LIMIT": "A consulta de versão excedeu o limite de %d redirecionamentos.",
+    "R_VERSION_HTTP_ERROR": "O servidor de versões devolveu HTTP %d.",
+    "R_VERSION_EMPTY": "O servidor de versões devolveu uma resposta vazia.",
+    "R_VERSION_UTF8": "O servidor de versões devolveu texto UTF-8 inválido."
+  },
+  "ru": {
+    "R_VERSION_START_ERROR": "Не удалось запустить запрос версии (код движка %d): %s",
+    "R_VERSION_TRANSPORT_ERROR": "Запрос версии завершился ошибкой (код транспорта %d).",
+    "R_VERSION_TIMEOUT": "Запрос версии превысил время ожидания %d секунд.",
+    "R_VERSION_BODY_LIMIT": "Ответ о версии превышает %d байт.",
+    "R_VERSION_REDIRECT_LIMIT": "Запрос версии превысил предел в %d перенаправления.",
+    "R_VERSION_HTTP_ERROR": "Сервер версий вернул HTTP %d.",
+    "R_VERSION_EMPTY": "Сервер версий вернул пустой ответ.",
+    "R_VERSION_UTF8": "Сервер версий вернул некорректный текст UTF-8."
+  }
+}

@@ -1,0 +1,310 @@
+{
+  "authority": "Original BioXMLParser.parseGeneticCode observations; no Rust-derived expected values",
+  "cases": [
+    {
+      "id": 0,
+      "name": "seed-0000",
+      "file": "seed-0000.bgg",
+      "sha256": "1d2957133d3670022f65602ca986e44edd1fa46163ac8a7f0fb49371fe797f42",
+      "bytes": 4794,
+      "Original_outcome": "success",
+      "frozen_original_name": "seed-0000",
+      "literal_input_changed": false
+    },
+    {
+      "id": 1,
+      "name": "internal-entity-attribute",
+      "file": "internal-entity-attribute.bgg",
+      "sha256": "685b38ec10adaf40c7535a428fd72e47fc95f715ac5d5ac2cf018ca5f3d3953f",
+      "bytes": 4822,
+      "Original_outcome": "success",
+      "frozen_original_name": "internal-entity-attribute",
+      "literal_input_changed": false
+    },
+    {
+      "id": 2,
+      "name": "root-custom-named-lt",
+      "file": "root-custom-named-lt.bgg",
+      "sha256": "41f90c9b41c2642cccd484946ab94a1a875eae69b615edd92eea082d847ccc64",
+      "bytes": 4836,
+      "Original_outcome": "success",
+      "frozen_original_name": "root-custom-named-lt",
+      "literal_input_changed": false
+    },
+    {
+      "id": 3,
+      "name": "root-entity-literal-lt",
+      "file": "root-entity-literal-lt.bgg",
+      "sha256": "5bbf635ff61ea6053b449947452047cf394d8c29160d3f3557c9da75469a095b",
+      "bytes": 4842,
+      "Original_outcome": "error",
+      "frozen_original_name": "root-entity-literal-lt",
+      "literal_input_changed": false
+    },
+    {
+      "id": 4,
+      "name": "gene-entity-numeric-lt",
+      "file": "gene-entity-numeric-lt.bgg",
+      "sha256": "6fe7d8c948abab2d58acc91aba4e70d02667e3508070593c386d4ba1127d3ceb",
+      "bytes": 4830,
+      "Original_outcome": "error",
+      "frozen_original_name": "gene-entity-numeric-lt",
+      "literal_input_changed": false
+    },
+    {
+      "id": 5,
+      "name": "aux-ordered-pair-p0",
+      "file": "aux-ordered-pair-p0.bgg",
+      "sha256": "c3d51ff65c7ff4228a8322bac177bcc07e74d6af3969aaa8185a77e53c20c82e",
+      "bytes": 6710,
+      "Original_outcome": "success",
+      "frozen_original_name": "aux-ordered-pair-p0",
+      "literal_input_changed": false
+    },
+    {
+      "id": 6,
+      "name": "single-empty-gene",
+      "file": "single-empty-gene.bgg",
+      "sha256": "3a01fa8f9a314c32d4b68412d32dfc36cca5e16ca029e5b21b6071f11caefd88",
+      "bytes": 4816,
+      "Original_outcome": "success",
+      "frozen_original_name": "single-empty-Gene",
+      "literal_input_changed": false
+    },
+    {
+      "id": 7,
+      "name": "paired-gene",
+      "file": "paired-gene.bgg",
+      "sha256": "72c39317ac68bb7a00396eb3bb061c516cb71593315fa74aa06c2e3f2afb405e",
+      "bytes": 4821,
+      "Original_outcome": "success",
+      "frozen_original_name": "paired-Gene",
+      "literal_input_changed": false
+    },
+    {
+      "id": 8,
+      "name": "ordered-pair",
+      "file": "ordered-pair.bgg",
+      "sha256": "3ea62e6b5a866736f59b8cf50c13230a5a0f87b3eb11308b4fec096ea7f05489",
+      "bytes": 5570,
+      "Original_outcome": "success",
+      "frozen_original_name": "ordered-pair",
+      "literal_input_changed": false
+    },
+    {
+      "id": 9,
+      "name": "literal-entity-interleave",
+      "file": "literal-entity-interleave.bgg",
+      "sha256": "afca33746b2a2a34d25091c246229373e2521f6645424b9e1f25ff6925125e87",
+      "bytes": 6324,
+      "Original_outcome": "success",
+      "frozen_original_name": "literal-entity-interleave",
+      "literal_input_changed": false
+    },
+    {
+      "id": 10,
+      "name": "nested-wrapper",
+      "file": "nested-wrapper.bgg",
+      "sha256": "8a7762b650d8acbe004b3a8449ad30798627a21f65032b111a78b3c73ea5e677",
+      "bytes": 5600,
+      "Original_outcome": "success",
+      "frozen_original_name": "nested-wrapper",
+      "literal_input_changed": false
+    },
+    {
+      "id": 11,
+      "name": "numeric-markup-opener",
+      "file": "numeric-markup-opener.bgg",
+      "sha256": "ac649dc6473e68f37314ed52dcf141f0f4886d09297da243aa0946f4f4b96023",
+      "bytes": 4820,
+      "Original_outcome": "success",
+      "frozen_original_name": "numeric-markup-opener",
+      "literal_input_changed": false
+    },
+    {
+      "id": 12,
+      "name": "escaped-angle-text",
+      "file": "escaped-angle-text.bgg",
+      "sha256": "d5c37bd1ef790437284d48c4e297fc0da30a38fe3a3e5ef0f34ddcc2a1d1baf5",
+      "bytes": 5584,
+      "Original_outcome": "success",
+      "frozen_original_name": "escaped-angle-text",
+      "literal_input_changed": false
+    },
+    {
+      "id": 13,
+      "name": "comment-and-pi",
+      "file": "comment-and-pi.bgg",
+      "sha256": "231ef68dbd19e7d3f7b96f33f3d2f22a5970821ac3a26970e3b63bd28380f2ac",
+      "bytes": 5598,
+      "Original_outcome": "success",
+      "frozen_original_name": "comment-and-PI",
+      "literal_input_changed": false
+    },
+    {
+      "id": 14,
+      "name": "cdata-body",
+      "file": "cdata-body.bgg",
+      "sha256": "c926647819fd396daca5a60cfec9dbf120e0eaab79776ed0826adee117b0f7a2",
+      "bytes": 4883,
+      "Original_outcome": "success",
+      "frozen_original_name": "CDATA-body",
+      "literal_input_changed": false
+    },
+    {
+      "id": 15,
+      "name": "ignored-aux-pair",
+      "file": "ignored-aux-pair.bgg",
+      "sha256": "d5cc1fb210b284f8f9469e3b4bf42457054bbb5e3956a230edae12bb9546ad8a",
+      "bytes": 6742,
+      "Original_outcome": "success",
+      "frozen_original_name": "ignored-aux-pair",
+      "literal_input_changed": false
+    },
+    {
+      "id": 16,
+      "name": "forward-idref",
+      "file": "forward-idref.bgg",
+      "sha256": "47e40fc9ce6d5b7e4ec56fd3c39f647258e9f0e379816d47bc389a0aa9f4e316",
+      "bytes": 5703,
+      "Original_outcome": "success",
+      "frozen_original_name": "forward-IDREF",
+      "literal_input_changed": false
+    },
+    {
+      "id": 17,
+      "name": "unresolved-idref",
+      "file": "unresolved-idref.bgg",
+      "sha256": "ec8bd3bb35f4cf1ab6156e8e2eeac26007bec8ed17ae216a1d3c5643ebc762e7",
+      "bytes": 5691,
+      "Original_outcome": "error",
+      "frozen_original_name": "unresolved-IDREF",
+      "literal_input_changed": false
+    },
+    {
+      "id": 18,
+      "name": "duplicate-id",
+      "file": "duplicate-id.bgg",
+      "sha256": "413a3fd8d9c31a317c6a1923d3b9558c64550405b7595fa2e3da495e507d59e9",
+      "bytes": 5698,
+      "Original_outcome": "error",
+      "frozen_original_name": "duplicate-ID",
+      "literal_input_changed": false
+    },
+    {
+      "id": 19,
+      "name": "open-in-entity-close-literal",
+      "file": "open-in-entity-close-literal.bgg",
+      "sha256": "62345dd35d0469c82fd943fb82f8ed835e70250ded3f7f6640f495d2980ae89b",
+      "bytes": 4823,
+      "Original_outcome": "error",
+      "frozen_original_name": "open-in-entity-close-literal",
+      "literal_input_changed": false
+    },
+    {
+      "id": 20,
+      "name": "open-literal-close-in-entity",
+      "file": "open-literal-close-in-entity.bgg",
+      "sha256": "d6519527b522a922361f501842623c5a55bb7bfe3ea0953ccde2e88d397ba829",
+      "bytes": 4825,
+      "Original_outcome": "error",
+      "frozen_original_name": "open-literal-close-in-entity",
+      "literal_input_changed": false
+    },
+    {
+      "id": 21,
+      "name": "unused-malformed-replacement",
+      "file": "unused-malformed-replacement.bgg",
+      "sha256": "8303f7def329fe567d08af0713f388fb5699d9962f8ff1833698c2e62a40fe9d",
+      "bytes": 4824,
+      "Original_outcome": "success",
+      "frozen_original_name": "unused-malformed-replacement",
+      "literal_input_changed": false
+    },
+    {
+      "id": 22,
+      "name": "wrong-ordered-child",
+      "file": "wrong-ordered-child.bgg",
+      "sha256": "0d6e75fe4818174ebbd6c7d97cc08a69cca2cb8908aff3beaed29a3c9ef083e4",
+      "bytes": 6742,
+      "Original_outcome": "error",
+      "frozen_original_name": "wrong-ordered-child",
+      "literal_input_changed": false
+    },
+    {
+      "id": 23,
+      "name": "markup-through-attribute",
+      "file": "markup-through-attribute.bgg",
+      "sha256": "c815b18ec4a0528975f7705c3dffddd5471088a56f7482147242b76b06200a76",
+      "bytes": 4903,
+      "Original_outcome": "error",
+      "frozen_original_name": "markup-through-attribute",
+      "literal_input_changed": false
+    },
+    {
+      "id": 24,
+      "name": "nested-external-consumption",
+      "file": "nested-external-consumption.bgg",
+      "sha256": "b88e6348ee1b415fb95839bee7fbdf4fed18b3b1dbb0bebfea207d203288f973",
+      "bytes": 4903,
+      "Original_outcome": "error",
+      "frozen_original_name": "nested-external-consumption",
+      "literal_input_changed": false
+    },
+    {
+      "id": 25,
+      "name": "root-numeric-only",
+      "file": "root-numeric-only.bgg",
+      "sha256": "3ea078c21370cda5cbcebb3edf098df6984d6c9341908999f4e611d735a018ac",
+      "bytes": 4808,
+      "Original_outcome": "error",
+      "frozen_original_name": "root-numeric-only",
+      "literal_input_changed": false
+    },
+    {
+      "id": 26,
+      "name": "late-entity-syntax-only",
+      "file": "late-entity-syntax-only.bgg",
+      "sha256": "c98258b6a9ac1cfdcb0d49accee71040fb5d52e5642baece460da66043f3bc7e",
+      "bytes": 4839,
+      "Original_outcome": "error",
+      "frozen_original_name": "late-entity-syntax-only",
+      "literal_input_changed": false
+    },
+    {
+      "id": 27,
+      "name": "numeric-and-late-entity-syntax",
+      "file": "numeric-and-late-entity-syntax.bgg",
+      "sha256": "88b737e16314ad187e36ca89c3e525a6e2749b89aea7d7fe92c83f7fb611bd3a",
+      "bytes": 4841,
+      "Original_outcome": "error",
+      "frozen_original_name": "numeric-and-late-entity-syntax",
+      "literal_input_changed": false
+    }
+  ],
+  "Original_outcomes": {
+    "success": 16,
+    "error": 12
+  },
+  "row_counts": {
+    "C": 28,
+    "F": 28,
+    "U": 4116,
+    "R": 56,
+    "O": 28,
+    "G": 448,
+    "N": 960,
+    "A": 16,
+    "D": 28,
+    "V": 343,
+    "E": 28,
+    "X": 12
+  },
+  "observations_sha256": "461f86820db454635d12f6605e9fa0bbd789aa37183987eef352f0ed7a8a653d",
+  "frozen_original_inputs_helper_manifest_sha256": "0559585bb45f953e10535b919099128abc25b7df5257b786c22d1ecca683e2c3",
+  "runtime_lowercase_metadata_mapping_sha256": "0f7594fb474bd2aa4661faa4aeebd4f098365fffa20e93ea097d99ed1931d729",
+  "Original_actual_review_sha256": "51197d9839bfd99a6ef7e8b8716f389116ca34b48b2895e2e1aa6e6f3d70edde",
+  "Root_actual_readback_sha256": "2acfbf46d16d71b3aed1e4a2bddf6dfed4db3eb8d774c6ae2c235d4d54228a67",
+  "copied_RNG_scope": "Original copied RNG only; no Rust RNG parity claim",
+  "writer_execution": false
+}

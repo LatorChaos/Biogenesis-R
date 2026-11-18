@@ -1,0 +1,192 @@
+{
+  "DOM_Q_scope": "Preserve Source encoding/version context; the Rust observed boundary does not expose Q metadata",
+  "RED_scope": "Aggregate all ten admission/completion observations before the final mismatch assertion",
+  "Rust_error_classification_policy": {
+    "Rust_policy": "Permit existing XmlError::Encoding or XmlError::Malformed categories; Source SAXException does not select a Rust variant",
+    "Source_fact": "All four failures are SAXException without a completed Document",
+    "product_error_classification_changes": false
+  },
+  "Rust_test_executed": false,
+  "Task16_complete": false,
+  "authored_source_expectations_preserved_null": true,
+  "canonical_adoption": false,
+  "cases": [
+    {
+      "DOM": false,
+      "Source_raw": "<project-root>/.workflow-local/xml11-declaration-handoff-a/capture-a/source-a/capture/raw-inputs/case-00000.bgg",
+      "authored_literal": "<project-root>/.workflow-local/xml11-declaration-handoff-a/source-preparation-a/frozen-inputs/control-error.bgg",
+      "bytes": 4842,
+      "fixture": "cases/case-00000.bgg",
+      "id": 0,
+      "name": "error",
+      "outcome": "error",
+      "sha256": "5bbf635ff61ea6053b449947452047cf394d8c29160d3f3557c9da75469a095b"
+    },
+    {
+      "DOM": true,
+      "Source_raw": "<project-root>/.workflow-local/xml11-declaration-handoff-a/capture-a/source-a/capture/raw-inputs/case-00001.bgg",
+      "authored_literal": "<project-root>/.workflow-local/xml11-declaration-handoff-a/source-preparation-a/frozen-inputs/control-latin1-utf8-nel-after-version.bgg",
+      "bytes": 4862,
+      "fixture": "cases/case-00001.bgg",
+      "id": 1,
+      "name": "latin1-utf8-nel-after-version",
+      "outcome": "success",
+      "sha256": "38f2a8ff983613d209981c19ebde3c01da8d31ab936dde1d715544dbc6eb8f94"
+    },
+    {
+      "DOM": false,
+      "Source_raw": "<project-root>/.workflow-local/xml11-declaration-handoff-a/capture-a/source-a/capture/raw-inputs/case-00002.bgg",
+      "authored_literal": "<project-root>/.workflow-local/xml11-declaration-handoff-a/source-preparation-a/frozen-inputs/control-latin1-raw85-after-version.bgg",
+      "bytes": 4861,
+      "fixture": "cases/case-00002.bgg",
+      "id": 2,
+      "name": "latin1-raw85-after-version",
+      "outcome": "error",
+      "sha256": "7bdca9b6ee3c040b03492560ed0f92ffed6ed1ce724d15445de6a5d63bfb3c26"
+    },
+    {
+      "DOM": true,
+      "Source_raw": "<project-root>/.workflow-local/xml11-declaration-handoff-a/capture-a/source-a/capture/raw-inputs/case-00003.bgg",
+      "authored_literal": "<project-root>/.workflow-local/xml11-declaration-handoff-a/source-preparation-a/frozen-inputs/control-latin1-utf8-nel-after-encoding.bgg",
+      "bytes": 4863,
+      "fixture": "cases/case-00003.bgg",
+      "id": 3,
+      "name": "latin1-utf8-nel-after-encoding",
+      "outcome": "success",
+      "sha256": "0b735387f94e9340a8408b4cd031be80c1ec09e555a9b28f23cd34885ed3a831"
+    },
+    {
+      "DOM": false,
+      "Source_raw": "<project-root>/.workflow-local/xml11-declaration-handoff-a/capture-a/source-a/capture/raw-inputs/case-00004.bgg",
+      "authored_literal": "<project-root>/.workflow-local/xml11-declaration-handoff-a/source-preparation-a/frozen-inputs/control-latin1-raw85-after-encoding.bgg",
+      "bytes": 4862,
+      "fixture": "cases/case-00004.bgg",
+      "id": 4,
+      "name": "latin1-raw85-after-encoding",
+      "outcome": "error",
+      "sha256": "720fc7017c77fca4c4f2c949773ff0cf68333bef6705f2520e546111798e91e4"
+    },
+    {
+      "DOM": true,
+      "Source_raw": "<project-root>/.workflow-local/xml11-declaration-handoff-a/capture-a/source-a/capture/raw-inputs/case-00005.bgg",
+      "authored_literal": "<project-root>/.workflow-local/xml11-declaration-handoff-a/source-preparation-a/frozen-inputs/control-ascii-utf8-nel-after-encoding.bgg",
+      "bytes": 4861,
+      "fixture": "cases/case-00005.bgg",
+      "id": 5,
+      "name": "ascii-utf8-nel-after-encoding",
+      "outcome": "success",
+      "sha256": "3bbf9e21661a3b85be88bc9322a36d32c4a5bd92f24d7189f1756f62db6d9e20"
+    },
+    {
+      "DOM": false,
+      "Source_raw": "<project-root>/.workflow-local/xml11-declaration-handoff-a/capture-a/source-a/capture/raw-inputs/case-00006.bgg",
+      "authored_literal": "<project-root>/.workflow-local/xml11-declaration-handoff-a/source-preparation-a/frozen-inputs/control-ascii-raw85-after-encoding.bgg",
+      "bytes": 4860,
+      "fixture": "cases/case-00006.bgg",
+      "id": 6,
+      "name": "ascii-raw85-after-encoding",
+      "outcome": "error",
+      "sha256": "1b80ee462d47fdeb450862bf5bf7830ec3dbeef2f9ead44db7242052e2e1d19b"
+    },
+    {
+      "DOM": true,
+      "Source_raw": "<project-root>/.workflow-local/xml11-declaration-handoff-a/capture-a/source-a/capture/raw-inputs/case-00007.bgg",
+      "authored_literal": "<project-root>/.workflow-local/xml11-declaration-handoff-a/source-preparation-a/frozen-inputs/control-latin1-utf8-ls-after-encoding.bgg",
+      "bytes": 4864,
+      "fixture": "cases/case-00007.bgg",
+      "id": 7,
+      "name": "latin1-utf8-ls-after-encoding",
+      "outcome": "success",
+      "sha256": "2ecd9816319bcad94d9a76653d8b97cf85b6a6de0cc71134059e3369778c67f3"
+    },
+    {
+      "DOM": true,
+      "Source_raw": "<project-root>/.workflow-local/xml11-declaration-handoff-a/capture-a/source-a/capture/raw-inputs/case-00008.bgg",
+      "authored_literal": "<project-root>/.workflow-local/xml11-declaration-handoff-a/source-preparation-a/frozen-inputs/control-ascii-utf8-ls-after-encoding.bgg",
+      "bytes": 4862,
+      "fixture": "cases/case-00008.bgg",
+      "id": 8,
+      "name": "ascii-utf8-ls-after-encoding",
+      "outcome": "success",
+      "sha256": "1ae73f7113b75ceb752d8cbd5cbe3fdc0e646627c6e4d83fa4f12c5f70cd2d30"
+    },
+    {
+      "DOM": true,
+      "Source_raw": "<project-root>/.workflow-local/xml11-declaration-handoff-a/capture-a/source-a/capture/raw-inputs/case-00009.bgg",
+      "authored_literal": "<project-root>/.workflow-local/xml11-declaration-handoff-a/source-preparation-a/frozen-inputs/control-success.bgg",
+      "bytes": 4794,
+      "fixture": "cases/case-00009.bgg",
+      "id": 9,
+      "name": "success",
+      "outcome": "success",
+      "sha256": "1d2957133d3670022f65602ca986e44edd1fa46163ac8a7f0fb49371fe797f42"
+    }
+  ],
+  "counts": {
+    "A_rows": 6,
+    "DOM": 6,
+    "G_rows": 168,
+    "N_rows": 240,
+    "R_rows": 20,
+    "T_rows": 6,
+    "U_rows": 1470,
+    "V_rows": 108,
+    "calls_per_route": 10,
+    "error": 4,
+    "routes": 3,
+    "success": 6
+  },
+  "ledger_sha256": "69e8de4793135a9c6d429bf22a728e99d052d35455e43ffa804a43cfdc8c79b2",
+  "parser_calls_added": 0,
+  "shared_model": {
+    "byte_equal_Source_success_blocks": 6,
+    "bytes": 1405,
+    "copied": false,
+    "path": "crates/core/tests/fixtures/xml_charset_catalog/model.tsv",
+    "sha256": "f479200f2cebdf07e0b99c7d975247f275dc70b9392e1d639bf2c8331066c1a3"
+  },
+  "shared_settings_rng": {
+    "byte_equal_Source_blocks": 10,
+    "bytes": 5120,
+    "copied": false,
+    "path": "crates/core/tests/fixtures/xml_charset_catalog/settings-rng.tsv",
+    "scope": "147 primitive settings and copied Java RNG purity; no Rust RNG measurement",
+    "sha256": "93c02ba06a983ac5d9f09c157c3231848808fc785e889e744446e3e7ac29c35e"
+  },
+  "sources": {
+    ".workflow-local/xml11-declaration-handoff-a/capture-a/root-readback.json": {
+      "bytes": 23544,
+      "sha256": "00d0c68da322adb869207909ef138cfa0eb3002f32611ec7f41b1378726d23b6"
+    },
+    ".workflow-local/xml11-declaration-handoff-a/capture-a/source-a/capture/observations.tsv": {
+      "bytes": 66178,
+      "sha256": "9cff897f5db4ca915f0650ea71bc8778bce043cffab53c37a9444c497a305bc6"
+    },
+    ".workflow-local/xml11-declaration-handoff-a/original-handoff-actual-independent.json": {
+      "bytes": 5571,
+      "sha256": "30af9d2a175ba04a3ad0d91af1679c417b258462dbfe07ae6c5da9609b92be69"
+    },
+    ".workflow-local/xml11-declaration-handoff-a/source-preparation-a/cases.json": {
+      "bytes": 7842,
+      "sha256": "a6d4c49571604fcf35fbe989d04516c49074b4bbf37659d2dd2a4d150083ef72"
+    },
+    ".workflow-local/xml11-declaration-handoff-a/source-preparation-a/manifest.json": {
+      "bytes": 4491,
+      "sha256": "13df008e5fb02e25c6b986a7bf46b27466b390eeb337916a3992c4e0e5c828b1"
+    },
+    ".workflow-local/xml11-reader-a/derived-a/observations-ledger.json": {
+      "bytes": 382757,
+      "sha256": "8f4c78345d3312f9ea3ed57356221ee3a8ca8ba384a6cde3e2a1e34e41c4f57f"
+    },
+    "crates/core/tests/fixtures/xml_charset_catalog/model.tsv": {
+      "bytes": 1405,
+      "sha256": "f479200f2cebdf07e0b99c7d975247f275dc70b9392e1d639bf2c8331066c1a3"
+    },
+    "crates/core/tests/fixtures/xml_charset_catalog/settings-rng.tsv": {
+      "bytes": 5120,
+      "sha256": "93c02ba06a983ac5d9f09c157c3231848808fc785e889e744446e3e7ac29c35e"
+    }
+  },
+  "status": "DERIVED_ACCEPTED_ORIGINAL_DECLARATION_HANDOFF_FIXTURES_ONLY",
+  "test_scope": "All ten admissions and completion, G28/N40, aliases, V9, successful T, fresh and retained owners"
+}

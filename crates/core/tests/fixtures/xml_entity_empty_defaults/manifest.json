@@ -1,0 +1,51 @@
+{
+  "provenance": "Original BioXMLParser.parseGeneticCode; two fresh Source JVMs and fresh JAR",
+  "input_manifest_sha256": "6979a9eb25bb2dad805549c78cf59cd8417ef8fe492482955c07ae4b316e33a9",
+  "observations_sha256": "4096567b1343ae94c766ce9fe60068c4e2c06776107a0153a0b68e35711d192d",
+  "observation_summary_sha256": "9f6c14c19eda801232ffce8484c2fc562bcaabe5a38fd7fbddf448449be2881a",
+  "helper_sha256": "18e223ca788458985846a002ce2e9ade867542b3b42c8efced27aec4c07b88fa",
+  "cases": [
+    {
+      "id": 0,
+      "name": "entities-empty-default-overridden",
+      "file": "entities-empty-default-overridden.bgg",
+      "sha256": "e50896f1acc1985993fd530c62d95dbd857829a7c64bd715552899a538b69ece",
+      "bytes": 5831,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "notes": "exact main79 case42 control",
+      "proven_control_outcome": "success",
+      "proven_control_gene_count": 2,
+      "proposed_outcome": null
+    },
+    {
+      "id": 1,
+      "name": "entities-empty-default-applied",
+      "file": "entities-empty-default-applied.bgg",
+      "sha256": "05f909d0a7efd22f87283e80aad5632bb346599e17e72e0ede6be0bdf66ac040",
+      "bytes": 5817,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "notes": "Remove only the root probe value; apply the empty ENTITIES default",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    },
+    {
+      "id": 2,
+      "name": "entities-empty-default-unused",
+      "file": "entities-empty-default-unused.bgg",
+      "sha256": "fdf1bf5f2bca78070aca5149313e4acf6d9755e73897ce4fc4ba5886df84f702",
+      "bytes": 5827,
+      "model": "(gene+)",
+      "requested_gene_count": 2,
+      "seed_id": "0000",
+      "notes": "Move only the empty ENTITIES declaration to unused aux; declare aux ANY",
+      "proven_control_outcome": null,
+      "proven_control_gene_count": null,
+      "proposed_outcome": null
+    }
+  ]
+}

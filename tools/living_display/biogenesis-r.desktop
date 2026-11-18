@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=Biogenesis-R living display
+Exec=/usr/bin/setpriv --no-new-privs --inh-caps=-all --ambient-caps=-all -- /usr/bin/python3 -I -B -c "import os,pwd,sys;h=pwd.getpwuid(os.getuid()).pw_dir;os.path.isabs(h) or sys.exit('Account home must be absolute');os.execv('/usr/bin/python3',['/usr/bin/python3','-I','-B',h+'/.local/share/biogenesis-r/launch-living-display.py'])"
+Terminal=false

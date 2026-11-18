@@ -1,0 +1,1725 @@
+{
+  "schema": 1,
+  "generated_utc": "2026-10-26T06:02:00.711196+00:00",
+  "helper": {
+    "path": "tools/reference/WhiteFruitOracle.java",
+    "sha256": "9c5090aaa5a5b63b166c5541efbf64c4f6a50242b1bda66766ca878a9e482f53",
+    "compiled_classes": {
+      "source": {
+        "WhiteFruitOracle$Action.class": "9b6edb281595574cec0721428012a6ceefa9b9a4dee18cc50f5d6d37f1fa50ea",
+        "WhiteFruitOracle$Spec.class": "4c76a36c8c02bb07039d87e5566a2658b625caafb7154c04353c9414a95ea03d",
+        "WhiteFruitOracle$Capture.class": "ecc9c909650f4727c9b687cd30d8581442869ca597c90dffb3433174e0fd6932",
+        "WhiteFruitOracle.class": "65da512d5ed0fc8f0fc47aa672e3f2d2c2e6288f94588f693ae9c62c1e17b396"
+      },
+      "jar": {
+        "WhiteFruitOracle$Action.class": "9b6edb281595574cec0721428012a6ceefa9b9a4dee18cc50f5d6d37f1fa50ea",
+        "WhiteFruitOracle$Spec.class": "4c76a36c8c02bb07039d87e5566a2658b625caafb7154c04353c9414a95ea03d",
+        "WhiteFruitOracle$Capture.class": "ecc9c909650f4727c9b687cd30d8581442869ca597c90dffb3433174e0fd6932",
+        "WhiteFruitOracle.class": "65da512d5ed0fc8f0fc47aa672e3f2d2c2e6288f94588f693ae9c62c1e17b396"
+      }
+    },
+    "source_jar_helper_classes_identical": true
+  },
+  "fixture": {
+    "path": "crates/core/tests/fixtures/white_fruit.tsv",
+    "sha256": "8baaf841898b65774d3a4af6fc3737fa824f4a4d9c276d730e0cd133d7f592c7",
+    "bytes": 40336972,
+    "rows": 1145872,
+    "cases": 409,
+    "snapshots": 821,
+    "actor_views": 2463,
+    "calls": 412,
+    "calls_by_operation": {
+      "touchEffects2.WHITE": 254,
+      "touchEffects2.FRUIT": 158
+    },
+    "row_counts": {
+      "C": 409,
+      "U": 60123,
+      "I": 36828,
+      "G": 172200,
+      "N": 394800,
+      "A": 1227,
+      "P": 821,
+      "O": 379302,
+      "H": 7389,
+      "W": 8210,
+      "S": 42692,
+      "T": 40229,
+      "R": 821,
+      "K": 412,
+      "E": 409
+    },
+    "ledger": {
+      "derived_comparison_observations": 852177,
+      "input_G_N_constructor_checks": 188540,
+      "O_collaborator_exclusions": 4926,
+      "selection_metadata_exclusions": 409,
+      "other_input_schema_command_rows": 99820
+    },
+    "organism_fields_per_actor": 154,
+    "reference_holders_per_actor": 3,
+    "world_values_per_snapshot": 10,
+    "statistics_fields_per_snapshot": 52,
+    "statistics_getters_per_snapshot": 49,
+    "utils_per_case": 147,
+    "genome_fields_including_synthetic": 28,
+    "gene_fields": 40,
+    "source_source_jar_outputs_identical": true,
+    "all_case_rng_suffixes_unchanged": true
+  },
+  "reference": {
+    "manifest": "docs/evidence/reference-manifest.json",
+    "original_hash_size_mode_checks": 74,
+    "source_compile_receipt": ".workflow-local/reference-build/compile.json",
+    "source_compile_receipt_sha256": "4fc1785c218238508d72b89ba883d94bc8a1fa24631e990463dd71502a78e184",
+    "source_sha256": {
+      "Gene": "d070db688526a401c8b55904c06066b2169ca82c76837e3001b4c423bc80e720",
+      "GeneticCode": "f8bf3d0315cec8a2bf515a1626391fe5b646e47566234d398ef58bbdbc3a9004",
+      "Organism": "8650cb0983069dbae09e2ca704059fb82761fa6e0d87f35218c2342ffc60df46",
+      "Utils": "7b3306148684ba111629690a928dcb45abd4825104cfb90b530cd2d0dc6dd2b3",
+      "World": "a67543055a665a9a378e37c860671996e2ca0f510cb622375172a24333d7cae1",
+      "WorldStatistics": "407bcd4bec5e947f26ccfb02a1a590bec6eb9f22f675ad88d9bb974f686ebe15",
+      "VisibleWorld": "b14b41135de13d935f24e42b2f82a72457a015831d1b62f30a26bd5be7faedc5"
+    },
+    "backend_class_sha256": {
+      "Gene": {
+        "compiled_source": "29fe7b153555ded4383072debd0452bed5f92692afd0488a88c297d5f04f6ea8",
+        "bundled_jar": "b307c29cbd73a98cdcbf7d5da9a3ed771fd4d419f6426fbfd41510934c0a7988"
+      },
+      "GeneticCode": {
+        "compiled_source": "4bbf99eaf9006840ecbba0958496372a220ed44c4e57c8341c4de3dc29f3fb30",
+        "bundled_jar": "2aba7f494115279c26bb918dc8156c7ff67af047c2bcb32e35db113f2b87c51e"
+      },
+      "Organism": {
+        "compiled_source": "e8facb409642f0288411785985cbfd96440f644226795f14de24705554a46e22",
+        "bundled_jar": "561d53132aa1765ba766c7d251a98090617c7e9884ae8ed1f9543237e32257f0"
+      },
+      "Utils": {
+        "compiled_source": "67adba4432972ffa3922b6f622d2cc12bf0e703a7dfbf97ae94f3f95387b1884",
+        "bundled_jar": "8f258ba2cb30beea85f44a60ecb4189faf7493f39102712bc9ff1114456e1060"
+      },
+      "World": {
+        "compiled_source": "9091d4e5cae555493971a37a9c8fc77e2250e68db073a120a3a08b57b03e131e",
+        "bundled_jar": "be8067767dc18b46fbd7fd798c5e67e8a58ff6922b78d65eee28ab033360bd33"
+      },
+      "WorldStatistics": {
+        "compiled_source": "ab04358e54edf5120d703f0d980c72a136ab74165e5bbec4b55719ab097c7863",
+        "bundled_jar": "cc5e6f8d4adfb96a41269b4dc7a3ab27224513d8076d68ee42be2ab518e0c236"
+      },
+      "VisibleWorld": {
+        "compiled_source": "f9f559ac40de41b7d84cb6d624b5bcad538ac016d566779bc6c45512c5d68168",
+        "bundled_jar": "b1a0dced3a53afcef5f80132f122ac1ba0baf41f02d3e6e48cb99e4236c1385c"
+      }
+    },
+    "jar_sha256": "0baeae8d29f5fdbbb830c1a9e51c7f2b5314a33011b20ec7471eeaa27f0398e1",
+    "jts_sha256": "00102cde26c457b81fbb0248e4f8845884243caba0dc9b7fb42e0ea877383bc1",
+    "prior_tsv_sha256": {
+      "construction.tsv": "cf9b83da280e3e7aa812ae7cf2caee7293ce805c8109aebaa2891a69227b3336",
+      "geometry.tsv": "364c17c289c7d3f85b4ae3bdf7ce8ddcaac773547b1bb3c14360cae58e766a96",
+      "genetics.tsv": "1fc3f745a83427c499d84884dfdb6864fdc222861feb30488d7083a4a0126b71",
+      "geometry-rebuild.tsv": "a484994dbc4f69d8deb45c0622c127eb5dc5dd95eba1b61a412e015cf8b2a3d8",
+      "organism_state.tsv": "298e7a37eb2983252797a40e45ff721141ba22e6b8cfdaba91a1bfa079552f8b",
+      "paste_rejection.tsv": "73b1fa2480d2211e29cbbb24c4653c18d3a0786c5e0074f84e0c378b0b333db9",
+      "genotype_identity.tsv": "b6a85cb8b2b628a8a8b25c3de2db1445a61433b06c7b66647670c07a1ea0b9ac",
+      "spatial.tsv": "a2cf3205b94144694f6484c81aaa9916f42824766a521c2cb05d2f14f344225a",
+      "birth.tsv": "8b9bcee0ed1232b1d90050587e52cb19548a14f833da63749dcd6c96ccae8a22",
+      "birth_variants.tsv": "ababf3bdecebcfda1c56b99cf08343157b6091e2b95f9ab63010de1c13e04b96",
+      "physics.tsv": "50151aaaeb0de8502bb1e22d0256ce77273e83851713a0b43337b66835de72ff",
+      "gases.tsv": "0ea73389506dce4286389f75388ef55475541bd5062cddd149f619b12cd3b6c8",
+      "movement.tsv": "ca8c5078821d339f6aaabb47e593de0da62e44c59df69bf5d4ee8ee01dc84207",
+      "statistics.tsv": "bcc5c8b489b5591f318486176b2647e816d899ec05af854a077e26fe771bcf8a",
+      "statistics_null_genome.tsv": "049301b93bd1062bc6be3cfdac6b58caff10ccb53d1d58a67ece583676c345c1",
+      "death.tsv": "198a17283df6d96826fef2c6464acf6ad222f1e5234c884ec781b05080941720",
+      "death_invalid.tsv": "5bddabd10826003e147df8c688c3db9d3d99b7c64212685a9ade474b92bcbb62",
+      "infection.tsv": "6155d428aca3a6ef337fec20921db969382f47ff72db00388b1985665424b704",
+      "infection_callback.tsv": "02749c101e2f597c4fc42e24f32f6c0e76f5cc1ae320a826dd7dabfc88e982e3",
+      "maintenance.tsv": "266e604b25a4f1e238e3c07131e5d1e42d1a1e73192adb52723e144bc43e8bb9",
+      "reproduction.tsv": "3067af9973d1539781dd72ade76e33e9dda0303dd9aa69f467b7aa13e6277441",
+      "transformation.tsv": "92c7be8b067132fa8fc22fe57416c0d11004028c26189c00195a04eb937797db",
+      "thresholds.tsv": "07a1fa146dd5ed0724447a773ba7267f3b43dd2f93a25a942af88328320f0cad",
+      "contact_state.tsv": "30297653120fdc9817a361992dbedd835e00268584fc4f4f68eed544f7fe47c4",
+      "contact_support.tsv": "931b7133bea398aef9a84947a0332f6d813aea3eff0197066e140c7cf95e195a",
+      "reactions.tsv": "6aa930bec22711537fda10da041a6971640b7acadc23b4777b57305b7a6bc2cd",
+      "frame_effects.tsv": "c10f443f099194aa94f957a771490087674eecf8f4cdc74f79e95a759da4a00d",
+      "coral.tsv": "b7588817c0c488880bbc19b7dfb7fb41bb44c05e56c0fcb8cfe03d8c3d5f2124"
+    }
+  },
+  "execution": {
+    "raw_receipts": ".workflow-local/white-fruit-oracle-l_r4k_dd/commands.json",
+    "raw_receipts_sha256": "eef8d87695196fbbdce42c49472852ab2e58f040e33b7e1f21f122984d75925c",
+    "versions": {
+      "java": "openjdk version \"21.0.12.1\" 2026-08-18\nOpenJDK Runtime Environment (build 21.0.12.1+1)\nOpenJDK 64-Bit Server VM (build 21.0.12.1+1, mixed mode, sharing)\n",
+      "javac": "javac 21.0.12.1\n"
+    },
+    "compile_commands": [
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/javac",
+          "-encoding",
+          "UTF-8",
+          "-cp",
+          "<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "-d",
+          "<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/helpers-source",
+          "<project-root>/tools/reference/WhiteFruitOracle.java"
+        ],
+        "cwd": "<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd",
+        "pid": 51,
+        "process_group": 51,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.6085359979988425,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/javac",
+          "-encoding",
+          "UTF-8",
+          "-cp",
+          "<reference-root>/ColorMod_2_01/biogenesis.jar:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "-d",
+          "<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/helpers-jar",
+          "<project-root>/tools/reference/WhiteFruitOracle.java"
+        ],
+        "cwd": "<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd",
+        "pid": 80,
+        "process_group": 80,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.6152398690028349,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "positive_runs": [
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/source-a/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/source-a/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/source-a/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/source-a/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.WhiteFruitOracle",
+          "<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/source-a/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/source-a",
+        "pid": 109,
+        "process_group": 109,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 1.2608129310028744,
+        "stdout": "WHITE_FRUIT_ORACLE PASS cases=409 snapshots=821 calls=412\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/source-b/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/source-b/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/source-b/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/source-b/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.WhiteFruitOracle",
+          "<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/source-b/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/source-b",
+        "pid": 147,
+        "process_group": 147,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 1.2659846429960453,
+        "stdout": "WHITE_FRUIT_ORACLE PASS cases=409 snapshots=821 calls=412\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/jar/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/jar/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/jar/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/jar/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/helpers-jar:<reference-root>/ColorMod_2_01/biogenesis.jar:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.WhiteFruitOracle",
+          "<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/jar/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/jar",
+        "pid": 183,
+        "process_group": 183,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 1.3732680120010627,
+        "stdout": "WHITE_FRUIT_ORACLE PASS cases=409 snapshots=821 calls=412\n",
+        "stderr": ""
+      }
+    ],
+    "negative_guards": [
+      {
+        "condition": "omit-user.home",
+        "exit_code": 1,
+        "output_preserved": true
+      },
+      {
+        "condition": "omit-java.io.tmpdir",
+        "exit_code": 1,
+        "output_preserved": true
+      },
+      {
+        "condition": "omit-java.util.prefs.userRoot",
+        "exit_code": 1,
+        "output_preserved": true
+      },
+      {
+        "condition": "omit-java.util.prefs.systemRoot",
+        "exit_code": 1,
+        "output_preserved": true
+      },
+      {
+        "condition": "escaped-profile",
+        "exit_code": 1,
+        "output_preserved": true
+      },
+      {
+        "condition": "existing-output",
+        "exit_code": 1,
+        "output_preserved": true
+      }
+    ],
+    "negative_invocations": [
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/omit-user.home/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/omit-user.home/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/omit-user.home/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.WhiteFruitOracle",
+          "<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/omit-user.home/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/omit-user.home",
+        "pid": 218,
+        "process_group": 218,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.03499929500685539,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: user.home\n\tat biogenesis.WhiteFruitOracle.require(WhiteFruitOracle.java:170)\n\tat biogenesis.WhiteFruitOracle.main(WhiteFruitOracle.java:381)\n"
+      },
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/omit-java.io.tmpdir/home",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/omit-java.io.tmpdir/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/omit-java.io.tmpdir/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.WhiteFruitOracle",
+          "<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/omit-java.io.tmpdir/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/omit-java.io.tmpdir",
+        "pid": 236,
+        "process_group": 236,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.02845498399983626,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: java.io.tmpdir\n\tat biogenesis.WhiteFruitOracle.require(WhiteFruitOracle.java:170)\n\tat biogenesis.WhiteFruitOracle.main(WhiteFruitOracle.java:381)\n"
+      },
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/omit-java.util.prefs.userRoot/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/omit-java.util.prefs.userRoot/tmp",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/omit-java.util.prefs.userRoot/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.WhiteFruitOracle",
+          "<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/omit-java.util.prefs.userRoot/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/omit-java.util.prefs.userRoot",
+        "pid": 254,
+        "process_group": 254,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.03078903500136221,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: java.util.prefs.userRoot\n\tat biogenesis.WhiteFruitOracle.require(WhiteFruitOracle.java:170)\n\tat biogenesis.WhiteFruitOracle.main(WhiteFruitOracle.java:381)\n"
+      },
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/omit-java.util.prefs.systemRoot/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/omit-java.util.prefs.systemRoot/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/omit-java.util.prefs.systemRoot/prefs-user",
+          "-cp",
+          "<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.WhiteFruitOracle",
+          "<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/omit-java.util.prefs.systemRoot/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/omit-java.util.prefs.systemRoot",
+        "pid": 272,
+        "process_group": 272,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.03232034599932376,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: java.util.prefs.systemRoot\n\tat biogenesis.WhiteFruitOracle.require(WhiteFruitOracle.java:170)\n\tat biogenesis.WhiteFruitOracle.main(WhiteFruitOracle.java:381)\n"
+      },
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/escaped-profile/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/escaped-profile/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/escaped-profile/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/escaped-profile/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.WhiteFruitOracle",
+          "<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/escaped-profile/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/escaped-profile",
+        "pid": 290,
+        "process_group": 290,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.026196956001513172,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: java.util.prefs.userRoot\n\tat biogenesis.WhiteFruitOracle.require(WhiteFruitOracle.java:170)\n\tat biogenesis.WhiteFruitOracle.main(WhiteFruitOracle.java:381)\n"
+      },
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/source-a/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/source-a/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/source-a/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/source-a/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.WhiteFruitOracle",
+          "<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/source-a/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/white-fruit-oracle-l_r4k_dd/source-a",
+        "pid": 308,
+        "process_group": 308,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.02678086599917151,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Output directory must not exist\n\tat biogenesis.WhiteFruitOracle.require(WhiteFruitOracle.java:170)\n\tat biogenesis.WhiteFruitOracle.main(WhiteFruitOracle.java:383)\n"
+      }
+    ],
+    "positive_timeout_seconds": 120,
+    "compile_timeout_seconds": 60,
+    "negative_timeout_seconds": 30,
+    "environment_allowlist": [
+      "PATH",
+      "LANG",
+      "HOME",
+      "TMPDIR"
+    ],
+    "profile_roots": [
+      "user.home",
+      "java.io.tmpdir",
+      "java.util.prefs.userRoot",
+      "java.util.prefs.systemRoot"
+    ],
+    "job_ownership": "Existing run_reference_oracles.run_command process groups and bounded cleanup",
+    "final_checks": ".workflow-local/white-fruit-oracle-l_r4k_dd/final-checks.json",
+    "final_checks_sha256": "c0822f9fecf78decc77db944213cd0e18b2ebd9c52c251d54842ebad222bba89",
+    "all_original_hash_size_mode_checks": 74,
+    "prior_fixture_count": 32,
+    "prior_tsv_sha256": {
+      "construction.tsv": "cf9b83da280e3e7aa812ae7cf2caee7293ce805c8109aebaa2891a69227b3336",
+      "geometry.tsv": "364c17c289c7d3f85b4ae3bdf7ce8ddcaac773547b1bb3c14360cae58e766a96",
+      "genetics.tsv": "1fc3f745a83427c499d84884dfdb6864fdc222861feb30488d7083a4a0126b71",
+      "geometry-rebuild.tsv": "a484994dbc4f69d8deb45c0622c127eb5dc5dd95eba1b61a412e015cf8b2a3d8",
+      "organism_state.tsv": "298e7a37eb2983252797a40e45ff721141ba22e6b8cfdaba91a1bfa079552f8b",
+      "paste_rejection.tsv": "73b1fa2480d2211e29cbbb24c4653c18d3a0786c5e0074f84e0c378b0b333db9",
+      "genotype_identity.tsv": "b6a85cb8b2b628a8a8b25c3de2db1445a61433b06c7b66647670c07a1ea0b9ac",
+      "spatial.tsv": "a2cf3205b94144694f6484c81aaa9916f42824766a521c2cb05d2f14f344225a",
+      "birth.tsv": "8b9bcee0ed1232b1d90050587e52cb19548a14f833da63749dcd6c96ccae8a22",
+      "birth_variants.tsv": "ababf3bdecebcfda1c56b99cf08343157b6091e2b95f9ab63010de1c13e04b96",
+      "physics.tsv": "50151aaaeb0de8502bb1e22d0256ce77273e83851713a0b43337b66835de72ff",
+      "gases.tsv": "0ea73389506dce4286389f75388ef55475541bd5062cddd149f619b12cd3b6c8",
+      "movement.tsv": "ca8c5078821d339f6aaabb47e593de0da62e44c59df69bf5d4ee8ee01dc84207",
+      "statistics.tsv": "bcc5c8b489b5591f318486176b2647e816d899ec05af854a077e26fe771bcf8a",
+      "statistics_null_genome.tsv": "049301b93bd1062bc6be3cfdac6b58caff10ccb53d1d58a67ece583676c345c1",
+      "death.tsv": "198a17283df6d96826fef2c6464acf6ad222f1e5234c884ec781b05080941720",
+      "death_invalid.tsv": "5bddabd10826003e147df8c688c3db9d3d99b7c64212685a9ade474b92bcbb62",
+      "infection.tsv": "6155d428aca3a6ef337fec20921db969382f47ff72db00388b1985665424b704",
+      "infection_callback.tsv": "02749c101e2f597c4fc42e24f32f6c0e76f5cc1ae320a826dd7dabfc88e982e3",
+      "maintenance.tsv": "266e604b25a4f1e238e3c07131e5d1e42d1a1e73192adb52723e144bc43e8bb9",
+      "reproduction.tsv": "3067af9973d1539781dd72ade76e33e9dda0303dd9aa69f467b7aa13e6277441",
+      "transformation.tsv": "92c7be8b067132fa8fc22fe57416c0d11004028c26189c00195a04eb937797db",
+      "thresholds.tsv": "07a1fa146dd5ed0724447a773ba7267f3b43dd2f93a25a942af88328320f0cad",
+      "contact_state.tsv": "30297653120fdc9817a361992dbedd835e00268584fc4f4f68eed544f7fe47c4",
+      "contact_support.tsv": "931b7133bea398aef9a84947a0332f6d813aea3eff0197066e140c7cf95e195a",
+      "reactions.tsv": "6aa930bec22711537fda10da041a6971640b7acadc23b4777b57305b7a6bc2cd",
+      "frame_effects.tsv": "c10f443f099194aa94f957a771490087674eecf8f4cdc74f79e95a759da4a00d",
+      "coral.tsv": "b7588817c0c488880bbc19b7dfb7fb41bb44c05e56c0fcb8cfe03d8c3d5f2124",
+      "cream_lilac.tsv": "6769fde1a5ab440fe00ff7e005f71e3a054c8f33d3f022ed2fe35690f54cc0b1",
+      "draining.tsv": "feeaf88817ada9b905a2a22efbf3c3f99a5904f750a4782112ede4943c0458c0",
+      "cooperative.tsv": "42cc9fec7423842a42f6e5bcb4f88755c14d3dac5eb234433ef56ac4498c11f6",
+      "special_contacts.tsv": "14a8db5d3c70bcae8ffe1046b92cd9bc7f40218b83bf723454c6423201c0c869"
+    }
+  },
+  "comparison_contract": {
+    "declared_before_Rust_comparison": true,
+    "exact": "All nongeometry scalars, velocities, effects, gases, statistics, endpoints, bounds, ARGB, reactions, identity, order, and RNG.",
+    "geometry_only_O_fields": [
+      "_m",
+      "_m1",
+      "_m2",
+      "_mass",
+      "_I"
+    ],
+    "geometry_finite_tolerance": "1e-10 * max(1, abs(expected))",
+    "geometry_nonfinite": "Explicit NaN classification and signed infinity for those five fields only.",
+    "expectation_authority": "Actual pinned original touchEffects2 calls, reflection, real world/statistics getters, and serialized-copy Random observations.",
+    "constructor_authority": "Only initial input G/N recipes and explicit I/A controls. No post-call expected field is a constructor input.",
+    "fixed_row_ledger": {
+      "commands_schema": 99820,
+      "input_genome_gene": 188540,
+      "selection_metadata": 409,
+      "compared": 852177,
+      "organism_collaborators": 4926
+    },
+    "P_marker_disposition": "Schema and ordering metadata; zero comparison rows"
+  },
+  "explicit_exclusions": {
+    "O": {
+      "fields": [
+        "_world",
+        "_visibleWorld"
+      ],
+      "rows": 4926
+    },
+    "I": {
+      "target": "visible:selected",
+      "rows": 409
+    },
+    "other_unsupported_or_diagnostic_rows": 0,
+    "V_Q_J_rows": 0
+  },
+  "coverage": {
+    "baseline_cases": 132,
+    "focused_cases": 277,
+    "white_palette_cases": 66,
+    "fruit_palette_cases": 66,
+    "source_peer_case_group_counts": {
+      "WHITE": 26,
+      "FRUIT": 12
+    },
+    "selected_actor_branches": [
+      "WHITE",
+      "FRUIT"
+    ],
+    "three_real_actors": true,
+    "no_new_genotype_or_member": true,
+    "all_gene_values_unchanged": true,
+    "ordered_second_calls": [
+      "statistics-live-genome-WHITE",
+      "statistics-live-genome-FRUIT",
+      "white-infect-once-reference-stability"
+    ],
+    "input_identity_recipes": [
+      "g0/g1/g2 explicit",
+      "g3/g4 clone:g0",
+      "shared-primary cases paste killer with g0"
+    ],
+    "case_names": [
+      "palette-WHITE-RED",
+      "palette-WHITE-GREEN",
+      "palette-WHITE-BLUE",
+      "palette-WHITE-CYAN",
+      "palette-WHITE-WHITE",
+      "palette-WHITE-GRAY",
+      "palette-WHITE-MAGENTA",
+      "palette-WHITE-PINK",
+      "palette-WHITE-CORAL",
+      "palette-WHITE-ORANGE",
+      "palette-WHITE-FOREST",
+      "palette-WHITE-SPRING",
+      "palette-WHITE-LEAF",
+      "palette-WHITE-SUMMER",
+      "palette-WHITE-LIME",
+      "palette-WHITE-BARK",
+      "palette-WHITE-VIOLET",
+      "palette-WHITE-TEAL",
+      "palette-WHITE-EYE",
+      "palette-WHITE-MAROON",
+      "palette-WHITE-OLIVE",
+      "palette-WHITE-MINT",
+      "palette-WHITE-CREAM",
+      "palette-WHITE-ROSE",
+      "palette-WHITE-DARK",
+      "palette-WHITE-OCHRE",
+      "palette-WHITE-SKY",
+      "palette-WHITE-LILAC",
+      "palette-WHITE-SILVER",
+      "palette-WHITE-FIRE",
+      "palette-WHITE-DARKGRAY",
+      "palette-WHITE-GOLD",
+      "palette-WHITE-BLOND",
+      "palette-WHITE-FLOWER",
+      "palette-WHITE-AUBURN",
+      "palette-WHITE-PLAGUE",
+      "palette-WHITE-SPIKE",
+      "palette-WHITE-INDIGO",
+      "palette-WHITE-LAVENDER",
+      "palette-WHITE-FALLOW",
+      "palette-WHITE-SPORE",
+      "palette-WHITE-JADE",
+      "palette-WHITE-C4",
+      "palette-WHITE-GRASS",
+      "palette-WHITE-PURPLE",
+      "palette-WHITE-YELLOW",
+      "palette-WHITE-WINTER",
+      "palette-WHITE-OLDBARK",
+      "palette-WHITE-DARKJADE",
+      "palette-WHITE-DARKGREEN",
+      "palette-WHITE-DARKFIRE",
+      "palette-WHITE-DARKLILAC",
+      "palette-WHITE-DEEPSKY",
+      "palette-WHITE-DARKOLIVE",
+      "palette-WHITE-SPIKEPOINT",
+      "palette-WHITE-FRUIT",
+      "palette-WHITE-VISION",
+      "palette-WHITE-ICE",
+      "palette-WHITE-LIGHT_BLUE",
+      "palette-WHITE-LIGHTBROWN",
+      "palette-WHITE-GREENBROWN",
+      "palette-WHITE-BROKEN",
+      "palette-WHITE-DEADBARK",
+      "palette-WHITE-BROWN",
+      "palette-WHITE-UNKNOWN",
+      "palette-WHITE-TRANSLUCENT_MAGENTA",
+      "identity-WHITE-g0",
+      "identity-WHITE-g3",
+      "identity-WHITE-g1",
+      "identity-WHITE-~",
+      "shared-primary-WHITE",
+      "infection-counter-wrap-WHITE-victim",
+      "infection-counter-wrap-WHITE-killer",
+      "infection-clears-peer-saved-WHITE",
+      "palette-FRUIT-RED",
+      "palette-FRUIT-GREEN",
+      "palette-FRUIT-BLUE",
+      "palette-FRUIT-CYAN",
+      "palette-FRUIT-WHITE",
+      "palette-FRUIT-GRAY",
+      "palette-FRUIT-MAGENTA",
+      "palette-FRUIT-PINK",
+      "palette-FRUIT-CORAL",
+      "palette-FRUIT-ORANGE",
+      "palette-FRUIT-FOREST",
+      "palette-FRUIT-SPRING",
+      "palette-FRUIT-LEAF",
+      "palette-FRUIT-SUMMER",
+      "palette-FRUIT-LIME",
+      "palette-FRUIT-BARK",
+      "palette-FRUIT-VIOLET",
+      "palette-FRUIT-TEAL",
+      "palette-FRUIT-EYE",
+      "palette-FRUIT-MAROON",
+      "palette-FRUIT-OLIVE",
+      "palette-FRUIT-MINT",
+      "palette-FRUIT-CREAM",
+      "palette-FRUIT-ROSE",
+      "palette-FRUIT-DARK",
+      "palette-FRUIT-OCHRE",
+      "palette-FRUIT-SKY",
+      "palette-FRUIT-LILAC",
+      "palette-FRUIT-SILVER",
+      "palette-FRUIT-FIRE",
+      "palette-FRUIT-DARKGRAY",
+      "palette-FRUIT-GOLD",
+      "palette-FRUIT-BLOND",
+      "palette-FRUIT-FLOWER",
+      "palette-FRUIT-AUBURN",
+      "palette-FRUIT-PLAGUE",
+      "palette-FRUIT-SPIKE",
+      "palette-FRUIT-INDIGO",
+      "palette-FRUIT-LAVENDER",
+      "palette-FRUIT-FALLOW",
+      "palette-FRUIT-SPORE",
+      "palette-FRUIT-JADE",
+      "palette-FRUIT-C4",
+      "palette-FRUIT-GRASS",
+      "palette-FRUIT-PURPLE",
+      "palette-FRUIT-YELLOW",
+      "palette-FRUIT-WINTER",
+      "palette-FRUIT-OLDBARK",
+      "palette-FRUIT-DARKJADE",
+      "palette-FRUIT-DARKGREEN",
+      "palette-FRUIT-DARKFIRE",
+      "palette-FRUIT-DARKLILAC",
+      "palette-FRUIT-DEEPSKY",
+      "palette-FRUIT-DARKOLIVE",
+      "palette-FRUIT-SPIKEPOINT",
+      "palette-FRUIT-FRUIT",
+      "palette-FRUIT-VISION",
+      "palette-FRUIT-ICE",
+      "palette-FRUIT-LIGHT_BLUE",
+      "palette-FRUIT-LIGHTBROWN",
+      "palette-FRUIT-GREENBROWN",
+      "palette-FRUIT-BROKEN",
+      "palette-FRUIT-DEADBARK",
+      "palette-FRUIT-BROWN",
+      "palette-FRUIT-UNKNOWN",
+      "palette-FRUIT-TRANSLUCENT_MAGENTA",
+      "identity-FRUIT-g0",
+      "identity-FRUIT-g3",
+      "identity-FRUIT-g1",
+      "identity-FRUIT-~",
+      "shared-primary-FRUIT",
+      "infection-counter-wrap-FRUIT-victim",
+      "infection-counter-wrap-FRUIT-killer",
+      "infection-clears-peer-saved-FRUIT",
+      "white-consumer-WHITE",
+      "virus-consumer-WHITE",
+      "white-nonhost-indigo-WHITE",
+      "white-nonhost-fungus-indigo-WHITE",
+      "white-consumer-SILVER",
+      "virus-consumer-SILVER",
+      "white-nonhost-indigo-SILVER",
+      "white-nonhost-fungus-indigo-SILVER",
+      "white-consumer-PLAGUE",
+      "virus-consumer-PLAGUE",
+      "white-nonhost-indigo-PLAGUE",
+      "white-nonhost-fungus-indigo-PLAGUE",
+      "virus-indigo-exception-_isaconsumer",
+      "virus-indigo-exception-_isafungus",
+      "virus-indigo-own-indigo-block",
+      "white-indigo-already-infected-antiviral",
+      "white-indigo-antiviral-without-plague",
+      "white-indigo-zero-divisor",
+      "white-silver-experience--1",
+      "white-silver-experience-1",
+      "white-silver-experience--2147483648",
+      "white-silver-experience-2147483647",
+      "white-silver-enhanced-bypass",
+      "white-silver-fungus-kills-0",
+      "white-silver-fungus-kills-1",
+      "white-silver-fungus-kills--1",
+      "white-plague-full-threshold-_isinfectious",
+      "white-plague-full-threshold-_isaconsumer",
+      "white-plague-full-threshold-_isafungus",
+      "white-spore-version--1",
+      "white-spore-version-0",
+      "white-spore-version-1",
+      "white-spore-version-2",
+      "white-spore-version-3",
+      "white-spore-version-4",
+      "white-spore-positive-threshold-_isaconsumer",
+      "white-spore-positive-threshold-_isafungus",
+      "virus-spore-negation",
+      "dodge-old-timer-WHITE-8",
+      "virus-dodge-auburn-8",
+      "white-dodge-auburn-8",
+      "dodge-old-timer-WHITE-9",
+      "virus-dodge-auburn-9",
+      "white-dodge-auburn-9",
+      "dodge-group-WHITE-GREEN",
+      "dodge-group-WHITE-DARKGREEN",
+      "dodge-group-WHITE-SPORE",
+      "dodge-group-WHITE-MAGENTA",
+      "dodge-partial-then-infect-WHITE",
+      "jade-defence-WHITE-GREEN",
+      "jade-defence-WHITE-JADE",
+      "jade-defence-WHITE-DARKJADE",
+      "jade-after-partial-dodge-WHITE",
+      "rose-altruist-WHITE",
+      "nonplant-default-WHITE",
+      "dodge-old-timer-FRUIT-8",
+      "dodge-old-timer-FRUIT-9",
+      "dodge-group-FRUIT-GREEN",
+      "dodge-group-FRUIT-DARKGREEN",
+      "dodge-group-FRUIT-SPORE",
+      "dodge-group-FRUIT-MAGENTA",
+      "dodge-partial-then-infect-FRUIT",
+      "jade-defence-FRUIT-GREEN",
+      "jade-defence-FRUIT-JADE",
+      "jade-defence-FRUIT-DARKJADE",
+      "jade-after-partial-dodge-FRUIT",
+      "rose-altruist-FRUIT",
+      "nonplant-default-FRUIT",
+      "virus-dodge-nonauburn-old-timer",
+      "white-jade-neutralizes-plague",
+      "white-green-nonplant-host",
+      "fruit-green-nonplant-host",
+      "white-darkgreen-nonhost",
+      "white-blue-enhanced-drain",
+      "white-blue-enhanced-death",
+      "white-blue-partial-defence",
+      "white-blue-shared-infection",
+      "white-blue-raw-length-bff0000000000000",
+      "white-blue-raw-length-8000000000000000",
+      "white-blue-raw-length-7ff0000000000000",
+      "white-blue-raw-length-fff8000000000042",
+      "white-lightblue-enhanced-bypass",
+      "virus-lightblue-skips-shield-cost",
+      "white-lightblue-partial-defence",
+      "virus-skyversion2-SKY",
+      "white-sky-frozen-SKY",
+      "white-sky-healing-SKY",
+      "white-sky-enhanced-frozen-bypass-SKY",
+      "white-sky-killer-block-SKY",
+      "white-sky-antiviral-block-SKY",
+      "white-sky-consumer-v2-SKY",
+      "white-sky-already-infected-SKY",
+      "virus-skyversion2-DEEPSKY",
+      "white-sky-frozen-DEEPSKY",
+      "white-sky-healing-DEEPSKY",
+      "white-sky-enhanced-frozen-bypass-DEEPSKY",
+      "white-sky-killer-block-DEEPSKY",
+      "white-sky-antiviral-block-DEEPSKY",
+      "white-sky-consumer-v2-DEEPSKY",
+      "white-sky-already-infected-DEEPSKY",
+      "white-sky-partial-shield",
+      "white-deepsky-enhanced-infects",
+      "white-rigid-enhanced-OLIVE",
+      "white-rigid-killer-OLIVE",
+      "virus-rigid-OLIVE",
+      "white-rigid-enhanced-DARKOLIVE",
+      "white-rigid-killer-DARKOLIVE",
+      "virus-rigid-DARKOLIVE",
+      "white-rigid-enhanced-VIOLET",
+      "white-rigid-killer-VIOLET",
+      "virus-rigid-VIOLET",
+      "white-rigid-enhanced-ICE",
+      "white-rigid-killer-ICE",
+      "virus-rigid-ICE",
+      "white-rigid-enhanced-DEADBARK",
+      "white-rigid-killer-DEADBARK",
+      "virus-rigid-DEADBARK",
+      "white-violet-consumer",
+      "white-ice-consumer-antiviral",
+      "virus-auburn-fungus-VIOLET",
+      "virus-auburn-silver-fungus-VIOLET",
+      "virus-auburn-fungus-LIGHTBROWN",
+      "virus-auburn-silver-fungus-LIGHTBROWN",
+      "lavender-enhanced-WHITE",
+      "lavender-foreign-infection-WHITE",
+      "lavender-owned-infection-WHITE",
+      "lavender-saved-only-WHITE",
+      "lavender-failed-payment-refill-WHITE",
+      "lavender-partial-payment-WHITE",
+      "lavender-kills-actor-WHITE",
+      "lavender-at-cap-WHITE",
+      "lavender-wrap-WHITE",
+      "lavender-zero-divisor-WHITE",
+      "lavender-enhanced-FRUIT",
+      "lavender-foreign-infection-FRUIT",
+      "lavender-owned-infection-FRUIT",
+      "lavender-saved-only-FRUIT",
+      "lavender-failed-payment-refill-FRUIT",
+      "lavender-partial-payment-FRUIT",
+      "lavender-kills-actor-FRUIT",
+      "lavender-at-cap-FRUIT",
+      "lavender-wrap-FRUIT",
+      "lavender-zero-divisor-FRUIT",
+      "white-lavender-plague-refill",
+      "white-lavender-fallow-refill",
+      "white-pink-modified",
+      "white-pink-late-boundary",
+      "white-pink-overdue",
+      "white-pink-overdue-delayed",
+      "virus-auburn-pink",
+      "white-cream-enhanced-true-1",
+      "white-cream-enhanced-true-2",
+      "white-cream-enhanced-true-3",
+      "white-cream-enhanced-false-1",
+      "white-cream-enhanced-false-2",
+      "white-cream-enhanced-false-3",
+      "virus-cream-plant",
+      "white-cream-indigo-block",
+      "white-cream-killer-block",
+      "virus-spike-enhanced-host",
+      "white-spikepoint-enhanced",
+      "white-spikepoint-antiviral-block",
+      "white-spikepoint-enhanced-host-bypass",
+      "virus-coral-blond-block",
+      "virus-coral-consumer-bypass",
+      "virus-fallow-enhanced",
+      "white-fallow-plant-block",
+      "white-bark-inactive",
+      "white-bark-second-segment",
+      "fruit-actor-spore-gate--1",
+      "fruit-actor-spore-gate-0",
+      "fruit-actor-spore-gate-2",
+      "fruit-actor-spore-gate-3",
+      "fruit-dormant-host-block",
+      "fruit-infected-dormant-host",
+      "fruit-antiviral-breaks-body",
+      "fruit-antiviral-partial-before-jade",
+      "fruit-antiviral-partial-before-infection",
+      "fruit-dodge-before-antiviral",
+      "fruit-target-spore--1",
+      "fruit-target-spore-0",
+      "fruit-target-spore-1",
+      "fruit-target-spore-2",
+      "fruit-target-spore-3",
+      "fruit-target-spore-4",
+      "fruit-infected-spore-one",
+      "fruit-spore-consumer-keeps-positive",
+      "fruit-spore-negates-minimum",
+      "fruit-silver-consumer-kills--1",
+      "fruit-silver-consumer-kills-0",
+      "fruit-silver-consumer-kills-1",
+      "fruit-silver-fungus-kill-block",
+      "fruit-silver-enhanced-block",
+      "fruit-sky-version-two-shield",
+      "fruit-rigid-SKY-weak",
+      "fruit-rigid-SKY-enhanced",
+      "fruit-rigid-SKY-enhanced-blond",
+      "fruit-rigid-SKY-host-blond",
+      "fruit-rigid-DEEPSKY-weak",
+      "fruit-rigid-DEEPSKY-enhanced",
+      "fruit-rigid-DEEPSKY-enhanced-blond",
+      "fruit-rigid-DEEPSKY-host-blond",
+      "fruit-threshold-late-0",
+      "fruit-threshold-late-1",
+      "fruit-threshold-late--1",
+      "fruit-threshold-sporetime--2147483648",
+      "fruit-threshold-sporetime--1",
+      "fruit-threshold-sporetime-0",
+      "fruit-threshold-sporetime-1",
+      "fruit-threshold-sporetime-2147483647",
+      "fruit-plague-full-threshold-_isinfectious",
+      "fruit-plague-full-threshold-_isaconsumer",
+      "fruit-plague-full-threshold-_isafungus",
+      "fruit-indigo-owned-infection-donates",
+      "fruit-donation-energy-bff0000000000000",
+      "fruit-donation-energy-8000000000000000",
+      "fruit-donation-energy-0000000000000000",
+      "fruit-donation-energy-3e8ad7f29abcaf47",
+      "fruit-donation-energy-3e8ad7f29abcaf48",
+      "fruit-donation-energy-3e8ad7f29abcaf49",
+      "fruit-donation-energy-7ff0000000000000",
+      "fruit-donation-energy-fff8000000000042",
+      "white-payment-oxygen-false-0000000000000000",
+      "white-payment-oxygen-false-3fb0000000000000",
+      "white-payment-oxygen-false-3fc0000000000000",
+      "white-payment-oxygen-false-8000000000000000",
+      "white-payment-oxygen-false-bff0000000000000",
+      "white-payment-oxygen-false-7ff0000000000000",
+      "white-payment-oxygen-false-fff8000000000042",
+      "white-payment-energy-false-0000000000000000",
+      "white-payment-energy-false-3fb0000000000000",
+      "white-payment-energy-false-3fc0000000000000",
+      "white-payment-energy-false-bff0000000000000",
+      "white-payment-energy-false-7ff0000000000000",
+      "white-payment-energy-false-7ff8000000000042",
+      "white-payment-oxygen-true-0000000000000000",
+      "white-payment-oxygen-true-3fc0000000000000",
+      "white-payment-oxygen-true-3fd0000000000000",
+      "white-payment-oxygen-true-8000000000000000",
+      "white-payment-oxygen-true-bff0000000000000",
+      "white-payment-oxygen-true-7ff0000000000000",
+      "white-payment-oxygen-true-fff8000000000042",
+      "white-payment-energy-true-0000000000000000",
+      "white-payment-energy-true-3fc0000000000000",
+      "white-payment-energy-true-3fd0000000000000",
+      "white-payment-energy-true-bff0000000000000",
+      "white-payment-energy-true-7ff0000000000000",
+      "white-payment-energy-true-7ff8000000000042",
+      "common-peer-death-WHITE-3e7ad7f29abcaf47",
+      "common-peer-death-WHITE-3e7ad7f29abcaf48",
+      "common-peer-death-WHITE-fff8000000000042",
+      "common-peer-death-WHITE-bff0000000000000",
+      "already-dead-peer-WHITE",
+      "statistics-live-genome-WHITE",
+      "common-peer-death-FRUIT-3e7ad7f29abcaf47",
+      "common-peer-death-FRUIT-3e7ad7f29abcaf48",
+      "common-peer-death-FRUIT-fff8000000000042",
+      "common-peer-death-FRUIT-bff0000000000000",
+      "already-dead-peer-FRUIT",
+      "statistics-live-genome-FRUIT",
+      "white-infect-once-reference-stability"
+    ],
+    "pre_replay_coverage_refinement": {
+      "run": ".workflow-local/white-fruit-oracle-vkgr5ms6",
+      "helper_sha256": "9be07f8763948c4a6c041fe6b0a47b25c71ab0f5fb838007d5996c8824f3cdc5",
+      "fixture_sha256": "c95b0a50003c5856a0cf67d7148a097062dcb77f2b48313fd88299aa705b9ad6",
+      "cases": 408,
+      "reason": "Before Rust replay, add one nonplant nonauburn only-C4 dodge case and nondefault retained movement/update/reaction controls."
+    }
+  },
+  "source_mapping": {
+    "path": ".workflow-local/white-fruit-oracle-l_r4k_dd/source-map.json",
+    "sha256": "8650cb0983069dbae09e2ca704059fb82761fa6e0d87f35218c2342ffc60df46",
+    "source": "../Colormod/src/biogenesis/Organism.java",
+    "method": "touchEffects2(Organism,int,int)",
+    "ranges": {
+      "WHITE": [
+        13120,
+        13843
+      ],
+      "FRUIT": [
+        13844,
+        14141
+      ],
+      "common_peer_death": [
+        17916,
+        17919
+      ]
+    },
+    "parser": "Java tokens and peer switch brace depth; independent of indentation",
+    "peer_case_groups": {
+      "WHITE": [
+        [
+          "WHITE",
+          "GREENBROWN"
+        ],
+        [
+          "SILVER"
+        ],
+        [
+          "PLAGUE"
+        ],
+        [
+          "INDIGO"
+        ],
+        [
+          "GREEN",
+          "GRASS",
+          "FOREST",
+          "SPRING",
+          "SUMMER",
+          "WINTER",
+          "LIME",
+          "LEAF",
+          "C4",
+          "JADE",
+          "DARKJADE"
+        ],
+        [
+          "DARKGREEN",
+          "PURPLE",
+          "TEAL",
+          "CYAN",
+          "YELLOW",
+          "AUBURN",
+          "BLOND",
+          "FLOWER",
+          "DARKGRAY",
+          "GOLD"
+        ],
+        [
+          "SPORE"
+        ],
+        [
+          "BLUE"
+        ],
+        [
+          "LIGHT_BLUE"
+        ],
+        [
+          "SKY"
+        ],
+        [
+          "DEEPSKY"
+        ],
+        [
+          "OLIVE",
+          "DARKOLIVE"
+        ],
+        [
+          "VIOLET"
+        ],
+        [
+          "LIGHTBROWN"
+        ],
+        [
+          "ICE",
+          "DEADBARK"
+        ],
+        [
+          "LAVENDER"
+        ],
+        [
+          "MAGENTA",
+          "ROSE"
+        ],
+        [
+          "PINK"
+        ],
+        [
+          "CREAM"
+        ],
+        [
+          "SPIKE"
+        ],
+        [
+          "SPIKEPOINT"
+        ],
+        [
+          "CORAL"
+        ],
+        [
+          "FALLOW"
+        ],
+        [
+          "BARK"
+        ],
+        [
+          "OLDBARK",
+          "OCHRE",
+          "MINT",
+          "BROWN"
+        ],
+        [
+          "default"
+        ]
+      ],
+      "FRUIT": [
+        [
+          "GREEN",
+          "GRASS",
+          "FOREST",
+          "SPRING",
+          "SUMMER",
+          "WINTER",
+          "LIME",
+          "LEAF",
+          "C4",
+          "JADE",
+          "DARKJADE"
+        ],
+        [
+          "DARKGREEN",
+          "PURPLE",
+          "TEAL",
+          "CYAN",
+          "YELLOW",
+          "AUBURN",
+          "BLOND",
+          "FLOWER",
+          "DARKGRAY",
+          "GOLD"
+        ],
+        [
+          "SPORE"
+        ],
+        [
+          "INDIGO"
+        ],
+        [
+          "MAGENTA",
+          "ROSE"
+        ],
+        [
+          "SILVER"
+        ],
+        [
+          "SKY"
+        ],
+        [
+          "SPIKE",
+          "DEEPSKY",
+          "OLIVE",
+          "DARKOLIVE",
+          "BARK",
+          "OLDBARK",
+          "OCHRE"
+        ],
+        [
+          "PLAGUE"
+        ],
+        [
+          "LAVENDER"
+        ],
+        [
+          "RED",
+          "ORANGE",
+          "FIRE",
+          "MAROON",
+          "PINK",
+          "CREAM",
+          "SPIKEPOINT",
+          "BLUE",
+          "VIOLET",
+          "CORAL",
+          "MINT",
+          "BROWN"
+        ],
+        [
+          "default"
+        ]
+      ]
+    }
+  },
+  "input_target_types": {
+    "actor:killer:_altruist": [
+      "boolean"
+    ],
+    "actor:killer:_antiviral": [
+      "int"
+    ],
+    "actor:killer:_candodge": [
+      "boolean"
+    ],
+    "actor:killer:_color": [
+      "Color"
+    ],
+    "actor:killer:_dodge": [
+      "boolean"
+    ],
+    "actor:killer:_energy": [
+      "double"
+    ],
+    "actor:killer:_fallowversion": [
+      "int"
+    ],
+    "actor:killer:_framesColor": [
+      "int"
+    ],
+    "actor:killer:_hasdodged": [
+      "boolean"
+    ],
+    "actor:killer:_healing": [
+      "int"
+    ],
+    "actor:killer:_indigo": [
+      "int"
+    ],
+    "actor:killer:_infectedGeneticCode": [
+      "GeneticCode"
+    ],
+    "actor:killer:_isaconsumer": [
+      "boolean"
+    ],
+    "actor:killer:_isafungus": [
+      "boolean"
+    ],
+    "actor:killer:_isakiller": [
+      "boolean"
+    ],
+    "actor:killer:_isaplant": [
+      "boolean"
+    ],
+    "actor:killer:_isauburn": [
+      "boolean"
+    ],
+    "actor:killer:_isblond": [
+      "boolean"
+    ],
+    "actor:killer:_isenhanced": [
+      "boolean"
+    ],
+    "actor:killer:_isfrozen": [
+      "boolean"
+    ],
+    "actor:killer:_isgray": [
+      "boolean"
+    ],
+    "actor:killer:_isinfectious": [
+      "boolean"
+    ],
+    "actor:killer:_isinjured": [
+      "boolean"
+    ],
+    "actor:killer:_isonlyc4": [
+      "boolean"
+    ],
+    "actor:killer:_issilver": [
+      "boolean"
+    ],
+    "actor:killer:_jadefactor": [
+      "int"
+    ],
+    "actor:killer:_lavender": [
+      "int"
+    ],
+    "actor:killer:_m": [
+      "double[]"
+    ],
+    "actor:killer:_mphoto": [
+      "double[]"
+    ],
+    "actor:killer:_nTotalInfected": [
+      "int"
+    ],
+    "actor:killer:_nTotalKills": [
+      "int"
+    ],
+    "actor:killer:_photosynthesis": [
+      "double"
+    ],
+    "actor:killer:_plagueversion": [
+      "int"
+    ],
+    "actor:killer:_reproduceEnergy": [
+      "int"
+    ],
+    "actor:killer:_reproducelate": [
+      "int"
+    ],
+    "actor:killer:_savedGeneticCode": [
+      "GeneticCode"
+    ],
+    "actor:killer:_segColor": [
+      "Color[]"
+    ],
+    "actor:killer:_skyversion": [
+      "int"
+    ],
+    "actor:killer:_sporeversion": [
+      "int"
+    ],
+    "actor:killer:_timeToReproduce": [
+      "int"
+    ],
+    "actor:killer:_timeToReproduceMax": [
+      "int"
+    ],
+    "actor:killer:_transfersenergy": [
+      "boolean"
+    ],
+    "actor:killer:active": [
+      "boolean"
+    ],
+    "actor:killer:alive": [
+      "boolean"
+    ],
+    "actor:victim:_altruist": [
+      "boolean"
+    ],
+    "actor:victim:_antiviral": [
+      "int"
+    ],
+    "actor:victim:_candodge": [
+      "boolean"
+    ],
+    "actor:victim:_canmove": [
+      "boolean"
+    ],
+    "actor:victim:_canreact": [
+      "boolean"
+    ],
+    "actor:victim:_color": [
+      "Color"
+    ],
+    "actor:victim:_dodge": [
+      "boolean"
+    ],
+    "actor:victim:_energy": [
+      "double"
+    ],
+    "actor:victim:_fallowversion": [
+      "int"
+    ],
+    "actor:victim:_framesColor": [
+      "int"
+    ],
+    "actor:victim:_hasdodged": [
+      "boolean"
+    ],
+    "actor:victim:_healing": [
+      "int"
+    ],
+    "actor:victim:_indigo": [
+      "int"
+    ],
+    "actor:victim:_infectedGeneticCode": [
+      "GeneticCode"
+    ],
+    "actor:victim:_isaconsumer": [
+      "boolean"
+    ],
+    "actor:victim:_isafungus": [
+      "boolean"
+    ],
+    "actor:victim:_isakiller": [
+      "boolean"
+    ],
+    "actor:victim:_isaplant": [
+      "boolean"
+    ],
+    "actor:victim:_isauburn": [
+      "boolean"
+    ],
+    "actor:victim:_isblond": [
+      "boolean"
+    ],
+    "actor:victim:_isenhanced": [
+      "boolean"
+    ],
+    "actor:victim:_isfrozen": [
+      "boolean"
+    ],
+    "actor:victim:_isgray": [
+      "boolean"
+    ],
+    "actor:victim:_isinfectious": [
+      "boolean"
+    ],
+    "actor:victim:_isinjured": [
+      "boolean"
+    ],
+    "actor:victim:_isonlyc4": [
+      "boolean"
+    ],
+    "actor:victim:_issilver": [
+      "boolean"
+    ],
+    "actor:victim:_jadefactor": [
+      "int"
+    ],
+    "actor:victim:_lavender": [
+      "int"
+    ],
+    "actor:victim:_mphoto": [
+      "double[]"
+    ],
+    "actor:victim:_nTotalInfected": [
+      "int"
+    ],
+    "actor:victim:_nTotalKills": [
+      "int"
+    ],
+    "actor:victim:_photosynthesis": [
+      "double"
+    ],
+    "actor:victim:_plagueversion": [
+      "int"
+    ],
+    "actor:victim:_reproduceEnergy": [
+      "int"
+    ],
+    "actor:victim:_reproducelate": [
+      "int"
+    ],
+    "actor:victim:_savedGeneticCode": [
+      "GeneticCode"
+    ],
+    "actor:victim:_segColor": [
+      "Color[]"
+    ],
+    "actor:victim:_segbarkReaction": [
+      "int[]"
+    ],
+    "actor:victim:_segblueReaction": [
+      "int[]"
+    ],
+    "actor:victim:_segbrokenReaction": [
+      "int[]"
+    ],
+    "actor:victim:_segbrownReaction": [
+      "int[]"
+    ],
+    "actor:victim:_segconsumerReaction": [
+      "int[]"
+    ],
+    "actor:victim:_segcoralReaction": [
+      "int[]"
+    ],
+    "actor:victim:_segcreamReaction": [
+      "int[]"
+    ],
+    "actor:victim:_segdefaultReaction": [
+      "int[]"
+    ],
+    "actor:victim:_segfallowReaction": [
+      "int[]"
+    ],
+    "actor:victim:_segfireReaction": [
+      "int[]"
+    ],
+    "actor:victim:_segfriendReaction": [
+      "int[]"
+    ],
+    "actor:victim:_seggrayReaction": [
+      "int[]"
+    ],
+    "actor:victim:_seggreenReaction": [
+      "int[]"
+    ],
+    "actor:victim:_seggreenbrownReaction": [
+      "int[]"
+    ],
+    "actor:victim:_segiceReaction": [
+      "int[]"
+    ],
+    "actor:victim:_seglightblueReaction": [
+      "int[]"
+    ],
+    "actor:victim:_seglightbrownReaction": [
+      "int[]"
+    ],
+    "actor:victim:_seglilacReaction": [
+      "int[]"
+    ],
+    "actor:victim:_segmagentaReaction": [
+      "int[]"
+    ],
+    "actor:victim:_segmaroonReaction": [
+      "int[]"
+    ],
+    "actor:victim:_segmintReaction": [
+      "int[]"
+    ],
+    "actor:victim:_segochreReaction": [
+      "int[]"
+    ],
+    "actor:victim:_segoliveReaction": [
+      "int[]"
+    ],
+    "actor:victim:_segorangeReaction": [
+      "int[]"
+    ],
+    "actor:victim:_segpinkReaction": [
+      "int[]"
+    ],
+    "actor:victim:_segplagueReaction": [
+      "int[]"
+    ],
+    "actor:victim:_segplantReaction": [
+      "int[]"
+    ],
+    "actor:victim:_segredReaction": [
+      "int[]"
+    ],
+    "actor:victim:_segscourgeReaction": [
+      "int[]"
+    ],
+    "actor:victim:_segsickReaction": [
+      "int[]"
+    ],
+    "actor:victim:_segsilverReaction": [
+      "int[]"
+    ],
+    "actor:victim:_segskyReaction": [
+      "int[]"
+    ],
+    "actor:victim:_segspikeReaction": [
+      "int[]"
+    ],
+    "actor:victim:_segvioletReaction": [
+      "int[]"
+    ],
+    "actor:victim:_segvirusReaction": [
+      "int[]"
+    ],
+    "actor:victim:_segwhiteReaction": [
+      "int[]"
+    ],
+    "actor:victim:_skyversion": [
+      "int"
+    ],
+    "actor:victim:_sporetime": [
+      "int"
+    ],
+    "actor:victim:_sporeversion": [
+      "int"
+    ],
+    "actor:victim:_transfersenergy": [
+      "boolean"
+    ],
+    "actor:victim:_updateEffects": [
+      "int"
+    ],
+    "actor:victim:_useextraeffects": [
+      "boolean"
+    ],
+    "actor:victim:_useframemovement": [
+      "boolean"
+    ],
+    "actor:victim:active": [
+      "boolean"
+    ],
+    "actor:victim:alive": [
+      "boolean"
+    ],
+    "genome:g0:construction": [
+      "String"
+    ],
+    "genome:g1:_cladeID": [
+      "String"
+    ],
+    "genome:g1:_modifiescream": [
+      "int"
+    ],
+    "genome:g1:_modifiespink": [
+      "boolean"
+    ],
+    "genome:g1:construction": [
+      "String"
+    ],
+    "genome:g2:construction": [
+      "String"
+    ],
+    "genome:g3:construction": [
+      "String"
+    ],
+    "genome:g4:construction": [
+      "String"
+    ],
+    "visible:selected": [
+      "String"
+    ],
+    "world:_O2": [
+      "double"
+    ]
+  },
+  "local_readback": {
+    "path": ".workflow-local/white-fruit-oracle-l_r4k_dd/readback.json",
+    "sha256": "9aa41c8dafeeac73df52b5ccd71adce3644361550bf02fefc245b4d61b0dfd18",
+    "result": {
+      "all_snapshots_schema_complete": true,
+      "all_gene_values_unchanged": true,
+      "all_rng_suffixes_unchanged": true,
+      "all_identity_labels_known": true,
+      "snapshots": 821,
+      "actor_views": 2463,
+      "cases": 409,
+      "calls": 412,
+      "input_targets": 137,
+      "source_peer_groups": {
+        "WHITE": 26,
+        "FRUIT": 12
+      },
+      "only_observation_exclusions": [
+        "O._world",
+        "O._visibleWorld",
+        "I.visible:selected"
+      ],
+      "superseded_pre_replay_candidate": {
+        "run": ".workflow-local/white-fruit-oracle-vkgr5ms6",
+        "helper_sha256": "9be07f8763948c4a6c041fe6b0a47b25c71ab0f5fb838007d5996c8824f3cdc5",
+        "fixture_sha256": "c95b0a50003c5856a0cf67d7148a097062dcb77f2b48313fd88299aa705b9ad6",
+        "cases": 408,
+        "reason": "Before Rust replay, add one nonplant nonauburn only-C4 dodge case and nondefault retained movement/update/reaction controls."
+      },
+      "P_marker_disposition": "Schema and ordering metadata; zero comparison rows",
+      "ledger_correction": {
+        "reason": "All821 P snapshot markers belong to input/schema/command metadata under the established static observer contract.",
+        "before": {
+          "compared": 852998,
+          "commands_schema": 98999
+        },
+        "after": {
+          "compared": 852177,
+          "commands_schema": 99820
+        },
+        "preserved_files_sha256": {
+          ".workflow-local/white-fruit-oracle-l_r4k_dd/ledger.json": "47b8065843834d96c03d03fde37f17b4ae30c2f2874966b5d5e936fe048097c3",
+          ".workflow-local/white-fruit-oracle-l_r4k_dd/readback.json": "7fff2783f5f6fdb7fc66da4619f66499d92c439e3395741176ebd52631177f6e",
+          "crates/core/tests/fixtures/white_fruit.README.md": "5c6f8b2cd481053393f942dc3fd72958f430a206dfc3d5316c04c25acfb6a7b0",
+          "crates/core/tests/fixtures/white_fruit.provenance.json": "55b2c82556c8ab8066c796f056f95a540f2cc5fc974d7265c93b8630d5dbbeb9"
+        },
+        "helper_sha256": "9c5090aaa5a5b63b166c5541efbf64c4f6a50242b1bda66766ca878a9e482f53",
+        "fixture_sha256": "8baaf841898b65774d3a4af6fc3737fa824f4a4d9c276d730e0cd133d7f592c7",
+        "source_observation_or_tolerance_changes": false,
+        "production_comparison_started": false,
+        "failed_gate": ".workflow-local/build-runs/test-m_73syub/commands.json"
+      }
+    },
+    "ledger": ".workflow-local/white-fruit-oracle-l_r4k_dd/ledger.json",
+    "ledger_sha256": "1d9f7a111e28b13026149fd95fe5252e194b0b9c8106932ee88c7feeb9a0ffaf"
+  },
+  "production_context": {
+    "module": "crates/core/src/white_fruit_contacts.rs",
+    "frozen_sha256": "57335871560d8a0c3f3769cf9106beaaba987092dd083c8e5399e7d1f132d236",
+    "private_test_receipt": "<local-temp>/commands.json",
+    "private_test_receipt_sha256": "3e447587cbaa7ded92d3c9a3cdaee4f42d0cd43d922aac7eb318595f30688e79",
+    "fixture_uses_Rust_outputs": false,
+    "Rust_replay_executed_by_producer": false
+  },
+  "limits": [
+    "No contact detection, eligibility, full frames, corridors, UI, networking, save migration, or distributable acceptance.",
+    "Controlled raw scalar/body states do not claim player UI acceptance.",
+    "No exhaustive Cartesian combinations of unrelated flags.",
+    "Java provenance does not claim Rust replay."
+  ],
+  "readme": {
+    "path": "crates/core/tests/fixtures/white_fruit.README.md",
+    "sha256": "b8e5da3437383bdb233b8c151adc501c87a0aa094931bcc12cc33fbde2ecbee8"
+  },
+  "ledger_correction": {
+    "reason": "All821 P snapshot markers belong to input/schema/command metadata under the established static observer contract.",
+    "before": {
+      "compared": 852998,
+      "commands_schema": 98999
+    },
+    "after": {
+      "compared": 852177,
+      "commands_schema": 99820
+    },
+    "preserved_files_sha256": {
+      ".workflow-local/white-fruit-oracle-l_r4k_dd/ledger.json": "47b8065843834d96c03d03fde37f17b4ae30c2f2874966b5d5e936fe048097c3",
+      ".workflow-local/white-fruit-oracle-l_r4k_dd/readback.json": "7fff2783f5f6fdb7fc66da4619f66499d92c439e3395741176ebd52631177f6e",
+      "crates/core/tests/fixtures/white_fruit.README.md": "5c6f8b2cd481053393f942dc3fd72958f430a206dfc3d5316c04c25acfb6a7b0",
+      "crates/core/tests/fixtures/white_fruit.provenance.json": "55b2c82556c8ab8066c796f056f95a540f2cc5fc974d7265c93b8630d5dbbeb9"
+    },
+    "helper_sha256": "9c5090aaa5a5b63b166c5541efbf64c4f6a50242b1bda66766ca878a9e482f53",
+    "fixture_sha256": "8baaf841898b65774d3a4af6fc3737fa824f4a4d9c276d730e0cd133d7f592c7",
+    "source_observation_or_tolerance_changes": false,
+    "production_comparison_started": false,
+    "failed_gate": ".workflow-local/build-runs/test-m_73syub/commands.json"
+  }
+}

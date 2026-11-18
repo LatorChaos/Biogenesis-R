@@ -1,0 +1,808 @@
+{
+  "schema": "biogenesis-empty-incoming-source-delta-v1",
+  "frozen_utc": "2026-10-26T21:04:50.072107+00:00",
+  "state": "PRIVATE_FROZEN_BEFORE_RUST_REPLAY",
+  "helper": {
+    "path": "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/IncomingEmptyOracle.java",
+    "sha256": "37ff3f96cb02df8e6b441fa41a22200527182da211a8523bceaf361e69fd2d9b"
+  },
+  "fixture": {
+    "path": "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/incoming_empty.tsv",
+    "sha256": "7e8181ff0bef66984b4004b53bb58951948c92063d7ba2f372ff45492de0fb22",
+    "bytes": 389431
+  },
+  "ledger": {
+    "fixture": "incoming_empty.tsv",
+    "sha256": "7e8181ff0bef66984b4004b53bb58951948c92063d7ba2f372ff45492de0fb22",
+    "bytes": 389431,
+    "diagnostic_only": false,
+    "row_count": 10720,
+    "row_tags": {
+      "C": 1,
+      "U": 147,
+      "I": 12,
+      "G": 2240,
+      "N": 1920,
+      "A": 1,
+      "P": 15,
+      "O": 4158,
+      "H": 81,
+      "W": 150,
+      "V": 225,
+      "Q": 27,
+      "S": 780,
+      "T": 735,
+      "Y": 75,
+      "R": 15,
+      "K": 14,
+      "F": 98,
+      "D": 1,
+      "J": 24,
+      "E": 1
+    },
+    "cases": [
+      "empty-genome-arrival-retains-zero-mass-state-over-twelve-real-frames"
+    ],
+    "case_count": 1,
+    "snapshots": 15,
+    "calls": {
+      "corridor.new": 1,
+      "corridor.receive": 1,
+      "time": 12
+    },
+    "actual_call_count": 14,
+    "actor_views": 27,
+    "corridor_views": 14,
+    "actual_identity_discoveries": 1,
+    "schema_eligible_observation_rows": 10081,
+    "supplied_genome_input_rows": 260,
+    "explicit_collaborator_rows": 112,
+    "other_input_schema_command_metadata_rows": 267,
+    "exclusions": {
+      "O": {
+        "_visibleWorld": 27,
+        "_world": 27
+      },
+      "V": {
+        "_visibleWorld": 15,
+        "outCorridors": 15
+      },
+      "F": {
+        "connection": 14,
+        "travellingOrganism": 14
+      }
+    },
+    "typed_input_targets": [
+      {
+        "target": "corridor:c0:bounds",
+        "type": "Rectangle",
+        "uses": 1
+      },
+      {
+        "target": "genome:g0:construction",
+        "type": "String",
+        "uses": 1
+      },
+      {
+        "target": "genome:g1:construction",
+        "type": "String",
+        "uses": 1
+      },
+      {
+        "target": "genome:g2:construction",
+        "type": "String",
+        "uses": 1
+      },
+      {
+        "target": "genome:g3:construction",
+        "type": "String",
+        "uses": 1
+      },
+      {
+        "target": "genome:g4:construction",
+        "type": "String",
+        "uses": 1
+      },
+      {
+        "target": "visible:selected",
+        "type": "String",
+        "uses": 1
+      },
+      {
+        "target": "world:_CH4",
+        "type": "double",
+        "uses": 1
+      },
+      {
+        "target": "world:_CO2",
+        "type": "double",
+        "uses": 1
+      },
+      {
+        "target": "world:_O2",
+        "type": "double",
+        "uses": 1
+      },
+      {
+        "target": "world:_corridorexists",
+        "type": "boolean",
+        "uses": 1
+      },
+      {
+        "target": "world:inCorridors",
+        "type": "List",
+        "uses": 1
+      }
+    ],
+    "F_schema": {
+      "_reference": "String",
+      "bounds": "Rectangle",
+      "pendingOrganisms": "Queue",
+      "nextOrganism": "Organism",
+      "world": "World",
+      "travellingOrganism": "Organism",
+      "connection": "Connection"
+    },
+    "logical_owner_projections": [
+      "F.world names the owning World",
+      "V.worldStatistics names its owned statistics object"
+    ],
+    "input_output_separation": "Only G/N input blocks define initial genomes; later G/N/O/F/V rows are observations",
+    "comparison_contract": "Only _m/_m1/_m2/_mass/_I retain prior geometry allowance; all other values/order/identities stay exact",
+    "diagnostic_disposition": "No Rust comparison has occurred"
+  },
+  "input_authority": "Supplied G/N input recipes and preceding explicit I controls only; no expected output reconstruction",
+  "source_mapping": {
+    "InCorridor.java": "27-52 actual construct/paste/add FIFO path",
+    "World.java": "538 actual complete time method, incoming before tree/movement",
+    "Organism.java": [
+      "769 deferred constructor",
+      "779 actual create array allocation",
+      "3004 actual successful empty paste",
+      "3069 actual symmetric geometry",
+      "3577 actual bounds/cache calculation",
+      "3607 actual grow branch",
+      "4177 actual complete move method",
+      "4602 actual breath age increment",
+      "5757 actual offset"
+    ]
+  },
+  "actual_observations": {
+    "source_source_JAR_equal": {
+      "incoming_empty.tsv": {
+        "sha256": "7e8181ff0bef66984b4004b53bb58951948c92063d7ba2f372ff45492de0fb22",
+        "bytes": 389431,
+        "paths": [
+          "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/source-a/observations/incoming_empty.tsv",
+          "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/source-b/observations/incoming_empty.tsv",
+          "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/jar/observations/incoming_empty.tsv"
+        ]
+      }
+    },
+    "case_count": 1,
+    "snapshots": 15,
+    "actual_calls": 14,
+    "complete_world_time_calls": 12,
+    "actor_views": 27,
+    "arrival_identity_discoveries": 1,
+    "NaN_first_frame": 8,
+    "growth_first_transition": "16->15 at age8",
+    "NaN_fields": [
+      "dx",
+      "dy",
+      "dtheta",
+      "_theta",
+      "_lastTheta"
+    ],
+    "NaN_bits": "fff8000000000000",
+    "alive_active_membership_through_frame12": true,
+    "energy": 40,
+    "mass_and_inertia_bits": "0000000000000000",
+    "current_bounds": "2147483647,2147483647,-2147483647,-2147483647"
+  },
+  "preservation": {
+    "original_hash_size_mode_pins": 74,
+    "source_classes": 159,
+    "prior_fixtures": 576,
+    "all_parent_incoming_frozen_files_preserved": true,
+    "parent_freeze_sha256": "901e8e54fe265ec49b81464852d4b3fb27e0acdde39bba898815c68f65db6144",
+    "baseline_sha256": "e5745806bb4394c104abbcc237eeb3e1598aa340d8b279c30b90a9dc4abf5a32",
+    "original_manifest_sha256": "1c6629c0dac3f66977a45228af811b1523cac5d6865004f60729e65982a5c45f",
+    "reference_JAR_sha256": "0baeae8d29f5fdbbb830c1a9e51c7f2b5314a33011b20ec7471eeaa27f0398e1",
+    "JTS_sha256": "00102cde26c457b81fbb0248e4f8845884243caba0dc9b7fb42e0ea877383bc1"
+  },
+  "compile": {
+    "commands": [
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-version"
+        ],
+        "cwd": "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/compile",
+        "pid": 3,
+        "process_group": 3,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.03207939999992959,
+        "stdout": "",
+        "stderr": "openjdk version \"21.0.12.1\" 2026-08-18\nOpenJDK Runtime Environment (build 21.0.12.1+1)\nOpenJDK 64-Bit Server VM (build 21.0.12.1+1, mixed mode, sharing)\n"
+      },
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/javac",
+          "-version"
+        ],
+        "cwd": "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/compile",
+        "pid": 20,
+        "process_group": 20,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.09737871300603729,
+        "stdout": "javac 21.0.12.1\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/javac",
+          "-encoding",
+          "UTF-8",
+          "-cp",
+          "<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "-d",
+          "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/helpers-source",
+          "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/IncomingEmptyOracle.java"
+        ],
+        "cwd": "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/compile",
+        "pid": 40,
+        "process_group": 40,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.6124109179945663,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/javac",
+          "-encoding",
+          "UTF-8",
+          "-cp",
+          "<reference-root>/ColorMod_2_01/biogenesis.jar:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "-d",
+          "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/helpers-jar",
+          "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/IncomingEmptyOracle.java"
+        ],
+        "cwd": "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/compile",
+        "pid": 71,
+        "process_group": 71,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.6004351939918706,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "classes": {
+      "source": {
+        "IncomingEmptyOracle$Code.class": "d0c1cd355328d3eb85065addd00156bb2ff1a83fcb77c679646dd3b3aff45bf1",
+        "IncomingEmptyOracle$Action.class": "a8c56ece548fb8affc3010a01a0caf1b3e2f59cb13c9b6c1398e418c7ccfb7ab",
+        "IncomingEmptyOracle$Spec.class": "2fc53bf49819407b6010b44a7a86748e867f87d63db8943654fbf56d4c9869dc",
+        "IncomingEmptyOracle$Capture.class": "efe682e256eaa581bad45f0b1e3e8c6b9c7d10bfc3e461f14a2e9bfd90f2b38f",
+        "IncomingEmptyOracle.class": "936eaec7dfabcb70419331176c9dd16be73d658f529f345c1ba60b7b9fcfe71a"
+      },
+      "jar": {
+        "IncomingEmptyOracle$Code.class": "d0c1cd355328d3eb85065addd00156bb2ff1a83fcb77c679646dd3b3aff45bf1",
+        "IncomingEmptyOracle$Action.class": "a8c56ece548fb8affc3010a01a0caf1b3e2f59cb13c9b6c1398e418c7ccfb7ab",
+        "IncomingEmptyOracle$Spec.class": "2fc53bf49819407b6010b44a7a86748e867f87d63db8943654fbf56d4c9869dc",
+        "IncomingEmptyOracle$Capture.class": "efe682e256eaa581bad45f0b1e3e8c6b9c7d10bfc3e461f14a2e9bfd90f2b38f",
+        "IncomingEmptyOracle.class": "936eaec7dfabcb70419331176c9dd16be73d658f529f345c1ba60b7b9fcfe71a"
+      }
+    },
+    "owned_groups": [
+      {
+        "pid": 3,
+        "process_group": 3,
+        "absent_in_command_controller_context": true
+      },
+      {
+        "pid": 20,
+        "process_group": 20,
+        "absent_in_command_controller_context": true
+      },
+      {
+        "pid": 40,
+        "process_group": 40,
+        "absent_in_command_controller_context": true
+      },
+      {
+        "pid": 71,
+        "process_group": 71,
+        "absent_in_command_controller_context": true
+      }
+    ]
+  },
+  "native": {
+    "commands": [
+      {
+        "argv": [
+          "/usr/bin/xvfb-run",
+          "-a",
+          "-n",
+          "380",
+          "-e",
+          "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/source-a/xvfb.log",
+          "-s",
+          "-screen 0 1280x960x24 -nolisten tcp",
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=false",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/source-a/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/source-a/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/source-a/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/source-a/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.IncomingEmptyOracle",
+          "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/source-a/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/source-a",
+        "pid": 1807751,
+        "process_group": 1807751,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 3.5855811959918356,
+        "stdout": "INCOMING_ORACLE PASS cases=1 snapshots=15 calls=14 discoveries=1\n",
+        "stderr": "Oct 26, 2026 5:01:16 PM java.util.prefs.FileSystemPreferences$1 run\nINFO: Created user preferences directory.\n"
+      },
+      {
+        "argv": [
+          "/usr/bin/xvfb-run",
+          "-a",
+          "-n",
+          "380",
+          "-e",
+          "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/source-b/xvfb.log",
+          "-s",
+          "-screen 0 1280x960x24 -nolisten tcp",
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=false",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/source-b/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/source-b/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/source-b/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/source-b/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.IncomingEmptyOracle",
+          "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/source-b/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/source-b",
+        "pid": 1807839,
+        "process_group": 1807839,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 3.557458287003101,
+        "stdout": "INCOMING_ORACLE PASS cases=1 snapshots=15 calls=14 discoveries=1\n",
+        "stderr": "Oct 26, 2026 5:01:20 PM java.util.prefs.FileSystemPreferences$1 run\nINFO: Created user preferences directory.\n"
+      },
+      {
+        "argv": [
+          "/usr/bin/xvfb-run",
+          "-a",
+          "-n",
+          "380",
+          "-e",
+          "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/jar/xvfb.log",
+          "-s",
+          "-screen 0 1280x960x24 -nolisten tcp",
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=false",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/jar/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/jar/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/jar/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/jar/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/helpers-jar:<reference-root>/ColorMod_2_01/biogenesis.jar:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.IncomingEmptyOracle",
+          "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/jar/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/jar",
+        "pid": 1807940,
+        "process_group": 1807940,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 3.5698881349962903,
+        "stdout": "INCOMING_ORACLE PASS cases=1 snapshots=15 calls=14 discoveries=1\n",
+        "stderr": "Oct 26, 2026 5:01:23 PM java.util.prefs.FileSystemPreferences$1 run\nINFO: Created user preferences directory.\n"
+      },
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=false",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/omit-user.home/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/omit-user.home/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/omit-user.home/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.IncomingEmptyOracle",
+          "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/omit-user.home/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/omit-user.home",
+        "pid": 1808012,
+        "process_group": 1808012,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.03010262300085742,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: user.home\n\tat biogenesis.IncomingEmptyOracle.require(IncomingEmptyOracle.java:288)\n\tat biogenesis.IncomingEmptyOracle.main(IncomingEmptyOracle.java:343)\n"
+      },
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=false",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/omit-java.io.tmpdir/home",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/omit-java.io.tmpdir/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/omit-java.io.tmpdir/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.IncomingEmptyOracle",
+          "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/omit-java.io.tmpdir/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/omit-java.io.tmpdir",
+        "pid": 1808030,
+        "process_group": 1808030,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.028578165991348214,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: java.io.tmpdir\n\tat biogenesis.IncomingEmptyOracle.require(IncomingEmptyOracle.java:288)\n\tat biogenesis.IncomingEmptyOracle.main(IncomingEmptyOracle.java:343)\n"
+      },
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=false",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/omit-java.util.prefs.userRoot/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/omit-java.util.prefs.userRoot/tmp",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/omit-java.util.prefs.userRoot/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.IncomingEmptyOracle",
+          "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/omit-java.util.prefs.userRoot/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/omit-java.util.prefs.userRoot",
+        "pid": 1808048,
+        "process_group": 1808048,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.02779621999070514,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: java.util.prefs.userRoot\n\tat biogenesis.IncomingEmptyOracle.require(IncomingEmptyOracle.java:288)\n\tat biogenesis.IncomingEmptyOracle.main(IncomingEmptyOracle.java:343)\n"
+      },
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=false",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/omit-java.util.prefs.systemRoot/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/omit-java.util.prefs.systemRoot/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/omit-java.util.prefs.systemRoot/prefs-user",
+          "-cp",
+          "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.IncomingEmptyOracle",
+          "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/omit-java.util.prefs.systemRoot/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/omit-java.util.prefs.systemRoot",
+        "pid": 1808066,
+        "process_group": 1808066,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.028083808007068,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: java.util.prefs.systemRoot\n\tat biogenesis.IncomingEmptyOracle.require(IncomingEmptyOracle.java:288)\n\tat biogenesis.IncomingEmptyOracle.main(IncomingEmptyOracle.java:343)\n"
+      },
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=false",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/escaped-profile/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/escaped-profile/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/escaped-profile/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/escaped-profile/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.IncomingEmptyOracle",
+          "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/escaped-profile/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/escaped-profile",
+        "pid": 1808084,
+        "process_group": 1808084,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.03373250299773645,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: java.util.prefs.userRoot\n\tat biogenesis.IncomingEmptyOracle.require(IncomingEmptyOracle.java:288)\n\tat biogenesis.IncomingEmptyOracle.main(IncomingEmptyOracle.java:343)\n"
+      },
+      {
+        "argv": [
+          "/usr/lib/jvm/java-21-openjdk/bin/java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=false",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/source-a/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/source-a/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/source-a/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/source-a/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.IncomingEmptyOracle",
+          "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/source-a/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/native/source-a",
+        "pid": 1808102,
+        "process_group": 1808102,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.028014782001264393,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Output directory must not exist\n\tat biogenesis.IncomingEmptyOracle.require(IncomingEmptyOracle.java:288)\n\tat biogenesis.IncomingEmptyOracle.main(IncomingEmptyOracle.java:345)\n"
+      }
+    ],
+    "owned_groups": [
+      {
+        "pid": 1807751,
+        "process_group": 1807751,
+        "absent_in_command_controller_context": true
+      },
+      {
+        "pid": 1807839,
+        "process_group": 1807839,
+        "absent_in_command_controller_context": true
+      },
+      {
+        "pid": 1807940,
+        "process_group": 1807940,
+        "absent_in_command_controller_context": true
+      },
+      {
+        "pid": 1808012,
+        "process_group": 1808012,
+        "absent_in_command_controller_context": true
+      },
+      {
+        "pid": 1808030,
+        "process_group": 1808030,
+        "absent_in_command_controller_context": true
+      },
+      {
+        "pid": 1808048,
+        "process_group": 1808048,
+        "absent_in_command_controller_context": true
+      },
+      {
+        "pid": 1808066,
+        "process_group": 1808066,
+        "absent_in_command_controller_context": true
+      },
+      {
+        "pid": 1808084,
+        "process_group": 1808084,
+        "absent_in_command_controller_context": true
+      },
+      {
+        "pid": 1808102,
+        "process_group": 1808102,
+        "absent_in_command_controller_context": true
+      }
+    ],
+    "guards": [
+      {
+        "name": "omit-user.home",
+        "exit_code": 1,
+        "prior_outputs_preserved": true
+      },
+      {
+        "name": "omit-java.io.tmpdir",
+        "exit_code": 1,
+        "prior_outputs_preserved": true
+      },
+      {
+        "name": "omit-java.util.prefs.userRoot",
+        "exit_code": 1,
+        "prior_outputs_preserved": true
+      },
+      {
+        "name": "omit-java.util.prefs.systemRoot",
+        "exit_code": 1,
+        "prior_outputs_preserved": true
+      },
+      {
+        "name": "escaped-profile",
+        "exit_code": 1,
+        "prior_outputs_preserved": true
+      },
+      {
+        "name": "source-a",
+        "exit_code": 1,
+        "prior_outputs_preserved": true
+      }
+    ],
+    "evidence_id": "ev_c129db7bd3fc886573149bdd992ba5c15be9a4b2c3471e1ded77fe1999828980",
+    "exit": {
+      "code": 0,
+      "signal": 0,
+      "reason": "exited"
+    },
+    "cleanup": {
+      "owned_process_group": "verified",
+      "temporary_root": "removed"
+    },
+    "limitations": [
+      "Artifact identity is unavailable for this observation.",
+      "The executable digest is a prelaunch file sample; matching path metadata immediately after spawn does not prove an atomic operating-system image binding.",
+      "Process trees are sampled and may omit short-lived descendants.",
+      "Filesystem observations are before/after snapshots, not syscall traces.",
+      "Inherited host environment variables are not recorded and may affect results.",
+      "No filesystem observation paths were selected; filesystem effects remain unknown."
+    ],
+    "residual_unknowns": [
+      {
+        "scope": "process",
+        "reason": "Process trees are sampled and may omit short-lived descendants."
+      },
+      {
+        "scope": "process",
+        "reason": "The executable digest is a prelaunch file sample; operating-system image binding is not atomically observed."
+      },
+      {
+        "scope": "environment",
+        "reason": "Inherited host environment variables are not recorded."
+      },
+      {
+        "scope": "network",
+        "reason": "Network activity is not observed by this capture."
+      },
+      {
+        "scope": "filesystem",
+        "reason": "No filesystem observation paths were selected; filesystem effects remain unknown."
+      }
+    ]
+  },
+  "comparison_contract": "Existing five geometry allowances only; all other fields, identity/order and source NaN bits remain exact",
+  "failed_setup": {
+    "record": "<project-root>/.workflow-local/incoming-empty-oracle-loe9d5dw/wrong-path-invocation.json",
+    "scope": "Absent private temporary path; no source or compilation execution"
+  },
+  "limits": [
+    "Independent producer review and actual Rust incoming/frame replay remain pending",
+    "Source-positive empty behavior remains a compatibility obligation",
+    "No external network, transport, concurrency, outgoing corridor, UI controls or performance proof",
+    "Source RNG suffix uses a serialized Random copy; cached NaN payload canonicalization remains a serialization limit"
+  ],
+  "files": {
+    "IncomingEmptyOracle.java": {
+      "sha256": "37ff3f96cb02df8e6b441fa41a22200527182da211a8523bceaf361e69fd2d9b",
+      "bytes": 32991
+    },
+    "incoming_empty.tsv": {
+      "sha256": "7e8181ff0bef66984b4004b53bb58951948c92063d7ba2f372ff45492de0fb22",
+      "bytes": 389431
+    },
+    "README.md": {
+      "sha256": "0ad704b54e145ea7b7ec9a271c55e30ef7a64f3b59689452dc7117aeb60d2450",
+      "bytes": 3565
+    },
+    "driver.py": {
+      "sha256": "471611c2801b463355c54b8476fc562156f34f4d4c980900b88ced3d3b1f9bd0",
+      "bytes": 8627
+    },
+    "readback.py": {
+      "sha256": "ee3dfa65e4c8013321cb1092c244754be476ed53d320c0ca88d283645baf7a30",
+      "bytes": 6357
+    },
+    "ledgers.json": {
+      "sha256": "1259f4a3a67c96cea292c68df56cec861fd0c141725d1c2b81231446865ef8fe",
+      "bytes": 3310
+    },
+    "baseline.json": {
+      "sha256": "e5745806bb4394c104abbcc237eeb3e1598aa340d8b279c30b90a9dc4abf5a32",
+      "bytes": 75474
+    },
+    "parent-freeze.json": {
+      "sha256": "c8db28e0762b23a4f8a14dcb1ec9913cdf4ff0ea7d83fbdf0381a592db83722d",
+      "bytes": 420
+    },
+    "wrong-path-invocation.json": {
+      "sha256": "7e273fb101660579d314211d41dc40205ec9658e3458ce9e59da763928bef1ad",
+      "bytes": 482
+    },
+    "state-summary.json": {
+      "sha256": "1ff4f10a696c424f125fd4671211fb55d35f669290ac0eaae9a96d9f2d607c7c",
+      "bytes": 14025
+    },
+    "compile/commands.json": {
+      "sha256": "8341c76709b93256277df0ff5bdc38f3114f7c1df00c3402a31e7e8e9a1f7ab8",
+      "bytes": 2978
+    },
+    "compile/helper-classes.json": {
+      "sha256": "17f26b699511ce6a9b1cd9535f3f26e34e9ced5ac4ce3ed2728a794180c63d17",
+      "bytes": 1096
+    },
+    "compile/owned-group-readback.json": {
+      "sha256": "589bc92fa52d909641094fa6aeb3edfd75989451a204944c84f025d1f9c993a7",
+      "bytes": 393
+    },
+    "compile/preservation.json": {
+      "sha256": "fe5d0aa232a914745b804e8d1582aa41efe8b2e75a48daf678fbcbc1fd02f3ef",
+      "bytes": 129
+    },
+    "native/commands.json": {
+      "sha256": "4333ee3998e4062812d6801dba3781a5b2a61d88df1007792f1ce529022a0170",
+      "bytes": 19401
+    },
+    "native/owned-group-readback.json": {
+      "sha256": "db193d06a8dce04d617e45b2d549b9ca9e9920bd672d31cafc2aa66cbdd8cdf6",
+      "bytes": 975
+    },
+    "native/preservation.json": {
+      "sha256": "fe5d0aa232a914745b804e8d1582aa41efe8b2e75a48daf678fbcbc1fd02f3ef",
+      "bytes": 129
+    },
+    "native/summary.json": {
+      "sha256": "4e4f056dc2e147e9c18554e1603440b15f46a8e3cfa7e58f8a8b7130d9e88ba0",
+      "bytes": 1586
+    },
+    "native-capture.json": {
+      "sha256": "39bf884f226dbca66541f3a2977d6d07a8a4272543b7179c70c465839ff4aba5",
+      "bytes": 55243
+    }
+  },
+  "pre_adoption_metadata_correction": {
+    "prior_metadata": "Biogenesis-R/.workflow-local/incoming-empty-oracle-loe9d5dw/before-source-anchor-correction",
+    "reason": "Replace unverified bounds/grow/move spans with directly rechecked method-start anchors",
+    "helper_fixture_observations_unchanged": true
+  }
+}

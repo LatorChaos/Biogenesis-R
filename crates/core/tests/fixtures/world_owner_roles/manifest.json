@@ -1,0 +1,1072 @@
+{
+  "schema": 1,
+  "scope": "Exact finite Original-derived World owner-role fixtures; no Rust-derived expected values",
+  "fixture_root": "crates/core/tests/fixtures/world_owner_roles",
+  "observations": "ownership.tsv",
+  "observations_sha256": "7d54ae93982d2094c2447e11fa71259c840c9465fd6a54a0cd66153afea792e0",
+  "case_count": 9,
+  "operation_count": 40,
+  "serialized_checkpoints": 47,
+  "distinct_serialized_payloads": 14,
+  "new_serialized_files": 12,
+  "existing_control_references": 2,
+  "files": {
+    "crates/core/tests/fixtures/world_hydration/actor_closure-call_0.ser": {
+      "path": "crates/core/tests/fixtures/world_hydration/actor_closure-call_0.ser",
+      "core_relative_path": "tests/fixtures/world_hydration/actor_closure-call_0.ser",
+      "sha256": "7b35afb36bf31f7e8e3bc98f90919b3f29296bcf9ea138b9fe7057887a8ff83f",
+      "bytes": 10624,
+      "mode": 384,
+      "placement": "existing_reference",
+      "origin": "<project-root>/crates/core/tests/fixtures/world_hydration/actor_closure-call_0.ser"
+    },
+    "crates/core/tests/fixtures/shared_world_owners/child_history_cache-call_0.ser": {
+      "path": "crates/core/tests/fixtures/shared_world_owners/child_history_cache-call_0.ser",
+      "core_relative_path": "tests/fixtures/shared_world_owners/child_history_cache-call_0.ser",
+      "sha256": "7c71c902a3c2e9726df75544933900a022a671a40af5b34c536323e32a5c8b65",
+      "bytes": 12729,
+      "mode": 384,
+      "placement": "existing_reference",
+      "origin": "<project-root>/crates/core/tests/fixtures/shared_world_owners/child_history_cache-call_0.ser"
+    },
+    "crates/core/tests/fixtures/world_owner_roles/foreign-member-world-authored.ser": {
+      "path": "crates/core/tests/fixtures/world_owner_roles/foreign-member-world-authored.ser",
+      "core_relative_path": "tests/fixtures/world_owner_roles/foreign-member-world-authored.ser",
+      "sha256": "25cbf1e8a7311c1cbea61d92c5dd5c0939238e46a02cac9adc673471b6b4195e",
+      "bytes": 9564,
+      "mode": 384,
+      "placement": "new_asset",
+      "origin": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture/foreign-member-world-authored.ser"
+    },
+    "crates/core/tests/fixtures/world_owner_roles/foreign-member-world-call_3.ser": {
+      "path": "crates/core/tests/fixtures/world_owner_roles/foreign-member-world-call_3.ser",
+      "core_relative_path": "tests/fixtures/world_owner_roles/foreign-member-world-call_3.ser",
+      "sha256": "635bd66b29a04643601b10f11907d890fded7a110b08d4df9143f0296ac35e5c",
+      "bytes": 9564,
+      "mode": 384,
+      "placement": "new_asset",
+      "origin": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture/foreign-member-world-call_3.ser"
+    },
+    "crates/core/tests/fixtures/world_owner_roles/foreign-peer-world-authored.ser": {
+      "path": "crates/core/tests/fixtures/world_owner_roles/foreign-peer-world-authored.ser",
+      "core_relative_path": "tests/fixtures/world_owner_roles/foreign-peer-world-authored.ser",
+      "sha256": "390d552b3361a4ea378d9a35b74fdc07dd24e1aed13f545c473fd92984619fc7",
+      "bytes": 11091,
+      "mode": 384,
+      "placement": "new_asset",
+      "origin": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture/foreign-peer-world-authored.ser"
+    },
+    "crates/core/tests/fixtures/world_owner_roles/foreign-peer-world-call_3.ser": {
+      "path": "crates/core/tests/fixtures/world_owner_roles/foreign-peer-world-call_3.ser",
+      "core_relative_path": "tests/fixtures/world_owner_roles/foreign-peer-world-call_3.ser",
+      "sha256": "860c2b27d2659d67aa4c382dcb64b45797b287ab5d5964e1692c1bbd3d391529",
+      "bytes": 11091,
+      "mode": 384,
+      "placement": "new_asset",
+      "origin": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture/foreign-peer-world-call_3.ser"
+    },
+    "crates/core/tests/fixtures/world_owner_roles/null-member-world-authored.ser": {
+      "path": "crates/core/tests/fixtures/world_owner_roles/null-member-world-authored.ser",
+      "core_relative_path": "tests/fixtures/world_owner_roles/null-member-world-authored.ser",
+      "sha256": "756be22aa1e4f16dd5224da06578d43ba370a51df162335cd190dac621cd9dfc",
+      "bytes": 7739,
+      "mode": 384,
+      "placement": "new_asset",
+      "origin": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture/null-member-world-authored.ser"
+    },
+    "crates/core/tests/fixtures/world_owner_roles/history-envelope-authored.ser": {
+      "path": "crates/core/tests/fixtures/world_owner_roles/history-envelope-authored.ser",
+      "core_relative_path": "tests/fixtures/world_owner_roles/history-envelope-authored.ser",
+      "sha256": "fb7981507bce4d9678820ce16c30af7e7e39622f56ac5749d090dabf04713f66",
+      "bytes": 2415,
+      "mode": 384,
+      "placement": "new_asset",
+      "origin": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture/history-envelope-authored.ser"
+    },
+    "crates/core/tests/fixtures/world_owner_roles/history-envelope-call_3.ser": {
+      "path": "crates/core/tests/fixtures/world_owner_roles/history-envelope-call_3.ser",
+      "core_relative_path": "tests/fixtures/world_owner_roles/history-envelope-call_3.ser",
+      "sha256": "0cb7479c7c21b6b55c72f4439794ad771b37454daef605518dbb428f2d85c71c",
+      "bytes": 2499,
+      "mode": 384,
+      "placement": "new_asset",
+      "origin": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture/history-envelope-call_3.ser"
+    },
+    "crates/core/tests/fixtures/world_owner_roles/membership-envelope-authored.ser": {
+      "path": "crates/core/tests/fixtures/world_owner_roles/membership-envelope-authored.ser",
+      "core_relative_path": "tests/fixtures/world_owner_roles/membership-envelope-authored.ser",
+      "sha256": "049e7e301b33f1254b989d34559dcd965bd3126c4a500ad305710867ec057353",
+      "bytes": 7654,
+      "mode": 384,
+      "placement": "new_asset",
+      "origin": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture/membership-envelope-authored.ser"
+    },
+    "crates/core/tests/fixtures/world_owner_roles/pending-envelope-authored.ser": {
+      "path": "crates/core/tests/fixtures/world_owner_roles/pending-envelope-authored.ser",
+      "core_relative_path": "tests/fixtures/world_owner_roles/pending-envelope-authored.ser",
+      "sha256": "2c07385b2355a3a62461a876aa225712f341ad3843c598f2dc1fa8401e7b56e4",
+      "bytes": 12174,
+      "mode": 384,
+      "placement": "new_asset",
+      "origin": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture/pending-envelope-authored.ser"
+    },
+    "crates/core/tests/fixtures/world_owner_roles/child-envelope-authored.ser": {
+      "path": "crates/core/tests/fixtures/world_owner_roles/child-envelope-authored.ser",
+      "core_relative_path": "tests/fixtures/world_owner_roles/child-envelope-authored.ser",
+      "sha256": "2a7780a09ec2cd6f3cb3a37da2685fe70f766f4b0429abea142d07acd3a2de17",
+      "bytes": 12609,
+      "mode": 384,
+      "placement": "new_asset",
+      "origin": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture/child-envelope-authored.ser"
+    },
+    "crates/core/tests/fixtures/world_owner_roles/child-envelope-call_4.ser": {
+      "path": "crates/core/tests/fixtures/world_owner_roles/child-envelope-call_4.ser",
+      "core_relative_path": "tests/fixtures/world_owner_roles/child-envelope-call_4.ser",
+      "sha256": "a37ceb531c01375c6f884b8ec04732a6bd727207be2a0a15d26375c6ecc15438",
+      "bytes": 12605,
+      "mode": 384,
+      "placement": "new_asset",
+      "origin": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture/child-envelope-call_4.ser"
+    },
+    "crates/core/tests/fixtures/world_owner_roles/cache-control-call_3.ser": {
+      "path": "crates/core/tests/fixtures/world_owner_roles/cache-control-call_3.ser",
+      "core_relative_path": "tests/fixtures/world_owner_roles/cache-control-call_3.ser",
+      "sha256": "dfe39dff878de3e01f67b884ea053243aa763aeb662e7c3e7f11f9701667ea22",
+      "bytes": 12766,
+      "mode": 384,
+      "placement": "new_asset",
+      "origin": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture/cache-control-call_3.ser"
+    },
+    "crates/core/tests/fixtures/world_owner_roles/ownership.tsv": {
+      "path": "crates/core/tests/fixtures/world_owner_roles/ownership.tsv",
+      "core_relative_path": "tests/fixtures/world_owner_roles/ownership.tsv",
+      "sha256": "7d54ae93982d2094c2447e11fa71259c840c9465fd6a54a0cd66153afea792e0",
+      "bytes": 2473456,
+      "mode": 420,
+      "placement": "new_asset",
+      "origin": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture/ownership.tsv"
+    }
+  },
+  "cases": [
+    {
+      "index": 0,
+      "name": "actor-control",
+      "kind": "exact_control",
+      "input_fixture_path": "crates/core/tests/fixtures/world_hydration/actor_closure-call_0.ser",
+      "input_core_relative_path": "tests/fixtures/world_hydration/actor_closure-call_0.ser",
+      "initial_source": "<project-root>/crates/core/tests/fixtures/world_hydration/actor_closure-call_0.ser",
+      "input_sha256": "7b35afb36bf31f7e8e3bc98f90919b3f29296bcf9ea138b9fe7057887a8ff83f",
+      "input_bytes": 10624,
+      "decode_reference_stage": "call_0",
+      "authored_memory_stage": null,
+      "operations": [
+        {
+          "stage": "call_0",
+          "operation": "read_input",
+          "checkpoint_stage": "call_0"
+        },
+        {
+          "stage": "call_1",
+          "operation": "read_rewrite",
+          "checkpoint_stage": "call_1"
+        },
+        {
+          "stage": "call_2",
+          "operation": "init_visible",
+          "checkpoint_stage": "call_2"
+        },
+        {
+          "stage": "call_3",
+          "operation": "find_100_100",
+          "checkpoint_stage": "call_3"
+        }
+      ],
+      "snapshots": [
+        {
+          "case_index": 0,
+          "case": "actor-control",
+          "stage": "call_0",
+          "source_filename": "actor-control-call_0.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_hydration/actor_closure-call_0.ser",
+          "sha256": "7b35afb36bf31f7e8e3bc98f90919b3f29296bcf9ea138b9fe7057887a8ff83f",
+          "bytes": 10624,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 0,
+          "case": "actor-control",
+          "stage": "call_1",
+          "source_filename": "actor-control-call_1.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_hydration/actor_closure-call_0.ser",
+          "sha256": "7b35afb36bf31f7e8e3bc98f90919b3f29296bcf9ea138b9fe7057887a8ff83f",
+          "bytes": 10624,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 0,
+          "case": "actor-control",
+          "stage": "call_2",
+          "source_filename": "actor-control-call_2.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_hydration/actor_closure-call_0.ser",
+          "sha256": "7b35afb36bf31f7e8e3bc98f90919b3f29296bcf9ea138b9fe7057887a8ff83f",
+          "bytes": 10624,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 0,
+          "case": "actor-control",
+          "stage": "call_3",
+          "source_filename": "actor-control-call_3.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_hydration/actor_closure-call_0.ser",
+          "sha256": "7b35afb36bf31f7e8e3bc98f90919b3f29296bcf9ea138b9fe7057887a8ff83f",
+          "bytes": 10624,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "name": "foreign-member-world",
+      "kind": "authored_unknown",
+      "input_fixture_path": "crates/core/tests/fixtures/world_owner_roles/foreign-member-world-authored.ser",
+      "input_core_relative_path": "tests/fixtures/world_owner_roles/foreign-member-world-authored.ser",
+      "initial_source": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture/foreign-member-world-authored.ser",
+      "input_sha256": "25cbf1e8a7311c1cbea61d92c5dd5c0939238e46a02cac9adc673471b6b4195e",
+      "input_bytes": 9564,
+      "decode_reference_stage": "call_0",
+      "authored_memory_stage": "authored",
+      "operations": [
+        {
+          "stage": "call_0",
+          "operation": "read_input",
+          "checkpoint_stage": "call_0"
+        },
+        {
+          "stage": "call_1",
+          "operation": "read_rewrite",
+          "checkpoint_stage": "call_1"
+        },
+        {
+          "stage": "call_2",
+          "operation": "init_visible",
+          "checkpoint_stage": "call_2"
+        },
+        {
+          "stage": "call_3",
+          "operation": "energy_first",
+          "checkpoint_stage": "call_3"
+        }
+      ],
+      "snapshots": [
+        {
+          "case_index": 1,
+          "case": "foreign-member-world",
+          "stage": "authored",
+          "source_filename": "foreign-member-world-authored.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/foreign-member-world-authored.ser",
+          "sha256": "25cbf1e8a7311c1cbea61d92c5dd5c0939238e46a02cac9adc673471b6b4195e",
+          "bytes": 9564,
+          "memory_observation_scope": "authored_live_memory",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 1,
+          "case": "foreign-member-world",
+          "stage": "call_0",
+          "source_filename": "foreign-member-world-call_0.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/foreign-member-world-authored.ser",
+          "sha256": "25cbf1e8a7311c1cbea61d92c5dd5c0939238e46a02cac9adc673471b6b4195e",
+          "bytes": 9564,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 1,
+          "case": "foreign-member-world",
+          "stage": "call_1",
+          "source_filename": "foreign-member-world-call_1.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/foreign-member-world-authored.ser",
+          "sha256": "25cbf1e8a7311c1cbea61d92c5dd5c0939238e46a02cac9adc673471b6b4195e",
+          "bytes": 9564,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 1,
+          "case": "foreign-member-world",
+          "stage": "call_2",
+          "source_filename": "foreign-member-world-call_2.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/foreign-member-world-authored.ser",
+          "sha256": "25cbf1e8a7311c1cbea61d92c5dd5c0939238e46a02cac9adc673471b6b4195e",
+          "bytes": 9564,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 1,
+          "case": "foreign-member-world",
+          "stage": "call_3",
+          "source_filename": "foreign-member-world-call_3.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/foreign-member-world-call_3.ser",
+          "sha256": "635bd66b29a04643601b10f11907d890fded7a110b08d4df9143f0296ac35e5c",
+          "bytes": 9564,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": null,
+          "same_bytes_observed_by_Original_OIS": false
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "foreign-peer-world",
+      "kind": "authored_unknown",
+      "input_fixture_path": "crates/core/tests/fixtures/world_owner_roles/foreign-peer-world-authored.ser",
+      "input_core_relative_path": "tests/fixtures/world_owner_roles/foreign-peer-world-authored.ser",
+      "initial_source": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture/foreign-peer-world-authored.ser",
+      "input_sha256": "390d552b3361a4ea378d9a35b74fdc07dd24e1aed13f545c473fd92984619fc7",
+      "input_bytes": 11091,
+      "decode_reference_stage": "call_0",
+      "authored_memory_stage": "authored",
+      "operations": [
+        {
+          "stage": "call_0",
+          "operation": "read_input",
+          "checkpoint_stage": "call_0"
+        },
+        {
+          "stage": "call_1",
+          "operation": "read_rewrite",
+          "checkpoint_stage": "call_1"
+        },
+        {
+          "stage": "call_2",
+          "operation": "init_visible",
+          "checkpoint_stage": "call_2"
+        },
+        {
+          "stage": "call_3",
+          "operation": "energy_peer",
+          "checkpoint_stage": "call_3"
+        }
+      ],
+      "snapshots": [
+        {
+          "case_index": 2,
+          "case": "foreign-peer-world",
+          "stage": "authored",
+          "source_filename": "foreign-peer-world-authored.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/foreign-peer-world-authored.ser",
+          "sha256": "390d552b3361a4ea378d9a35b74fdc07dd24e1aed13f545c473fd92984619fc7",
+          "bytes": 11091,
+          "memory_observation_scope": "authored_live_memory",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 2,
+          "case": "foreign-peer-world",
+          "stage": "call_0",
+          "source_filename": "foreign-peer-world-call_0.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/foreign-peer-world-authored.ser",
+          "sha256": "390d552b3361a4ea378d9a35b74fdc07dd24e1aed13f545c473fd92984619fc7",
+          "bytes": 11091,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 2,
+          "case": "foreign-peer-world",
+          "stage": "call_1",
+          "source_filename": "foreign-peer-world-call_1.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/foreign-peer-world-authored.ser",
+          "sha256": "390d552b3361a4ea378d9a35b74fdc07dd24e1aed13f545c473fd92984619fc7",
+          "bytes": 11091,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 2,
+          "case": "foreign-peer-world",
+          "stage": "call_2",
+          "source_filename": "foreign-peer-world-call_2.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/foreign-peer-world-authored.ser",
+          "sha256": "390d552b3361a4ea378d9a35b74fdc07dd24e1aed13f545c473fd92984619fc7",
+          "bytes": 11091,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 2,
+          "case": "foreign-peer-world",
+          "stage": "call_3",
+          "source_filename": "foreign-peer-world-call_3.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/foreign-peer-world-call_3.ser",
+          "sha256": "860c2b27d2659d67aa4c382dcb64b45797b287ab5d5964e1692c1bbd3d391529",
+          "bytes": 11091,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": null,
+          "same_bytes_observed_by_Original_OIS": false
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "null-member-world",
+      "kind": "authored_unknown",
+      "input_fixture_path": "crates/core/tests/fixtures/world_owner_roles/null-member-world-authored.ser",
+      "input_core_relative_path": "tests/fixtures/world_owner_roles/null-member-world-authored.ser",
+      "initial_source": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture/null-member-world-authored.ser",
+      "input_sha256": "756be22aa1e4f16dd5224da06578d43ba370a51df162335cd190dac621cd9dfc",
+      "input_bytes": 7739,
+      "decode_reference_stage": "call_0",
+      "authored_memory_stage": "authored",
+      "operations": [
+        {
+          "stage": "call_0",
+          "operation": "read_input",
+          "checkpoint_stage": "call_0"
+        },
+        {
+          "stage": "call_1",
+          "operation": "read_rewrite",
+          "checkpoint_stage": "call_1"
+        },
+        {
+          "stage": "call_2",
+          "operation": "init_visible",
+          "checkpoint_stage": "call_2"
+        },
+        {
+          "stage": "call_3",
+          "operation": "energy_first",
+          "checkpoint_stage": "call_3"
+        }
+      ],
+      "snapshots": [
+        {
+          "case_index": 3,
+          "case": "null-member-world",
+          "stage": "authored",
+          "source_filename": "null-member-world-authored.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/null-member-world-authored.ser",
+          "sha256": "756be22aa1e4f16dd5224da06578d43ba370a51df162335cd190dac621cd9dfc",
+          "bytes": 7739,
+          "memory_observation_scope": "authored_live_memory",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 3,
+          "case": "null-member-world",
+          "stage": "call_0",
+          "source_filename": "null-member-world-call_0.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/null-member-world-authored.ser",
+          "sha256": "756be22aa1e4f16dd5224da06578d43ba370a51df162335cd190dac621cd9dfc",
+          "bytes": 7739,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 3,
+          "case": "null-member-world",
+          "stage": "call_1",
+          "source_filename": "null-member-world-call_1.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/null-member-world-authored.ser",
+          "sha256": "756be22aa1e4f16dd5224da06578d43ba370a51df162335cd190dac621cd9dfc",
+          "bytes": 7739,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 3,
+          "case": "null-member-world",
+          "stage": "call_2",
+          "source_filename": "null-member-world-call_2.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/null-member-world-authored.ser",
+          "sha256": "756be22aa1e4f16dd5224da06578d43ba370a51df162335cd190dac621cd9dfc",
+          "bytes": 7739,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 3,
+          "case": "null-member-world",
+          "stage": "call_3",
+          "source_filename": "null-member-world-call_3.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/null-member-world-authored.ser",
+          "sha256": "756be22aa1e4f16dd5224da06578d43ba370a51df162335cd190dac621cd9dfc",
+          "bytes": 7739,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "name": "history-envelope",
+      "kind": "authored_unknown",
+      "input_fixture_path": "crates/core/tests/fixtures/world_owner_roles/history-envelope-authored.ser",
+      "input_core_relative_path": "tests/fixtures/world_owner_roles/history-envelope-authored.ser",
+      "initial_source": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture/history-envelope-authored.ser",
+      "input_sha256": "fb7981507bce4d9678820ce16c30af7e7e39622f56ac5749d090dabf04713f66",
+      "input_bytes": 2415,
+      "decode_reference_stage": "call_0",
+      "authored_memory_stage": "authored",
+      "operations": [
+        {
+          "stage": "call_0",
+          "operation": "read_input",
+          "checkpoint_stage": "call_0"
+        },
+        {
+          "stage": "call_1",
+          "operation": "read_rewrite",
+          "checkpoint_stage": "call_1"
+        },
+        {
+          "stage": "call_2",
+          "operation": "init_visible",
+          "checkpoint_stage": "call_2"
+        },
+        {
+          "stage": "call_3",
+          "operation": "history_event",
+          "checkpoint_stage": "call_3"
+        },
+        {
+          "stage": "call_4",
+          "operation": "population_graph_info",
+          "checkpoint_stage": "call_4"
+        }
+      ],
+      "snapshots": [
+        {
+          "case_index": 4,
+          "case": "history-envelope",
+          "stage": "authored",
+          "source_filename": "history-envelope-authored.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/history-envelope-authored.ser",
+          "sha256": "fb7981507bce4d9678820ce16c30af7e7e39622f56ac5749d090dabf04713f66",
+          "bytes": 2415,
+          "memory_observation_scope": "authored_live_memory",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 4,
+          "case": "history-envelope",
+          "stage": "call_0",
+          "source_filename": "history-envelope-call_0.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/history-envelope-authored.ser",
+          "sha256": "fb7981507bce4d9678820ce16c30af7e7e39622f56ac5749d090dabf04713f66",
+          "bytes": 2415,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 4,
+          "case": "history-envelope",
+          "stage": "call_1",
+          "source_filename": "history-envelope-call_1.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/history-envelope-authored.ser",
+          "sha256": "fb7981507bce4d9678820ce16c30af7e7e39622f56ac5749d090dabf04713f66",
+          "bytes": 2415,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 4,
+          "case": "history-envelope",
+          "stage": "call_2",
+          "source_filename": "history-envelope-call_2.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/history-envelope-authored.ser",
+          "sha256": "fb7981507bce4d9678820ce16c30af7e7e39622f56ac5749d090dabf04713f66",
+          "bytes": 2415,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 4,
+          "case": "history-envelope",
+          "stage": "call_3",
+          "source_filename": "history-envelope-call_3.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/history-envelope-call_3.ser",
+          "sha256": "0cb7479c7c21b6b55c72f4439794ad771b37454daef605518dbb428f2d85c71c",
+          "bytes": 2499,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": null,
+          "same_bytes_observed_by_Original_OIS": false
+        },
+        {
+          "case_index": 4,
+          "case": "history-envelope",
+          "stage": "call_4",
+          "source_filename": "history-envelope-call_4.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/history-envelope-call_3.ser",
+          "sha256": "0cb7479c7c21b6b55c72f4439794ad771b37454daef605518dbb428f2d85c71c",
+          "bytes": 2499,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": null,
+          "same_bytes_observed_by_Original_OIS": false
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "name": "membership-envelope",
+      "kind": "authored_unknown",
+      "input_fixture_path": "crates/core/tests/fixtures/world_owner_roles/membership-envelope-authored.ser",
+      "input_core_relative_path": "tests/fixtures/world_owner_roles/membership-envelope-authored.ser",
+      "initial_source": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture/membership-envelope-authored.ser",
+      "input_sha256": "049e7e301b33f1254b989d34559dcd965bd3126c4a500ad305710867ec057353",
+      "input_bytes": 7654,
+      "decode_reference_stage": "call_0",
+      "authored_memory_stage": "authored",
+      "operations": [
+        {
+          "stage": "call_0",
+          "operation": "read_input",
+          "checkpoint_stage": "call_0"
+        },
+        {
+          "stage": "call_1",
+          "operation": "read_rewrite",
+          "checkpoint_stage": "call_1"
+        },
+        {
+          "stage": "call_2",
+          "operation": "init_visible",
+          "checkpoint_stage": "call_2"
+        },
+        {
+          "stage": "call_3",
+          "operation": "find_100_100",
+          "checkpoint_stage": "call_3"
+        },
+        {
+          "stage": "call_4",
+          "operation": "world_find_far",
+          "checkpoint_stage": "call_4"
+        }
+      ],
+      "snapshots": [
+        {
+          "case_index": 5,
+          "case": "membership-envelope",
+          "stage": "authored",
+          "source_filename": "membership-envelope-authored.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/membership-envelope-authored.ser",
+          "sha256": "049e7e301b33f1254b989d34559dcd965bd3126c4a500ad305710867ec057353",
+          "bytes": 7654,
+          "memory_observation_scope": "authored_live_memory",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 5,
+          "case": "membership-envelope",
+          "stage": "call_0",
+          "source_filename": "membership-envelope-call_0.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/membership-envelope-authored.ser",
+          "sha256": "049e7e301b33f1254b989d34559dcd965bd3126c4a500ad305710867ec057353",
+          "bytes": 7654,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 5,
+          "case": "membership-envelope",
+          "stage": "call_1",
+          "source_filename": "membership-envelope-call_1.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/membership-envelope-authored.ser",
+          "sha256": "049e7e301b33f1254b989d34559dcd965bd3126c4a500ad305710867ec057353",
+          "bytes": 7654,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 5,
+          "case": "membership-envelope",
+          "stage": "call_2",
+          "source_filename": "membership-envelope-call_2.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/membership-envelope-authored.ser",
+          "sha256": "049e7e301b33f1254b989d34559dcd965bd3126c4a500ad305710867ec057353",
+          "bytes": 7654,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 5,
+          "case": "membership-envelope",
+          "stage": "call_3",
+          "source_filename": "membership-envelope-call_3.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/membership-envelope-authored.ser",
+          "sha256": "049e7e301b33f1254b989d34559dcd965bd3126c4a500ad305710867ec057353",
+          "bytes": 7654,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 5,
+          "case": "membership-envelope",
+          "stage": "call_4",
+          "source_filename": "membership-envelope-call_4.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/membership-envelope-authored.ser",
+          "sha256": "049e7e301b33f1254b989d34559dcd965bd3126c4a500ad305710867ec057353",
+          "bytes": 7654,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "name": "pending-envelope",
+      "kind": "authored_unknown",
+      "input_fixture_path": "crates/core/tests/fixtures/world_owner_roles/pending-envelope-authored.ser",
+      "input_core_relative_path": "tests/fixtures/world_owner_roles/pending-envelope-authored.ser",
+      "initial_source": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture/pending-envelope-authored.ser",
+      "input_sha256": "2c07385b2355a3a62461a876aa225712f341ad3843c598f2dc1fa8401e7b56e4",
+      "input_bytes": 12174,
+      "decode_reference_stage": "call_0",
+      "authored_memory_stage": "authored",
+      "operations": [
+        {
+          "stage": "call_0",
+          "operation": "read_input",
+          "checkpoint_stage": "call_0"
+        },
+        {
+          "stage": "call_1",
+          "operation": "read_rewrite",
+          "checkpoint_stage": "call_1"
+        },
+        {
+          "stage": "call_2",
+          "operation": "init_visible",
+          "checkpoint_stage": "call_2"
+        },
+        {
+          "stage": "call_3",
+          "operation": "tree_build",
+          "checkpoint_stage": "call_3"
+        },
+        {
+          "stage": "call_4",
+          "operation": "tree_query_all",
+          "checkpoint_stage": "call_4"
+        }
+      ],
+      "snapshots": [
+        {
+          "case_index": 6,
+          "case": "pending-envelope",
+          "stage": "authored",
+          "source_filename": "pending-envelope-authored.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/pending-envelope-authored.ser",
+          "sha256": "2c07385b2355a3a62461a876aa225712f341ad3843c598f2dc1fa8401e7b56e4",
+          "bytes": 12174,
+          "memory_observation_scope": "authored_live_memory",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 6,
+          "case": "pending-envelope",
+          "stage": "call_0",
+          "source_filename": "pending-envelope-call_0.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/pending-envelope-authored.ser",
+          "sha256": "2c07385b2355a3a62461a876aa225712f341ad3843c598f2dc1fa8401e7b56e4",
+          "bytes": 12174,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 6,
+          "case": "pending-envelope",
+          "stage": "call_1",
+          "source_filename": "pending-envelope-call_1.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/pending-envelope-authored.ser",
+          "sha256": "2c07385b2355a3a62461a876aa225712f341ad3843c598f2dc1fa8401e7b56e4",
+          "bytes": 12174,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 6,
+          "case": "pending-envelope",
+          "stage": "call_2",
+          "source_filename": "pending-envelope-call_2.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/pending-envelope-authored.ser",
+          "sha256": "2c07385b2355a3a62461a876aa225712f341ad3843c598f2dc1fa8401e7b56e4",
+          "bytes": 12174,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 6,
+          "case": "pending-envelope",
+          "stage": "call_3",
+          "source_filename": "pending-envelope-call_3.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/pending-envelope-authored.ser",
+          "sha256": "2c07385b2355a3a62461a876aa225712f341ad3843c598f2dc1fa8401e7b56e4",
+          "bytes": 12174,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 6,
+          "case": "pending-envelope",
+          "stage": "call_4",
+          "source_filename": "pending-envelope-call_4.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/pending-envelope-authored.ser",
+          "sha256": "2c07385b2355a3a62461a876aa225712f341ad3843c598f2dc1fa8401e7b56e4",
+          "bytes": 12174,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "name": "child-envelope",
+      "kind": "authored_unknown",
+      "input_fixture_path": "crates/core/tests/fixtures/world_owner_roles/child-envelope-authored.ser",
+      "input_core_relative_path": "tests/fixtures/world_owner_roles/child-envelope-authored.ser",
+      "initial_source": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture/child-envelope-authored.ser",
+      "input_sha256": "2a7780a09ec2cd6f3cb3a37da2685fe70f766f4b0429abea142d07acd3a2de17",
+      "input_bytes": 12609,
+      "decode_reference_stage": "call_0",
+      "authored_memory_stage": "authored",
+      "operations": [
+        {
+          "stage": "call_0",
+          "operation": "read_input",
+          "checkpoint_stage": "call_0"
+        },
+        {
+          "stage": "call_1",
+          "operation": "read_rewrite",
+          "checkpoint_stage": "call_1"
+        },
+        {
+          "stage": "call_2",
+          "operation": "init_visible",
+          "checkpoint_stage": "call_2"
+        },
+        {
+          "stage": "call_3",
+          "operation": "tree_query_all",
+          "checkpoint_stage": "call_3"
+        },
+        {
+          "stage": "call_4",
+          "operation": "tree_query_clear_cache",
+          "checkpoint_stage": "call_4"
+        }
+      ],
+      "snapshots": [
+        {
+          "case_index": 7,
+          "case": "child-envelope",
+          "stage": "authored",
+          "source_filename": "child-envelope-authored.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/child-envelope-authored.ser",
+          "sha256": "2a7780a09ec2cd6f3cb3a37da2685fe70f766f4b0429abea142d07acd3a2de17",
+          "bytes": 12609,
+          "memory_observation_scope": "authored_live_memory",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 7,
+          "case": "child-envelope",
+          "stage": "call_0",
+          "source_filename": "child-envelope-call_0.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/child-envelope-authored.ser",
+          "sha256": "2a7780a09ec2cd6f3cb3a37da2685fe70f766f4b0429abea142d07acd3a2de17",
+          "bytes": 12609,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 7,
+          "case": "child-envelope",
+          "stage": "call_1",
+          "source_filename": "child-envelope-call_1.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/child-envelope-authored.ser",
+          "sha256": "2a7780a09ec2cd6f3cb3a37da2685fe70f766f4b0429abea142d07acd3a2de17",
+          "bytes": 12609,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 7,
+          "case": "child-envelope",
+          "stage": "call_2",
+          "source_filename": "child-envelope-call_2.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/child-envelope-authored.ser",
+          "sha256": "2a7780a09ec2cd6f3cb3a37da2685fe70f766f4b0429abea142d07acd3a2de17",
+          "bytes": 12609,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 7,
+          "case": "child-envelope",
+          "stage": "call_3",
+          "source_filename": "child-envelope-call_3.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/child-envelope-authored.ser",
+          "sha256": "2a7780a09ec2cd6f3cb3a37da2685fe70f766f4b0429abea142d07acd3a2de17",
+          "bytes": 12609,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 7,
+          "case": "child-envelope",
+          "stage": "call_4",
+          "source_filename": "child-envelope-call_4.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/child-envelope-call_4.ser",
+          "sha256": "a37ceb531c01375c6f884b8ec04732a6bd727207be2a0a15d26375c6ecc15438",
+          "bytes": 12605,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": null,
+          "same_bytes_observed_by_Original_OIS": false
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "name": "cache-control",
+      "kind": "exact_control",
+      "input_fixture_path": "crates/core/tests/fixtures/shared_world_owners/child_history_cache-call_0.ser",
+      "input_core_relative_path": "tests/fixtures/shared_world_owners/child_history_cache-call_0.ser",
+      "initial_source": "<project-root>/crates/core/tests/fixtures/shared_world_owners/child_history_cache-call_0.ser",
+      "input_sha256": "7c71c902a3c2e9726df75544933900a022a671a40af5b34c536323e32a5c8b65",
+      "input_bytes": 12729,
+      "decode_reference_stage": "call_0",
+      "authored_memory_stage": null,
+      "operations": [
+        {
+          "stage": "call_0",
+          "operation": "read_input",
+          "checkpoint_stage": "call_0"
+        },
+        {
+          "stage": "call_1",
+          "operation": "read_rewrite",
+          "checkpoint_stage": "call_1"
+        },
+        {
+          "stage": "call_2",
+          "operation": "init_visible",
+          "checkpoint_stage": "call_2"
+        },
+        {
+          "stage": "call_3",
+          "operation": "tree_query_all",
+          "checkpoint_stage": "call_3"
+        }
+      ],
+      "snapshots": [
+        {
+          "case_index": 8,
+          "case": "cache-control",
+          "stage": "call_0",
+          "source_filename": "cache-control-call_0.ser",
+          "fixture_path": "crates/core/tests/fixtures/shared_world_owners/child_history_cache-call_0.ser",
+          "sha256": "7c71c902a3c2e9726df75544933900a022a671a40af5b34c536323e32a5c8b65",
+          "bytes": 12729,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 8,
+          "case": "cache-control",
+          "stage": "call_1",
+          "source_filename": "cache-control-call_1.ser",
+          "fixture_path": "crates/core/tests/fixtures/shared_world_owners/child_history_cache-call_0.ser",
+          "sha256": "7c71c902a3c2e9726df75544933900a022a671a40af5b34c536323e32a5c8b65",
+          "bytes": 12729,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 8,
+          "case": "cache-control",
+          "stage": "call_2",
+          "source_filename": "cache-control-call_2.ser",
+          "fixture_path": "crates/core/tests/fixtures/shared_world_owners/child_history_cache-call_0.ser",
+          "sha256": "7c71c902a3c2e9726df75544933900a022a671a40af5b34c536323e32a5c8b65",
+          "bytes": 12729,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": "call_0",
+          "same_bytes_observed_by_Original_OIS": true
+        },
+        {
+          "case_index": 8,
+          "case": "cache-control",
+          "stage": "call_3",
+          "source_filename": "cache-control-call_3.ser",
+          "fixture_path": "crates/core/tests/fixtures/world_owner_roles/cache-control-call_3.ser",
+          "sha256": "dfe39dff878de3e01f67b884ea053243aa763aeb662e7c3e7f11f9701667ea22",
+          "bytes": 12766,
+          "memory_observation_scope": "after_fixed_Original_operation",
+          "serialized_decode_graph_reference_stage": null,
+          "same_bytes_observed_by_Original_OIS": false
+        }
+      ]
+    }
+  ],
+  "memory_wire_policy": {
+    "authored_graphs": "Live constructor observations,including noncanonical NaN42 and transient owners; do not compare them as decoded wire state",
+    "initial_decode_reference": "call_0 for all nine exact initial payloads",
+    "post_operation_graphs": "Compare the exact Source TSV operation state. Serialized fields and transient runtime fields have separate meanings.",
+    "independent_Original_World_reads": 18,
+    "root_initializations": 9,
+    "snapshot_files_are_not_independent_OIS_reads": true,
+    "NaN_wire": "Source writes canonical7ff8000000000000 from authored7ff8000000000042; signed zero and infinity remain exact",
+    "RNG": "Source caller RNG state follows setup constructors. It is not part of the World wire payload; compare operation preservation without substituting the constructor seed for its advanced internal state."
+  },
+  "provenance": "provenance.json",
+  "runtime_provenance_paths_required_by_tests": false
+}

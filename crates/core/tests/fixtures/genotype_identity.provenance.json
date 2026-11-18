@@ -1,0 +1,410 @@
+{
+  "schema": "biogenesis-genotype-identity-oracle-v1",
+  "generated_utc": "2026-10-25T21:47:56.417708+00:00",
+  "helper": {
+    "path": "tools/reference/GenotypeIdentityOracle.java",
+    "sha256": "4a90993bc2ae42864d66e477fe9d40a1d437fda2a9ec3ce297a859649f44da8c",
+    "compiled_classes": {
+      "helpers-source/biogenesis/GenotypeIdentityOracle.class": "5308de0abb749f2ff625453850e7ef1402e48ad669e409b34bfc8157e82ba1a8",
+      "helpers-jar/biogenesis/GenotypeIdentityOracle.class": "5308de0abb749f2ff625453850e7ef1402e48ad669e409b34bfc8157e82ba1a8"
+    },
+    "source_jar_helper_classes_identical": true
+  },
+  "fixture": {
+    "path": "crates/core/tests/fixtures/genotype_identity.tsv",
+    "sha256": "b6a85cb8b2b628a8a8b25c3de2db1445a61433b06c7b66647670c07a1ea0b9ac",
+    "bytes": 19675,
+    "rows": 366,
+    "cases": 1,
+    "stages": [
+      "constructed",
+      "infection-organism-shared",
+      "shared-edit",
+      "infection-organism-clone",
+      "infection-code-shared",
+      "shared-second-edit"
+    ],
+    "all_three_outputs_byte_identical": true
+  },
+  "reference": {
+    "original_manifest": "docs/evidence/reference-manifest.json",
+    "original_files_checked": 74,
+    "source_sha256": {
+      "Gene": "d070db688526a401c8b55904c06066b2169ca82c76837e3001b4c423bc80e720",
+      "GeneticCode": "f8bf3d0315cec8a2bf515a1626391fe5b646e47566234d398ef58bbdbc3a9004",
+      "Organism": "8650cb0983069dbae09e2ca704059fb82761fa6e0d87f35218c2342ffc60df46",
+      "VisibleWorld": "b14b41135de13d935f24e42b2f82a72457a015831d1b62f30a26bd5be7faedc5",
+      "World": "a67543055a665a9a378e37c860671996e2ca0f510cb622375172a24333d7cae1",
+      "WorldStatistics": "407bcd4bec5e947f26ccfb02a1a590bec6eb9f22f675ad88d9bb974f686ebe15",
+      "OutCorridor": "6eb25835ef3cb70038793901b91268faaf57d348603efca60f1de9c2a7ef6f17"
+    },
+    "jar_sha256": "0baeae8d29f5fdbbb830c1a9e51c7f2b5314a33011b20ec7471eeaa27f0398e1",
+    "jts_sha256": "00102cde26c457b81fbb0248e4f8845884243caba0dc9b7fb42e0ea877383bc1",
+    "prior_fixtures_unchanged": {
+      "genetics.tsv": "1fc3f745a83427c499d84884dfdb6864fdc222861feb30488d7083a4a0126b71",
+      "organism_state.tsv": "298e7a37eb2983252797a40e45ff721141ba22e6b8cfdaba91a1bfa079552f8b",
+      "paste_rejection.tsv": "73b1fa2480d2211e29cbbb24c4653c18d3a0786c5e0074f84e0c378b0b333db9"
+    }
+  },
+  "execution": {
+    "versions": {
+      "java": "openjdk version \"21.0.12.1\" 2026-08-18\nOpenJDK Runtime Environment (build 21.0.12.1+1)\nOpenJDK 64-Bit Server VM (build 21.0.12.1+1, mixed mode, sharing)\n",
+      "javac": "javac 21.0.12.1\n"
+    },
+    "compile_commands": [
+      {
+        "argv": [
+          "javac",
+          "-encoding",
+          "UTF-8",
+          "-cp",
+          "<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "-d",
+          "<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1/helpers-source",
+          "<project-root>/tools/reference/GenotypeIdentityOracle.java"
+        ],
+        "cwd": "<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1",
+        "pid": 4,
+        "process_group": 4,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.4664604559984582,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "javac",
+          "-encoding",
+          "UTF-8",
+          "-cp",
+          "<reference-root>/ColorMod_2_01/biogenesis.jar:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "-d",
+          "<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1/helpers-jar",
+          "<project-root>/tools/reference/GenotypeIdentityOracle.java"
+        ],
+        "cwd": "<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1",
+        "pid": 32,
+        "process_group": 32,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.4412584150013572,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "positive_runs": [
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx384m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1/source-a/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1/source-a/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1/source-a/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1/source-a/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.GenotypeIdentityOracle",
+          "<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1/source-a/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1/source-a",
+        "pid": 59,
+        "process_group": 59,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.21386675099711283,
+        "stdout": "GENOTYPE_IDENTITY_ORACLE PASS cases=1 stages=6\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx384m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1/source-b/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1/source-b/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1/source-b/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1/source-b/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.GenotypeIdentityOracle",
+          "<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1/source-b/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1/source-b",
+        "pid": 82,
+        "process_group": 82,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.1874963009977364,
+        "stdout": "GENOTYPE_IDENTITY_ORACLE PASS cases=1 stages=6\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx384m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1/jar/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1/jar/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1/jar/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1/jar/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1/helpers-jar:<reference-root>/ColorMod_2_01/biogenesis.jar:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.GenotypeIdentityOracle",
+          "<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1/jar/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1/jar",
+        "pid": 106,
+        "process_group": 106,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.17016557599708904,
+        "stdout": "GENOTYPE_IDENTITY_ORACLE PASS cases=1 stages=6\n",
+        "stderr": ""
+      }
+    ],
+    "negative_checks": [
+      {
+        "argv": [
+          "java",
+          "-Djava.awt.headless=true",
+          "-cp",
+          "<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.GenotypeIdentityOracle",
+          "<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1/no-profile-flags/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1/no-profile-flags",
+        "pid": 42,
+        "process_group": 42,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.02828314200087334,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: user.home\n\tat biogenesis.GenotypeIdentityOracle.require(GenotypeIdentityOracle.java:19)\n\tat biogenesis.GenotypeIdentityOracle.main(GenotypeIdentityOracle.java:190)\n"
+      },
+      {
+        "argv": [
+          "java",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1/source-a/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1/source-a/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1/source-a/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1/source-a/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.GenotypeIdentityOracle",
+          "<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1/source-a/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/genotype-identity-oracle-fn30kd_1/no-profile-flags",
+        "pid": 60,
+        "process_group": 60,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.030036978001589887,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Output directory must not exist\n\tat biogenesis.GenotypeIdentityOracle.require(GenotypeIdentityOracle.java:19)\n\tat biogenesis.GenotypeIdentityOracle.main(GenotypeIdentityOracle.java:192)\n"
+      }
+    ],
+    "raw_receipts": ".workflow-local/genotype-identity-oracle-fn30kd_1/commands.json",
+    "headless": true,
+    "real_components": [
+      "VisibleWorld(null)",
+      "World(visible)",
+      "Organism(world, supplied GeneticCode)"
+    ],
+    "explicit_profile_properties": [
+      "user.home",
+      "java.io.tmpdir",
+      "java.util.prefs.userRoot",
+      "java.util.prefs.systemRoot"
+    ],
+    "selected_recipient_input": "visible._selectedOrganism=b; no MainWindow callbacks execute"
+  },
+  "observed_identity_and_bookkeeping": {
+    "constructed": {
+      "a_genotype_is_b_genotype": "true",
+      "a_genotype_is_c_genotype": "false",
+      "a_genotype_values_equal_c": "true",
+      "a_gene_array_is_b_gene_array": "true",
+      "a_gene_array_is_c_gene_array": "false",
+      "a_gene0_is_b_gene0": "true",
+      "a_gene0_is_c_gene0": "false",
+      "a_color0_is_c_color0": "true",
+      "b_infected_is_a_genotype": "false",
+      "b_infected_is_b_genotype": "false",
+      "b_infected_is_c_genotype": "false",
+      "b_saved_is_null": "true",
+      "c_saved_is_a_genotype": "false",
+      "statistics_last_infected_is_b_genotype": "false",
+      "statistics_most_infections_is_a_genotype": "false",
+      "a._nTotalInfected": "0",
+      "c._nTotalInfected": "0",
+      "b._infectedReproduceEnergy": "-17",
+      "statistics.beingMostInfectionsNumber": "0",
+      "statistics.infectionsSum": "0"
+    },
+    "infection-organism-shared": {
+      "a_genotype_is_b_genotype": "true",
+      "a_genotype_is_c_genotype": "false",
+      "a_genotype_values_equal_c": "true",
+      "a_gene_array_is_b_gene_array": "true",
+      "a_gene_array_is_c_gene_array": "false",
+      "a_gene0_is_b_gene0": "true",
+      "a_gene0_is_c_gene0": "false",
+      "a_color0_is_c_color0": "true",
+      "b_infected_is_a_genotype": "true",
+      "b_infected_is_b_genotype": "true",
+      "b_infected_is_c_genotype": "false",
+      "b_saved_is_null": "true",
+      "c_saved_is_a_genotype": "false",
+      "statistics_last_infected_is_b_genotype": "true",
+      "statistics_most_infections_is_a_genotype": "true",
+      "a._nTotalInfected": "1",
+      "c._nTotalInfected": "0",
+      "b._infectedReproduceEnergy": "123",
+      "statistics.beingMostInfectionsNumber": "1",
+      "statistics.infectionsSum": "1"
+    },
+    "shared-edit": {
+      "a_genotype_is_b_genotype": "true",
+      "a_genotype_is_c_genotype": "false",
+      "a_genotype_values_equal_c": "false",
+      "a_gene_array_is_b_gene_array": "true",
+      "a_gene_array_is_c_gene_array": "false",
+      "a_gene0_is_b_gene0": "true",
+      "a_gene0_is_c_gene0": "false",
+      "a_color0_is_c_color0": "true",
+      "b_infected_is_a_genotype": "true",
+      "b_infected_is_b_genotype": "true",
+      "b_infected_is_c_genotype": "false",
+      "b_saved_is_null": "true",
+      "c_saved_is_a_genotype": "true",
+      "statistics_last_infected_is_b_genotype": "true",
+      "statistics_most_infections_is_a_genotype": "true",
+      "a._nTotalInfected": "1",
+      "c._nTotalInfected": "0",
+      "b._infectedReproduceEnergy": "123",
+      "statistics.beingMostInfectionsNumber": "1",
+      "statistics.infectionsSum": "1"
+    },
+    "infection-organism-clone": {
+      "a_genotype_is_b_genotype": "true",
+      "a_genotype_is_c_genotype": "false",
+      "a_genotype_values_equal_c": "false",
+      "a_gene_array_is_b_gene_array": "true",
+      "a_gene_array_is_c_gene_array": "false",
+      "a_gene0_is_b_gene0": "true",
+      "a_gene0_is_c_gene0": "false",
+      "a_color0_is_c_color0": "true",
+      "b_infected_is_a_genotype": "false",
+      "b_infected_is_b_genotype": "false",
+      "b_infected_is_c_genotype": "true",
+      "b_saved_is_null": "true",
+      "c_saved_is_a_genotype": "true",
+      "statistics_last_infected_is_b_genotype": "true",
+      "statistics_most_infections_is_a_genotype": "true",
+      "a._nTotalInfected": "1",
+      "c._nTotalInfected": "1",
+      "b._infectedReproduceEnergy": "-41",
+      "statistics.beingMostInfectionsNumber": "1",
+      "statistics.infectionsSum": "2"
+    },
+    "infection-code-shared": {
+      "a_genotype_is_b_genotype": "true",
+      "a_genotype_is_c_genotype": "false",
+      "a_genotype_values_equal_c": "false",
+      "a_gene_array_is_b_gene_array": "true",
+      "a_gene_array_is_c_gene_array": "false",
+      "a_gene0_is_b_gene0": "true",
+      "a_gene0_is_c_gene0": "false",
+      "a_color0_is_c_color0": "true",
+      "b_infected_is_a_genotype": "true",
+      "b_infected_is_b_genotype": "true",
+      "b_infected_is_c_genotype": "false",
+      "b_saved_is_null": "true",
+      "c_saved_is_a_genotype": "true",
+      "statistics_last_infected_is_b_genotype": "true",
+      "statistics_most_infections_is_a_genotype": "true",
+      "a._nTotalInfected": "1",
+      "c._nTotalInfected": "1",
+      "b._infectedReproduceEnergy": "-41",
+      "statistics.beingMostInfectionsNumber": "1",
+      "statistics.infectionsSum": "3"
+    },
+    "shared-second-edit": {
+      "a_genotype_is_b_genotype": "true",
+      "a_genotype_is_c_genotype": "false",
+      "a_genotype_values_equal_c": "false",
+      "a_gene_array_is_b_gene_array": "true",
+      "a_gene_array_is_c_gene_array": "false",
+      "a_gene0_is_b_gene0": "true",
+      "a_gene0_is_c_gene0": "false",
+      "a_color0_is_c_color0": "true",
+      "b_infected_is_a_genotype": "true",
+      "b_infected_is_b_genotype": "true",
+      "b_infected_is_c_genotype": "false",
+      "b_saved_is_null": "true",
+      "c_saved_is_a_genotype": "true",
+      "statistics_last_infected_is_b_genotype": "true",
+      "statistics_most_infections_is_a_genotype": "true",
+      "a._nTotalInfected": "1",
+      "c._nTotalInfected": "1",
+      "b._infectedReproduceEnergy": "-41",
+      "statistics.beingMostInfectionsNumber": "1",
+      "statistics.infectionsSum": "3"
+    }
+  },
+  "following_rng": [
+    "-8171647845708839206",
+    "4391",
+    "3fe01778c535c9f0"
+  ],
+  "plain_random_crosscheck": "Three constructor nextDouble draws, followed by exact nextLong, nextInt(10000), and nextDouble raw bits.",
+  "controlled_inputs": [
+    "Explicit genome metadata and bookkeeping energy values",
+    "Saved-genome preloads and c saved-reference assignment",
+    "Shared clade/generation/update-clade and mutable gene edits",
+    "Selected recipient sentinel prevents UI callbacks"
+  ],
+  "actual_methods": [
+    "Organism(World, GeneticCode), three calls",
+    "GeneticCode.clone(), one call",
+    "Organism.infectedBy(Organism), two calls",
+    "Organism.infectedBy(GeneticCode), one call",
+    "World.organismHasBeenInfected and WorldStatistics.eventOrganismInfects, three calls"
+  ],
+  "comparison_contract": {
+    "mutable_identity": "Compare reference topology, including same-valued distinct clones, with actual Rust reference identity.",
+    "immutable_color": "Java Color identity is observed; Rust may preserve exact nullable ARGB values without allocated Color identity.",
+    "metadata_and_bookkeeping": "All recorded values compare exactly; raw double bits remain unchanged.",
+    "rust_status": "This provenance reports Java oracle observations only, without a Rust comparison claim."
+  },
+  "preservation": {
+    "existing_output_preserved": true,
+    "missing_profiles_failed_before_output_creation": true,
+    "prior_fixtures_unchanged": 3,
+    "reference_files_unchanged": 74
+  },
+  "limitations": [
+    "No contact calculation, complete infection lifecycle, reproduction, recovery, transport, frame, top-level UI or persistence is exercised.",
+    "Saved alias and clade edits are labelled controlled inputs, not executed reproduction or corridor operations.",
+    "Deep-world cloning and product Rust behavior require separate evidence."
+  ]
+}

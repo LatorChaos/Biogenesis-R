@@ -1,0 +1,403 @@
+{
+  "schema": "biogenesis-death-oracle-v1",
+  "generated_utc": "2026-10-26T01:25:47.707757+00:00",
+  "helper": {
+    "path": "tools/reference/DeathOracle.java",
+    "sha256": "2cbc84832bcd91a24bccdda7b7f4fdcee3a7661ff233b19136a7efe56a4700cb",
+    "mode": "canonical",
+    "compiled_classes": {
+      "source": {
+        "DeathOracle$Action.class": "81d331315d0c28b23b2da6c0f74a194f0761aac76103d15dc03c2f5b6109124b",
+        "DeathOracle$Spec.class": "70498e93ee43d64af5d6d095c7444975c5c9790dcf41d9c0e449b4d0337300c8",
+        "DeathOracle$Capture.class": "9044d9803659c1c2b971b75633445a578522107e2f956cbccd59ef66cd7efc64",
+        "DeathOracle.class": "6e78f96882ede899480bedfb97d470e25dbb4ee988f4fe8b3126843dcd239ceb"
+      },
+      "jar": {
+        "DeathOracle$Action.class": "81d331315d0c28b23b2da6c0f74a194f0761aac76103d15dc03c2f5b6109124b",
+        "DeathOracle$Spec.class": "70498e93ee43d64af5d6d095c7444975c5c9790dcf41d9c0e449b4d0337300c8",
+        "DeathOracle$Capture.class": "9044d9803659c1c2b971b75633445a578522107e2f956cbccd59ef66cd7efc64",
+        "DeathOracle.class": "6e78f96882ede899480bedfb97d470e25dbb4ee988f4fe8b3126843dcd239ceb"
+      }
+    },
+    "source_jar_helper_classes_identical": true
+  },
+  "fixture": {
+    "path": "crates/core/tests/fixtures/death.tsv",
+    "sha256": "198a17283df6d96826fef2c6464acf6ad222f1e5234c884ec781b05080941720",
+    "bytes": 6605096,
+    "cases": 36,
+    "snapshots": 84,
+    "actor_views": 252,
+    "organism_fields_per_view": 154,
+    "statistics_fields_per_snapshot": 52,
+    "statistics_getters_per_snapshot": 49,
+    "primitive_utils_settings_per_case": 147,
+    "explicit_calls": 48,
+    "calls_by_operation": {
+      "die": 23,
+      "isInsideWorld": 22,
+      "grow": 1,
+      "offset_velocity": 1,
+      "bounds": 1
+    },
+    "rows": 191189,
+    "row_counts": {
+      "C": 36,
+      "U": 5292,
+      "I": 391,
+      "G": 16800,
+      "N": 119400,
+      "A": 108,
+      "P": 84,
+      "O": 38808,
+      "H": 756,
+      "W": 840,
+      "S": 4368,
+      "T": 4116,
+      "R": 84,
+      "K": 48,
+      "E": 36,
+      "B": 22
+    },
+    "source_source_jar_outputs_identical": true,
+    "predeclared_consumer_ledger": {
+      "derived_compared_observations": 141370,
+      "O_collaborator_exclusions": 504,
+      "source_selection_metadata_exclusions": 36,
+      "supplied_G_N_constructor_checks": 43320,
+      "other_input_schema_command_rows": 5959
+    }
+  },
+  "reference": {
+    "manifest": "docs/evidence/reference-manifest.json",
+    "original_hash_size_mode_checks": 74,
+    "source_compile_receipt": ".workflow-local/reference-build/compile.json",
+    "source_compile_receipt_sha256": "4fc1785c218238508d72b89ba883d94bc8a1fa24631e990463dd71502a78e184",
+    "source_sha256": {
+      "Gene": "d070db688526a401c8b55904c06066b2169ca82c76837e3001b4c423bc80e720",
+      "GeneticCode": "f8bf3d0315cec8a2bf515a1626391fe5b646e47566234d398ef58bbdbc3a9004",
+      "Organism": "8650cb0983069dbae09e2ca704059fb82761fa6e0d87f35218c2342ffc60df46",
+      "Utils": "7b3306148684ba111629690a928dcb45abd4825104cfb90b530cd2d0dc6dd2b3",
+      "World": "a67543055a665a9a378e37c860671996e2ca0f510cb622375172a24333d7cae1",
+      "WorldStatistics": "407bcd4bec5e947f26ccfb02a1a590bec6eb9f22f675ad88d9bb974f686ebe15",
+      "VisibleWorld": "b14b41135de13d935f24e42b2f82a72457a015831d1b62f30a26bd5be7faedc5"
+    },
+    "backend_class_sha256": {
+      "Gene": {
+        "compiled_source": "29fe7b153555ded4383072debd0452bed5f92692afd0488a88c297d5f04f6ea8",
+        "bundled_jar": "b307c29cbd73a98cdcbf7d5da9a3ed771fd4d419f6426fbfd41510934c0a7988"
+      },
+      "GeneticCode": {
+        "compiled_source": "4bbf99eaf9006840ecbba0958496372a220ed44c4e57c8341c4de3dc29f3fb30",
+        "bundled_jar": "2aba7f494115279c26bb918dc8156c7ff67af047c2bcb32e35db113f2b87c51e"
+      },
+      "Organism": {
+        "compiled_source": "e8facb409642f0288411785985cbfd96440f644226795f14de24705554a46e22",
+        "bundled_jar": "561d53132aa1765ba766c7d251a98090617c7e9884ae8ed1f9543237e32257f0"
+      },
+      "Utils": {
+        "compiled_source": "67adba4432972ffa3922b6f622d2cc12bf0e703a7dfbf97ae94f3f95387b1884",
+        "bundled_jar": "8f258ba2cb30beea85f44a60ecb4189faf7493f39102712bc9ff1114456e1060"
+      },
+      "World": {
+        "compiled_source": "9091d4e5cae555493971a37a9c8fc77e2250e68db073a120a3a08b57b03e131e",
+        "bundled_jar": "be8067767dc18b46fbd7fd798c5e67e8a58ff6922b78d65eee28ab033360bd33"
+      },
+      "WorldStatistics": {
+        "compiled_source": "ab04358e54edf5120d703f0d980c72a136ab74165e5bbec4b55719ab097c7863",
+        "bundled_jar": "cc5e6f8d4adfb96a41269b4dc7a3ab27224513d8076d68ee42be2ab518e0c236"
+      },
+      "VisibleWorld": {
+        "compiled_source": "f9f559ac40de41b7d84cb6d624b5bcad538ac016d566779bc6c45512c5d68168",
+        "bundled_jar": "b1a0dced3a53afcef5f80132f122ac1ba0baf41f02d3e6e48cb99e4236c1385c"
+      }
+    },
+    "jar_sha256": "0baeae8d29f5fdbbb830c1a9e51c7f2b5314a33011b20ec7471eeaa27f0398e1",
+    "jts_sha256": "00102cde26c457b81fbb0248e4f8845884243caba0dc9b7fb42e0ea877383bc1",
+    "ten_prior_tsv_sha256": {
+      "genetics.tsv": "1fc3f745a83427c499d84884dfdb6864fdc222861feb30488d7083a4a0126b71",
+      "organism_state.tsv": "298e7a37eb2983252797a40e45ff721141ba22e6b8cfdaba91a1bfa079552f8b",
+      "paste_rejection.tsv": "73b1fa2480d2211e29cbbb24c4653c18d3a0786c5e0074f84e0c378b0b333db9",
+      "genotype_identity.tsv": "b6a85cb8b2b628a8a8b25c3de2db1445a61433b06c7b66647670c07a1ea0b9ac",
+      "birth.tsv": "8b9bcee0ed1232b1d90050587e52cb19548a14f833da63749dcd6c96ccae8a22",
+      "birth_variants.tsv": "ababf3bdecebcfda1c56b99cf08343157b6091e2b95f9ab63010de1c13e04b96",
+      "physics.tsv": "50151aaaeb0de8502bb1e22d0256ce77273e83851713a0b43337b66835de72ff",
+      "movement.tsv": "ca8c5078821d339f6aaabb47e593de0da62e44c59df69bf5d4ee8ee01dc84207",
+      "statistics.tsv": "bcc5c8b489b5591f318486176b2647e816d899ec05af854a077e26fe771bcf8a",
+      "statistics_null_genome.tsv": "049301b93bd1062bc6be3cfdac6b58caff10ccb53d1d58a67ece583676c345c1"
+    }
+  },
+  "execution": {
+    "raw_receipts": ".workflow-local/death-oracle-sllwev8j/commands.json",
+    "raw_receipts_sha256": "9c8df290a29c57f00c0cbc841c305303bf0bec05e4f1f76beef0e689db1ca2fe",
+    "versions": {
+      "java": "openjdk version \"21.0.12.1\" 2026-08-18\nOpenJDK Runtime Environment (build 21.0.12.1+1)\nOpenJDK 64-Bit Server VM (build 21.0.12.1+1, mixed mode, sharing)\n",
+      "javac": "javac 21.0.12.1\n"
+    },
+    "compile_commands": [
+      {
+        "argv": [
+          "javac",
+          "-encoding",
+          "UTF-8",
+          "-cp",
+          "<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "-d",
+          "<project-root>/.workflow-local/death-oracle-sllwev8j/helpers-source",
+          "<project-root>/tools/reference/DeathOracle.java"
+        ],
+        "cwd": "<project-root>/.workflow-local/death-oracle-sllwev8j",
+        "pid": 4,
+        "process_group": 4,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.5850870659996872,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "javac",
+          "-encoding",
+          "UTF-8",
+          "-cp",
+          "<reference-root>/ColorMod_2_01/biogenesis.jar:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "-d",
+          "<project-root>/.workflow-local/death-oracle-sllwev8j/helpers-jar",
+          "<project-root>/tools/reference/DeathOracle.java"
+        ],
+        "cwd": "<project-root>/.workflow-local/death-oracle-sllwev8j",
+        "pid": 32,
+        "process_group": 32,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.6281700069994258,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "positive_runs": [
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/death-oracle-sllwev8j/canonical-source-a/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/death-oracle-sllwev8j/canonical-source-a/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/death-oracle-sllwev8j/canonical-source-a/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/death-oracle-sllwev8j/canonical-source-a/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/death-oracle-sllwev8j/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.DeathOracle",
+          "<project-root>/.workflow-local/death-oracle-sllwev8j/canonical-source-a/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/death-oracle-sllwev8j/canonical-source-a",
+        "pid": 61,
+        "process_group": 61,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.47535282600074424,
+        "stdout": "DEATH_ORACLE PASS cases=36 snapshots=84 calls=48\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/death-oracle-sllwev8j/canonical-source-b/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/death-oracle-sllwev8j/canonical-source-b/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/death-oracle-sllwev8j/canonical-source-b/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/death-oracle-sllwev8j/canonical-source-b/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/death-oracle-sllwev8j/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.DeathOracle",
+          "<project-root>/.workflow-local/death-oracle-sllwev8j/canonical-source-b/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/death-oracle-sllwev8j/canonical-source-b",
+        "pid": 4,
+        "process_group": 4,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.524069225997664,
+        "stdout": "DEATH_ORACLE PASS cases=36 snapshots=84 calls=48\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/death-oracle-sllwev8j/canonical-jar/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/death-oracle-sllwev8j/canonical-jar/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/death-oracle-sllwev8j/canonical-jar/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/death-oracle-sllwev8j/canonical-jar/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/death-oracle-sllwev8j/helpers-jar:<reference-root>/ColorMod_2_01/biogenesis.jar:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.DeathOracle",
+          "<project-root>/.workflow-local/death-oracle-sllwev8j/canonical-jar/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/death-oracle-sllwev8j/canonical-jar",
+        "pid": 41,
+        "process_group": 41,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.5916855759969621,
+        "stdout": "DEATH_ORACLE PASS cases=36 snapshots=84 calls=48\n",
+        "stderr": ""
+      }
+    ],
+    "negative_guard_commands": [
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-cp",
+          "<project-root>/.workflow-local/death-oracle-sllwev8j/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.DeathOracle",
+          "<project-root>/.workflow-local/death-oracle-sllwev8j/canonical-missing-profile/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/death-oracle-sllwev8j/canonical-missing-profile",
+        "pid": 4,
+        "process_group": 4,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.038373961000615964,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: user.home\n\tat biogenesis.DeathOracle.require(DeathOracle.java:153)\n\tat biogenesis.DeathOracle.main(DeathOracle.java:218)\n"
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/death-oracle-sllwev8j/canonical-existing-output/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/death-oracle-sllwev8j/canonical-existing-output/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/death-oracle-sllwev8j/canonical-existing-output/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/death-oracle-sllwev8j/canonical-existing-output/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/death-oracle-sllwev8j/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.DeathOracle",
+          "<project-root>/.workflow-local/death-oracle-sllwev8j/canonical-existing-output/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/death-oracle-sllwev8j/canonical-existing-output",
+        "pid": 22,
+        "process_group": 22,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.02990674599641352,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Output directory must not exist\n\tat biogenesis.DeathOracle.require(DeathOracle.java:153)\n\tat biogenesis.DeathOracle.main(DeathOracle.java:220)\n"
+      }
+    ],
+    "negative_guard_results": [
+      {
+        "mode": "canonical",
+        "condition": "missing-profile",
+        "exit_code": 1,
+        "expected_error": "Explicit isolated profile required:",
+        "output_preserved": true
+      },
+      {
+        "mode": "canonical",
+        "condition": "existing-output",
+        "exit_code": 1,
+        "expected_error": "Output directory must not exist",
+        "output_preserved": true
+      }
+    ],
+    "process_group_runner": "tools/run_reference_oracles.py:32-77",
+    "reference_preservation_checks_passed": true,
+    "ten_prior_fixture_checks_passed": true,
+    "negative_guard_timeout_seconds": 30
+  },
+  "comparison_contract": {
+    "declared_before_rust_comparison": true,
+    "exact": "All scalar/effect/photo/gas/statistics/RNG double bits; integer endpoints/bounds/colors/reactions/order and mutable genome reference topology.",
+    "geometry_only_fields": [
+      "_m",
+      "_m1",
+      "_m2",
+      "_mass",
+      "_I"
+    ],
+    "geometry_finite_tolerance": "1e-10 * max(1, abs(expected))",
+    "geometry_nonfinite": "NaN classification and signed infinity checks; no allowance on other fields.",
+    "expectation_authority": "Actual unchanged source/JAR return values, reflected fields, real getters, real factories, and real world/statistics event routing.",
+    "controlled_inputs": "Explicit I records precede actual operations; no copied death or boundary formulas generate observations.",
+    "rust_results_claimed": false
+  },
+  "limits": [
+    "No complete World.time frame, biological contact, corpse decomposition, or UI callback execution.",
+    "No full infection lifecycle, save compatibility, or all birth/paste border callers accepted.",
+    "No raw invalid state acceptance or source exception suppression.",
+    "Source-only selection avoids existing MainWindow callback branches with a real separate selected actor."
+  ],
+  "explicit_exclusions": {
+    "O_field_names": [
+      "_world",
+      "_visibleWorld"
+    ],
+    "O_rows": 504,
+    "I_target": "visible:selected",
+    "I_rows": 36,
+    "diagnostic_fixture": "crates/core/tests/fixtures/death_invalid.tsv"
+  },
+  "observed_cases": {
+    "killers": [
+      "null",
+      "distinct",
+      "self"
+    ],
+    "current_color_inputs": {
+      "selectable": 46,
+      "internal": 18,
+      "additional_ARGB": 2
+    },
+    "repeated_death_calls_per_killer_mode": 3,
+    "rectangle_matrix_cases": 17,
+    "real_zero_mass_sequence": [
+      "grow",
+      "offset_velocity",
+      "bounds(true)",
+      "isInsideWorld"
+    ],
+    "initial_actor_order": [
+      "selector",
+      "victim",
+      "killer"
+    ],
+    "initial_ids": [
+      0,
+      1,
+      2
+    ],
+    "initial_population": 3,
+    "initial_storage": 3,
+    "random_seed": 827364,
+    "no_genesis_or_frame": true
+  },
+  "readme": {
+    "path": "crates/core/tests/fixtures/death.README.md",
+    "sha256": "f060c7f96b8b4e8538e3d0829bc548270f7b376703f0615d1f6d09c2ae3e7f06"
+  }
+}

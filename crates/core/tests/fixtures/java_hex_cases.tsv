@@ -1,0 +1,12 @@
+fraction-unit	fraction	250000	1	1000004	false
+negative-fraction-unit	fraction	250000	1	1000004	true
+integer-unit	integer	250001	1	-1000004	false
+negative-integer-unit	integer	250001	1	-1000004	true
+least-subnormal	fraction	250300	1	1000130	false
+negative-least-subnormal	fraction	250300	1	1000130	true
+half-underflow	fraction	250300	1	1000129	false
+negative-half-underflow	fraction	250300	1	1000129	true
+subnormal-tie-even	fraction	250300	3	1000129	false
+negative-subnormal-tie-even	fraction	250300	3	1000129	true
+huge-overflow	fraction	0	1	99999999999999999999999999999999999999999999999999	false
+huge-underflow	fraction	0	1	-99999999999999999999999999999999999999999999999999	true

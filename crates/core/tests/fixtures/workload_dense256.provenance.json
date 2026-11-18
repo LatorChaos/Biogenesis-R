@@ -1,0 +1,412 @@
+{
+  "actual_generation": {
+    "BGW_full_bytes_triplicate_identical": true,
+    "class_equality": "Same helper source compiles to identical helper class bytes against original source and bundled JAR",
+    "full_endpoint_bytes_triplicate_identical": true,
+    "full_endpoint_helper": {
+      "path": ".workflow-local/dense-rollover-endpoint-source-a/helper/WorkloadStateOracle.java",
+      "sha256": "e33c4ee1627d6b9ee6c53a528f74566ebb70f3bf5f30534d2bde09388f4516d5"
+    },
+    "full_helper_classes": {
+      "jar": {
+        "biogenesis/WorkloadStateOracle$Capture.class": "55ba900b7bcb979d0e0f06ffde89633e4897d4ecc29649f08dc321f2d64d540f",
+        "biogenesis/WorkloadStateOracle$Entry.class": "c29fa2f1f9a02e3fa7b926103b59f8ee5948884ced04a657f28994ce31b95d3a",
+        "biogenesis/WorkloadStateOracle$FilteredInput.class": "32009b515b8522af58400c77cfdb6147f0f6f94307463e33fc9be6110c02eb24",
+        "biogenesis/WorkloadStateOracle.class": "4393579055a88831be93c7f7490ffbb11dd5b7b600ea1a41ed8a1c64df947aee"
+      },
+      "source": {
+        "biogenesis/WorkloadStateOracle$Capture.class": "55ba900b7bcb979d0e0f06ffde89633e4897d4ecc29649f08dc321f2d64d540f",
+        "biogenesis/WorkloadStateOracle$Entry.class": "c29fa2f1f9a02e3fa7b926103b59f8ee5948884ced04a657f28994ce31b95d3a",
+        "biogenesis/WorkloadStateOracle$FilteredInput.class": "32009b515b8522af58400c77cfdb6147f0f6f94307463e33fc9be6110c02eb24",
+        "biogenesis/WorkloadStateOracle.class": "4393579055a88831be93c7f7490ffbb11dd5b7b600ea1a41ed8a1c64df947aee"
+      }
+    },
+    "raw_compact_triplicate_identical": true,
+    "raw_triplicate_BGWs": {
+      "jar": {
+        "bytes": 36074003,
+        "path": "<project-root>/.workflow-local/dense-rollover-preflight-a/source-controls/run-a/jar-12500/observations/world-after-256.bgw",
+        "sha256": "f912ec8932a482283696fd5265878b96bc8439fc8d395dbcf73064639e8a5598"
+      },
+      "source-a": {
+        "bytes": 36074003,
+        "path": "<project-root>/.workflow-local/dense-rollover-preflight-a/source-controls/run-a/source-a-12500/observations/world-after-256.bgw",
+        "sha256": "f912ec8932a482283696fd5265878b96bc8439fc8d395dbcf73064639e8a5598"
+      },
+      "source-b": {
+        "bytes": 36074003,
+        "path": "<project-root>/.workflow-local/dense-rollover-preflight-a/source-controls/run-a/source-b-12500/observations/world-after-256.bgw",
+        "sha256": "f912ec8932a482283696fd5265878b96bc8439fc8d395dbcf73064639e8a5598"
+      }
+    },
+    "receipts": {
+      ".workflow-local/dense-rollover-endpoint-source-a/controls/inputs.json": "830e7d27a4662258761db90c3fbc6717df975352a04e12c7704cf2d15a4bf901",
+      ".workflow-local/dense-rollover-endpoint-source-a/controls/run-a/commands.json": "f2e51ab891b5ca50d38b17ae1c204f920f64e9f5152f2f7f52805d67fc32aeec",
+      ".workflow-local/dense-rollover-endpoint-source-a/controls/run-a/ledger.json": "60485e444c78c1abad097d5259074cfe62a405146ad80ff2bdb608d6174a2f98",
+      ".workflow-local/dense-rollover-endpoint-source-a/controls/run-a/observed-schemas.json": "127e4e314f9fe3db3132e06a34d4a1ce7174fc98ae0906567897baa796290a7c",
+      ".workflow-local/dense-rollover-endpoint-source-a/controls/run-a/result.json": "72cb65a900eb2f60a66ff1da85bf6ec8c9df1342bc0f12e9c5caf627d2a1f44d",
+      ".workflow-local/dense-rollover-endpoint-source-a/controls/run-a/source-summary.json": "6b09d97d6d207069bd9e09de2e86c71fcfce37689b0d9b7c970e49dd0529456e",
+      ".workflow-local/dense-rollover-endpoint-source-a/review-controls.json": "b4c59a9278bf944984a21ae04af084e777e746c955bc22670c77670089f6aaa8",
+      ".workflow-local/dense-rollover-endpoint-source-a/review-preflight-actuals.json": "820bb1cc28b153997e3134b379930992de664479619a9337277210ec3c8be9e2",
+      ".workflow-local/dense-rollover-preflight-a/descriptor-controls/descriptors.json": "a93af8c4a28c48ede731c43b60c7a1bebbe52ad578a968ea24fa1761aea5e306",
+      ".workflow-local/dense-rollover-preflight-a/raw-source-freeze.json": "0b46a6d574105a7d3a423c74924556a2a2d274338ac34e1f853f676aaab9c02f",
+      ".workflow-local/dense-rollover-preflight-a/source-controls/run-a/commands.json": "0883c96adb3d9a2625cc9a4d5c69ffa381b647b7c01be1e5d3eafc0eb9e3eaed",
+      ".workflow-local/dense-rollover-preflight-a/source-controls/run-a/result.json": "7bd46f3ea14f89d89bedad7582bfce39327266ceb2b89a33e0a4ddb9fe34edc9",
+      ".workflow-local/dense-rollover-preflight-a/source-controls/run-a/source-summary.json": "597d653bdd015ed95ade67395a3674b18b2fad989d71005cc171cf494b5cc527",
+      ".workflow-local/dense-rollover-rust-a/source-freeze.json": "4d7e5b6d6d20992b32559c4cdf5a8cd1d40fe084c7e9b52b1804ec513a949b7c"
+    },
+    "trajectory_helper": {
+      "path": ".workflow-local/dense-rollover-preflight-a/helper/WorkloadTrajectoryOracle.java",
+      "sha256": "3e4a74762374fcaf3b38341c2bfb7fd19a29ab0063e1feebed6a1499d4f5167e"
+    },
+    "trajectory_helper_classes": {
+      "jar": {
+        "biogenesis/WorkloadTrajectoryOracle$DigestOutput.class": "ae47d7b59e218ff92a6926b264d773c657615ef9af41f7cff94c67c33cd35e41",
+        "biogenesis/WorkloadTrajectoryOracle$RandomInput.class": "faf28a07c7c7d74ccd59b843ea49b563ada974054ae545d0ba98d83f6444b478",
+        "biogenesis/WorkloadTrajectoryOracle.class": "166fe57d2a570220a6b513441079fc5e2a097502b8f6a54cc5c9861890e68a8b"
+      },
+      "source": {
+        "biogenesis/WorkloadTrajectoryOracle$DigestOutput.class": "ae47d7b59e218ff92a6926b264d773c657615ef9af41f7cff94c67c33cd35e41",
+        "biogenesis/WorkloadTrajectoryOracle$RandomInput.class": "faf28a07c7c7d74ccd59b843ea49b563ada974054ae545d0ba98d83f6444b478",
+        "biogenesis/WorkloadTrajectoryOracle.class": "166fe57d2a570220a6b513441079fc5e2a097502b8f6a54cc5c9861890e68a8b"
+      }
+    }
+  },
+  "admission": {
+    "BGW_bytes": 36074003,
+    "BGW_sha256": "f912ec8932a482283696fd5265878b96bc8439fc8d395dbcf73064639e8a5598",
+    "capture_limits": {
+      "BGW_file_bytes": 1073741824,
+      "JVM_heap_bytes": 536870912,
+      "capture_timeout_seconds": 90,
+      "compact_text_bytes": 2097152
+    },
+    "decoder_scope": "Reference observation helper only; no product decoder or unrestricted class/input admission change",
+    "observed_descriptors": {
+      "path": ".workflow-local/dense-rollover-preflight-a/descriptor-controls/descriptors.json",
+      "sha256": "a93af8c4a28c48ede731c43b60c7a1bebbe52ad578a968ea24fa1761aea5e306"
+    },
+    "observed_new_numeric_schemas": {
+      "java.lang.Double": {
+        "fields": [
+          [
+            "D",
+            "value",
+            null
+          ]
+        ],
+        "flags": 2,
+        "suid": -9172774392245257468,
+        "super": "java.lang.Number"
+      },
+      "java.lang.Number": {
+        "fields": [],
+        "flags": 2,
+        "suid": -8742448824652078965,
+        "super": null
+      }
+    },
+    "runtime_checks": "New mode checks stream/local numeric SUIDs/fields and exact bootstrap Double/Number classes/superclasses. Exact input hash binds the observed serialization flags.",
+    "unchanged_limits": {
+      "JVM_heap_bytes": 536870912,
+      "array_length": 20000,
+      "decode_timeout_seconds": 240,
+      "depth": 64,
+      "full_text_bytes": 629145600,
+      "old_default_input_bytes": 36000000,
+      "references": 4000000
+    }
+  },
+  "canonical_reproduction": {
+    "command_receipts": {
+      "path": ".workflow-local/dense-rollover-rust-a/compatibility-controls/run-a/commands.json",
+      "sha256": "75730ec95b1ee7725503b043488d737fb9881ca05d4b4129e77018ba17f2ff93"
+    },
+    "commands": 16,
+    "fresh_dense_State_decodes": 3,
+    "ledger": {
+      "path": ".workflow-local/dense-rollover-rust-a/compatibility-controls/run-a/ledger.json",
+      "sha256": "60485e444c78c1abad097d5259074cfe62a405146ad80ff2bdb608d6174a2f98"
+    },
+    "new_fixed_mode": "--dense-256 permits12500 only. Trajectory streams a complete BGW under1GiB cap; State admits only capturedf912/36074003bytes.",
+    "preserved_modes": "Trajectory default80/fourcohorts and --evolving-512/512attempts unchanged; State four default80 exact hashes/20classes/36MB unchanged",
+    "result": {
+      "path": ".workflow-local/dense-rollover-rust-a/compatibility-controls/run-a/result.json",
+      "sha256": "21c68b3256bfda20e9fd806600681d961505b0993bda20ed1aa7d781afaf01ae"
+    },
+    "runtime_boundary": "Historical Java/javac executable and classpath pins remain exact. Unrecorded historical JVM shared-library identity is not claimed. Three fresh dense decodes qualify the current canonical runtime.",
+    "schemas": {
+      "path": ".workflow-local/dense-rollover-rust-a/compatibility-controls/run-a/observed-schemas.json",
+      "sha256": "127e4e314f9fe3db3132e06a34d4a1ce7174fc98ae0906567897baa796290a7c"
+    },
+    "source_JAR_class_maps_identical": true,
+    "state_bytes_equal_executed_private_helper": true,
+    "state_helper": {
+      "path": "tools/reference/WorkloadStateOracle.java",
+      "sha256": "e33c4ee1627d6b9ee6c53a528f74566ebb70f3bf5f30534d2bde09388f4516d5"
+    },
+    "state_interface": "ATTEMPTS INPUT_WORLD PREFS_XML NEW_OUTPUT_DIRECTORY [--dense-256]",
+    "status": "PASS_CANONICAL_HELPER_COMPATIBILITY",
+    "summary": {
+      "path": ".workflow-local/dense-rollover-rust-a/compatibility-controls/run-a/compatibility-summary.json",
+      "sha256": "90e06c717405026f11e3728674e5982d85ba5cbeff64a3eaa21b4df2e8da36e1"
+    },
+    "trajectory_helper": {
+      "path": "tools/reference/WorkloadTrajectoryOracle.java",
+      "sha256": "06cc1c5205069d09a679ff729cbd66a3a05c38ff31798645a0264d13b9d10829"
+    },
+    "trajectory_interface": "ATTEMPTS NEW_OUTPUT_DIRECTORY [--evolving-512|--dense-256]",
+    "verified_modes": "Three dense256 source/source/JAR captures and fresh full decodes; default80 dense12500, evolving512 moderate512 and all four old default State modes match old bytes"
+  },
+  "controls": {
+    "attempts": 12500,
+    "call_groups": [
+      16,
+      240
+    ],
+    "final_frame": 0,
+    "height": 7000,
+    "seed": 827364,
+    "snapshots": 257,
+    "statistics_time": 1,
+    "ticks": 256,
+    "timing_groups": false,
+    "width": 7000
+  },
+  "fixtures": {
+    "compact": {
+      "obligations": 15677,
+      "path": "crates/core/tests/fixtures/workload_trajectory_12500_256.tsv",
+      "rows": 15066,
+      "runtime_values": 15163,
+      "sha256": "ec07fb3fd03c5bad29edad69715f4b42d5a85510adce48d9d2c24d7612ee6b18",
+      "snapshots": 257,
+      "source_Gaussian_invariants": 514
+    },
+    "full": {
+      "compressed_bytes": 22296207,
+      "derived_comparisons": 4000244,
+      "dispositions": {
+        "absent_static_and_transient_metadata": 13287,
+        "absent_transient_fields": 13284,
+        "derived_comparisons_including_mutable_alias_semantics": 4000244,
+        "immutable_alias_identity_metadata": 123646,
+        "input_settings_schema": 149
+      },
+      "expanded_bytes": 182874988,
+      "expanded_sha256": "b97b2734db5d60d25e5ccce2c41991c51b77f64eb91bbc027348d366cecb5265",
+      "filename": "",
+      "gzip_level": 6,
+      "mtime": 0,
+      "path": "crates/core/tests/fixtures/workload_endpoint_12500_256.tsv.gz",
+      "roundtrip_bytes_equal": true,
+      "row_counts": {
+        "A": 873455,
+        "C": 1,
+        "D": 6,
+        "E": 1,
+        "F": 13278,
+        "G": 359828,
+        "H": 39843,
+        "J": 19319,
+        "L": 6,
+        "M": 13279,
+        "N": 772760,
+        "O": 2045274,
+        "S": 52,
+        "T": 49,
+        "U": 147,
+        "V": 15,
+        "W": 10,
+        "X": 13287
+      },
+      "rows": 4150610,
+      "sha256": "59f2ad54a2f7aae1098dcec0ddca38595b38c3d6b8590c5330bef65ccb12fe42"
+    }
+  },
+  "frozen_utc": "2026-11-09T05:21:35.685692+00:00",
+  "full_contract": {
+    "cardinalities": {
+      "current_members": 13279,
+      "gene_slots": 19319,
+      "genomes": 12851,
+      "members_absent_from_tree": [
+        "o13276",
+        "o13277",
+        "o13278"
+      ],
+      "stored_tree_entries": 13278,
+      "tree_only_actors": [
+        "o13279",
+        "o13280"
+      ],
+      "union_actors": 13281,
+      "unique_Genes": 18540
+    },
+    "exact_schema_file": {
+      "path": ".workflow-local/dense-rollover-endpoint-source-a/controls/run-a/observed-schemas.json",
+      "sha256": "127e4e314f9fe3db3132e06a34d4a1ce7174fc98ae0906567897baa796290a7c"
+    },
+    "field_counts": {
+      "Organism_including_bounds": 154,
+      "World": 15,
+      "WorldStatistics": 52,
+      "gene_slot_rows": 40,
+      "genome_rows": 28,
+      "statistics_getters": 49
+    },
+    "history": {
+      "A_grammar": "Original7column alias record; Double labels are physically immutable but their owner identities are required derived checks",
+      "D_grammar": "D,endpoint,listOwner,index,boxOwner,rawDoubleBits; null uses~",
+      "L_grammar": "L,endpoint,listOwner,runtimeClass,size",
+      "lists": {
+        "l1": [
+          "java.util.ArrayList",
+          1
+        ],
+        "l2": [
+          "java.util.ArrayList",
+          1
+        ],
+        "l3": [
+          "java.util.ArrayList",
+          1
+        ],
+        "l4": [
+          "java.util.ArrayList",
+          1
+        ],
+        "l5": [
+          "java.util.ArrayList",
+          1
+        ],
+        "l6": [
+          "java.util.ArrayList",
+          1
+        ]
+      },
+      "policy": "All ordered list values, list owners, slot/box aliases and raw bits are strict. Only prior Color/String allocation IDs remain metadata.",
+      "required_Double_alias_rows": 6,
+      "slots": 6,
+      "unique_boxes": 6
+    },
+    "numeric_contract": "Only original O._m/_m1/_m2/_mass/_I use established1e-10*max(1,abs(expected)) geometry allowance with NaN/infinity classification. No new history,gas,energy,RNG,integer or ordering tolerance.",
+    "serialization_absence": "Explicit original static/transient X dispositions remain. Actual RNG evidence is complementary compact data; full endpoint is final serialized state, not every intermediate actor trajectory.",
+    "tree": "Stored leaf order,actor references,envelope raw bits,World-to-tree identity and existing query/order obligations are retained. Private JTS node allocation was already outside the endpoint representation contract."
+  },
+  "limits": [
+    "Complete selected serialized endpoint and compact scalar/RNG trajectory only; no universal trajectory equivalence",
+    "No performance,budget,steady-state,Pi/ARM,renderer,24hour/endurance or full-product acceptance"
+  ],
+  "readme": "crates/core/tests/fixtures/workload_dense256.README.md",
+  "resources_and_cleanup": {
+    "claim": "Native receipts retain owned-group/reap/resource evidence. Process wall values are controls, not simulation performance.",
+    "diagnostics": "Original process stderr remains linked; no clean-stderr,UI-health or background-thread-health claim.",
+    "entry": {
+      "path": ".workflow-local/evolving-world-512-a/source-controls/command_entry.py",
+      "sha256": "6448c886e6d7e014731f3bcde551f092c95c9d0f81c20e940e255dc845835a35"
+    },
+    "full_commands": {
+      "path": ".workflow-local/dense-rollover-endpoint-source-a/controls/run-a/commands.json",
+      "sha256": "f2e51ab891b5ca50d38b17ae1c204f920f64e9f5152f2f7f52805d67fc32aeec"
+    },
+    "full_result": {
+      "path": ".workflow-local/dense-rollover-endpoint-source-a/controls/run-a/result.json",
+      "sha256": "72cb65a900eb2f60a66ff1da85bf6ec8c9df1342bc0f12e9c5caf627d2a1f44d"
+    },
+    "known_owned_host_groups_closeout": {
+      "path": ".workflow-local/dense-rollover-rust-a/native-closeout.json",
+      "sha256": "d5e0183fac16c63b6b229bd263afbeecb30fd9753a136d8920e42d3c71341914"
+    },
+    "raw_result": {
+      "path": ".workflow-local/dense-rollover-preflight-a/source-controls/run-a/result.json",
+      "sha256": "7bd46f3ea14f89d89bedad7582bfce39327266ceb2b89a33e0a4ddb9fe34edc9"
+    },
+    "scope": "Serial actual-host functional jobs,CPU0/SCHED_IDLE/nice19/idleIO,8GiBAS/1GiBFSIZE/CORE0,16GiB MemAvailable headroom",
+    "supervisor": {
+      "path": ".workflow-local/evolving-world-512-a/source-controls/capture-run-b.py",
+      "sha256": "42eabdbe74a257314c27cc725d1220fcb81abe967dd0e076c58d241a48bdf2f7"
+    }
+  },
+  "schema": "biogenesis-complete-dense256-workload-v1",
+  "status": "VERIFIED_SELECTED_DENSE256_FIDELITY_AND_CANONICAL_REPRODUCTION",
+  "verified_Rust_fidelity": {
+    "actual_CLI_debug": {
+      "actual_inherited_build_AS_bytes": 8589934592,
+      "actual_per_command_proc_limits_observed": false,
+      "cap_note": "The successful outer command imposes 8 GiB hard AS. Executed setrlimit code implies an 8 GiB build soft cap and 4 GiB test soft cap. No live per-command proc limits were observed.",
+      "commands": {
+        "path": ".workflow-local/workload-runs/endpoint-jf402qtx/commands.json",
+        "sha256": "0bc0650d775048cf887edb1297b3fdfc6833a73b15ec466027feae8d61fd77c1"
+      },
+      "derived_comparisons": 4000244,
+      "effective_build_AS_evidence": "Successful outer launch plus code-derived inheritance",
+      "launch_boundary": {
+        "path": ".workflow-local/dense-rollover-rust-a/cli-launch-boundary.json",
+        "sha256": "0ecd278bb24d22d410b2b3fe3666695da136f6cc6be393947ff98ae0abf5656f"
+      },
+      "nominal_build_AS_bytes": 12884901888,
+      "ordinary_suite_gate": false,
+      "result": "PASS",
+      "rows": 4150610,
+      "source_manifest": {
+        "path": ".workflow-local/workload-runs/endpoint-jf402qtx/source-manifest.json",
+        "sha256": "7faa32e53f96228351328a4886fe2eef41991978637f4e6837a48f58e6ff9770"
+      },
+      "summary": {
+        "path": ".workflow-local/workload-runs/endpoint-jf402qtx/summary.json",
+        "sha256": "0a1233b3dd1ac933a044b0d9eb4215bef2d38c0e3b065882fc0a82cb44838cc7"
+      },
+      "test_AS_bytes": 4294967296,
+      "test_AS_evidence": "Executed setrlimit code, not live proc readback"
+    },
+    "direct_debug_release": {
+      "commands": {
+        "path": ".workflow-local/dense-rollover-rust-a/rust-gates-a/commands.json",
+        "sha256": "d891c19746726abb6bdeedf51dbbb49a6d523431f355dc764810bf0d807fc929"
+      },
+      "core_inputs_before": {
+        "path": ".workflow-local/dense-rollover-rust-a/rust-gates-a/core-inputs-before.json",
+        "sha256": "f4ed0e3afd4c338a93cd704b2668b01f595a77d4e8e8578e2987df76d146d02d"
+      },
+      "custody": "637 captured dependency paths join core-inputs-before. Five additional fixture paths join the current files and baseline Source 0d6e9716. No precompile five-fixture inventory or single captured dependency closure is claimed.",
+      "failed_each": 0,
+      "focused_passed_each": 3,
+      "ignored_each": 8,
+      "new_dense256_each": "PASS",
+      "old_full80_attempts_each": [
+        0,
+        32,
+        512,
+        12500
+      ],
+      "ordinary_passed_each": 757,
+      "profiles": {
+        "path": ".workflow-local/dense-rollover-rust-a/rust-gates-a/profiles.json",
+        "sha256": "b83fb9e65bcf57cad44f88c03b11831c2d28e856e223946fa4d40a0fca274ef5"
+      },
+      "registered_each": 765,
+      "result": {
+        "path": ".workflow-local/dense-rollover-rust-a/rust-gates-a/result.json",
+        "sha256": "4e12c5106d428ca0c41668fbd02e7388a29b2a6b96b945ae2d46169eb45c7d2c"
+      }
+    },
+    "scope": "The same actual Rust World supplies compact scalar/RNG observations and the complete final endpoint; no observed state initializes Rust"
+  },
+  "witnesses": {
+    "no_observation_inputs": "Rust constructs declared seeded genesis and advances actual frames. BGW/scalars/RNG/actors never initialize Rust.",
+    "old12500_prefix": "All original P/U plus K/V/S/W/R/Q0..80 exact; original X omissions retained. C declares new16+240 calls.",
+    "old_compact": {
+      "path": "crates/core/tests/fixtures/workload_trajectory.tsv",
+      "sha256": "5b20e691297757491a07aaf2b723db1e38559b08444209d403b852d166dfc60c"
+    },
+    "old_endpoint_provenance": {
+      "path": "crates/core/tests/fixtures/workload_endpoints.provenance.json",
+      "sha256": "f262425bfacdd45e45d8bb7ebe10179fd773aa689fbe7acfe9e017f07f74a8f9"
+    },
+    "tick80_BGWs": {
+      "bytes": 35915346,
+      "sha256": "ad5f4e3b9257591c6a5055c3de1d472c4c15da3858018b706ed8125d767c383d"
+    }
+  }
+}

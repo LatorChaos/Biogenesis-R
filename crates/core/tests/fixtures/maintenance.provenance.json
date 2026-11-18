@@ -1,0 +1,822 @@
+{
+  "schema": "biogenesis-maintenance-oracle-v1",
+  "generated_utc": "2026-10-26T02:17:30.044398+00:00",
+  "helper": {
+    "path": "tools/reference/MaintenanceOracle.java",
+    "sha256": "f88ff018281a73d100307b0044933b2eeca9c4f067eada459fa3622c93257c09",
+    "compiled_classes": {
+      "source": {
+        "MaintenanceOracle$Action.class": "b1c1b062c579aba4dfe2134cb2f7bfe84d999d5c62d23edf8ec765d2f1e0b191",
+        "MaintenanceOracle$Spec.class": "16390f6bdbb4664bdbaf29b28e2cb5fd780031d9a3792777321838c21f423cc2",
+        "MaintenanceOracle$Capture.class": "a37e65ee7bf5cc82141a28b1f9663a740396eec8688b4c8ed121124d6d36c8ae",
+        "MaintenanceOracle.class": "8d3f658aa72e2687944b70bada5dd639ba1b62c2267581f8783d8ca4c7d582c5"
+      },
+      "jar": {
+        "MaintenanceOracle$Action.class": "b1c1b062c579aba4dfe2134cb2f7bfe84d999d5c62d23edf8ec765d2f1e0b191",
+        "MaintenanceOracle$Spec.class": "16390f6bdbb4664bdbaf29b28e2cb5fd780031d9a3792777321838c21f423cc2",
+        "MaintenanceOracle$Capture.class": "a37e65ee7bf5cc82141a28b1f9663a740396eec8688b4c8ed121124d6d36c8ae",
+        "MaintenanceOracle.class": "8d3f658aa72e2687944b70bada5dd639ba1b62c2267581f8783d8ca4c7d582c5"
+      }
+    },
+    "source_jar_helper_classes_identical": true,
+    "raw_invalid_mode": false
+  },
+  "fixture": {
+    "path": "crates/core/tests/fixtures/maintenance.tsv",
+    "sha256": "266e604b25a4f1e238e3c07131e5d1e42d1a1e73192adb52723e144bc43e8bb9",
+    "bytes": 15645320,
+    "rows": 446161,
+    "cases": 134,
+    "snapshots": 291,
+    "actor_views": 882,
+    "fields_per_actor": 154,
+    "world_instance_fields_per_snapshot": 15,
+    "statistics_fields_per_snapshot": 52,
+    "statistics_getters_per_snapshot": 49,
+    "mutable_primitive_utils_per_case": 147,
+    "explicit_calls": 157,
+    "calls_by_operation": {
+      "breath": 33,
+      "symmetric_bounds": 9,
+      "build_tree": 6,
+      "decay": 83,
+      "die": 5,
+      "useDecayEnergy": 7,
+      "blueSpore": 2,
+      "hatch": 11,
+      "cyanSpore": 1
+    },
+    "row_counts": {
+      "C": 134,
+      "U": 19698,
+      "I": 1912,
+      "G": 59612,
+      "N": 187480,
+      "A": 402,
+      "P": 291,
+      "O": 135828,
+      "H": 2646,
+      "W": 2910,
+      "V": 4365,
+      "Q": 882,
+      "S": 15132,
+      "T": 14259,
+      "R": 291,
+      "K": 157,
+      "E": 134,
+      "D": 9,
+      "J": 12,
+      "B": 7
+    },
+    "predeclared_consumer_ledger": {
+      "derived_compared_observations": 342785,
+      "supplied_G_N_constructor_checks": 77720,
+      "O_collaborator_exclusions": 1764,
+      "V_UI_corridor_exclusions": 1164,
+      "source_selection_metadata_exclusions": 134,
+      "other_input_schema_command_rows": 22594
+    },
+    "actual_newborns": [
+      {
+        "case": "dying-spore-success9",
+        "stage": "step-1",
+        "actor": "newborn0",
+        "ID": 3,
+        "genome": "g5"
+      },
+      {
+        "case": "dying-spore-success10",
+        "stage": "step-1",
+        "actor": "newborn0",
+        "ID": 3,
+        "genome": "g5"
+      },
+      {
+        "case": "dying-spore-integer-half-above",
+        "stage": "step-1",
+        "actor": "newborn0",
+        "ID": 3,
+        "genome": "g5"
+      },
+      {
+        "case": "dying-spore-infected-saved",
+        "stage": "step-1",
+        "actor": "newborn0",
+        "ID": 3,
+        "genome": "g5"
+      },
+      {
+        "case": "dying-spore-saved-only",
+        "stage": "step-1",
+        "actor": "newborn0",
+        "ID": 3,
+        "genome": "g4"
+      },
+      {
+        "case": "v6-infected-viral-birth",
+        "stage": "step-0",
+        "actor": "newborn0",
+        "ID": 3,
+        "genome": "g4"
+      },
+      {
+        "case": "v6-infected-viral-exhaustion",
+        "stage": "step-0",
+        "actor": "newborn0",
+        "ID": 3,
+        "genome": "g4"
+      },
+      {
+        "case": "v6-newborn-id-wrap",
+        "stage": "step-0",
+        "actor": "newborn0",
+        "ID": 2147483647,
+        "genome": "g4"
+      },
+      {
+        "case": "v6-newborn-id-duplicate",
+        "stage": "step-0",
+        "actor": "newborn0",
+        "ID": 1,
+        "genome": "g4"
+      }
+    ],
+    "case_names": [
+      "breath-normal",
+      "breath-age-shift-tie",
+      "breath-age-out",
+      "breath-age-wrap",
+      "breath-negative-age",
+      "breath-partial-oxygen",
+      "breath-empty-oxygen",
+      "breath-exhaustion-retains-phenotype",
+      "breath-exact-tolerance",
+      "breath-negative-energy",
+      "breath-nan-energy",
+      "breath-positive-infinite-energy",
+      "breath-negative-infinite-energy",
+      "breath-nan-maintenance",
+      "breath-infinite-maintenance",
+      "breath-fractional-excess",
+      "breath-double-excess-countdown",
+      "breath-late-threshold-tie",
+      "breath-late-threshold-above",
+      "breath-infectious-excess",
+      "breath-double-threshold-tie",
+      "breath-reproduction-int-multiply-wrap",
+      "breath-reproduction-int-subtract-wrap",
+      "breath-negative-reproduction-threshold",
+      "dying-spore-success9",
+      "dying-spore-success10",
+      "dying-spore-blocked",
+      "dying-spore-oxygen-only",
+      "dying-spore-half-tie",
+      "dying-spore-integer-half-above",
+      "dying-spore-not-grown",
+      "dying-spore-infected-saved",
+      "dying-spore-saved-only",
+      "decay-version-2",
+      "decay-version-1",
+      "decay-version-5",
+      "decay-version-6",
+      "decay-version-3",
+      "decay-version-4",
+      "decay-version-7",
+      "decay-version--3",
+      "decay-version--2",
+      "decay-version--1",
+      "decay-version-0",
+      "decay-age-tie-2",
+      "decay-age-tie-1",
+      "decay-age-tie-5",
+      "decay-age-tie-6",
+      "decay-age-above-2",
+      "decay-age-above-6",
+      "decay-exhausted-2",
+      "decay-exhausted-1",
+      "decay-exhausted-5",
+      "decay-exhausted-6",
+      "decay-exhausted-3",
+      "decay-exhausted--3",
+      "decay-exhausted--2",
+      "decay-age-wrapping",
+      "decay-mobile-v1",
+      "decay-frozen-v1",
+      "decay-mobile-v5",
+      "decay-frozen-v5",
+      "decay-partial-respiration-v1",
+      "decay-partial-respiration-v5",
+      "decay-v5-half-threshold-tie",
+      "decay-v5-hatch-success",
+      "decay-v5-hatch-payment-partial",
+      "decay-injury-blocks-6",
+      "decay-injury-blocks-3",
+      "decay-injury-blocks--3",
+      "decay-injury-blocks--2",
+      "decay-injured-egg-keeps-timer",
+      "decay-egg-color-low-frame",
+      "decay-egg-color-high-frame",
+      "decay-egg-negative-timer",
+      "decay-egg-timer-wrap",
+      "decay-v3-hatch",
+      "decay-v3-hatch-payment-partial",
+      "decay-v7-hatch",
+      "decay-cyan-mobile",
+      "decay-cyan-retains-temp-color",
+      "decay-cyan-frozen",
+      "decay-cyan-partial-respiration",
+      "decay-ready-hatch--3",
+      "decay-ready-hatch--2",
+      "decay-ready-hatch--1",
+      "decay-ready-hatch-0",
+      "decay-blocked-gold",
+      "decay-blocked-zero-gold-bypass",
+      "decay-blocked-negative-gold",
+      "decay-injured-ready-positive-gold",
+      "decay-injured-ready-zero-gold",
+      "decay-negative-timer",
+      "decay-zero-mass-mobile",
+      "corpse-decomposition-full",
+      "corpse-decomposition-partial",
+      "corpse-decomposition-empty",
+      "corpse-negative-energy",
+      "corpse-nan-energy",
+      "use-decay-energy-full",
+      "use-decay-energy-insufficient-energy",
+      "use-decay-energy-partial-oxygen",
+      "use-decay-energy-empty-oxygen",
+      "use-decay-energy-negative-q",
+      "use-decay-energy-nan-q",
+      "use-decay-energy-infinite-q",
+      "hatch-modifier-9",
+      "hatch-modifier-10",
+      "hatch-increments-existing-age",
+      "hatch-age-wrap",
+      "hatch-coefficients-references-cache",
+      "hatch-partial-first-payment",
+      "hatch-first-energy-guard-full-fallback",
+      "hatch-partial-fallback",
+      "hatch-fallback-exhaustion-retains-phenotype",
+      "hatch-empty-oxygen",
+      "v6-methanotrophy-eighth-frame",
+      "v6-methanotrophy-other-frame",
+      "v6-injured-no-photo",
+      "v6-lime-alone",
+      "v6-lime-crowded",
+      "v6-colony-photo-reset",
+      "v6-ordinary-photo",
+      "v6-late-hatch-countdown",
+      "v6-late-hatch-negative-countdown",
+      "v6-ready-hatch",
+      "v6-hatch-payment-partial",
+      "v6-blond-early-threshold",
+      "v6-infected-viral-birth",
+      "v6-infected-viral-blocked",
+      "v6-infected-viral-exhaustion",
+      "hatch-failure-after-real-blue-spore",
+      "v6-newborn-id-wrap",
+      "v6-newborn-id-duplicate"
+    ],
+    "source_source_jar_outputs_identical": true
+  },
+  "reference": {
+    "manifest": "docs/evidence/reference-manifest.json",
+    "original_hash_size_mode_checks": 74,
+    "source_compile_receipt": ".workflow-local/reference-build/compile.json",
+    "source_compile_receipt_sha256": "4fc1785c218238508d72b89ba883d94bc8a1fa24631e990463dd71502a78e184",
+    "source_sha256": {
+      "Gene": "d070db688526a401c8b55904c06066b2169ca82c76837e3001b4c423bc80e720",
+      "GeneticCode": "f8bf3d0315cec8a2bf515a1626391fe5b646e47566234d398ef58bbdbc3a9004",
+      "Organism": "8650cb0983069dbae09e2ca704059fb82761fa6e0d87f35218c2342ffc60df46",
+      "Utils": "7b3306148684ba111629690a928dcb45abd4825104cfb90b530cd2d0dc6dd2b3",
+      "World": "a67543055a665a9a378e37c860671996e2ca0f510cb622375172a24333d7cae1",
+      "WorldStatistics": "407bcd4bec5e947f26ccfb02a1a590bec6eb9f22f675ad88d9bb974f686ebe15",
+      "VisibleWorld": "b14b41135de13d935f24e42b2f82a72457a015831d1b62f30a26bd5be7faedc5"
+    },
+    "backend_class_sha256": {
+      "Gene": {
+        "compiled_source": "29fe7b153555ded4383072debd0452bed5f92692afd0488a88c297d5f04f6ea8",
+        "bundled_jar": "b307c29cbd73a98cdcbf7d5da9a3ed771fd4d419f6426fbfd41510934c0a7988"
+      },
+      "GeneticCode": {
+        "compiled_source": "4bbf99eaf9006840ecbba0958496372a220ed44c4e57c8341c4de3dc29f3fb30",
+        "bundled_jar": "2aba7f494115279c26bb918dc8156c7ff67af047c2bcb32e35db113f2b87c51e"
+      },
+      "Organism": {
+        "compiled_source": "e8facb409642f0288411785985cbfd96440f644226795f14de24705554a46e22",
+        "bundled_jar": "561d53132aa1765ba766c7d251a98090617c7e9884ae8ed1f9543237e32257f0"
+      },
+      "Utils": {
+        "compiled_source": "67adba4432972ffa3922b6f622d2cc12bf0e703a7dfbf97ae94f3f95387b1884",
+        "bundled_jar": "8f258ba2cb30beea85f44a60ecb4189faf7493f39102712bc9ff1114456e1060"
+      },
+      "World": {
+        "compiled_source": "9091d4e5cae555493971a37a9c8fc77e2250e68db073a120a3a08b57b03e131e",
+        "bundled_jar": "be8067767dc18b46fbd7fd798c5e67e8a58ff6922b78d65eee28ab033360bd33"
+      },
+      "WorldStatistics": {
+        "compiled_source": "ab04358e54edf5120d703f0d980c72a136ab74165e5bbec4b55719ab097c7863",
+        "bundled_jar": "cc5e6f8d4adfb96a41269b4dc7a3ab27224513d8076d68ee42be2ab518e0c236"
+      },
+      "VisibleWorld": {
+        "compiled_source": "f9f559ac40de41b7d84cb6d624b5bcad538ac016d566779bc6c45512c5d68168",
+        "bundled_jar": "b1a0dced3a53afcef5f80132f122ac1ba0baf41f02d3e6e48cb99e4236c1385c"
+      }
+    },
+    "jar_sha256": "0baeae8d29f5fdbbb830c1a9e51c7f2b5314a33011b20ec7471eeaa27f0398e1",
+    "jts_sha256": "00102cde26c457b81fbb0248e4f8845884243caba0dc9b7fb42e0ea877383bc1",
+    "prior_tsv_sha256": {
+      "construction.tsv": "cf9b83da280e3e7aa812ae7cf2caee7293ce805c8109aebaa2891a69227b3336",
+      "geometry.tsv": "364c17c289c7d3f85b4ae3bdf7ce8ddcaac773547b1bb3c14360cae58e766a96",
+      "genetics.tsv": "1fc3f745a83427c499d84884dfdb6864fdc222861feb30488d7083a4a0126b71",
+      "geometry-rebuild.tsv": "a484994dbc4f69d8deb45c0622c127eb5dc5dd95eba1b61a412e015cf8b2a3d8",
+      "organism_state.tsv": "298e7a37eb2983252797a40e45ff721141ba22e6b8cfdaba91a1bfa079552f8b",
+      "paste_rejection.tsv": "73b1fa2480d2211e29cbbb24c4653c18d3a0786c5e0074f84e0c378b0b333db9",
+      "genotype_identity.tsv": "b6a85cb8b2b628a8a8b25c3de2db1445a61433b06c7b66647670c07a1ea0b9ac",
+      "spatial.tsv": "a2cf3205b94144694f6484c81aaa9916f42824766a521c2cb05d2f14f344225a",
+      "birth.tsv": "8b9bcee0ed1232b1d90050587e52cb19548a14f833da63749dcd6c96ccae8a22",
+      "birth_variants.tsv": "ababf3bdecebcfda1c56b99cf08343157b6091e2b95f9ab63010de1c13e04b96",
+      "physics.tsv": "50151aaaeb0de8502bb1e22d0256ce77273e83851713a0b43337b66835de72ff",
+      "gases.tsv": "0ea73389506dce4286389f75388ef55475541bd5062cddd149f619b12cd3b6c8",
+      "movement.tsv": "ca8c5078821d339f6aaabb47e593de0da62e44c59df69bf5d4ee8ee01dc84207",
+      "statistics.tsv": "bcc5c8b489b5591f318486176b2647e816d899ec05af854a077e26fe771bcf8a",
+      "statistics_null_genome.tsv": "049301b93bd1062bc6be3cfdac6b58caff10ccb53d1d58a67ece583676c345c1",
+      "death.tsv": "198a17283df6d96826fef2c6464acf6ad222f1e5234c884ec781b05080941720",
+      "death_invalid.tsv": "5bddabd10826003e147df8c688c3db9d3d99b7c64212685a9ade474b92bcbb62",
+      "infection.tsv": "6155d428aca3a6ef337fec20921db969382f47ff72db00388b1985665424b704",
+      "infection_callback.tsv": "02749c101e2f597c4fc42e24f32f6c0e76f5cc1ae320a826dd7dabfc88e982e3"
+    }
+  },
+  "execution": {
+    "raw_receipts": ".workflow-local/maintenance-oracle-ehfwqf56/commands.json",
+    "raw_receipts_sha256": "23cd79dfa90cb5c727ac05e2a97e4faa6d97d036cf0a94fbd535fe51b5070f41",
+    "versions": {
+      "java": "openjdk version \"21.0.12.1\" 2026-08-18\nOpenJDK Runtime Environment (build 21.0.12.1+1)\nOpenJDK 64-Bit Server VM (build 21.0.12.1+1, mixed mode, sharing)\n",
+      "javac": "javac 21.0.12.1\n"
+    },
+    "compile_commands": [
+      {
+        "argv": [
+          "javac",
+          "-encoding",
+          "UTF-8",
+          "-cp",
+          "<project-root>/.workflow-local/reference-build/source-classes:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "-d",
+          "<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/helpers-source",
+          "<project-root>/tools/reference/MaintenanceOracle.java"
+        ],
+        "cwd": "<project-root>/.workflow-local/maintenance-oracle-ehfwqf56",
+        "pid": 4,
+        "process_group": 4,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.6174445180004113,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "javac",
+          "-encoding",
+          "UTF-8",
+          "-cp",
+          "<reference-root>/ColorMod_2_01/biogenesis.jar:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "-d",
+          "<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/helpers-jar",
+          "<project-root>/tools/reference/MaintenanceOracle.java"
+        ],
+        "cwd": "<project-root>/.workflow-local/maintenance-oracle-ehfwqf56",
+        "pid": 33,
+        "process_group": 33,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.6022015850030584,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "positive_commands": [
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/source-a/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/source-a/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/source-a/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/source-a/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.MaintenanceOracle",
+          "<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/source-a/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/source-a",
+        "pid": 62,
+        "process_group": 62,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.749014454006101,
+        "stdout": "MAINTENANCE_ORACLE PASS cases=134 snapshots=291 calls=157\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/source-b/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/source-b/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/source-b/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/source-b/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.MaintenanceOracle",
+          "<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/source-b/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/source-b",
+        "pid": 94,
+        "process_group": 94,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.749624504998792,
+        "stdout": "MAINTENANCE_ORACLE PASS cases=134 snapshots=291 calls=157\n",
+        "stderr": ""
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.language=en",
+          "-Duser.country=US",
+          "-Duser.home=<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/jar/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/jar/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/jar/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/jar/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/helpers-jar:<reference-root>/ColorMod_2_01/biogenesis.jar:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.MaintenanceOracle",
+          "<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/jar/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/jar",
+        "pid": 129,
+        "process_group": 129,
+        "exit_code": 0,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.9187664429991855,
+        "stdout": "MAINTENANCE_ORACLE PASS cases=134 snapshots=291 calls=157\n",
+        "stderr": ""
+      }
+    ],
+    "negative_guard_commands": [
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/omit-user.home/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/omit-user.home/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/omit-user.home/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.MaintenanceOracle",
+          "<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/omit-user.home/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/omit-user.home",
+        "pid": 4,
+        "process_group": 4,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.02905657399969641,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: user.home\n\tat biogenesis.MaintenanceOracle.require(MaintenanceOracle.java:176)\n\tat biogenesis.MaintenanceOracle.main(MaintenanceOracle.java:328)\n"
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/omit-java.io.tmpdir/home",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/omit-java.io.tmpdir/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/omit-java.io.tmpdir/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.MaintenanceOracle",
+          "<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/omit-java.io.tmpdir/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/omit-java.io.tmpdir",
+        "pid": 22,
+        "process_group": 22,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.02675747800094541,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: java.io.tmpdir\n\tat biogenesis.MaintenanceOracle.require(MaintenanceOracle.java:176)\n\tat biogenesis.MaintenanceOracle.main(MaintenanceOracle.java:328)\n"
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/omit-java.util.prefs.userRoot/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/omit-java.util.prefs.userRoot/tmp",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/omit-java.util.prefs.userRoot/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.MaintenanceOracle",
+          "<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/omit-java.util.prefs.userRoot/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/omit-java.util.prefs.userRoot",
+        "pid": 40,
+        "process_group": 40,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.030537221005943138,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: java.util.prefs.userRoot\n\tat biogenesis.MaintenanceOracle.require(MaintenanceOracle.java:176)\n\tat biogenesis.MaintenanceOracle.main(MaintenanceOracle.java:328)\n"
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/omit-java.util.prefs.systemRoot/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/omit-java.util.prefs.systemRoot/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/omit-java.util.prefs.systemRoot/prefs-user",
+          "-cp",
+          "<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.MaintenanceOracle",
+          "<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/omit-java.util.prefs.systemRoot/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/omit-java.util.prefs.systemRoot",
+        "pid": 58,
+        "process_group": 58,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.027914690996112768,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: java.util.prefs.systemRoot\n\tat biogenesis.MaintenanceOracle.require(MaintenanceOracle.java:176)\n\tat biogenesis.MaintenanceOracle.main(MaintenanceOracle.java:328)\n"
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/existing-output/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/existing-output/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/existing-output/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/existing-output/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.MaintenanceOracle",
+          "<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/existing-output/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/existing-output",
+        "pid": 76,
+        "process_group": 76,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.027982707004412077,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Output directory must not exist\n\tat biogenesis.MaintenanceOracle.require(MaintenanceOracle.java:176)\n\tat biogenesis.MaintenanceOracle.main(MaintenanceOracle.java:330)\n"
+      },
+      {
+        "argv": [
+          "java",
+          "-Xms16m",
+          "-Xmx512m",
+          "-Djava.awt.headless=true",
+          "-Duser.home=<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/escaped-profile/home",
+          "-Djava.io.tmpdir=<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/escaped-profile/tmp",
+          "-Djava.util.prefs.userRoot=<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/escaped-profile/prefs-user",
+          "-Djava.util.prefs.systemRoot=<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/escaped-profile/prefs-system",
+          "-cp",
+          "<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/helpers-source:<project-root>/.workflow-local/reference-build/source-classes:<reference-root>/src:<project-root>/.workflow-local/reference-build/jts-core-1.15.0.jar",
+          "biogenesis.MaintenanceOracle",
+          "<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/escaped-profile/observations"
+        ],
+        "cwd": "<project-root>/.workflow-local/maintenance-oracle-ehfwqf56/escaped-profile",
+        "pid": 94,
+        "process_group": 94,
+        "exit_code": 1,
+        "timed_out": false,
+        "interrupted": false,
+        "elapsed_seconds": 0.031898501998512074,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.IllegalStateException: Explicit isolated profile required: java.util.prefs.userRoot\n\tat biogenesis.MaintenanceOracle.require(MaintenanceOracle.java:176)\n\tat biogenesis.MaintenanceOracle.main(MaintenanceOracle.java:328)\n"
+      }
+    ],
+    "negative_guard_results": [
+      {
+        "condition": "omit-user.home",
+        "exit_code": 1,
+        "expected_error": "Explicit isolated profile required: user.home",
+        "output_preserved": true
+      },
+      {
+        "condition": "omit-java.io.tmpdir",
+        "exit_code": 1,
+        "expected_error": "Explicit isolated profile required: java.io.tmpdir",
+        "output_preserved": true
+      },
+      {
+        "condition": "omit-java.util.prefs.userRoot",
+        "exit_code": 1,
+        "expected_error": "Explicit isolated profile required: java.util.prefs.userRoot",
+        "output_preserved": true
+      },
+      {
+        "condition": "omit-java.util.prefs.systemRoot",
+        "exit_code": 1,
+        "expected_error": "Explicit isolated profile required: java.util.prefs.systemRoot",
+        "output_preserved": true
+      },
+      {
+        "condition": "existing-output",
+        "exit_code": 1,
+        "expected_error": "Output directory must not exist",
+        "output_preserved": true
+      },
+      {
+        "condition": "escaped-profile",
+        "exit_code": 1,
+        "expected_error": "Explicit isolated profile required: java.util.prefs.userRoot",
+        "output_preserved": true
+      }
+    ],
+    "positive_timeout_seconds": 120,
+    "negative_timeout_seconds": 30,
+    "process_group_runner": "tools/run_reference_oracles.py:32-77",
+    "reference_preservation_checks_passed": true,
+    "prior_fixture_checks_passed": true,
+    "prior_fixture_count": 19,
+    "earlier_guard_failure": {
+      "raw_receipts": ".workflow-local/maintenance-oracle-lablha_3/commands.json",
+      "exit_code": 1,
+      "reason": "The initial helper incorrectly required 16 World instance fields. The actual reflected count is 15.",
+      "fixture_output_created": false,
+      "disposition": "Only the helper schema guard changed; no source or expected state changed."
+    }
+  },
+  "comparison_contract": {
+    "declared_before_Rust_comparison": true,
+    "exact": "All scalar/effect/photo/gas/statistics/velocity/RNG double bits; integer endpoints, bounds, ARGB, reactions, references, order, and wrapping.",
+    "geometry_only_O_fields": [
+      "_m",
+      "_m1",
+      "_m2",
+      "_mass",
+      "_I"
+    ],
+    "geometry_finite_tolerance": "1e-10 * max(1, abs(expected))",
+    "geometry_nonfinite": "NaN classification and signed infinity checks only for the five geometry fields.",
+    "expectation_authority": "Actual unchanged source/JAR calls, factories, fields, getters, world events, and spatial queries.",
+    "input_authority": "U and I controls plus input G/N recipes; no post-call D/G/N/O observations become inputs.",
+    "genome_identity": "Object identity for primary, infected, saved, child, and statistics references.",
+    "gene_identity_limit": "All gene values are recorded; per-Gene object alias topology is covered by the separate genetics oracle.",
+    "newborn_identity": "Discover actual new World._organisms objects in list order through IdentityHashMap; numeric IDs may wrap or duplicate.",
+    "rust_results_claimed": false
+  },
+  "explicit_exclusions": {
+    "O": {
+      "fields": [
+        "_world",
+        "_visibleWorld"
+      ],
+      "rows": 1764,
+      "reason": "Source UI/world object references; actual world effects remain observed separately."
+    },
+    "V": {
+      "fields": [
+        "_visibleWorld",
+        "inCorridors",
+        "outCorridors",
+        "_corridorexists"
+      ],
+      "rows": 1164,
+      "reason": "UI/corridor collaborators are not implemented networking claims."
+    },
+    "I": {
+      "target": "visible:selected",
+      "rows": 134,
+      "reason": "Real source callback routing avoids MainWindow callbacks; no UI acceptance claim."
+    },
+    "raw_invalid_diagnostic_rows": 0
+  },
+  "coverage": {
+    "decay_versions": [
+      2,
+      1,
+      5,
+      6,
+      3,
+      4,
+      7,
+      -3,
+      -2,
+      -1,
+      0
+    ],
+    "direct_methods": [
+      "breath",
+      "decay",
+      "hatch",
+      "useDecayEnergy"
+    ],
+    "source_setup_methods": [
+      "die",
+      "symmetric",
+      "calculateBounds(true)",
+      "blueSpore",
+      "cyanSpore",
+      "STRtree.insert/build"
+    ],
+    "original_actor_order": [
+      "selector",
+      "victim",
+      "killer"
+    ],
+    "initial_actor_ids": [
+      0,
+      1,
+      2
+    ],
+    "initial_seed": 827364,
+    "explicit_mobile_seed": 57,
+    "dying_spore_modifiers": [
+      9,
+      10
+    ],
+    "newborn_identity_cases": [
+      "v6-newborn-id-wrap",
+      "v6-newborn-id-duplicate"
+    ],
+    "frozen_tree_builds": 6,
+    "tree_queries": 882,
+    "all_scalar_controls_on_real_valid_placed_actors": true,
+    "copies_of_production_formulas_used_for_expectations": false,
+    "full_world_frames_executed": 0
+  },
+  "limits": [
+    "No World.time or complete-frame scheduling acceptance.",
+    "No biological contact, UI, networking, save-format migration, or distributable acceptance.",
+    "No complete acceptance of other reproduction/transformation methods or every caller collision order.",
+    "Discarded failed-birth candidate private intermediate state is unobservable after the actual caller completes.",
+    "Controlled IEEE/raw numeric inputs do not claim that the player UI accepts every value.",
+    "Per-Gene object alias topology is not independently repeated here."
+  ],
+  "readme": {
+    "path": "crates/core/tests/fixtures/maintenance.README.md",
+    "sha256": "5c456abadd6e53647492f810b3fad58fa3bf9734f57f4ef657a3165d049a5a76"
+  },
+  "serializer_repair": {
+    "reason": "Organism extends Rectangle; identity dispatch must precede Rectangle value dispatch.",
+    "superseded_fixture_sha256": "85f1845a8150eeb049bd560ae649bc3335463b78414ff8d03813d171858991ee",
+    "superseded_helper_sha256": "e4b7cd917b2835f69d2990cc6a99adf34ff249379028a50dd95c6e3a892e2b04",
+    "archive_manifest": ".workflow-local/maintenance-oracle-dtmji2aa/before-scalar-dispatch-repair/manifest.json",
+    "archive_manifest_sha256": "6a67b96202797cbd22d92088b4762b8b7e3fcad80d4c3c67a46fc608eecaa3be",
+    "archived_consumer_failure": ".workflow-local/maintenance-oracle-dtmji2aa/before-scalar-dispatch-repair/failed-consumer-commands.json",
+    "archived_consumer_failure_sha256": "1cf55c8a60cffb6a46908fd37b69b04995b9636c77d83c53b0cf875b4d1dd101",
+    "row_difference_receipt": ".workflow-local/maintenance-oracle-ehfwqf56/scalar-repair-diff.json",
+    "row_difference_receipt_sha256": "35d8d01da05b4187d7289520339a8e4809bc43220109289dbc7d120593dd48e7",
+    "row_difference": {
+      "rows": 446161,
+      "changed_rows": {
+        "V:_organisms": 291,
+        "Q": 24
+      },
+      "only_Q_and_V_organisms_values_changed": true,
+      "all_other_rows_identical": true,
+      "old_fixture_sha256": "85f1845a8150eeb049bd560ae649bc3335463b78414ff8d03813d171858991ee",
+      "new_fixture_sha256": "266e604b25a4f1e238e3c07131e5d1e42d1a1e73192adb52723e144bc43e8bb9",
+      "original_counts_and_ledger_unchanged": true
+    },
+    "unchanged_other_prior_fixtures": 19,
+    "preserved_prior_fixture_versions_including_archived_maintenance": 20,
+    "production_changes": false,
+    "numerical_or_tolerance_changes": false
+  }
+}

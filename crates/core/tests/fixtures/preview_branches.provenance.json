@@ -1,0 +1,100 @@
+{
+  "status": "SOURCE_SOURCE_JAR_FROZEN_BEFORE_RUST",
+  "files": {
+    "prepared-freeze.json": "3edf0560694687c68e2d6cfab91a7e8847f3f1faf77e3ae9bd4356a6f64e6e66",
+    "root-execution-authorization.json": "854d814a09b86a0433585572f16da5ab374dc46aeece328a2add35b19c4d67ae",
+    "accepted-compile.json": "a20497cb774ca7dc635b96a64807993abb9023be21b6cb82fe12952a5fa19951",
+    "accepted-guards.json": "2280c63cfb9ebc847d4229bd5fcb394cdd412a0d1dc48bb24b3e0c902f59788d",
+    "accepted-capture.json": "133d6762b2337700e429ab090308331fab620f106183a76717ba5739fec70bcd",
+    "preview_branches.tsv": "e7f9b15dc123dc1016b7d9d9beabfa0dfc7e3757daa31195ac9678e6305628a2",
+    "source-ledger.json": "6f8ede87f521469f3883a2771bb59ab0372ed2496698a95288915a2f27fe6eeb",
+    "source-outcomes.json": "845d5ccd220b7df4ae3d87e9a12820b5ac6bf7964b390b3670cc2e21efd04de7",
+    "source-custody.json": "390124da2c3f5a7f64f1785f685540ecd90c668ad055c41a110dcf2a51655d37"
+  },
+  "source_fixture_sha256": "e7f9b15dc123dc1016b7d9d9beabfa0dfc7e3757daa31195ac9678e6305628a2",
+  "actual_summary": {
+    "status": "FROZEN_ACTUAL_SOURCE_OBSERVATIONS_BEFORE_RUST",
+    "raw_rows": 1877,
+    "tags": {
+      "C": 31,
+      "G": 218,
+      "R": 93,
+      "B": 58,
+      "T": 31,
+      "L": 1314,
+      "A": 31,
+      "W": 62,
+      "E": 31,
+      "X": 8
+    },
+    "cases": 31,
+    "supplied_genes": 218,
+    "preview_calls": 31,
+    "preview_success": 27,
+    "preview_index_exceptions": 4,
+    "actual_lines": 1314,
+    "transform_rows": 31,
+    "genotype_purity_true": 31,
+    "preview_RNG_purity_pairs": 31,
+    "paste_calls": 31,
+    "paste_true": 4,
+    "paste_false": 23,
+    "paste_index_exceptions": 4,
+    "partitions": {
+      "input_schema_rows_C_G_E": 280,
+      "preview_B_T_L_A_R_X_observation_rows": 1473,
+      "paste_B_W_R_X_observation_rows": 124
+    },
+    "source_paste_world": "Actual World(null) retains zero gases; setting INITIAL_* does not invoke genesis",
+    "runtime_Rust_comparisons": 0,
+    "limits": [
+      "No preview or paste Rust replay yet",
+      "Source exceptions remain observations, not a Rust panic requirement",
+      "No pixel or UI acceptance; actual drawLine arguments and Graphics2D transforms only"
+    ]
+  },
+  "execution_records": [
+    {
+      "phase": "compile",
+      "directory": "compile-tchmnucj",
+      "accepted_sha256": "a20497cb774ca7dc635b96a64807993abb9023be21b6cb82fe12952a5fa19951",
+      "commands_sha256": "00f0e4e6de2e84b678d77f50da6537ea71a6c9515e6fef28a42dc46b10add1ec",
+      "group_readback_sha256": "31cf2c49a7793c4c643b3a1b3dfc7dd5ba903232fd28e048421eccc4189fc6a3",
+      "actual_exit_codes": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "phase": "guards",
+      "directory": "guards-e571710_",
+      "accepted_sha256": "2280c63cfb9ebc847d4229bd5fcb394cdd412a0d1dc48bb24b3e0c902f59788d",
+      "commands_sha256": "47560d73ff496cf3da4cd4c604020c6b2fc87554a9b144fa7723ecf2e4eedb41",
+      "group_readback_sha256": "a985b47f08768df146989e62810a343e0f07336013728d285ee62047b34c6e0b",
+      "actual_exit_codes": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "phase": "capture",
+      "directory": "capture-_w1zec5j",
+      "accepted_sha256": "133d6762b2337700e429ab090308331fab620f106183a76717ba5739fec70bcd",
+      "commands_sha256": "eaae14a40dc1a097b178018815eb3657e4ecc3fb4139280f100de62113e3eab9",
+      "group_readback_sha256": "633398f81eeec6f47653dadfd42f10917f5fd8226ff668dc6ac4b099f51c8c4c",
+      "actual_exit_codes": [
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "source_method_calls": {
+    "draw": 93,
+    "paste": 93
+  },
+  "new_Rust_edits_or_replays": 0
+}

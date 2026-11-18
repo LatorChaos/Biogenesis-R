@@ -1,0 +1,221 @@
+{
+  "format": [
+    [
+      "900",
+      "0.9"
+    ],
+    [
+      "10000",
+      "1.0"
+    ],
+    [
+      "10001",
+      "1.0.1"
+    ],
+    [
+      "",
+      "0.0"
+    ],
+    [
+      "0",
+      "0.0"
+    ],
+    [
+      "999999",
+      "99.99.99"
+    ],
+    [
+      "1000000",
+      "1000000"
+    ],
+    [
+      "0000900",
+      "0000900"
+    ],
+    [
+      "abc",
+      "abc"
+    ],
+    [
+      "12x456",
+      "12x456"
+    ],
+    [
+      " 900",
+      " 900"
+    ],
+    [
+      "900 ",
+      "900 "
+    ],
+    [
+      "\t900",
+      "\t900"
+    ],
+    [
+      "++",
+      "++"
+    ],
+    [
+      "--",
+      "--"
+    ],
+    [
+      "-1",
+      "0.0.-1"
+    ],
+    [
+      "+1",
+      "0.0.1"
+    ],
+    [
+      "-0",
+      "0.0"
+    ],
+    [
+      "+0",
+      "0.0"
+    ],
+    [
+      "1-2",
+      "0.1.-2"
+    ],
+    [
+      "1+2",
+      "0.1.2"
+    ],
+    [
+      "+10000",
+      "1.0"
+    ],
+    [
+      "-10000",
+      "-1.0"
+    ],
+    [
+      "00+100",
+      "0.1"
+    ],
+    [
+      "00-100",
+      "0.-1"
+    ],
+    [
+      "+1+2+3",
+      "1.2.3"
+    ],
+    [
+      "-1-2-3",
+      "-1.-2.-3"
+    ],
+    [
+      "\u0669\u0660\u0660",
+      "0.9"
+    ],
+    [
+      "\u0967\u0966\u0966\u0966\u0967",
+      "1.0.1"
+    ],
+    [
+      "\uff10\uff10\uff10\uff19\uff10\uff10",
+      "0.9"
+    ],
+    [
+      "\ud835\udfe1\ud835\udfd8\ud835\udfd8",
+      "\ud835\udfe1\ud835\udfd8\ud835\udfd8"
+    ],
+    [
+      "\ufeff900",
+      "\ufeff900"
+    ]
+  ],
+  "locales": {
+    "en": {
+      "T_CHECK_LAST_VERSION_MNEMONIC": "V",
+      "T_CHECK_LAST_VERSION": "Check last version",
+      "T_YOUR_VERSION": "Your version: ",
+      "T_LAST_VERSION": "Last version: ",
+      "T_CANT_CHECK_CURRENT_VERSION": "I can't check the current version: ",
+      "T_OK": "OK",
+      "T_CANCEL": "Cancel",
+      "T_VERSION_TITLE": "Version"
+    },
+    "es": {
+      "T_CHECK_LAST_VERSION_MNEMONIC": "V",
+      "T_CHECK_LAST_VERSION": "Comprobar \u00faltima versi\u00f3n",
+      "T_YOUR_VERSION": "Su versi\u00f3n:",
+      "T_LAST_VERSION": "\u00daltima versi\u00f3n:",
+      "T_CANT_CHECK_CURRENT_VERSION": "No se puede comprobar la versi\u00f3n actual:",
+      "T_OK": "Aceptar",
+      "T_CANCEL": "Cancelar",
+      "T_VERSION_TITLE": "Versi\u00f3n"
+    },
+    "ca": {
+      "T_CHECK_LAST_VERSION_MNEMONIC": "V",
+      "T_CHECK_LAST_VERSION": "Comprova l'\u00faltima versi\u00f3",
+      "T_YOUR_VERSION": "La vostra versi\u00f3:",
+      "T_LAST_VERSION": "L'\u00faltima versi\u00f3:",
+      "T_CANT_CHECK_CURRENT_VERSION": "No es pot comprovar la versi\u00f3 actual:",
+      "T_OK": "Accepta",
+      "T_CANCEL": "Cancel\u00b7la",
+      "T_VERSION_TITLE": "Versi\u00f3"
+    },
+    "de": {
+      "T_CHECK_LAST_VERSION_MNEMONIC": "V",
+      "T_CHECK_LAST_VERSION": "Auf die aktuellste Version \u00fcberpr\u00fcfen",
+      "T_YOUR_VERSION": "Ihre Version:",
+      "T_LAST_VERSION": "Neuste Version:",
+      "T_CANT_CHECK_CURRENT_VERSION": "Ich kann die aktuelle Version nicht \u00fcberpr\u00fcfen:",
+      "T_OK": "OK",
+      "T_CANCEL": "Abbrechen",
+      "T_VERSION_TITLE": "Version"
+    },
+    "pt": {
+      "T_CHECK_LAST_VERSION_MNEMONIC": "V",
+      "T_CHECK_LAST_VERSION": "Verificar a \u00faltima vers\u00e3o",
+      "T_YOUR_VERSION": "A sua vers\u00e3o:",
+      "T_LAST_VERSION": "\u00daltima vers\u00e3o:",
+      "T_CANT_CHECK_CURRENT_VERSION": "Eu n\u00e3o posso verificar a vers\u00e3o atual:",
+      "T_OK": "OK",
+      "T_CANCEL": "Cancelar",
+      "T_VERSION_TITLE": "Vers\u00e3o"
+    },
+    "ru": {
+      "T_CHECK_LAST_VERSION_MNEMONIC": "V",
+      "T_CHECK_LAST_VERSION": "\u041f\u0440\u043e\u0432\u0435\u0440\u0438\u0442\u044c \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u044e\u044e \u0432\u0435\u0440\u0441\u0438\u044e",
+      "T_YOUR_VERSION": "\u0412\u0430\u0448\u0430 \u0432\u0435\u0440\u0441\u0438\u044f:",
+      "T_LAST_VERSION": "\u041f\u043e\u0441\u043b\u0435\u0434\u043d\u044f\u044f \u0432\u0435\u0440\u0441\u0438\u044f:",
+      "T_CANT_CHECK_CURRENT_VERSION": "\u041d\u0435 \u043c\u043e\u0433\u0443 \u043f\u0440\u043e\u0432\u0435\u0440\u0438\u0442\u044c \u0442\u0435\u043a\u0443\u0449\u0443\u044e \u0432\u0435\u0440\u0441\u0438\u044e:",
+      "T_OK": "\u041e\u041a",
+      "T_CANCEL": "\u041e\u0442\u043c\u0435\u043d\u0430",
+      "T_VERSION_TITLE": "\u0412\u0435\u0440\u0441\u0438\u044f"
+    }
+  },
+  "source": {
+    "../Colormod/src/biogenesis/messages/messages_en.properties": {
+      "sha256": "885b873a998f96ec3fd29002fea8f58f2fb0f9a65b779680bccba152778fb605",
+      "encoding": "ISO-8859-1 with Java Unicode escapes"
+    },
+    "../Colormod/src/biogenesis/messages/messages_es.properties": {
+      "sha256": "fe8192100d2b5599a2685326c8ee7be06a3e595d836614eb19aa3f42b917202b",
+      "encoding": "ISO-8859-1 with Java Unicode escapes"
+    },
+    "../Colormod/src/biogenesis/messages/messages_ca.properties": {
+      "sha256": "e5bfbdac1d3670c2f9e5a4fb181e57a08db2aa5937dc029d9380af5e95940dcf",
+      "encoding": "ISO-8859-1 with Java Unicode escapes"
+    },
+    "../Colormod/src/biogenesis/messages/messages_de.properties": {
+      "sha256": "91d7c0ca2056203ac1c9177589a260ac1a883e35d02683fe92d6846fddb340f8",
+      "encoding": "ISO-8859-1 with Java Unicode escapes"
+    },
+    "../Colormod/src/biogenesis/messages/messages_pt.properties": {
+      "sha256": "3e8d4869f5919b247a9b2e1dee03f0ab76958a51ccd6132e3fd9a10ea410dcda",
+      "encoding": "ISO-8859-1 with Java Unicode escapes"
+    },
+    "../Colormod/src/biogenesis/messages/messages_ru.properties": {
+      "sha256": "d93ddcefd7eca43b223c01d859c9ee219b1b3d9872633fd8c2d98f272fab87f2",
+      "encoding": "ISO-8859-1 with Java Unicode escapes"
+    }
+  },
+  "authority": "Independent explicit examples from CheckVersionThread.translateVersion and Source properties; no production table copied"
+}

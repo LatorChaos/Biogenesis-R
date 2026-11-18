@@ -1,0 +1,51 @@
+{
+  "status": "EXACT_EXISTING_SOURCE_BYTES_COPIED_NO_REGENERATION",
+  "date": "2026-10-30",
+  "reference_receipt": {
+    "path": ".workflow-local/world-publication-witness-preparation-a/root-four-phase-actual-readback.json",
+    "sha256": "72bbaef43df46f79e5e194667f90fb68e1780337b4570e4424db17c41235ff59"
+  },
+  "original_source_observer": {
+    "path": ".workflow-local/world-publication-witness-preparation-a/runs/first-attempt/source/observations/world_publication.tsv",
+    "sha256": "db49778cf157f45861d9c25ba2112986e72f43b6877db69da46ecfcf929888d9"
+  },
+  "fixtures": {
+    "read_frame-call_0.ser": {
+      "bytes": 2279,
+      "sha256": "cb12ae825b8a9267fe898fdcb03d2e6622b8d33ed5b517c9668c0f67e97c3a36",
+      "source": ".workflow-local/world-publication-witness-preparation-a/runs/first-attempt/source/observations/read_frame-call_0.ser",
+      "source_observation_line": 352,
+      "jar": ".workflow-local/world-publication-witness-preparation-a/runs/first-attempt/jar/observations/read_frame-call_0.ser",
+      "jar_sha256": "cb12ae825b8a9267fe898fdcb03d2e6622b8d33ed5b517c9668c0f67e97c3a36",
+      "source_and_jar_equal": true
+    },
+    "read_frame-call_3.ser": {
+      "bytes": 2429,
+      "sha256": "2377b675dc9257764929aae068c628befc8be16b1cf38e0efff76dd0415d57a6",
+      "source": ".workflow-local/world-publication-witness-preparation-a/runs/first-attempt/source/observations/read_frame-call_3.ser",
+      "source_observation_line": 678,
+      "jar": ".workflow-local/world-publication-witness-preparation-a/runs/first-attempt/jar/observations/read_frame-call_3.ser",
+      "jar_sha256": "2377b675dc9257764929aae068c628befc8be16b1cf38e0efff76dd0415d57a6",
+      "source_and_jar_equal": true
+    },
+    "actor_closure-call_0.ser": {
+      "bytes": 10624,
+      "sha256": "7b35afb36bf31f7e8e3bc98f90919b3f29296bcf9ea138b9fe7057887a8ff83f",
+      "source": ".workflow-local/world-publication-witness-preparation-a/runs/first-attempt/source/observations/actor_closure-call_0.ser",
+      "source_observation_line": 3363,
+      "jar": ".workflow-local/world-publication-witness-preparation-a/runs/first-attempt/jar/observations/actor_closure-call_0.ser",
+      "jar_sha256": "7b35afb36bf31f7e8e3bc98f90919b3f29296bcf9ea138b9fe7057887a8ff83f",
+      "source_and_jar_equal": true
+    }
+  },
+  "observation_prefix": {
+    "file": "source_observations.tsv",
+    "original_lines": [
+      1,
+      7188
+    ],
+    "method": "Exact byte-preserving prefix ending at E actor_closure; no rows were reconstructed",
+    "sha256": "74fca699266b604435e6a4f0642025e1327db7cbaba48f7a912db0f08a2f7b1e"
+  },
+  "acceptance_limit": "Root owns qualification, integration and all execution. These copied bytes add no new runtime evidence."
+}

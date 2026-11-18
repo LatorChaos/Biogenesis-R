@@ -1,0 +1,17 @@
+{
+  "scope": "Actual unchanged Organism.touchMove at supplied contact inputs; no original Java World frame-34 argument capture claim",
+  "method": "Colormod/src/biogenesis/Organism.java:5673-5725",
+  "input_authority": "Actual Rust frame34 moving actor2800 and peer12933 operands, identical before arithmetic in debug and optimized histories",
+  "reference_runs": "Source/source/JAR outputs and helper classes match; original inputs remain unchanged",
+  "source_receipts": ".workflow-local/pow2-contact-diagnostic/contact-rwb7q_5n",
+  "controls_rows": 25,
+  "output_comparisons": 6,
+  "source_purity_row": "R unchanged observes original random state; physics Rust API receives no RNG",
+  "files": {
+    "contact_square.inputs.tsv": "ecfe53a41372bd10b7bda19df2af96a53212b1d66fc51128b4e2bf5ba318db80",
+    "contact_square.outputs.tsv": "a2ec8407af77a57f748f104636ca3a145d6d9cc5ddbb9d27deae8c74f226e2d2"
+  },
+  "actual_java_summary_sha256": "08eacb9edbaba2f23235c35af98bf6be205671a4f46c48147a4638a6220e4e63",
+  "helper_class_sha256": "1ef09f5d8769a14d4d1f5d0a750717a4e554506bf7d85d96686467d60deb41a2",
+  "expectations_frozen_before_rust_regression": true
+}

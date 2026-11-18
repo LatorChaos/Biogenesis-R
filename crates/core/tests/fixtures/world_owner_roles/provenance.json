@@ -1,0 +1,188 @@
+{
+  "status": "EXACT_ORIGINAL_FIXTURES_PRIVATE_PREPARATION_ONLY",
+  "source_route": "Source A only; producer independently checked SourceA/SourceB/JAR equality",
+  "producer_summary": {
+    "path": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/summary.json",
+    "sha256": "d676caf473bdbde6d7b961b26f16f53a5dd99dff23b0374b84129303a195b0df"
+  },
+  "producer_commands": {
+    "path": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/commands.json",
+    "sha256": "bc1b08ee1104264781f7c4ac6daed875d48e66c8f06690d756ed465fab35dc9f"
+  },
+  "producer_actual_peer": {
+    "path": "<project-root>/.workflow-local/world-owner-roles-a/reviews/original-nine-actual-independent.json",
+    "sha256": "7e4bb4c9777653bfa2f88941ab0fbddb07d44b7358f7818089c9939df61b60a4",
+    "status": "ACCEPTED_ORIGINAL_NINE_WORLD_OWNER_ROLES_ACTUAL_ONLY"
+  },
+  "claim_sha256": "07ac9c17780e5ecb8d8d87623c5b00cd65e20482f4c5316d6c0123f6a6cd421c",
+  "implementation_authorization_sha256": "ee1f4412e6ed65a6e31486daa74ca438923e99e669e426909aa4979009658496",
+  "source_helper_manifest_sha256": "5d7cb80ad5923797cd3541e3369454897e9f6259b677fb53b36c1d07cafc8cdd",
+  "case_contract_sha256": "a81b3fdd7624e38f5221153595cebc9389af3d1d2823579cace2df9156bc8815",
+  "protocol_sha256": "d9a260628648575e156e1ef854ac8d1ad27da22c8cee11bbcdfc006e2c83d0bc",
+  "raw_observations": {
+    "path": "crates/core/tests/fixtures/world_owner_roles/ownership.tsv",
+    "core_relative_path": "tests/fixtures/world_owner_roles/ownership.tsv",
+    "sha256": "7d54ae93982d2094c2447e11fa71259c840c9465fd6a54a0cd66153afea792e0",
+    "bytes": 2473456,
+    "mode": 420,
+    "placement": "new_asset",
+    "origin": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture/ownership.tsv"
+  },
+  "initial_control_sources": {
+    "0": {
+      "canonical_reference": "crates/core/tests/fixtures/world_hydration/actor_closure-call_0.ser",
+      "sha256": "7b35afb36bf31f7e8e3bc98f90919b3f29296bcf9ea138b9fe7057887a8ff83f",
+      "bytes": 10624,
+      "mode": 384
+    },
+    "8": {
+      "canonical_reference": "crates/core/tests/fixtures/shared_world_owners/child_history_cache-call_0.ser",
+      "sha256": "7c71c902a3c2e9726df75544933900a022a671a40af5b34c536323e32a5c8b65",
+      "bytes": 12729,
+      "mode": 384
+    }
+  },
+  "serialized_files": {
+    "crates/core/tests/fixtures/world_hydration/actor_closure-call_0.ser": {
+      "path": "crates/core/tests/fixtures/world_hydration/actor_closure-call_0.ser",
+      "core_relative_path": "tests/fixtures/world_hydration/actor_closure-call_0.ser",
+      "sha256": "7b35afb36bf31f7e8e3bc98f90919b3f29296bcf9ea138b9fe7057887a8ff83f",
+      "bytes": 10624,
+      "mode": 384,
+      "placement": "existing_reference",
+      "origin": "<project-root>/crates/core/tests/fixtures/world_hydration/actor_closure-call_0.ser"
+    },
+    "crates/core/tests/fixtures/shared_world_owners/child_history_cache-call_0.ser": {
+      "path": "crates/core/tests/fixtures/shared_world_owners/child_history_cache-call_0.ser",
+      "core_relative_path": "tests/fixtures/shared_world_owners/child_history_cache-call_0.ser",
+      "sha256": "7c71c902a3c2e9726df75544933900a022a671a40af5b34c536323e32a5c8b65",
+      "bytes": 12729,
+      "mode": 384,
+      "placement": "existing_reference",
+      "origin": "<project-root>/crates/core/tests/fixtures/shared_world_owners/child_history_cache-call_0.ser"
+    },
+    "crates/core/tests/fixtures/world_owner_roles/foreign-member-world-authored.ser": {
+      "path": "crates/core/tests/fixtures/world_owner_roles/foreign-member-world-authored.ser",
+      "core_relative_path": "tests/fixtures/world_owner_roles/foreign-member-world-authored.ser",
+      "sha256": "25cbf1e8a7311c1cbea61d92c5dd5c0939238e46a02cac9adc673471b6b4195e",
+      "bytes": 9564,
+      "mode": 384,
+      "placement": "new_asset",
+      "origin": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture/foreign-member-world-authored.ser"
+    },
+    "crates/core/tests/fixtures/world_owner_roles/foreign-member-world-call_3.ser": {
+      "path": "crates/core/tests/fixtures/world_owner_roles/foreign-member-world-call_3.ser",
+      "core_relative_path": "tests/fixtures/world_owner_roles/foreign-member-world-call_3.ser",
+      "sha256": "635bd66b29a04643601b10f11907d890fded7a110b08d4df9143f0296ac35e5c",
+      "bytes": 9564,
+      "mode": 384,
+      "placement": "new_asset",
+      "origin": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture/foreign-member-world-call_3.ser"
+    },
+    "crates/core/tests/fixtures/world_owner_roles/foreign-peer-world-authored.ser": {
+      "path": "crates/core/tests/fixtures/world_owner_roles/foreign-peer-world-authored.ser",
+      "core_relative_path": "tests/fixtures/world_owner_roles/foreign-peer-world-authored.ser",
+      "sha256": "390d552b3361a4ea378d9a35b74fdc07dd24e1aed13f545c473fd92984619fc7",
+      "bytes": 11091,
+      "mode": 384,
+      "placement": "new_asset",
+      "origin": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture/foreign-peer-world-authored.ser"
+    },
+    "crates/core/tests/fixtures/world_owner_roles/foreign-peer-world-call_3.ser": {
+      "path": "crates/core/tests/fixtures/world_owner_roles/foreign-peer-world-call_3.ser",
+      "core_relative_path": "tests/fixtures/world_owner_roles/foreign-peer-world-call_3.ser",
+      "sha256": "860c2b27d2659d67aa4c382dcb64b45797b287ab5d5964e1692c1bbd3d391529",
+      "bytes": 11091,
+      "mode": 384,
+      "placement": "new_asset",
+      "origin": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture/foreign-peer-world-call_3.ser"
+    },
+    "crates/core/tests/fixtures/world_owner_roles/null-member-world-authored.ser": {
+      "path": "crates/core/tests/fixtures/world_owner_roles/null-member-world-authored.ser",
+      "core_relative_path": "tests/fixtures/world_owner_roles/null-member-world-authored.ser",
+      "sha256": "756be22aa1e4f16dd5224da06578d43ba370a51df162335cd190dac621cd9dfc",
+      "bytes": 7739,
+      "mode": 384,
+      "placement": "new_asset",
+      "origin": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture/null-member-world-authored.ser"
+    },
+    "crates/core/tests/fixtures/world_owner_roles/history-envelope-authored.ser": {
+      "path": "crates/core/tests/fixtures/world_owner_roles/history-envelope-authored.ser",
+      "core_relative_path": "tests/fixtures/world_owner_roles/history-envelope-authored.ser",
+      "sha256": "fb7981507bce4d9678820ce16c30af7e7e39622f56ac5749d090dabf04713f66",
+      "bytes": 2415,
+      "mode": 384,
+      "placement": "new_asset",
+      "origin": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture/history-envelope-authored.ser"
+    },
+    "crates/core/tests/fixtures/world_owner_roles/history-envelope-call_3.ser": {
+      "path": "crates/core/tests/fixtures/world_owner_roles/history-envelope-call_3.ser",
+      "core_relative_path": "tests/fixtures/world_owner_roles/history-envelope-call_3.ser",
+      "sha256": "0cb7479c7c21b6b55c72f4439794ad771b37454daef605518dbb428f2d85c71c",
+      "bytes": 2499,
+      "mode": 384,
+      "placement": "new_asset",
+      "origin": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture/history-envelope-call_3.ser"
+    },
+    "crates/core/tests/fixtures/world_owner_roles/membership-envelope-authored.ser": {
+      "path": "crates/core/tests/fixtures/world_owner_roles/membership-envelope-authored.ser",
+      "core_relative_path": "tests/fixtures/world_owner_roles/membership-envelope-authored.ser",
+      "sha256": "049e7e301b33f1254b989d34559dcd965bd3126c4a500ad305710867ec057353",
+      "bytes": 7654,
+      "mode": 384,
+      "placement": "new_asset",
+      "origin": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture/membership-envelope-authored.ser"
+    },
+    "crates/core/tests/fixtures/world_owner_roles/pending-envelope-authored.ser": {
+      "path": "crates/core/tests/fixtures/world_owner_roles/pending-envelope-authored.ser",
+      "core_relative_path": "tests/fixtures/world_owner_roles/pending-envelope-authored.ser",
+      "sha256": "2c07385b2355a3a62461a876aa225712f341ad3843c598f2dc1fa8401e7b56e4",
+      "bytes": 12174,
+      "mode": 384,
+      "placement": "new_asset",
+      "origin": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture/pending-envelope-authored.ser"
+    },
+    "crates/core/tests/fixtures/world_owner_roles/child-envelope-authored.ser": {
+      "path": "crates/core/tests/fixtures/world_owner_roles/child-envelope-authored.ser",
+      "core_relative_path": "tests/fixtures/world_owner_roles/child-envelope-authored.ser",
+      "sha256": "2a7780a09ec2cd6f3cb3a37da2685fe70f766f4b0429abea142d07acd3a2de17",
+      "bytes": 12609,
+      "mode": 384,
+      "placement": "new_asset",
+      "origin": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture/child-envelope-authored.ser"
+    },
+    "crates/core/tests/fixtures/world_owner_roles/child-envelope-call_4.ser": {
+      "path": "crates/core/tests/fixtures/world_owner_roles/child-envelope-call_4.ser",
+      "core_relative_path": "tests/fixtures/world_owner_roles/child-envelope-call_4.ser",
+      "sha256": "a37ceb531c01375c6f884b8ec04732a6bd727207be2a0a15d26375c6ecc15438",
+      "bytes": 12605,
+      "mode": 384,
+      "placement": "new_asset",
+      "origin": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture/child-envelope-call_4.ser"
+    },
+    "crates/core/tests/fixtures/world_owner_roles/cache-control-call_3.ser": {
+      "path": "crates/core/tests/fixtures/world_owner_roles/cache-control-call_3.ser",
+      "core_relative_path": "tests/fixtures/world_owner_roles/cache-control-call_3.ser",
+      "sha256": "dfe39dff878de3e01f67b884ea053243aa763aeb662e7c3e7f11f9701667ea22",
+      "bytes": 12766,
+      "mode": 384,
+      "placement": "new_asset",
+      "origin": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture/cache-control-call_3.ser"
+    }
+  },
+  "deduplication": "Only byte-identical serialized snapshots share a conventional representative file. Every original case/stage/name/hash remains explicit. No content-addressed store or generic framework.",
+  "data_transformations": [],
+  "observation_bytes_unchanged": true,
+  "new_file_count": 15,
+  "wire_expectations_derive_from": "Accepted Original input bytes,Source operation checkpoints and complete Source TSV only",
+  "C1_scope": "Known historical read_input graph plus newly captured continuation",
+  "C2_scope": "Original byte-only provenance remains historical; this new actual capture observes successful read/rewrite/init/query",
+  "claim_limits": "47serialized checkpoints are not47 independent Original OIS validations. No Rust implementation,whole-task,hardware,or gameplay acceptance.",
+  "worker_compilers_JVM_tests": 0,
+  "worker_Source_clones": 0,
+  "worker_Target_reads": 0,
+  "canonical_writes": false,
+  "logical_checkpoints": "The canonical manifest cases[].snapshots contains every exact Source filename,stage,representative path,SHA and byte count",
+  "source_snapshot_directory": "<project-root>/.workflow-local/world-owner-roles-a/capture-a/execution-a/source-a/capture",
+  "fixture_manifest_sha256": "494d8cfb3116ea1fd585d48390ce5b3e87dfa335969c0013c36972f76a60c9b9"
+}

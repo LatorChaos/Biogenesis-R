@@ -1,0 +1,743 @@
+{
+  "source": "Original ColorMod BioXMLParser.parseGeneticCode; no Rust-generated expectations",
+  "claim_sha256": "f1cc9421777a05f33b96726f451c8495c01ec6c080f1d5f18dd17bda385b126f",
+  "source_input_manifest_sha256": "899333e9b9e8808212281b04e9ef0bd855423eee2b6801a4e7b729487258b0aa",
+  "capture_root_readback_sha256": "de6a143eeec7ff3222a9d77ddb4ce2abd9e0653d3c28351f57b3ea2b913712e7",
+  "independent_actual_review_sha256": "10d62929793832dd44ffd86ce8f9cea63482c7bf723a32d57f733defd4e9ef49",
+  "observation_source": "capture-a/execution-a/source-a/capture/observations.tsv",
+  "observations": {
+    "sha256": "5007fa0f385c13d7e427325846be85a0dac07ab18d66bf2874173b8fb71819ae",
+    "bytes": 511294,
+    "rows": 16478,
+    "routes_exact_bytes": [
+      "fresh Source-a",
+      "fresh Source-b from same class cohort",
+      "fresh JAR"
+    ]
+  },
+  "counts": {
+    "cases": 79,
+    "success": 54,
+    "error": 25,
+    "zero_gene_success": 10,
+    "source_genome_rows": 1512,
+    "compared_genome_values": 1458,
+    "source_gene_values": 2800,
+    "copied_source_rng_rows": 158
+  },
+  "error_contract": "Original SAXException does not imply identical Rust categories; four stored-markup cases retain UnsupportedDtd",
+  "writer_calls": 0,
+  "cases": [
+    {
+      "id": 0,
+      "name": "seed-0000",
+      "path": "cases/seed-0000.bgg",
+      "sha256": "1d2957133d3670022f65602ca986e44edd1fa46163ac8a7f0fb49371fe797f42",
+      "bytes": 4794,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 1,
+      "name": "seed-0246",
+      "path": "cases/seed-0246.bgg",
+      "sha256": "29769b9a7157a3c2b61ba251e16d4b5ce02b4ba14f26b79d70145e2eeeb3cee4",
+      "bytes": 4038,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 2,
+      "name": "seed-0247",
+      "path": "cases/seed-0247.bgg",
+      "sha256": "63b154797fb8ce64ffa89789ea0e361e05b60880efa48c15c59fac1654bcb309",
+      "bytes": 4773,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 3,
+      "name": "seed-0248",
+      "path": "cases/seed-0248.bgg",
+      "sha256": "685b38ec10adaf40c7535a428fd72e47fc95f715ac5d5ac2cf018ca5f3d3953f",
+      "bytes": 4822,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 4,
+      "name": "seed-0258",
+      "path": "cases/seed-0258.bgg",
+      "sha256": "bb9f09771ccacb85a2eecbab528a5840638fa1756604f900f2f7f269828188b7",
+      "bytes": 3381,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 5,
+      "name": "root-mixed-literal-c0",
+      "path": "cases/root-mixed-literal-c0.bgg",
+      "sha256": "f43ff5b01af816949fcf7910fb29a4f5f0339fffcaf0f163a56e5b6f6e93d7dd",
+      "bytes": 4056,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 6,
+      "name": "root-mixed-cdata-c0",
+      "path": "cases/root-mixed-cdata-c0.bgg",
+      "sha256": "f140c0e1b012ccb61558f4ee3f59d0bc825ee911686ee53a36ef59db35cb05f9",
+      "bytes": 4064,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 7,
+      "name": "root-mixed-refs-c0",
+      "path": "cases/root-mixed-refs-c0.bgg",
+      "sha256": "eddefda907075ba0c6ebaa95e88fa42dfc7716f22ca17c05ccb960f0f7d7421c",
+      "bytes": 4084,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 8,
+      "name": "root-mixed-literal-c1",
+      "path": "cases/root-mixed-literal-c1.bgg",
+      "sha256": "984896d3085e9525d2644a461fcb7adbb7fc7d7dcc43d79c627b85e27fc61028",
+      "bytes": 4822,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 9,
+      "name": "root-mixed-cdata-c1",
+      "path": "cases/root-mixed-cdata-c1.bgg",
+      "sha256": "eddc2cdeaef7682ea381a641a42f48712539fee4e52b6d3cd92c67bdbaeab3b4",
+      "bytes": 4838,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 10,
+      "name": "root-mixed-refs-c1",
+      "path": "cases/root-mixed-refs-c1.bgg",
+      "sha256": "1a47045af6a75ee9092af8d18cc44f0b0a3b3227b69be57535e1bda683d17248",
+      "bytes": 4856,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 11,
+      "name": "root-mixed-literal-c2",
+      "path": "cases/root-mixed-literal-c2.bgg",
+      "sha256": "fc8ed07df11df736b1ce0d07f97774af2930892a2ee3259a734e4ff1d2e6f1ea",
+      "bytes": 5586,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 12,
+      "name": "root-mixed-cdata-c2",
+      "path": "cases/root-mixed-cdata-c2.bgg",
+      "sha256": "773a0057d8e0fbbfa7168d74741b98dae7dbf7d2b506d91f7c5bd888fe60d982",
+      "bytes": 5610,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 13,
+      "name": "root-mixed-refs-c2",
+      "path": "cases/root-mixed-refs-c2.bgg",
+      "sha256": "94a54a1b2710807b99e626d13855b30390034e55b2b8b98c8941e72026cc76bf",
+      "bytes": 5626,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 14,
+      "name": "root-mixed-literal-c3",
+      "path": "cases/root-mixed-literal-c3.bgg",
+      "sha256": "eec627ba20188b1b5aea00e786ba72ef25be2a54c576bffb10cf68e96426ee95",
+      "bytes": 6348,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 15,
+      "name": "root-mixed-cdata-c3",
+      "path": "cases/root-mixed-cdata-c3.bgg",
+      "sha256": "6b3d253f173ce693f9f5680076a8bd6209b20edcae06e88dbcc7d50f6acd4915",
+      "bytes": 6380,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 16,
+      "name": "root-mixed-refs-c3",
+      "path": "cases/root-mixed-refs-c3.bgg",
+      "sha256": "fe078ce3041d3fc1cbeebe213c861d4cd8bb43c744467230b00103ddf6ac65de",
+      "bytes": 6394,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 17,
+      "name": "root-mixed-literal-c4",
+      "path": "cases/root-mixed-literal-c4.bgg",
+      "sha256": "3eb491dfc5eec3bed95bd55ac10af8fd1228f1e6efeea4ba57403abfbdb46e15",
+      "bytes": 7113,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 18,
+      "name": "root-mixed-cdata-c4",
+      "path": "cases/root-mixed-cdata-c4.bgg",
+      "sha256": "82802861400f7927ad26f2ca7aa717086d0dd8224dcbaff6986d127f9936e12a",
+      "bytes": 7153,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 19,
+      "name": "root-mixed-refs-c4",
+      "path": "cases/root-mixed-refs-c4.bgg",
+      "sha256": "5f61aab10f510b3c515a8207094065eee15f7a5d284f98d4cefbf2adaf333ee9",
+      "bytes": 7165,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 20,
+      "name": "gene-pcdata-empty",
+      "path": "cases/gene-pcdata-empty.bgg",
+      "sha256": "d00684d507ba33a6f05be4e54ca941cf5fee91adcd891ec251f3f0f318ae0d64",
+      "bytes": 4803,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 21,
+      "name": "gene-pcdata-literal",
+      "path": "cases/gene-pcdata-literal.bgg",
+      "sha256": "402c70e42c440760ceb0e2f09ee239b2a52c540c187c5b43c0b12d7d5b4ec56d",
+      "bytes": 4813,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 22,
+      "name": "gene-pcdata-cdata",
+      "path": "cases/gene-pcdata-cdata.bgg",
+      "sha256": "82c41f824d169747e8384b69342f94ea24074b3a38620ca83b07e0f8ddd3ebcc",
+      "bytes": 4821,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 23,
+      "name": "gene-pcdata-refs",
+      "path": "cases/gene-pcdata-refs.bgg",
+      "sha256": "d5976445ff526e61b63a2f12dd1131ff20f4c30b8c60cea0b6b8df78d8ff89b0",
+      "bytes": 4841,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 24,
+      "name": "gene-pcdata-star-empty",
+      "path": "cases/gene-pcdata-star-empty.bgg",
+      "sha256": "81a53afa94d2671cc3e0c441a99a35ecba37bd98cda84b5c2c358b699a20abb2",
+      "bytes": 4804,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 25,
+      "name": "gene-pcdata-star-literal",
+      "path": "cases/gene-pcdata-star-literal.bgg",
+      "sha256": "0553d1b0732b079aa4317a0d7cc1609bd00733421e0f46817340d97e0bade9d1",
+      "bytes": 4814,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 26,
+      "name": "gene-pcdata-star-cdata",
+      "path": "cases/gene-pcdata-star-cdata.bgg",
+      "sha256": "7fadf373fa5e54004a48c544edd5a1df561b4619ae56e1172bc355111522dacb",
+      "bytes": 4822,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 27,
+      "name": "gene-pcdata-star-refs",
+      "path": "cases/gene-pcdata-star-refs.bgg",
+      "sha256": "ce109d9ec1e1b9908ee6eb6877b00c356e78b76fe7725896bb33361dca9949d8",
+      "bytes": 4842,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 28,
+      "name": "combined-root-gene-pcdata",
+      "path": "cases/combined-root-gene-pcdata.bgg",
+      "sha256": "3fc2895108d6fb10f5a41c676633b16b9072067625b63791426d606061f3bbec",
+      "bytes": 5636,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 29,
+      "name": "combined-root-gene-pcdata-star",
+      "path": "cases/combined-root-gene-pcdata-star.bgg",
+      "sha256": "6f77537d9c041ddebd132da003007d0869a93ebe49ac4e2ef49eec522e79a01d",
+      "bytes": 5673,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 30,
+      "name": "root-pcdata-empty",
+      "path": "cases/root-pcdata-empty.bgg",
+      "sha256": "66c5208ce4e4ddd8492a4b8c1c8be6ec91b215432cffe770dbd08cf481e86e88",
+      "bytes": 4040,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 31,
+      "name": "root-pcdata-literal",
+      "path": "cases/root-pcdata-literal.bgg",
+      "sha256": "b38f03f824442ba0739e1586a9244b8a375b25fb27a78060d5e432affeb156ca",
+      "bytes": 4050,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 32,
+      "name": "root-pcdata-cdata",
+      "path": "cases/root-pcdata-cdata.bgg",
+      "sha256": "4c9b23546e2311f91a02860980ba76f7f8eb85c3bb41053b977e982429788850",
+      "bytes": 4058,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 33,
+      "name": "root-pcdata-star-empty",
+      "path": "cases/root-pcdata-star-empty.bgg",
+      "sha256": "2cc525b0e296b1b3d2be828386705f6cb7c8f521d005baf2643b246554c1374f",
+      "bytes": 4041,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 34,
+      "name": "root-pcdata-star-literal",
+      "path": "cases/root-pcdata-star-literal.bgg",
+      "sha256": "760ae4174fcadfa800ac0ef5c944229faec24886e170f441cd6d88e9ede8d037",
+      "bytes": 4051,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 35,
+      "name": "root-pcdata-star-cdata",
+      "path": "cases/root-pcdata-star-cdata.bgg",
+      "sha256": "a04739e4aa6e1632c42bba158e77934ff51b13ea81d12b5d04820a5b6e5cc6bc",
+      "bytes": 4059,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 36,
+      "name": "root-direct-predefined",
+      "path": "cases/root-direct-predefined.bgg",
+      "sha256": "55593e96c71d4939be00d9ff0bec1412c6372783048dacd0591f4a2feca9f60b",
+      "bytes": 4810,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 37,
+      "name": "root-direct-numeric",
+      "path": "cases/root-direct-numeric.bgg",
+      "sha256": "d53d9f2e5db99883e7d6036f215d534c12afced5e94c1463607f7840d2f92bd2",
+      "bytes": 4812,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 38,
+      "name": "root-custom-named-lt",
+      "path": "cases/root-custom-named-lt.bgg",
+      "sha256": "41f90c9b41c2642cccd484946ab94a1a875eae69b615edd92eea082d847ccc64",
+      "bytes": 4836,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 39,
+      "name": "root-nested-named-lt",
+      "path": "cases/root-nested-named-lt.bgg",
+      "sha256": "b803c62d0295307c918199c3c6875e4de96c9852c950d464ed4fc544d33fcfd2",
+      "bytes": 4860,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 40,
+      "name": "root-entity-numeric-lt",
+      "path": "cases/root-entity-numeric-lt.bgg",
+      "sha256": "d8cf1a771e29ecdc65fdc310adf3206ff792519524bf9dbf8fc8171a2988fd95",
+      "bytes": 4834,
+      "source_outcome": "error",
+      "rust_outcome": "UnsupportedDtd(entity markup in element text)"
+    },
+    {
+      "id": 41,
+      "name": "root-entity-literal-lt",
+      "path": "cases/root-entity-literal-lt.bgg",
+      "sha256": "5bbf635ff61ea6053b449947452047cf394d8c29160d3f3557c9da75469a095b",
+      "bytes": 4842,
+      "source_outcome": "error",
+      "rust_outcome": "UnsupportedDtd(entity markup in element text)"
+    },
+    {
+      "id": 42,
+      "name": "root-direct-literal-lt",
+      "path": "cases/root-direct-literal-lt.bgg",
+      "sha256": "a2357eb513ac4cb002580c41f000a9be2557b45b577ecdfc1f6dc3d82369533a",
+      "bytes": 4818,
+      "source_outcome": "error",
+      "rust_outcome": "Malformed"
+    },
+    {
+      "id": 43,
+      "name": "gene-direct-predefined",
+      "path": "cases/gene-direct-predefined.bgg",
+      "sha256": "285b57cff9b42e70bbce78be813ffc1804224858e602e53dfc49cee7fb4bb8b6",
+      "bytes": 4807,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 44,
+      "name": "gene-direct-numeric",
+      "path": "cases/gene-direct-numeric.bgg",
+      "sha256": "3672979fd117d7924e157236177be408585013549faf2601d4f0247eec4c9531",
+      "bytes": 4808,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 45,
+      "name": "gene-custom-named-lt",
+      "path": "cases/gene-custom-named-lt.bgg",
+      "sha256": "c382239643eb23edb2ac88bb2d93d9cc770a47a31ba51fc87022ab00f20517d4",
+      "bytes": 4831,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 46,
+      "name": "gene-nested-named-lt",
+      "path": "cases/gene-nested-named-lt.bgg",
+      "sha256": "d96757c4c680e088d69239528453c434f4e94d9a97550858ced84660e283162f",
+      "bytes": 4855,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 47,
+      "name": "gene-entity-numeric-lt",
+      "path": "cases/gene-entity-numeric-lt.bgg",
+      "sha256": "6fe7d8c948abab2d58acc91aba4e70d02667e3508070593c386d4ba1127d3ceb",
+      "bytes": 4830,
+      "source_outcome": "error",
+      "rust_outcome": "UnsupportedDtd(entity markup in element text)"
+    },
+    {
+      "id": 48,
+      "name": "gene-entity-literal-lt",
+      "path": "cases/gene-entity-literal-lt.bgg",
+      "sha256": "3b267093a8307cef32078e3b6f9d33432bf314213901e5415844e7ddf64e5b41",
+      "bytes": 4834,
+      "source_outcome": "error",
+      "rust_outcome": "UnsupportedDtd(entity markup in element text)"
+    },
+    {
+      "id": 49,
+      "name": "gene-direct-literal-lt",
+      "path": "cases/gene-direct-literal-lt.bgg",
+      "sha256": "5c1a5e27a4e37c7bedf7b3814fa85430606f36fa0627d94cc7227645b44b776c",
+      "bytes": 4811,
+      "source_outcome": "error",
+      "rust_outcome": "Malformed"
+    },
+    {
+      "id": 50,
+      "name": "seed-0247-mixed-defaults",
+      "path": "cases/seed-0247-mixed-defaults.bgg",
+      "sha256": "0fad04069b7a7f9f5858faeb0106dfea8de60213e91f729179649d03c0de148b",
+      "bytes": 5657,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 51,
+      "name": "seed-0248-mixed-defaults",
+      "path": "cases/seed-0248-mixed-defaults.bgg",
+      "sha256": "a15ff8eb99231dfb8b3ff0d78447cfb483d634980bc38a90b7883860cfacc7e1",
+      "bytes": 5706,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 52,
+      "name": "seed-0258-mixed-defaults",
+      "path": "cases/seed-0258-mixed-defaults.bgg",
+      "sha256": "d931f024187c4a7aeea92e1d556c7f5dd1303b03fd9ceef58fbeb0d95f7fc682",
+      "bytes": 3590,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 53,
+      "name": "names-before-declarations",
+      "path": "cases/names-before-declarations.bgg",
+      "sha256": "6487b1f500393ca8d5611bf27c1fbe27770a5e25edaeaffb3ecf6c078cc980eb",
+      "bytes": 5608,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 54,
+      "name": "names-after-declarations",
+      "path": "cases/names-after-declarations.bgg",
+      "sha256": "d06248fb912d500bc00c6c51d53d6e43df3f2e2929eb5eb03ec8cc4776fdd777",
+      "bytes": 5608,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 55,
+      "name": "allowed-nongene-direct-child",
+      "path": "cases/allowed-nongene-direct-child.bgg",
+      "sha256": "7596e82d0cf6c08d99f795d1cdb839d591531ef56148cba4732e16d5f0af6ced",
+      "bytes": 4834,
+      "source_outcome": "error",
+      "rust_outcome": "Malformed"
+    },
+    {
+      "id": 56,
+      "name": "ignored-nested-gene",
+      "path": "cases/ignored-nested-gene.bgg",
+      "sha256": "c0315a8e46d0d41410cd732b97de47f433e0a4a932eecb2cecb65539626636af",
+      "bytes": 5578,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 57,
+      "name": "ignored-nested-multiple-names",
+      "path": "cases/ignored-nested-multiple-names.bgg",
+      "sha256": "568cd0883ba09bf43e2cf679c2dd033dd42353f8a94f0a425f97273f91d3910e",
+      "bytes": 5664,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 58,
+      "name": "ignored-descendant-invalid-attribute",
+      "path": "cases/ignored-descendant-invalid-attribute.bgg",
+      "sha256": "b1115a7b2666b54d66d850c0b8ed8e6f095603f87540008e021b4a4429e8b0b6",
+      "bytes": 4855,
+      "source_outcome": "error",
+      "rust_outcome": "Malformed"
+    },
+    {
+      "id": 59,
+      "name": "unused-undeclared-mixed-name",
+      "path": "cases/unused-undeclared-mixed-name.bgg",
+      "sha256": "6ecd044cc0cdbb8c82da1c5f1f7255bdbd0524fd2ff3584bdbccee6be00b1c14",
+      "bytes": 4808,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 60,
+      "name": "used-undeclared-mixed-name",
+      "path": "cases/used-undeclared-mixed-name.bgg",
+      "sha256": "0610dc55491b31889ce15f0f446712bb0399bf93ff31df246a4b5db36a06bd93",
+      "bytes": 4817,
+      "source_outcome": "error",
+      "rust_outcome": "Malformed"
+    },
+    {
+      "id": 61,
+      "name": "unicode-declared-descendant",
+      "path": "cases/unicode-declared-descendant.bgg",
+      "sha256": "b18a141bc346b0717569fc2b629d80ef22456d35b01b8d88e1abaccad62220d6",
+      "bytes": 4850,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 62,
+      "name": "prefixed-declared-descendant",
+      "path": "cases/prefixed-declared-descendant.bgg",
+      "sha256": "00f28e90321b95543cb738e484b694a1b69150b6d6ce328a1f4a17eb597799e9",
+      "bytes": 4926,
+      "source_outcome": "success",
+      "rust_outcome": "success"
+    },
+    {
+      "id": 63,
+      "name": "grammar-missing-star",
+      "path": "cases/grammar-missing-star.bgg",
+      "sha256": "f2e9c8ab57911fd188f24ad0da2f5e1806c2b651883c823915f68940633862d9",
+      "bytes": 4809,
+      "source_outcome": "error",
+      "rust_outcome": "Malformed"
+    },
+    {
+      "id": 64,
+      "name": "grammar-extra-star",
+      "path": "cases/grammar-extra-star.bgg",
+      "sha256": "584fd82f58f208b1fdb0b1e791a1527475a9cde34a4ef133b7b3297741644bf9",
+      "bytes": 4811,
+      "source_outcome": "error",
+      "rust_outcome": "Malformed"
+    },
+    {
+      "id": 65,
+      "name": "grammar-separated-star",
+      "path": "cases/grammar-separated-star.bgg",
+      "sha256": "d8f770e36795211cbd3b422781ccf5d4108b0759f59a4924d417947fd6118678",
+      "bytes": 4811,
+      "source_outcome": "error",
+      "rust_outcome": "Malformed"
+    },
+    {
+      "id": 66,
+      "name": "grammar-text-optional",
+      "path": "cases/grammar-text-optional.bgg",
+      "sha256": "53f6116ffdca26975e3c65e9749f38e18c10ab28e0d9c006d101c502ec049cdb",
+      "bytes": 4805,
+      "source_outcome": "error",
+      "rust_outcome": "Malformed"
+    },
+    {
+      "id": 67,
+      "name": "grammar-text-plus",
+      "path": "cases/grammar-text-plus.bgg",
+      "sha256": "14529770c5b3f24a593f8e2715963960a7d8df9c2da3a2822c15442bf6e68c44",
+      "bytes": 4805,
+      "source_outcome": "error",
+      "rust_outcome": "Malformed"
+    },
+    {
+      "id": 68,
+      "name": "grammar-duplicate-name",
+      "path": "cases/grammar-duplicate-name.bgg",
+      "sha256": "27c1c0d7bbca889879a8df6f99ddd6ade1ae0c10ff40db589a87072cd8aab0f5",
+      "bytes": 4815,
+      "source_outcome": "error",
+      "rust_outcome": "Malformed"
+    },
+    {
+      "id": 69,
+      "name": "grammar-misplaced-pcdata",
+      "path": "cases/grammar-misplaced-pcdata.bgg",
+      "sha256": "eb2791b9c0e52b0e9597956e40190f970ee8e03c66cfb12a4ecfe18c24c45ae3",
+      "bytes": 4810,
+      "source_outcome": "error",
+      "rust_outcome": "Malformed"
+    },
+    {
+      "id": 70,
+      "name": "grammar-duplicate-pcdata",
+      "path": "cases/grammar-duplicate-pcdata.bgg",
+      "sha256": "1ddcd954bc3b5c942fae2344ba91174a7556b12e60d76967751f9e72d11de317",
+      "bytes": 4813,
+      "source_outcome": "error",
+      "rust_outcome": "Malformed"
+    },
+    {
+      "id": 71,
+      "name": "grammar-comma",
+      "path": "cases/grammar-comma.bgg",
+      "sha256": "38ea621d5e607eaaf72d02f2ffdea7e51a25ef1f2bc1ec2c7f640615d9b79d7d",
+      "bytes": 4810,
+      "source_outcome": "error",
+      "rust_outcome": "Malformed"
+    },
+    {
+      "id": 72,
+      "name": "grammar-nested-group",
+      "path": "cases/grammar-nested-group.bgg",
+      "sha256": "a0f77ce91421e94c2f84f4d56f80caa2cba48108358d3caa88c320a043802735",
+      "bytes": 4812,
+      "source_outcome": "error",
+      "rust_outcome": "Malformed"
+    },
+    {
+      "id": 73,
+      "name": "grammar-inner-quantifier",
+      "path": "cases/grammar-inner-quantifier.bgg",
+      "sha256": "5778603ddc02200ea4e43e95cbd98f35b2144de616f4861157aea59a3042e2e4",
+      "bytes": 4811,
+      "source_outcome": "error",
+      "rust_outcome": "Malformed"
+    },
+    {
+      "id": 74,
+      "name": "grammar-empty-choice",
+      "path": "cases/grammar-empty-choice.bgg",
+      "sha256": "67d24cf3160f39e803b1ceac104de490790dc78e45e5009857b0d1bf97d54f96",
+      "bytes": 4806,
+      "source_outcome": "error",
+      "rust_outcome": "Malformed"
+    },
+    {
+      "id": 75,
+      "name": "text-under-empty-root",
+      "path": "cases/text-under-empty-root.bgg",
+      "sha256": "05fa936711552ee438313b356f513eda5e03139bf526146d25fb87550cf64e2a",
+      "bytes": 4040,
+      "source_outcome": "error",
+      "rust_outcome": "Malformed"
+    },
+    {
+      "id": 76,
+      "name": "whitespace-under-empty-gene",
+      "path": "cases/whitespace-under-empty-gene.bgg",
+      "sha256": "df0188f18d0d77c641a21c9b52199622dba92b302082a801a48072cec3ef13ac",
+      "bytes": 4808,
+      "source_outcome": "error",
+      "rust_outcome": "Malformed"
+    },
+    {
+      "id": 77,
+      "name": "declared-disallowed-direct-child",
+      "path": "cases/declared-disallowed-direct-child.bgg",
+      "sha256": "789d4144479ae7cc76c635ca7f2be129cb845451ab4784c6c31ad26974f83cc0",
+      "bytes": 4834,
+      "source_outcome": "error",
+      "rust_outcome": "Malformed"
+    },
+    {
+      "id": 78,
+      "name": "element-under-text-only-gene",
+      "path": "cases/element-under-text-only-gene.bgg",
+      "sha256": "112e7e863d3662e46eadeb1fd702135c2993f1f563fbf826dc806e59da4dad44",
+      "bytes": 4839,
+      "source_outcome": "error",
+      "rust_outcome": "Malformed"
+    }
+  ]
+}
