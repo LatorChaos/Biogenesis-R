@@ -458,7 +458,6 @@ func _build_interface() -> void:
 	column.add_child(_settings_report)
 	_preference_failure = ConfirmationDialog.new()
 	_preference_failure.hide()
-	_preference_failure.force_native = DisplayServer.get_name() == "Wayland"
 	_preference_failure.name = "PreferenceSaveFailure"
 	_preference_failure.title = MainLabels.message("R_PREFERENCES_SAVE_FAILED", _main_language)
 	_preference_failure.dialog_hide_on_ok = false
@@ -531,17 +530,17 @@ func _build_interface() -> void:
 	_world_context.id_pressed.connect(_on_world_context_action)
 	add_child(_world_context)
 	_file_dialog = FileDialog.new()
-	_file_dialog.force_native = DisplayServer.get_name() == "Wayland"
 	FileFilterLabels.fit_filter_labels(_file_dialog)
 	_file_dialog.name = "GenotypeFileDialog"
 	_file_dialog.access = FileDialog.ACCESS_FILESYSTEM
+	var documents: String = OS.get_system_dir(OS.SYSTEM_DIR_DOCUMENTS)
+	_file_dialog.current_dir = documents if DirAccess.dir_exists_absolute(documents) else OS.get_user_data_dir()
 	_file_dialog.overwrite_warning_enabled = false
 	_file_dialog.file_selected.connect(_on_genotype_file_selected)
 	_file_dialog.window_input.connect(_capture_save_filename)
 	_file_dialog.canceled.connect(_finish_file_operation)
 	add_child(_file_dialog)
 	_overwrite_dialog = ConfirmationDialog.new()
-	_overwrite_dialog.force_native = DisplayServer.get_name() == "Wayland"
 	_overwrite_dialog.name = "GenotypeOverwriteDialog"
 	_overwrite_dialog.title = MainLabels.message("T_FILE_EXISTS", _main_language)
 	_overwrite_dialog.dialog_autowrap = true
@@ -551,7 +550,6 @@ func _build_interface() -> void:
 	_overwrite_dialog.canceled.connect(_finish_file_operation)
 	add_child(_overwrite_dialog)
 	_recovery_dialog = ConfirmationDialog.new()
-	_recovery_dialog.force_native = DisplayServer.get_name() == "Wayland"
 	_recovery_dialog.name = "ManualRecoveryChoice"
 	_recovery_dialog.dialog_autowrap = true
 	_recovery_dialog.get_ok_button().name = "ConfirmManualRecoveryChoice"
@@ -563,7 +561,6 @@ func _build_interface() -> void:
 	_recovery_dialog.custom_action.connect(_recovery_custom_action)
 	add_child(_recovery_dialog)
 	_decision_dialog = ConfirmationDialog.new()
-	_decision_dialog.force_native = DisplayServer.get_name() == "Wayland"
 	_decision_dialog.name = "WorldDecisionDialog"
 	_decision_dialog.dialog_autowrap = true
 	_decision_dialog.get_ok_button().name = "ConfirmWorldDecision"
@@ -858,6 +855,11 @@ func _on_world_action(command: int, pause_source: String = "menu") -> void:
 		return
 	if _shutting_down or not _file_operation.is_empty() or not _decision_operation.is_empty() or not _preference_close_kind.is_empty() or _settings_open() or is_instance_valid(_about_window) or is_instance_valid(_version_window):
 		return
+	if command == 22:
+		if not bool(get_node("/root/TouchKeyboard").call("use_app_keyboard")):
+			_show_error("", "R_APP_KEYBOARD_ERROR")
+		_refresh_main_actions()
+		return
 	match command:
 		17:
 			_request_create_world()
@@ -979,6 +981,15 @@ func _refresh_main_actions() -> void:
 			manager.apply_locale(_main_language)
 	_refresh_network_status()
 	_genetics_menu.text = MainLabels.message("R_GENETICS", _main_language)
+	var tools_popup: PopupMenu = _world_tools_menu.get_popup()
+	var keyboard_index: int = tools_popup.get_item_index(22)
+	var system_keyboard: bool = FileAccess.file_exists("user://desktop-keyboard") and not bool(get_node("/root/TouchKeyboard").call("is_enabled"))
+	if system_keyboard and keyboard_index == -1:
+		tools_popup.add_item("", 22)
+	elif not system_keyboard and keyboard_index != -1:
+		tools_popup.remove_item(keyboard_index)
+	if system_keyboard:
+		tools_popup.set_item_text(tools_popup.get_item_index(22), MainLabels.message("R_USE_APP_KEYBOARD", _main_language))
 	for menu: MenuButton in [_world_menu, _actions_menu, _world_tools_menu]:
 		var popup: PopupMenu = menu.get_popup()
 		for index: int in range(popup.get_item_count()):
@@ -2361,6 +2372,8 @@ func _begin_file_operation(operation: String, position: Vector2) -> void:
 		else:
 			_file_dialog.current_dir = _world_path.get_base_dir()
 			_file_dialog.current_file = "" if operation == "world_open" else _world_path.get_file()
+		get_viewport().gui_release_focus()
+		get_node("/root/TouchKeyboard").call("hide_keyboard")
 		_file_dialog.popup_centered_clamped(Vector2i(800, 560))
 		return
 	_file_dialog.file_mode = FileDialog.FILE_MODE_OPEN_FILE if operation == "import" else FileDialog.FILE_MODE_SAVE_FILE

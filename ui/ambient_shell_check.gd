@@ -135,6 +135,25 @@ func _run() -> void:
 	Input.parse_input_event(touch)
 	await process_frame
 	_check(hud.visible and canvas.clicks == 1, "Hidden-HUD touch wakes controls without selecting the world")
+	await _click(canvas.get_global_rect().get_center())
+	_check(canvas.clicks == 2 and not bool(_shell.get("_wake_pointer")), "A complete emulated touch leaves later pointer input usable")
+	_shell.reveal()
+	for unused: int in range(22):
+		_idle_step(0.25)
+	touch = InputEventScreenTouch.new()
+	touch.pressed = true
+	_shell._input(touch)
+	_check(bool(_shell.get("_wake_pointer")), "A hidden-HUD touch begins a wake gesture")
+	_shell.notification(Node.NOTIFICATION_WM_WINDOW_FOCUS_OUT)
+	await _click(pause.get_global_rect().get_center())
+	_check(_pause_requests == 2 and not bool(_shell.get("_wake_pointer")), "Focus loss clears an interrupted wake gesture before the next button click")
+	_shell.reveal()
+	for unused: int in range(22):
+		_idle_step(0.25)
+	_shell._input(touch)
+	await _click(pause.get_global_rect().get_center())
+	await _click(pause.get_global_rect().get_center())
+	_check(_pause_requests == 3 and not bool(_shell.get("_wake_pointer")), "Without focus loss, a complete next click clears an interrupted wake gesture")
 	_shell.set_cinema_enabled(true)
 	_check((_shell.find_child("AmbientCinema", true, false) as Button).button_pressed and _cinema_requests == 0,
 		"Restoring the cinema preference changes its button without emitting an action")

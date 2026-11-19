@@ -5,6 +5,8 @@ extends RefCounted
 
 const DATA: Dictionary = {
 	"ca": {
+		"R_USE_APP_KEYBOARD": "Utilitza el teclat de l'aplicació",
+		"R_APP_KEYBOARD_ERROR": "No es pot activar el teclat de l'aplicació. Comproveu els permisos del directori de dades de l'usuari.",
 		"R_MANUAL_RECOVERY_TITLE": "Desament manual i recuperacio",
 		"R_MANUAL_RECOVERY_BODY": "El darrer desament manual pot ser mes recent. Obriu el fitxer manual o recupereu explicitament un punt anterior. La recuperacio resta en pausa.",
 		"R_RECOVER_OLDER": "Recupera un punt anterior",
@@ -389,6 +391,8 @@ const DATA: Dictionary = {
 		"T_CH4": "CH4:"
 	},
 	"de": {
+		"R_USE_APP_KEYBOARD": "App-Tastatur verwenden",
+		"R_APP_KEYBOARD_ERROR": "Die App-Tastatur kann nicht aktiviert werden. Prüfen Sie die Berechtigungen des Benutzerdatenverzeichnisses.",
 		"R_MANUAL_RECOVERY_TITLE": "Manuelles Speichern und Wiederherstellung",
 		"R_MANUAL_RECOVERY_BODY": "Die manuelle Datei kann neuer sein. Datei oeffnen oder ausdruecklich einen aelteren Sicherungspunkt laden. Die Wiederherstellung bleibt pausiert.",
 		"R_RECOVER_OLDER": "Aelteren Sicherungspunkt laden",
@@ -773,6 +777,8 @@ const DATA: Dictionary = {
 		"T_CH4": "CH4:"
 	},
 	"en": {
+		"R_USE_APP_KEYBOARD": "Use app keyboard",
+		"R_APP_KEYBOARD_ERROR": "Cannot enable the app keyboard. Check the user data directory permissions.",
 		"R_MANUAL_RECOVERY_TITLE": "Manual save and recovery",
 		"R_MANUAL_RECOVERY_BODY": "The last manual Save may be newer than managed recovery. Open the manual file, or explicitly recover an older checkpoint. Recovery stays paused.",
 		"R_RECOVER_OLDER": "Recover older checkpoint",
@@ -1157,6 +1163,8 @@ const DATA: Dictionary = {
 		"T_CH4": "CH4: "
 	},
 	"es": {
+		"R_USE_APP_KEYBOARD": "Usar el teclado de la aplicación",
+		"R_APP_KEYBOARD_ERROR": "No se puede activar el teclado de la aplicación. Compruebe los permisos del directorio de datos del usuario.",
 		"R_MANUAL_RECOVERY_TITLE": "Guardado manual y recuperacion",
 		"R_MANUAL_RECOVERY_BODY": "El ultimo guardado manual puede ser mas reciente. Abra ese archivo o recupere explicitamente un punto anterior. La recuperacion queda en pausa.",
 		"R_RECOVER_OLDER": "Recuperar punto anterior",
@@ -1541,6 +1549,8 @@ const DATA: Dictionary = {
 		"T_CH4": "CH4:"
 	},
 	"pt": {
+		"R_USE_APP_KEYBOARD": "Usar o teclado da aplicação",
+		"R_APP_KEYBOARD_ERROR": "Não é possível ativar o teclado da aplicação. Verifique as permissões do diretório de dados do utilizador.",
 		"R_MANUAL_RECOVERY_TITLE": "Gravacao manual e recuperacao",
 		"R_MANUAL_RECOVERY_BODY": "O ficheiro manual pode ser mais recente. Abra esse ficheiro ou escolha explicitamente um ponto anterior. A recuperacao fica em pausa.",
 		"R_RECOVER_OLDER": "Recuperar ponto anterior",
@@ -1925,6 +1935,8 @@ const DATA: Dictionary = {
 		"T_CH4": "CH4:"
 	},
 	"ru": {
+		"R_USE_APP_KEYBOARD": "Использовать клавиатуру приложения",
+		"R_APP_KEYBOARD_ERROR": "Не удалось включить клавиатуру приложения. Проверьте права доступа к папке данных пользователя.",
 		"R_MANUAL_RECOVERY_TITLE": "Ручное сохранение и восстановление",
 		"R_MANUAL_RECOVERY_BODY": "Ручное сохранение может быть новее. Откройте ручной файл или явно выберите прежнюю контрольную точку. Восстановление останется на паузе.",
 		"R_RECOVER_OLDER": "Восстановить прежнюю точку",

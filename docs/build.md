@@ -31,6 +31,8 @@ XDG_DATA_HOME="$PWD/.workflow-local/runtime/data" godot --path .
 
 Leave Cinema and Continuous display enabled. Touch the world to bring back the controls. Use **Tools > Parameters > Cinema** to adjust the camera pace and when records appear.
 
+The app keyboard is enabled by default. To try a desktop keyboard instead, create an empty `desktop-keyboard` file in the Godot user-data folder before launching. With the profile below, that file is `.workflow-local/runtime/data/godot/app_userdata/Biogenesis-R/desktop-keyboard`. If the desktop keyboard cannot type, cancel the dialog and choose **Tools > World > Use app keyboard** to restore the app keyboard.
+
 Enable automatic backup in **Tools > Parameters** and choose **Managed recovery**. Create and save a world. Check the latest backup time in **Tools** before relying on automatic resume.
 
 Quit the running game before starting another instance. To resume later, point Godot to the same data directory.

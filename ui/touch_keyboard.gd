@@ -4,7 +4,7 @@ const LETTER_ROWS: Array[String] = ["qwertyuiop", "asdfghjkl", "zxcvbnm"]
 const NUMBER_ROWS: Array[String] = ["789", "456", "123", "-0.+e"]
 const SYMBOL_ROWS: Array[String] = ["!@#$%^&*()_+=", "[]{}<>:;?/,.", "\\|~`'\""]
 
-var _enabled: bool = OS.get_name() == "Linux"
+var _enabled: bool = OS.get_name() == "Linux" and not FileAccess.file_exists("user://desktop-keyboard")
 var _editor: WeakRef
 var _layer: CanvasLayer
 var _panel: PanelContainer
@@ -32,6 +32,14 @@ func set_enabled(value: bool) -> void:
 
 func is_enabled() -> bool:
 	return _enabled
+
+
+func use_app_keyboard() -> bool:
+	if FileAccess.file_exists("user://desktop-keyboard"):
+		if DirAccess.remove_absolute(ProjectSettings.globalize_path("user://desktop-keyboard")) != OK:
+			return false
+	set_enabled(true)
+	return true
 
 
 func hide_keyboard() -> void:

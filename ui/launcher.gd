@@ -131,6 +131,8 @@ func _build_interface() -> void:
 	FileFilterLabels.fit_filter_labels(_import_dialog)
 	_import_dialog.name = "LegacyPreferencesImportDialog"
 	_import_dialog.access = FileDialog.ACCESS_FILESYSTEM
+	var documents: String = OS.get_system_dir(OS.SYSTEM_DIR_DOCUMENTS)
+	_import_dialog.current_dir = documents if DirAccess.dir_exists_absolute(documents) else OS.get_user_data_dir()
 	_import_dialog.file_mode = FileDialog.FILE_MODE_OPEN_FILE
 	_import_dialog.file_selected.connect(_import_preferences)
 	_import_dialog.canceled.connect(_cancel_import)

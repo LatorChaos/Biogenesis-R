@@ -72,11 +72,16 @@ func _letter(window: Window, value: String) -> void:
 
 func _native_key(window: Window, character: String) -> void:
 	var button: Button = _panel(window).find_child("TouchCharacter" + str(character.unicode_at(0)), true, false) as Button
+	await _touch(button)
+
+
+func _touch(control: Control) -> void:
+	var window: Window = control.get_window()
 	for down: bool in [true, false]:
 		var event: InputEventScreenTouch = InputEventScreenTouch.new()
 		event.window_id = window.get_window_id()
 		event.index = 0
-		event.position = button.get_global_rect().get_center()
+		event.position = control.get_global_rect().get_center()
 		event.pressed = down
 		Input.parse_input_event(event)
 		await process_frame
@@ -101,7 +106,8 @@ func _window(size: Vector2i) -> Window:
 func _run() -> void:
 	_keyboard = root.get_node("TouchKeyboard")
 	_check(not DisplayServer.has_feature(DisplayServer.FEATURE_VIRTUAL_KEYBOARD), "Exercise the Linux fallback without native OSK support")
-	_check(bool(_keyboard.call("is_enabled")), "Linux fallback defaults enabled without touchscreen detection")
+	var desktop_keyboard: bool = FileAccess.file_exists("user://desktop-keyboard")
+	_check(bool(_keyboard.call("is_enabled")) == not desktop_keyboard, "Desktop keyboard profile policy controls the fallback")
 	var simulation: BgrSimulation = BgrSimulation.new()
 	_check(bool(simulation.preferences_initialize()["ok"]), "Initialize private production profile")
 	var application: Main = Main.new()
@@ -126,7 +132,40 @@ func _run() -> void:
 	var full_rect: Rect2 = canvas.get_global_rect()
 	var seed: LineEdit = application.find_child("SeedInput", true, false) as LineEdit
 	await _click(seed)
+	if desktop_keyboard:
+		_check(_panel(main_window) == null or not _panel(main_window).visible, "Desktop keyboard policy suppresses the fallback for a focused editor")
+		_check(bool(_keyboard.call("use_app_keyboard")), "Restore the app keyboard")
+		_check(not FileAccess.file_exists("user://desktop-keyboard"), "Restoring the app keyboard persists for the next launch")
+		await _click(seed)
 	_check(_panel(main_window) != null and _panel(main_window).visible and main_window.gui_get_focus_owner() == seed, "Real production field focus reveals the keyboard without focus theft")
+	application.call("_begin_file_operation", "world_open", Vector2.ZERO)
+	_check(not _panel(main_window).visible, "Opening a world chooser immediately hides the game keyboard")
+	await _frames()
+	var world_picker: FileDialog = application.get("_file_dialog") as FileDialog
+	await _touch(world_picker.get_cancel_button())
+	_check(not world_picker.visible and str(application.get("_file_operation")).is_empty(), "Touch Cancel closes the actual world chooser")
+	await _touch(seed)
+	_check(_panel(main_window).visible, "After closing the chooser, a game editor can reopen its keyboard")
+	await _touch(application.find_child("SettingsButton", true, false) as Button)
+	var reopened_settings: Window = application.get("_settings_window") as Window
+	_check(is_instance_valid(reopened_settings), "Touch activates a game button after chooser cancellation")
+	if not is_instance_valid(reopened_settings):
+		print("BGR_TOUCH_KEYBOARD " + JSON.stringify({"status": "FAIL", "failures": _failures}))
+		quit(1)
+		return
+	await _touch(reopened_settings.find_child("SettingsCancel", true, false) as Button)
+	await _click(seed)
+	application.call("_begin_file_operation", "world_save_as", Vector2.ZERO)
+	_check(not _panel(main_window).visible or _panel(main_window).get_window() != main_window, "Reopening a world chooser hides the main editor keyboard")
+	await _frames()
+	var save_path: String = OS.get_user_data_dir().path_join("keyboard-save-" + str(Time.get_ticks_usec()) + ".bgw")
+	world_picker.current_dir = save_path.get_base_dir()
+	world_picker.current_file = save_path.get_file()
+	await _touch(world_picker.get_ok_button())
+	_check(not world_picker.visible and str(application.get("_file_operation")).is_empty() and FileAccess.file_exists(save_path), "Touch Save completes the actual world chooser")
+	await _touch(seed)
+	_check(_panel(main_window).visible, "Game keyboard reopens after chooser completion")
+	before = simulation.snapshot()
 	await _key(main_window, "TouchSelectAll")
 	await _key(main_window, "TouchMode")
 	await _letter(main_window, "4")
@@ -174,8 +213,11 @@ func _run() -> void:
 	resize_edit.size = Vector2(600, 48)
 	resize_edit.text = "resize"
 	resize_window.add_child(resize_edit)
-	resize_window.popup_centered()
+	resize_window.popup_centered(Vector2i(760, 580))
 	await _frames()
+	resize_window.size = Vector2i(760, 580)
+	await _frames()
+	_check(resize_window.size == Vector2i(760, 580), "Resize scenario starts at its requested native size")
 	await _click(resize_edit)
 	await _key(resize_window, "TouchMode")
 	await _key(resize_window, "TouchShift")
@@ -245,8 +287,9 @@ func _run() -> void:
 	await _frames()
 	await _click(dialog_edit)
 	_check(_panel(dialog).get_window() == dialog, "Keyboard shares the modal editor's own native Window")
-	await _key(dialog, "TouchCancel")
+	await _touch(_panel(dialog).find_child("TouchCancel", true, false) as Button)
 	_check(_cancelled == 1 and not dialog.visible, "Cancel follows the original dialog Escape path")
+	_check(not Input.is_key_pressed(KEY_ESCAPE) and not Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT), "Dialog cancellation releases synthetic keyboard and pointer state")
 	dialog.queue_free()
 	await _frames()
 	var picker: FileDialog = FileDialog.new()
@@ -258,17 +301,24 @@ func _run() -> void:
 	picker.file_selected.connect(func(_path: String) -> void: _file_selected += 1)
 	picker.popup_centered(Vector2i(800, 560))
 	await _frames()
-	await _click(picker.get_line_edit())
+	await _touch(picker.get_line_edit())
+	_check(_panel(picker) != null and _panel(picker).visible, "Touch focuses the file editor after modal cancellation")
 	await _letter(picker, "a")
 	await _letter(picker, "b")
-	await _key(picker, "TouchEnter")
+	await _touch(_panel(picker).find_child("TouchEnter", true, false) as Button)
 	_check(_file_selected == 1 and not picker.visible, "Filename Enter reaches ordinary FileDialog submission without creating a file")
+	_check(not Input.is_key_pressed(KEY_ENTER) and not Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT), "File submission releases synthetic keyboard and pointer state")
 	picker.queue_free()
 	await _frames()
 	var original_delay: int = int(simulation.settings_snapshot()["values"]["DELAY"])
-	await _click(application.find_child("SettingsButton", true, false) as Button)
+	await _touch(application.find_child("SettingsButton", true, false) as Button)
 	var parameters: Window = application.get("_settings_window") as Window
 	await _frames()
+	_check(is_instance_valid(parameters), "Touch activates production Settings after a FileDialog closes")
+	if not is_instance_valid(parameters):
+		print("BGR_TOUCH_KEYBOARD " + JSON.stringify({"status": "FAIL", "failures": _failures}))
+		quit(1)
+		return
 	var delay: LineEdit = parameters.find_child("Setting_DELAY", true, false) as LineEdit
 	await _click(delay)
 	_check(_panel(parameters).visible and not _panel(parameters).get_global_rect().intersects(delay.get_global_rect()), "Production parameter editor remains visible with its modal keyboard")

@@ -1,7 +1,7 @@
 extends SceneTree
 
 const LauncherScene = preload("res://scenes/launcher.tscn")
-const COMPLETE_CHECKS: Dictionary = {"bridge": 85, "ui": 49}
+const COMPLETE_CHECKS: Dictionary = {"bridge": 85, "ui": 72}
 var _checks: int = 0
 var _failures: Array[String] = []
 var _observations: Array[Dictionary] = []
@@ -168,12 +168,42 @@ func _ui() -> void:
     root.add_child(launcher)
     await process_frame
     await process_frame
+    var documents: String = OS.get_system_dir(OS.SYSTEM_DIR_DOCUMENTS)
+    var initial_directory: String = documents if DirAccess.dir_exists_absolute(documents) else OS.get_user_data_dir()
+    _check((launcher.get("_import_dialog") as FileDialog).current_dir == initial_directory, "Fresh Launcher import starts in the user directory")
     (launcher.get("_start_stop") as Button).pressed.emit()
     await process_frame
     await process_frame
     var main: Control = launcher.get("_main") as Control
     if not _check(is_instance_valid(main), "Launch the actual Main window"):
         return
+    var keyboard: Node = root.get_node("TouchKeyboard")
+    var marker := FileAccess.open("user://desktop-keyboard", FileAccess.WRITE)
+    _check(marker != null, "Create an isolated system keyboard preference")
+    marker.close()
+    keyboard.call("set_enabled", false)
+    main.call("_refresh_main_actions")
+    var tools: PopupMenu = (main.get("_world_tools_menu") as MenuButton).get_popup()
+    _check(tools.get_item_index(22) >= 0, "System keyboard mode exposes app keyboard recovery")
+    var captions: Dictionary = {"ca": "Utilitza el teclat de l'aplicació", "de": "App-Tastatur verwenden", "en": "Use app keyboard", "es": "Usar el teclado de la aplicación", "pt": "Usar o teclado da aplicação", "ru": "Использовать клавиатуру приложения"}
+    var errors: Dictionary = {"ca": "No es pot activar el teclat", "de": "Die App-Tastatur kann nicht aktiviert werden", "en": "Cannot enable the app keyboard", "es": "No se puede activar el teclado", "pt": "Não é possível ativar o teclado", "ru": "Не удалось включить клавиатуру"}
+    for language: String in captions:
+        main.set("_main_language", language)
+        main.call("_refresh_main_actions")
+        _check(tools.get_item_text(tools.get_item_index(22)) == captions[language], "Keyboard recovery caption follows " + language)
+        main.call("_show_error", "", "R_APP_KEYBOARD_ERROR")
+        _check((main.get("_error_label") as Label).text.contains(str(errors[language])), "Keyboard recovery error follows " + language)
+    main.set("_main_language", "en")
+    (main.get("_error_label") as Label).hide()
+    main.call("_on_world_action", 22)
+    _check(bool(keyboard.call("is_enabled")) and not FileAccess.file_exists("user://desktop-keyboard") and tools.get_item_index(22) == -1, "App keyboard recovery clears the preference and hides its action")
+    main.get_window().gui_embed_subwindows = true
+    var picker: FileDialog = main.get("_file_dialog") as FileDialog
+    _check(picker.current_dir == initial_directory, "Fresh Main chooser starts in the user directory")
+    picker.current_dir = _directory
+    main.call("_on_world_action", 11)
+    _check(picker.current_dir == _directory, "Opening a World retains the chosen directory")
+    picker.canceled.emit()
     var simulation: BgrSimulation = main.get("_simulation") as BgrSimulation
     var initialized: Dictionary = simulation.snapshot()
     if not _check(int(initialized["width"]) == 1200 and int(initialized["height"]) == 800 and int(initialized["initial_attempts"]) == 32 and int(initialized["tick"]) == 0 and bool(initialized["paused"]), "Launcher consumes the persisted bounded fixture genesis before any steps"):
@@ -197,6 +227,7 @@ func _ui() -> void:
         main.call("shutdown")
         launcher.queue_free()
         return
+    _check((laboratory.get("_import_dialog") as FileDialog).current_dir == initial_directory, "Fresh Laboratory import starts in the user directory")
     var length_input: LineEdit = laboratory.find_child("GeneLength", true, false) as LineEdit
     var old_length: float = float((laboratory.get("_state") as Dictionary)["genes"][0]["length"])
     length_input.text = "2" if old_length != 2.0 else "3"
@@ -213,9 +244,21 @@ func _ui() -> void:
     var saved_bytes: PackedByteArray = FileAccess.get_file_as_bytes(path)
     main.call("_on_world_action", 13)
     var save_as: FileDialog = main.get("_file_dialog") as FileDialog
+    _check(save_as.is_embedded(), "Fallback Save As remains inside the simulation window")
+    main.get_window().notification(Window.NOTIFICATION_WM_WINDOW_FOCUS_OUT)
+    main.get_window().focus_exited.emit()
+    main.get_window().notification(Window.NOTIFICATION_WM_WINDOW_FOCUS_IN)
+    main.get_window().focus_entered.emit()
+    _check(save_as.visible and save_as.is_embedded() and str(main.get("_file_operation")) == "world_save_as", "Focus loss and return retain the embedded Save As operation")
     _check(save_as.current_file == path.get_file() and save_as.current_dir == path.get_base_dir(), "Save As retains the current directory and basename")
     save_as.canceled.emit()
     _check(str(main.get("_file_operation")).is_empty() and FileAccess.get_file_as_bytes(path) == saved_bytes, "Cancel Save As releases the operation and preserves file bytes")
+    main.call("_on_world_action", 13)
+    save_as.file_selected.emit(path)
+    var overwrite: ConfirmationDialog = main.get("_overwrite_dialog") as ConfirmationDialog
+    _check(overwrite.visible and overwrite.is_embedded(), "Overwrite confirmation remains inside the simulation window")
+    overwrite.canceled.emit()
+    _check(str(main.get("_file_operation")).is_empty() and FileAccess.get_file_as_bytes(path) == saved_bytes, "Cancel overwrite releases the operation and preserves file bytes")
     var buttons: Dictionary = panel.get("_buttons")
     (buttons["feed"] as Button).pressed.emit()
     var before_bad: Dictionary = simulation.snapshot()
