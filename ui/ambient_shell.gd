@@ -32,7 +32,6 @@ var _cinema: Button
 var _drawer_title: Label
 var _inspector_title: Label
 var _drawer_close: Button
-var _inspector_close: Button
 var _language: String = "en"
 var _language_applied: bool = false
 var _paused: bool = true
@@ -41,7 +40,9 @@ var _idle_clock_usec: int = -1
 var _opacity: float = 1.0
 var _wake_pointer: bool = false
 var _wake_on_next_press: bool = false
-var _inspector_dismissed: bool = false
+var _wake_after_pointer: bool = false
+var _wake_touch_indices: Dictionary[int, bool] = {}
+var _wake_mouse_pointer: bool = false
 var _cursor_hidden_by_shell: bool = false
 
 
@@ -69,6 +70,7 @@ func configure(canvas: Control, tools: Control, inspector: Control) -> void:
 	tools.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	inspector.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	inspector.visibility_changed.connect(_update_inspector)
+	inspector.minimum_size_changed.connect(_layout)
 	_update_inspector()
 	_layout()
 
@@ -108,9 +110,8 @@ func set_language(language: String) -> void:
 	_cinema.text = str(words[4])
 	_drawer_title.text = str(words[0])
 	_inspector_title.text = str(words[6])
-	for button: Button in [_drawer_close, _inspector_close]:
-		button.text = str(words[5])
-	for button: Button in [_tools_button, _fit, _cinema, _drawer_close, _inspector_close]:
+	_drawer_close.text = str(words[5])
+	for button: Button in [_tools_button, _fit, _cinema, _drawer_close]:
 		button.accessibility_name = button.text
 	_refresh_pause_caption()
 	_language_applied = true
@@ -120,7 +121,6 @@ func set_language(language: String) -> void:
 func reveal() -> void:
 	if _hud == null:
 		return
-	_inspector_dismissed = false
 	_wake_on_next_press = false
 	_show_hud()
 	_update_inspector()
@@ -128,6 +128,12 @@ func reveal() -> void:
 
 func is_idle() -> bool:
 	return _hud != null and not _hud.visible and not hold_open
+
+
+func get_inspector_rect() -> Rect2:
+	if _inspector_panel != null and _inspector_panel.is_visible_in_tree():
+		return _inspector_panel.get_global_rect()
+	return Rect2()
 
 
 func show_tools() -> void:
@@ -216,10 +222,10 @@ func _build() -> void:
 	column.add_child(_tools_scroll)
 	_drawer.hide()
 	_inspector_panel = _panel("AmbientInspector")
+	_inspector_panel.reparent(self, false)
 	column = _content_panel(_inspector_panel, "AmbientInspectorTitle")
 	header = column.get_child(0) as HBoxContainer
 	_inspector_title = header.get_child(0) as Label
-	_inspector_close = _button(header, "AmbientCloseInspector", _dismiss_inspector)
 	_inspector_scroll = ScrollContainer.new()
 	_inspector_scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	column.add_child(_inspector_scroll)
@@ -248,20 +254,19 @@ func _layout() -> void:
 	_dock.size = _dock.get_combined_minimum_size()
 	_dock.position = Vector2(maxf(8.0, (size.x - _dock.size.x) * 0.5), maxf(8.0, size.y - _dock.size.y - 16.0))
 	_drawer.position = Vector2(16.0, 16.0)
-	_drawer.size = Vector2(maxf(48.0, minf(760.0, size.x - 32.0)), maxf(120.0, size.y - _dock.size.y - 48.0))
-	_inspector_panel.size = Vector2(maxf(48.0, minf(600.0, size.x - 32.0)), maxf(120.0, minf(280.0, size.y - _dock.size.y - 48.0)))
+	var shared_width: float = (size.x - 48.0) * 0.5 if _drawer.visible and _inspector_panel.visible else size.x - 32.0
+	_drawer.size = Vector2(maxf(48.0, minf(760.0, shared_width)), maxf(120.0, size.y - _dock.size.y - 48.0))
+	var inspector_height: float = 280.0
+	if _inspector != null:
+		inspector_height = _inspector_panel.get_combined_minimum_size().y - _inspector_scroll.get_combined_minimum_size().y + _inspector.get_combined_minimum_size().y
+	_inspector_panel.size = Vector2(maxf(48.0, minf(600.0, shared_width)), maxf(120.0, minf(inspector_height, minf(280.0, size.y - _dock.size.y - 48.0))))
 	_inspector_panel.position = Vector2(maxf(16.0, size.x - _inspector_panel.size.x - 16.0), 16.0)
-
-
-func _dismiss_inspector() -> void:
-	_inspector_dismissed = true
-	_update_inspector()
-	_show_hud()
 
 
 func _update_inspector() -> void:
 	if _inspector != null:
-		_inspector_panel.visible = _inspector.visible and not _inspector_dismissed and not _drawer.visible
+		_inspector_panel.visible = _inspector.visible
+		_layout()
 
 
 func _show_hud() -> void:
@@ -292,7 +297,7 @@ func _advance_idle(delta: float) -> void:
 		return
 	var focused: Control = get_viewport().gui_get_focus_owner()
 	var editing: bool = focused is LineEdit or focused is TextEdit
-	if hold_open or _drawer.visible or _wake_pointer or (editing and _hud.is_ancestor_of(focused)):
+	if hold_open or _drawer.visible or _wake_pointer or (editing and (_hud.is_ancestor_of(focused) or _inspector_panel.is_ancestor_of(focused))):
 		_show_hud()
 		return
 	var elapsed: float = clampf(delta, 0.0, 0.25)
@@ -326,13 +331,35 @@ func _input(event: InputEvent) -> void:
 			_wake_pointer = pressed
 			get_viewport().set_input_as_handled()
 			return
+		if _wake_after_pointer:
+			if event is InputEventScreenTouch and not _wake_mouse_pointer:
+				var index: int = (event as InputEventScreenTouch).index
+				if pressed:
+					_wake_touch_indices[index] = true
+				else:
+					_wake_touch_indices.erase(index)
+			elif event is InputEventMouseButton and _wake_mouse_pointer and not pressed:
+				_wake_mouse_pointer = false
+			if not _wake_mouse_pointer and _wake_touch_indices.is_empty():
+				_wake_after_pointer = false
+				reveal.call_deferred()
+			return
 		if pressed:
 			var was_hidden: bool = not _hud.visible or _wake_on_next_press
+			if was_hidden and not hold_open and _inspector_panel.is_visible_in_tree():
+				_wake_after_pointer = true
+				if event is InputEventScreenTouch:
+					_wake_touch_indices[(event as InputEventScreenTouch).index] = true
+				else:
+					_wake_mouse_pointer = true
+				return
 			reveal()
 			if was_hidden and not hold_open:
 				_wake_pointer = true
 				get_viewport().set_input_as_handled()
 	elif event is InputEventMouseMotion or event is InputEventScreenDrag:
+		if _wake_after_pointer:
+			return
 		if event is InputEventMouseMotion and not _hud.visible:
 			_wake_on_next_press = true
 		_show_hud()
@@ -357,6 +384,9 @@ func _notification(what: int) -> void:
 		_restore_cursor()
 		_wake_pointer = false
 		_wake_on_next_press = false
+		_wake_after_pointer = false
+		_wake_touch_indices.clear()
+		_wake_mouse_pointer = false
 	elif what == NOTIFICATION_WM_WINDOW_FOCUS_IN and _hud != null:
 		_show_hud()
 

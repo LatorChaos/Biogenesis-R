@@ -20,6 +20,7 @@ var _checks: int = 0
 var _failures: Array[String] = []
 var _pause_requests: int = 0
 var _cinema_requests: int = 0
+var _inspector_requests: int = 0
 var _native_cursor_hidden: bool = false
 var _shell: ClockShell
 
@@ -54,10 +55,15 @@ func _run() -> void:
 	var inspector: VBoxContainer = VBoxContainer.new()
 	inspector.name = "OrganismControls"
 	tools.add_child(inspector)
+	var inspector_action: Button = Button.new()
+	inspector_action.text = "Inspect"
+	inspector_action.pressed.connect(func() -> void: _inspector_requests += 1)
+	inspector.add_child(inspector_action)
 	inspector.hide()
 	_shell = ClockShell.new()
 	host.add_child(_shell)
 	_shell.configure(canvas, tools, inspector)
+	_check(_shell.get_inspector_rect() == Rect2(), "Hidden inspector has no avoidance rectangle")
 	_shell.set_process(false)
 	_shell.pause_requested.connect(func() -> void: _pause_requests += 1)
 	_shell.cinema_toggled.connect(func(_enabled: bool) -> void: _cinema_requests += 1)
@@ -78,11 +84,32 @@ func _run() -> void:
 	await process_frame
 	var inspector_panel: Control = _shell.find_child("AmbientInspector", true, false) as Control
 	_check(inspector_panel.visible, "Show the selected organism in a floating inspector")
-	(_shell.find_child("AmbientCloseInspector", true, false) as Button).pressed.emit()
-	_check(not inspector_panel.visible and canvas.get_global_rect().is_equal_approx(before), "Dismiss the inspector without resizing the canvas")
-	_shell.reveal()
-	_check(inspector_panel.visible, "Reveal the selected inspector again")
+	_check(_shell.get_inspector_rect().is_equal_approx(inspector_panel.get_global_rect()), "Expose the visible inspector bounds")
+	var inspector_before_drawer: Rect2 = _shell.get_inspector_rect()
+	_shell.show_tools()
+	await process_frame
+	var drawer: Control = _shell.find_child("AmbientToolsDrawer", true, false) as Control
+	_check(inspector_panel.is_visible_in_tree() and not inspector_panel.get_global_rect().intersects(drawer.get_global_rect()), "Keep the selected inspector visible beside the tools drawer")
+	_check(_shell.get_inspector_rect().is_equal_approx(inspector_panel.get_global_rect()) and not _shell.get_inspector_rect().is_equal_approx(inspector_before_drawer), "Update the inspector bounds for the tools drawer")
+	_shell.toggle_tools()
+	for unused: int in range(22):
+		_idle_step(0.25)
+	_check(inspector_panel.is_visible_in_tree() and inspector_panel.modulate.a == 1.0, "Keep the selected inspector visible after the HUD becomes idle")
+	_check(canvas.get_global_rect().is_equal_approx(before), "The inspector does not resize the canvas")
+	await _click(inspector_action.get_global_rect().get_center(), false)
+	_check(_inspector_requests == 1, "The visible inspector accepts the first click while the HUD is idle")
+	for unused: int in range(22):
+		_idle_step(0.25)
+	var selected_touch: InputEventScreenTouch = InputEventScreenTouch.new()
+	selected_touch.index = 7
+	selected_touch.pressed = true
+	_shell._input(selected_touch)
+	_shell.notification(Node.NOTIFICATION_WM_WINDOW_FOCUS_OUT)
+	_check(not bool(_shell.get("_wake_after_pointer")) and (_shell.get("_wake_touch_indices") as Dictionary).is_empty(), "Focus loss clears selected touch wake tracking")
 	inspector.hide()
+	_check(not inspector_panel.visible, "Hide the inspector when selection clears")
+	_check(_shell.get_inspector_rect() == Rect2(), "Clear the avoidance rectangle when selection clears")
+	_shell.reveal()
 	var pause: Button = _shell.find_child("AmbientPause", true, false) as Button
 	for language: String in ["en", "es", "ca", "de", "pt", "ru"]:
 		_shell.set_language(language)

@@ -40,6 +40,9 @@ func _ready() -> void:
 	_preview = GenomePreview.new()
 	_preview.name = "SelectedGenomePreview"
 	_preview.custom_minimum_size = Vector2(100, 100)
+	_preview.size_flags_vertical = Control.SIZE_SHRINK_BEGIN
+	_preview.fit_visible_content = true
+	_preview.fill_available_area = true
 	_preview.copy_enabled = true
 	_preview.copy_requested.connect(func() -> void: preview_copy_requested.emit())
 	row.add_child(_preview)

@@ -82,11 +82,11 @@ func _run() -> void:
 	application.call("_update_cinema", 0.25)
 	_check(canvas.call("view_state") == view, "Manual interaction suspends the automatic camera")
 	application.set("_manual_camera_until", 0.0)
-	application.call("_update_cinema", 60.1)
+	application.call("_update_cinema", 30.1)
 	_check((application.find_child("LivingCard", true, false) as Control).visible, "Main shows a scheduled card through its real data path")
 	cards.call("dismiss")
 	cards.set("_next_mode", 3)
-	application.call("_update_cinema", 60.1)
+	application.call("_update_cinema", 30.1)
 	_check(bool(cards.get("_panel").visible) and int(cards.get("_mode")) == 3, "Main schedules an all-time records slide")
 	_check(cards.get("_all_time_records").size() == 3 and not bool(cards.call("needs_all_time_records")), "Main supplies all three native historical record slots")
 	shell.call("show_tools")
@@ -97,7 +97,7 @@ func _run() -> void:
 	for index: int in range(24):
 		shell.call("_advance_idle", 0.25)
 	cards.set("slide_interval_seconds", 10.0)
-	application.now_usec += 11000000
+	application.now_usec += 6000000
 	application.call("_process", 0.01)
 	_check((application.find_child("LivingCard", true, false) as Control).visible, "Use monotonic wall time when engine frame delta differs")
 	(application.find_child("AmbientPause", true, false) as Button).pressed.emit()

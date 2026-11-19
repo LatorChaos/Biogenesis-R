@@ -61,7 +61,7 @@ func _context(language: String = "en") -> Dictionary:
 
 
 func _show(cards: Cards) -> void:
-	cards.advance(cards.slide_interval_seconds, true)
+	cards.advance(cards.slide_interval_seconds - maxf(cards.slide_dwell_seconds, cards.slide_interval_seconds / 2.0), true)
 
 
 func _run() -> void:
@@ -72,15 +72,15 @@ func _run() -> void:
 	await process_frame
 	_check(cards.set_scene(_packet(), _context()), "Accept the exact living-record packet")
 	_check(not cards._panel.visible, "Begin with an unobstructed world")
-	cards.advance(59.0, true)
-	_check(not cards._panel.visible, "Keep a long bare-world interval")
+	cards.advance(29.0, true)
+	_check(not cards._panel.visible, "Keep a bare-world interval before the first card")
 	cards.advance(1.0, true)
 	await process_frame
-	_check(cards._panel.visible and cards._number.text == "2" and cards._focus_token == 11, "Show the actual offspring champion after sixty seconds")
+	_check(cards._panel.visible and cards._number.text == "2" and cards._focus_token == 11, "Show the actual offspring champion after thirty seconds")
 	_check(cards._panel.size.x <= 360.0 and cards._panel.size.y <= 300.0, "Keep the card within the display footprint")
 	_check(cards._panel.size.x < 300.0 and cards._panel.size.y < 200.0, "Fit a portrait-free record around its title and statistics")
 	_check(cards.mouse_filter == Control.MOUSE_FILTER_IGNORE and cards._panel.mouse_filter == Control.MOUSE_FILTER_IGNORE and cards._body.mouse_filter == Control.MOUSE_FILTER_IGNORE, "Keep world input transparent")
-	cards.advance(8.0, true)
+	cards.advance(30.0, true)
 	_check(not cards._panel.visible, "Dismiss after the declared dwell")
 	_show(cards)
 	_check(cards._mode == 1 and cards._leader_labels.size() == 5 and cards._leaders.visible, "List all five source-defined living categories")
@@ -100,10 +100,51 @@ func _run() -> void:
 	cards.advance(30.0, true)
 	cards.advance(40.0, false)
 	_check(not cards._panel.visible and cards._elapsed == 0.0, "Modal fences discard pending slide time")
-	cards.advance(59.0, true)
+	cards.advance(29.0, true)
 	_check(not cards._panel.visible, "Require a fresh interval after a modal fence")
 	cards.advance(NAN, true)
 	_check(not cards._panel.visible, "Ignore nonfinite elapsed time")
+	for timing: Vector2 in [Vector2(60.0, 8.0), Vector2(10.0, 2.0), Vector2(3600.0, 60.0), Vector2(10.0, 8.0), Vector2(10.0, 10.0)]:
+		cards.dismiss()
+		cards.slide_interval_seconds = timing.x
+		cards.slide_dwell_seconds = timing.y
+		var dwell: float = maxf(timing.y, timing.x / 2.0)
+		var hidden: float = timing.x - dwell
+		if hidden > 0.0:
+			cards.advance(hidden - 0.125, true)
+			_check(not cards._panel.visible, "Keep the calculated bare-world interval: " + str(timing))
+		cards.advance(0.125 if hidden > 0.0 else 0.0, true)
+		_check(cards._panel.visible, "Show a card after the calculated interval: " + str(timing))
+		cards.advance(dwell - 0.125, true)
+		_check(cards._panel.visible, "Keep the card visible for the calculated dwell: " + str(timing))
+		var previous_mode: int = cards._mode
+		cards.advance(0.125, true)
+		_check((not cards._panel.visible) if hidden > 0.0 else (cards._panel.visible and cards._mode != previous_mode), "End or replace the card after its dwell: " + str(timing))
+	cards.slide_interval_seconds = 60.0
+	cards.slide_dwell_seconds = 8.0
+	cards.dismiss()
+	cards._next_mode = 0
+	cards._next_metric = 0
+	cards.advance(31.0, true)
+	_check(cards._panel.visible and is_equal_approx(cards._dwell, 1.0), "Carry an uneven frame into visible dwell")
+	cards.advance(32.0, true)
+	_check(not cards._panel.visible and is_equal_approx(cards._elapsed, 3.0), "Carry an uneven frame into the next hidden interval")
+	cards.advance(28.0, true)
+	_check(cards._panel.visible and cards._mode == 1 and is_equal_approx(cards._dwell, 1.0), "Preserve start-to-start cadence across uneven frames")
+	cards.advance(1200.0 + 7.0, true)
+	_check(cards._panel.visible and cards._mode == 1 and is_equal_approx(cards._dwell, 8.0), "Bound long elapsed time while preserving the cycle phase")
+	cards.dismiss()
+	cards.slide_interval_seconds = 10.0
+	cards.slide_dwell_seconds = 60.0
+	cards._next_mode = 0
+	cards._next_metric = 0
+	cards.advance(1207.0, true)
+	_check(cards._panel.visible and cards._mode == 0 and is_equal_approx(cards._dwell, 7.0), "Preserve phase and mode for long deltas when dwell exceeds interval")
+	cards.advance(53.0, true)
+	_check(cards._panel.visible and cards._mode == 1 and is_equal_approx(cards._dwell, 0.0), "Replace the slide after its full dwell when dwell exceeds interval")
+	cards.dismiss()
+	cards.slide_interval_seconds = 60.0
+	cards.slide_dwell_seconds = 8.0
 	for language: String in ["en", "es", "ca", "de", "pt", "ru"]:
 		cards.set_scene(_packet(), _context(language))
 		cards.dismiss()
@@ -130,13 +171,20 @@ func _run() -> void:
 	_check(not cards._panel.visible and cards._elapsed == 0.0, "Reset presentation cadence on a new epoch")
 	_show(cards)
 	changed["subjects"].remove_at(0)
-	changed["records"][0] = _record("offspring", "count", 0, 0)
+	changed["subjects"][0]["children"] = 1
+	changed["records"][0] = _record("offspring", "count", 12, 1)
 	changed["records"][2] = _record("age", "biological_ticks", 12, 256)
-	_check(cards.set_scene(changed, _context()) and not cards._panel.visible, "Dismiss when the shown actor leaves the current live packet")
+	cards.advance(5.0, true)
+	_check(cards.set_scene(changed, _context()) and cards._panel.visible and cards._focus_token == 12 and cards._number.text == "1", "Replace a departed winner with the new live record")
+	changed["subjects"][0]["children"] = 0
+	changed["records"][0] = _record("offspring", "count", 0, 0)
+	_check(cards.set_scene(changed, _context()) and cards._panel.visible and cards._focus_token == 0 and cards._number.text == "0", "Replace a departed winner with the current empty record without resetting the slide")
+	_check(is_equal_approx(cards._dwell, 5.0), "Keep elapsed dwell when the winner departs")
 	cards.focus_current_subject()
 	_check(_focused == [11], "Never focus a removed token")
 	var empty: Dictionary = _empty()
 	_check(cards.set_scene(empty, {"population": 0, "world_time": 0}), "Accept an empty live population")
+	cards.dismiss()
 	cards._next_mode = 0
 	_show(cards)
 	_check(cards._number.text == "0" and cards._body.text == Cards.WORDS["en"][3], "Distinguish no living organisms from an unavailable packet")
@@ -227,6 +275,28 @@ func _preview_checks(cards: Cards) -> void:
 			var label: Rect2 = cards._leader_labels[index].get_global_rect()
 			_check(portrait.size == Vector2(100.0, 100.0) and cards._leader_previews[index].scale == Vector2.ONE and inner.encloses(portrait) and inner.encloses(label), "Fit each native-size portrait and localized label: %s %d, portrait %s, label %s, inner %s" % [language, index, portrait, label, inner])
 	_check(cards._panel.size.x < 690.0 and cards._panel.size.y < 264.0, "Fit the living leaderboard around its five portrait columns")
+	var inspector: Rect2 = Rect2(940.0, 20.0, 320.0, 260.0)
+	cards.set_avoid_rect(inspector)
+	_check(not cards._panel.get_global_rect().intersects(inspector) and cards._panel.get_global_rect().end.y <= root.size.y and cards._panel.scale == Vector2.ONE, "Keep the living leaderboard full size below the inspector when space permits")
+	root.size = Vector2i(800, 480)
+	await process_frame
+	await process_frame
+	inspector = Rect2(184.0, 16.0, 600.0, 280.0)
+	cards.set_avoid_rect(inspector)
+	var viewport: Rect2 = Rect2(Vector2.ZERO, Vector2(root.size))
+	_check(viewport.encloses(cards._panel.get_global_rect()) and not cards._panel.get_global_rect().intersects(inspector), "Fit the entire living leaderboard beside the inspector at 800x480")
+	_check(cards._panel.scale.x * 17.0 >= 9.0, "Keep leaderboard text above nine pixels at 800x480")
+	root.size = Vector2i(700, 350)
+	await process_frame
+	await process_frame
+	inspector = Rect2(400.0, 20.0, 280.0, 250.0)
+	cards.set_avoid_rect(inspector)
+	_check(Rect2(Vector2.ZERO, Vector2(root.size)).encloses(cards._panel.get_global_rect()) and not cards._panel.get_global_rect().intersects(inspector), "Fit both panels in a small viewport")
+	root.size = Vector2i(1280, 800)
+	await process_frame
+	await process_frame
+	cards.set_avoid_rect(Rect2())
+	_check(is_equal_approx(cards._panel.get_global_rect().end.x, cards.size.x - 20.0), "Restore the normal position after the inspector closes")
 	await _leader_resize_checks(cards)
 	cards._input(InputEventScreenTouch.new())
 	_check(not cards._panel.visible and cards._preview_images.is_empty(), "Touch dismisses the larger leader card and clears its cache")
@@ -312,12 +382,12 @@ func _all_time_checks(cards: Cards) -> void:
 	_show(cards)
 	cards.set_scene(_with_previews(), _context())
 	_check(cards._leader_previews[0]._raster != null, "Initialize the shared portrait with a living preview")
-	cards.advance(cards.slide_dwell_seconds, true)
+	cards.advance(30.0, true)
 	_check(cards._leader_previews[0]._raster == null, "Dismiss the living preview before the shared portrait slot is reused")
 	cards._next_mode = 2
 	_show(cards)
 	_check(not cards.needs_all_time_records(), "An ecology slide makes no all-time request")
-	cards.advance(cards.slide_dwell_seconds, true)
+	cards.advance(30.0, true)
 	_show(cards)
 	_check(cards.needs_all_time_records() and not cards.needs_previews(), "The fourth slide requests one all-time packet without living previews")
 	_check(cards.set_scene(packet, _context()), "Accept historic records with no living actors")
@@ -329,6 +399,13 @@ func _all_time_checks(cards: Cards) -> void:
 	_check(not cards._leader_previews[1].visible and not cards._leader_previews[2].visible and cards._appearance_unavailable[1].visible and cards._appearance_unavailable[2].visible, "Show unavailable appearances without inventing imagery")
 	_check(not cards._leader_labels[3].is_visible_in_tree() and not cards._leader_labels[4].is_visible_in_tree(), "Show only the categories with source-defined all-time records")
 	_check(cards._panel.size.x < 465.0 and cards._panel.size.y < 264.0, "Fit the all-time leaderboard around its three portrait columns")
+	var inspector: Rect2 = Rect2(940.0, 20.0, 320.0, 260.0)
+	cards.set_avoid_rect(inspector)
+	_check(not cards._panel.get_global_rect().intersects(inspector) and cards._panel.get_global_rect().end.y <= root.size.y, "Keep the all-time card clear of the inspector")
+	inspector.size.y = 740.0
+	cards.set_avoid_rect(inspector)
+	_check(not cards._panel.get_global_rect().intersects(inspector) and cards._panel.get_global_rect().position.x >= 20.0, "Place the all-time card to the left when there is no room below")
+	cards.set_avoid_rect(Rect2())
 	cards.focus_current_subject()
 	_check(cards._panel.visible and cards.current_subject_token() == 0 and _focused == [11], "An all-time record cannot become a living follow target")
 	var texture: ImageTexture = cards._leader_previews[0]._raster

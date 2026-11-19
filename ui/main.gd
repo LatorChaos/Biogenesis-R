@@ -1798,6 +1798,7 @@ func _update_cinema(delta: float) -> void:
 	if not is_finite(delta) or delta <= 0.0:
 		return
 	var allowed: bool = _cinema_allowed()
+	_living_cards.set_avoid_rect(_ambient_shell.get_inspector_rect())
 	_living_cards.advance(delta, allowed and _ambient_shell.is_idle())
 	if not allowed:
 		_director.cancel_action()

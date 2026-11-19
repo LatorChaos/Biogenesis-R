@@ -54,3 +54,11 @@ Run the Rust tests and the Godot boundary checks from the repository root. Netwo
 python3 tools/build.py test --release --timeout 3600 --cache-source "${CARGO_HOME:-$HOME/.cargo}"
 python3 tools/build.py boundary --release --timeout 3600 --cache-source "${CARGO_HOME:-$HOME/.cargo}"
 ```
+
+For the selection and cinema integration check, use a fresh data directory.
+The check creates preferences and should not use your normal game profile.
+
+```sh
+test_data="$(mktemp -d)"
+XDG_DATA_HOME="$test_data" godot --headless --path . --script res://ui/selection_cinema_check.gd
+```

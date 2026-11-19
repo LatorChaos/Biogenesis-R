@@ -35,7 +35,7 @@ func _run() -> void:
 	_check(cards.set_scene(scene, context), "Real Rust arrays and record units satisfy the card contract")
 	cards._next_mode = 0
 	cards._next_metric = 3
-	cards.advance(cards.slide_interval_seconds, true)
+	cards.advance(30.0, true)
 	_check(cards.needs_previews(), "A real living mass record requests its appearance only when visible")
 	var illustrated: Dictionary = simulation.call("living_scene_snapshot", 0, true)
 	_check(cards.set_scene(illustrated, context), "Consume actual native appearance fields without a new API")
@@ -106,7 +106,7 @@ func _check_all_time_bridge(simulation: BgrSimulation, cards: Cards, context: Di
 		_check(record is Dictionary and record.size() == 5 and record.get("kind") == kinds[index] and record.get("count") is int and record.get("count") == 0 and record.get("time") is int and record.get("time") == 0 and record.get("present") is bool and not record["present"] and record.get("preview") == {"requested": false, "error": "", "image": {}}, "A fresh world has a typed empty native record: " + kinds[index])
 	cards.dismiss()
 	cards._next_mode = 3
-	cards.advance(cards.slide_interval_seconds, true)
+	cards.advance(30.0, true)
 	_check(cards.needs_all_time_records() and cards.set_scene(packet, context) and not cards.needs_all_time_records() and cards.current_subject_token() == 0, "The all-time card consumes the real additive packet without a live focus token")
 	var rejected: Dictionary = simulation.call("living_scene_snapshot_with_records", -1, false)
 	var rejected_base: Dictionary = simulation.call("living_scene_snapshot", -1, false)

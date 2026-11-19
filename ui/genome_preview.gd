@@ -4,7 +4,10 @@ signal copy_requested
 
 var copy_enabled: bool = false
 var fit_visible_content: bool = false
+var fill_available_area: bool = false
 var _raster: ImageTexture
+var _raster_pixels: PackedByteArray
+var _raster_fitted: bool = false
 var _popup: PopupMenu
 var _portrait_source: Rect2i
 
@@ -57,10 +60,13 @@ func set_raster(image: Dictionary, dimensions: Vector2i = Vector2i(100, 100)) ->
 		return false
 	if image.is_empty():
 		_raster = null
+		_raster_pixels = PackedByteArray()
 		_portrait_source = Rect2i()
 		queue_redraw()
 		return true
 	var pixels: PackedByteArray = image["rgb"]
+	if _raster != null and _raster.get_size() == Vector2(dimensions) and pixels == _raster_pixels and fit_visible_content == _raster_fitted:
+		return true
 	var content: Image = Image.create_from_data(dimensions.x, dimensions.y, false, Image.FORMAT_RGB8, pixels)
 	if content == null or content.is_empty():
 		return false
@@ -69,6 +75,8 @@ func set_raster(image: Dictionary, dimensions: Vector2i = Vector2i(100, 100)) ->
 	else:
 		_raster.update(content)
 	_portrait_source = _content_bounds(pixels, dimensions) if fit_visible_content else Rect2i(Vector2i.ZERO, dimensions)
+	_raster_pixels = pixels.duplicate()
+	_raster_fitted = fit_visible_content
 	queue_redraw()
 	return _raster != null
 
@@ -95,9 +103,16 @@ func _draw() -> void:
 	draw_rect(Rect2(Vector2.ZERO, size), Color.BLACK)
 	if _raster != null:
 		if fit_visible_content:
-			var source_size: Vector2 = Vector2(_portrait_source.size)
-			var factor: float = minf(6.0, minf(size.x / source_size.x, size.y / source_size.y))
-			var target_size: Vector2 = source_size * factor
-			draw_texture_rect_region(_raster, Rect2((size - target_size) * 0.5, target_size), Rect2(_portrait_source))
+			draw_texture_rect_region(_raster, _fit_target(), Rect2(_portrait_source))
 		else:
 			draw_texture(_raster, Vector2.ZERO)
+
+
+func _fit_target() -> Rect2:
+	var source_size: Vector2 = Vector2(_portrait_source.size)
+	var available: Vector2 = (size - Vector2(4.0, 4.0)).max(Vector2.ZERO) if fill_available_area else size
+	var factor: float = minf(available.x / source_size.x, available.y / source_size.y)
+	if not fill_available_area:
+		factor = minf(6.0, factor)
+	var target_size: Vector2 = source_size * factor
+	return Rect2((size - target_size) * 0.5, target_size)

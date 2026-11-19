@@ -27,6 +27,7 @@ var slide_interval_seconds: float = 60.0
 var slide_dwell_seconds: float = 8.0
 var _panel: PanelContainer
 var _card_width: float = 0.0
+var _avoid_rect: Rect2 = Rect2()
 var _title: Label
 var _number: Label
 var _body: Label
@@ -153,27 +154,39 @@ func set_scene(packet: Dictionary, context: Dictionary) -> bool:
 		_language = "en"
 	_available = true
 	if _panel.visible:
-		if _focus_token != 0 and not _subjects.has(_focus_token):
-			dismiss()
-		else:
-			_render()
+		_render()
 	return true
 
 
-## Advance one passive slide without accumulating work behind modal fences
+## Interval is start-to-start; visible dwell is at least half the interval
 func advance(delta: float, allowed: bool) -> void:
 	if not allowed or not _available:
 		dismiss()
 		return
 	if not is_finite(delta) or delta < 0.0:
 		return
-	if _panel.visible:
-		_dwell += delta
-		if _dwell >= clampf(slide_dwell_seconds, 2.0, 60.0):
+	var interval: float = clampf(slide_interval_seconds, 10.0, 3600.0)
+	var dwell: float = maxf(clampf(slide_dwell_seconds, 2.0, 60.0), interval / 2.0)
+	var rotation: float = maxf(interval, dwell) * 20.0
+	var remaining: float = fmod(delta, rotation)
+	if delta >= rotation and _panel.visible:
+		_preview_images.clear()
+		_all_time_records.clear()
+		_render()
+	while true:
+		if _panel.visible:
+			var until_hidden: float = maxf(0.0, dwell - _dwell)
+			if remaining < until_hidden:
+				_dwell += remaining
+				return
+			remaining -= until_hidden
 			dismiss()
-	else:
-		_elapsed += delta
-		if _elapsed >= clampf(slide_interval_seconds, 10.0, 3600.0):
+		else:
+			var until_shown: float = maxf(0.0, interval - dwell - _elapsed)
+			if remaining < until_shown:
+				_elapsed += remaining
+				return
+			remaining -= until_shown
 			_mode = _next_mode
 			_next_mode = (_next_mode + 1) % 4
 			if _mode == 0:
@@ -182,6 +195,8 @@ func advance(delta: float, allowed: bool) -> void:
 			_render()
 			_panel.show()
 			_dwell = 0.0
+		if remaining <= 0.0 and (_panel.visible or interval > dwell):
+			return
 
 
 func dismiss() -> void:
@@ -496,4 +511,26 @@ func _fit_panel() -> void:
 
 
 func _position_panel() -> void:
-	_panel.position = Vector2(maxf(EDGE_GAP, size.x - _panel.size.x - EDGE_GAP), EDGE_GAP)
+	var position: Vector2 = Vector2(maxf(EDGE_GAP, size.x - _panel.size.x - EDGE_GAP), EDGE_GAP)
+	var avoid: Rect2 = Rect2(_avoid_rect.position - global_position, _avoid_rect.size)
+	var scale_factor: float = 1.0
+	if _avoid_rect.has_area() and Rect2(position, _panel.size).intersects(avoid):
+		var below: float = avoid.end.y + EDGE_GAP
+		var below_scale: float = minf(1.0, minf((size.x - 2.0 * EDGE_GAP) / _panel.size.x, (size.y - EDGE_GAP - below) / _panel.size.y))
+		var left_scale: float = minf(1.0, minf((avoid.position.x - 2.0 * EDGE_GAP) / _panel.size.x, (size.y - 2.0 * EDGE_GAP) / _panel.size.y))
+		if below_scale >= left_scale:
+			scale_factor = maxf(0.0, below_scale)
+			position = Vector2(maxf(EDGE_GAP, size.x - _panel.size.x * scale_factor - EDGE_GAP), below)
+		else:
+			scale_factor = maxf(0.0, left_scale)
+			position.x = avoid.position.x - EDGE_GAP - _panel.size.x * scale_factor
+	_panel.scale = Vector2.ONE * scale_factor
+	_panel.position = position
+
+
+func set_avoid_rect(rect: Rect2) -> void:
+	if _avoid_rect == rect:
+		return
+	_avoid_rect = rect
+	if _panel != null:
+		_position_panel()
